@@ -34,7 +34,7 @@
 ### Week 1: Feb 5-9
 | Date | # | Title | Target Keyword | Pillar | Status |
 |------|---|-------|----------------|--------|--------|
-| Feb 5 | 6 | The 10-3-2-1-0 Sleep Rule Explained | 10-3-2-1-0 sleep rule | Hygiene | 🔲 Draft |
+| Feb 5 | 6 | The 10-3-2-1-0 Sleep Rule Explained | 10-3-2-1-0 sleep rule | Hygiene | ✅ Published |
 | Feb 7 | 7 | Is Napping Good for You? Science of Power Naps | is napping good for you | Science | 🔲 Draft |
 | Feb 9 | 8 | Best Sleep Schedule for Night Shift Workers | night shift sleep schedule | Audience | 🔲 Draft |
 
