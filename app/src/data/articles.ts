@@ -3,6 +3,7 @@ import bestTimeToWakeUp from '../content/02-best-time-to-wake-up.md?raw'
 import howMuchSleepDoINeed from '../content/03-how-much-sleep-do-i-need.md?raw'
 import whyDoIWakeUpTired from '../content/04-why-do-i-wake-up-tired.md?raw'
 import sleepCalculatorGuide from '../content/05-sleep-calculator-guide.md?raw'
+import sleepRule103210 from '../content/06-10-3-2-1-0-sleep-rule.md?raw'
 
 export interface Article {
   slug: string
@@ -53,5 +54,13 @@ export const articles: Article[] = [
     readTime: '13 min read',
     date: 'February 2026',
     content: sleepCalculatorGuide
+  },
+  {
+    slug: '10-3-2-1-0-sleep-rule',
+    title: 'The 10-3-2-1-0 Sleep Rule: A Simple Formula for Better Sleep',
+    description: 'Learn the 10-3-2-1-0 sleep rule—a simple countdown formula for better sleep. Science-backed tips for caffeine, food, work, and screens before bed.',
+    readTime: '11 min read',
+    date: 'February 2026',
+    content: sleepRule103210
   }
 ]
