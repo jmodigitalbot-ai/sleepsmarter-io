@@ -1,8 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { articles } from '../data/articles'
-
-// For MVP, we'll display article summaries with links to full content
-// In production, integrate react-markdown or MDX for full article rendering
 
 export default function Article() {
   const { slug } = useParams<{ slug: string }>()
@@ -11,6 +10,9 @@ export default function Article() {
   if (!article) {
     return <Navigate to="/blog" replace />
   }
+
+  // Remove the frontmatter from markdown if present
+  const contentWithoutFrontmatter = article.content.replace(/^---[\s\S]*?---\n*/m, '')
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -51,56 +53,24 @@ export default function Article() {
           </div>
         </header>
 
-        {/* Article Content Placeholder */}
-        <div className="prose prose-invert max-w-none">
-          <p className="text-lg text-[#f1faee]/80 mb-6">
-            {article.description}
-          </p>
-          
-          <div className="bg-[#16213e] rounded-xl p-8 text-center my-8">
-            <h2 className="text-xl font-semibold text-[#f1faee] mb-3">
-              🚧 Full Article Coming Soon
-            </h2>
-            <p className="text-[#f1faee]/60 mb-4">
-              We're putting the finishing touches on this article. 
-              In the meantime, try our sleep calculator!
-            </p>
-            <Link
-              to="/"
-              className="inline-block bg-[#a8dadc] hover:bg-[#a8dadc]/90 text-[#1a1a2e] font-semibold px-6 py-3 rounded-lg transition"
-            >
-              Try Sleep Calculator
-            </Link>
-          </div>
-
-          <h2 className="text-xl font-semibold text-[#a8dadc] mt-8 mb-4">
-            Why Sleep Cycles Matter
-          </h2>
-          <p className="text-[#f1faee]/70 mb-4">
-            Understanding your sleep cycles is the key to waking up refreshed. 
-            Your brain naturally moves through 90-minute cycles of light sleep, 
-            deep sleep, and REM sleep throughout the night.
-          </p>
-          <p className="text-[#f1faee]/70 mb-4">
-            When you wake up at the end of a complete cycle (rather than in the 
-            middle of one), you feel alert and energized. When you wake mid-cycle, 
-            especially during deep sleep, you experience that groggy feeling 
-            called "sleep inertia."
-          </p>
-
-          <h2 className="text-xl font-semibold text-[#a8dadc] mt-8 mb-4">
-            How Our Sleep Calculator Helps
-          </h2>
-          <p className="text-[#f1faee]/70 mb-4">
-            Our free sleep calculator takes the guesswork out of sleep timing. 
-            Simply enter when you need to wake up, and we'll calculate the optimal 
-            times to fall asleep based on complete 90-minute sleep cycles.
-          </p>
-          <p className="text-[#f1faee]/70">
-            We also account for the average 14 minutes it takes to fall asleep, 
-            giving you accurate bedtime recommendations for 4, 5, or 6 complete 
-            sleep cycles.
-          </p>
+        {/* Article Content */}
+        <div className="prose prose-invert prose-lg max-w-none
+          prose-headings:text-[#a8dadc] prose-headings:font-semibold
+          prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
+          prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+          prose-p:text-[#f1faee]/80 prose-p:leading-relaxed prose-p:mb-4
+          prose-a:text-[#a8dadc] prose-a:no-underline hover:prose-a:underline
+          prose-strong:text-[#f1faee] prose-strong:font-semibold
+          prose-ul:text-[#f1faee]/80 prose-ul:my-4
+          prose-ol:text-[#f1faee]/80 prose-ol:my-4
+          prose-li:my-1
+          prose-blockquote:border-l-[#a8dadc] prose-blockquote:bg-[#16213e] prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg prose-blockquote:text-[#f1faee]/70
+          prose-code:text-[#a8dadc] prose-code:bg-[#16213e] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+          prose-hr:border-[#4a4e69]/30
+        ">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {contentWithoutFrontmatter}
+          </ReactMarkdown>
         </div>
 
         {/* CTA */}
