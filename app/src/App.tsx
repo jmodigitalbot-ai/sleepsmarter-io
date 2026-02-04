@@ -85,6 +85,7 @@ function App() {
             <Link to="/blog" className="hover:text-[#a8dadc] transition">Blog</Link>
             <Link to="/privacy" className="hover:text-[#a8dadc] transition">Privacy</Link>
             <Link to="/terms" className="hover:text-[#a8dadc] transition">Terms</Link>
+            <Link to="/disclosure" className="hover:text-[#a8dadc] transition">Disclosure</Link>
           </div>
         </div>
       </footer>
