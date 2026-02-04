@@ -4,6 +4,7 @@ import howMuchSleepDoINeed from '../content/03-how-much-sleep-do-i-need.md?raw'
 import whyDoIWakeUpTired from '../content/04-why-do-i-wake-up-tired.md?raw'
 import sleepCalculatorGuide from '../content/05-sleep-calculator-guide.md?raw'
 import sleepRule103210 from '../content/06-10-3-2-1-0-sleep-rule.md?raw'
+import isNappingGoodForYou from '../content/07-is-napping-good-for-you.md?raw'
 
 export interface Article {
   slug: string
@@ -62,5 +63,13 @@ export const articles: Article[] = [
     readTime: '11 min read',
     date: 'February 2026',
     content: sleepRule103210
+  },
+  {
+    slug: 'is-napping-good-for-you',
+    title: 'Is Napping Good for You? The Science of Power Naps',
+    description: 'Discover the science of power naps. Learn the benefits of napping, ideal nap length, best time to nap, and how to avoid common napping mistakes.',
+    readTime: '10 min read',
+    date: 'February 2026',
+    content: isNappingGoodForYou
   }
 ]
