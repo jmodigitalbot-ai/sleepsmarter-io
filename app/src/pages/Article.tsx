@@ -56,17 +56,17 @@ export default function Article() {
         {/* Article Content */}
         <div className="prose prose-invert prose-lg max-w-none
           prose-headings:text-[#a8dadc] prose-headings:font-semibold
-          prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-          prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-          prose-p:text-[#f1faee]/80 prose-p:leading-relaxed prose-p:mb-4
+          prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6
+          prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4
+          prose-p:text-[#f1faee]/80 prose-p:leading-relaxed prose-p:mb-6
           prose-a:text-[#a8dadc] prose-a:no-underline hover:prose-a:underline
           prose-strong:text-[#f1faee] prose-strong:font-semibold
-          prose-ul:text-[#f1faee]/80 prose-ul:my-4
-          prose-ol:text-[#f1faee]/80 prose-ol:my-4
-          prose-li:my-1
-          prose-blockquote:border-l-[#a8dadc] prose-blockquote:bg-[#16213e] prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg prose-blockquote:text-[#f1faee]/70
+          prose-ul:text-[#f1faee]/80 prose-ul:my-6 prose-ul:space-y-2
+          prose-ol:text-[#f1faee]/80 prose-ol:my-6 prose-ol:space-y-2
+          prose-li:my-2
+          prose-blockquote:border-l-[#a8dadc] prose-blockquote:bg-[#16213e] prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:text-[#f1faee]/70 prose-blockquote:my-8
           prose-code:text-[#a8dadc] prose-code:bg-[#16213e] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
-          prose-hr:border-[#4a4e69]/30
+          prose-hr:border-[#4a4e69]/30 prose-hr:my-10
         ">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {contentWithoutFrontmatter}
