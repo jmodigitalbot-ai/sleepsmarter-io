@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #1a1a2e;
+  --color-purple: #4a4e69;
+  --color-accent: #a8dadc;
+  --color-light: #f1faee;
+}
+
+body {
+  @apply bg-[#1a1a2e] text-[#f1faee] min-h-screen;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4e69;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8dadc;
+}
