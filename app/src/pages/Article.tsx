@@ -31,7 +31,7 @@ export default function Article() {
         </div>
       </header>
 
-      <article className="max-w-3xl mx-auto px-4 py-12">
+      <div className="max-w-3xl mx-auto px-4 py-16">
         {/* Breadcrumb */}
         <nav className="text-sm text-[#f1faee]/50 mb-8">
           <Link to="/" className="hover:text-[#a8dadc]">Home</Link>
@@ -42,33 +42,61 @@ export default function Article() {
         </nav>
 
         {/* Article Header */}
-        <header className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-4">
-            {article.title}
-          </h1>
-          <div className="flex items-center gap-4 text-sm text-[#f1faee]/50">
-            <span>{article.date}</span>
-            <span>•</span>
-            <span>{article.readTime}</span>
-          </div>
-        </header>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-4">
+          {article.title}
+        </h1>
+        <div className="flex items-center gap-4 text-sm text-[#f1faee]/50 mb-8">
+          <span>{article.date}</span>
+          <span>•</span>
+          <span>{article.readTime}</span>
+        </div>
 
-        {/* Article Content */}
-        <div className="prose prose-invert prose-lg max-w-none
-          prose-headings:text-[#a8dadc] prose-headings:font-semibold
-          prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6
-          prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4
-          prose-p:text-[#f1faee]/80 prose-p:leading-relaxed prose-p:mb-6
-          prose-a:text-[#a8dadc] prose-a:no-underline hover:prose-a:underline
-          prose-strong:text-[#f1faee] prose-strong:font-semibold
-          prose-ul:text-[#f1faee]/80 prose-ul:my-6 prose-ul:space-y-2
-          prose-ol:text-[#f1faee]/80 prose-ol:my-6 prose-ol:space-y-2
-          prose-li:my-2
-          prose-blockquote:border-l-[#a8dadc] prose-blockquote:bg-[#16213e] prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:text-[#f1faee]/70 prose-blockquote:my-8
-          prose-code:text-[#a8dadc] prose-code:bg-[#16213e] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
-          prose-hr:border-[#4a4e69]/30 prose-hr:my-10
-        ">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        {/* Article Content - matching About page styling */}
+        <div className="max-w-none">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              h1: ({ children }) => (
+                <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-8">{children}</h1>
+              ),
+              h2: ({ children }) => (
+                <h2 className="text-xl font-semibold text-[#a8dadc] mt-10 mb-4">{children}</h2>
+              ),
+              h3: ({ children }) => (
+                <h3 className="text-lg font-semibold text-[#a8dadc] mt-8 mb-3">{children}</h3>
+              ),
+              p: ({ children }) => (
+                <p className="text-[#f1faee]/70 mb-6 leading-relaxed">{children}</p>
+              ),
+              a: ({ href, children }) => (
+                <a href={href} className="text-[#a8dadc] hover:underline">{children}</a>
+              ),
+              strong: ({ children }) => (
+                <strong className="font-semibold text-[#f1faee]">{children}</strong>
+              ),
+              em: ({ children }) => (
+                <em className="italic text-[#f1faee]/80">{children}</em>
+              ),
+              ul: ({ children }) => (
+                <ul className="list-disc list-outside ml-6 mb-6 space-y-3 text-[#f1faee]/70">{children}</ul>
+              ),
+              ol: ({ children }) => (
+                <ol className="list-decimal list-outside ml-6 mb-6 space-y-3 text-[#f1faee]/70">{children}</ol>
+              ),
+              li: ({ children }) => (
+                <li className="leading-relaxed">{children}</li>
+              ),
+              blockquote: ({ children }) => (
+                <blockquote className="border-l-4 border-[#a8dadc] bg-[#16213e] py-4 px-6 rounded-r-lg my-6 text-[#f1faee]/70 italic">{children}</blockquote>
+              ),
+              code: ({ children }) => (
+                <code className="text-[#a8dadc] bg-[#16213e] px-1.5 py-0.5 rounded text-sm">{children}</code>
+              ),
+              hr: () => (
+                <hr className="border-[#4a4e69]/30 my-10" />
+              ),
+            }}
+          >
             {contentWithoutFrontmatter}
           </ReactMarkdown>
         </div>
@@ -90,7 +118,7 @@ export default function Article() {
         </div>
 
         {/* Related Articles */}
-        <div className="mt-12">
+        <div className="mt-12 pt-8 border-t border-[#4a4e69]/30">
           <h3 className="text-lg font-semibold text-[#f1faee] mb-4">
             Related Articles
           </h3>
@@ -112,10 +140,14 @@ export default function Article() {
               ))}
           </div>
         </div>
-      </article>
+
+        <div className="mt-8">
+          <Link to="/blog" className="text-[#a8dadc] hover:underline">← Back to Blog</Link>
+        </div>
+      </div>
 
       {/* Footer */}
-      <footer className="border-t border-[#4a4e69]/30 py-8 mt-12">
+      <footer className="border-t border-[#4a4e69]/30 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center text-sm text-[#f1faee]/50">
           <p className="mb-2">© 2026 Sleep Smarter. Wake up refreshed.</p>
           <div className="flex justify-center gap-4">
