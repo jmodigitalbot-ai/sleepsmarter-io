@@ -111,13 +111,15 @@ export default function SleepCalculator() {
 
       {/* Time Input */}
       <div className="mb-6">
-        <label className="block text-sm text-[#f1faee]/70 mb-2">
+        <label htmlFor="sleep-time-input" className="block text-sm text-[#f1faee]/70 mb-2">
           {mode === 'wakeup' ? 'What time do you need to wake up?' : 'What time are you going to bed?'}
         </label>
         <input
+          id="sleep-time-input"
           type="time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
+          aria-label={mode === 'wakeup' ? 'Wake up time' : 'Bedtime'}
           className="w-full bg-[#1a1a2e] border border-[#4a4e69] rounded-lg px-4 py-4 text-2xl text-center text-[#f1faee] focus:outline-none focus:border-[#a8dadc] transition"
         />
       </div>

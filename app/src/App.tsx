@@ -19,25 +19,27 @@ function App() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="max-w-4xl mx-auto px-4 py-12 md:py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#f1faee] mb-4">
-          Wake Up Refreshed.{' '}
-          <span className="text-[#a8dadc]">Every Time.</span>
-        </h1>
-        <p className="text-lg text-[#f1faee]/70 max-w-2xl mx-auto mb-8">
-          Calculate the perfect bedtime or wake-up time based on natural sleep cycles. 
-          Stop waking up groggy and start feeling energized.
-        </p>
-      </section>
+      {/* Main Content */}
+      <main>
+        {/* Hero */}
+        <section className="max-w-4xl mx-auto px-4 py-12 md:py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#f1faee] mb-4">
+            Wake Up Refreshed.{' '}
+            <span className="text-[#a8dadc]">Every Time.</span>
+          </h1>
+          <p className="text-lg text-[#f1faee]/70 max-w-2xl mx-auto mb-8">
+            Calculate the perfect bedtime or wake-up time based on natural sleep cycles. 
+            Stop waking up groggy and start feeling energized.
+          </p>
+        </section>
 
-      {/* Calculator */}
-      <section id="calculator" className="max-w-2xl mx-auto px-4 pb-16">
-        <SleepCalculator />
-      </section>
+        {/* Calculator */}
+        <section id="calculator" className="max-w-2xl mx-auto px-4 pb-16">
+          <SleepCalculator />
+        </section>
 
-      {/* How It Works */}
-      <section id="how-it-works" className="bg-[#16213e] py-16">
+        {/* How It Works */}
+        <section id="how-it-works" className="bg-[#16213e] py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-[#f1faee] mb-12">
             The Science of Sleep Cycles
@@ -73,6 +75,7 @@ function App() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="border-t border-[#4a4e69]/30 py-8">
