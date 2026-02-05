@@ -24,7 +24,9 @@ export const articles: Article[] = [
     description: 'Learn how sleep cycles work, the 4 stages of sleep explained, and why 90-minute cycles matter for waking up refreshed.',
     readTime: '10 min read',
     date: 'February 2026',
-    content: howSleepCyclesWork
+    content: howSleepCyclesWork,
+    featuredImage: '/images/featured-sleep-cycles.png',
+    featuredImageAlt: 'Abstract illustration of flowing waves representing sleep cycles'
   },
   {
     slug: 'best-time-to-wake-up',
@@ -32,7 +34,9 @@ export const articles: Article[] = [
     description: 'Discover the science of waking refreshed vs groggy and how to calculate your ideal wake time based on sleep cycles.',
     readTime: '11 min read',
     date: 'February 2026',
-    content: bestTimeToWakeUp
+    content: bestTimeToWakeUp,
+    featuredImage: '/images/featured-wake-up-time.png',
+    featuredImageAlt: 'Minimalist illustration of sunrise with alarm clock silhouette'
   },
   {
     slug: 'how-much-sleep-do-i-need',
@@ -40,7 +44,9 @@ export const articles: Article[] = [
     description: 'Find out exactly how much sleep you need based on your age, plus signs you\'re not getting enough rest.',
     readTime: '12 min read',
     date: 'February 2026',
-    content: howMuchSleepDoINeed
+    content: howMuchSleepDoINeed,
+    featuredImage: '/images/featured-how-much-sleep.png',
+    featuredImageAlt: 'Abstract illustration of life stages represented by glowing orbs'
   },
   {
     slug: 'why-do-i-wake-up-tired',
@@ -48,7 +54,9 @@ export const articles: Article[] = [
     description: 'Discover why you wake up exhausted even after 8 hours of sleep, and learn how to fix morning fatigue.',
     readTime: '13 min read',
     date: 'February 2026',
-    content: whyDoIWakeUpTired
+    content: whyDoIWakeUpTired,
+    featuredImage: '/images/featured-wake-up-tired.png',
+    featuredImageAlt: 'Abstract illustration of a depleted battery representing low energy'
   },
   {
     slug: 'sleep-calculator-guide',
@@ -56,7 +64,9 @@ export const articles: Article[] = [
     description: 'Learn how a sleep calculator works and how to use Sleep Smarter to optimize your bedtime and wake time.',
     readTime: '13 min read',
     date: 'February 2026',
-    content: sleepCalculatorGuide
+    content: sleepCalculatorGuide,
+    featuredImage: '/images/featured-sleep-calculator.png',
+    featuredImageAlt: 'Minimalist illustration of a circular dial with moon phases'
   },
   {
     slug: '10-3-2-1-0-sleep-rule',
@@ -64,7 +74,9 @@ export const articles: Article[] = [
     description: 'Learn the 10-3-2-1-0 sleep rule—a simple countdown formula for better sleep. Science-backed tips for caffeine, food, work, and screens before bed.',
     readTime: '11 min read',
     date: 'February 2026',
-    content: sleepRule103210
+    content: sleepRule103210,
+    featuredImage: '/images/featured-10-3-2-1-0-rule.png',
+    featuredImageAlt: 'Minimalist illustration of countdown numbers 10 3 2 1 0'
   },
   {
     slug: 'is-napping-good-for-you',
@@ -72,6 +84,8 @@ export const articles: Article[] = [
     description: 'Discover the science of power naps. Learn the benefits of napping, ideal nap length, best time to nap, and how to avoid common napping mistakes.',
     readTime: '10 min read',
     date: 'February 2026',
-    content: isNappingGoodForYou
+    content: isNappingGoodForYou,
+    featuredImage: '/images/featured-napping.png',
+    featuredImageAlt: 'Minimalist illustration of crescent moon with clouds representing power naps'
   }
 ]
