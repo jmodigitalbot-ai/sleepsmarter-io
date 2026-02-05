@@ -12,7 +12,10 @@ export default function Article() {
   }
 
   // Remove the frontmatter from markdown if present
-  const contentWithoutFrontmatter = article.content.replace(/^---[\s\S]*?---\n*/m, '')
+  let cleanContent = article.content.replace(/^---[\s\S]*?---\n*/m, '')
+  
+  // Remove the first H1 title (we render it separately above)
+  cleanContent = cleanContent.replace(/^#\s+.+\n+/, '')
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -97,7 +100,7 @@ export default function Article() {
               ),
             }}
           >
-            {contentWithoutFrontmatter}
+            {cleanContent}
           </ReactMarkdown>
         </div>
 
