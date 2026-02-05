@@ -13,6 +13,8 @@ export interface Article {
   readTime: string
   date: string
   content: string
+  featuredImage?: string
+  featuredImageAlt?: string
 }
 
 export const articles: Article[] = [

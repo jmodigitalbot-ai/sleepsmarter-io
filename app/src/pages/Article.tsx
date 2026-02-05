@@ -54,6 +54,18 @@ export default function Article() {
           <span>{article.readTime}</span>
         </div>
 
+        {/* Featured Image */}
+        {article.featuredImage && (
+          <div className="mb-10 rounded-xl overflow-hidden">
+            <img 
+              src={article.featuredImage} 
+              alt={article.featuredImageAlt || article.title}
+              className="w-full h-auto"
+              loading="eager"
+            />
+          </div>
+        )}
+
         {/* Article Content - matching About page styling */}
         <div className="max-w-none">
           <ReactMarkdown
@@ -97,6 +109,37 @@ export default function Article() {
               ),
               hr: () => (
                 <hr className="border-[#4a4e69]/30 my-10" />
+              ),
+              img: ({ src, alt }) => (
+                <figure className="my-8">
+                  <img 
+                    src={src} 
+                    alt={alt || ''} 
+                    className="w-full h-auto rounded-xl"
+                    loading="lazy"
+                  />
+                  {alt && (
+                    <figcaption className="text-center text-sm text-[#f1faee]/50 mt-3 italic">
+                      {alt}
+                    </figcaption>
+                  )}
+                </figure>
+              ),
+              table: ({ children }) => (
+                <div className="overflow-x-auto my-6">
+                  <table className="w-full text-sm text-[#f1faee]/70 border-collapse">
+                    {children}
+                  </table>
+                </div>
+              ),
+              thead: ({ children }) => (
+                <thead className="bg-[#16213e] text-[#a8dadc]">{children}</thead>
+              ),
+              th: ({ children }) => (
+                <th className="px-4 py-3 text-left font-semibold border-b border-[#4a4e69]/30">{children}</th>
+              ),
+              td: ({ children }) => (
+                <td className="px-4 py-3 border-b border-[#4a4e69]/20">{children}</td>
               ),
             }}
           >

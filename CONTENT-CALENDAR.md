@@ -118,6 +118,10 @@
 - [ ] Proper H2/H3 hierarchy
 - [ ] Meta description under 160 chars
 - [ ] Affiliate disclosures where needed
+- [ ] Featured image (1200x630px for social sharing)
+- [ ] 1-2 infographics for complex concepts
+- [ ] All images have descriptive alt text
+- [ ] Images optimized for web (compressed, WebP format)
 
 ---
 
