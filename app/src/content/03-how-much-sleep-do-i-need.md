@@ -1,9 +1,3 @@
-# How Much Sleep Do I Need? The Complete Guide by Age
-
-**Meta Description:** Discover how much sleep you need by age, from infants to seniors. Learn to find your personal sleep sweet spot and recognize signs of sleep deprivation.
-
----
-
 "I'll sleep when I'm dead" might sound productive, but the irony is that chronic sleep deprivation actually shortens your lifespan. The question "how much sleep do I need?" isn't just about avoiding tiredness—it's about optimizing your health, cognitive function, and longevity.
 
 But here's the thing: the answer isn't the same for everyone. Your ideal sleep duration depends on your age, genetics, lifestyle, and overall health. This comprehensive guide will help you understand exactly how much sleep you need and how to find your personal sweet spot.
