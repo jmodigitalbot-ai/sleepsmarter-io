@@ -32,25 +32,41 @@ export default function Blog() {
             <Link
               key={article.slug}
               to={`/blog/${article.slug}`}
-              className="block bg-[#16213e] rounded-xl p-6 hover:bg-[#1f2b47] transition group"
+              className="block bg-[#16213e] rounded-xl overflow-hidden hover:bg-[#1f2b47] transition group"
             >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h2 className="text-xl font-semibold text-[#f1faee] group-hover:text-[#a8dadc] transition mb-2">
-                    {article.title}
-                  </h2>
-                  <p className="text-[#f1faee]/60 mb-3">
-                    {article.description}
-                  </p>
-                  <div className="flex items-center gap-4 text-sm text-[#f1faee]/50">
-                    <span>{article.date}</span>
-                    <span>•</span>
-                    <span>{article.readTime}</span>
+              <div className="md:flex">
+                {/* Featured Image */}
+                {article.featuredImage && (
+                  <div className="md:w-1/3 h-48 md:h-auto">
+                    <img 
+                      src={article.featuredImage} 
+                      alt={article.featuredImageAlt || article.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+                
+                {/* Content */}
+                <div className={`p-6 ${article.featuredImage ? 'md:w-2/3' : 'w-full'}`}>
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h2 className="text-xl font-semibold text-[#f1faee] group-hover:text-[#a8dadc] transition mb-2">
+                        {article.title}
+                      </h2>
+                      <p className="text-[#f1faee]/60 mb-3">
+                        {article.description}
+                      </p>
+                      <div className="flex items-center gap-4 text-sm text-[#f1faee]/50">
+                        <span>{article.date}</span>
+                        <span>•</span>
+                        <span>{article.readTime}</span>
+                      </div>
+                    </div>
+                    <span className="text-[#a8dadc] text-2xl group-hover:translate-x-1 transition-transform hidden md:block">
+                      →
+                    </span>
                   </div>
                 </div>
-                <span className="text-[#a8dadc] text-2xl group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
               </div>
             </Link>
           ))}
