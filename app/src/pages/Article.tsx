@@ -11,8 +11,8 @@ export default function Article() {
     return <Navigate to="/blog" replace />
   }
 
-  // Remove the frontmatter from markdown if present
-  let cleanContent = article.content.replace(/^---[\s\S]*?---\n*/m, '')
+  // Remove the frontmatter from markdown if present (only at very start of file)
+  let cleanContent = article.content.replace(/^---[\s\S]*?---\n*/, '')
   
   // Remove the first H1 title (we render it separately above)
   cleanContent = cleanContent.replace(/^#\s+.+\n+/, '')
