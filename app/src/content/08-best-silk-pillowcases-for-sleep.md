@@ -90,7 +90,7 @@ badge: 🏆 Our Top Pick
 title: Promeed Luxgen™ Silk Pillowcase
 features: 23 momme weight (premium density)|100% Grade 6A mulberry silk|OEKO-TEX certified (free from harmful substances)|Hidden zipper closure
 cta: Shop Now — Check Price
-url: https://tidd.ly/4kl1rqx
+url: https://tidd.ly/4and0sV
 -->
 
 Promeed has earned recognition from Good Housekeeping as a "Best Value" pick, and after testing their Luxgen™ pillowcase, we understand why.
