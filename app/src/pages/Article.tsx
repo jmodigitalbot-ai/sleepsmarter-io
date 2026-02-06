@@ -83,9 +83,28 @@ export default function Article() {
               p: ({ children }) => (
                 <p className="text-[#f1faee]/70 mb-6 leading-relaxed">{children}</p>
               ),
-              a: ({ href, children }) => (
-                <a href={href} className="text-[#a8dadc] hover:underline">{children}</a>
-              ),
+              a: ({ href, children }) => {
+                // Check if this is an affiliate link (tidd.ly)
+                const isAffiliateLink = href?.includes('tidd.ly')
+                
+                if (isAffiliateLink) {
+                  return (
+                    <a 
+                      href={href} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#a8dadc] hover:bg-[#a8dadc]/90 text-[#1a1a2e] font-semibold px-5 py-2.5 rounded-lg transition group no-underline my-2"
+                    >
+                      {children}
+                      <span className="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                  )
+                }
+                
+                return (
+                  <a href={href} className="text-[#a8dadc] hover:underline">{children}</a>
+                )
+              },
               strong: ({ children }) => (
                 <strong className="font-semibold text-[#f1faee]">{children}</strong>
               ),
