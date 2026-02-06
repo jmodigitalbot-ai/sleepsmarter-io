@@ -26,12 +26,14 @@ export default function Article() {
   // Remove the first H1 title (we render it separately above)
   cleanContent = cleanContent.replace(/^#\s+.+\n+/, '')
 
-  // Extract product cards from content
+  // Extract product cards and split content into segments
   const productCardRegex = /<!--\s*PRODUCT_CARD\s*([\s\S]*?)-->/g
-  const productCards: { placeholder: string; data: ProductCardData }[] = []
-  let cardIndex = 0
+  const productCards: ProductCardData[] = []
   
-  cleanContent = cleanContent.replace(productCardRegex, (_match, cardContent) => {
+  // Parse all product cards
+  let match
+  while ((match = productCardRegex.exec(cleanContent)) !== null) {
+    const cardContent = match[1]
     const lines = cardContent.trim().split('\n')
     const data: ProductCardData = { title: '', features: [], url: '' }
     
@@ -46,11 +48,11 @@ export default function Article() {
       if (key.trim() === 'url') data.url = value
     })
     
-    const placeholder = `__PRODUCT_CARD_${cardIndex}__`
-    productCards.push({ placeholder, data })
-    cardIndex++
-    return placeholder
-  })
+    productCards.push(data)
+  }
+  
+  // Split content by product card markers
+  const contentSegments = cleanContent.split(/<!--\s*PRODUCT_CARD\s*[\s\S]*?-->/)
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -103,9 +105,11 @@ export default function Article() {
 
         {/* Article Content - matching About page styling */}
         <div className="max-w-none">
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            components={{
+          {contentSegments.map((segment, index) => (
+            <div key={index}>
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={{
               h1: ({ children }) => (
                 <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-8">{children}</h1>
               ),
@@ -115,32 +119,9 @@ export default function Article() {
               h3: ({ children }) => (
                 <h3 className="text-lg font-semibold text-[#a8dadc] mt-8 mb-3">{children}</h3>
               ),
-              p: ({ children }) => {
-                // Check if this paragraph contains a product card placeholder
-                const text = String(children)
-                const cardMatch = text.match(/__PRODUCT_CARD_(\d+)__/)
-                
-                if (cardMatch) {
-                  const cardIndex = parseInt(cardMatch[1])
-                  const card = productCards[cardIndex]
-                  if (card) {
-                    return (
-                      <ProductCard
-                        badge={card.data.badge}
-                        title={card.data.title}
-                        features={card.data.features}
-                        ctaText={card.data.cta}
-                        ctaUrl={card.data.url}
-                        highlight={cardIndex === 0}
-                      />
-                    )
-                  }
-                }
-                
-                return (
-                  <p className="text-[#f1faee]/70 mb-6 leading-relaxed">{children}</p>
-                )
-              },
+              p: ({ children }) => (
+                <p className="text-[#f1faee]/70 mb-6 leading-relaxed">{children}</p>
+              ),
               a: ({ href, children }) => {
                 // Check if this is an affiliate link (tidd.ly)
                 const isAffiliateLink = href?.includes('tidd.ly')
@@ -219,9 +200,23 @@ export default function Article() {
                 <td className="px-4 py-3 border-b border-[#4a4e69]/20">{children}</td>
               ),
             }}
-          >
-            {cleanContent}
-          </ReactMarkdown>
+              >
+                {segment}
+              </ReactMarkdown>
+              
+              {/* Render product card after this segment if one exists */}
+              {index < productCards.length && (
+                <ProductCard
+                  badge={productCards[index].badge}
+                  title={productCards[index].title}
+                  features={productCards[index].features}
+                  ctaText={productCards[index].cta}
+                  ctaUrl={productCards[index].url}
+                  highlight={index === 0}
+                />
+              )}
+            </div>
+          ))}
         </div>
 
         {/* CTA */}
