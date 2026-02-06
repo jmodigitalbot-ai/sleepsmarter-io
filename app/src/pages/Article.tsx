@@ -2,6 +2,15 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { articles } from '../data/articles'
+import ProductCard from '../components/ProductCard'
+
+interface ProductCardData {
+  badge?: string
+  title: string
+  features: string[]
+  cta?: string
+  url: string
+}
 
 export default function Article() {
   const { slug } = useParams<{ slug: string }>()
@@ -16,6 +25,32 @@ export default function Article() {
   
   // Remove the first H1 title (we render it separately above)
   cleanContent = cleanContent.replace(/^#\s+.+\n+/, '')
+
+  // Extract product cards from content
+  const productCardRegex = /<!--\s*PRODUCT_CARD\s*([\s\S]*?)-->/g
+  const productCards: { placeholder: string; data: ProductCardData }[] = []
+  let cardIndex = 0
+  
+  cleanContent = cleanContent.replace(productCardRegex, (_match, cardContent) => {
+    const lines = cardContent.trim().split('\n')
+    const data: ProductCardData = { title: '', features: [], url: '' }
+    
+    lines.forEach((line: string) => {
+      const [key, ...valueParts] = line.split(':')
+      const value = valueParts.join(':').trim()
+      
+      if (key.trim() === 'badge') data.badge = value
+      if (key.trim() === 'title') data.title = value
+      if (key.trim() === 'features') data.features = value.split('|').map(f => f.trim())
+      if (key.trim() === 'cta') data.cta = value
+      if (key.trim() === 'url') data.url = value
+    })
+    
+    const placeholder = `__PRODUCT_CARD_${cardIndex}__`
+    productCards.push({ placeholder, data })
+    cardIndex++
+    return placeholder
+  })
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -80,9 +115,32 @@ export default function Article() {
               h3: ({ children }) => (
                 <h3 className="text-lg font-semibold text-[#a8dadc] mt-8 mb-3">{children}</h3>
               ),
-              p: ({ children }) => (
-                <p className="text-[#f1faee]/70 mb-6 leading-relaxed">{children}</p>
-              ),
+              p: ({ children }) => {
+                // Check if this paragraph contains a product card placeholder
+                const text = String(children)
+                const cardMatch = text.match(/__PRODUCT_CARD_(\d+)__/)
+                
+                if (cardMatch) {
+                  const cardIndex = parseInt(cardMatch[1])
+                  const card = productCards[cardIndex]
+                  if (card) {
+                    return (
+                      <ProductCard
+                        badge={card.data.badge}
+                        title={card.data.title}
+                        features={card.data.features}
+                        ctaText={card.data.cta}
+                        ctaUrl={card.data.url}
+                        highlight={cardIndex === 0}
+                      />
+                    )
+                  }
+                }
+                
+                return (
+                  <p className="text-[#f1faee]/70 mb-6 leading-relaxed">{children}</p>
+                )
+              },
               a: ({ href, children }) => {
                 // Check if this is an affiliate link (tidd.ly)
                 const isAffiliateLink = href?.includes('tidd.ly')

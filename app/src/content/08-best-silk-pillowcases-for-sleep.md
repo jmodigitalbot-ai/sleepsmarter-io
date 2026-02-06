@@ -85,15 +85,15 @@ After evaluating dozens of options, here are our top recommendations:
 
 ### Our Top Pick: Promeed Luxgen™ Silk Pillowcase
 
-**[Shop Promeed Luxgen™ Silk Pillowcase →](https://tidd.ly/4kl1rqx)**
+<!-- PRODUCT_CARD
+badge: 🏆 Our Top Pick
+title: Promeed Luxgen™ Silk Pillowcase
+features: 23 momme weight (premium density)|100% Grade 6A mulberry silk|OEKO-TEX certified (free from harmful substances)|Hidden zipper closure
+cta: Shop Now — Check Price
+url: https://tidd.ly/4kl1rqx
+-->
 
 Promeed has earned recognition from Good Housekeeping as a "Best Value" pick, and after testing their Luxgen™ pillowcase, we understand why.
-
-**Specifications:**
-- 23 momme weight (premium density)
-- 100% Grade 6A mulberry silk
-- OEKO-TEX certified (free from harmful substances)
-- Hidden zipper closure
 
 **What we love:**
 - Noticeably smoother than lower-momme alternatives
@@ -105,8 +105,6 @@ Promeed has earned recognition from Good Housekeeping as a "Best Value" pick, an
 
 The Luxgen™ line specifically targets skin and hair benefits, with their silk certified to reduce friction by up to 43% compared to cotton.
 
-**[→ Check Price & Availability](https://tidd.ly/4kl1rqx)**
-
 ---
 
 ## Complete Your Silk Sleep Setup
@@ -115,18 +113,27 @@ A silk pillowcase is a great start, but Promeed offers complementary products th
 
 ### For Sensitive Skin: Skinlike™ Silk Quilt
 
-**[Shop Skinlike™ Silk Quilt →](https://tidd.ly/4ryzHRw)**
+<!-- PRODUCT_CARD
+badge: Best for Sensitive Skin
+title: Promeed Skinlike™ Silk Quilt
+features: Naturally hypoallergenic|Superior 10x breathability|Ideal for eczema & sensitive skin|Lightweight yet embracing
+cta: Shop Skinlike™ Quilt
+url: https://tidd.ly/4ryzHRw
+-->
 
 The Skinlike™ quilt extends the hypoallergenic benefits of silk across your entire body. It's naturally allergy-friendly with superior breathability — ideal for those with eczema, sensitive skin, or anyone who wants the gentlest sleep surface possible.
 
 ### For Hot Sleepers: CoolRest™ Cooling Comforter
 
-**[Shop CoolRest™ Cooling Comforter →](https://tidd.ly/3MuWwH3)**
+<!-- PRODUCT_CARD
+badge: Best for Hot Sleepers
+title: Promeed CoolRest™ Cooling Comforter
+features: Designed for temperature regulation|Great for hot flashes & night sweats|Perfect for couples with different preferences|Premium silk quality
+cta: Shop CoolRest™ Comforter
+url: https://tidd.ly/3MuWwH3
+-->
 
-If you tend to overheat at night, the CoolRest™ comforter is designed specifically for temperature regulation. It's popular with:
-- Hot sleepers who kick off blankets at night
-- Those experiencing menopausal hot flashes
-- Couples with different temperature preferences
+If you tend to overheat at night, the CoolRest™ comforter is designed specifically for temperature regulation. It's popular with hot sleepers who kick off blankets at night, those experiencing menopausal hot flashes, and couples with different temperature preferences.
 
 Pairing a silk pillowcase with a cooling comforter creates an optimal sleep microclimate — cool body, smooth skin contact, and uninterrupted rest.
 
