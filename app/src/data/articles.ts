@@ -5,7 +5,8 @@ import whyDoIWakeUpTired from '../content/04-why-do-i-wake-up-tired.md?raw'
 import sleepCalculatorGuide from '../content/05-sleep-calculator-guide.md?raw'
 import sleepRule103210 from '../content/06-10-3-2-1-0-sleep-rule.md?raw'
 import isNappingGoodForYou from '../content/07-is-napping-good-for-you.md?raw'
-import bestSleepScheduleNightShiftWorkers from '../content/08-best-sleep-schedule-for-night-shift-workers.md?raw'
+import bestSilkPillowcases from '../content/08-best-silk-pillowcases-for-sleep.md?raw'
+import bestSleepScheduleNightShiftWorkers from '../content/09-best-sleep-schedule-for-night-shift-workers.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 
@@ -90,6 +91,16 @@ export const articles: Article[] = [
     content: isNappingGoodForYou,
     featuredImage: '/images/featured-napping.png',
     featuredImageAlt: 'Minimalist illustration of crescent moon with clouds representing power naps'
+  },
+  {
+    slug: 'best-silk-pillowcases-for-sleep',
+    title: 'Best Silk Pillowcases for Sleep: Smoother Skin, Better Hair, Deeper Rest',
+    description: 'Discover the best silk pillowcases for sleep quality, skin health, and hair protection. Our 2026 guide covers top picks, benefits, and what to look for.',
+    readTime: '12 min read',
+    date: 'February 2026',
+    content: bestSilkPillowcases,
+    featuredImage: '/images/featured-silk-pillowcases.png',
+    featuredImageAlt: 'Luxurious silk pillowcase on bed with soft morning light'
   },
   {
     slug: 'best-sleep-schedule-for-night-shift-workers',
