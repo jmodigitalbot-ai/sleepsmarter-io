@@ -36,21 +36,21 @@
 |------|---|-------|----------------|--------|--------|
 | Feb 5 | 6 | The 10-3-2-1-0 Sleep Rule Explained | 10-3-2-1-0 sleep rule | Hygiene | ✅ Published |
 | Feb 7 | 7 | Is Napping Good for You? Science of Power Naps | is napping good for you | Science | ✅ Published |
-| Feb 9 | 8 | Best Sleep Schedule for Night Shift Workers | night shift sleep schedule | Audience | 🔲 Draft |
+| Feb 9 | 8 | Best Sleep Schedule for Night Shift Workers | night shift sleep schedule | Audience | ✅ Ready |
 
 ### Week 2: Feb 10-16
 | Date | # | Title | Target Keyword | Pillar | Status |
 |------|---|-------|----------------|--------|--------|
-| Feb 11 | 9 | How to Fix Your Sleep Schedule in 3 Days | fix sleep schedule | Hygiene | 🔲 Draft |
-| Feb 13 | 10 | Sleep Tips for New Parents: Surviving the First Year | sleep tips for new parents | Audience | 🔲 Draft |
-| Feb 15 | 11 | Best White Noise Machines for Sleep (2026 Guide) | best white noise machine for sleep | Product | 🔲 Draft |
+| Feb 11 | 9 | How to Fix Your Sleep Schedule in 3 Days | fix sleep schedule | Hygiene | ✅ Ready |
+| Feb 13 | 10 | Sleep Tips for New Parents: Surviving the First Year | sleep tips for new parents | Audience | ✅ Ready |
+| Feb 15 | 11 | Best White Noise Machines for Sleep (2026 Guide) | best white noise machine for sleep | Product | ✅ Ready |
 
 ### Week 3: Feb 17-23
 | Date | # | Title | Target Keyword | Pillar | Status |
 |------|---|-------|----------------|--------|--------|
-| Feb 18 | 12 | College Student Sleep Guide: Balancing School & Rest | college student sleep tips | Audience | 🔲 Draft |
-| Feb 20 | 13 | What Is Sleep Debt? Can You Catch Up on Sleep? | what is sleep debt | Science | 🔲 Draft |
-| Feb 22 | 14 | Best Mattresses for Back Pain (2026 Reviews) | best mattress for back pain | Product | 🔲 Draft |
+| Feb 18 | 12 | College Student Sleep Guide: Balancing School & Rest | college student sleep tips | Audience | ✅ Ready |
+| Feb 20 | 13 | What Is Sleep Debt? Can You Catch Up on Sleep? | what is sleep debt | Science | ✅ Ready |
+| Feb 22 | 14 | Best Mattresses for Back Pain (2026 Reviews) | best mattress for back pain | Product | ✅ Ready |
 
 ### Week 4: Feb 24-28
 | Date | # | Title | Target Keyword | Pillar | Status |
@@ -119,6 +119,7 @@
 - [ ] Meta description under 160 chars
 - [ ] Affiliate disclosures where needed
 - [ ] Featured image (1200x630px for social sharing)
+- [ ] Featured image displays in blog list AND article hero
 - [ ] 1-2 infographics for complex concepts
 - [ ] All images have descriptive alt text
 - [ ] Images optimized for web (compressed, WebP format)

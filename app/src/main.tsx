@@ -9,10 +9,12 @@ import Terms from './pages/Terms.tsx'
 import Disclosure from './pages/Disclosure.tsx'
 import Blog from './pages/Blog.tsx'
 import Article from './pages/Article.tsx'
+import ScrollToTop from './components/ScrollToTop.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />

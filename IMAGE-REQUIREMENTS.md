@@ -82,14 +82,24 @@
 
 | Article | Featured | Infographic 1 | Infographic 2 | Status |
 |---------|----------|---------------|---------------|--------|
-| Sleep Cycles | 🔲 | 🔲 | 🔲 | Pending |
-| Best Wake Time | 🔲 | 🔲 | 🔲 | Pending |
-| How Much Sleep | 🔲 | 🔲 | 🔲 | Pending |
-| Wake Up Tired | 🔲 | 🔲 | 🔲 | Pending |
-| Calculator Guide | 🔲 | 🔲 | 🔲 | Pending |
-| 10-3-2-1-0 Rule | 🔲 | 🔲 | 🔲 | Pending |
-| Napping | 🔲 | 🔲 | 🔲 | Pending |
+| Sleep Cycles | ✅ | 🔲 | 🔲 | Featured done |
+| Best Wake Time | ✅ | 🔲 | 🔲 | Featured done |
+| How Much Sleep | ✅ | 🔲 | 🔲 | Featured done |
+| Wake Up Tired | ✅ | 🔲 | 🔲 | Featured done |
+| Calculator Guide | ✅ | 🔲 | 🔲 | Featured done |
+| 10-3-2-1-0 Rule | ✅ | 🔲 | 🔲 | Featured done |
+| Napping | ✅ | 🔲 | 🔲 | Featured done |
+
+### Featured Images Completed (Feb 5, 2026)
+All 7 featured images generated via DALL-E 3 HD quality:
+- `featured-sleep-cycles.png` - Abstract flowing waves
+- `featured-wake-up-time.png` - Sunrise with alarm clock
+- `featured-how-much-sleep.png` - Life stages orbs
+- `featured-wake-up-tired.png` - Depleted battery
+- `featured-sleep-calculator.png` - Circular dial with moon phases
+- `featured-10-3-2-1-0-rule.png` - Countdown numbers
+- `featured-napping.png` - Crescent moon with clouds
 
 ---
 
-*Last updated: Feb 4, 2026*
+*Last updated: Feb 5, 2026*
