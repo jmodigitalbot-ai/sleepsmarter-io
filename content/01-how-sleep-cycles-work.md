@@ -304,7 +304,7 @@ Ready to put this knowledge into action? **[Try our free sleep calculator](/calc
 
 ---
 
-**Internal Link Suggestions:**
+## Keep Reading
 - [Best Time to Wake Up](/blog/best-time-to-wake-up) - Learn more about morning optimization
 - [How Much Sleep Do I Need](/blog/how-much-sleep-do-i-need) - Find your personal sleep requirements
 - [Why Do I Wake Up Tired](/blog/why-do-i-wake-up-tired) - Troubleshoot morning fatigue

@@ -453,7 +453,7 @@ Ready to optimize your sleep duration? **[Use our free sleep calculator](/calcul
 
 ---
 
-**Internal Link Suggestions:**
+## Keep Reading
 - [How Sleep Cycles Work](/blog/how-sleep-cycles-work) - Understand why cycles matter for your duration
 - [Best Time to Wake Up](/blog/best-time-to-wake-up) - Optimize your morning start time
 - [Why Do I Wake Up Tired](/blog/why-do-i-wake-up-tired) - Troubleshoot fatigue despite sleeping enough

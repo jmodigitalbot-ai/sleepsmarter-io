@@ -486,7 +486,7 @@ Stop gambling with your mornings. **[Use our free sleep calculator](/calculator)
 
 ---
 
-**Internal Link Suggestions:**
+## Keep Reading
 - [How Sleep Cycles Work](/blog/how-sleep-cycles-work) - Deep dive into the science behind calculations
 - [Best Time to Wake Up](/blog/best-time-to-wake-up) - Optimize your morning start time
 - [How Much Sleep Do I Need](/blog/how-much-sleep-do-i-need) - Determine your ideal cycle count
