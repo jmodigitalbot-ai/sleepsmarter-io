@@ -235,31 +235,7 @@ export default function Article() {
           </Link>
         </div>
 
-        {/* Related Articles */}
         <div className="mt-12 pt-8 border-t border-[#4a4e69]/30">
-          <h3 className="text-lg font-semibold text-[#f1faee] mb-4">
-            Related Articles
-          </h3>
-          <div className="grid gap-4">
-            {articles
-              .filter(a => a.slug !== slug)
-              .slice(0, 3)
-              .map(a => (
-                <Link
-                  key={a.slug}
-                  to={`/blog/${a.slug}`}
-                  className="block bg-[#16213e] rounded-lg p-4 hover:bg-[#1f2b47] transition"
-                >
-                  <h4 className="font-medium text-[#f1faee] hover:text-[#a8dadc]">
-                    {a.title}
-                  </h4>
-                  <p className="text-sm text-[#f1faee]/50 mt-1">{a.readTime}</p>
-                </Link>
-              ))}
-          </div>
-        </div>
-
-        <div className="mt-8">
           <Link to="/blog" className="text-[#a8dadc] hover:underline">← Back to Blog</Link>
         </div>
       </div>
