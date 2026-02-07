@@ -6,6 +6,8 @@ import sleepCalculatorGuide from '../content/05-sleep-calculator-guide.md?raw'
 import sleepRule103210 from '../content/06-10-3-2-1-0-sleep-rule.md?raw'
 import isNappingGoodForYou from '../content/07-is-napping-good-for-you.md?raw'
 import bestSilkPillowcases from '../content/08-best-silk-pillowcases-for-sleep.md?raw'
+import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
+import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 
 export interface Article {
   slug: string
@@ -98,5 +100,25 @@ export const articles: Article[] = [
     content: bestSilkPillowcases,
     featuredImage: '/images/featured-silk-pillowcases.png',
     featuredImageAlt: 'Luxurious silk pillowcase on bed with soft morning light'
+  },
+  {
+    slug: 'sleep-and-productivity',
+    title: 'Sleep and Productivity: Why Rest Makes You More Effective',
+    description: 'Discover how sleep impacts your work performance and learn how getting the right amount of rest can dramatically boost your professional success.',
+    readTime: '18 min read',
+    date: 'February 2026',
+    content: sleepAndProductivity,
+    featuredImage: '/images/featured-sleep-productivity.jpg',
+    featuredImageAlt: 'Professional illustration showing a brain with productivity symbols and sleep waves'
+  },
+  {
+    slug: 'daylight-saving-time-sleep-tips',
+    title: 'Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity',
+    description: 'Navigate the challenges of daylight saving time with expert strategies to minimize sleep disruption and maintain peak performance during the transition.',
+    readTime: '20 min read',
+    date: 'February 2026',
+    content: daylightSavingTimeSleepTips,
+    featuredImage: '/images/featured-daylight-saving-time.jpg',
+    featuredImageAlt: 'Illustration showing a clock transitioning between day and night with minimal disruption'
   }
 ]
