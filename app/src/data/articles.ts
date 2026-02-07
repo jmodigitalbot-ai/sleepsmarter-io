@@ -5,7 +5,7 @@ import whyDoIWakeUpTired from '../content/04-why-do-i-wake-up-tired.md?raw'
 import sleepCalculatorGuide from '../content/05-sleep-calculator-guide.md?raw'
 import sleepRule103210 from '../content/06-10-3-2-1-0-sleep-rule.md?raw'
 import isNappingGoodForYou from '../content/07-is-napping-good-for-you.md?raw'
-import bestSilkPillowcases from '../content/08-best-silk-pillowcases-for-sleep.md?raw'
+import bestSleepScheduleNightShiftWorkers from '../content/08-best-sleep-schedule-for-night-shift-workers.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 
@@ -92,14 +92,14 @@ export const articles: Article[] = [
     featuredImageAlt: 'Minimalist illustration of crescent moon with clouds representing power naps'
   },
   {
-    slug: 'best-silk-pillowcases-for-sleep',
-    title: 'Best Silk Pillowcases for Sleep: Smoother Skin, Better Hair, Deeper Rest',
-    description: 'Discover the best silk pillowcases for sleep quality, skin health, and hair protection. Our 2026 guide covers top picks, benefits, and what to look for.',
-    readTime: '12 min read',
+    slug: 'best-sleep-schedule-for-night-shift-workers',
+    title: 'Best Sleep Schedule for Night Shift Workers: The 2026 Survival Guide',
+    description: 'Discover science-backed sleep schedules for night shift workers. Learn how to manage 12-hour shifts, rotating schedules, and protect your health while working non-traditional hours.',
+    readTime: '25 min read',
     date: 'February 2026',
-    content: bestSilkPillowcases,
-    featuredImage: '/images/featured-silk-pillowcases.png',
-    featuredImageAlt: 'Luxurious silk pillowcase on bed with soft morning light'
+    content: bestSleepScheduleNightShiftWorkers,
+    featuredImage: '/images/blog-featured/featured-night-shift-sleep.png', // Will be updated when image is generated
+    featuredImageAlt: 'Stylized illustration showing a clock with day and night sides, representing night shift worker sleep challenges'
   },
   {
     slug: 'sleep-and-productivity',
