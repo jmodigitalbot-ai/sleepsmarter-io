@@ -119,7 +119,7 @@ export const articles: Article[] = [
     readTime: '18 min read',
     date: 'February 2026',
     content: sleepAndProductivity,
-    featuredImage: '/images/featured-sleep-productivity.jpg',
+    featuredImage: '/images/featured-sleep-productivity.png',
     featuredImageAlt: 'Professional illustration showing a brain with productivity symbols and sleep waves'
   },
   {
@@ -129,7 +129,7 @@ export const articles: Article[] = [
     readTime: '20 min read',
     date: 'February 2026',
     content: daylightSavingTimeSleepTips,
-    featuredImage: '/images/featured-daylight-saving-time.jpg',
+    featuredImage: '/images/featured-daylight-saving-time.png',
     featuredImageAlt: 'Illustration showing a clock transitioning between day and night with minimal disruption'
   }
 ]
