@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import EmailCapture from './EmailCapture'
 
 type Mode = 'wakeup' | 'bedtime'
 
@@ -160,6 +161,9 @@ export default function SleepCalculator() {
             💡 Tip: Choose green (optimal) or blue (good) for the best results. 
             Yellow (minimum) should only be used occasionally.
           </p>
+
+          {/* Email Capture */}
+          <EmailCapture />
         </div>
       )}
     </div>
