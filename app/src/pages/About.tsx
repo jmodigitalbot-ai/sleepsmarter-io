@@ -47,6 +47,14 @@ export default function About() {
             If you consistently have trouble sleeping or feel tired despite getting enough 
             sleep, please consult a healthcare professional.
           </p>
+          
+          <h2 className="text-xl font-semibold text-[#a8dadc] mt-8 mb-4">Contact Us</h2>
+          <p className="text-[#f1faee]/70 mb-4">
+            Have questions or feedback? We'd love to hear from you!
+          </p>
+          <p className="text-[#f1faee]/70">
+            Email us at: <a href="mailto:hello@sleepsmarter.io" className="text-[#a8dadc] hover:underline">hello@sleepsmarter.io</a>
+          </p>
         </div>
         
         <div className="mt-12 pt-8 border-t border-[#4a4e69]/30">

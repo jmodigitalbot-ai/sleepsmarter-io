@@ -11,11 +11,13 @@ import Blog from './pages/Blog.tsx'
 import Article from './pages/Article.tsx'
 import Calculator from './pages/Calculator.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
+import CookieBanner from './components/CookieBanner.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <ScrollToTop />
+      <CookieBanner />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
