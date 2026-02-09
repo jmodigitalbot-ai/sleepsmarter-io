@@ -175,3 +175,10 @@ Start with these steps this week:
 Remember: every hour invested in better sleep pays dividends across every working hour that follows. In the productivity equation, sleep isn't the enemy of getting things done—it's the foundation that makes quality work possible.
 
 The question isn't whether you can afford to prioritize sleep. Given what we know about cognitive performance, the question is whether you can afford not to.
+---
+
+## Keep Reading
+
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work) — Understand the biological foundations of restorative sleep
+- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule) — A simple framework for better sleep hygiene
+- [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired) — Troubleshoot what's sabotaging your rest

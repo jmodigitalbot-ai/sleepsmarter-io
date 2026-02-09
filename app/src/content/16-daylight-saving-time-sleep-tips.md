@@ -249,3 +249,10 @@ If adjustment symptoms persist beyond 2 weeks, or if you experience significant 
 Remember: the transition is temporary. Your body is designed to adapt—it just needs proper support and a few days to do so. By preparing in advance and using these evidence-based strategies, you can minimize disruption and maintain your productivity through the time change.
 
 Use our [sleep calculator](/calculator) to determine optimal sleep and wake times during your transition, and track your adjustment over the week following DST.
+---
+
+## Keep Reading
+
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work) — Understand the science behind your internal clock
+- [Best Sleep Schedule for Night Shift Workers](/blog/best-sleep-schedule-for-night-shift-workers) — Strategies for managing disrupted schedules
+- [Is Napping Good for You? Science of Power Naps](/blog/is-napping-good-for-you) — When short naps help and when they hurt

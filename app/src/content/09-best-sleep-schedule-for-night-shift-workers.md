@@ -1,9 +1,3 @@
-# Best Sleep Schedule for Night Shift Workers: The 2026 Survival Guide for Healthier Days and Restful Nights
-
-**Meta Description:** Discover science-backed sleep schedules for night shift workers. Learn how to manage 12-hour shifts, rotating schedules, and protect your health while working non-traditional hours. Get practical tips for better sleep today.
-
----
-
 If you're one of the 15-30% of American workers who regularly work night shifts, you know the struggle is real. That groggy feeling when your alarm goes off at 3 PM, the battle to stay alert at 4 AM, and the constant fight against your own biology. Night shift work isn't just a job schedule—it's a biological challenge that affects your sleep, health, and quality of life.
 
 But here's the good news: with the right sleep schedule and strategies, you can thrive as a night shift worker. This comprehensive guide will walk you through science-backed approaches to creating the perfect sleep schedule for your specific shift pattern, whether you work permanent nights, 12-hour shifts, or rotating schedules.
@@ -334,11 +328,12 @@ Your health and well-being are worth the effort. With each small improvement to 
 
 ---
 
-**Sleep Calculator Recommendation:** Use our [Sleep Calculator](/sleep-calculator-guide) to determine your ideal sleep duration based on your specific shift pattern and wake-up times.
+**Ready to optimize your sleep timing?** Use our [Sleep Calculator](/) to find the perfect bedtime based on your shift schedule.
 
-**Related Reading:** 
-- [How Sleep Cycles Work](/how-sleep-cycles-work) - Understand the science behind your sleep
-- [Why Do I Wake Up Tired?](/why-do-i-wake-up-tired) - Common causes and fixes for morning fatigue
-- [The 10-3-2-1-0 Sleep Rule Explained](/10-3-2-1-0-sleep-rule) - A simple framework for better sleep hygiene
+---
 
-*Disclaimer: This article provides educational information only and is not medical advice. Always consult healthcare professionals for personalized medical guidance, especially if you have existing health conditions or are considering supplements or medications.*
+## Keep Reading
+
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work) — Understand the science behind your sleep
+- [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired) — Troubleshoot what's dragging you down
+- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule) — A simple framework for better sleep hygiene
