@@ -39,7 +39,7 @@
 |------|---|-------|----------------|--------|--------|
 | Feb 5 | 6 | The 10-3-2-1-0 Sleep Rule Explained | 10-3-2-1-0 sleep rule | Hygiene | ✅ Published |
 | Feb 7 | 7 | Is Napping Good for You? Science of Power Naps | is napping good for you | Science | ✅ Published |
-| Feb 9 | 8 | Best Sleep Schedule for Night Shift Workers | night shift sleep schedule | Audience | 🔲 Ready (needs featured image) |
+| Feb 9 | 8 | Best Sleep Schedule for Night Shift Workers | night shift sleep schedule | Audience | ✅ Published |
 
 ### Week 2: Feb 10-16
 | Date | # | Title | Target Keyword | Pillar | Status |
