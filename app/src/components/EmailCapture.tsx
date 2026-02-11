@@ -19,6 +19,7 @@ interface EmailCaptureProps {
 }
 
 export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
+  const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -33,7 +34,8 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
 
     // Prepare payload with calculator data if available
     const payload: any = {
-      email_address: email
+      email_address: email,
+      first_name: firstName
     }
 
     if (calculatorData) {
@@ -59,6 +61,7 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
 
       if (response.ok) {
         setStatus('success')
+        setFirstName('')
         setEmail('')
         
         // In a production environment, you might want to:
@@ -102,15 +105,25 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email"
-          required
-          className="flex-1 bg-[#16213e] border border-[#4a4e69] rounded-lg px-4 py-3 text-[#f1faee] placeholder-[#f1faee]/40 focus:outline-none focus:border-[#a8dadc] transition text-sm"
-        />
+      <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+        <div className="flex flex-col sm:flex-row gap-3">
+          <input
+            type="text"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            placeholder="First name"
+            required
+            className="sm:w-1/3 bg-[#16213e] border border-[#4a4e69] rounded-lg px-4 py-3 text-[#f1faee] placeholder-[#f1faee]/40 focus:outline-none focus:border-[#a8dadc] transition text-sm"
+          />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            required
+            className="flex-1 bg-[#16213e] border border-[#4a4e69] rounded-lg px-4 py-3 text-[#f1faee] placeholder-[#f1faee]/40 focus:outline-none focus:border-[#a8dadc] transition text-sm"
+          />
+        </div>
         <button
           type="submit"
           disabled={status === 'loading'}
