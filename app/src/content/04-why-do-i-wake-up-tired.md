@@ -76,16 +76,16 @@ Your bedroom might be sabotaging your sleep:
 - Any light reduces melatonin production
 - LED standby lights disrupt sleep
 - Early morning light causes premature waking
-- Solution: Blackout curtains, cover all lights
+- Solution: [NICETOWN blackout curtains](https://www.amazon.com/dp/B01F9G2MC4?tag=19830c0a-20), cover all lights
 
 **Noise:**
 - Even sounds that don't wake you disrupt sleep stages
 - Traffic, neighbors, pets all affect quality
-- Consider white noise or earplugs
+- Consider a [white noise machine](https://www.amazon.com/dp/B00MY8V86Q?tag=19830c0a-20) or earplugs
 
 **Comfort:**
 - Old mattresses (8+ years) need replacing
-- Wrong pillow causes discomfort
+- Wrong pillow causes discomfort—consider a [cooling pillow](https://www.amazon.com/dp/B00EINBSEW?tag=19830c0a-20) for better temperature regulation
 - Partner disturbances (movement, snoring)
 
 ---

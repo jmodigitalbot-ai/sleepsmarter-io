@@ -126,17 +126,17 @@ Sarah
 ## EMAIL 26 (Day 26)
 
 **Subject:** Your monthly sleep optimization plan
-**Preview:** Here's what January looks like
+**Preview:** Here's a sample of what members get
 
 ---
 
 {{first_name}},
 
-To give you a taste of what Insider members get, here's a preview of this month's optimization focus:
+To give you a taste of what Insider members get, here's a sample optimization focus:
 
-**February Focus: Light Exposure Optimization**
+**Sample Focus: Light Exposure Optimization**
 
-As we move through winter, most people are getting dramatically less natural light than their circadian rhythm needs. This is a hidden cause of:
+Most people get dramatically less natural light than their circadian rhythm needs — especially during shorter days or if you work indoors. This is a hidden cause of:
 - Difficulty waking up in the morning
 - Low energy throughout the day
 - Earlier onset of sleepiness (but not better sleep)

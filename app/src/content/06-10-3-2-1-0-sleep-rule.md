@@ -83,7 +83,7 @@ That 2 PM latte? It's still affecting your sleep at midnight.
 **How to apply it:**
 - Set a phone curfew 1 hour before bed
 - Use this hour for screen-free activities: reading (physical books), journaling, meditation, light stretching
-- If you must use screens, enable night mode and blue light filters
+- If you must use screens, enable night mode and consider [blue light blocking glasses](https://www.amazon.com/dp/B082DG63XJ?tag=19830c0a-20)
 - Keep your phone outside the bedroom (use a regular alarm clock)
 
 **Screen-free alternatives for the last hour:**
@@ -92,7 +92,7 @@ That 2 PM latte? It's still affecting your sleep at midnight.
 - Take a warm bath or shower
 - Meditate or practice deep breathing
 - Journal about your day
-- Listen to calming music or a podcast (eyes closed)
+- Listen to calming music or a podcast (with a [comfortable sleep mask](https://www.amazon.com/dp/B07KC5DWCC?tag=19830c0a-20) to block out light)
 
 ## 0: The Number of Times You Hit Snooze
 

@@ -170,8 +170,8 @@ Light exposure is the most powerful tool you have for managing your circadian rh
 - **Timing**: Wear from the second half of your shift through your commute
 
 ### In Your Bedroom
-- **Blackout curtains**: Complete darkness is non-negotiable
-- **Consider**: Sleep masks as backup
+- **Blackout curtains**: Complete darkness is non-negotiable—invest in [NICETOWN blackout curtains](https://www.amazon.com/dp/B01F9G2MC4?tag=19830c0a-20) for complete light blocking
+- **Consider**: [Sleep masks](https://www.amazon.com/dp/B07KC5DWCC?tag=19830c0a-20) as backup
 - **Emergency fix**: Aluminum foil taped to windows (temporary but effective)
 
 ### Strategic Light Exposure on Days Off
@@ -190,7 +190,7 @@ Daytime sleep requires extra attention to environmental factors. Here's your che
 - **Consider**: Cooling mattress pads or moisture-wicking sheets
 
 ### Sound Management
-- **White noise machines**: Masks daytime sounds (lawnmowers, traffic, etc.)
+- **White noise machines**: [LectroFan white noise machine](https://www.amazon.com/dp/B00MY8V86Q?tag=19830c0a-20) masks daytime sounds (lawnmowers, traffic, etc.)
 - **Earplugs**: High-quality silicone or wax options
 - **Smart solution**: Noise-canceling sleep headphones
 
@@ -232,7 +232,7 @@ What and when you eat significantly impacts your sleep quality and alertness dur
 
 ### Supplement Considerations
 - **Melatonin**: 0.5-3 mg 30 minutes before desired sleep time
-- **Magnesium**: Can promote relaxation
+- **Magnesium**: [Magnesium glycinate](https://www.amazon.com/dp/B000BD0RT0?tag=19830c0a-20) can promote relaxation
 - **Vitamin D**: Many night workers are deficient
 - **Always consult**: A healthcare provider before starting supplements
 

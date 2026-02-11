@@ -114,8 +114,8 @@ This aligns with your natural circadian dip. Napping during this window:
 **Location matters:** You don't need a bed. A quiet room, your car (parked!), or even your desk can work. The key is reducing stimulation.
 
 **Optimize your setup:**
-- **Darkness:** Use a sleep mask or find a dark room. Light inhibits melatonin.
-- **Quiet:** Earplugs or white noise help block distractions.
+- **Darkness:** Use a [comfortable sleep mask](https://www.amazon.com/dp/B07KC5DWCC?tag=19830c0a-20) or find a dark room. Light inhibits melatonin.
+- **Quiet:** Earplugs or a [white noise machine](https://www.amazon.com/dp/B00MY8V86Q?tag=19830c0a-20) help block distractions.
 - **Comfortable position:** You don't need to lie flat, but support your head so you're not straining.
 - **Slightly cool:** Your body temperature drops during sleep. A slightly cool environment helps.
 
