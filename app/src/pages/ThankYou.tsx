@@ -141,7 +141,7 @@ export default function ThankYou() {
                 </div>
 
                 <a
-                  href="#samcart-checkout"
+                  href="https://cart.sleepsmarter.io/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week"
                   className="block w-full bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-4 px-6 rounded-xl transition text-lg shadow-lg hover:shadow-xl mb-4"
                 >
                   Get the 7-Day Protocol — Just $17

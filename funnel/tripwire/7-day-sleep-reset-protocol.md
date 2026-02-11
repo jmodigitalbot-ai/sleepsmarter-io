@@ -1704,4 +1704,3 @@ Sleep well. You've earned it.
 
 These guides provide additional support and detailed implementation help for everything covered in your 7-day journey.
 
-**Total word count: Approximately 21,500 words**
