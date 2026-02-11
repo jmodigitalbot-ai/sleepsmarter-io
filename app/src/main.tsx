@@ -10,6 +10,7 @@ import Disclosure from './pages/Disclosure.tsx'
 import Blog from './pages/Blog.tsx'
 import Article from './pages/Article.tsx'
 import Calculator from './pages/Calculator.tsx'
+import ThankYou from './pages/ThankYou.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
 import CookieBanner from './components/CookieBanner.tsx'
 
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<Article />} />
         <Route path="/calculator" element={<Calculator />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

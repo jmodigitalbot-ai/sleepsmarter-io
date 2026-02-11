@@ -75,28 +75,9 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
   }
 
   if (status === 'success') {
-    return (
-      <div className="mt-6 bg-green-500/10 border border-green-500/30 rounded-xl p-6 text-center">
-        <span className="text-3xl mb-3 block">📋</span>
-        <h3 className="text-lg font-semibold text-green-400 mb-2">
-          Your Blueprint is ready!
-        </h3>
-        <p className="text-[#f1faee]/70 text-sm mb-3">
-          Download your Personalized Sleep Blueprint below. We've also sent it to your email.
-        </p>
-        <a
-          href="/sleep-blueprint.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#a8dadc] hover:bg-[#8bc9cc] text-[#1a1a2e] font-semibold px-6 py-3 rounded-lg transition text-sm mt-2"
-        >
-          Download Your Sleep Blueprint →
-        </a>
-        <div className="mt-4 text-xs text-[#f1faee]/50">
-          <p>Also check your inbox — we'll be sending you sleep tips over the next 30 days.</p>
-        </div>
-      </div>
-    )
+    // Redirect to thank you page
+    window.location.href = '/thank-you'
+    return null
   }
 
   return (
