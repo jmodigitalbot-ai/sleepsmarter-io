@@ -1,7 +1,7 @@
 # SleepSmarter.io Content Calendar
 
 **Strategy:** 2-3 posts per week → 50+ posts for organic traffic compounding
-**Current:** 8 articles | **Target:** 17+ articles by end of February
+**Current:** 9 articles | **Target:** 17+ articles by end of February
 
 ---
 
@@ -17,7 +17,7 @@
 
 ---
 
-## ✅ Published (8 articles)
+## ✅ Published (9 articles)
 
 | # | Title | Slug | Pillar |
 |---|-------|------|--------|
@@ -28,7 +28,8 @@
 | 5 | Sleep Calculator: How to Use It for Better Rest | sleep-calculator-guide | Science |
 | 6 | The 10-3-2-1-0 Sleep Rule Explained | 10-3-2-1-0-sleep-rule | Hygiene |
 | 7 | Is Napping Good for You? Science of Power Naps | is-napping-good-for-you | Science |
-| 8 | Best Sleep Schedule for Night Shift Workers | best-sleep-schedule-for-night-shift-workers | Audience | 
+| 8 | Best Sleep Schedule for Night Shift Workers | best-sleep-schedule-for-night-shift-workers | Audience |
+| 9 | How to Fix Your Sleep Schedule in 3 Days | fix-sleep-schedule | Hygiene |
 
 ---
 
@@ -44,7 +45,7 @@
 ### Week 2: Feb 10-16
 | Date | # | Title | Target Keyword | Pillar | Status |
 |------|---|-------|----------------|--------|--------|
-| Feb 11 | 9 | How to Fix Your Sleep Schedule in 3 Days | fix sleep schedule | Hygiene | ✅ Ready |
+| Feb 11 | 9 | How to Fix Your Sleep Schedule in 3 Days | fix sleep schedule | Hygiene | ✅ Published |
 | Feb 13 | 10 | Sleep Tips for New Parents: Surviving the First Year | sleep tips for new parents | Audience | ✅ Ready |
 | Feb 15 | 11 | Best White Noise Machines for Sleep (2026 Guide) | best white noise machine for sleep | Product | ✅ Ready |
 

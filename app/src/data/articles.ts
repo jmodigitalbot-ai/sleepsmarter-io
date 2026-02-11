@@ -7,6 +7,7 @@ import sleepRule103210 from '../content/06-10-3-2-1-0-sleep-rule.md?raw'
 import isNappingGoodForYou from '../content/07-is-napping-good-for-you.md?raw'
 import bestSilkPillowcases from '../content/08-best-silk-pillowcases-for-sleep.md?raw'
 import bestSleepScheduleNightShiftWorkers from '../content/09-best-sleep-schedule-for-night-shift-workers.md?raw'
+import howToFixSleepSchedule from '../content/how-to-fix-your-sleep-schedule-in-3-days.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 
@@ -111,6 +112,16 @@ export const articles: Article[] = [
     content: bestSleepScheduleNightShiftWorkers,
     featuredImage: '/images/blog-featured/featured-night-shift-sleep.png', // Will be updated when image is generated
     featuredImageAlt: 'Stylized illustration showing a clock with day and night sides, representing night shift worker sleep challenges'
+  },
+  {
+    slug: 'fix-sleep-schedule',
+    title: 'How to Fix Your Sleep Schedule in 3 Days: A Step-by-Step Guide',
+    description: 'Reset your sleep schedule in 3 days with our science-backed, actionable guide. Learn how to control light exposure, adjust nutrition, and create consistent sleep routines.',
+    readTime: '20 min read',
+    date: 'February 2026',
+    content: howToFixSleepSchedule,
+    featuredImage: '/images/featured-sleep-schedule-fix.png',
+    featuredImageAlt: 'Minimalist illustration of a clock transitioning to a consistent sleep pattern'
   },
   {
     slug: 'sleep-and-productivity',

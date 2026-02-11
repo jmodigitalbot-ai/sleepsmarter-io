@@ -163,7 +163,13 @@ export default function SleepCalculator() {
           </p>
 
           {/* Email Capture */}
-          <EmailCapture />
+          <EmailCapture 
+            calculatorData={{
+              mode,
+              targetTime: time,
+              results
+            }} 
+          />
         </div>
       )}
     </div>
