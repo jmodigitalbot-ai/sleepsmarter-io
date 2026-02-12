@@ -18,17 +18,9 @@ export default function SleepReset() {
       <main className="max-w-4xl mx-auto px-4 py-12">
 
         {/* ============================================ */}
-        {/* SECTION 1: HERO IMAGE + HEADLINE */}
+        {/* SECTION 1: HEADLINE & SUBHEADLINE */}
         {/* ============================================ */}
-        <div className="mb-16">
-          <div className="rounded-2xl overflow-hidden mb-10">
-            <img 
-              src="/images/sales-page/hero-lifestyle.png" 
-              alt="Person waking up refreshed and stretching in morning light" 
-              className="w-full h-64 md:h-96 object-cover"
-            />
-          </div>
-          <div className="text-center">
+        <div className="text-center mb-16">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#f1faee] mb-6 leading-tight">
               Why You're <span className="text-[#a8dadc]">Still</span> Exhausted (And The 7-Day Fix That Actually Works)
             </h1>
@@ -41,7 +33,6 @@ export default function SleepReset() {
             >
               Reset My Sleep in 7 Days — $17
             </a>
-          </div>
         </div>
 
         {/* ============================================ */}
@@ -122,14 +113,6 @@ export default function SleepReset() {
             </p>
           </div>
 
-          {/* Sequential Reset Diagram */}
-          <div className="mt-10">
-            <img 
-              src="/images/sales-page/sequential-reset-diagram.png" 
-              alt="The 7-Day Sequential Reset Protocol — Day 1 through Day 7 cascading flow" 
-              className="w-full rounded-xl"
-            />
-          </div>
         </div>
 
         {/* ============================================ */}
