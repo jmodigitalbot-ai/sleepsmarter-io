@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { trackEmailSignup } from '../lib/analytics'
 
 const KIT_FORM_ID = '9066532'
 const KIT_FORM_URL = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`
@@ -64,10 +65,16 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
         setFirstName('')
         setEmail('')
         
-        // In a production environment, you might want to:
-        // 1. Track the submission in analytics
-        // 2. Show a more detailed success message
-        // 3. Trigger any client-side follow-up actions
+        // Track email signup event
+        trackEmailSignup(
+          email,
+          calculatorData ? 'calculator' : 'general',
+          {
+            calculator_mode: calculatorData?.mode,
+            target_time: calculatorData?.targetTime,
+            results_count: calculatorData?.results.length
+          }
+        )
       } else {
         throw new Error('Subscription failed')
       }

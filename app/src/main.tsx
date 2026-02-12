@@ -14,6 +14,10 @@ import ThankYou from './pages/ThankYou.tsx'
 import SleepReset from './pages/SleepReset.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
 import CookieBanner from './components/CookieBanner.tsx'
+import { initGA4 } from './lib/analytics'
+
+// Initialize analytics
+initGA4()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -1,7 +1,22 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
 
 export default function SleepReset() {
   const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
+
+  // Track sales page view when component mounts
+  useEffect(() => {
+    trackSalesPageView('/sleep-reset', {
+      page_title: 'Sleep Reset - 7-Day Protocol'
+    })
+  }, [])
+
+  // Handler for checkout button clicks
+  const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
+    trackCheckoutClick(buttonText, buttonLocation)
+    // The link will navigate naturally after tracking
+  }
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -29,6 +44,7 @@ export default function SleepReset() {
             </p>
             <a
               href={checkoutUrl}
+              onClick={() => handleCheckoutClick('Reset My Sleep in 7 Days — $17', 'hero')}
               className="inline-block bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-4 px-8 rounded-xl transition text-xl shadow-lg hover:shadow-xl"
             >
               Reset My Sleep in 7 Days — $17
@@ -245,6 +261,7 @@ export default function SleepReset() {
           <div className="text-center">
             <a
               href={checkoutUrl}
+              onClick={() => handleCheckoutClick('Start Tonight — Get The Complete Protocol', 'method_section')}
               className="inline-block bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-4 px-8 rounded-xl transition text-xl shadow-lg hover:shadow-xl"
             >
               Start Tonight — Get The Complete Protocol
@@ -359,6 +376,7 @@ export default function SleepReset() {
           <div className="text-center">
             <a
               href={checkoutUrl}
+              onClick={() => handleCheckoutClick('Get Everything For Just $17', 'value_stack')}
               className="inline-block w-full sm:w-auto bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-5 px-12 rounded-xl transition text-2xl shadow-lg hover:shadow-xl mb-4"
             >
               Get Everything For Just $17
@@ -447,6 +465,7 @@ export default function SleepReset() {
             </p>
             <a
               href={checkoutUrl}
+              onClick={() => handleCheckoutClick('Transform My Sleep Tonight — $17', 'final_cta')}
               className="inline-block w-full sm:w-auto bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-5 px-12 rounded-xl transition text-2xl shadow-lg hover:shadow-xl mb-4"
             >
               Transform My Sleep Tonight — $17

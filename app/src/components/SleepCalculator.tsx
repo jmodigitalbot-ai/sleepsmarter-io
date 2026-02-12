@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import EmailCapture from './EmailCapture'
+import { trackCalculatorUsed } from '../lib/analytics'
 
 type Mode = 'wakeup' | 'bedtime'
 
@@ -64,6 +65,9 @@ export default function SleepCalculator() {
     }
 
     setResults(newResults)
+    
+    // Track calculator usage
+    trackCalculatorUsed(mode, time, newResults.length)
   }
 
   const getQualityColor = (quality: string) => {
