@@ -8,6 +8,7 @@ import isNappingGoodForYou from '../content/07-is-napping-good-for-you.md?raw'
 import bestSilkPillowcases from '../content/08-best-silk-pillowcases-for-sleep.md?raw'
 import bestSleepScheduleNightShiftWorkers from '../content/09-best-sleep-schedule-for-night-shift-workers.md?raw'
 import howToFixSleepSchedule from '../content/how-to-fix-your-sleep-schedule-in-3-days.md?raw'
+import sleepTipsNewParents from '../content/10-sleep-tips-for-new-parents.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 
@@ -122,6 +123,16 @@ export const articles: Article[] = [
     content: howToFixSleepSchedule,
     featuredImage: '/images/featured-sleep-schedule-fix.png',
     featuredImageAlt: 'Minimalist illustration of a clock transitioning to a consistent sleep pattern'
+  },
+  {
+    slug: 'sleep-tips-for-new-parents',
+    title: 'Sleep Tips for New Parents: Surviving the First Year',
+    description: 'Exhausted new parent? Our evidence-based sleep guide helps you survive the first year with realistic expectations, practical strategies, and self-care tips for better rest.',
+    readTime: '10 min read',
+    date: 'February 2026',
+    content: sleepTipsNewParents,
+    featuredImage: '/images/featured-new-parents-sleep.jpg',
+    featuredImageAlt: 'Peaceful nursery at night with soft moonlight and a sleeping baby'
   },
   {
     slug: 'sleep-and-productivity',

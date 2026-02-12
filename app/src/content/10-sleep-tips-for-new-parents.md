@@ -1,7 +1,7 @@
 ---
 title: "Sleep Tips for New Parents: Surviving the First Year"
 description: "Exhausted new parent? Our evidence-based sleep guide helps you survive the first year with realistic expectations, practical strategies, and self-care tips for better rest."
-date: "2026-02-11"
+date: "2026-02-13"
 author: "SleepSmarter Team"
 category: "Audience-Specific"
 tags: ["sleep tips for new parents", "newborn sleep", "parental sleep deprivation", "baby sleep", "first year parenting", "sleep strategies"]
