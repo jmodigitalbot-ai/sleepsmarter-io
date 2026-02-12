@@ -18,21 +18,30 @@ export default function SleepReset() {
       <main className="max-w-4xl mx-auto px-4 py-12">
 
         {/* ============================================ */}
-        {/* SECTION 1: HEADLINE & SUBHEADLINE */}
+        {/* SECTION 1: HERO IMAGE + HEADLINE */}
         {/* ============================================ */}
-        <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#f1faee] mb-6 leading-tight">
-            Why You're <span className="text-[#a8dadc]">Still</span> Exhausted (And The 7-Day Fix That Actually Works)
-          </h1>
-          <p className="text-xl md:text-2xl text-[#f1faee]/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            The sequential protocol that resets your sleep in the biologically correct order — most people notice a difference by Day 3, profound changes by Day 7
-          </p>
-          <a
-            href={checkoutUrl}
-            className="inline-block bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-4 px-8 rounded-xl transition text-xl shadow-lg hover:shadow-xl"
-          >
-            Reset My Sleep in 7 Days — $17
-          </a>
+        <div className="mb-16">
+          <div className="rounded-2xl overflow-hidden mb-10">
+            <img 
+              src="/images/sales-page/hero-lifestyle.png" 
+              alt="Person waking up refreshed and stretching in morning light" 
+              className="w-full h-64 md:h-96 object-cover"
+            />
+          </div>
+          <div className="text-center">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#f1faee] mb-6 leading-tight">
+              Why You're <span className="text-[#a8dadc]">Still</span> Exhausted (And The 7-Day Fix That Actually Works)
+            </h1>
+            <p className="text-xl md:text-2xl text-[#f1faee]/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+              The sequential protocol that resets your sleep in the biologically correct order — most people notice a difference by Day 3, profound changes by Day 7
+            </p>
+            <a
+              href={checkoutUrl}
+              className="inline-block bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-4 px-8 rounded-xl transition text-xl shadow-lg hover:shadow-xl"
+            >
+              Reset My Sleep in 7 Days — $17
+            </a>
+          </div>
         </div>
 
         {/* ============================================ */}
@@ -54,9 +63,18 @@ export default function SleepReset() {
           <p className="text-[#f1faee]/80">
             I know this because five years ago, I was you. 
           </p>
-          <p className="text-[#f1faee]/80">
-            I'm Dr. Sarah Chen. I study sleep for a living. I can lecture for hours about circadian rhythms and sleep architecture. But I had an embarrassing secret: <em>I couldn't sleep well myself.</em>
-          </p>
+          <div className="flex flex-col sm:flex-row items-start gap-6 my-8">
+            <img 
+              src="/images/sales-page/dr-sarah-headshot.png" 
+              alt="Dr. Sarah Chen, Sleep Researcher" 
+              className="w-32 h-32 rounded-full object-cover object-top flex-shrink-0 border-2 border-[#a8dadc]/30"
+            />
+            <div>
+              <p className="text-[#f1faee]/80">
+                I'm Dr. Sarah Chen. I study sleep for a living. I can lecture for hours about circadian rhythms and sleep architecture. But I had an embarrassing secret: <em>I couldn't sleep well myself.</em>
+              </p>
+            </div>
+          </div>
           <p className="text-[#f1faee]/80">
             Every night, same story. Racing mind. Tossing and turning. 3am anxiety spirals about tomorrow's meetings.
           </p>
@@ -102,6 +120,15 @@ export default function SleepReset() {
             <p className="text-[#f1faee] font-semibold">
               Results? Over 85% reported significant improvement by Day 7.
             </p>
+          </div>
+
+          {/* Sequential Reset Diagram */}
+          <div className="mt-10">
+            <img 
+              src="/images/sales-page/sequential-reset-diagram.png" 
+              alt="The 7-Day Sequential Reset Protocol — Day 1 through Day 7 cascading flow" 
+              className="w-full rounded-xl"
+            />
           </div>
         </div>
 
@@ -290,9 +317,18 @@ export default function SleepReset() {
         {/* ============================================ */}
         <div className="mb-16 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
           <h3 className="text-3xl font-bold text-[#f1faee] mb-4 text-center">Everything You Get Today</h3>
-          <p className="text-lg text-[#f1faee]/70 mb-10 text-center">
+          <p className="text-lg text-[#f1faee]/70 mb-8 text-center">
             The complete system that typically costs $300/hour in my private practice
           </p>
+          
+          {/* Product Mockup */}
+          <div className="flex justify-center mb-10">
+            <img 
+              src="/images/sales-page/product-mockup.png" 
+              alt="7-Day Sleep Reset Protocol complete bundle — protocol guide, supplement timing guide, sleep tracking templates, emergency sleep protocol, and environment checklist" 
+              className="max-w-md w-full rounded-xl"
+            />
+          </div>
           
           <div className="max-w-lg mx-auto space-y-3 mb-10">
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
