@@ -121,7 +121,7 @@ export const articles: Article[] = [
     readTime: '20 min read',
     date: 'February 2026',
     content: howToFixSleepSchedule,
-    featuredImage: '/images/featured-sleep-schedule-fix.png',
+    featuredImage: '/images/blog/fix-sleep-schedule.png',
     featuredImageAlt: 'Minimalist illustration of a clock transitioning to a consistent sleep pattern'
   },
   {
@@ -131,7 +131,7 @@ export const articles: Article[] = [
     readTime: '10 min read',
     date: 'February 2026',
     content: sleepTipsNewParents,
-    featuredImage: '/images/featured-new-parents-sleep.jpg',
+    featuredImage: '/images/blog/sleep-tips-new-parents.png',
     featuredImageAlt: 'Peaceful nursery at night with soft moonlight and a sleeping baby'
   },
   {

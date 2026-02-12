@@ -5,7 +5,7 @@ date: "2026-02-13"
 author: "SleepSmarter Team"
 category: "Audience-Specific"
 tags: ["sleep tips for new parents", "newborn sleep", "parental sleep deprivation", "baby sleep", "first year parenting", "sleep strategies"]
-featured_image: "/images/featured-new-parents-sleep.jpg"
+featured_image: "/images/blog/sleep-tips-new-parents.png"
 ---
 
 **Affiliate Disclosure:** This article contains affiliate links. If you purchase through our links, we may earn a commission at no extra cost to you. We only recommend products we believe will genuinely improve your family's sleep.

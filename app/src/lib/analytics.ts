@@ -6,7 +6,7 @@
  */
 
 // GA4 Measurement ID from index.html
-// const GA4_MEASUREMENT_ID = 'G-523117386' // Unused but kept for reference
+// const GA4_MEASUREMENT_ID = 'G-HMNWV4K76J' // Unused but kept for reference
 
 // Event names for consistent tracking
 export const TRACKING_EVENTS = {
