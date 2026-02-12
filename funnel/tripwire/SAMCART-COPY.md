@@ -89,9 +89,9 @@ Most sleep advice gives you pieces of the puzzle but doesn't show you how they f
 
 ## 30-Day Money-Back Guarantee
 
-**Try the 7-Day Sleep Reset Protocol risk-free for 30 days.**
+**Try the 7-Day Sleep Reset Protocol risk-free for 60 days.**
 
-If you don't see noticeable improvement in your sleep quality within 30 days of starting the protocol, simply email us and we'll refund your $17, no questions asked.
+If you don't see noticeable improvement in your sleep quality within 60 days of starting the protocol, simply email us and we'll refund your $17, no questions asked.
 
 We can offer this guarantee because we know this works. Over 85% of people who complete all 7 days report significant, lasting improvements in their sleep.
 
@@ -138,7 +138,7 @@ A: You'll get immediate access to downloadable PDF files that you can read on an
 
 1. The exact protocol I use with $300/hour private clients
 2. Four comprehensive bonus guides
-3. 30-day money-back guarantee
+3. 60-day money-back guarantee
 4. Lifetime access and free updates
 5. Email support from our team
 
@@ -150,6 +150,6 @@ Remember: You don't have to struggle with poor sleep forever. The solution is he
 
 ---
 
-**P.S.** Still on the fence? Ask yourself: What's the cost of another month of poor sleep? More fatigue, more brain fog, more irritability, more health risks. For just $17, you can start fixing this tonight. The 30-day guarantee means you have nothing to lose except another night of tossing and turning.
+**P.S.** Still on the fence? Ask yourself: What's the cost of another month of poor sleep? More fatigue, more brain fog, more irritability, more health risks. For just $17, you can start fixing this tonight. The 60-day guarantee means you have nothing to lose except another night of tossing and turning.
 
 **P.P.S.** This is a limited-time tripwire offer. The regular price for this bundle is $47. Get it today for just $17 while this special pricing lasts.

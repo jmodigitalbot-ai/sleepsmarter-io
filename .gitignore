@@ -1,0 +1,11 @@
+# Dependencies
+**/node_modules/
+
+# OS files
+.DS_Store
+
+# Generated PDFs (keep zipped bundles)
+funnel/tripwire/pdf-output/
+
+# Build output
+app/dist/

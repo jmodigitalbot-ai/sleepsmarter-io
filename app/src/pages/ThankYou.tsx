@@ -295,7 +295,7 @@ export default function ThankYou() {
 
           <div className="flex items-center justify-center gap-2 text-sm text-[#f1faee]/50 mt-4">
             <span className="text-green-400">🔒</span>
-            <span>Secure checkout · 30-day money-back guarantee</span>
+            <span>Secure checkout · 60-day money-back guarantee</span>
           </div>
         </div>
 
@@ -305,7 +305,7 @@ export default function ThankYou() {
         <div className="mb-16 bg-green-500/5 border border-green-500/20 rounded-2xl p-8 text-center">
           <div className="text-4xl mb-4">🛡️</div>
           <h3 className="text-2xl font-bold text-green-400 mb-4">
-            30-Day "Sleep Better or It's Free" Guarantee
+            60-Day "Sleep Better or It's Free" Guarantee
           </h3>
           <p className="text-[#f1faee]/80 max-w-2xl mx-auto mb-4 text-lg">
             Follow the protocol for 7 days. If you don't notice a real, 
@@ -352,7 +352,7 @@ export default function ThankYou() {
             <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
               <h4 className="text-lg font-semibold text-[#a8dadc] mb-2">What if it doesn't work for me?</h4>
               <p className="text-[#f1faee]/70">
-                You're covered by a 30-day money-back guarantee. Follow the protocol, and if you don't see improvement, email us for a full refund. We take on all the risk.
+                You're covered by a 60-day money-back guarantee. Follow the protocol, and if you don't see improvement, email us for a full refund. We take on all the risk.
               </p>
             </div>
           </div>
@@ -370,7 +370,7 @@ export default function ThankYou() {
           </a>
           <div className="flex items-center justify-center gap-2 text-sm text-[#f1faee]/50 mb-8">
             <span className="text-green-400">🔒</span>
-            <span>Secure checkout · Instant download · 30-day guarantee</span>
+            <span>Secure checkout · Instant download · 60-day guarantee</span>
           </div>
 
           <div className="max-w-2xl mx-auto text-left space-y-4 text-[#f1faee]/60 text-sm border-t border-[#4a4e69]/30 pt-8">
