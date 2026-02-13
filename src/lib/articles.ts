@@ -33,7 +33,7 @@ export const articles: Article[] = [
     id: 10,
     title: 'Sleep Tips for New Parents: Surviving the First Year',
     slug: 'sleep-tips-for-new-parents',
-    excerpt: 'Practical strategies to help new parents navigate sleep deprivation and find moments of rest.',
+    excerpt: 'Exhausted new parent? Discover proven sleep strategies for you and your baby. Learn how to maximize rest, establish routines, and survive sleep deprivation in the first year.',
     publishDate: '2026-02-13',
     author: 'KITT',
     pillar: 'Audience',

@@ -46,7 +46,7 @@
 | Date | # | Title | Target Keyword | Pillar | Status |
 |------|---|-------|----------------|--------|--------|
 | Feb 11 | 9 | How to Fix Your Sleep Schedule in 3 Days | fix sleep schedule | Hygiene | ✅ Published |
-| Feb 13 | 10 | Sleep Tips for New Parents: Surviving the First Year | sleep tips for new parents | Audience | ✅ Ready |
+| Feb 13 | 10 | Sleep Tips for New Parents: Surviving the First Year | sleep tips for new parents | Audience | ✅ Published |
 | Feb 15 | 11 | Best White Noise Machines for Sleep (2026 Guide) | best white noise machine for sleep | Product | ✅ Ready |
 
 ### Week 3: Feb 17-23
