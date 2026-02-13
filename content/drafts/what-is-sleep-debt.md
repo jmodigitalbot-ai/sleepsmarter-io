@@ -169,10 +169,10 @@ Sleep debt is the cumulative effect of insufficient sleep over time. While you c
   - Insight Timer
 - **Blue Light Blocking**
   - Apps
-  - Glasses
+  - Glasses like [these amber lenses](https://www.amazon.com/dp/B01GSFTX08?tag=19830c0a-20) for evening use
   - Screen Filters
 - **[White Noise Machines](/blog/best-white-noise-machines)**
-  - Improve Sleep Quality
+  - Improve Sleep Quality - the [LectroFan EVO](https://www.amazon.com/dp/B074FL2HL2?tag=19830c0a-20) helps mask disruptive noises
   - Faster Sleep Onset
 
 ---
@@ -205,5 +205,7 @@ Sleep debt is more than feeling tired — it's a complex physiological phenomeno
 - [Why Do I Wake Up Tired?](/blog/why-do-i-wake-up-tired)
 - [How to Fix Your Sleep Schedule in 3 Days](/blog/fix-sleep-schedule)
 - [Best Time to Wake Up](/blog/best-time-to-wake-up)
+
+**Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you sleep better.
 
 *Disclaimer: This article is for informational purposes. Individual sleep needs vary, and persistent sleep issues should be discussed with healthcare professionals.*

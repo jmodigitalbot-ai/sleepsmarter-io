@@ -168,6 +168,7 @@ Light exposure is the most powerful tool you have for managing your circadian rh
 - **Essential**: Blue-light blocking glasses (amber or red-tinted)
 - **Why**: Blocks melatonin-suppressing blue wavelengths
 - **Timing**: Wear from the second half of your shift through your commute
+- **Recommendation**: [Blue light blocking amber glasses](https://www.amazon.com/dp/B01GSFTX08?tag=19830c0a-20) are highly effective for night shift workers
 
 ### In Your Bedroom
 - **Blackout curtains**: Complete darkness is non-negotiable
@@ -190,7 +191,7 @@ Daytime sleep requires extra attention to environmental factors. Here's your che
 - **Consider**: Cooling mattress pads or moisture-wicking sheets
 
 ### Sound Management
-- **White noise machines**: Masks daytime sounds (lawnmowers, traffic, etc.)
+- **White noise machines**: Masks daytime sounds (lawnmowers, traffic, etc.) - the [LectroFan EVO](https://www.amazon.com/dp/B074FL2HL2?tag=19830c0a-20) offers 22 non-looping sounds perfect for daytime sleep
 - **Earplugs**: High-quality silicone or wax options
 - **Smart solution**: Noise-canceling sleep headphones
 
@@ -202,7 +203,7 @@ Daytime sleep requires extra attention to environmental factors. Here's your che
 ### Comfort Optimization
 - **Quality mattress**: Invest in one that suits your sleep position
 - **Pillows**: Consider specialty pillows for side/stomach/back sleepers
-- **Weighted blankets**: Can promote relaxation and deeper sleep
+- **Weighted blankets**: Can promote relaxation and deeper sleep - the [YnM weighted blanket](https://www.amazon.com/dp/B073429DV2?tag=19830c0a-20) provides gentle pressure that can help night shift workers fall asleep faster
 
 ### Bedroom-Only Rule
 - **No work materials in bedroom**
@@ -231,8 +232,8 @@ What and when you eat significantly impacts your sleep quality and alertness dur
 - **Avoid**: Spicy foods, large meals, alcohol
 
 ### Supplement Considerations
-- **Melatonin**: 0.5-3 mg 30 minutes before desired sleep time
-- **Magnesium**: Can promote relaxation
+- **Melatonin**: 0.5-3 mg 30 minutes before desired sleep time - [Nature Made Melatonin](https://www.amazon.com/dp/B005DEK990?tag=19830c0a-20) is a trusted brand
+- **Magnesium**: Can promote relaxation - [Magnesium Glycinate](https://www.amazon.com/dp/B08XXHCGZT?tag=19830c0a-20) is gentle on the stomach
 - **Vitamin D**: Many night workers are deficient
 - **Always consult**: A healthcare provider before starting supplements
 
@@ -334,5 +335,7 @@ Your health and well-being are worth the effort. With each small improvement to 
 - [How Sleep Cycles Work](/how-sleep-cycles-work) - Understand the science behind your sleep
 - [Why Do I Wake Up Tired?](/why-do-i-wake-up-tired) - Common causes and fixes for morning fatigue
 - [The 10-3-2-1-0 Sleep Rule Explained](/10-3-2-1-0-sleep-rule) - A simple framework for better sleep hygiene
+
+**Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you sleep better.
 
 *Disclaimer: This article provides educational information only and is not medical advice. Always consult healthcare professionals for personalized medical guidance, especially if you have existing health conditions or are considering supplements or medications.*

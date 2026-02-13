@@ -43,7 +43,7 @@ Sleep disruption isn't just uncomfortable—it's a serious health concern:
 ### 3. Sleep Environment Optimization
 **Nursery Setup:**
 - Blackout curtains
-- White noise machine
+- White noise machine like the [Dreamegg D1](https://www.amazon.com/dp/B07VD5GJ1M?tag=19830c0a-20) with nightlight feature
 - Comfortable, safe sleeping space for baby
 - Temperature between 68-72°F (20-22°C)
 
@@ -51,7 +51,7 @@ Sleep disruption isn't just uncomfortable—it's a serious health concern:
 - Separate sleeping area if possible
 - Comfortable, cooling bedding
 - Minimize electronic disruptions
-- Use eye masks and earplugs when needed
+- Use eye masks like the [Manta Sleep Mask](https://www.amazon.com/dp/B07PRG2CQY?tag=19830c0a-20) and earplugs when needed
 
 ### 4. Strategic Napping
 **Nap Types:**
@@ -109,5 +109,7 @@ Consult healthcare professionals if experiencing:
 
 ## Conclusion: This Too Shall Pass
 Parental sleep deprivation is temporary. By implementing strategic approaches and supporting each other, you can navigate this challenging phase while maintaining your health and sanity.
+
+**Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you and your baby sleep better.
 
 *Disclaimer: Every baby is unique. Always consult pediatricians and healthcare professionals for personalized advice.*

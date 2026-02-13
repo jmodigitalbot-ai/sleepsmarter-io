@@ -71,14 +71,14 @@ Babies thrive on consistency. Start a simple routine around 6-8 weeks:
 
 **For Baby:**
 - Room temperature: 68-72°F
-- White noise machine (consistent, not too loud)
+- White noise machine (consistent, not too loud) - the [Dreamegg D1](https://www.amazon.com/dp/B07VD5GJ1M?tag=19830c0a-20) is perfect for nurseries with its nightlight feature
 - Blackout curtains
 - Safe sleep space (firm mattress, no loose bedding)
 
 **For You:**
 - Keep bedroom cool
 - Use earplugs when partner is on duty
-- Consider a [white noise machine](/blog/best-white-noise-machines) for yourself too
+- Consider a [white noise machine](/blog/best-white-noise-machines) for yourself too - parents love the [Yogasleep Dohm Classic](https://www.amazon.com/dp/B00HD0ELFK?tag=19830c0a-20) for its natural fan sound
 - Phone on silent (except baby monitor)
 
 ### 5. Accept Help
@@ -228,5 +228,7 @@ Use our [Sleep Calculator](/sleep-calculator-guide) to optimize the sleep you *c
 - [How Sleep Cycles Work](/blog/how-sleep-cycles-work)
 
 ---
+
+**Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you and your baby sleep better.
 
 *This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your pediatrician or healthcare provider with concerns about your baby's sleep or your own health.*

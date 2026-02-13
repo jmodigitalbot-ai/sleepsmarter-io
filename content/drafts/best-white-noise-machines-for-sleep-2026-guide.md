@@ -23,6 +23,8 @@ White noise creates a consistent sound that:
 
 ### 1. Yogasleep Dohm Classic — Best Overall
 **Price:** $49.99
+[Check Price on Amazon →](https://www.amazon.com/dp/B00HD0ELFK?tag=19830c0a-20)
+
 **Pros:**
 - Mechanical sound generation
 - Adjustable tone and volume
@@ -42,6 +44,8 @@ White noise creates a consistent sound that:
 
 ### 2. LectroFan High Fidelity — Most Versatile
 **Price:** $79.99
+[Check Price on Amazon →](https://www.amazon.com/dp/B074FL2HL2?tag=19830c0a-20)
+
 **Pros:**
 - 20+ sound variations
 - Digital sound generation
@@ -81,6 +85,8 @@ White noise creates a consistent sound that:
 
 ### 4. Cloud B Sleep Sheep — Best for Children
 **Price:** $39.99
+[Check Price on Amazon →](https://www.amazon.com/dp/B000J6CDY6?tag=19830c0a-20)
+
 **Pros:**
 - Adorable design
 - Portable
@@ -139,5 +145,7 @@ A white noise machine is more than a gadget—it's an investment in your health,
 - Travel cases
 - Bluetooth speakers
 - Sound-blocking curtains
+
+**Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you sleep better.
 
 *Disclaimer: Prices and availability subject to change. Always read user reviews and consult healthcare professionals for specific sleep concerns.*

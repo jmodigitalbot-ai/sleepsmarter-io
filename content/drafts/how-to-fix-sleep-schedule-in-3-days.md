@@ -133,11 +133,11 @@ While you don't need any special equipment to reset your sleep schedule, these t
 
 **Sunrise Alarm Clocks:** These gradually increase light in your room before your alarm sounds, making waking up more natural.
 
-**Blue Light Blocking Glasses:** Wear these in the evening if you must use screens, to reduce melatonin disruption.
+**Blue Light Blocking Glasses:** Wear these in the evening if you must use screens, to reduce melatonin disruption. [These amber lenses](https://www.amazon.com/dp/B01GSFTX08?tag=19830c0a-20) are highly effective.
 
 **Sleep Tracking Apps/Devices:** These can help you identify patterns and track progress, but don't become obsessed with the data.
 
-**White Noise Machines:** Helpful for masking disruptive sounds, especially if you live in a noisy environment.
+**White Noise Machines:** Helpful for masking disruptive sounds, especially if you live in a noisy environment. The [LectroFan EVO](https://www.amazon.com/dp/B074FL2HL2?tag=19830c0a-20) offers non-looping sounds that won't distract you as you're trying to fall asleep.
 
 Our [Sleep Calculator](/) can also be incredibly helpful during this process. It helps you determine the best times to go to bed and wake up based on sleep cycles, so you're less likely to wake up in the middle of deep sleep.
 
@@ -193,6 +193,8 @@ Think of your sleep schedule as the foundation of your daily functioning. When i
 As you move forward, remember that the "perfect" sleep schedule is the one that works for your life, your body, and your responsibilities. The three-day reset gives you a clean slate to build from, but you're the architect of your own sleep.
 
 Take what works from this guide, adapt what doesn't, and create a schedule that supports the life you want to live. Your future well-rested self will thank you.
+
+**Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you sleep better.
 
 ## Keep Reading
 

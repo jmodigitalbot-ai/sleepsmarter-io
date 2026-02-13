@@ -89,15 +89,15 @@ College life naturally conflicts with biological sleep needs:
 
 #### Dorm Room Sleep Optimization
 - **Temperature:** 60-67°F (15-19°C)
-- **Darkness:** Blackout curtains
+- **Darkness:** Blackout curtains or a [sleep mask](https://www.amazon.com/dp/B07PRG2CQY?tag=19830c0a-20) for complete light blocking
 - **Noise Control:** 
-  - [White noise machine](/blog/best-white-noise-machines)
+  - [White noise machine](/blog/best-white-noise-machines) like the [Magicteam Sound Machine](https://www.amazon.com/dp/B07RWRJ4XW?tag=19830c0a-20) is budget-friendly for students
   - Noise-cancelling headphones
   - Earplugs
 
 #### Tech Management
 - **No screens 1 hour before bed**
-- **Blue light blocking glasses**
+- **Blue light blocking glasses** like [these amber lenses](https://www.amazon.com/dp/B01GSFTX08?tag=19830c0a-20) for late-night study sessions
 - **Night mode on all devices**
 - **Airplane mode during sleep**
 
@@ -208,5 +208,7 @@ Sleep isn't a luxury—it's a critical component of academic success. By underst
 - [Why Do I Wake Up Tired?](/blog/why-do-i-wake-up-tired)
 - [How to Fix Your Sleep Schedule in 3 Days](/blog/fix-sleep-schedule)
 - [Best White Noise Machines for Sleep](/blog/best-white-noise-machines)
+
+**Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you sleep better.
 
 *Disclaimer: This guide is for informational purposes. Individual sleep needs vary, and persistent sleep issues should be discussed with healthcare professionals.*
