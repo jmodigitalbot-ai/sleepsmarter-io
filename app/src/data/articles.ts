@@ -9,6 +9,7 @@ import bestSilkPillowcases from '../content/08-best-silk-pillowcases-for-sleep.m
 import bestSleepScheduleNightShiftWorkers from '../content/09-best-sleep-schedule-for-night-shift-workers.md?raw'
 import howToFixSleepSchedule from '../content/how-to-fix-your-sleep-schedule-in-3-days.md?raw'
 import sleepTipsNewParents from '../content/10-sleep-tips-for-new-parents.md?raw'
+import bestWhiteNoiseMachines from '../content/11-best-white-noise-machines-for-sleep.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 
@@ -133,6 +134,16 @@ export const articles: Article[] = [
     content: sleepTipsNewParents,
     featuredImage: '/images/blog/sleep-tips-new-parents.png',
     featuredImageAlt: 'Peaceful nursery at night with soft moonlight and a sleeping baby'
+  },
+  {
+    slug: 'best-white-noise-machines-for-sleep',
+    title: 'Best White Noise Machines for Sleep (2026 Guide)',
+    description: 'Discover the top white noise machines of 2026. Our comprehensive guide reviews the best options for sound quality, features, and value to help you sleep better.',
+    readTime: '12 min read',
+    date: 'February 2026',
+    content: bestWhiteNoiseMachines,
+    featuredImage: '/images/featured-white-noise-machines.png',
+    featuredImageAlt: 'Minimalist illustration of sound waves and a peaceful sleeping environment'
   },
   {
     slug: 'sleep-and-productivity',

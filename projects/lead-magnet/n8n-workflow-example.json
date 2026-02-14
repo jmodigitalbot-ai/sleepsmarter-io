@@ -1,0 +1,262 @@
+{
+  "name": "Sleep Blueprint Personalization Workflow",
+  "nodes": [
+    {
+      "name": "Webhook - ScoreApp Data",
+      "type": "n8n-nodes-base.webhook",
+      "position": [250, 300],
+      "parameters": {
+        "path": "sleep-assessment",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "webhookId": "sleep-assessment-webhook"
+    },
+    {
+      "name": "Process Assessment Data",
+      "type": "n8n-nodes-base.function",
+      "position": [450, 300],
+      "parameters": {
+        "functionCode": "// Process incoming assessment data\nconst data = items[0].json;\n\n// Extract essential information\nconst userProfile = {\n  email: data.email,\n  firstName: data.firstName,\n  assessmentResponses: data.responses,\n  calculatorData: data.calculator\n};\n\n// Determine sleep persona\nconst persona = determinePersona(data.responses);\n\n// Calculate sleep scores\nconst scores = calculateScores(data.responses);\n\n// Generate recommendations\nconst recommendations = generateRecommendations(userProfile, persona);\n\n// Return processed data\nreturn [{\n  json: {\n    ...userProfile,\n    persona,\n    scores,\n    recommendations,\n    timestamp: new Date().toISOString(),\n    referenceId: `SS-${Math.random().toString(36).substr(2, 9).toUpperCase()}`\n  }\n}];\n\n// Helper functions\nfunction determinePersona(responses) {\n  // Simplified persona determination logic\n  if (responses.screenUsage === 'frequent') return 'tech_dependent';\n  if (responses.stressLevels === 'high') return 'stressed_professional';\n  if (responses.wakeTimeConsistency === 'inconsistent') return 'inconsistent_sleeper';\n  if (responses.bedroomEnvironment === 'poor') return 'environment_sensitive';\n  return 'struggling_starter';\n}\n\nfunction calculateScores(responses) {\n  // Simplified scoring logic\n  return {\n    overall: 68,\n    categories: {\n      sleepPatterns: 75,\n      sleepQuality: 60,\n      lifestyle: 70,\n      environment: 65\n    }\n  };\n}\n\nfunction generateRecommendations(profile, persona) {\n  // Simplified recommendation generation\n  return {\n    quickWins: [\n      'Set consistent wake time',\n      'Implement digital sunset',\n      'Practice 4-7-8 breathing'\n    ],\n    sevenDayProtocol: [\n      'Days 1-2: Foundation',\n      'Days 3-4: Environment',\n      'Days 5-7: Routine'\n    ]\n  };\n}"
+      }
+    },
+    {
+      "name": "Generate Personalized PDF",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [650, 300],
+      "parameters": {
+        "url": "https://api.frase.io/v1/generate/pdf",
+        "method": "POST",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$credentials.fraseApiKey}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "templateId",
+              "value": "sleep-blueprint-template"
+            },
+            {
+              "name": "data",
+              "value": "={{$json}}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "fraseApiKey": {
+          "id": "1",
+          "name": "Frase API Key"
+        }
+      }
+    },
+    {
+      "name": "Store PDF Reference",
+      "type": "n8n-nodes-base.postgres",
+      "position": [850, 300],
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "sleep_blueprints",
+        "columns": "email,persona,scores,reference_id,pdf_url,created_at",
+        "values": "={{$json.email}},={{$json.persona}},={{JSON.stringify($json.scores)}},={{$json.referenceId}},={{$json.pdfUrl}},={{$json.timestamp}}",
+        "additionalFields": {},
+        "returnFields": "*"
+      }
+    },
+    {
+      "name": "Send Welcome Email",
+      "type": "n8n-nodes-base.convertKit",
+      "position": [1050, 300],
+      "parameters": {
+        "resource": "broadcast",
+        "operation": "create",
+        "subject": "Your Personalized Sleep Blueprint is Ready!",
+        "content": "={{`<p>Hi ${$json.firstName},</p>\n<p>Your personalized Sleep Blueprint has been generated based on your assessment results.</p>\n<p><strong>Your Sleep Health Score:</strong> ${$json.scores.overall}/100</p>\n<p><strong>Your Sleep Persona:</strong> ${formatPersona($json.persona)}</p>\n<p>Download your blueprint here: <a href=\"${$json.pdfUrl}\">Sleep Blueprint PDF</a></p>\n<p>Your reference ID: ${$json.referenceId}</p>\n<p>We recommend starting with these quick wins tonight:</p>\n<ul>\n${$json.recommendations.quickWins.map(win => `<li>${win}</li>`).join('\\n')}\n</ul>\n<p>Sweet dreams,<br>The Sleep Smarter Team</p>`}}",
+        "additionalFields": {
+          "public": false,
+          "email_address": "={{$json.email}}"
+        }
+      },
+      "credentials": {
+        "convertKitApi": {
+          "id": "2",
+          "name": "ConvertKit API"
+        }
+      }
+    },
+    {
+      "name": "Schedule Follow-up Sequence",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [1250, 300],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "minutesInterval": 1440
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "name": "Send Day 2 Follow-up",
+      "type": "n8n-nodes-base.convertKit",
+      "position": [1450, 300],
+      "parameters": {
+        "resource": "broadcast",
+        "operation": "create",
+        "subject": "={{`How's your sleep plan going, ${$json.firstName}?`}}",
+        "content": "={{`<p>Hi ${$json.firstName},</p>\n<p>It's been 24 hours since you received your Sleep Blueprint. How are you feeling?</p>\n<p>Remember your 7-day protocol:</p>\n<ol>\n${$json.recommendations.sevenDayProtocol.map(day => `<li>${day}</li>`).join('\\n')}\n</ol>\n<p>Need help or have questions? Reply to this email!</p>\n<p>To better sleep,<br>The Sleep Smarter Team</p>`}}",
+        "additionalFields": {
+          "public": false,
+          "email_address": "={{$json.email}}"
+        }
+      },
+      "credentials": {
+        "convertKitApi": {
+          "id": "2",
+          "name": "ConvertKit API"
+        }
+      }
+    },
+    {
+      "name": "Track Engagement",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [1650, 300],
+      "parameters": {
+        "operation": "append",
+        "sheetId": "={{$credentials.sheetId}}",
+        "sheetName": "Engagement Tracking",
+        "columns": "Timestamp,Email,Persona,PDF Opened,Day2 Opened,Action Taken",
+        "values": "={{$json.timestamp}},={{$json.email}},={{$json.persona}},No,No,No"
+      },
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3",
+          "name": "Google Sheets"
+        }
+      }
+    },
+    {
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.function",
+      "position": [850, 500],
+      "parameters": {
+        "functionCode": "// Error handling and logging\nconst error = items[0].json.error;\n\nconsole.error('Workflow Error:', error);\n\n// Send error notification\nconst errorNotification = {\n  to: 'admin@sleepsmarter.io',\n  subject: 'Sleep Blueprint Workflow Error',\n  message: `Error at ${new Date().toISOString()}: ${error.message}`\n};\n\nreturn [{\n  json: errorNotification\n}];"
+      }
+    }
+  ],
+  "connections": {
+    "Webhook - ScoreApp Data": {
+      "main": [
+        [
+          {
+            "node": "Process Assessment Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Assessment Data": {
+      "main": [
+        [
+          {
+            "node": "Generate Personalized PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Personalized PDF": {
+      "main": [
+        [
+          {
+            "node": "Store PDF Reference",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ],
+      "catch": [
+        [
+          {
+            "node": "Error Handler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store PDF Reference": {
+      "main": [
+        [
+          {
+            "node": "Send Welcome Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Welcome Email": {
+      "main": [
+        [
+          {
+            "node": "Schedule Follow-up Sequence",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Follow-up Sequence": {
+      "main": [
+        [
+          {
+            "node": "Send Day 2 Follow-up",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Day 2 Follow-up": {
+      "main": [
+        [
+          {
+            "node": "Track Engagement",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "pinData": {},
+  "versionId": "1.0",
+  "triggerCount": 1,
+  "notes": "This workflow automates the entire Sleep Blueprint personalization process from assessment to follow-up."
+}

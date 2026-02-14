@@ -7,12 +7,12 @@
 3. Add 31 emails (Day 0 through Day 30)
 4. For each email: copy the Subject Line, Preview Text, and Body below
 5. **Personalization:** Replace {{first_name}} with Kit's tag: {{ subscriber.first_name }}
-6. **Links:** Article and blog links are already filled in. Product links show as TBD placeholders:
-   - `https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right` → 7-Day Sleep Reset Protocol ($17) checkout page
-   - `MASTERCLASS_LINK_TBD` → Sleep Smarter Masterclass ($67) checkout page
-   - `PREMIUM_LINK_TBD` → 90-Day Transformation ($197) checkout page
-   - `MEMBERSHIP_LINK_TBD` → Sleep Smarter Insider ($19/mo) checkout page
-   - Blueprint download link in Email 0 → PDF delivery page (once lead magnet server is live)
+6. **Links:** Article and blog links are already filled in. Product links need to be updated with actual checkout URLs:
+   - `https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right` → 7-Day Sleep Reset Protocol ($17) checkout page ✓
+   - `https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right` → Sleep Smarter Masterclass ($67) checkout page
+   - `https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right` → 90-Day Transformation ($197) checkout page
+   - `https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right` → Sleep Smarter Insider ($19/mo) checkout page
+   - Blueprint download link in Email 0 → `https://www.sleepsmarter.io/blueprint/download` (PDF delivery page)
 7. **Delays:** Set the delay between each email as noted (mostly 1 day)
 8. **From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
 
@@ -806,7 +806,7 @@ My curated list of the best sleep products — pillows, mattresses, sound machin
 **Price: $67** (one-time, lifetime access)
 **Guarantee: 60 days.** Full refund if you don't see improvement.
 
-**[Enroll in the Sleep Smarter Masterclass → $67](MASTERCLASS_LINK_TBD)**
+**[Enroll in the Sleep Smarter Masterclass → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
 
 This isn't information you can't find online. It's information organized, prioritized, and structured so you don't have to spend months piecing it together yourself. I've done the work. You just follow the path.
 
@@ -836,7 +836,7 @@ David's experience highlights something important: **the answer isn't always "mo
 
 The Masterclass helps you find YOUR specific change. Not generic advice. Not what works for "most people." What works for you.
 
-**[Find your specific change → $67](MASTERCLASS_LINK_TBD)**
+**[Find your specific change → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
 
 60-day guarantee. If David's story doesn't become your story, you get your money back.
 
@@ -870,7 +870,7 @@ I realize I've talked a lot about what the Masterclass teaches, but I haven't be
 
 **All of this for $67.** Less than one therapy session. Less than a month of sleep supplements. Less than that weighted blanket collecting dust in your closet.
 
-**[Get Lifetime Access → $67](MASTERCLASS_LINK_TBD)**
+**[Get Lifetime Access → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
 
 60-day money-back guarantee. Zero risk.
 
@@ -910,7 +910,7 @@ If you've been thinking about it, now is the time.
 
 Or $67 on a system that fixes the root cause.
 
-**[Lock in the $67 price → Enroll now](MASTERCLASS_LINK_TBD)**
+**[Lock in the $67 price → Enroll now](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
 
 After this, I'll shift to talking about something for people who want even more personalized support. But this is the last time I'll pitch the Masterclass for a while.
 
@@ -983,7 +983,7 @@ Topics beyond the Masterclass: sleep and hormones, sleep and athletic performanc
 **Price: $197** (one-time, 90-day program + lifetime community access)
 **Guarantee: 60 days.** Full refund if you don't see measurable improvement.
 
-**[Start Your 90-Day Transformation → $197](PREMIUM_LINK_TBD)**
+**[Start Your 90-Day Transformation → $197](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right)**
 
 This program has a cap. I limit enrollment because the personalized plans require my attention. When spots fill, I close registration until the next cohort.
 
@@ -1021,7 +1021,7 @@ It's a monthly membership ($19/month) that keeps you optimized long-term:
 
 I'm launching this quietly to my email list first. If it resonates, I'll open it up publicly later.
 
-**[Join the Sleep Smarter Insider → $19/mo](MEMBERSHIP_LINK_TBD)**
+**[Join the Sleep Smarter Insider → $19/mo](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right)**
 
 No pressure on this one. It's for people who've already improved their sleep and want to maintain and optimize it over time. If that's not where you are yet, focus on the fundamentals first.
 
@@ -1054,7 +1054,7 @@ Most people get dramatically less natural light than their circadian rhythm need
 
 Insider members get the full guide with product recommendations, timing protocols for different chronotypes, and troubleshooting.
 
-**[Get the full guide + monthly optimizations → $19/mo](MEMBERSHIP_LINK_TBD)**
+**[Get the full guide + monthly optimizations → $19/mo](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right)**
 
 Sarah
 
@@ -1179,19 +1179,19 @@ Here's your roadmap going forward — pick the path that fits where you are:
 ---
 
 **🎓 Go deep ($67)**
-→ [Sleep Smarter Masterclass](MASTERCLASS_LINK_TBD) — 6 modules, complete curriculum
+→ [Sleep Smarter Masterclass](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right) — 6 modules, complete curriculum
 → Best for: "I want to understand everything and optimize long-term"
 
 ---
 
 **🚀 Full transformation ($197)**
-→ [90-Day Sleep Transformation](PREMIUM_LINK_TBD) — personalized plan + ongoing support
+→ [90-Day Sleep Transformation](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right) — personalized plan + ongoing support
 → Best for: "I want expert guidance tailored to my specific situation"
 
 ---
 
 **🔄 Stay optimized ($19/mo)**
-→ [Sleep Smarter Insider](MEMBERSHIP_LINK_TBD) — monthly optimization + community
+→ [Sleep Smarter Insider](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right) — monthly optimization + community
 → Best for: "My sleep is good and I want to keep it that way"
 
 ---

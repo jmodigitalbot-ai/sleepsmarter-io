@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import EmailCapture from './EmailCapture'
+import SleepAssessment from './SleepAssessment'
 import { trackCalculatorUsed } from '../lib/analytics'
 
 type Mode = 'wakeup' | 'bedtime'
@@ -15,6 +16,8 @@ export default function SleepCalculator() {
   const [mode, setMode] = useState<Mode>('wakeup')
   const [time, setTime] = useState('07:00')
   const [results, setResults] = useState<SleepTime[]>([])
+  const [showAssessment, setShowAssessment] = useState(false)
+  const [assessmentResult, setAssessmentResult] = useState<any>(null)
 
   const CYCLE_MINUTES = 90
   const FALL_ASLEEP_MINUTES = 14
@@ -65,9 +68,15 @@ export default function SleepCalculator() {
     }
 
     setResults(newResults)
+    setShowAssessment(true) // Show assessment after calculator results
+    setAssessmentResult(null) // Reset assessment result
     
     // Track calculator usage
     trackCalculatorUsed(mode, time, newResults.length)
+  }
+
+  const handleAssessmentComplete = (result: any) => {
+    setAssessmentResult(result)
   }
 
   const getQualityColor = (quality: string) => {
@@ -138,7 +147,7 @@ export default function SleepCalculator() {
       </button>
 
       {/* Results */}
-      {results.length > 0 && (
+      {results.length > 0 && !showAssessment && (
         <div className="space-y-3">
           <p className="text-sm text-[#f1faee]/70 mb-4">
             {mode === 'wakeup' 
@@ -166,6 +175,25 @@ export default function SleepCalculator() {
             Yellow (minimum) should only be used occasionally.
           </p>
 
+          {/* Assessment Prompt */}
+          <div className="mt-6 bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-6">
+            <div className="text-center mb-4">
+              <span className="text-2xl mb-2 block">🎯</span>
+              <h3 className="text-lg font-semibold text-[#a8dadc] mb-1">
+                Get Personalized Recommendations
+              </h3>
+              <p className="text-[#f1faee]/60 text-sm mb-4">
+                Take a quick 2-minute assessment to get sleep advice tailored to your specific challenges.
+              </p>
+              <button
+                onClick={() => setShowAssessment(true)}
+                className="bg-[#a8dadc] hover:bg-[#8bc9cc] text-[#1a1a2e] font-semibold px-6 py-3 rounded-lg transition text-sm"
+              >
+                Start Personalized Assessment →
+              </button>
+            </div>
+          </div>
+
           {/* Email Capture */}
           <EmailCapture 
             calculatorData={{
@@ -174,6 +202,34 @@ export default function SleepCalculator() {
               results
             }} 
           />
+        </div>
+      )}
+
+      {/* Assessment */}
+      {showAssessment && (
+        <div className="mt-6">
+          <SleepAssessment 
+            onComplete={handleAssessmentComplete}
+            calculatorData={{
+              mode,
+              targetTime: time,
+              results
+            }}
+          />
+          
+          {/* Show email capture after assessment completion */}
+          {assessmentResult && (
+            <div className="mt-6">
+              <EmailCapture 
+                calculatorData={{
+                  mode,
+                  targetTime: time,
+                  results
+                }}
+                assessmentData={assessmentResult}
+              />
+            </div>
+          )}
         </div>
       )}
     </div>

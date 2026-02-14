@@ -1,0 +1,525 @@
+{
+  "name": "Dynamic Personalized Sleep Blueprint PDF Generation Workflow v4.0",
+  "version": "4.0",
+  "lastUpdated": "2026-02-13",
+  "description": "End-to-end workflow for generating personalized sleep blueprints in under 5 seconds",
+  "performanceTargets": {
+    "totalGenerationTime": "<5 seconds",
+    "assessmentCompletion": "<2 minutes",
+    "pdfFileSize": "<2 MB",
+    "mobileCompatibility": "100%",
+    "uptime": "99.9%"
+  },
+  "workflowStages": [
+    {
+      "id": "stage_1",
+      "name": "Data Collection & Assessment",
+      "timeTarget": "90 seconds",
+      "components": [
+        {
+          "component": "minimal_assessment",
+          "type": "frontend",
+          "description": "3-step progressive disclosure assessment",
+          "config": {
+            "step1": {
+              "questions": 3,
+              "dataPoints": ["currentBedtime", "desiredWakeTime", "age", "email"],
+              "timeLimit": "30s",
+              "interface": "simple_form"
+            },
+            "step2": {
+              "questions": 5,
+              "dataPoints": ["primaryChallenges", "sleepQuality", "lifestyleFactors"],
+              "timeLimit": "60s",
+              "interface": "visual_sliders"
+            },
+            "step3": {
+              "questions": 3,
+              "dataPoints": ["environment", "habits", "goals"],
+              "timeLimit": "90s",
+              "interface": "followup_based_on_step2",
+              "optional": true
+            }
+          },
+          "privacySettings": {
+            "dataRetention": "30 days",
+            "anonymousTracking": true,
+            "optInRequired": ["step3", "longitudinalTracking"],
+            "gdprCompliant": true
+          }
+        },
+        {
+          "component": "real_time_scoring",
+          "type": "backend",
+          "description": "Immediate persona classification and scoring",
+          "config": {
+            "scoringAlgorithm": "weighted_persona_detection",
+            "personaTypes": ["digital_dependent", "restless_mind", "environmentally_sensitive", "schedule_challenged"],
+            "confidenceThreshold": 0.65,
+            "hybridDetection": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "stage_2",
+      "name": "Personalization Engine",
+      "timeTarget": "1.5 seconds",
+      "components": [
+        {
+          "component": "persona_classification",
+          "type": "backend",
+          "description": "AI-powered sleep persona determination",
+          "config": {
+            "input": "assessment_responses",
+            "output": {
+              "primaryPersona": "string",
+              "secondaryPersona": "string",
+              "confidenceScore": "number",
+              "hybridFlag": "boolean",
+              "keyCharacteristics": "array"
+            },
+            "algorithm": "random_forest_classifier",
+            "modelVersion": "v4.0_persona_model"
+          }
+        },
+        {
+          "component": "content_selection",
+          "type": "backend",
+          "description": "Dynamic content block selection based on persona",
+          "config": {
+            "contentLibraries": {
+              "executiveSummaries": "persona_specific_summaries",
+              "quickWins": "immediate_actions_library",
+              "protocols": "seven_day_protocols",
+              "productRecommendations": "affiliate_product_database",
+              "trackingPlans": "progress_monitoring_templates"
+            },
+            "selectionRules": "persona_based_matching",
+            "personalizationLevel": "deep_customization"
+          }
+        },
+        {
+          "component": "affiliate_integration",
+          "type": "backend",
+          "description": "Personalized product recommendations with affiliate links",
+          "config": {
+            "affiliateNetworks": [
+              {
+                "name": "Amazon Associates",
+                "tag": "19830c0a-20",
+                "productCategories": ["blue_light_glasses", "white_noise_machines", "sleep_trackers"]
+              },
+              {
+                "name": "Promeed",
+                "id": "100833",
+                "productCategories": ["silk_pillowcases", "cooling_comforters", "luxury_bedding"]
+              }
+            ],
+            "selectionCriteria": {
+              "relevanceScore": ">0.7",
+              "personaMatch": "primary_or_secondary",
+              "priceRange": "budget_to_premium",
+              "implementationEase": "easy_to_moderate"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "stage_3",
+      "name": "PDF Generation & Assembly",
+      "timeTarget": "2 seconds",
+      "components": [
+        {
+          "component": "template_engine",
+          "type": "backend",
+          "description": "Dynamic PDF template assembly",
+          "config": {
+            "templates": {
+              "digital_dependent": {
+                "design": "blue_digital_theme",
+                "layout": "structured_grid",
+                "sections": 8
+              },
+              "restless_mind": {
+                "design": "calm_purple_theme",
+                "layout": "flowing_sections",
+                "sections": 8
+              },
+              "environmentally_sensitive": {
+                "design": "natural_green_theme",
+                "layout": "spacious_blocks",
+                "sections": 8
+              },
+              "schedule_challenged": {
+                "design": "structured_orange_theme",
+                "layout": "timeline_focused",
+                "sections": 8
+              }
+            },
+            "mobileOptimization": {
+              "fontSize": "16px_minimum",
+              "columnLayout": "single_column",
+              "touchTargets": "44px_minimum",
+              "fileSize": "<2MB"
+            }
+          }
+        },
+        {
+          "component": "pdf_generator",
+          "type": "backend",
+          "description": "High-speed PDF generation service",
+          "config": {
+            "engine": "puppeteer_html_to_pdf",
+            "optimization": {
+              "concurrentWorkers": 4,
+              "cachingStrategy": "template_caching",
+              "compressionLevel": "high",
+              "quality": "print_quality"
+            },
+            "output": {
+              "format": "A4_portrait",
+              "margins": "0.5in",
+              "headerFooter": "minimal",
+              "pageNumbers": true
+            }
+          }
+        },
+        {
+          "component": "delivery_system",
+          "type": "backend",
+          "description": "Multi-channel PDF delivery",
+          "config": {
+            "deliveryMethods": [
+              {
+                "method": "email_attachment",
+                "format": "pdf_attachment",
+                "sizeLimit": "10MB"
+              },
+              {
+                "method": "direct_download",
+                "format": "inline_pdf",
+                "expiration": "7_days"
+              },
+              {
+                "method": "mobile_view",
+                "format": "html5_viewer",
+                "features": ["save_to_device", "share", "reminders"]
+              }
+            ],
+            "fallbackStrategies": {
+              "emailFailure": "retry_3_times",
+              "downloadFailure": "generate_new_link",
+              "mobileFailure": "simplified_html"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "stage_4",
+      "name": "Follow-up & Engagement",
+      "timeTarget": "Immediate + Scheduled",
+      "components": [
+        {
+          "component": "email_automation",
+          "type": "backend",
+          "description": "Personalized email sequence",
+          "config": {
+            "sequence": [
+              {
+                "trigger": "pdf_generated",
+                "delay": "immediate",
+                "template": "blueprint_delivery",
+                "personalization": ["name", "persona", "quick_wins"]
+              },
+              {
+                "trigger": "time_based",
+                "delay": "24_hours",
+                "template": "day1_checkin",
+                "personalization": ["name", "progress_check"]
+              },
+              {
+                "trigger": "time_based",
+                "delay": "72_hours",
+                "template": "day3_assessment",
+                "personalization": ["name", "protocol_adjustments"]
+              },
+              {
+                "trigger": "time_based",
+                "delay": "7_days",
+                "template": "weekly_review",
+                "personalization": ["name", "achievements", "next_steps"]
+              },
+              {
+                "trigger": "time_based",
+                "delay": "14_days",
+                "template": "deep_dive_offer",
+                "personalization": ["name", "progress_summary"]
+              }
+            ],
+            "platform": "Kit (ConvertKit)",
+            "tracking": ["opens", "clicks", "replies", "unsubscribes"]
+          }
+        },
+        {
+          "component": "conversion_tracking",
+          "type": "backend",
+          "description": "Micro and macro conversion tracking",
+          "config": {
+            "microConversions": [
+              "assessment_completed",
+              "pdf_downloaded",
+              "email_opened",
+              "quick_win_implemented",
+              "product_link_clicked"
+            ],
+            "macroConversions": [
+              "email_subscribed",
+              "affiliate_purchase",
+              "premium_upgrade",
+              "coaching_booking"
+            ],
+            "analyticsIntegration": ["google_analytics_4", "custom_dashboard"],
+            "attributionModel": "multi_touch"
+          }
+        },
+        {
+          "component": "feedback_collection",
+          "type": "backend",
+          "description": "Continuous improvement feedback system",
+          "config": {
+            "collectionPoints": [
+              {
+                "trigger": "post_assessment",
+                "questions": 1,
+                "metric": "satisfaction_score"
+              },
+              {
+                "trigger": "pdf_viewed",
+                "questions": 2,
+                "metric": "usefulness_rating"
+              },
+              {
+                "trigger": "day30_optional",
+                "questions": 5,
+                "metric": "long_term_impact"
+              }
+            ],
+            "analysis": {
+              "sentimentAnalysis": true,
+              "patternDetection": true,
+              "recommendationRefinement": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "integrationPoints": {
+    "existingTools": [
+      {
+        "tool": "ScoreApp",
+        "integration": "assessment_delivery",
+        "dataFlow": "webhook_to_n8n",
+        "configuration": "custom_branching_logic"
+      },
+      {
+        "tool": "Frase",
+        "integration": "content_generation",
+        "dataFlow": "api_calls_for_dynamic_content",
+        "configuration": "persona_based_templates"
+      },
+      {
+        "tool": "n8n",
+        "integration": "workflow_orchestration",
+        "dataFlow": "central_coordination",
+        "configuration": "modular_workflow_nodes"
+      },
+      {
+        "tool": "Kit (ConvertKit)",
+        "integration": "email_automation",
+        "dataFlow": "subscriber_management",
+        "configuration": "personalized_sequences"
+      }
+    ],
+    "affiliateNetworks": [
+      {
+        "network": "Amazon Associates",
+        "tag": "19830c0a-20",
+        "integration": "direct_link_generation",
+        "products": ["sleep_aids", "bedding", "lighting", "trackers"]
+      },
+      {
+        "network": "Promeed",
+        "id": "100833",
+        "integration": "awin_api",
+        "products": ["silk_bedding", "cooling_products", "luxury_items"]
+      }
+    ]
+  },
+  "performanceOptimization": {
+    "cachingStrategy": {
+      "level1": "cdn_edge_caching",
+      "level2": "template_pre_rendering",
+      "level3": "session_based_caching",
+      "invalidation": "time_based_plus_events"
+    },
+    "concurrentProcessing": {
+      "maxWorkers": 8,
+      "queueManagement": "priority_based",
+      "timeoutHandling": "graceful_degradation",
+      "errorRecovery": "automatic_retry"
+    },
+    "mobileOptimization": {
+      "responsiveDesign": "mobile_first",
+      "performanceBudget": "5_second_load",
+      "offlineSupport": "pdf_caching",
+      "progressiveEnhancement": "core_functionality_first"
+    }
+  },
+  "monitoringAndAnalytics": {
+    "healthMetrics": [
+      {
+        "metric": "api_response_time",
+        "threshold": "<500ms",
+        "alert": "pagerduty"
+      },
+      {
+        "metric": "error_rate",
+        "threshold": "<1%",
+        "alert": "slack"
+      },
+      {
+        "metric": "generation_time",
+        "threshold": "<5s",
+        "alert": "dashboard_warning"
+      },
+      {
+        "metric": "user_satisfaction",
+        "threshold": ">4.0/5",
+        "alert": "weekly_review"
+      }
+    ],
+    "businessMetrics": [
+      {
+        "metric": "assessment_completion_rate",
+        "target": ">85%",
+        "reporting": "daily"
+      },
+      {
+        "metric": "pdf_download_rate",
+        "target": ">90%",
+        "reporting": "daily"
+      },
+      {
+        "metric": "email_open_rate",
+        "target": ">40%",
+        "reporting": "daily"
+      },
+      {
+        "metric": "affiliate_conversion_rate",
+        "target": ">5%",
+        "reporting": "weekly"
+      },
+      {
+        "metric": "customer_lifetime_value",
+        "target": "increasing",
+        "reporting": "monthly"
+      }
+    ]
+  },
+  "securityAndPrivacy": {
+    "dataProtection": {
+      "encryption": "end_to_end",
+      "dataMinimization": "strict",
+      "retentionPolicy": "30_days_default",
+      "deletionProcess": "automated"
+    },
+    "compliance": {
+      "gdpr": "fully_compliant",
+      "ccpa": "fully_compliant",
+      "hipaa": "not_applicable",
+      "accessibility": "wcag_2_1_aa"
+    },
+    "userControls": {
+      "dataAccess": "view_and_download",
+      "privacySettings": "granular_controls",
+      "consentManagement": "explicit_opt_in",
+      "deletionRequest": "immediate_processing"
+    }
+  },
+  "implementationChecklist": {
+    "phase1_foundation": [
+      "Set up assessment interface",
+      "Implement persona classification",
+      "Create basic PDF templates",
+      "Configure email sequences",
+      "Set up analytics tracking"
+    ],
+    "phase2_personalization": [
+      "Develop dynamic content engine",
+      "Integrate affiliate product database",
+      "Optimize for mobile devices",
+      "Implement A/B testing framework",
+      "Set up conversion tracking"
+    ],
+    "phase3_optimization": [
+      "Performance benchmarking",
+      "User feedback integration",
+      "Conversion rate optimization",
+      "Content personalization refinement",
+      "System scalability testing"
+    ],
+    "phase4_scale": [
+      "Multi-language support",
+      "Advanced analytics dashboard",
+      "Premium tier development",
+      "API documentation",
+      "Developer portal"
+    ]
+  },
+  "successCriteria": {
+    "userExperience": {
+      "timeToValue": "<2 minutes",
+      "personalizationScore": ">4.5/5",
+      "mobileSatisfaction": ">4.5/5",
+      "netPromoterScore": ">50"
+    },
+    "technicalPerformance": {
+      "generationTime": "<5 seconds",
+      "systemUptime": ">99.9%",
+      "errorRate": "<0.5%",
+      "mobileCompatibility": "100%"
+    },
+    "businessImpact": {
+      "leadConversion": ">25% improvement",
+      "emailEngagement": ">40% open rate",
+      "affiliateRevenue": ">5% conversion",
+      "customerRetention": ">60% 30-day"
+    }
+  },
+  "versionHistory": [
+    {
+      "version": "1.0",
+      "date": "2026-02-10",
+      "changes": "Initial workflow concept"
+    },
+    {
+      "version": "2.0",
+      "date": "2026-02-11",
+      "changes": "Enhanced personalization framework"
+    },
+    {
+      "version": "3.0",
+      "date": "2026-02-12",
+      "changes": "AI-powered recommendation engine"
+    },
+    {
+      "version": "4.0",
+      "date": "2026-02-13",
+      "changes": "Dynamic PDF generation with <5s target, mobile optimization, comprehensive tracking"
+    }
+  ]
+}

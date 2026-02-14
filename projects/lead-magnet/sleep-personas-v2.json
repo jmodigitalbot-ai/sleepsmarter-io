@@ -1,0 +1,617 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-02-13",
+  "description": "Comprehensive sleep persona mappings for AI-powered personalization framework",
+  "personas": [
+    {
+      "id": "restless_mind",
+      "name": "The Restless Mind",
+      "prevalence": 0.22,
+      "primaryChallenge": "racing_thoughts",
+      "secondaryChallenges": ["anxiety", "rumination", "stress"],
+      "typicalProfile": {
+        "sleepLatency": "30+ minutes",
+        "nighttimeAwakenings": "1-2 times",
+        "morningRefreshment": "unrefreshed",
+        "bedtimeThoughts": "planning_worrying_reviewing"
+      },
+      "behavioralPatterns": [
+        "Difficulty 'switching off' brain",
+        "Tendency to problem-solve in bed",
+        "High cognitive activity before sleep",
+        "Perfectionist tendencies"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "cognitive",
+          "priority": 1,
+          "recommendations": [
+            "Bedtime meditation (10 min)",
+            "Worry journal (evening)",
+            "Progressive muscle relaxation",
+            "Body scan meditation"
+          ]
+        },
+        {
+          "category": "environmental",
+          "priority": 2,
+          "recommendations": [
+            "Designated worry time (not in bed)",
+            "Bedroom as sleep-only space",
+            "White noise for mental distraction",
+            "Cool room temperature (66-68°F)"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "digital",
+          "products": ["Headspace subscription", "Calm app", "Sleep stories"],
+          "implementation": "Use 30 minutes before bed"
+        },
+        {
+          "type": "physical",
+          "products": ["Weighted blanket", "White noise machine", "Sleep mask"],
+          "implementation": "Integrate into bedtime routine"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "stress_spike_rumination",
+          "probability": 0.75,
+          "mitigation": "preemptive_stress_journaling"
+        }
+      ],
+      "communicationTone": "calm_reassuring",
+      "successMetrics": ["sleep_latency", "morning_mind_clarity"]
+    },
+    {
+      "id": "digital_addict",
+      "name": "The Digital Addict",
+      "prevalence": 0.28,
+      "primaryChallenge": "screen_time_disruption",
+      "secondaryChallenges": ["blue_light_exposure", "content_stimulation", "notification_addiction"],
+      "typicalProfile": {
+        "screenUsage": "frequent_before_bed",
+        "lastScreenTime": "<30_minutes_before_sleep",
+        "deviceInBedroom": true,
+        "contentType": "social_media_entertainment"
+      },
+      "behavioralPatterns": [
+        "Infinite scrolling before sleep",
+        "Checking devices upon waking",
+        "Using phone as alarm clock",
+        "Difficulty disconnecting"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "digital_detox",
+          "priority": 1,
+          "recommendations": [
+            "Digital sunset (60 min before bed)",
+            "Phone charging outside bedroom",
+            "Blue light filter activation",
+            "Screen time limits (8 PM onwards)"
+          ]
+        },
+        {
+          "category": "alternative_activities",
+          "priority": 2,
+          "recommendations": [
+            "Audiobook/podcast routine",
+            "Physical book reading",
+            "Evening journaling",
+            "Gentle stretching"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "protective",
+          "products": ["Blue light blocking glasses", "Screen time app", "Analog alarm clock"],
+          "implementation": "Consistent evening use"
+        },
+        {
+          "type": "replacement",
+          "products": ["E-reader (no backlight)", "Bluetooth speaker", "Sleep headphones"],
+          "implementation": "Digital sunset alternatives"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "weekend_screen_binge",
+          "probability": 0.82,
+          "mitigation": "weekend_digital_detox_plan"
+        }
+      ],
+      "communicationTone": "practical_motivational",
+      "successMetrics": ["screen_time_after_8pm", "sleep_onset_consistency"]
+    },
+    {
+      "id": "chronotype_misfit",
+      "name": "The Chronotype Misfit",
+      "prevalence": 0.18,
+      "primaryChallenge": "schedule_biology_misalignment",
+      "secondaryChallenges": ["social_jetlag", "work_schedule_conflict", "weekend_catchup"],
+      "typicalProfile": {
+        "naturalWakeTime": "8:30+ AM",
+        "forcedWakeTime": "6:30 AM",
+        "weekendSleepDifference": "2+ hours",
+        "energyPattern": "evening_peak"
+      },
+      "behavioralPatterns": [
+        "Hitting snooze repeatedly",
+        "Weekend sleep compensation",
+        "Evening productivity bursts",
+        "Morning grogginess"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "light_exposure",
+          "priority": 1,
+          "recommendations": [
+            "Morning light therapy (15 min)",
+            "Evening light reduction",
+            "Consistent wake time (weekends ±1 hour)",
+            "Gradual schedule adjustment"
+          ]
+        },
+        {
+          "category": "schedule_optimization",
+          "priority": 2,
+          "recommendations": [
+            "Strategic napping (20 min early afternoon)",
+            "Important tasks aligned with energy peaks",
+            "Social activity timing adjustment",
+            "Meal timing optimization"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "light_management",
+          "products": ["Light therapy lamp", "Smart light bulbs", "Sunrise alarm clock"],
+          "implementation": "Morning routine integration"
+        },
+        {
+          "type": "tracking",
+          "products": ["Sleep tracker", "Energy journal", "Chronotype assessment"],
+          "implementation": "Daily monitoring"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "weekend_social_oversleep",
+          "probability": 0.68,
+          "mitigation": "weekend_schedule_guardrails"
+        }
+      ],
+      "communicationTone": "empowering_educational",
+      "successMetrics": ["weekend_wake_consistency", "morning_alertness"]
+    },
+    {
+      "id": "environmentally_challenged",
+      "name": "The Environmentally Challenged",
+      "prevalence": 0.15,
+      "primaryChallenge": "external_sleep_disruptors",
+      "secondaryChallenges": ["noise_pollution", "light_pollution", "temperature_issues"],
+      "typicalProfile": {
+        "bedroomNoiseLevel": "moderate_high",
+        "lightExposure": "street_lights_neighbors",
+        "temperatureControl": "limited",
+        "bedComfort": "suboptimal"
+      },
+      "behavioralPatterns": [
+        "Frequent nighttime awakenings",
+        "Difficulty returning to sleep",
+        "Environmental sensitivity",
+        "Compensation with earplugs/eye masks"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "environment_optimization",
+          "priority": 1,
+          "recommendations": [
+            "Complete darkness (blackout solutions)",
+            "White noise machine",
+            "Temperature regulation (67°F target)",
+            "Comfort optimization (mattress/pillow)"
+          ]
+        },
+        {
+          "category": "adaptation_strategies",
+          "priority": 2,
+          "recommendations": [
+            "Sleep mask + earplug routine",
+            "Bedroom sanctuary creation",
+            "Sound conditioning",
+            "Temperature gradient management"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "environment_control",
+          "products": ["Blackout curtains", "White noise machine", "Smart thermostat", "Quality mattress topper"],
+          "implementation": "Bedroom transformation"
+        },
+        {
+          "type": "personal_protection",
+          "products": ["Sleep mask", "Earplugs", "Weighted blanket", "Cooling pillow"],
+          "implementation": "Individual comfort layer"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "seasonal_temperature_issues",
+          "probability": 0.72,
+          "mitigation": "seasonal_bedding_rotation"
+        }
+      ],
+      "communicationTone": "practical_solution_focused",
+      "successMetrics": ["nighttime_awakenings", "sleep_continuity"]
+    },
+    {
+      "id": "habitually_inconsistent",
+      "name": "The Habitually Inconsistent",
+      "prevalence": 0.12,
+      "primaryChallenge": "routine_irregularity",
+      "secondaryChallenges": ["schedule_chaos", "priority_conflict", "motivation_fluctuation"],
+      "typicalProfile": {
+        "bedtimeVariance": "90+ minutes",
+        "wakeTimeVariance": "120+ minutes",
+        "routineAdherence": "sporadic",
+        "excusePattern": "work_social_travel"
+      },
+      "behavioralPatterns": [
+        "Inconsistent sleep schedule",
+        "Excuse justification",
+        "All-or-nothing thinking",
+        "Weekend compensation"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "consistency_foundation",
+          "priority": 1,
+          "recommendations": [
+            "Fixed wake time (non-negotiable)",
+            "Bedtime window (30 min flexibility)",
+            "Anchor habit establishment",
+            "Progress tracking"
+          ]
+        },
+        {
+          "category": "flexibility_framework",
+          "priority": 2,
+          "recommendations": [
+            "80/20 rule application",
+            "Travel/social exception planning",
+            "Recovery protocol for slip-ups",
+            "Mini-habit approach"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "tracking_accountability",
+          "products": ["Sleep tracking app", "Habit tracker", "Accountability partner system", "Visual progress chart"],
+          "implementation": "Daily check-in system"
+        },
+        {
+          "type": "routine_support",
+          "products": ["Smart alarm", "Routine reminder app", "Sleep diary", "Reward system"],
+          "implementation": "Consistency reinforcement"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "social_event_disruption",
+          "probability": 0.85,
+          "mitigation": "social_sleep_protocol"
+        }
+      ],
+      "communicationTone": "supportive_structured",
+      "successMetrics": ["schedule_consistency", "routine_adherence"]
+    },
+    {
+      "id": "physiologically_sensitive",
+      "name": "The Physiologically Sensitive",
+      "prevalence": 0.08,
+      "primaryChallenge": "physical_sleep_disruptors",
+      "secondaryChallenges": ["pain_discomfort", "medical_conditions", "medication_effects"],
+      "typicalProfile": {
+        "physicalDiscomfort": "frequent",
+        "medicalConditions": ["sleep_apnea", "restless_legs", "chronic_pain"],
+        "medicationUse": "sleep_affecting",
+        "professionalDiagnosis": "pending_or_confirmed"
+      },
+      "behavioralPatterns": [
+        "Position changing for comfort",
+        "Pain/discomfort reporting",
+        "Medical history relevance",
+        "Supplement experimentation"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "medical_collaboration",
+          "priority": 1,
+          "recommendations": [
+            "Professional evaluation referral",
+            "Sleep study consideration",
+            "Medication review with doctor",
+            "Specialist consultation"
+          ]
+        },
+        {
+          "category": "comfort_optimization",
+          "priority": 2,
+          "recommendations": [
+            "Specialized sleep positioning",
+            "Therapeutic bedding",
+            "Pain management integration",
+            "Environmental adaptation"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "therapeutic",
+          "products": ["Adjustable bed frame", "Specialized pillow", "Weighted blanket", "Body pillow"],
+          "implementation": "Medical professional consultation recommended"
+        },
+        {
+          "type": "monitoring",
+          "products": ["Sleep study device", "Pain/symptom tracker", "Medical journal", "Professional referral network"],
+          "implementation": "Healthcare collaboration"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "symptom_flare_up",
+          "probability": 0.65,
+          "mitigation": "flare_up_management_plan"
+        }
+      ],
+      "communicationTone": "cautious_collaborative",
+      "successMetrics": ["discomfort_levels", "medical_follow_through"]
+    },
+    {
+      "id": "stress_affected",
+      "name": "The Stress-Affected",
+      "prevalence": 0.20,
+      "primaryChallenge": "anxiety_impact_on_sleep",
+      "secondaryChallenges": ["work_pressure", "life_transitions", "emotional_turmoil"],
+      "typicalProfile": {
+        "stressLevels": "high_chronic",
+        "sleepImpact": "onset_maintenance",
+        "copingMechanisms": "mixed_effectiveness",
+        "lifeEvents": "current_challenges"
+      },
+      "behavioralPatterns": [
+        "Worry-based insomnia",
+        "Physical tension at bedtime",
+        "Sleep avoidance anxiety",
+        "Daytime stress spillover"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "stress_management",
+          "priority": 1,
+          "recommendations": [
+            "Daily stress reduction practice",
+            "Worry time (not in bed)",
+            "Cognitive restructuring",
+            "Relaxation response training"
+          ]
+        },
+        {
+          "category": "sleep_relationship",
+          "priority": 2,
+          "recommendations": [
+            "Sleep effort reduction",
+            "Bedtime anxiety management",
+            "Sleep restriction (if appropriate)",
+            "Stimulus control"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "therapeutic_tools",
+          "products": ["CBT-I app", "Relaxation audio", "Stress journal", "Biofeedback device"],
+          "implementation": "Integrated daily practice"
+        },
+        {
+          "type": "environmental_support",
+          "products": ["Weighted blanket", "Aromatherapy diffuser", "Comfort items", "Calming decor"],
+          "implementation": "Bedroom sanctuary creation"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "stress_spike_insomnia",
+          "probability": 0.78,
+          "mitigation": "stress_resilience_building"
+        }
+      ],
+      "communicationTone": "compassionate_empowering",
+      "successMetrics": ["stress_levels", "sleep_anxiety"]
+    },
+    {
+      "id": "undiagnosed",
+      "name": "The Undiagnosed",
+      "prevalence": 0.07,
+      "primaryChallenge": "unknown_sleep_disorder",
+      "secondaryChallenges": ["symptom_misinterpretation", "delayed_seeking_help", "self_treatment_ineffectiveness"],
+      "typicalProfile": {
+        "symptomSeverity": "significant",
+        "duration": "months_years",
+        "previousAttempts": "multiple_unsuccessful",
+        "professionalHelp": "not_sought"
+      },
+      "behavioralPatterns": [
+        "Severe sleep disruption",
+        "Daytime impairment",
+        "Compensation strategies",
+        "Normalization of symptoms"
+      ],
+      "recommendationPriorities": [
+        {
+          "category": "assessment_escalation",
+          "priority": 1,
+          "recommendations": [
+            "Sleep disorder screening",
+            "Professional evaluation urgency",
+            "Symptom documentation",
+            "Referral to sleep specialist"
+          ]
+        },
+        {
+          "category": "safety_support",
+          "priority": 2,
+          "recommendations": [
+            "Immediate safety measures",
+            "Daytime functioning support",
+            "Medical collaboration preparation",
+            "Treatment readiness"
+          ]
+        }
+      ],
+      "productSuggestions": [
+        {
+          "type": "assessment_tools",
+          "products": ["Sleep diary template", "Symptom checklist", "Professional referral list", "Medical history organizer"],
+          "implementation": "Healthcare preparation"
+        },
+        {
+          "type": "safety_support",
+          "products": ["Alertness monitoring", "Safety checklist", "Emergency contact system", "Support network engagement"],
+          "implementation": "Immediate implementation"
+        }
+      ],
+      "predictiveChallenges": [
+        {
+          "challenge": "condition_progression",
+          "probability": 0.60,
+          "mitigation": "urgent_professional_evaluation"
+        }
+      ],
+      "communicationTone": "urgent_caring",
+      "successMetrics": ["professional_evaluation", "symptom_documentation"]
+    }
+  ],
+  "personaDetectionRules": {
+    "assessmentThresholds": {
+      "restless_mind": {
+        "racingThoughtsScore": 7,
+        "bedtimeCognitiveActivity": 8,
+        "anxietyLevel": 6
+      },
+      "digital_addict": {
+        "screenTimeAfter8pm": 120,
+        "bedtimeScreenProximity": 15,
+        "deviceDependency": 8
+      },
+      "chronotype_misfit": {
+        "weekendSleepDifference": 120,
+        "morningGrogginess": 7,
+        "eveningEnergy": 8
+      },
+      "environmentally_challenged": {
+        "noiseSensitivity": 7,
+        "lightSensitivity": 7,
+        "temperatureIssues": 6
+      },
+      "habitually_inconsistent": {
+        "scheduleVariance": 90,
+        "excuseFrequency": 8,
+        "routineAdherence": 3
+      },
+      "physiologically_sensitive": {
+        "physicalDiscomfort": 7,
+        "medicalHistoryRelevance": 8,
+        "painFrequency": 6
+      },
+      "stress_affected": {
+        "stressLevel": 8,
+        "sleepAnxiety": 7,
+        "worryFrequency": 8
+      },
+      "undiagnosed": {
+        "symptomSeverity": 8,
+        "durationMonths": 6,
+        "daytimeImpairment": 7
+      }
+    },
+    "scoringAlgorithm": {
+      "primaryMatchThreshold": 0.75,
+      "secondaryMatchThreshold": 0.60,
+      "hybridPersonaThreshold": 0.40,
+      "confidenceMinimum": 0.65
+    }
+  },
+  "hybridPersonas": [
+    {
+      "id": "digital_restless",
+      "combination": ["digital_addict", "restless_mind"],
+      "prevalence": 0.15,
+      "characteristics": "Screen addiction exacerbating racing thoughts",
+      "priorityRecommendations": [
+        "Digital sunset + meditation combo",
+        "Screen-free worry journaling",
+        "Blue light glasses with relaxation audio"
+      ]
+    },
+    {
+      "id": "stress_chronotype",
+      "combination": ["stress_affected", "chronotype_misfit"],
+      "prevalence": 0.10,
+      "characteristics": "Stress amplified by schedule misalignment",
+      "priorityRecommendations": [
+        "Stress management + light therapy",
+        "Anxiety reduction with schedule optimization",
+        "CBT-I adapted for chronotype"
+      ]
+    },
+    {
+      "id": "environmental_inconsistent",
+      "combination": ["environmentally_challenged", "habitually_inconsistent"],
+      "prevalence": 0.08,
+      "characteristics": "Environmental issues compounded by poor routine",
+      "priorityRecommendations": [
+        "Environmental fixes with habit tracking",
+        "Consistency in protective measures",
+        "Routine-based environment optimization"
+      ]
+    }
+  ],
+  "implementationGuidance": {
+    "assessmentIntegration": {
+      "questionWeighting": "Adjust based on suspected persona",
+      "branchingLogic": "Follow-up questions for persona confirmation",
+      "scoringAdjustment": "Persona-specific scoring thresholds"
+    },
+    "recommendationGeneration": {
+      "personaPriority": "Address primary persona first",
+      "hybridApproach": "Combine recommendations for hybrid personas",
+      "progressiveRevelation": "Reveal persona insights gradually"
+    },
+    "communicationStrategy": {
+      "personaLanguage": "Use persona-appropriate terminology",
+      "toneMatching": "Align communication style with persona",
+      "motivationTriggers": "Leverage persona-specific motivators"
+    }
+  },
+  "versionHistory": [
+    {
+      "version": "1.0",
+      "date": "2026-02-10",
+      "changes": "Initial persona definitions based on sleep research"
+    },
+    {
+      "version": "2.0",
+      "date": "2026-02-13",
+      "changes": "Enhanced for AI personalization framework, added detection rules, hybrid personas, implementation guidance"
+    }
+  ]
+}

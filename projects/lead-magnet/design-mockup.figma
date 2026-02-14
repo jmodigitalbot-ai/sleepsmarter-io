@@ -1,0 +1,768 @@
+# Personalized Sleep Blueprint - Figma Design Mockup Specification
+
+## Design System Overview
+
+### 1. Design Tokens
+
+#### Color Palette:
+```css
+/* Primary Colors */
+--primary-navy: #1e3a8a;      /* Trust, stability */
+--primary-teal: #0d9488;      /* Relaxation, health */
+--accent-lavender: #8b5cf6;   /* Sleep, tranquility */
+
+/* Secondary Colors */
+--secondary-blue: #3b82f6;    /* Calm, confidence */
+--secondary-green: #10b981;   /* Growth, renewal */
+--secondary-amber: #f59e0b;   /* Energy, warmth */
+
+/* Neutral Colors */
+--neutral-50: #f8fafc;        /* Background */
+--neutral-100: #f1f5f9;       /* Cards, surfaces */
+--neutral-200: #e2e8f0;       /* Borders, dividers */
+--neutral-300: #cbd5e1;       /* Disabled states */
+--neutral-700: #334155;       /* Body text */
+--neutral-900: #0f172a;       /* Headings */
+
+/* Semantic Colors */
+--success: #10b981;           /* Positive actions */
+--warning: #f59e0b;           /* Caution, alerts */
+--error: #ef4444;             /* Errors, warnings */
+--info: #3b82f6;              /* Information */
+
+/* Persona Colors */
+--persona-digital: #8b5cf6;   /* Digital Night Owl */
+--persona-stressed: #0d9488;  /* Stressed Professional */
+--persona-parent: #3b82f6;    /* New Parent */
+--persona-shift: #f59e0b;     /* Shift Worker */
+```
+
+#### Typography:
+```css
+/* Font Family: Inter */
+--font-primary: 'Inter', -apple-system, sans-serif;
+
+/* Font Sizes */
+--text-xs: 0.75rem;    /* 12px - Captions, labels */
+--text-sm: 0.875rem;   /* 14px - Small body text */
+--text-base: 1rem;     /* 16px - Body text */
+--text-lg: 1.125rem;   /* 18px - Lead text */
+--text-xl: 1.25rem;    /* 20px - Subheadings */
+--text-2xl: 1.5rem;    /* 24px - Section headings */
+--text-3xl: 1.875rem;  /* 30px - Page headings */
+--text-4xl: 2.25rem;   /* 36px - Hero headings */
+
+/* Font Weights */
+--font-light: 300;
+--font-regular: 400;
+--font-medium: 500;
+--font-semibold: 600;
+--font-bold: 700;
+
+/* Line Heights */
+--leading-tight: 1.25;
+--leading-normal: 1.5;
+--leading-relaxed: 1.75;
+```
+
+#### Spacing System (8px base):
+```css
+--space-1: 0.25rem;   /* 2px */
+--space-2: 0.5rem;    /* 4px */
+--space-3: 0.75rem;   /* 6px */
+--space-4: 1rem;      /* 8px */
+--space-6: 1.5rem;    /* 12px */
+--space-8: 2rem;      /* 16px */
+--space-12: 3rem;     /* 24px */
+--space-16: 4rem;     /* 32px */
+--space-24: 6rem;     /* 48px */
+--space-32: 8rem;     /* 64px */
+```
+
+#### Border Radius:
+```css
+--radius-sm: 0.25rem;   /* 2px */
+--radius-md: 0.375rem;  /* 3px */
+--radius-lg: 0.5rem;    /* 4px */
+--radius-xl: 0.75rem;   /* 6px */
+--radius-2xl: 1rem;     /* 8px */
+--radius-full: 9999px;  /* Full circle */
+```
+
+#### Shadows:
+```css
+--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+```
+
+### 2. Component Library
+
+#### Buttons:
+```css
+/* Primary Button */
+.btn-primary {
+  background: var(--primary-teal);
+  color: white;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-semibold);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: white;
+  color: var(--primary-navy);
+  border: 2px solid var(--primary-navy);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-semibold);
+}
+
+/* Persona Button */
+.btn-persona-digital {
+  background: var(--persona-digital);
+  color: white;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-semibold);
+}
+```
+
+#### Cards:
+```css
+/* Assessment Card */
+.card-assessment {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--neutral-200);
+}
+
+/* Persona Card */
+.card-persona {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 3px solid var(--persona-color);
+  box-shadow: var(--shadow-md);
+}
+
+/* Recommendation Card */
+.card-recommendation {
+  background: var(--neutral-50);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  border-left: 4px solid var(--primary-teal);
+}
+```
+
+#### Progress Indicators:
+```css
+/* Progress Bar */
+.progress-bar {
+  height: 8px;
+  background: var(--neutral-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-teal);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+/* Circular Progress */
+.circular-progress {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(var(--primary-teal) 0% 68%, var(--neutral-200) 68% 100%);
+}
+```
+
+### 3. Screen Designs
+
+#### Screen 1: Assessment Introduction
+```
+┌─────────────────────────────────────────────────────┐
+│                                                     │
+│  🎯 GET YOUR PERSONALIZED SLEEP BLUEPRINT          │
+│                                                     │
+│  Most sleep advice is generic.                     │
+│  Your sleep isn't.                                 │
+│                                                     │
+│  Take our 3-minute assessment to discover:         │
+│  • Your sleep persona                              │
+│  • Personalized quick wins                         │
+│  • 7-day reset protocol                            │
+│  • Science-backed recommendations                  │
+│                                                     │
+│  [Start Assessment]                                │
+│                                                     │
+│  ⏱️ Takes just 3 minutes                           │
+│  🔒 Your data is private and secure                │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+**Design Specifications:**
+- Background: Gradient from --neutral-50 to white
+- Hero text: --text-4xl, --font-bold, --primary-navy
+- Body text: --text-lg, --neutral-700, --leading-relaxed
+- Button: Centered, --space-24 margin-top
+- Trust indicators: --text-sm, --neutral-500, centered
+
+#### Screen 2: Adaptive Assessment Question
+```
+┌─────────────────────────────────────────────────────┐
+│  🔍 SLEEP ASSESSMENT                                │
+│                                                     │
+│  Progress: Question 5 of 10                         │
+│  ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                                     │
+│  What time do you typically use your phone         │
+│  for the last time before bed?                     │
+│                                                     │
+│  ○ More than 2 hours before bed                    │
+│  ○ 1-2 hours before bed                            │
+│  ○ 30-60 minutes before bed                        │
+│  ○ Right up until I fall asleep                    │
+│  ○ I fall asleep with my phone                     │
+│                                                     │
+│  💡 This helps us recommend the right digital      │
+│     detox strategy for your habits.                │
+│                                                     │
+│  [← Back]                      [Next →]            │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+**Design Specifications:**
+- Progress bar: Fixed top, --space-4 padding
+- Question text: --text-2xl, --font-semibold, --neutral-900
+- Options: Radio buttons with --space-4 vertical spacing
+- Tooltip: --neutral-100 background, --radius-md, --space-3 padding
+- Navigation: Fixed bottom, space-between layout
+
+#### Screen 3: Persona Identification Results
+```
+┌─────────────────────────────────────────────────────┐
+│  🦉 YOUR SLEEP PERSONA: DIGITAL NIGHT OWL          │
+│                                                     │
+│  Based on your assessment, you're a Digital        │
+│  Night Owl. Your primary challenge is screen       │
+│  addiction disrupting sleep onset.                 │
+│                                                     │
+│  ⭐ YOUR SLEEP HEALTH SCORE: 62/100                │
+│  ██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                                     │
+│  🔍 KEY INSIGHTS:                                  │
+│  • Screen time: 4.2 hours before bed (high)        │
+│  • Sleep latency: 28 minutes (needs improvement)   │
+│  • Consistency: 85% (excellent)                    │
+│                                                     │
+│  📊 COMPARED TO SIMILAR PROFILES:                  │
+│  You're stronger on consistency but need help      │
+│  with digital boundaries.                          │
+│                                                     │
+│  [View Your Personalized Blueprint]                │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+**Design Specifications:**
+- Persona badge: Large icon + title, persona color
+- Score visualization: Circular progress with number
+- Insights: Grid layout, icons for each metric
+- Comparison: Callout box with --neutral-100 background
+- CTA: Full-width button, --space-8 margin-top
+
+#### Screen 4: Personalized Blueprint Dashboard
+```
+┌─────────────────────────────────────────────────────┐
+│  🎉 YOUR PERSONALIZED SLEEP BLUEPRINT              │
+│                                                     │
+│  Designed for: Digital Night Owl                    │
+│  Generated: Today at 2:45 PM                        │
+│  Reference: SS-DNO-20260213-245                     │
+│                                                     │
+│  ⚡ TONIGHT'S QUICK WINS                            │
+│                                                     │
+│  🎯 Digital Sunset Protocol                         │
+│  Start at: 8:30 PM (60 min before bed)              │
+│  • Enable Bedtime Mode on all devices               │
+│  • Charge phone outside bedroom                     │
+│  • Switch to audiobook for entertainment            │
+│                                                     │
+│  🎯 Blue Light Defense                              │
+│  Time: After 8 PM                                   │
+│  • Wear blue light blocking glasses                 │
+│  • Install f.lux on computer                        │
+│  • Use warm lighting in evening                     │
+│                                                     │
+│  📅 7-DAY SLEEP RESET PROTOCOL                     │
+│  [View Full Protocol]                               │
+│                                                     │
+│  📊 PROGRESS TRACKER                               │
+│  [Download Sleep Journal]                           │
+│                                                     │
+│  [Download PDF] [Send to Email]                    │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+**Design Specifications:**
+- Header: Persona badge + metadata in small text
+- Quick wins: Card layout with icon, title, details
+- Protocol preview: Collapsible section
+- Progress tracker: Interactive component
+- Action buttons: Side-by-side, equal width
+
+### 4. Persona-Specific Design Elements
+
+#### Digital Night Owl Design Theme:
+- **Primary Color:** --persona-digital (#8b5cf6)
+- **Icons:** Moon, smartphone, wifi, battery
+- **Patterns:** Circuit board, digital waves
+- **Typography:** Slightly techy, clean lines
+- **Visuals:** Blue light spectrum, screen time charts
+
+#### Stressed Professional Design Theme:
+- **Primary Color:** --persona-stressed (#0d9488)
+- **Icons:** Brain, calendar, checklist, meditation
+- **Patterns:** Organic waves, breathing circles
+- **Typography:** Calm, rounded, approachable
+- **Visuals:** Stress level charts, relaxation techniques
+
+#### New Parent Design Theme:
+- **Primary Color:** --persona-parent (#3b82f6)
+- **Icons:** Baby, moon, clock, partner
+- **Patterns:** Soft clouds, gentle waves
+- **Typography:** Warm, nurturing, clear
+- **Visuals:** Sleep fragmentation charts, nap schedules
+
+#### Shift Worker Design Theme:
+- **Primary Color:** --persona-shift (#f59e0b)
+- **Icons:** Sun/moon, clock, meal, social
+- **Patterns:** Circadian rhythm waves, shift patterns
+- **Typography:** Clear, bold, practical
+- **Visuals:** Light exposure charts, meal timing diagrams
+
+### 5. Interactive Components
+
+#### Progress Tracker Component:
+```
+┌─────────────────────────────────────────────────────┐
+│  YOUR 30-DAY SLEEP JOURNEY                         │
+│                                                     │
+│  Week 1: Foundation                                │
+│  ██████████░░░░░░░░░░░░ 52% complete              │
+│  • Day 1-3: Consistent wake time ✓                 │
+│  • Day 4-7: Digital sunset implementation 🟡       │
+│                                                     │
+│  Week 2: Environment Optimization                  │
+│  ████░░░░░░░░░░░░░░░░░░ 20% complete              │
+│  • Day 8-10: Bedroom darkness 🟡                   │
+│  • Day 11-14: Temperature control ◯                │
+│                                                     │
+│  [Mark Complete] [Add Note]                        │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+**Features:**
+- Expandable/collapsible weeks
+- Progress bars for each week
+- Interactive checkmarks (✓ complete, 🟡 in progress, ◯ pending)
+- Action buttons for each task
+- Notes functionality
+
+#### Sleep Cycle Visualization:
+```
+┌─────────────────────────────────────────────────────┐
+│  YOUR OPTIMAL SLEEP CYCLE TIMING                   │
+│                                                     │
+│  9:30 PM     11:00 PM     12:30 AM      2:00 AM    │
+│  ┌────────┐  ┌────────┐  ┌────────┐   ┌────────┐  │
+│  │ Light  │  │ Deep   │  │ REM    │   │ Light  │  │
+│  │ Sleep  │  │ Sleep  │  │ Sleep  │   │ Sleep  │  │
+│  └────────┘  └────────┘  └────────┘   └────────┘  │
+│                                                     │
+│  ⭐ Optimal Wake Point: 7:00 AM                    │
+│  ⚠️ Avoid Waking: 10:30 PM-12:00 AM                │
+│                                                     │
+│  [Adjust Your Schedule]                            │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+**Features:**
+- Interactive timeline
+- Hover details for each sleep stage
+- Adjustable bedtime/wake time
+- Visual indicators for optimal/avoid zones
+- Science fact tooltips
+
+#### Science Fact Callouts:
+```
+┌─────────────────────────────────────────────────────┐
+│  🔬 THE SCIENCE BEHIND THIS                        │
+│                                                     │
+│  Blue light from screens suppresses melatonin       │
+│  production by up to 50% for 90+ minutes.          │
+│                                                     │
+│  Source: Chang et al., 2015, PNAS                  │
+│  [Read Study Abstract]                             │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+**Design:**
+- Distinct background color (--neutral-50)
+- Icon for visual identification
+- Collapsible for space saving
+- Link to source material
+- Citation format consistent
+
+### 6. Mobile Responsive Design
+
+#### Breakpoints:
+```css
+/* Mobile First */
+--breakpoint-sm: 640px;   /* Small tablets */
+--breakpoint-md: 768px;   /* Tablets */
+--breakpoint-lg: 1024px;  /* Laptops */
+--breakpoint-xl: 1280px;  /* Desktops */
+```
+
+#### Mobile Adaptations:
+1. **Assessment Screen:**
+   - Single column layout
+   - Larger tap targets (min 44px height)
+   - Simplified progress indicator
+   - Bottom-fixed navigation
+
+2. **Results Dashboard:**
+   - Stacked cards instead of grid
+   - Simplified visualizations
+   - Larger text for readability
+   - Full-width action buttons
+
+3. **Blueprint View:**
+   - Accordion-style sections
+   - Swipeable timeline
+   - Simplified charts
+   - Easy share actions
+
+#### Touch-Friendly Design:
+- Minimum touch target: 44px × 44px
+- Adequate spacing between interactive elements
+- Clear visual feedback on touch
+- Gesture support for common actions
+
+### 7. Animation & Micro-interactions
+
+#### Loading States:
+```css
+/* Skeleton Loading */
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+```
+
+#### Transitions:
+```css
+/* Question Transition */
+.question-transition-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.question-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Card Hover */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+```
+
+#### Progress Animations:
+```css
+/* Progress Fill Animation */
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: var(--progress-percentage); }
+}
+
+.progress-fill {
+  animation: progressFill 0.8s ease-out;
+}
+
+/* Score Increase Animation */
+@keyframes scoreIncrease {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.score-increase {
+  animation: scoreIncrease 0.5s ease;
+}
+```
+
+### 8. Accessibility Considerations
+
+#### Color Contrast:
+- Text on background: Minimum 4.5:1 ratio
+- Interactive elements: Minimum 3:1 ratio
+- Success/error states: Distinct beyond color (icons, patterns)
+
+#### Screen Reader Support:
+- Semantic HTML structure
+- ARIA labels for interactive elements
+- Proper heading hierarchy
+- Descriptive link text
+
+#### Keyboard Navigation:
+- Logical tab order
+- Visible focus indicators
+- Skip navigation links
+- Keyboard shortcuts for power users
+
+#### Reduced Motion:
+- Respect prefers-reduced-motion
+- Essential animations only
+- Provide controls to disable animations
+
+### 9. Design Assets
+
+#### Icon Set:
+1. **Sleep Icons:**
+   - 🌙 Moon (general sleep)
+   - ⏰ Alarm clock (wake time)
+   - 🛏️ Bed (bedtime)
+   - 📱 Smartphone (digital habits)
+   - 🧠 Brain (mental health)
+   - 👶 Baby (parenting)
+   - 🌞 Sun (light exposure)
+   - 🍽️ Meal (nutrition timing)
+
+2. **Persona Icons:**
+   - 🦉 Owl (Digital Night Owl)
+   - 💼 Briefcase (Stressed Professional)
+   - 👨‍👩‍👧 Family (New Parent)
+   - 🌙☀️ Moon/Sun (Shift Worker)
+
+3. **Action Icons:**
+   - ✅ Check (complete)
+   - 🟡 Circle (in progress)
+   - ◯ Empty circle (pending)
+   - ⬇️ Download
+   - 📧 Email
+   - 🔗 Link
+   - ℹ️ Information
+
+#### Illustration Style:
+- **Line Art:** Clean, modern line illustrations
+- **Color:** Limited palette per persona
+- **Detail:** Simplified, recognizable forms
+- **Consistency:** Same style across all illustrations
+
+#### Chart Styles:
+1. **Sleep Cycle Chart:**
+   - Color-coded stages (light blue, deep blue, purple)
+   - Clear labels and time markers
+   - Interactive hover details
+
+2. **Progress Charts:**
+   - Simple bar charts for weekly progress
+   - Line charts for trend visualization
+   - Donut charts for score breakdowns
+
+3. **Comparison Charts:**
+   - Side-by-side bar comparisons
+   - Radar charts for multi-dimensional comparison
+   - Heat maps for pattern visualization
+
+### 10. Design Handoff Specifications
+
+#### Developer Handoff Includes:
+1. **Design Tokens:** CSS variables for all design decisions
+2. **Component Library:** Reusable UI components with states
+3. **Screen Designs:** All major screens with responsive variants
+4. **Interaction Specifications:** Animation timing, easing curves
+5. **Accessibility Guidelines:** Contrast ratios, ARIA patterns
+6. **Asset Export:** Icons, illustrations in multiple formats
+
+#### Export Specifications:
+- **Icons:** SVG with viewBox, no fill/stroke colors
+- **Illustrations:** SVG with named layers
+- **Images:** WebP format with fallbacks
+- **Colors:** HEX, RGB, and CSS variable formats
+- **Typography:** CSS font stack with fallbacks
+
+#### Implementation Notes:
+```css
+/* CSS Custom Properties for Theming */
+:root {
+  --theme-persona: 'digital'; /* dynamic based on user */
+  --theme-primary: var(--persona-digital);
+  --theme-background: var(--neutral-50);
+}
+
+/* Persona-specific theming */
+[data-persona="digital"] {
+  --theme-primary: var(--persona-digital);
+  --theme-accent: var(--accent-lavender);
+}
+
+[data-persona="stressed"] {
+  --theme-primary: var(--persona-stressed);
+  --theme-accent: var(--secondary-green);
+}
+```
+
+### 11. Design Validation Checklist
+
+#### Usability Testing Points:
+1. **Assessment Flow:**
+   - Can users complete assessment in < 3 minutes?
+   - Are questions clear and unambiguous?
+   - Does branching logic feel natural?
+
+2. **Results Comprehension:**
+   - Do users understand their persona?
+   - Can they interpret their sleep score?
+   - Are recommendations clear and actionable?
+
+3. **Blueprint Utility:**
+   - Can users find specific recommendations?
+   - Is the progress tracker intuitive?
+   - Are science facts helpful or distracting?
+
+4. **Mobile Experience:**
+   - Touch targets adequate?
+   - Text readable without zoom?
+   - Navigation intuitive?
+
+#### A/B Test Variations:
+1. **Persona Presentation:**
+   - Variant A: Detailed persona description
+   - Variant B: Simple persona badge
+   - Variant C: Interactive persona explorer
+
+2. **Recommendation Format:**
+   - Variant A: Step-by-step instructions
+   - Variant B: Visual checklist
+   - Variant C: Interactive timeline
+
+3. **Science Integration:**
+   - Variant A: Inline citations
+   - Variant B: Expandable science panels
+   - Variant C: Separate science section
+
+### 12. Design Iteration Plan
+
+#### Phase 1: MVP Design (Week 1)
+- [ ] Core assessment screens
+- [ ] Basic results dashboard
+- [ ] Simple blueprint layout
+- [ ] Mobile responsive basics
+
+#### Phase 2: Enhanced Design (Week 2)
+- [ ] Persona-specific visual themes
+- [ ] Interactive components
+- [ ] Advanced visualizations
+- [ ] Micro-interactions
+
+#### Phase 3: Polish & Refinement (Week 3)
+- [ ] Accessibility audit
+- [ ] Performance optimization
+- [ ] Cross-browser testing
+- [ ] User testing integration
+
+#### Phase 4: Design System (Week 4)
+- [ ] Complete component library
+- [ ] Design token documentation
+- [ ] Developer handoff package
+- [ ] Style guide documentation
+
+### 13. Success Metrics for Design
+
+#### Engagement Metrics:
+- **Assessment Completion Rate:** Target > 75%
+- **Time on Results Page:** Target > 2 minutes
+- **Blueprint Interaction Rate:** Target > 60%
+- **Mobile Usage Percentage:** Monitor for optimization
+
+#### Usability Metrics:
+- **System Usability Scale (SUS):** Target > 80
+- **Net Promoter Score (NPS):** Target > 50
+- **Error Rate:** Target < 2%
+- **Task Success Rate:** Target > 90%
+
+#### Business Metrics:
+- **Email Capture Rate:** Target > 40%
+- **PDF Download Rate:** Target > 60%
+- **Return Visits:** Target > 30%
+- **Referral Rate:** Target > 15%
+
+### 14. Design Resources & References
+
+#### Design Tools:
+- **Primary:** Figma (cloud collaboration)
+- **Prototyping:** Figma interactive components
+- **Version Control:** Figma version history
+- **Handoff:** Figma developer mode
+
+#### Design References:
+1. **Sleep Apps:** Sleep Cycle, Headspace, Calm
+2. **Assessment Tools:** Typeform, SurveyMonkey
+3. **Health Platforms:** MyFitnessPal, Noom
+4. **Educational Tools:** Khan Academy, Duolingo
+
+#### Inspiration Sources:
+- **Data Visualization:** Information is Beautiful
+- **UI Patterns:** Mobbin, Page Flows
+- **Accessibility:** A11Y Project, WebAIM
+- **Animation:** Principle, LottieFiles
+
+## Conclusion
+
+This design specification provides a comprehensive foundation for creating an engaging, effective, and personalized sleep blueprint experience. The persona-based approach ensures that each user feels understood and receives recommendations tailored to their specific situation.
+
+The design system is built with scalability in mind, allowing for:
+1. **New Personas:** Easy addition of new sleep profiles
+2. **Feature Expansion:** Modular component architecture
+3. **Platform Growth:** Responsive design that works across devices
+4. **Brand Evolution:** Flexible theming system
+
+By combining scientific credibility with engaging design, we create a lead magnet that not only captures emails but genuinely helps users improve their sleep—building trust and setting the foundation for long-term customer relationships.
+
+---
+**Design Status:** Specification Complete  
+**Next Steps:** Create Figma mockups based on this specification  
+**Estimated Design Time:** 2-3 weeks for complete design system  
+**Success Metric:** User testing shows > 80% satisfaction with design

@@ -1,0 +1,367 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-02-13",
+  "personas": [
+    {
+      "id": "struggling_starter",
+      "name": "The Struggling Starter",
+      "prevalence": 0.35,
+      "description": "New to sleep optimization, needs foundational habits and basic education about sleep science.",
+      "demographics": {
+        "ageRange": ["18-35"],
+        "typicalBackground": ["Students", "Young professionals", "New parents"],
+        "sleepLiteracy": "Low",
+        "previousAttempts": "0-1"
+      },
+      "keyCharacteristics": {
+        "primarySleepChallenge": "falling_asleep",
+        "secondaryChallenges": ["inconsistent_schedule", "poor_sleep_hygiene"],
+        "motivationLevel": "Medium",
+        "timeAvailability": "Low",
+        "techComfort": "Medium",
+        "preferredLearningStyle": "Simple, step-by-step"
+      },
+      "assessmentProfile": {
+        "sleepScoreRange": [30, 60],
+        "commonResponses": {
+          "wakeTimeConsistency": "inconsistent",
+          "bedtimeConsistency": "inconsistent",
+          "sleepLatency": "30+_minutes",
+          "morningRefreshment": "very_tired",
+          "sleepKnowledge": "basic"
+        }
+      },
+      "personalizationStrategy": {
+        "contentTone": "Encouraging, simple, non-judgmental",
+        "communicationStyle": "Educational, foundational",
+        "pace": "Slow, incremental",
+        "complexityLevel": "Beginner"
+      },
+      "recommendationFocus": {
+        "priority1": "Establish consistent wake time",
+        "priority2": "Create basic bedtime routine",
+        "priority3": "Improve sleep environment basics",
+        "avoid": "Advanced techniques, supplements, complex tracking"
+      },
+      "actionPlanTemplate": {
+        "week1": [
+          "Track sleep for 3 days (no changes)",
+          "Set consistent wake time (±30 minutes)",
+          "Move phone charging outside bedroom"
+        ],
+        "week2": [
+          "Add 10-minute wind-down routine",
+          "Implement digital sunset 60 min before bed",
+          "Optimize bedroom temperature (67°F target)"
+        ]
+      },
+      "successMetrics": {
+        "primary": "Sleep latency reduction to <20 minutes",
+        "secondary": "Wake time consistency improvement",
+        "tertiary": "Morning energy improvement"
+      }
+    },
+    {
+      "id": "inconsistent_sleeper",
+      "name": "The Inconsistent Sleeper",
+      "prevalence": 0.25,
+      "description": "Has variable sleep schedule with significant differences between weekdays and weekends, leading to social jet lag.",
+      "demographics": {
+        "ageRange": ["25-45"],
+        "typicalBackground": ["Shift workers", "Parents", "Socially active professionals"],
+        "sleepLiteracy": "Medium",
+        "previousAttempts": "1-2"
+      },
+      "keyCharacteristics": {
+        "primarySleepChallenge": "schedule_inconsistency",
+        "secondaryChallenges": ["weekend_catchup", "social_jet_lag"],
+        "motivationLevel": "High",
+        "timeAvailability": "Medium",
+        "techComfort": "High",
+        "preferredLearningStyle": "Data-driven, structured"
+      },
+      "assessmentProfile": {
+        "sleepScoreRange": [50, 75],
+        "commonResponses": {
+          "wakeTimeConsistency": "weekday_consistent_weekend_variable",
+          "bedtimeConsistency": "highly_variable",
+          "sleepLatency": "variable",
+          "morningRefreshment": "depends_on_day",
+          "daytimeEnergy": "rollercoaster"
+        }
+      },
+      "personalizationStrategy": {
+        "contentTone": "Practical, structured, analytical",
+        "communicationStyle": "Schedule-focused, data-oriented",
+        "pace": "Moderate",
+        "complexityLevel": "Intermediate"
+      },
+      "recommendationFocus": {
+        "priority1": "Reduce weekend sleep variance",
+        "priority2": "Implement sleep schedule buffer system",
+        "priority3": "Optimize light exposure timing",
+        "avoid": "Rigid perfectionism, all-or-nothing approaches"
+      },
+      "actionPlanTemplate": {
+        "week1": [
+          "Track sleep + energy patterns",
+          "Identify optimal sleep window",
+          "Set weekend wake time limit (max 90 min later)"
+        ],
+        "week2": [
+          "Implement 30-minute buffer system",
+          "Use light therapy for schedule adjustment",
+          "Create flexible but bounded sleep schedule"
+        ]
+      },
+      "successMetrics": {
+        "primary": "Weekend-weekday sleep variance <60 minutes",
+        "secondary": "Reduced social jet lag symptoms",
+        "tertiary": "More consistent daytime energy"
+      }
+    },
+    {
+      "id": "stressed_professional",
+      "name": "The Stressed Professional",
+      "prevalence": 0.20,
+      "description": "High stress/anxiety levels with racing thoughts at bedtime, often work-related stress bleeding into sleep time.",
+      "demographics": {
+        "ageRange": ["30-55"],
+        "typicalBackground": ["Executives", "Entrepreneurs", "High-pressure professionals"],
+        "sleepLiteracy": "Medium-High",
+        "previousAttempts": "2+"
+      },
+      "keyCharacteristics": {
+        "primarySleepChallenge": "stress_anxiety",
+        "secondaryChallenges": ["racing_thoughts", "work_life_boundaries"],
+        "motivationLevel": "Very High",
+        "timeAvailability": "Low",
+        "techComfort": "High",
+        "preferredLearningStyle": "Evidence-based, efficient"
+      },
+      "assessmentProfile": {
+        "sleepScoreRange": [40, 70],
+        "commonResponses": {
+          "stressLevels": "high",
+          "workLifeBalance": "poor",
+          "bedtimeMindState": "racing_thoughts",
+          "sleepQuality": "light_fragmented",
+          "relaxationPractices": "minimal"
+        }
+      },
+      "personalizationStrategy": {
+        "contentTone": "Calm, evidence-based, efficient",
+        "communicationStyle": "Stress-management focused",
+        "pace": "Rapid initial, then gradual",
+        "complexityLevel": "Intermediate-Advanced"
+      },
+      "recommendationFocus": {
+        "priority1": "Implement stress-buffer before bed",
+        "priority2": "Create work-sleep boundary ritual",
+        "priority3": "Practice evidence-based relaxation techniques",
+        "avoid": "Adding more to-do items, complex tracking"
+      },
+      "actionPlanTemplate": {
+        "week1": [
+          "Implement 'worry journal' 2 hours before bed",
+          "Create 15-minute work shutdown ritual",
+          "Practice 4-7-8 breathing at bedtime"
+        ],
+        "week2": [
+          "Add progressive muscle relaxation",
+          "Implement digital curfew for work communications",
+          "Create stress-reducing bedtime routine"
+        ]
+      },
+      "successMetrics": {
+        "primary": "Reduced sleep latency (<15 minutes)",
+        "secondary": "Decreased nighttime awakenings",
+        "tertiary": "Improved sleep quality perception"
+      }
+    },
+    {
+      "id": "tech_dependent",
+      "name": "The Tech-Dependent",
+      "prevalence": 0.15,
+      "description": "Heavy screen usage with significant blue light exposure, often using devices in bed or right before sleep.",
+      "demographics": {
+        "ageRange": ["18-40"],
+        "typicalBackground": ["Tech workers", "Gamers", "Social media heavy users"],
+        "sleepLiteracy": "Medium",
+        "previousAttempts": "1-2"
+      },
+      "keyCharacteristics": {
+        "primarySleepChallenge": "screen_time",
+        "secondaryChallenges": ["blue_light_exposure", "mental_stimulation"],
+        "motivationLevel": "Medium-High",
+        "timeAvailability": "Medium",
+        "techComfort": "Very High",
+        "preferredLearningStyle": "Tech-savvy, app-based"
+      },
+      "assessmentProfile": {
+        "sleepScoreRange": [45, 70],
+        "commonResponses": {
+          "screenUsage": "frequent_before_bed",
+          "deviceInBedroom": "yes",
+          "blueLightAwareness": "some",
+          "digitalDetoxAttempts": "failed",
+          "alternativeActivities": "limited"
+        }
+      },
+      "personalizationStrategy": {
+        "contentTone": "Direct, tech-savvy, practical",
+        "communicationStyle": "App-focused, gradual reduction",
+        "pace": "Gradual step-down",
+        "complexityLevel": "Intermediate"
+      },
+      "recommendationFocus": {
+        "priority1": "Implement progressive digital sunset",
+        "priority2": "Create device-free bedroom",
+        "priority3": "Find engaging non-screen alternatives",
+        "avoid": "Cold turkey approaches, judgmental tone"
+      },
+      "actionPlanTemplate": {
+        "week1": [
+          "Enable automatic blue light filters 2 hours before bed",
+          "Charge phone outside bedroom",
+          "Replace 30 min of screen time with audiobook/podcast"
+        ],
+        "week2": [
+          "Implement 60-minute digital sunset",
+          "Create engaging non-screen bedtime routine",
+          "Use app blockers for late-night usage"
+        ]
+      },
+      "successMetrics": {
+        "primary": "Screen-free time before bed increased to 60+ minutes",
+        "secondary": "Device removal from bedroom",
+        "tertiary": "Improved sleep onset quality"
+      }
+    },
+    {
+      "id": "environment_sensitive",
+      "name": "The Environment-Sensitive",
+      "prevalence": 0.05,
+      "description": "Highly sensitive to environmental factors (light, noise, temperature) with potential undiagnosed sleep disorders.",
+      "demographics": {
+        "ageRange": ["25-60"],
+        "typicalBackground": ["Light sleepers", "Urban dwellers", "Those with sensitivities"],
+        "sleepLiteracy": "Variable",
+        "previousAttempts": "3+"
+      },
+      "keyCharacteristics": {
+        "primarySleepChallenge": "environmental_factors",
+        "secondaryChallenges": ["sensory_sensitivity", "potential_sleep_disorders"],
+        "motivationLevel": "Very High",
+        "timeAvailability": "High",
+        "techComfort": "Variable",
+        "preferredLearningStyle": "Detailed, scientific, product-focused"
+      },
+      "assessmentProfile": {
+        "sleepScoreRange": [30, 65],
+        "commonResponses": {
+          "bedroomEnvironment": "suboptimal",
+          "lightSensitivity": "high",
+          "noiseSensitivity": "high",
+          "temperatureSensitivity": "high",
+          "sleepDisorderSuspicion": "possible"
+        }
+      },
+      "personalizationStrategy": {
+        "contentTone": "Detailed, scientific, empathetic",
+        "communicationStyle": "Environmental optimization focus",
+        "pace": "Customized based on severity",
+        "complexityLevel": "Advanced"
+      },
+      "recommendationFocus": {
+        "priority1": "Complete environmental audit",
+        "priority2": "Implement sensory optimization",
+        "priority3": "Consider professional evaluation if needed",
+        "avoid": "One-size-fits-all solutions, dismissive tone"
+      },
+      "actionPlanTemplate": {
+        "week1": [
+          "Complete sleep environment audit",
+          "Implement blackout solutions",
+          "Optimize temperature (67°F target)"
+        ],
+        "week2": [
+          "Add white noise/sound masking",
+          "Upgrade bedding for comfort",
+          "Consider sleep tracking for data"
+        ]
+      },
+      "successMetrics": {
+        "primary": "Environmental optimization score improvement",
+        "secondary": "Reduced nighttime awakenings",
+        "tertiary": "Improved sleep continuity"
+      }
+    }
+  ],
+  "personaMappingLogic": {
+    "assessmentQuestions": [
+      {
+        "questionId": "primary_challenge",
+        "mapping": {
+          "falling_asleep": ["struggling_starter", "stressed_professional"],
+          "staying_asleep": ["environment_sensitive", "stressed_professional"],
+          "waking_early": ["stressed_professional", "inconsistent_sleeper"],
+          "poor_quality": ["tech_dependent", "environment_sensitive"]
+        }
+      },
+      {
+        "questionId": "screen_usage",
+        "mapping": {
+          "frequent": ["tech_dependent"],
+          "moderate": ["inconsistent_sleeper", "stressed_professional"],
+          "minimal": ["environment_sensitive", "struggling_starter"]
+        }
+      },
+      {
+        "questionId": "schedule_consistency",
+        "mapping": {
+          "highly_inconsistent": ["inconsistent_sleeper"],
+          "somewhat_inconsistent": ["struggling_starter"],
+          "mostly_consistent": ["stressed_professional", "tech_dependent"],
+          "very_consistent": ["environment_sensitive"]
+        }
+      }
+    ],
+    "scoringAlgorithm": {
+      "description": "Weighted scoring across multiple dimensions to determine primary persona",
+      "dimensions": [
+        {
+          "name": "ScheduleConsistency",
+          "weight": 0.25,
+          "highScorePersonas": ["environment_sensitive"],
+          "lowScorePersonas": ["inconsistent_sleeper", "struggling_starter"]
+        },
+        {
+          "name": "TechDependency",
+          "weight": 0.20,
+          "highScorePersonas": ["tech_dependent"],
+          "lowScorePersonas": ["environment_sensitive", "struggling_starter"]
+        },
+        {
+          "name": "StressLevel",
+          "weight": 0.30,
+          "highScorePersonas": ["stressed_professional"],
+          "lowScorePersonas": ["struggling_starter", "tech_dependent"]
+        },
+        {
+          "name": "EnvironmentalSensitivity",
+          "weight": 0.25,
+          "highScorePersonas": ["environment_sensitive"],
+          "lowScorePersonas": ["tech_dependent", "inconsistent_sleeper"]
+        }
+      ]
+    }
+  },
+  "implementationNotes": {
+    "dataCollection": "Map users during assessment based on response patterns",
+    "fallbackLogic": "If unclear mapping, default to 'struggling_starter' persona",
+    "hybridPersonas": "Some users may exhibit characteristics of multiple personas",
+    "dynamicAdjustment": "Persona may be refined over time with additional data",
+    "privacyConsiderations": "Store persona mapping with anonymous user ID only"
+  }
+}

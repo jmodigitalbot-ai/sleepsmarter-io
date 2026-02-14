@@ -17,9 +17,10 @@ interface CalculatorData {
 
 interface EmailCaptureProps {
   calculatorData?: CalculatorData
+  assessmentData?: any
 }
 
-export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
+export default function EmailCapture({ calculatorData, assessmentData }: EmailCaptureProps) {
   const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -41,13 +42,23 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
 
     if (calculatorData) {
       const optimalResult = calculatorData.results.find(r => r.quality === 'optimal');
-      payload.fields = {
+      const fields: any = {
         calculator_mode: calculatorData.mode,
         target_time: calculatorData.targetTime,
         results_json: JSON.stringify(calculatorData.results),
         optimal_time: optimalResult?.time || '',
         cycles_preferred: optimalResult?.cycles || 6
       }
+      
+      // Add assessment data if available
+      if (assessmentData) {
+        fields.sleep_persona = assessmentData.personaId;
+        fields.persona_name = assessmentData.personaName;
+        fields.persona_confidence = assessmentData.confidence.toString();
+        fields.persona_recommendations = JSON.stringify(assessmentData.recommendations);
+      }
+      
+      payload.fields = fields;
     }
 
     try {
@@ -72,7 +83,9 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
           {
             calculator_mode: calculatorData?.mode,
             target_time: calculatorData?.targetTime,
-            results_count: calculatorData?.results.length
+            results_count: calculatorData?.results.length,
+            sleep_persona: assessmentData?.personaId,
+            persona_confidence: assessmentData?.confidence
           }
         )
       } else {
@@ -98,7 +111,12 @@ export default function EmailCapture({ calculatorData }: EmailCaptureProps) {
           Get Your Personalized Sleep Blueprint
         </h3>
         <p className="text-[#f1faee]/60 text-sm">
-          {calculatorData ? (
+          {assessmentData ? (
+            <>
+              Get your personalized blueprint with custom schedule and {assessmentData.personaName}-specific 
+              recommendations — free.
+            </>
+          ) : calculatorData ? (
             <>
               Your custom schedule based on these results, plus a 7-day protocol 
               to improve your sleep quality — free.

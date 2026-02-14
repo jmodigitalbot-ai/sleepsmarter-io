@@ -1,0 +1,4 @@
+2026-02-14T10:43:43: Webhook Handler running on port 3002
+2026-02-14T10:43:43: Health check: http://localhost:3002/health
+2026-02-14T10:43:43: Kit webhook endpoint: http://localhost:3002/webhook/kit
+2026-02-14T10:43:43: Test endpoint: http://localhost:3002/test/generate
