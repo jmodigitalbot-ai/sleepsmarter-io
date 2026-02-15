@@ -234,7 +234,7 @@ export default function MasterclassSales() {
             </a>
             <div className="flex items-center justify-center gap-2 text-sm text-[#f1faee]/60">
               <span className="text-green-400 text-lg">🔒</span>
-              <span>Secure checkout • 30-day guarantee • Instant download</span>
+              <span>Secure checkout • 60-day guarantee • Instant download</span>
             </div>
           </div>
         </div>
@@ -288,16 +288,16 @@ export default function MasterclassSales() {
         <div className="mb-16 bg-green-500/5 border-2 border-green-500/30 rounded-2xl p-8 text-center">
           <div className="text-5xl mb-6">🛡️</div>
           <h3 className="text-3xl font-bold text-green-400 mb-6">
-            30-Day "Sleep Transformation" Guarantee
+            60-Day "Sleep Transformation" Guarantee
           </h3>
           <p className="text-[#f1faee]/80 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
-            Complete all 6 modules, implement the system for 30 days, and if you don't experience measurable improvement in your sleep quality, energy levels, and daytime functioning, I'll refund every penny.
+            Complete all 6 modules, implement the system for 60 days, and if you don't experience measurable improvement in your sleep quality, energy levels, and daytime functioning, I'll refund every penny.
           </p>
           <p className="text-[#f1faee] font-semibold text-xl mb-4">
             No questions. No hoops. No "prove you did the work."
           </p>
           <p className="text-[#f1faee]/70 max-w-2xl mx-auto text-lg">
-            Just email our support team within 35 days of purchase, and you'll receive a full refund.
+            Just email our support team within 60 days of purchase, and you'll receive a full refund.
           </p>
         </div>
 
@@ -348,7 +348,7 @@ export default function MasterclassSales() {
               Your Sleep Transformation Starts Tonight
             </h3>
             <p className="text-lg text-[#f1faee]/80 mb-8 max-w-2xl mx-auto">
-              Join 2,347 students who have transformed their sleep with this proven system. For $67 with a 30-day money-back guarantee, you risk nothing but gain everything.
+              Join 2,347 students who have transformed their sleep with this proven system. For $67 with a 60-day money-back guarantee, you risk nothing but gain everything.
             </p>
             <a
               href={checkoutUrl}
@@ -359,7 +359,7 @@ export default function MasterclassSales() {
             </a>
             <div className="flex items-center justify-center gap-2 text-sm text-[#f1faee]/60 mb-6">
               <span className="text-green-400 text-lg">🔒</span>
-              <span>Instant download • 30-day guarantee • Lifetime access</span>
+              <span>Instant download • 60-day guarantee • Lifetime access</span>
             </div>
           </div>
         </div>

@@ -15,6 +15,9 @@ import SleepReset from './pages/SleepReset.tsx'
 import MasterclassSales from './pages/MasterclassSales.tsx'
 import PremiumSales from './pages/PremiumSales.tsx'
 import InsiderSales from './pages/InsiderSales.tsx'
+import OTOMasterclass from './pages/OTOMasterclass.tsx'
+import OTOPremium from './pages/OTOPremium.tsx'
+import OTOInsider from './pages/OTOInsider.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
 import CookieBanner from './components/CookieBanner.tsx'
 import { initGA4 } from './lib/analytics'
@@ -41,6 +44,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/masterclass" element={<MasterclassSales />} />
         <Route path="/premium" element={<PremiumSales />} />
         <Route path="/insider" element={<InsiderSales />} />
+        <Route path="/oto/masterclass" element={<OTOMasterclass />} />
+        <Route path="/oto/premium" element={<OTOPremium />} />
+        <Route path="/oto/insider" element={<OTOInsider />} />
         <Route path="/blueprint" element={<Navigate to="/thank-you" replace />} />
       </Routes>
     </BrowserRouter>
