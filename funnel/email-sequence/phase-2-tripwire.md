@@ -91,7 +91,7 @@ Now, Days 2-7 build on this foundation with specific protocols for light exposur
 
 The complete protocol is $17 and it's changed the sleep of thousands of people.
 
-**[Get the 7-Day Sleep Reset Protocol → $17](link)**
+**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day7-7day-protocol)**
 
 Or don't. Day 1 alone will help. But if you want the full system — the one that compounds day over day — it's there when you're ready.
 
@@ -137,7 +137,7 @@ It's NOT a substitute for medical treatment if you have:
 
 For the vast majority of people who "just don't sleep well," it works. And it works fast.
 
-**[Get the 7-Day Sleep Reset Protocol → $17](link)**
+**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day8-7day-protocol)**
 
 60-day money-back guarantee. If it doesn't help, email me and I'll refund you immediately. No questions.
 
@@ -187,10 +187,13 @@ I've been sharing bits and pieces of the Sleep Reset Protocol all week. Today I 
 **BONUS: The Emergency Sleep Protocol**
 For nights when nothing seems to work — a step-by-step process to fall asleep within 20 minutes using cognitive shuffling and progressive relaxation techniques.
 
+**PLUS: The "Can't Sleep" Audio Guide**
+A comprehensive 35-minute guided audio program with progressive muscle relaxation, body scan meditation, 4-7-8 breathing, and thought-clearing exercises.
+
 **Price: $17** (less than one bottle of melatonin)
 **Guarantee: 60 days.** Full refund if it doesn't help.
 
-**[Get Instant Access → $17](link)**
+**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day9-7day-protocol)**
 
 This isn't a 200-page ebook you'll never read. It's a focused, actionable protocol designed to be completed in one week. Most people spend more time scrolling Reddit for sleep tips than it takes to go through this entire system.
 
@@ -215,26 +218,34 @@ Before I move on, I want to add one thing I haven't mentioned:
 
 **BONUS: The "Can't Sleep" Audio Guide**
 
-I recorded a 12-minute guided relaxation specifically designed for when you're lying in bed and can't fall asleep. It uses a technique called cognitive shuffling — basically, it gives your brain random, boring images to process, which prevents the anxious thought loops that keep you awake.
+I've created a comprehensive 35-minute guided audio program specifically designed for when you're lying in bed and can't fall asleep. It includes:
 
-I've had people tell me this single audio is worth more than the rest of the protocol combined.
+- **Progressive Muscle Relaxation** (10 min) - Systematically releases physical tension
+- **Body Scan Meditation** (10 min) - Calms your nervous system and quiets your mind  
+- **4-7-8 Breathing Walkthrough** (5 min) - Activates your body's natural relaxation response
+- **Racing Mind Thought-Clearing Exercise** (5 min) - Stops anxious thought loops
+- **Sleep Induction Guidance** (5 min) - Gently guides you into deep sleep
+
+This isn't just one technique — it's a complete toolkit for every type of sleep struggle. Whether you're physically tense, mentally racing, or just can't seem to wind down, there's a specific exercise that will help.
+
+I've had people tell me this audio guide alone is worth more than the rest of the protocol combined.
 
 It's included free with the 7-Day Sleep Reset Protocol.
 
-**[Get Instant Access → $17](link)**
+**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day10-7day-protocol)**
 
 Here's what you're getting for $17:
 - ✅ Complete 7-day protocol with daily instructions
-- ✅ Sleep tracking templates
-- ✅ Supplement timing guide
+- ✅ Sleep tracking templates (including new Sleep Score Baseline system)
+- ✅ Supplement timing guide (with verified Amazon affiliate links)
 - ✅ Environment optimization checklist
 - ✅ Emergency Sleep Protocol
-- ✅ **NEW: "Can't Sleep" Audio Guide**
+- ✅ **NEW: Comprehensive "Can't Sleep" Audio Guide** (35 min, 5 techniques)
 - ✅ 60-day money-back guarantee
 
 After today, I'll go back to sending you free sleep tips and articles. No more pitches for a while. But if you've been on the fence, this is the moment.
 
-**[Yes, I want better sleep → $17](link)**
+**[Yes, I want better sleep → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day10-7day-protocol-cta)**
 
 Either way, I'll talk to you tomorrow with something completely different — a myth about caffeine that will probably surprise you.
 

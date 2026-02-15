@@ -12,6 +12,9 @@ import Article from './pages/Article.tsx'
 import Calculator from './pages/Calculator.tsx'
 import ThankYou from './pages/ThankYou.tsx'
 import SleepReset from './pages/SleepReset.tsx'
+import MasterclassSales from './pages/MasterclassSales.tsx'
+import PremiumSales from './pages/PremiumSales.tsx'
+import InsiderSales from './pages/InsiderSales.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
 import CookieBanner from './components/CookieBanner.tsx'
 import { initGA4 } from './lib/analytics'
@@ -35,6 +38,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/sleep-reset" element={<SleepReset />} />
+        <Route path="/masterclass" element={<MasterclassSales />} />
+        <Route path="/premium" element={<PremiumSales />} />
+        <Route path="/insider" element={<InsiderSales />} />
         <Route path="/blueprint" element={<Navigate to="/thank-you" replace />} />
       </Routes>
     </BrowserRouter>

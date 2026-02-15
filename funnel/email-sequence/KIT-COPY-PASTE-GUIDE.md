@@ -35,7 +35,7 @@ I put together your Personalized Sleep Blueprint based on the data you shared. I
 ✅ 5 things you can do TONIGHT to sleep better
 ✅ My top product recommendations for deeper sleep
 
-**[Download Your Sleep Blueprint →](https://www.sleepsmarter.io/blueprint)** *(Note: link to PDF delivery page once built)*
+**[Download Your Sleep Blueprint →](https://sleepsmarter.io/blueprint?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day0-blueprint-download)**
 
 Quick tip: Start with the "5 Quick Wins" on page 5 tonight. Especially #3 — the 4-7-8 breathing technique. Most people notice a difference within 48 hours.
 
@@ -806,7 +806,7 @@ My curated list of the best sleep products — pillows, mattresses, sound machin
 **Price: $67** (one-time, lifetime access)
 **Guarantee: 60 days.** Full refund if you don't see improvement.
 
-**[Enroll in the Sleep Smarter Masterclass → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
+**[Enroll in the Sleep Smarter Masterclass → $67](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day19-masterclass)**
 
 This isn't information you can't find online. It's information organized, prioritized, and structured so you don't have to spend months piecing it together yourself. I've done the work. You just follow the path.
 
@@ -836,7 +836,7 @@ David's experience highlights something important: **the answer isn't always "mo
 
 The Masterclass helps you find YOUR specific change. Not generic advice. Not what works for "most people." What works for you.
 
-**[Find your specific change → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
+**[Find your specific change → $67](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day20-masterclass)**
 
 60-day guarantee. If David's story doesn't become your story, you get your money back.
 
@@ -870,7 +870,7 @@ I realize I've talked a lot about what the Masterclass teaches, but I haven't be
 
 **All of this for $67.** Less than one therapy session. Less than a month of sleep supplements. Less than that weighted blanket collecting dust in your closet.
 
-**[Get Lifetime Access → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
+**[Get Lifetime Access → $67](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day21-masterclass)**
 
 60-day money-back guarantee. Zero risk.
 
@@ -910,7 +910,7 @@ If you've been thinking about it, now is the time.
 
 Or $67 on a system that fixes the root cause.
 
-**[Lock in the $67 price → Enroll now](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)**
+**[Lock in the $67 price → Enroll now](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day22-masterclass)**
 
 After this, I'll shift to talking about something for people who want even more personalized support. But this is the last time I'll pitch the Masterclass for a while.
 
@@ -983,7 +983,7 @@ Topics beyond the Masterclass: sleep and hormones, sleep and athletic performanc
 **Price: $197** (one-time, 90-day program + lifetime community access)
 **Guarantee: 60 days.** Full refund if you don't see measurable improvement.
 
-**[Start Your 90-Day Transformation → $197](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right)**
+**[Start Your 90-Day Transformation → $197](https://sleepsmarter.io/premium?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day24-90day-transformation)**
 
 This program has a cap. I limit enrollment because the personalized plans require my attention. When spots fill, I close registration until the next cohort.
 
@@ -1021,7 +1021,7 @@ It's a monthly membership ($19/month) that keeps you optimized long-term:
 
 I'm launching this quietly to my email list first. If it resonates, I'll open it up publicly later.
 
-**[Join the Sleep Smarter Insider → $19/mo](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right)**
+**[Join the Sleep Smarter Insider → $19/mo](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day25-insider)**
 
 No pressure on this one. It's for people who've already improved their sleep and want to maintain and optimize it over time. If that's not where you are yet, focus on the fundamentals first.
 
@@ -1054,7 +1054,7 @@ Most people get dramatically less natural light than their circadian rhythm need
 
 Insider members get the full guide with product recommendations, timing protocols for different chronotypes, and troubleshooting.
 
-**[Get the full guide + monthly optimizations → $19/mo](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right)**
+**[Get the full guide + monthly optimizations → $19/mo](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day26-insider)**
 
 Sarah
 
@@ -1103,7 +1103,7 @@ People ask me for product recommendations all the time. Here's my honest, unspon
 A mulberry silk pillowcase ($30-60) reduces friction, stays cool, and protects your skin and hair. Small upgrade, noticeable difference. → [Our full review](https://www.sleepsmarter.io/blog/best-silk-pillowcases-for-sleep)
 
 **🔊 Sound: White Noise Machine**
-Consistent background sound masks disruptions. I prefer dedicated machines over apps (phone should be out of the bedroom). → Our top picks *(article coming soon)*
+Consistent background sound masks disruptions. I prefer dedicated machines over apps (phone should be out of the bedroom). → [Our top picks](https://sleepsmarter.io/blog/best-white-noise-machines?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day28-white-noise-machines)
 
 **🌡️ Temperature: Cooling Mattress Pad**
 If you sleep hot and can't control room temperature, a cooling pad is the best investment. $150-300 but lasts for years.
@@ -1185,13 +1185,13 @@ Here's your roadmap going forward — pick the path that fits where you are:
 ---
 
 **🚀 Full transformation ($197)**
-→ [90-Day Sleep Transformation](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right) — personalized plan + ongoing support
+→ [90-Day Sleep Transformation](https://sleepsmarter.io/premium?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-90day-transformation) — personalized plan + ongoing support
 → Best for: "I want expert guidance tailored to my specific situation"
 
 ---
 
 **🔄 Stay optimized ($19/mo)**
-→ [Sleep Smarter Insider](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right) — monthly optimization + community
+→ [Sleep Smarter Insider](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-insider) — monthly optimization + community
 → Best for: "My sleep is good and I want to keep it that way"
 
 ---

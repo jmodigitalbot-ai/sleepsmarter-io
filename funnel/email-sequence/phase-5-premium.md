@@ -74,7 +74,7 @@ Topics beyond the Masterclass: sleep and hormones, sleep and athletic performanc
 **Price: $197** (one-time, 90-day program + lifetime community access)
 **Guarantee: 60 days.** Full refund if you don't see measurable improvement.
 
-**[Start Your 90-Day Transformation → $197](link)**
+**[Start Your 90-Day Transformation → $197](https://sleepsmarter.io/premium?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day24-90day-transformation)**
 
 This program has a cap. I limit enrollment because the personalized plans require my attention. When spots fill, I close registration until the next cohort.
 
@@ -115,7 +115,7 @@ It's a monthly membership ($19/month) that keeps you optimized long-term:
 
 I'm launching this quietly to my email list first. If it resonates, I'll open it up publicly later.
 
-**[Join the Sleep Smarter Insider → $19/mo](link)**
+**[Join the Sleep Smarter Insider → $19/mo](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day25-insider)**
 
 No pressure on this one. It's for people who've already improved their sleep and want to maintain and optimize it over time. If that's not where you are yet, focus on the fundamentals first.
 
@@ -151,7 +151,7 @@ Most people get dramatically less natural light than their circadian rhythm need
 
 Insider members get the full guide with product recommendations, timing protocols for different chronotypes, and troubleshooting.
 
-**[Get the full guide + monthly optimizations → $19/mo](link)**
+**[Get the full guide + monthly optimizations → $19/mo](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day26-insider)**
 
 Sarah
 
@@ -203,10 +203,10 @@ Sarah
 People ask me for product recommendations all the time. Here's my honest, unsponsored list — what I'd buy with my own money:
 
 **🛏️ Pillowcase: Silk**
-A mulberry silk pillowcase ($30-60) reduces friction, stays cool, and protects your skin and hair. Small upgrade, noticeable difference. → [Our full review](link to silk pillowcase article)
+A mulberry silk pillowcase ($30-60) reduces friction, stays cool, and protects your skin and hair. Small upgrade, noticeable difference. → [Our full review](https://sleepsmarter.io/blog/best-silk-pillowcases-for-sleep?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day28-silk-pillowcase-review)
 
 **🔊 Sound: White Noise Machine**
-Consistent background sound masks disruptions. I prefer dedicated machines over apps (phone should be out of the bedroom). → [Our top picks](link to white noise article)
+Consistent background sound masks disruptions. I prefer dedicated machines over apps (phone should be out of the bedroom). → [Our top picks](https://sleepsmarter.io/blog/best-white-noise-machines?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day28-white-noise-machines)
 
 **🌡️ Temperature: Cooling Mattress Pad**
 If you sleep hot and can't control room temperature, a cooling pad is the best investment. $150-300 but lasts for years.
@@ -275,32 +275,32 @@ Here's your roadmap going forward — pick the path that fits where you are:
 ---
 
 **🆓 Keep learning for free**
-→ New articles every week on [SleepSmarter.io](link)
+→ New articles every week on [SleepSmarter.io](https://sleepsmarter.io/blog?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-blog)
 → You'll stay on my email list and get periodic tips
-→ Bookmark the [Sleep Calculator](link) and share it with friends
+→ Bookmark the [Sleep Calculator](https://sleepsmarter.io/calculator?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-sleep-calculator) and share it with friends
 
 ---
 
 **📘 Get the system ($17)**
-→ [7-Day Sleep Reset Protocol](link) — structured, step-by-step, proven
+→ [7-Day Sleep Reset Protocol](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-7day-protocol) — structured, step-by-step, proven
 → Best for: "I know what to do but need a clear plan"
 
 ---
 
 **🎓 Go deep ($67)**
-→ [Sleep Smarter Masterclass](link) — 6 modules, complete curriculum
+→ [Sleep Smarter Masterclass](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-masterclass) — 6 modules, complete curriculum
 → Best for: "I want to understand everything and optimize long-term"
 
 ---
 
 **🚀 Full transformation ($197)**
-→ [90-Day Sleep Transformation](link) — personalized plan + ongoing support
+→ [90-Day Sleep Transformation](https://sleepsmarter.io/premium?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-90day-transformation) — personalized plan + ongoing support
 → Best for: "I want expert guidance tailored to my specific situation"
 
 ---
 
 **🔄 Stay optimized ($19/mo)**
-→ [Sleep Smarter Insider](link) — monthly optimization + community
+→ [Sleep Smarter Insider](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-insider) — monthly optimization + community
 → Best for: "My sleep is good and I want to keep it that way"
 
 ---
@@ -320,4 +320,4 @@ Sleep well, {{first_name}}.
 
 Sarah
 
-*P.S. Know someone who struggles with sleep? Forward them any of these emails or send them to [SleepSmarter.io](link). Better sleep is one of the highest-leverage improvements anyone can make. Help me spread the word. 💙*
+*P.S. Know someone who struggles with sleep? Forward them any of these emails or send them to [SleepSmarter.io](https://sleepsmarter.io?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-ps-referral). Better sleep is one of the highest-leverage improvements anyone can make. Help me spread the word. 💙*

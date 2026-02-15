@@ -41,7 +41,7 @@ This is how long it takes you to fall asleep.
 
 If your sleep latency is consistently over 30 minutes, the issue is almost always one of three things: timing (wrong bedtime), environment (too warm, too bright), or arousal (anxious/racing thoughts).
 
-I cover all three in depth here: [Why Do I Wake Up Tired? →]
+I cover all three in depth here: [Why Do I Wake Up Tired? →](https://sleepsmarter.io/blog/why-do-i-wake-up-tired?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day11-why-wake-up-tired)
 
 Talk tomorrow,
 Sarah
@@ -84,7 +84,7 @@ I hear you. Here's what I recommend instead:
 2. **Need the ritual?** Switch to decaf after noon. Your brain associates the taste with alertness — you'll get a mild placebo effect.
 3. **Need actual energy?** 10 minutes of sunlight + a 5-minute walk. Resets your circadian rhythm and gives you 1-2 hours of natural alertness.
 
-I wrote a complete guide to the timing rules that protect your sleep: [The 10-3-2-1-0 Rule →]
+I wrote a complete guide to the timing rules that protect your sleep: [The 10-3-2-1-0 Rule →](https://sleepsmarter.io/blog/10-3-2-1-0-sleep-rule?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day12-10-3-2-1-0-rule)
 
 Worth bookmarking.
 
@@ -125,7 +125,7 @@ Your chronotype — your genetic sleep preference — determines whether you're 
 
 This is why generic sleep advice fails. And why the Sleep Blueprint and the articles on SleepSmarter.io are built around YOUR schedule, not some arbitrary "ideal."
 
-I go deeper on this in our guide: [How Much Sleep Do I Need? →]
+I go deeper on this in our guide: [How Much Sleep Do I Need? →](https://sleepsmarter.io/blog/how-much-sleep-do-i-need?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day13-how-much-sleep)
 
 Tomorrow: a number that will make you rethink how you value sleep.
 

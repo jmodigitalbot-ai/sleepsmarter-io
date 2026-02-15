@@ -166,6 +166,58 @@ When you travel across time zones, adjust your wake time to local time immediate
 
 **Night:** Don't worry if you don't fall asleep easily tonight. Your body is still calibrating. The sleep pressure will build over the next few days.
 
+### Sleep Score Baseline Assessment
+
+Before we begin tracking your daily progress, let's establish your starting point. Complete this simple 1-10 self-assessment to measure your current sleep quality. You'll repeat this same assessment on Day 7 to measure your transformation.
+
+**Rate each category from 1-10 (1 = terrible, 10 = perfect):**
+
+**1. Sleep Onset (Falling Asleep)**
+- How long does it typically take you to fall asleep?
+- Do you struggle with racing thoughts or anxiety at bedtime?
+- Score (1-10): ____
+
+**2. Sleep Maintenance (Staying Asleep)**
+- How often do you wake up during the night?
+- Do you have trouble getting back to sleep?
+- Score (1-10): ____
+
+**3. Sleep Quality (Depth of Sleep)**
+- Do you feel like you get deep, restorative sleep?
+- Do you wake up feeling refreshed?
+- Score (1-10): ____
+
+**4. Morning Energy**
+- How do you feel when you first wake up?
+- Do you need caffeine to function in the morning?
+- Score (1-10): ____
+
+**5. Daytime Functioning**
+- How is your energy and focus throughout the day?
+- Do you experience afternoon slumps or brain fog?
+- Score (1-10): ____
+
+**6. Sleep Consistency**
+- How consistent is your sleep schedule?
+- Do you have different bedtimes/wake times on weekends vs weekdays?
+- Score (1-10): ____
+
+**7. Overall Sleep Satisfaction**
+- How satisfied are you with your sleep overall?
+- How much does sleep quality impact your daily life?
+- Score (1-10): ____
+
+**Calculate Your Total Sleep Score:**
+Add up all 7 category scores: ____ / 70
+
+**Interpretation:**
+- 60-70: Excellent sleep foundation
+- 45-59: Good, with room for optimization  
+- 30-44: Needs significant improvement
+- Below 30: Major sleep challenges to address
+
+**Save This Score:** Write it down somewhere you can find on Day 7. This is your baseline measurement that will show you exactly how much the 7-Day Sleep Reset Protocol has transformed your sleep.
+
 ### Daily Tracking Checklist - Day 1
 
 - [ ] Woke up at target time: ______ AM
@@ -175,6 +227,8 @@ When you travel across time zones, adjust your wake time to local time immediate
 - [ ] Energy level at noon (1-10): ____
 - [ ] Energy level at 6 PM (1-10): ____
 - [ ] Energy level at bedtime (1-10): ____
+- [ ] Completed Sleep Score Baseline Assessment: Yes/No
+- [ ] Baseline Sleep Score: ____ / 70
 - [ ] Notes on how you felt throughout the day:
 
 **Tonight's Preparation for Day 2:**
@@ -1637,6 +1691,63 @@ Create a travel-specific routine:
 **Month 3:** Sleep quality becomes your new normal, noticeable impact on other life areas
 **Month 6+:** You become the person others ask for sleep advice
 
+### Sleep Score Reassessment - Day 7
+
+Now it's time to measure your transformation! Complete the same 1-10 self-assessment you did on Day 1 to see exactly how much your sleep has improved.
+
+**Rate each category from 1-10 (1 = terrible, 10 = perfect):**
+
+**1. Sleep Onset (Falling Asleep)**
+- How long does it typically take you to fall asleep now?
+- Do you still struggle with racing thoughts or anxiety at bedtime?
+- Score (1-10): ____
+
+**2. Sleep Maintenance (Staying Asleep)**
+- How often do you wake up during the night now?
+- Do you have trouble getting back to sleep?
+- Score (1-10): ____
+
+**3. Sleep Quality (Depth of Sleep)**
+- Do you feel like you get deep, restorative sleep now?
+- Do you wake up feeling refreshed?
+- Score (1-10): ____
+
+**4. Morning Energy**
+- How do you feel when you first wake up now?
+- Do you still need caffeine to function in the morning?
+- Score (1-10): ____
+
+**5. Daytime Functioning**
+- How is your energy and focus throughout the day now?
+- Do you still experience afternoon slumps or brain fog?
+- Score (1-10): ____
+
+**6. Sleep Consistency**
+- How consistent is your sleep schedule now?
+- Do you still have different bedtimes/wake times on weekends vs weekdays?
+- Score (1-10): ____
+
+**7. Overall Sleep Satisfaction**
+- How satisfied are you with your sleep overall now?
+- How much does sleep quality impact your daily life now?
+- Score (1-10): ____
+
+**Calculate Your Day 7 Sleep Score:**
+Add up all 7 category scores: ____ / 70
+
+**Compare with Your Day 1 Score:**
+- Day 1 Baseline Score: ____ / 70
+- Day 7 Current Score: ____ / 70
+- **Improvement: + ____ points**
+
+**Interpretation of Improvement:**
+- **+15+ points:** Transformational improvement - you've fundamentally changed your sleep patterns
+- **+8-14 points:** Significant improvement - major positive changes that will compound over time
+- **+3-7 points:** Good improvement - solid foundation for continued growth
+- **+1-2 points:** Small improvement - focus on your top 1-2 interventions for bigger gains
+
+**Celebrate Your Progress:** No matter the number, any improvement means you're moving in the right direction. The most important thing is that you now have a system to continue improving.
+
 ### Daily Tracking Checklist - Day 7
 
 **Protocol Review:**
@@ -1648,6 +1759,11 @@ Create a travel-specific routine:
 - [ ] Habit stacks created: Yes/No
 - [ ] Disruption recovery plan written: Yes/No
 - [ ] Support systems identified: Yes/No
+
+**Sleep Score Results:**
+- [ ] Day 7 Sleep Score completed: Yes/No
+- [ ] Day 7 Score: ____ / 70
+- [ ] Improvement from Day 1: + ____ points
 
 **This Week's Success:**
 - [ ] Most consistent habit this week: _____________

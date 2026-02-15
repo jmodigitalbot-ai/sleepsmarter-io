@@ -24,7 +24,7 @@ I put together your Personalized Sleep Blueprint based on the data you shared. I
 ✅ 5 things you can do TONIGHT to sleep better
 ✅ My top product recommendations for deeper sleep
 
-**[Download Your Sleep Blueprint →](link)**
+**[Download Your Sleep Blueprint →](https://sleepsmarter.io/blueprint?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day0-blueprint-download)**
 
 Quick tip: Start with the "5 Quick Wins" on page 5 tonight. Especially #3 — the 4-7-8 breathing technique. Most people notice a difference within 48 hours.
 
@@ -70,7 +70,7 @@ This is why:
 
 **The sleep calculator on SleepSmarter.io does this math for you automatically.** It calculates your ideal bedtime based on complete cycles.
 
-If you haven't tried it yet: [Use the Sleep Calculator →]
+If you haven't tried it yet: [Use the Sleep Calculator →](https://sleepsmarter.io/calculator?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day1-sleep-calculator)
 
 Tomorrow, I want to tell you about the night I accidentally discovered this myself. I'd been sleeping "8 hours" for years and wondering why I was always exhausted...
 
@@ -110,7 +110,7 @@ The first week was revelatory. I was sleeping 7.5 hours instead of 8, but waking
 3. Add 15 minutes (time to fall asleep)
 4. That's your bedtime. Set an alarm for it.
 
-Or just use the calculator: [Sleep Calculator →]
+Or just use the calculator: [Sleep Calculator →](https://sleepsmarter.io/calculator?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day2-sleep-calculator)
 
 Let me know how it goes — seriously, hit reply and tell me. I love hearing these stories.
 
@@ -152,7 +152,7 @@ Can't control the thermostat? Three alternatives:
 2. **Take a warm shower 90 minutes before bed** — counterintuitive, but the rapid cooling afterward triggers sleepiness
 3. **Use a lighter blanket** — swap the thick comforter for a breathable option
 
-I actually wrote a detailed guide on optimizing your sleep environment. If you want to go deeper: [Read: Why Do I Wake Up Tired? →]
+I actually wrote a detailed guide on optimizing your sleep environment. If you want to go deeper: [Read: Why Do I Wake Up Tired? →](https://sleepsmarter.io/blog/why-do-i-wake-up-tired?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day3-why-wake-up-tired)
 
 Tomorrow, we're going to talk about why "trying harder" to sleep is the worst thing you can do — and what to do instead.
 
@@ -198,7 +198,7 @@ See the difference? Systems remove the decision. And decisions are where willpow
 - **1 hour before bed:** No more screens
 - **0:** The number of times you hit snooze
 
-I wrote a complete breakdown of how to implement this: [The 10-3-2-1-0 Sleep Rule Explained →]
+I wrote a complete breakdown of how to implement this: [The 10-3-2-1-0 Sleep Rule Explained →](https://sleepsmarter.io/blog/10-3-2-1-0-sleep-rule?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day4-10-3-2-1-0-rule)
 
 It takes about a week to make it automatic. After that, you don't need willpower. The system runs itself.
 

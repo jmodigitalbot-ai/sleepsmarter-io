@@ -93,7 +93,7 @@ My curated list of the best sleep products — pillows, mattresses, sound machin
 **Price: $67** (one-time, lifetime access)
 **Guarantee: 60 days.** Full refund if you don't see improvement.
 
-**[Enroll in the Sleep Smarter Masterclass → $67](link)**
+**[Enroll in the Sleep Smarter Masterclass → $67](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day19-masterclass)**
 
 This isn't information you can't find online. It's information organized, prioritized, and structured so you don't have to spend months piecing it together yourself. I've done the work. You just follow the path.
 
@@ -126,7 +126,7 @@ David's experience highlights something important: **the answer isn't always "mo
 
 The Masterclass helps you find YOUR specific change. Not generic advice. Not what works for "most people." What works for you.
 
-**[Find your specific change → $67](link)**
+**[Find your specific change → $67](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day20-masterclass)**
 
 60-day guarantee. If David's story doesn't become your story, you get your money back.
 
@@ -163,7 +163,7 @@ I realize I've talked a lot about what the Masterclass teaches, but I haven't be
 
 **All of this for $67.** Less than one therapy session. Less than a month of sleep supplements. Less than that weighted blanket collecting dust in your closet.
 
-**[Get Lifetime Access → $67](link)**
+**[Get Lifetime Access → $67](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day21-masterclass)**
 
 60-day money-back guarantee. Zero risk.
 
@@ -206,7 +206,7 @@ If you've been thinking about it, now is the time.
 
 Or $67 on a system that fixes the root cause.
 
-**[Lock in the $67 price → Enroll now](link)**
+**[Lock in the $67 price → Enroll now](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day22-masterclass)**
 
 After this, I'll shift to talking about something for people who want even more personalized support. But this is the last time I'll pitch the Masterclass for a while.
 
