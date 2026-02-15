@@ -17,7 +17,7 @@
 
 ---
 
-## ✅ Published (9 articles)
+## ✅ Published (10 articles)
 
 | # | Title | Slug | Pillar |
 |---|-------|------|--------|
@@ -30,6 +30,7 @@
 | 7 | Is Napping Good for You? Science of Power Naps | is-napping-good-for-you | Science |
 | 8 | Best Sleep Schedule for Night Shift Workers | best-sleep-schedule-for-night-shift-workers | Audience |
 | 9 | How to Fix Your Sleep Schedule in 3 Days | fix-sleep-schedule | Hygiene |
+| 10 | Best White Noise Machines for Sleep (2026 Guide) | best-white-noise-machines-for-sleep | Product |
 
 ---
 
@@ -47,7 +48,7 @@
 |------|---|-------|----------------|--------|--------|
 | Feb 11 | 9 | How to Fix Your Sleep Schedule in 3 Days | fix sleep schedule | Hygiene | ✅ Published |
 | Feb 13 | 10 | Sleep Tips for New Parents: Surviving the First Year | sleep tips for new parents | Audience | ✅ Published |
-| Feb 15 | 11 | Best White Noise Machines for Sleep (2026 Guide) | best white noise machine for sleep | Product | ✅ Ready |
+| Feb 15 | 11 | Best White Noise Machines for Sleep (2026 Guide) | best white noise machine for sleep | Product | ✅ Published |
 
 ### Week 3: Feb 17-23
 | Date | # | Title | Target Keyword | Pillar | Status |
