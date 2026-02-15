@@ -65,10 +65,10 @@ export default function OTOPremium() {
         {/* Main Offer */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-4">
-            Upgrade to the <span className="text-[#a8dadc]">Full Implementation System</span>
+            You now understand the science. <span className="text-[#a8dadc]">Here's what makes it effortless to implement.</span>
           </h1>
           <p className="text-xl text-[#f1faee]/80 mb-6">
-            Take your sleep transformation to the next level with tools, accountability, and a 90-day roadmap.
+            Masterclass teaches you WHAT to do. Premium gives you the TOOLS to actually DO it.
           </p>
         </div>
 
@@ -79,9 +79,9 @@ export default function OTOPremium() {
               <span className="text-2xl text-[#a8dadc]">🚀</span>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#f1faee] mb-2">Sleep Smarter Premium: The Complete Implementation Package</h2>
+              <h2 className="text-2xl font-bold text-[#f1faee] mb-2">Sleep Smarter Premium: The Complete Implementation Toolkit</h2>
               <p className="text-[#f1faee]/80">
-                The Masterclass teaches you the system. Premium gives you the tools, accountability, and step-by-step roadmap to actually implement it.
+                You've learned the system. Now get the tools, roadmap, and automated accountability to implement it in 90 days.
               </p>
             </div>
           </div>
@@ -92,24 +92,28 @@ export default function OTOPremium() {
                 <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
                   <span className="text-[#a8dadc] text-xl">🛠️</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f1faee]">Premium Tools Suite</h3>
+                <h3 className="text-lg font-bold text-[#f1faee]">Implementation Tools Suite</h3>
               </div>
               <ul className="space-y-2 text-[#f1faee]/80 text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Sleep Environment Optimizer</span>
+                  <span>Sleep Environment Audit Checklist</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Circadian Rhythm Tracker</span>
+                  <span>Circadian Rhythm Mapping Worksheet</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Sleep Debt Calculator</span>
+                  <span>Sleep Debt Recovery Calculator</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Personalized Supplement Guide</span>
+                  <span>Supplement Decision Guide</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#a8dadc]">✓</span>
+                  <span>Wind-Down Routine Builder</span>
                 </li>
               </ul>
             </div>
@@ -119,24 +123,24 @@ export default function OTOPremium() {
                 <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
                   <span className="text-[#a8dadc] text-xl">🗺️</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f1faee]">90-Day Roadmap</h3>
+                <h3 className="text-lg font-bold text-[#f1faee]">90-Day Implementation Roadmap</h3>
               </div>
               <ul className="space-y-2 text-[#f1faee]/80 text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Week-by-week implementation plan</span>
+                  <span>Week-by-week action plan PDF</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Progress tracking dashboard</span>
+                  <span>Exactly what to do and when</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Milestone checkpoints</span>
+                  <span>Foundation → Optimization → Mastery</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Adjustment protocols</span>
+                  <span>Not learning — doing</span>
                 </li>
               </ul>
             </div>
@@ -144,26 +148,26 @@ export default function OTOPremium() {
             <div className="bg-[#0f0e17]/60 p-5 rounded-lg border border-[#4a4e69]/30">
               <div className="flex items-center gap-3 mb-3">
                 <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
-                  <span className="text-[#a8dadc] text-xl">🤝</span>
+                  <span className="text-[#a8dadc] text-xl">🤖</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f1faee]">Automated Accountability</h3>
+                <h3 className="text-lg font-bold text-[#f1faee]">Automated Accountability System</h3>
               </div>
               <ul className="space-y-2 text-[#f1faee]/80 text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Weekly check-in reminders</span>
+                  <span>Weekly email check-ins via Kit</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Progress reporting system</span>
+                  <span>Next week's actions delivered automatically</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Personalized feedback loops</span>
+                  <span>Adapts to your phase</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Adaptive goal setting</span>
+                  <span>Keeps you on track for 90 days</span>
                 </li>
               </ul>
             </div>
@@ -173,24 +177,24 @@ export default function OTOPremium() {
                 <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
                   <span className="text-[#a8dadc] text-xl">🎯</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f1faee]">Priority Support</h3>
+                <h3 className="text-lg font-bold text-[#f1faee]">Bonus: Troubleshooting Guide</h3>
               </div>
               <ul className="space-y-2 text-[#f1faee]/80 text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Direct email access to Dr. Chen</span>
+                  <span>Common sleep problems & fixes</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>48-hour response guarantee</span>
+                  <span>When something's not working</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Monthly Q&A sessions</span>
+                  <span>Look it up, apply the fix</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span>Implementation troubleshooting</span>
+                  <span>No guesswork, just solutions</span>
                 </li>
               </ul>
             </div>
@@ -200,10 +204,10 @@ export default function OTOPremium() {
             <div className="mb-6">
               <div className="inline-flex items-center gap-2">
                 <span className="text-4xl font-bold text-[#f1faee]">$197</span>
-                <span className="text-[#f1faee]/60 line-through">$497</span>
-                <span className="bg-[#a8dadc]/20 text-[#a8dadc] text-sm font-bold px-3 py-1 rounded-full">60% OFF</span>
+                <span className="text-[#f1faee]/60 line-through">$443</span>
+                <span className="bg-[#a8dadc]/20 text-[#a8dadc] text-sm font-bold px-3 py-1 rounded-full">55% OFF</span>
               </div>
-              <p className="text-[#f1faee]/60 text-sm mt-2">One-time payment • Lifetime access</p>
+              <p className="text-[#f1faee]/60 text-sm mt-2">One-time payment • Lifetime access • Honest value: $443</p>
             </div>
 
             <a
@@ -211,7 +215,7 @@ export default function OTOPremium() {
               onClick={() => handleCheckoutClick('Upgrade to Premium — $197', 'oto-main')}
               className="block w-full bg-gradient-to-r from-[#a8dadc] to-[#4a9ea0] hover:from-[#b8e6e8] hover:to-[#5aaea0] text-[#1a1a2e] font-bold py-5 px-6 rounded-xl transition text-xl shadow-lg hover:shadow-xl mb-4"
             >
-              🚀 YES! Upgrade to Premium — $197
+              🚀 YES! Give Me the Implementation Tools — $197
             </a>
 
             <p className="text-[#f1faee]/60 text-sm mb-6">
@@ -237,18 +241,18 @@ export default function OTOPremium() {
         <div className="mt-12 pt-8 border-t border-[#4a4e69]/30 text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🏆</span>
-              <span className="text-[#f1faee]">Premium Implementation Tools</span>
+              <span className="text-2xl">🛠️</span>
+              <span className="text-[#f1faee]">Implementation Tools Suite</span>
             </div>
             <div className="hidden md:block text-[#4a4e69]">•</div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🤝</span>
-              <span className="text-[#f1faee]">Automated Accountability System</span>
+              <span className="text-2xl">🗺️</span>
+              <span className="text-[#f1faee]">90-Day Roadmap</span>
             </div>
             <div className="hidden md:block text-[#4a4e69]">•</div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🎯</span>
-              <span className="text-[#f1faee]">Priority Direct Support</span>
+              <span className="text-2xl">🤖</span>
+              <span className="text-[#f1faee]">Automated Accountability</span>
             </div>
           </div>
         </div>

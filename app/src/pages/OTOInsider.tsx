@@ -9,7 +9,7 @@ export default function OTOInsider() {
   // Track OTO page view when component mounts
   useEffect(() => {
     trackSalesPageView('/oto/insider', {
-      page_title: 'Sleep Smarter Insider OTO - Join the Community'
+      page_title: 'Sleep Smarter Insider Membership OTO'
     })
   }, [])
 
@@ -56,8 +56,8 @@ export default function OTOInsider() {
         {/* Urgency Timer */}
         <div className="mb-8 text-center">
           <div className="inline-flex items-center gap-2 bg-[#4a4e69]/30 border border-[#4a4e69]/50 rounded-full px-4 py-2">
-            <span className="text-[#a8dadc] font-bold">👥</span>
-            <span className="text-[#f1faee] font-semibold">Community invitation expires in:</span>
+            <span className="text-[#a8dadc] font-bold">📧</span>
+            <span className="text-[#f1faee] font-semibold">Special offer expires in:</span>
             <span className="text-2xl font-bold text-[#a8dadc] font-mono">{formatTime(timeLeft)}</span>
           </div>
         </div>
@@ -65,10 +65,10 @@ export default function OTOInsider() {
         {/* Main Offer */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-4">
-            Join the <span className="text-[#a8dadc]">Sleep Smarter Insider Community</span>
+            Stay Connected & Keep Improving
           </h1>
           <p className="text-xl text-[#f1faee]/80 mb-6">
-            Get ongoing support, exclusive tools, and a progression system for lasting sleep success.
+            The <span className="text-[#a8dadc]">Sleep Smarter Insider Membership</span> — fresh content every month
           </p>
         </div>
 
@@ -76,12 +76,12 @@ export default function OTOInsider() {
         <div className="bg-gradient-to-br from-[#16213e] to-[#0f0e17] border border-[#4a4e69]/50 rounded-2xl p-8 mb-10">
           <div className="flex items-start gap-4 mb-6">
             <div className="bg-[#a8dadc]/20 p-3 rounded-lg">
-              <span className="text-2xl text-[#a8dadc]">🤝</span>
+              <span className="text-2xl text-[#a8dadc]">📧</span>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#f1faee] mb-2">Sleep Smarter Insider: Your Ongoing Support System</h2>
+              <h2 className="text-2xl font-bold text-[#f1faee] mb-2">Your Monthly Sleep Upgrade</h2>
               <p className="text-[#f1faee]/80">
-                Sleep transformation isn't a one-time event — it's a journey. The Insider community gives you the ongoing support, tools, and accountability to maintain your progress long-term.
+                Sleep optimization is a journey. Stay connected with fresh, actionable content delivered straight to your inbox every month.
               </p>
             </div>
           </div>
@@ -90,91 +90,61 @@ export default function OTOInsider() {
             <div className="bg-[#0f0e17]/60 p-5 rounded-lg border border-[#4a4e69]/30">
               <div className="flex items-center gap-3 mb-3">
                 <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
-                  <span className="text-[#a8dadc] text-xl">🛠️</span>
+                  <span className="text-[#a8dadc] text-xl">📚</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f1faee]">Exclusive Monthly Tools</h3>
+                <h3 className="text-lg font-bold text-[#f1faee]">Monthly Deep-Dive Guide</h3>
               </div>
-              <p className="text-[#f1faee]/80 text-sm mb-3">
-                Get new sleep optimization tools every month:
+              <p className="text-[#f1faee]/80 text-sm">
+                Comprehensive PDF guide on a sleep topic delivered on the 1st of each month. Go deeper into sleep science, techniques, and optimization strategies.
               </p>
-              <ul className="space-y-2 text-[#f1faee]/80 text-sm">
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Advanced sleep tracking templates</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Seasonal sleep adjustment guides</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Stress-sleep connection worksheets</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Sleep environment audit tools</span>
-                </li>
-              </ul>
             </div>
 
             <div className="bg-[#0f0e17]/60 p-5 rounded-lg border border-[#4a4e69]/30">
               <div className="flex items-center gap-3 mb-3">
                 <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
-                  <span className="text-[#a8dadc] text-xl">📈</span>
+                  <span className="text-[#a8dadc] text-xl">🛒</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f1faee]">Progression System</h3>
+                <h3 className="text-lg font-bold text-[#f1faee]">Curated Product Recommendations</h3>
               </div>
-              <p className="text-[#f1faee]/80 text-sm mb-3">
-                Level up your sleep mastery with our structured progression:
+              <p className="text-[#f1faee]/80 text-sm">
+                Monthly email with tested sleep products and member-exclusive deals. We do the research so you get the best gear for better sleep.
               </p>
-              <ul className="space-y-2 text-[#f1faee]/80 text-sm">
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Monthly challenges and goals</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Progress tracking dashboard</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Skill badges and achievements</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Advanced sleep mastery paths</span>
-                </li>
-              </ul>
             </div>
 
             <div className="bg-[#0f0e17]/60 p-5 rounded-lg border border-[#4a4e69]/30">
               <div className="flex items-center gap-3 mb-3">
                 <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
-                  <span className="text-[#a8dadc] text-xl">👥</span>
+                  <span className="text-[#a8dadc] text-xl">🌤️</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f1faee]">Community Support</h3>
+                <h3 className="text-lg font-bold text-[#f1faee]">Seasonal Sleep Protocols</h3>
               </div>
-              <p className="text-[#f1faee]/80 text-sm mb-3">
-                Connect with others on the same journey:
+              <p className="text-[#f1faee]/80 text-sm">
+                Quarterly guides for seasonal adjustments — daylight saving, summer heat, winter darkness, and spring allergies. Sleep optimally year-round.
               </p>
-              <ul className="space-y-2 text-[#f1faee]/80 text-sm">
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Private members-only community</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Weekly group coaching calls</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Accountability partner matching</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[#a8dadc]">•</span>
-                  <span>Success story showcases</span>
-                </li>
-              </ul>
+            </div>
+
+            <div className="bg-[#0f0e17]/60 p-5 rounded-lg border border-[#4a4e69]/30">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
+                  <span className="text-[#a8dadc] text-xl">⚡</span>
+                </div>
+                <h3 className="text-lg font-bold text-[#f1faee]">Early Access to New Tools</h3>
+              </div>
+              <p className="text-[#f1faee]/80 text-sm">
+                First access to new calculators, trackers, and features on sleepsmarter.io. Test drive our latest sleep optimization tools before anyone else.
+              </p>
+            </div>
+
+            <div className="bg-[#0f0e17]/60 p-5 rounded-lg border border-[#4a4e69]/30">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="bg-[#a8dadc]/20 p-2 rounded-lg">
+                  <span className="text-[#a8dadc] text-xl">📝</span>
+                </div>
+                <h3 className="text-lg font-bold text-[#f1faee]">Member-Only Articles</h3>
+              </div>
+              <p className="text-[#f1faee]/80 text-sm">
+                2-3 in-depth articles per month via email. Advanced sleep science, case studies, and practical optimization techniques you won't find anywhere else.
+              </p>
             </div>
           </div>
 
@@ -195,32 +165,42 @@ export default function OTOInsider() {
 
             <a
               href={checkoutUrl}
-              onClick={() => handleCheckoutClick('Join Insider Community — $19/mo', 'oto-main')}
+              onClick={() => handleCheckoutClick('Join Insider Membership — $19/mo', 'oto-main')}
               className="block w-full bg-gradient-to-r from-[#4a4e69] to-[#3a3e59] hover:from-[#5a5e79] hover:to-[#4a4e69] text-white font-bold py-5 px-6 rounded-xl transition text-xl shadow-lg hover:shadow-xl mb-4"
             >
-              🤝 YES! Join the Insider Community — $19/month
+              📧 YES! Join the Insider Membership — $19/month
             </a>
 
             <div className="bg-[#0f0e17]/40 p-4 rounded-lg border border-[#4a4e69]/30 mb-6">
-              <p className="text-[#f1faee] font-semibold mb-2">What you get immediately:</p>
+              <p className="text-[#f1faee] font-semibold mb-2">What you get every month:</p>
               <div className="grid grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span className="text-[#f1faee]/80">Welcome toolkit</span>
+                  <span className="text-[#f1faee]/80">Deep-dive PDF guide</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span className="text-[#f1faee]/80">Community access</span>
+                  <span className="text-[#f1faee]/80">Product recommendations</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span className="text-[#f1faee]/80">Monthly tools</span>
+                  <span className="text-[#f1faee]/80">Member-only articles</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-[#a8dadc]">✓</span>
-                  <span className="text-[#f1faee]/80">Weekly coaching</span>
+                  <span className="text-[#f1faee]/80">Early tool access</span>
                 </div>
               </div>
+            </div>
+
+            <div className="bg-[#0f0e17]/40 p-4 rounded-lg border border-[#4a4e69]/30 mb-6">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-2xl text-[#a8dadc]">🔄</span>
+                <span className="text-[#f1faee] font-semibold">60-Day Money-Back Guarantee</span>
+              </div>
+              <p className="text-[#f1faee]/80 text-sm">
+                If you don't find the monthly content valuable for your sleep journey, email us within 60 days for a full refund. No questions asked.
+              </p>
             </div>
 
             <p className="text-[#f1faee]/60 text-sm">
@@ -232,7 +212,7 @@ export default function OTOInsider() {
         {/* Decline Option */}
         <div className="text-center">
           <p className="text-[#f1faee]/70 mb-4">
-            No thanks, I'll continue without the community support
+            No thanks, I'll continue without the monthly content
           </p>
           <Link
             to="/thank-you"
@@ -246,18 +226,18 @@ export default function OTOInsider() {
         <div className="mt-12 pt-8 border-t border-[#4a4e69]/30 text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <div className="flex items-center gap-2">
+              <span className="text-2xl">📧</span>
+              <span className="text-[#f1faee]">Monthly Content Delivery</span>
+            </div>
+            <div className="hidden md:block text-[#4a4e69]">•</div>
+            <div className="flex items-center gap-2">
               <span className="text-2xl">🔄</span>
-              <span className="text-[#f1faee]">Monthly New Tools & Resources</span>
+              <span className="text-[#f1faee]">60-Day Guarantee</span>
             </div>
             <div className="hidden md:block text-[#4a4e69]">•</div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">👥</span>
-              <span className="text-[#f1faee]">Private Support Community</span>
-            </div>
-            <div className="hidden md:block text-[#4a4e69]">•</div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">📈</span>
-              <span className="text-[#f1faee]">Structured Progression System</span>
+              <span className="text-2xl">⚡</span>
+              <span className="text-[#f1faee]">Early Tool Access</span>
             </div>
           </div>
         </div>

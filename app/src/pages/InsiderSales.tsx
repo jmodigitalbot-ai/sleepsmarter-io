@@ -40,7 +40,7 @@ export default function InsiderSales() {
             Stop Guessing About Sleep. Start Sleeping Smarter—Every Month.
           </h1>
           <p className="text-xl md:text-2xl text-[#f1faee]/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Join the Sleep Smarter Insider Membership and get science-backed sleep optimization delivered to you monthly. Cancel anytime.
+            Join the Sleep Smarter Insider Membership and get AI-powered sleep optimization delivered to you monthly. Cancel anytime.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 mb-6">
             <div className="text-5xl font-bold text-[#a8dadc]">$19<span className="text-2xl text-[#f1faee]/60">/month</span></div>
@@ -63,72 +63,72 @@ export default function InsiderSales() {
         {/* ============================================ */}
         <div className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-8 text-center">
-            Your Personal Sleep Optimization Coach — Every Month
+            Your AI-Powered Sleep Optimization System — Every Month
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             
             <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
-              <div className="text-3xl mb-4">🎓</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Monthly Masterclass</h3>
+              <div className="text-3xl mb-4">📘</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Monthly Deep-Dive Guide</h3>
               <p className="text-[#f1faee]/70 mb-3">
-                45-60 minute video masterclass + PDF workbook on a new sleep optimization topic each month.
+                AI-generated comprehensive guide on a sleep topic, delivered as PDF via email on the 1st of each month.
               </p>
-              <p className="text-[#f1faee]/40 text-sm">Value: $29/month</p>
-            </div>
-
-            <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
-              <div className="text-3xl mb-4">🗓️</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Live Q&A Access</h3>
-              <p className="text-[#f1faee]/70 mb-3">
-                Monthly 60-minute Zoom webinar with Dr. Sarah Chen. Get your questions answered live.
-              </p>
-              <p className="text-[#f1faee]/40 text-sm">Value: $39/month</p>
-            </div>
-
-            <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
-              <div className="text-3xl mb-4">📚</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Member-Only Content</h3>
-              <p className="text-[#f1faee]/70 mb-3">
-                2-3 in-depth articles per month plus research digests with practical takeaways.
-              </p>
-              <p className="text-[#f1faee]/40 text-sm">Value: $19/month</p>
+              <p className="text-[#f1faee]/40 text-sm">Value: $15/month</p>
             </div>
 
             <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
               <div className="text-3xl mb-4">🏷️</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Product Discounts</h3>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Curated Product Recommendations</h3>
               <p className="text-[#f1faee]/70 mb-3">
-                Exclusive 15-25% off sleep products we've personally tested and recommend.
+                Monthly email with tested/reviewed sleep products with exclusive member discounts.
               </p>
-              <p className="text-[#f1faee]/40 text-sm">Value: $10+/month</p>
+              <p className="text-[#f1faee]/40 text-sm">Value: $10/month</p>
             </div>
 
             <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
-              <div className="text-3xl mb-4">👥</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Community Forum</h3>
+              <div className="text-3xl mb-4">📚</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Member-Only Articles</h3>
               <p className="text-[#f1faee]/70 mb-3">
-                Connect with other members, share wins, get support, and stay accountable.
+                2-3 in-depth articles per month delivered via email (AI-generated, quality-controlled).
               </p>
-              <p className="text-[#f1faee]/40 text-sm">Value: Priceless</p>
+              <p className="text-[#f1faee]/40 text-sm">Value: $10/month</p>
             </div>
 
             <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
               <div className="text-3xl mb-4">🌱</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Seasonal Guides</h3>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Seasonal Sleep Protocols</h3>
               <p className="text-[#f1faee]/70 mb-3">
-                Quarterly comprehensive guides for seasonal sleep adjustments and challenges.
+                Quarterly comprehensive guides for daylight saving, summer heat, winter darkness, holiday stress.
               </p>
-              <p className="text-[#f1faee]/40 text-sm">Value: $15/month</p>
+              <p className="text-[#f1faee]/40 text-sm">Value: $5/month</p>
+            </div>
+
+            <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
+              <div className="text-3xl mb-4">🚀</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Early Access to New Tools</h3>
+              <p className="text-[#f1faee]/70 mb-3">
+                First access to new calculators and tools we add to sleepsmarter.io.
+              </p>
+              <p className="text-[#f1faee]/40 text-sm">Value: Included</p>
+            </div>
+
+            <div className="bg-[#0f0e17]/60 rounded-xl p-6 border border-[#4a4e69]/30">
+              <div className="text-3xl mb-4">🔒</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">60-Day Money-Back Guarantee</h3>
+              <p className="text-[#f1faee]/70 mb-3">
+                Try it risk-free for 60 days. If you're not satisfied, get a full refund.
+              </p>
+              <p className="text-[#f1faee]/40 text-sm">Value: Priceless</p>
             </div>
 
           </div>
 
           <div className="text-center">
             <div className="inline-block bg-[#a8dadc]/10 border-2 border-[#a8dadc]/30 rounded-xl p-6 mb-6">
-              <p className="text-[#f1faee] font-bold text-xl mb-2">Total Monthly Value: <span className="line-through">$97+</span></p>
+              <p className="text-[#f1faee] font-bold text-xl mb-2">Total Monthly Value: <span className="line-through">$40+</span></p>
               <p className="text-[#a8dadc] font-bold text-2xl">Your Price: $19/month</p>
-              <p className="text-[#f1faee]/60 text-sm mt-2">80% savings • Cancel anytime</p>
+              <p className="text-[#f1faee]/60 text-sm mt-2">52% savings • Cancel anytime</p>
             </div>
             <a
               href={checkoutUrl}
@@ -145,7 +145,7 @@ export default function InsiderSales() {
         {/* ============================================ */}
         <div className="mb-16 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border border-[#4a4e69]/50 rounded-2xl p-8 md:p-12">
           <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-6 text-center">
-            What You'll Learn Each Month
+            What You'll Receive Each Month
           </h2>
           
           <div className="space-y-6">
@@ -155,11 +155,11 @@ export default function InsiderSales() {
                 <div className="bg-[#a8dadc] text-[#1a1a2e] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">1</div>
                 <div>
                   <h3 className="text-xl font-bold text-[#f1faee]">Month 1: Sleep Environment Optimization</h3>
-                  <p className="text-[#a8dadc] text-sm">"Building Your Sleep Sanctuary"</p>
+                  <p className="text-[#a8dadc] text-sm">"Building Your Sleep Sanctuary" Guide</p>
                 </div>
               </div>
               <p className="text-[#f1faee]/70">
-                The science of sleep environment, temperature, light, noise, comfort optimization, and DIY strategies for creating your perfect sleep sanctuary.
+                Comprehensive PDF guide covering temperature, light, noise, and comfort optimization. Plus 2 member articles on DIY sleep sanctuary strategies and product recommendations for bedroom upgrades.
               </p>
             </div>
 
@@ -167,12 +167,12 @@ export default function InsiderSales() {
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-[#a8dadc] text-[#1a1a2e] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">2</div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#f1faee]">Month 2: Circadian Rhythm Mastery</h3>
-                  <p className="text-[#a8dadc] text-sm">"Mastering Your Internal Clock"</p>
+                  <h3 className="text-xl font-bold text-[#f1faee]">Month 2: Stress & Sleep Connection</h3>
+                  <p className="text-[#a8dadc] text-sm">"Calming the Mind for Better Sleep" Guide</p>
                 </div>
               </div>
               <p className="text-[#f1faee]/70">
-                Understanding your chronotype, light exposure strategies, meal timing for better sleep, and shift work adaptations.
+                Deep-dive guide on the stress-sleep cycle with practical wind-down routines. Includes member articles on mindfulness practices and cognitive techniques, plus curated relaxation product recommendations.
               </p>
             </div>
 
@@ -180,18 +180,18 @@ export default function InsiderSales() {
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-[#a8dadc] text-[#1a1a2e] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">3</div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#f1faee]">Month 3: Stress & Sleep Connection</h3>
-                  <p className="text-[#a8dadc] text-sm">"Calming the Mind for Better Sleep"</p>
+                  <h3 className="text-xl font-bold text-[#f1faee]">Month 3: Nutrition for Sleep</h3>
+                  <p className="text-[#a8dadc] text-sm">"Foods That Fuel Better Sleep" Guide</p>
                 </div>
               </div>
               <p className="text-[#f1faee]/70">
-                The stress-sleep cycle, evening wind-down routines, cognitive techniques for sleep anxiety, and mindfulness practices.
+                Guide on meal timing, sleep-supportive foods, and supplements. Member articles on evening nutrition strategies and sleep-friendly recipes, plus exclusive discounts on sleep-supportive supplements.
               </p>
             </div>
 
             <div className="text-center mt-8">
               <p className="text-[#f1faee]/70 mb-4">
-                Plus 9 more months of comprehensive sleep education covering nutrition, exercise timing, digital detox, sleep tracking, power napping, travel optimization, seasonal adjustments, cognitive performance, and annual planning.
+                Plus 9 more months of comprehensive sleep education covering exercise timing, digital detox, sleep tracking, power napping, travel optimization, seasonal adjustments, cognitive performance, and annual planning — all delivered via automated email.
               </p>
               <a
                 href={checkoutUrl}
@@ -206,36 +206,44 @@ export default function InsiderSales() {
         </div>
 
         {/* ============================================ */}
-        {/* SECTION 4: COMMUNITY EMPHASIS */}
+        {/* SECTION 4: WHAT YOU'LL GET ON DAY 1 */}
         {/* ============================================ */}
         <div className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-8 text-center">
-            You're Not Alone in Your Sleep Journey
+            What You'll Get Immediately After Joining
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
             
-            <div className="bg-[#0f0e17]/60 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-4">💬</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Daily Discussion</h3>
+            <div className="bg-[#0f0e17]/60 rounded-xl p-6">
+              <div className="text-3xl mb-4">📧</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Welcome Email Series</h3>
               <p className="text-[#f1faee]/70">
-                Share wins, ask questions, and get support from members who understand exactly what you're going through.
+                Immediate access to our onboarding email series with foundational sleep optimization principles and setup guides.
               </p>
             </div>
 
-            <div className="bg-[#0f0e17]/60 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Accountability Partners</h3>
+            <div className="bg-[#0f0e17]/60 rounded-xl p-6">
+              <div className="text-3xl mb-4">📊</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Current Month's Content</h3>
               <p className="text-[#f1faee]/70">
-                Connect with members at similar stages for mutual support and motivation to stay on track.
+                Access to the current month's Deep-Dive Guide and all member articles published so far this month.
               </p>
             </div>
 
-            <div className="bg-[#0f0e17]/60 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-4">🎉</div>
-              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Success Celebrations</h3>
+            <div className="bg-[#0f0e17]/60 rounded-xl p-6">
+              <div className="text-3xl mb-4">🛒</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Product Discounts</h3>
               <p className="text-[#f1faee]/70">
-                Weekly spotlight on member transformations and milestones to keep everyone motivated.
+                Immediate access to all current member-exclusive discounts on sleep products we've researched and reviewed.
+              </p>
+            </div>
+
+            <div className="bg-[#0f0e17]/60 rounded-xl p-6">
+              <div className="text-3xl mb-4">🛠️</div>
+              <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Tool Access</h3>
+              <p className="text-[#f1faee]/70">
+                Full access to all current Sleep Smarter calculators and tools, with early access to new ones as they're released.
               </p>
             </div>
 
@@ -246,9 +254,9 @@ export default function InsiderSales() {
               {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-400 text-lg">★</span>)}
             </div>
             <p className="text-[#f1faee]/80 italic mb-4 text-lg">
-              "The community made all the difference. When I wanted to quit in week 3, my accountability partner kept me going. Now I'm sleeping better than I have in a decade. The monthly masterclasses keep me learning and improving."
+              "The monthly guides are incredibly thorough and practical. I love that everything is automated — no waiting for live sessions. The product recommendations have saved me hundreds on sleep upgrades that actually work."
             </p>
-            <p className="text-[#a8dadc] font-semibold">— Jessica, Insider Member for 6 months</p>
+            <p className="text-[#a8dadc] font-semibold">— Michael, Insider Member for 4 months</p>
           </div>
         </div>
 
@@ -257,25 +265,25 @@ export default function InsiderSales() {
         {/* ============================================ */}
         <div className="mb-16 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-[#f1faee] mb-6">
-            Science-Backed, Not Trendy
+            Honest, Automated Value
           </h3>
           <p className="text-[#f1faee]/80 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
-            Every recommendation in the Insider Membership is research-validated. We focus on practical implementation, not just theory.
+            We're transparent about what we can deliver: AI-generated, research-backed content and curated product recommendations — no false promises of human interaction we can't provide.
           </p>
           
           <div className="max-w-2xl mx-auto space-y-4 text-left">
             <div className="flex items-start gap-3">
               <div className="text-green-400 text-xl mt-1">✓</div>
               <div>
-                <p className="text-[#f1faee] font-semibold">Personally Tested Products</p>
-                <p className="text-[#f1faee]/70 text-sm">We only recommend what Dr. Sarah Chen or our team has personally tested and believes in.</p>
+                <p className="text-[#f1faee] font-semibold">AI-Generated, Human-Reviewed Content</p>
+                <p className="text-[#f1faee]/70 text-sm">All guides and articles are AI-generated from current research, then quality-controlled for accuracy.</p>
               </div>
             </div>
             
             <div className="flex items-start gap-3">
               <div className="text-green-400 text-xl mt-1">✓</div>
               <div>
-                <p className="text-[#f1faee] font-semibold">Science-Backed Benefits</p>
+                <p className="text-[#f1faee] font-semibold">Research-Backed Recommendations</p>
                 <p className="text-[#f1faee]/70 text-sm">Every product recommendation includes the science behind why it works.</p>
               </div>
             </div>
@@ -284,7 +292,7 @@ export default function InsiderSales() {
               <div className="text-green-400 text-xl mt-1">✓</div>
               <div>
                 <p className="text-[#f1faee] font-semibold">Transparent Affiliate Links</p>
-                <p className="text-[#f1faee]/70 text-sm">When you purchase through our links, we may earn a small commission at no extra cost to you. This helps support our research and content creation.</p>
+                <p className="text-[#f1faee]/70 text-sm">When you purchase through our links, we may earn a small commission at no extra cost to you. This helps support our automated content creation.</p>
               </div>
             </div>
           </div>
@@ -327,7 +335,7 @@ export default function InsiderSales() {
               <div className="flex justify-between items-center py-3 px-4 bg-[#a8dadc]/10 rounded-lg border-2 border-[#a8dadc]/30">
                 <div>
                   <p className="text-[#f1faee] font-bold">Sleep Smarter Insider</p>
-                  <p className="text-[#a8dadc] text-sm">Complete education + community + support</p>
+                  <p className="text-[#a8dadc] text-sm">Complete education + curated recommendations</p>
                 </div>
                 <span className="text-[#a8dadc] font-bold text-xl">$19/month</span>
               </div>
@@ -335,7 +343,7 @@ export default function InsiderSales() {
             
             <div className="mt-6 text-center">
               <p className="text-[#f1faee]/70">
-                For less than the cost of one sleep supplement bottle, you get complete sleep education, community support, and ongoing guidance.
+                For less than the cost of one sleep supplement bottle, you get comprehensive sleep education, curated product recommendations, and ongoing automated guidance.
               </p>
             </div>
           </div>
@@ -347,23 +355,23 @@ export default function InsiderSales() {
         <div className="mb-16 bg-green-500/5 border-2 border-green-500/30 rounded-2xl p-8 text-center">
           <div className="text-5xl mb-6">🔓</div>
           <h3 className="text-3xl font-bold text-green-400 mb-6">
-            Cancel Anytime, No Questions Asked
+            60-Day Money-Back Guarantee
           </h3>
           <p className="text-[#f1faee]/80 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
-            We're so confident you'll love the Insider Membership that we make it risk-free to try.
+            We're so confident you'll find value in the Insider Membership that we offer a full 60-day money-back guarantee.
           </p>
           <div className="max-w-2xl mx-auto space-y-4">
             <div className="flex items-center justify-center gap-3">
               <div className="text-green-400 text-2xl">✓</div>
-              <p className="text-[#f1faee]">No long-term contracts</p>
+              <p className="text-[#f1faee]">Full refund within 60 days</p>
             </div>
             <div className="flex items-center justify-center gap-3">
               <div className="text-green-400 text-2xl">✓</div>
-              <p className="text-[#f1faee]">Cancel with one click</p>
+              <p className="text-[#f1faee]">No questions asked</p>
             </div>
             <div className="flex items-center justify-center gap-3">
               <div className="text-green-400 text-2xl">✓</div>
-              <p className="text-[#f1faee]">Keep access through your billing period</p>
+              <p className="text-[#f1faee]">Cancel monthly subscription anytime</p>
             </div>
             <div className="flex items-center justify-center gap-3">
               <div className="text-green-400 text-2xl">✓</div>
@@ -382,21 +390,21 @@ export default function InsiderSales() {
             <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
               <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">When do I get access to the content?</h4>
               <p className="text-[#f1faee]/80 text-lg">
-                Immediately after signing up! You'll get instant access to the current month's masterclass, all member articles, and the community. New content is delivered on the 1st of each month.
+                Immediately after signing up! You'll get instant access to the current month's Deep-Dive Guide, all member articles, and product discounts. New content is delivered via email on the 1st of each month.
               </p>
             </div>
 
             <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
-              <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">What if I miss a live Q&A session?</h4>
+              <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">Is the content AI-generated?</h4>
               <p className="text-[#f1faee]/80 text-lg">
-                All live sessions are recorded and available within 24 hours in the member portal. You can watch them anytime that's convenient for you.
+                Yes, all guides and articles are AI-generated from current sleep research and then quality-controlled for accuracy. We're transparent about our automated delivery system.
               </p>
             </div>
 
             <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
               <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">Can I access previous months' content?</h4>
               <p className="text-[#f1faee]/80 text-lg">
-                Yes! Once you're a member, you have access to the entire content library, including all past masterclasses and articles for as long as you remain a member.
+                Yes! Once you're a member, you have access to the entire content library via email archives, including all past Deep-Dive Guides and articles for as long as you remain a member.
               </p>
             </div>
 
@@ -410,7 +418,14 @@ export default function InsiderSales() {
             <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
               <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">What if I have a medical sleep condition?</h4>
               <p className="text-[#f1faee]/80 text-lg">
-                The Insider Membership is educational and supportive, not medical treatment. It complements professional care but doesn't replace it. Always consult your healthcare provider for medical conditions.
+                The Insider Membership is educational, not medical treatment. It complements professional care but doesn't replace it. Always consult your healthcare provider for medical conditions.
+              </p>
+            </div>
+
+            <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
+              <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">How are product recommendations selected?</h4>
+              <p className="text-[#f1faee]/80 text-lg">
+                We research and review sleep products, then curate the best options for members. When you purchase through our affiliate links, we may earn a commission at no extra cost to you.
               </p>
             </div>
 
@@ -423,10 +438,10 @@ export default function InsiderSales() {
         <div className="mb-16 text-center">
           <div className="bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-6">
-              Start Your Continuous Sleep Optimization Journey Today
+              Start Your Automated Sleep Optimization Journey Today
             </h3>
             <p className="text-lg text-[#f1faee]/80 mb-8 max-w-2xl mx-auto">
-              Sleep science evolves. Your life changes. Your sleep needs adapt. With the Insider Membership, you get continuous education and support that grows with you.
+              Sleep science evolves. Your life changes. With the Insider Membership, you get continuous, automated education and curated recommendations that adapt to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <div className="text-center">
@@ -435,20 +450,20 @@ export default function InsiderSales() {
               </div>
               <div className="text-[#f1faee]/60">vs.</div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#f1faee] line-through">$97+</div>
+                <div className="text-3xl font-bold text-[#f1faee] line-through">$40+</div>
                 <div className="text-[#f1faee]/60 text-sm">actual value</div>
               </div>
             </div>
             <a
               href={checkoutUrl}
-              onClick={() => handleCheckoutClick('Join 500+ Sleep Smarter Insiders — $19/month', 'final_cta')}
+              onClick={() => handleCheckoutClick('Join Sleep Smarter Insiders — $19/month', 'final_cta')}
               className="inline-block w-full sm:w-auto bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-5 px-12 rounded-xl transition text-2xl shadow-lg hover:shadow-xl mb-4"
             >
-              Join 500+ Sleep Smarter Insiders — $19/month
+              Join Sleep Smarter Insiders — $19/month
             </a>
             <div className="flex items-center justify-center gap-2 text-sm text-[#f1faee]/60 mb-6">
               <span className="text-green-400 text-lg">🔒</span>
-              <span>Secure checkout • Cancel anytime • Instant access</span>
+              <span>Secure checkout • 60-day guarantee • Instant access</span>
             </div>
             <p className="text-[#f1faee]/50 text-sm">
               First billing today, then monthly. Cancel anytime from your account.
