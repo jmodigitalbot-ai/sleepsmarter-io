@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
 
 export default function MasterclassSales() {
-  const checkoutUrl = "SAMCART_MASTERCLASS_URL"
+  const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right"
 
   // Track sales page view when component mounts
   useEffect(() => {
