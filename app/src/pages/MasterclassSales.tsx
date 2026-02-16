@@ -42,6 +42,13 @@ export default function MasterclassSales() {
             <p className="text-xl md:text-2xl text-[#f1faee]/80 mb-8 max-w-3xl mx-auto leading-relaxed">
               The Sleep Smarter Masterclass: Transform Your Sleep in 30 Days Using Neuroscience, Chronobiology, and Personalized Sleep Engineering
             </p>
+            <div className="mb-10">
+              <img 
+                src="/masterclass-hero.png" 
+                alt="Sleep Smarter Masterclass - 6 Science-Backed Modules" 
+                className="max-w-2xl w-full mx-auto rounded-xl shadow-2xl border border-[#4a4e69]/30"
+              />
+            </div>
             <a
               href={checkoutUrl}
               onClick={() => handleCheckoutClick('Enroll in Masterclass — $67', 'hero')}
