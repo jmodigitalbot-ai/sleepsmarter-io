@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
 
 export default function PremiumSales() {
-  const checkoutUrl = "SAMCART_PREMIUM_URL"
+  const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation-program#samcart-slide-open-right"
 
   // Track sales page view when component mounts
   useEffect(() => {
