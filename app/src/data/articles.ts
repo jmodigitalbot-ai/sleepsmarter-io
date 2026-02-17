@@ -138,8 +138,8 @@ export const articles: Article[] = [
   {
     slug: 'best-white-noise-machines-for-sleep',
     title: 'Best White Noise Machines for Sleep (2026 Guide)',
-    description: 'Discover the top white noise machines of 2026. Our comprehensive guide reviews the best options for sound quality, features, and value to help you sleep better.',
-    readTime: '12 min read',
+    description: 'Discover the 7 best white noise machines of 2026. We review top picks for sound quality, portability, and value — plus the science of how white noise improves sleep.',
+    readTime: '15 min read',
     date: 'February 2026',
     content: bestWhiteNoiseMachines,
     featuredImage: '/images/featured-white-noise-machines.png',

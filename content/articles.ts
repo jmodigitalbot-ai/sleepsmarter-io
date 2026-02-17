@@ -75,11 +75,11 @@ export const articles: Article[] = [
     title: 'Best White Noise Machines for Sleep (2026 Guide)',
     slug: 'best-white-noise-machines-for-sleep',
     date: '2026-02-15',
-    excerpt: 'Discover the top white noise machines of 2026. Our comprehensive guide reviews the best options for sound quality, features, and value to help you sleep better.',
+    excerpt: 'Discover the 7 best white noise machines of 2026. We review top picks for sound quality, portability, and value — plus the science of how white noise improves sleep.',
     content: 'articles/best-white-noise-machines-for-sleep.md',
     featuredImage: '/images/articles/best-white-noise-machines.jpg',
-    tags: ['products', 'technology', 'sleep aids'],
-    readTime: 12
+    tags: ['products', 'technology', 'sleep aids', 'white noise'],
+    readTime: 15
   }
 ];
 
