@@ -48,5 +48,15 @@ export const articles: Article[] = [
     author: 'KITT',
     pillar: 'Product',
     featuredImage: '/images/best-white-noise-machines-featured.png'
+  },
+  {
+    id: 12,
+    title: 'College Student Sleep Guide: Balancing School & Rest',
+    slug: 'college-student-sleep-tips',
+    excerpt: 'Struggling to balance academics and sleep? Discover science-backed strategies for college students to optimize rest, improve academic performance, and maintain mental health.',
+    publishDate: '2026-02-18',
+    author: 'KITT',
+    pillar: 'Audience',
+    featuredImage: '/images/college-student-sleep-guide-featured.png'
   }
 ];
