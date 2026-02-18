@@ -18,6 +18,7 @@ import InsiderSales from './pages/InsiderSales.tsx'
 import OTOMasterclass from './pages/OTOMasterclass.tsx'
 import OTOPremium from './pages/OTOPremium.tsx'
 import OTOInsider from './pages/OTOInsider.tsx'
+import PurchaseThankYou from './pages/PurchaseThankYou.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
 import CookieBanner from './components/CookieBanner.tsx'
 import { initGA4 } from './lib/analytics'
@@ -47,6 +48,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/oto/masterclass" element={<OTOMasterclass />} />
         <Route path="/oto/premium" element={<OTOPremium />} />
         <Route path="/oto/insider" element={<OTOInsider />} />
+        <Route path="/purchase-complete" element={<PurchaseThankYou />} />
         <Route path="/blueprint" element={<Navigate to="/thank-you" replace />} />
       </Routes>
     </BrowserRouter>
