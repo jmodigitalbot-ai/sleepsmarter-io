@@ -2,12 +2,15 @@
   "name": "sleep-blueprint-generator",
   "version": "1.0.0",
   "description": "PDF generator for Personalized Sleep Blueprint lead magnet",
-  "main": "server-enhanced.js",
+  "main": "server-v2.js",
   "scripts": {
-    "start": "node server-enhanced.js",
-    "test": "node test.js",
-    "dev": "nodemon server-enhanced.js",
-    "dev:simple": "node server.js"
+    "start": "node server-v2.js",
+    "start:v1": "node server-enhanced.js",
+    "test": "node test-v2.js",
+    "test:persona": "node index-v2.js",
+    "test:all-personas": "node test-v2.js --all",
+    "dev": "nodemon server-v2.js",
+    "dev:v1": "nodemon server-enhanced.js"
   },
   "dependencies": {
     "body-parser": "^1.20.2",

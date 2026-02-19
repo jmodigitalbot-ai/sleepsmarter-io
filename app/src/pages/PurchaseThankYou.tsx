@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 export default function PurchaseThankYou() {
   // TODO: Replace with actual SamCart checkout URL for Sleep Smarter Insider
-  const insiderCheckoutUrl = "#insider-checkout"
+  const insiderCheckoutUrl = "https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right"
 
   useEffect(() => {
     // Fire GA4 purchase confirmation event

@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Sleep Blueprint</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --accent: {{colorAccent}};
+            --accent-light: {{colorLight}};
+            --accent-dark: {{colorDark}};
+            --navy: #1a1a2e;
+            --navy-light: #16213e;
+            --teal: #a8dadc;
+            --cream: #f1faee;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #ffffff;
+            font-size: 13px;
+        }
+        
+        .blueprint {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        
+        /* ============ COVER PAGE ============ */
+        .cover {
+            background: linear-gradient(135deg, #16213e 0%, #1a1a2e 50%, #0f0e17 100%);
+            color: white;
+            padding: 80px 50px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+        
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: radial-gradient(ellipse, var(--accent) 0%, transparent 70%);
+            opacity: 0.08;
+        }
+        
+        .cover-logo {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--teal);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        
+        .cover h1 {
+            font-size: 44px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #ffffff 0%, var(--teal) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .cover-subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+        
+        .cover-persona-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 10px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
+        }
+        
+        .cover-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.5);
+        }
+        
+        .cover-meta span { display: flex; align-items: center; gap: 6px; }
+        
+        .cover-tagline {
+            margin-top: 50px;
+            font-size: 14px;
+            font-style: italic;
+            color: var(--teal);
+            opacity: 0.8;
+        }
+        
+        /* ============ CONTENT PAGES ============ */
+        .page {
+            padding: 50px;
+            page-break-after: always;
+        }
+        
+        .page:last-child { page-break-after: auto; }
+        
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 35px;
+            font-size: 11px;
+            color: #9ca3af;
+        }
+        
+        .page-header-logo { font-weight: 600; color: var(--navy); }
+        
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 6px;
+            line-height: 1.2;
+        }
+        
+        h2 .icon { margin-right: 8px; }
+        
+        .section-subtitle {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 25px;
+        }
+        
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 10px;
+            margin-top: 25px;
+        }
+        
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--navy-light);
+            margin-bottom: 6px;
+            margin-top: 15px;
+        }
+        
+        p { margin-bottom: 12px; color: #374151; }
+        
+        /* ============ SLEEP SCORE ============ */
+        .score-section {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .score-circle-wrap {
+            flex-shrink: 0;
+            text-align: center;
+        }
+        
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(
+                var(--accent) 0deg,
+                var(--accent) calc({{sleepScoreWidth}} * 3.6deg),
+                #e5e7eb calc({{sleepScoreWidth}} * 3.6deg),
+                #e5e7eb 360deg
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .score-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .score-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--accent-dark);
+            line-height: 1;
+        }
+        
+        .score-label {
+            font-size: 11px;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .score-details { flex: 1; }
+        
+        .score-insight {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 15px 18px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 18px;
+            font-size: 13px;
+        }
+        
+        .score-insight strong { color: var(--accent-dark); }
+        
+        .category-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+        
+        .category-label {
+            width: 100px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .category-track {
+            flex: 1;
+            height: 10px;
+            background: #f3f4f6;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        
+        .category-fill {
+            height: 100%;
+            border-radius: 5px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+        
+        .category-value {
+            width: 35px;
+            text-align: right;
+            font-weight: 600;
+            color: var(--navy);
+        }
+        
+        /* ============ PERSONA PROFILE ============ */
+        .persona-card {
+            background: linear-gradient(135deg, var(--accent-light) 0%, white 100%);
+            border: 2px solid var(--accent);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .persona-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .persona-icon { font-size: 36px; }
+        
+        .persona-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent-dark);
+        }
+        
+        .persona-tagline {
+            font-size: 13px;
+            color: var(--accent-dark);
+            opacity: 0.8;
+            font-style: italic;
+        }
+        
+        .persona-text { font-size: 13px; color: #374151; }
+        
+        .insight-box {
+            background: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        
+        .insight-box strong { color: #92400e; }
+        
+        /* ============ SCHEDULE CARDS ============ */
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin: 20px 0;
+        }
+        
+        .schedule-card {
+            padding: 20px 15px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .schedule-card.optimal {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border: 2px solid #10b981;
+        }
+        .schedule-card.good {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border: 2px solid #3b82f6;
+        }
+        .schedule-card.minimum {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid #f59e0b;
+        }
+        
+        .schedule-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .optimal .schedule-badge { background: #10b981; color: white; }
+        .good .schedule-badge { background: #3b82f6; color: white; }
+        .minimum .schedule-badge { background: #f59e0b; color: white; }
+        
+        .schedule-time {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+        
+        .schedule-detail {
+            font-size: 12px;
+            color: #374151;
+            margin-bottom: 2px;
+        }
+        
+        .schedule-rec {
+            font-size: 11px;
+            color: #6b7280;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        
+        /* ============ QUICK WINS ============ */
+        .quick-win {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .quick-win-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .quick-win-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--navy);
+        }
+        
+        .quick-win-time {
+            font-size: 11px;
+            background: var(--accent-light);
+            color: var(--accent-dark);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        
+        .steps-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        
+        .steps-list li {
+            padding: 5px 0 5px 24px;
+            position: relative;
+            font-size: 12px;
+            color: #374151;
+        }
+        
+        .steps-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+        
+        .science-note {
+            background: #f0f9ff;
+            border-left: 3px solid #0ea5e9;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+            font-size: 11px;
+            color: #0c4a6e;
+            margin-top: 10px;
+        }
+        
+        .science-note strong { color: #075985; }
+        
+        .impact-badge {
+            display: inline-block;
+            background: #dcfce7;
+            color: #166534;
+            padding: 4px 12px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        
+        /* ============ 7-DAY PROTOCOL ============ */
+        .protocol-day {
+            display: flex;
+            gap: 15px;
+            padding: 14px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .protocol-day:last-child { border-bottom: none; }
+        
+        .day-badge {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 14px;
+        }
+        
+        .day-content { flex: 1; }
+        
+        .day-focus {
+            font-weight: 700;
+            color: var(--navy);
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        
+        .day-action {
+            font-size: 12px;
+            color: #374151;
+            margin-bottom: 3px;
+        }
+        
+        .day-metric {
+            font-size: 11px;
+            color: var(--accent-dark);
+            font-weight: 500;
+        }
+        
+        /* ============ PRODUCT RECS ============ */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 15px 0;
+        }
+        
+        .product-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 16px;
+        }
+        
+        .product-priority {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        
+        .product-priority.high { background: #fef2f2; color: #991b1b; }
+        .product-priority.medium { background: #fffbeb; color: #92400e; }
+        
+        .product-name {
+            font-weight: 700;
+            font-size: 13px;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+        
+        .product-why {
+            font-size: 11px;
+            color: #6b7280;
+        }
+        
+        .product-link {
+            display: inline-block;
+            margin-top: 6px;
+            font-size: 11px;
+            color: var(--accent-dark);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        /* ============ AVOID LIST ============ */
+        .avoid-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .avoid-list li {
+            padding: 8px 0 8px 28px;
+            position: relative;
+            font-size: 12px;
+            color: #374151;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .avoid-list li::before {
+            content: '✕';
+            position: absolute;
+            left: 0;
+            color: #ef4444;
+            font-weight: 800;
+            font-size: 14px;
+        }
+        
+        /* ============ SLEEP CYCLE SCIENCE ============ */
+        .cycle-visual {
+            display: flex;
+            gap: 4px;
+            margin: 15px 0;
+            align-items: flex-end;
+        }
+        
+        .cycle-block {
+            flex: 1;
+            border-radius: 6px 6px 0 0;
+            text-align: center;
+            padding: 8px 4px;
+            font-size: 10px;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .cycle-light { background: #93c5fd; height: 40px; display: flex; align-items: center; justify-content: center; }
+        .cycle-deep { background: #1e3a5f; height: 65px; display: flex; align-items: center; justify-content: center; }
+        .cycle-rem { background: #8b5cf6; height: 55px; display: flex; align-items: center; justify-content: center; }
+        
+        .cycle-label {
+            font-size: 10px;
+            color: #6b7280;
+            text-align: center;
+            margin-top: 4px;
+        }
+        
+        /* ============ TRACKING ============ */
+        .tracker-row {
+            display: grid;
+            grid-template-columns: 80px repeat(7, 1fr);
+            gap: 4px;
+            margin-bottom: 4px;
+            font-size: 10px;
+        }
+        
+        .tracker-label {
+            font-weight: 600;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tracker-cell {
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #9ca3af;
+        }
+        
+        .tracker-header {
+            font-weight: 700;
+            color: var(--navy);
+            font-size: 10px;
+        }
+        
+        /* ============ TIP BOX ============ */
+        .tip-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin: 15px 0;
+        }
+        
+        .tip-box h4 { color: #166534; margin-top: 0; }
+        .tip-box p { color: #15803d; font-size: 12px; margin-bottom: 0; }
+        
+        /* ============ WARNING BOX ============ */
+        .warning-box {
+            background: #fefce8;
+            border: 1px solid #fde047;
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin: 15px 0;
+        }
+        
+        .warning-box h4 { color: #854d0e; margin-top: 0; }
+        .warning-box p { color: #a16207; font-size: 12px; margin-bottom: 0; }
+        
+        /* ============ FOOTER ============ */
+        .blueprint-footer {
+            background: var(--navy);
+            color: white;
+            padding: 40px 50px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--teal);
+            margin-bottom: 8px;
+        }
+        
+        .footer-text {
+            color: rgba(255,255,255,0.6);
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+        
+        .footer-cta {
+            display: inline-block;
+            background: var(--teal);
+            color: var(--navy);
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 13px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+        
+        .footer-legal {
+            color: rgba(255,255,255,0.3);
+            font-size: 10px;
+            margin-top: 20px;
+        }
+        
+        /* ============ PRINT ============ */
+        @media print {
+            body { background: white; }
+            .cover { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .schedule-card { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .score-circle { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .day-badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .persona-card { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+<div class="blueprint">
+
+    <!-- ==================== COVER PAGE ==================== -->
+    <div class="cover">
+        <div class="cover-logo">😴 SLEEP SMARTER</div>
+        <h1>Your Personalized<br>Sleep Blueprint</h1>
+        <div class="cover-subtitle">Science-backed recommendations tailored to your unique sleep profile</div>
+        
+        <div class="cover-persona-badge">{{personaIcon}} {{personaName}}</div>
+        
+        <div class="cover-meta">
+            <span>📋 Prepared for: <strong>{{userName}}</strong></span>
+            <span>📅 {{generationDate}}</span>
+            <span>🔑 {{referenceId}}</span>
+        </div>
+        
+        <div class="cover-tagline">"{{personaTagline}}"</div>
+    </div>
+
+    <!-- ==================== PAGE 1: SLEEP SCORE + PERSONA ==================== -->
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-logo">😴 Sleep Smarter</span>
+            <span>Your Personalized Sleep Blueprint · {{referenceId}}</span>
+        </div>
+        
+        <h2><span class="icon">📊</span> Your Sleep Health Score</h2>
+        <p class="section-subtitle">Based on your sleep assessment and calculator results</p>
+        
+        <div class="score-section">
+            <div class="score-circle-wrap">
+                <div class="score-circle">
+                    <div class="score-inner">
+                        <div class="score-number">{{sleepScore}}</div>
+                        <div class="score-label">out of 100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="score-details">
+                <div class="score-insight">
+                    <strong>{{improvementMessage}}</strong>
+                </div>
+                <div class="category-bar">
+                    <span class="category-label">Schedule</span>
+                    <div class="category-track"><div class="category-fill" style="width: {{categorySchedule}}%"></div></div>
+                    <span class="category-value">{{categorySchedule}}</span>
+                </div>
+                <div class="category-bar">
+                    <span class="category-label">Quality</span>
+                    <div class="category-track"><div class="category-fill" style="width: {{categoryQuality}}%"></div></div>
+                    <span class="category-value">{{categoryQuality}}</span>
+                </div>
+                <div class="category-bar">
+                    <span class="category-label">Lifestyle</span>
+                    <div class="category-track"><div class="category-fill" style="width: {{categoryLifestyle}}%"></div></div>
+                    <span class="category-value">{{categoryLifestyle}}</span>
+                </div>
+                <div class="category-bar">
+                    <span class="category-label">Environment</span>
+                    <div class="category-track"><div class="category-fill" style="width: {{categoryEnvironment}}%"></div></div>
+                    <span class="category-value">{{categoryEnvironment}}</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Persona Profile -->
+        <div class="persona-card">
+            <div class="persona-header">
+                <div class="persona-icon">{{personaIcon}}</div>
+                <div>
+                    <div class="persona-title">{{personaName}}</div>
+                    <div class="persona-tagline">{{personaTagline}}</div>
+                </div>
+            </div>
+            <p class="persona-text">{{personaSummary}}</p>
+            
+            <div class="insight-box">
+                <strong>🔬 Root Cause:</strong> {{personaRootCause}}
+            </div>
+        </div>
+        
+        <div class="tip-box">
+            <h4>💪 Your Strength</h4>
+            <p>{{personaStrength}}</p>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2: CUSTOM SLEEP SCHEDULE ==================== -->
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-logo">😴 Sleep Smarter</span>
+            <span>Your Personalized Sleep Blueprint · {{referenceId}}</span>
+        </div>
+        
+        <h2><span class="icon">🕐</span> Your Custom Sleep Schedule</h2>
+        <p class="section-subtitle">Based on your target {{modeLabel}} time of {{targetTime}}, aligned with 90-minute sleep cycles</p>
+        
+        <div class="schedule-grid">
+            {{#each scheduleOptions}}
+            <div class="schedule-card {{quality}}">
+                <div class="schedule-badge">{{qualityLabel}}</div>
+                <div class="schedule-time">{{time}}</div>
+                <div class="schedule-detail"><strong>{{cycles}}</strong> cycles · <strong>{{hours}}</strong> hours</div>
+                <div class="schedule-rec">{{recommendation}}</div>
+            </div>
+            {{/each}}
+        </div>
+        
+        <h3>Why These Times Work</h3>
+        <p>Sleep occurs in ~90-minute cycles, each containing light sleep, deep sleep, and REM sleep. Waking <strong>between</strong> cycles (not during one) is what makes you feel refreshed vs. groggy.</p>
+        
+        <div class="cycle-visual">
+            <div style="text-align: center;">
+                <div class="cycle-block cycle-light" style="border-radius: 6px 0 0 0;">Light</div>
+                <div class="cycle-label">5-10m</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="cycle-block cycle-deep">Deep</div>
+                <div class="cycle-label">30m</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="cycle-block cycle-rem">REM</div>
+                <div class="cycle-label">30m</div>
+            </div>
+            <div style="text-align: center; padding: 0 8px; color: #6b7280; font-size: 18px; align-self: center;">→</div>
+            <div style="text-align: center;">
+                <div class="cycle-block cycle-light" style="border-radius: 6px 0 0 0;">Light</div>
+                <div class="cycle-label">5-10m</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="cycle-block cycle-deep">Deep</div>
+                <div class="cycle-label">30m</div>
+            </div>
+            <div style="text-align: center;">
+                <div class="cycle-block cycle-rem" style="border-radius: 0 6px 0 0;">REM</div>
+                <div class="cycle-label">30m</div>
+            </div>
+        </div>
+        <p style="font-size: 11px; color: #6b7280; text-align: center;">Each complete cycle ≈ 90 minutes · Deep sleep peaks in cycles 1-3 · REM peaks in later cycles</p>
+        
+        <div class="tip-box">
+            <h4>💡 Pro Tip</h4>
+            <p>Set a "bedtime alarm" 30 minutes before your target sleep time. This reminder becomes your wind-down signal. After a week, your body will start getting naturally sleepy at this time.</p>
+        </div>
+        
+        <h3>If You Miss Your Target</h3>
+        <p>Don't stress. Use the next cycle-aligned time (90 minutes later) rather than an arbitrary time. And <strong>always</strong> keep your wake time consistent — it's more important than bedtime.</p>
+    </div>
+
+    <!-- ==================== PAGE 3: TONIGHT'S QUICK WINS ==================== -->
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-logo">😴 Sleep Smarter</span>
+            <span>Your Personalized Sleep Blueprint · {{referenceId}}</span>
+        </div>
+        
+        <h2><span class="icon">⚡</span> Tonight's Quick Wins</h2>
+        <p class="section-subtitle">Personalized for {{personaName}} — do these today for immediate improvement</p>
+        
+        {{#each quickWins}}
+        <div class="quick-win">
+            <div class="quick-win-header">
+                <div class="quick-win-title">{{title}}</div>
+                <div class="quick-win-time">⏰ {{time}}</div>
+            </div>
+            
+            <ul class="steps-list">
+                {{#each steps}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            
+            <div class="science-note">
+                <strong>🔬 The Science:</strong> {{science}}
+            </div>
+            
+            <div class="impact-badge">📈 Expected Impact: {{impact}}</div>
+        </div>
+        {{/each}}
+    </div>
+
+    <!-- ==================== PAGE 4: 7-DAY PROTOCOL ==================== -->
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-logo">😴 Sleep Smarter</span>
+            <span>Your Personalized Sleep Blueprint · {{referenceId}}</span>
+        </div>
+        
+        <h2><span class="icon">📅</span> Your 7-Day Sleep Reset Protocol</h2>
+        <p class="section-subtitle">Each day builds on the last — follow in order for best results</p>
+        
+        <div class="protocol-day">
+            <div class="day-badge">D1</div>
+            <div class="day-content">
+                <div class="day-focus">{{protocol.day1.focus}}</div>
+                <div class="day-action">{{protocol.day1.action}}</div>
+                <div class="day-metric">📏 Success Metric: {{protocol.day1.metric}}</div>
+            </div>
+        </div>
+        
+        <div class="protocol-day">
+            <div class="day-badge">D2</div>
+            <div class="day-content">
+                <div class="day-focus">{{protocol.day2.focus}}</div>
+                <div class="day-action">{{protocol.day2.action}}</div>
+                <div class="day-metric">📏 Success Metric: {{protocol.day2.metric}}</div>
+            </div>
+        </div>
+        
+        <div class="protocol-day">
+            <div class="day-badge">D3</div>
+            <div class="day-content">
+                <div class="day-focus">{{protocol.day3.focus}}</div>
+                <div class="day-action">{{protocol.day3.action}}</div>
+                <div class="day-metric">📏 Success Metric: {{protocol.day3.metric}}</div>
+            </div>
+        </div>
+        
+        <div class="protocol-day">
+            <div class="day-badge">D4</div>
+            <div class="day-content">
+                <div class="day-focus">{{protocol.day4.focus}}</div>
+                <div class="day-action">{{protocol.day4.action}}</div>
+                <div class="day-metric">📏 Success Metric: {{protocol.day4.metric}}</div>
+            </div>
+        </div>
+        
+        <div class="protocol-day">
+            <div class="day-badge">D5</div>
+            <div class="day-content">
+                <div class="day-focus">{{protocol.day5.focus}}</div>
+                <div class="day-action">{{protocol.day5.action}}</div>
+                <div class="day-metric">📏 Success Metric: {{protocol.day5.metric}}</div>
+            </div>
+        </div>
+        
+        <div class="protocol-day">
+            <div class="day-badge">D6</div>
+            <div class="day-content">
+                <div class="day-focus">{{protocol.day6.focus}}</div>
+                <div class="day-action">{{protocol.day6.action}}</div>
+                <div class="day-metric">📏 Success Metric: {{protocol.day6.metric}}</div>
+            </div>
+        </div>
+        
+        <div class="protocol-day">
+            <div class="day-badge">D7</div>
+            <div class="day-content">
+                <div class="day-focus">{{protocol.day7.focus}}</div>
+                <div class="day-action">{{protocol.day7.action}}</div>
+                <div class="day-metric">📏 Success Metric: {{protocol.day7.metric}}</div>
+            </div>
+        </div>
+        
+        <div class="warning-box">
+            <h4>⚠️ Important</h4>
+            <p>Don't try to be perfect. Doing 70% consistently beats doing 100% for two days then quitting. Each change compounds — even small improvements add up to a major transformation.</p>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 5: RECS + TRACKING ==================== -->
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-logo">😴 Sleep Smarter</span>
+            <span>Your Personalized Sleep Blueprint · {{referenceId}}</span>
+        </div>
+        
+        <h2><span class="icon">🛒</span> Recommended Sleep Tools</h2>
+        <p class="section-subtitle">Selected specifically for {{personaName}} challenges</p>
+        
+        <div class="product-grid">
+            {{#each productRecs}}
+            <div class="product-card">
+                <div class="product-priority {{priority}}">{{priority}} priority</div>
+                <div class="product-name">{{name}}</div>
+                <div class="product-why">{{why}}</div>
+                {{#if affiliateLink}}
+                <a href="{{affiliateLink}}" class="product-link">Shop Now →</a>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+        
+        <h2 style="margin-top: 35px;"><span class="icon">🚫</span> What to Avoid</h2>
+        <p class="section-subtitle">Common mistakes for your sleep profile — steer clear of these</p>
+        
+        <ul class="avoid-list">
+            {{#each avoidList}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        
+        <h2 style="margin-top: 35px;"><span class="icon">📋</span> Your Week 1 Sleep Tracker</h2>
+        <p class="section-subtitle">Print this page and track your progress</p>
+        
+        <div style="margin-top: 15px;">
+            <div class="tracker-row">
+                <div class="tracker-label"></div>
+                <div class="tracker-cell tracker-header">Mon</div>
+                <div class="tracker-cell tracker-header">Tue</div>
+                <div class="tracker-cell tracker-header">Wed</div>
+                <div class="tracker-cell tracker-header">Thu</div>
+                <div class="tracker-cell tracker-header">Fri</div>
+                <div class="tracker-cell tracker-header">Sat</div>
+                <div class="tracker-cell tracker-header">Sun</div>
+            </div>
+            <div class="tracker-row">
+                <div class="tracker-label">Bedtime</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+            </div>
+            <div class="tracker-row">
+                <div class="tracker-label">Wake Time</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+                <div class="tracker-cell">___:___</div>
+            </div>
+            <div class="tracker-row">
+                <div class="tracker-label">Sleep Latency</div>
+                <div class="tracker-cell">___ min</div>
+                <div class="tracker-cell">___ min</div>
+                <div class="tracker-cell">___ min</div>
+                <div class="tracker-cell">___ min</div>
+                <div class="tracker-cell">___ min</div>
+                <div class="tracker-cell">___ min</div>
+                <div class="tracker-cell">___ min</div>
+            </div>
+            <div class="tracker-row">
+                <div class="tracker-label">Awakenings</div>
+                <div class="tracker-cell">___×</div>
+                <div class="tracker-cell">___×</div>
+                <div class="tracker-cell">___×</div>
+                <div class="tracker-cell">___×</div>
+                <div class="tracker-cell">___×</div>
+                <div class="tracker-cell">___×</div>
+                <div class="tracker-cell">___×</div>
+            </div>
+            <div class="tracker-row">
+                <div class="tracker-label">Energy (1-5)</div>
+                <div class="tracker-cell">☆</div>
+                <div class="tracker-cell">☆</div>
+                <div class="tracker-cell">☆</div>
+                <div class="tracker-cell">☆</div>
+                <div class="tracker-cell">☆</div>
+                <div class="tracker-cell">☆</div>
+                <div class="tracker-cell">☆</div>
+            </div>
+            <div class="tracker-row">
+                <div class="tracker-label">Protocol ✓</div>
+                <div class="tracker-cell">☐</div>
+                <div class="tracker-cell">☐</div>
+                <div class="tracker-cell">☐</div>
+                <div class="tracker-cell">☐</div>
+                <div class="tracker-cell">☐</div>
+                <div class="tracker-cell">☐</div>
+                <div class="tracker-cell">☐</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER / BACK COVER ==================== -->
+    <div class="blueprint-footer">
+        <div class="footer-logo">😴 Sleep Smarter</div>
+        <p class="footer-text">Your personalized sleep optimization starts tonight.</p>
+        <p class="footer-text">For more science-backed sleep strategies, visit us at:</p>
+        <a href="https://sleepsmarter.io" class="footer-cta">sleepsmarter.io</a>
+        
+        <p class="footer-text" style="margin-top: 20px;">
+            Questions? Reply to your blueprint delivery email — we read every response.
+        </p>
+        
+        <p class="footer-legal">
+            © 2026 Sleep Smarter. All rights reserved. This blueprint is for educational purposes only.<br>
+            Consult a healthcare professional for medical sleep issues.<br>
+            Generated {{generationDate}} · Reference: {{referenceId}}
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
