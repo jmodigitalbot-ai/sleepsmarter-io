@@ -124,7 +124,9 @@ export default function Privacy() {
               </a>.
             </p>
             <p className="mt-2">
-              JMO Digital Assets, LLC
+              JMO Digital Assets, LLC<br />
+              3330 Cobb Pkwy N Ste 324<br />
+              Acworth, GA 30101
             </p>
           </section>
         </div>

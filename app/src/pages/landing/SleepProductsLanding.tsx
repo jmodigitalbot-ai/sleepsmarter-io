@@ -302,7 +302,7 @@ export default function SleepProductsLanding() {
             <Link to="/disclosure" className="hover:text-[#a8dadc] transition">Affiliate Disclosure</Link>
           </div>
           <div className="mt-4 text-xs text-[#f1faee]/30">
-            <p>JMO Digital Assets, LLC | This site provides educational content and is not medical advice.</p>
+            <p>JMO Digital Assets, LLC · 3330 Cobb Pkwy N Ste 324, Acworth, GA 30101 | Educational content only — not medical advice.</p>
             <p className="mt-1">As an Amazon Associate, we earn from qualifying purchases.</p>
           </div>
         </div>

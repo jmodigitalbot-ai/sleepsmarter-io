@@ -163,7 +163,9 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
       )}
 
       <p className="text-[#f1faee]/30 text-xs mt-3 text-center">
-        No spam, ever. Unsubscribe anytime.
+        By signing up, you agree to receive sleep tips and occasional product recommendations via email. 
+        No spam, ever. Unsubscribe anytime.{' '}
+        <a href="/privacy" className="underline hover:text-[#f1faee]/50">Privacy Policy</a>
       </p>
 
       {/* Hidden debug info (remove in production) */}

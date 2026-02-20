@@ -52,8 +52,15 @@ export default function About() {
           <p className="text-[#f1faee]/70 mb-4">
             Have questions or feedback? We'd love to hear from you!
           </p>
-          <p className="text-[#f1faee]/70">
+          <p className="text-[#f1faee]/70 mb-4">
             Email us at: <a href="mailto:hello@sleepsmarter.io" className="text-[#a8dadc] hover:underline">hello@sleepsmarter.io</a>
+          </p>
+          <p className="text-[#f1faee]/70 mb-2">
+            <strong className="text-[#f1faee]">JMO Digital Assets, LLC</strong>
+          </p>
+          <p className="text-[#f1faee]/70">
+            3330 Cobb Pkwy N Ste 324<br />
+            Acworth, GA 30101
           </p>
         </div>
         
