@@ -8,6 +8,26 @@
 // GA4 Measurement ID from index.html
 // const GA4_MEASUREMENT_ID = 'G-HMNWV4K76J' // Unused but kept for reference
 
+// Google Ads Conversion ID and Labels
+const GOOGLE_ADS_CONVERSION_ID = 'AW-17966119562'
+export const CONVERSION_LABELS = {
+  EMAIL_SIGNUP: 'UmVlCJXhnfwbEIr19PZC',
+  TRIPWIRE_PURCHASE: 'JrHwCOntkvwbEIr19PZC',
+  MASTERCLASS_PURCHASE: 'XwMeCOztkvwbEIr19PZC',
+  PREMIUM_PURCHASE: 'KkfMCI3ukvwbEIr19PZC',
+  INSIDER_SIGNUP: 'QLF5CJDukvwbEIr19PZC'
+} as const
+
+// Product type to conversion label mapping
+export const PRODUCT_CONVERSION_MAP = {
+  tripwire: { label: CONVERSION_LABELS.TRIPWIRE_PURCHASE, value: 17 },
+  masterclass: { label: CONVERSION_LABELS.MASTERCLASS_PURCHASE, value: 67 },
+  premium: { label: CONVERSION_LABELS.PREMIUM_PURCHASE, value: 197 },
+  insider: { label: CONVERSION_LABELS.INSIDER_SIGNUP, value: 19 }
+} as const
+
+export type ProductType = keyof typeof PRODUCT_CONVERSION_MAP
+
 // Event names for consistent tracking
 export const TRACKING_EVENTS = {
   EMAIL_SIGNUP: 'email_signup',
@@ -66,6 +86,56 @@ export const trackEvent = (eventName: string, eventParams?: EventParams): void =
 }
 
 /**
+ * Track Google Ads conversion event
+ * @param conversionLabel - Google Ads conversion label
+ * @param value - Conversion value (optional)
+ * @param currency - Currency code (default: 'USD')
+ * @param transactionId - Unique transaction ID (optional)
+ */
+export const trackGoogleAdsConversion = (
+  conversionLabel: string,
+  value?: number,
+  currency: string = 'USD',
+  transactionId?: string
+): void => {
+  if (typeof window === 'undefined') return
+  
+  const conversionParams: any = {
+    send_to: `${GOOGLE_ADS_CONVERSION_ID}/${conversionLabel}`,
+    currency: currency
+  }
+  
+  if (value !== undefined) {
+    conversionParams.value = value
+  }
+  
+  if (transactionId) {
+    conversionParams.transaction_id = transactionId
+  }
+  
+  // Use gtag for Google Ads conversion tracking
+  if (window.gtag) {
+    window.gtag('event', 'conversion', conversionParams)
+    console.log(`Google Ads Conversion tracked: ${conversionLabel}`, conversionParams)
+  } else {
+    // Fallback to dataLayer
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'gtag.conversion',
+        google_ads_conversion_id: GOOGLE_ADS_CONVERSION_ID,
+        google_ads_conversion_label: conversionLabel,
+        google_ads_conversion_value: value,
+        google_ads_conversion_currency: currency,
+        transaction_id: transactionId
+      })
+      console.log(`Google Ads Conversion tracked via dataLayer: ${conversionLabel}`)
+    } else {
+      console.warn('Google Ads tracking not available. gtag not loaded.')
+    }
+  }
+}
+
+/**
  * Track email signup event
  * @param email - User's email address (hashed or anonymized in production)
  * @param source - Where the signup came from (e.g., 'calculator', 'footer')
@@ -85,7 +155,11 @@ export const trackEmailSignup = (
     // In production with proper consent, you might hash it or use a different identifier
   }
   
+  // Track GA4 event
   trackEvent(TRACKING_EVENTS.EMAIL_SIGNUP, params)
+  
+  // Track Google Ads conversion
+  trackGoogleAdsConversion(CONVERSION_LABELS.EMAIL_SIGNUP, 0.50)
 }
 
 /**
@@ -112,11 +186,13 @@ export const trackSalesPageView = (
  * Track checkout button click
  * @param buttonText - Text on the button that was clicked
  * @param buttonLocation - Where the button is located on the page
+ * @param productType - Type of product being purchased (optional, for Google Ads conversion)
  * @param additionalParams - Additional event parameters
  */
 export const trackCheckoutClick = (
   buttonText?: string,
   buttonLocation?: string,
+  productType?: ProductType,
   additionalParams?: EventParams
 ): void => {
   const params: EventParams = {
@@ -125,10 +201,51 @@ export const trackCheckoutClick = (
     event_label: 'checkout_click',
     button_text: buttonText || 'unknown',
     button_location: buttonLocation || 'unknown',
+    product_type: productType,
     outbound_link: 'https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week'
   }
   
+  // Track GA4 event
   trackEvent(TRACKING_EVENTS.CHECKOUT_CLICK, params)
+  
+  // Track Google Ads conversion if product type is provided
+  if (productType && PRODUCT_CONVERSION_MAP[productType]) {
+    const { label, value } = PRODUCT_CONVERSION_MAP[productType]
+    trackGoogleAdsConversion(label, value)
+  }
+}
+
+/**
+ * Track purchase completion event
+ * @param productType - Type of product purchased
+ * @param value - Purchase value (optional, will use default from PRODUCT_CONVERSION_MAP)
+ * @param transactionId - Unique transaction ID
+ * @param additionalParams - Additional event parameters
+ */
+export const trackPurchaseComplete = (
+  productType: ProductType,
+  value?: number,
+  transactionId?: string,
+  additionalParams?: EventParams
+): void => {
+  const conversionData = PRODUCT_CONVERSION_MAP[productType]
+  const finalValue = value || conversionData.value
+  
+  const params: EventParams = {
+    ...additionalParams,
+    event_category: 'conversion',
+    event_label: 'purchase_complete',
+    product_type: productType,
+    value: finalValue,
+    transaction_id: transactionId,
+    currency: 'USD'
+  }
+  
+  // Track GA4 purchase event
+  trackEvent('purchase', params)
+  
+  // Track Google Ads conversion
+  trackGoogleAdsConversion(conversionData.label, finalValue, 'USD', transactionId)
 }
 
 /**

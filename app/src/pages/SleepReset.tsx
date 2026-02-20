@@ -14,7 +14,7 @@ export default function SleepReset() {
 
   // Handler for checkout button clicks
   const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
-    trackCheckoutClick(buttonText, buttonLocation)
+    trackCheckoutClick(buttonText, buttonLocation, 'tripwire')
     // The link will navigate naturally after tracking
   }
 

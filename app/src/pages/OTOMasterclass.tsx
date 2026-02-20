@@ -36,7 +36,7 @@ export default function OTOMasterclass() {
 
   // Handler for checkout button clicks
   const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
-    trackCheckoutClick(buttonText, buttonLocation)
+    trackCheckoutClick(buttonText, buttonLocation, 'masterclass')
     // The link will navigate naturally after tracking
   }
 

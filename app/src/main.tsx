@@ -19,6 +19,9 @@ import OTOMasterclass from './pages/OTOMasterclass.tsx'
 import OTOPremium from './pages/OTOPremium.tsx'
 import OTOInsider from './pages/OTOInsider.tsx'
 import PurchaseThankYou from './pages/PurchaseThankYou.tsx'
+import SleepCalculatorLanding from './pages/landing/SleepCalculatorLanding.tsx'
+import SleepTipsLanding from './pages/landing/SleepTipsLanding.tsx'
+import SleepProductsLanding from './pages/landing/SleepProductsLanding.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
 import CookieBanner from './components/CookieBanner.tsx'
 import { initGA4 } from './lib/analytics'
@@ -50,6 +53,10 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/oto/insider" element={<OTOInsider />} />
         <Route path="/purchase-complete" element={<PurchaseThankYou />} />
         <Route path="/blueprint" element={<Navigate to="/thank-you" replace />} />
+        {/* Landing Pages */}
+        <Route path="/lp/sleep-calculator" element={<SleepCalculatorLanding />} />
+        <Route path="/lp/sleep-tips" element={<SleepTipsLanding />} />
+        <Route path="/lp/sleep-products" element={<SleepProductsLanding />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

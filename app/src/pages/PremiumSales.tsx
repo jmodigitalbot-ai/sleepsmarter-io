@@ -14,7 +14,7 @@ export default function PremiumSales() {
 
   // Handler for checkout button clicks
   const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
-    trackCheckoutClick(buttonText, buttonLocation)
+    trackCheckoutClick(buttonText, buttonLocation, 'premium')
     // The link will navigate naturally after tracking
   }
 
