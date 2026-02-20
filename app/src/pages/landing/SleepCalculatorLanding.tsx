@@ -37,7 +37,7 @@ export default function SleepCalculatorLanding() {
           </span>
           <span className="flex items-center gap-1">
             <span className="text-[#a8dadc]">✓</span>
-            Works Instantly
+            Instant Results
           </span>
         </div>
       </section>
@@ -118,8 +118,8 @@ export default function SleepCalculatorLanding() {
                 Sharper Mental Focus
               </h3>
               <p className="text-[#f1faee]/70">
-                Proper sleep cycle timing improves cognitive function, memory, 
-                and decision-making throughout your day.
+                Better sleep timing may support cognitive function, memory, 
+                and focus throughout your day.
               </p>
             </div>
             <div className="bg-[#16213e] rounded-xl p-6">

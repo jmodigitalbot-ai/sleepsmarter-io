@@ -20,8 +20,8 @@ export default function SleepProductsLanding() {
           <span className="text-[#a8dadc]">Expert Reviews</span>
         </h1>
         <p className="text-lg md:text-xl text-[#f1faee]/70 max-w-3xl mx-auto mb-6">
-          After testing dozens of sleep products, these 3 consistently deliver better sleep quality, 
-          faster sleep onset, and more restful nights.
+          Based on extensive research, user reviews, and sleep science, these 3 products 
+          consistently stand out for improving sleep quality and comfort.
         </p>
         <p className="text-sm text-[#f1faee]/50 max-w-2xl mx-auto mb-8">
           Independent reviews • No sponsored rankings • Based on sleep science

@@ -180,7 +180,7 @@ export default function SleepTipsLanding() {
               </span>
               <span className="flex items-center gap-1">
                 <span className="text-[#a8dadc]">✓</span>
-                Works Tonight
+                Try Tonight
               </span>
             </div>
           </div>
@@ -189,36 +189,36 @@ export default function SleepTipsLanding() {
         </div>
       </section>
 
-      {/* Social Proof */}
+      {/* Why These Techniques Work */}
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <div className="text-center mb-8">
           <h2 className="text-xl font-semibold text-[#a8dadc] mb-6">
-            Join Thousands Who Are Sleeping Better
+            Why These Techniques Work
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/30">
-              <div className="text-[#a8dadc] text-2xl mb-2">⭐⭐⭐⭐⭐</div>
-              <p className="text-[#f1faee]/70 text-sm italic mb-3">
-                "Finally sleeping through the night after months of insomnia. 
-                The breathing technique alone changed everything."
+            <div className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/30 text-center">
+              <div className="text-[#a8dadc] text-3xl mb-3">🧬</div>
+              <h3 className="text-lg font-semibold text-[#f1faee] mb-2">Science-Backed</h3>
+              <p className="text-[#f1faee]/70 text-sm">
+                Every technique is grounded in peer-reviewed sleep research 
+                and clinical studies on sleep onset and quality.
               </p>
-              <p className="text-[#f1faee]/50 text-xs">— Sarah M., Teacher</p>
             </div>
-            <div className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/30">
-              <div className="text-[#a8dadc] text-2xl mb-2">⭐⭐⭐⭐⭐</div>
-              <p className="text-[#f1faee]/70 text-sm italic mb-3">
-                "I was skeptical, but these techniques actually work. Falling 
-                asleep in under 20 minutes now instead of 2+ hours."
+            <div className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/30 text-center">
+              <div className="text-[#a8dadc] text-3xl mb-3">⚡</div>
+              <h3 className="text-lg font-semibold text-[#f1faee] mb-2">No Equipment Needed</h3>
+              <p className="text-[#f1faee]/70 text-sm">
+                These are behavioral techniques you can start using tonight — 
+                no pills, no devices, no subscriptions required.
               </p>
-              <p className="text-[#f1faee]/50 text-xs">— Mike D., Engineer</p>
             </div>
-            <div className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/30">
-              <div className="text-[#a8dadc] text-2xl mb-2">⭐⭐⭐⭐⭐</div>
-              <p className="text-[#f1faee]/70 text-sm italic mb-3">
-                "The worry window technique was a game-changer. My racing 
-                thoughts don't keep me up anymore."
+            <div className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/30 text-center">
+              <div className="text-[#a8dadc] text-3xl mb-3">🔄</div>
+              <h3 className="text-lg font-semibold text-[#f1faee] mb-2">Cumulative Effect</h3>
+              <p className="text-[#f1faee]/70 text-sm">
+                Each technique helps on its own, but combining them creates 
+                a powerful sleep routine that improves over time.
               </p>
-              <p className="text-[#f1faee]/50 text-xs">— Lisa K., Marketing</p>
             </div>
           </div>
         </div>
