@@ -10,6 +10,7 @@ import Disclosure from './pages/Disclosure.tsx'
 import Blog from './pages/Blog.tsx'
 import Article from './pages/Article.tsx'
 import Calculator from './pages/Calculator.tsx'
+import Assessment from './pages/Assessment.tsx'
 import ThankYou from './pages/ThankYou.tsx'
 import SleepReset from './pages/SleepReset.tsx'
 import MasterclassSales from './pages/MasterclassSales.tsx'
@@ -43,6 +44,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<Article />} />
         <Route path="/calculator" element={<Calculator />} />
+        <Route path="/assessment" element={<Assessment />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/sleep-reset" element={<SleepReset />} />
         <Route path="/masterclass" element={<MasterclassSales />} />

@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import EmailCapture from './EmailCapture'
-import SleepAssessment from './SleepAssessment'
+import { useNavigate } from 'react-router-dom'
 import { trackCalculatorUsed } from '../lib/analytics'
 
 type Mode = 'wakeup' | 'bedtime'
@@ -13,11 +12,10 @@ interface SleepTime {
 }
 
 export default function SleepCalculator() {
+  const navigate = useNavigate()
   const [mode, setMode] = useState<Mode>('wakeup')
   const [time, setTime] = useState('07:00')
   const [results, setResults] = useState<SleepTime[]>([])
-  const [showAssessment, setShowAssessment] = useState(false)
-  const [assessmentResult, setAssessmentResult] = useState<any>(null)
 
   const CYCLE_MINUTES = 90
   const FALL_ASLEEP_MINUTES = 14
@@ -68,15 +66,9 @@ export default function SleepCalculator() {
     }
 
     setResults(newResults)
-    setShowAssessment(true) // Show assessment after calculator results
-    setAssessmentResult(null) // Reset assessment result
-    
+
     // Track calculator usage
     trackCalculatorUsed(mode, time, newResults.length)
-  }
-
-  const handleAssessmentComplete = (result: any) => {
-    setAssessmentResult(result)
   }
 
   const getQualityColor = (quality: string) => {
@@ -147,7 +139,7 @@ export default function SleepCalculator() {
       </button>
 
       {/* Results */}
-      {results.length > 0 && !showAssessment && (
+      {results.length > 0 && (
         <div className="space-y-3">
           <p className="text-sm text-[#f1faee]/70 mb-4">
             {mode === 'wakeup' 
@@ -180,56 +172,29 @@ export default function SleepCalculator() {
             <div className="text-center mb-4">
               <span className="text-2xl mb-2 block">🎯</span>
               <h3 className="text-lg font-semibold text-[#a8dadc] mb-1">
-                Get Personalized Recommendations
+                Get Your Personalized Sleep Blueprint
               </h3>
               <p className="text-[#f1faee]/60 text-sm mb-4">
-                Take a quick 2-minute assessment to get sleep advice tailored to your specific challenges.
+                Take the 2-minute assessment to unlock your sleep score, persona, and a custom 7-day protocol.
               </p>
               <button
-                onClick={() => setShowAssessment(true)}
+                onClick={() =>
+                  navigate('/assessment', {
+                    state: {
+                      calculatorData: {
+                        mode,
+                        targetTime: time,
+                        results
+                      }
+                    }
+                  })
+                }
                 className="bg-[#a8dadc] hover:bg-[#8bc9cc] text-[#1a1a2e] font-semibold px-6 py-3 rounded-lg transition text-sm"
               >
-                Start Personalized Assessment →
+                Get Your Personalized Sleep Blueprint →
               </button>
             </div>
           </div>
-
-          {/* Email Capture */}
-          <EmailCapture 
-            calculatorData={{
-              mode,
-              targetTime: time,
-              results
-            }} 
-          />
-        </div>
-      )}
-
-      {/* Assessment */}
-      {showAssessment && (
-        <div className="mt-6">
-          <SleepAssessment 
-            onComplete={handleAssessmentComplete}
-            calculatorData={{
-              mode,
-              targetTime: time,
-              results
-            }}
-          />
-          
-          {/* Show email capture after assessment completion */}
-          {assessmentResult && (
-            <div className="mt-6">
-              <EmailCapture 
-                calculatorData={{
-                  mode,
-                  targetTime: time,
-                  results
-                }}
-                assessmentData={assessmentResult}
-              />
-            </div>
-          )}
         </div>
       )}
     </div>

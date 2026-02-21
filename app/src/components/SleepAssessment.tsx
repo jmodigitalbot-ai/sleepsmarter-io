@@ -1,413 +1,375 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import EmailCapture from './EmailCapture'
+import { trackEvent } from '../lib/analytics'
+import {
+  calculateAssessmentScore,
+  detectSleepPersona,
+  identifyPrimaryChallenge,
+  personaProfiles,
+  sleepAssessmentQuestions,
+  type AssessmentResponse,
+  type PersonaId
+} from '../lib/assessment'
+import {
+  SleepBlueprintRecommendationEngine,
+  type CalculatorData,
+  type RecommendationQuickWin,
+  type SevenDayProtocolPhase,
+  type SleepSchedulePlan
+} from '../lib/recommendationEngine'
 
-interface AssessmentQuestion {
-  id: string
-  text: string
-  type: 'multiple_choice' | 'scale' | 'yes_no'
-  options?: string[]
-  scaleRange?: { min: number; max: number; labels: string[] }
-  personaMapping: Record<string, number> // Persona ID -> weight
+interface SleepAssessmentProps {
+  onComplete?: (result: AssessmentResult) => void
+  calculatorData?: CalculatorData
 }
 
 interface AssessmentResult {
-  personaId: string
+  overallSleepScore: number
+  categoryScores: Record<string, number>
+  personaId: PersonaId
   personaName: string
   confidence: number
   recommendations: string[]
-  description: string
+  executiveSummary: string
+  primaryChallenge: string
+  quickWins: RecommendationQuickWin[]
+  sevenDayProtocol: SevenDayProtocolPhase[]
+  sleepSchedule: SleepSchedulePlan | null
 }
 
-const ASSESSMENT_QUESTIONS: AssessmentQuestion[] = [
-  {
-    id: 'primary_challenge',
-    text: 'What is your biggest sleep challenge right now?',
-    type: 'multiple_choice',
-    options: [
-      'Falling asleep (mind races, can\'t shut off)',
-      'Staying asleep (wake up multiple times)',
-      'Waking up too early',
-      'Poor sleep quality (light, unrefreshing)',
-      'Inconsistent schedule (different times each day)',
-      'Screen time before bed',
-      'Environmental issues (noise, light, temperature)',
-      'Physical discomfort or pain'
-    ],
-    personaMapping: {
-      'restless_mind': 0.8,
-      'environmentally_challenged': 0.6,
-      'stress_affected': 0.7,
-      'digital_addict': 0.5,
-      'physiologically_sensitive': 0.9
-    }
+const personaThemes: Record<PersonaId, { icon: string; accent: string; gradientFrom: string; gradientTo: string }> = {
+  digital_addict: {
+    icon: '📵',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#4a4e69'
   },
-  {
-    id: 'screen_time',
-    text: 'How much screen time do you have in the hour before bed?',
-    type: 'multiple_choice',
-    options: [
-      'None - I avoid screens completely',
-      'Less than 30 minutes',
-      '30-60 minutes',
-      '1-2 hours',
-      'More than 2 hours'
-    ],
-    personaMapping: {
-      'digital_addict': 0.9,
-      'restless_mind': 0.6,
-      'stress_affected': 0.4
-    }
+  restless_mind: {
+    icon: '🧠',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#2a2f4f'
   },
-  {
-    id: 'stress_level',
-    text: 'How would you rate your current stress/anxiety levels?',
-    type: 'scale',
-    scaleRange: {
-      min: 1,
-      max: 10,
-      labels: ['Very low', 'Very high']
-    },
-    personaMapping: {
-      'stress_affected': 0.9,
-      'restless_mind': 0.8,
-      'undiagnosed': 0.5
-    }
+  night_owl: {
+    icon: '🦉',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#3a3d5c'
   },
-  {
-    id: 'schedule_consistency',
-    text: 'How consistent is your sleep schedule?',
-    type: 'multiple_choice',
-    options: [
-      'Very consistent (±30 minutes)',
-      'Somewhat consistent (±1 hour)',
-      'Inconsistent (±2+ hours)',
-      'Chaotic (completely different each day)'
-    ],
-    personaMapping: {
-      'habitually_inconsistent': 0.9,
-      'chronotype_misfit': 0.7,
-      'stress_affected': 0.5
-    }
+  early_bird: {
+    icon: '🌅',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#445069'
   },
-  {
-    id: 'environment_issues',
-    text: 'Do you have issues with your sleep environment?',
-    type: 'multiple_choice',
-    options: [
-      'No, my bedroom is optimized for sleep',
-      'Some noise issues',
-      'Light pollution issues',
-      'Temperature control problems',
-      'Multiple environmental issues'
-    ],
-    personaMapping: {
-      'environmentally_challenged': 0.9,
-      'physiologically_sensitive': 0.6
-    }
+  parent: {
+    icon: '👶',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#3b415f'
   },
-  {
-    id: 'morning_energy',
-    text: 'How refreshed do you feel when you wake up?',
-    type: 'scale',
-    scaleRange: {
-      min: 1,
-      max: 10,
-      labels: ['Exhausted', 'Completely refreshed']
-    },
-    personaMapping: {
-      'undiagnosed': 0.7,
-      'physiologically_sensitive': 0.6,
-      'environmentally_challenged': 0.5,
-      'restless_mind': 0.4
-    }
+  perfectionist: {
+    icon: '🎯',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#444a6b'
   },
-  {
-    id: 'weekend_sleep',
-    text: 'How different is your weekend sleep schedule?',
-    type: 'multiple_choice',
-    options: [
-      'Same as weekdays',
-      '1-2 hours later',
-      '2-3 hours later',
-      '3+ hours later',
-      'Completely different'
-    ],
-    personaMapping: {
-      'chronotype_misfit': 0.9,
-      'habitually_inconsistent': 0.7,
-      'stress_affected': 0.4
-    }
-  }
-]
-
-const PERSONA_DESCRIPTIONS: Record<string, { name: string; description: string; recommendations: string[] }> = {
-  'restless_mind': {
-    name: 'The Restless Mind',
-    description: 'You struggle with racing thoughts, anxiety, or rumination at bedtime. Your mind has trouble "switching off" when it\'s time to sleep.',
-    recommendations: [
-      'Practice bedtime meditation (10 minutes)',
-      'Keep a worry journal in the evening (not in bed)',
-      'Try progressive muscle relaxation',
-      'Create a pre-sleep wind-down routine'
-    ]
+  healthy_sleeper: {
+    icon: '✅',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#2c3a4f'
   },
-  'digital_addict': {
-    name: 'The Digital Addict',
-    description: 'Screen time and digital stimulation are disrupting your sleep. Blue light exposure and engaging content keep your brain activated.',
-    recommendations: [
-      'Implement a digital sunset (60 minutes before bed)',
-      'Charge your phone outside the bedroom',
-      'Use blue light filters after sunset',
-      'Replace screen time with audiobooks or gentle reading'
-    ]
+  general_optimizer: {
+    icon: '🔧',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#3f4667'
   },
-  'chronotype_misfit': {
-    name: 'The Chronotype Misfit',
-    description: 'Your natural sleep-wake rhythm doesn\'t align with your schedule. You may be a night owl forced into an early bird schedule.',
-    recommendations: [
-      'Get morning sunlight exposure (15 minutes)',
-      'Gradually adjust your schedule in 15-minute increments',
-      'Use light therapy to shift your circadian rhythm',
-      'Optimize your schedule around your natural energy peaks'
-    ]
-  },
-  'environmentally_challenged': {
-    name: 'The Environmentally Challenged',
-    description: 'External factors like noise, light, or temperature are disrupting your sleep. Your bedroom environment needs optimization.',
-    recommendations: [
-      'Invest in blackout curtains or a sleep mask',
-      'Use a white noise machine or earplugs',
-      'Maintain bedroom temperature at 65-68°F (18-20°C)',
-      'Create a dedicated sleep sanctuary'
-    ]
-  },
-  'habitually_inconsistent': {
-    name: 'The Habitually Inconsistent',
-    description: 'Your sleep schedule varies significantly from day to day, leading to social jet lag and poor sleep quality.',
-    recommendations: [
-      'Set a fixed wake time (non-negotiable, even on weekends)',
-      'Create a consistent bedtime routine',
-      'Use an alarm for bedtime, not just wake-up',
-      'Track your sleep consistency for accountability'
-    ]
-  },
-  'physiologically_sensitive': {
-    name: 'The Physiologically Sensitive',
-    description: 'Physical factors like discomfort, pain, or medical conditions are affecting your sleep quality.',
-    recommendations: [
-      'Consult with a healthcare provider about sleep issues',
-      'Optimize sleep position and bedding for comfort',
-      'Consider a sleep study if symptoms persist',
-      'Address underlying medical conditions'
-    ]
-  },
-  'stress_affected': {
-    name: 'The Stress-Affected',
-    description: 'High stress levels and anxiety are significantly impacting your ability to fall and stay asleep.',
-    recommendations: [
-      'Practice daily stress reduction techniques',
-      'Create a worry time (not at bedtime)',
-      'Try cognitive behavioral techniques for insomnia',
-      'Build resilience through regular relaxation practice'
-    ]
-  },
-  'undiagnosed': {
-    name: 'The Undiagnosed',
-    description: 'You may have an underlying sleep disorder that requires professional evaluation. Your symptoms are significant and persistent.',
-    recommendations: [
-      'Consult a sleep specialist for evaluation',
-      'Keep a detailed sleep diary for 2 weeks',
-      'Consider a sleep study if recommended',
-      'Don\'t ignore persistent, severe symptoms'
-    ]
-  }
-}
-
-interface SleepAssessmentProps {
-  onComplete: (result: AssessmentResult) => void
-  calculatorData?: {
-    mode: 'wakeup' | 'bedtime'
-    targetTime: string
-    results: Array<{
-      time: string
-      cycles: number
-      hours: number
-      quality: 'optimal' | 'good' | 'minimum'
-    }>
+  foundation_builder: {
+    icon: '🧱',
+    accent: '#a8dadc',
+    gradientFrom: '#1a1a2e',
+    gradientTo: '#39415f'
   }
 }
 
 export default function SleepAssessment({ onComplete, calculatorData }: SleepAssessmentProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [answers, setAnswers] = useState<Record<string, any>>({})
+  const [responses, setResponses] = useState<AssessmentResponse[]>([])
   const [isComplete, setIsComplete] = useState(false)
   const [assessmentResult, setAssessmentResult] = useState<AssessmentResult | null>(null)
+  const startedRef = useRef(false)
 
-  const handleAnswer = (questionId: string, value: any) => {
-    const newAnswers = { ...answers, [questionId]: value }
-    setAnswers(newAnswers)
+  useEffect(() => {
+    if (startedRef.current) return
+    startedRef.current = true
+    trackEvent('assessment_started', {
+      source: calculatorData ? 'calculator' : 'direct'
+    })
+  }, [calculatorData])
 
-    // Move to next question or complete assessment
-    if (currentQuestion < ASSESSMENT_QUESTIONS.length - 1) {
+  const handleAnswer = (questionId: string, value: string) => {
+    const nextResponses = [
+      ...responses.filter((response) => response.questionId !== questionId),
+      { questionId, answer: value }
+    ]
+
+    setResponses(nextResponses)
+
+    if (currentQuestion < sleepAssessmentQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1)
-    } else {
-      // Calculate persona
-      const result = calculatePersona(newAnswers)
-      setAssessmentResult(result)
-      setIsComplete(true)
-      onComplete(result)
+      return
     }
-  }
 
-  const calculatePersona = (answers: Record<string, any>): AssessmentResult => {
-    // Initialize scores for all personas
-    const personaScores: Record<string, number> = {}
-    const personaCounts: Record<string, number> = {}
-    
-    // Initialize all personas with 0
-    Object.keys(PERSONA_DESCRIPTIONS).forEach(personaId => {
-      personaScores[personaId] = 0
-      personaCounts[personaId] = 0
-    })
+    const scoreResult = calculateAssessmentScore(nextResponses)
+    const persona = detectSleepPersona(nextResponses, scoreResult)
+    const primaryChallenge = identifyPrimaryChallenge(nextResponses, scoreResult)
 
-    // Calculate scores based on answers
-    ASSESSMENT_QUESTIONS.forEach(question => {
-      const answer = answers[question.id]
-      if (answer !== undefined) {
-        // For multiple choice questions
-        if (question.type === 'multiple_choice' && question.options) {
-          const optionIndex = question.options.indexOf(answer)
-          if (optionIndex !== -1) {
-            // Higher index = more severe issue = higher persona weight
-            const severity = (optionIndex + 1) / question.options.length
-            
-            Object.entries(question.personaMapping).forEach(([personaId, weight]) => {
-              personaScores[personaId] += weight * severity
-              personaCounts[personaId]++
-            })
-          }
-        }
-        // For scale questions
-        else if (question.type === 'scale' && typeof answer === 'number') {
-          const normalizedScore = (answer - 1) / 9 // Convert 1-10 to 0-1
-          
-          Object.entries(question.personaMapping).forEach(([personaId, weight]) => {
-            personaScores[personaId] += weight * normalizedScore
-            personaCounts[personaId]++
-          })
-        }
-      }
-    })
+    const engine = new SleepBlueprintRecommendationEngine(
+      {
+        overallSleepScore: scoreResult.overallSleepScore,
+        categoryScores: scoreResult.categoryScores,
+        primaryChallenge,
+        persona,
+        responses: nextResponses
+      },
+      calculatorData
+    )
 
-    // Calculate average scores and find highest scoring persona
-    let highestPersonaId = 'restless_mind' // Default
-    let highestScore = 0
+    const recommendations = engine.generateAllRecommendations()
+    const profile = personaProfiles[persona.primaryPersona]
 
-    Object.entries(personaScores).forEach(([personaId, score]) => {
-      const count = personaCounts[personaId]
-      const averageScore = count > 0 ? score / count : 0
-      
-      if (averageScore > highestScore) {
-        highestScore = averageScore
-        highestPersonaId = personaId
-      }
-    })
-
-    const persona = PERSONA_DESCRIPTIONS[highestPersonaId]
-    const confidence = Math.min(100, Math.round(highestScore * 100))
-
-    return {
-      personaId: highestPersonaId,
-      personaName: persona.name,
-      confidence,
-      recommendations: persona.recommendations,
-      description: persona.description
+    const result: AssessmentResult = {
+      overallSleepScore: scoreResult.overallSleepScore,
+      categoryScores: scoreResult.categoryScores,
+      personaId: persona.primaryPersona,
+      personaName: profile?.name || 'Sleep Persona',
+      confidence: Math.round(persona.confidence * 100),
+      recommendations: recommendations.quickWins.slice(0, 3).map((win) => win.title),
+      executiveSummary: recommendations.executiveSummary,
+      primaryChallenge: primaryChallenge.description,
+      quickWins: recommendations.quickWins.slice(0, 3),
+      sevenDayProtocol: recommendations.sevenDayProtocol,
+      sleepSchedule: recommendations.sleepSchedule
     }
+
+    setAssessmentResult(result)
+    setIsComplete(true)
+
+    trackEvent('assessment_completed', {
+      sleep_score: scoreResult.overallSleepScore,
+      persona: persona.primaryPersona,
+      confidence: Math.round(persona.confidence * 100)
+    })
+
+    trackEvent('persona_detected', {
+      persona: persona.primaryPersona,
+      confidence: Math.round(persona.confidence * 100)
+    })
+
+    onComplete?.(result)
   }
 
   const restartAssessment = () => {
     setCurrentQuestion(0)
-    setAnswers({})
+    setResponses([])
     setIsComplete(false)
     setAssessmentResult(null)
+    startedRef.current = false
   }
 
-  const currentQ = ASSESSMENT_QUESTIONS[currentQuestion]
+  const currentQuestionData = sleepAssessmentQuestions[currentQuestion]
 
   if (isComplete && assessmentResult) {
+    const personaTheme = personaThemes[assessmentResult.personaId]
+    const personaProfile = personaProfiles[assessmentResult.personaId]
+    const protocolPreview = assessmentResult.sevenDayProtocol[0]
+    const remainingProtocol = assessmentResult.sevenDayProtocol.slice(1)
+
     return (
       <div className="bg-[#16213e] rounded-2xl p-6 md:p-8 shadow-xl">
-        <div className="text-center mb-6">
-          <div className="text-4xl mb-4">🎯</div>
-          <h2 className="text-2xl font-bold text-[#a8dadc] mb-2">
-            Your Sleep Profile: {assessmentResult.personaName}
+        <div className="text-center mb-8">
+          <div className="text-4xl mb-3">{personaTheme.icon}</div>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#a8dadc] mb-2">
+            Your Personalized Sleep Blueprint
           </h2>
-          <p className="text-[#f1faee]/70 mb-4">
-            Match confidence: {assessmentResult.confidence}%
+          <p className="text-[#f1faee]/70">
+            Sleep Score: <span className="text-[#f1faee] font-semibold">{assessmentResult.overallSleepScore}/100</span>
           </p>
         </div>
 
-        <div className="space-y-6">
-          <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#f1faee] mb-3">Profile Description</h3>
-            <p className="text-[#f1faee]/80">{assessmentResult.description}</p>
+        <div
+          className="rounded-2xl p-6 mb-6 border border-[#4a4e69]/40"
+          style={{
+            background: `linear-gradient(135deg, ${personaTheme.gradientFrom}, ${personaTheme.gradientTo})`
+          }}
+        >
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <p className="text-[#f1faee]/60 text-sm uppercase tracking-wide">Detected Persona</p>
+              <h3 className="text-2xl font-semibold text-[#f1faee]">{assessmentResult.personaName}</h3>
+              <p className="text-[#f1faee]/80 mt-2">{personaProfile?.description}</p>
+            </div>
+            <div className="bg-[#1a1a2e]/70 rounded-xl px-4 py-3 border border-[#4a4e69]/40">
+              <p className="text-xs text-[#f1faee]/60">Match confidence</p>
+              <p className="text-xl font-semibold text-[#a8dadc]">{assessmentResult.confidence}%</p>
+            </div>
           </div>
-
-          <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#f1faee] mb-3">Personalized Recommendations</h3>
-            <ul className="space-y-2">
-              {assessmentResult.recommendations.map((rec, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-[#a8dadc] mr-2">•</span>
-                  <span className="text-[#f1faee]/80">{rec}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="mt-5 grid gap-3 md:grid-cols-3">
+            {personaProfile?.focus.map((focus, index) => (
+              <div
+                key={focus}
+                className="bg-[#1a1a2e]/80 border border-[#4a4e69]/40 rounded-lg px-3 py-2 text-sm text-[#f1faee]/80"
+              >
+                {index + 1}. {focus}
+              </div>
+            ))}
           </div>
+        </div>
 
-          {calculatorData && (
-            <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5">
-              <h3 className="text-lg font-semibold text-[#f1faee] mb-3">Your Custom Sleep Schedule</h3>
-              <p className="text-[#f1faee]/80 mb-3">
-                Based on your calculator inputs, here are your optimal sleep times:
-              </p>
+        <div className="grid gap-4 md:grid-cols-2 mb-6">
+          <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5">
+            <h3 className="text-lg font-semibold text-[#f1faee] mb-2">Executive Summary</h3>
+            <p className="text-[#f1faee]/80 text-sm leading-relaxed">{assessmentResult.executiveSummary}</p>
+          </div>
+          <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5">
+            <h3 className="text-lg font-semibold text-[#f1faee] mb-2">Primary Challenge</h3>
+            <p className="text-[#f1faee]/80 text-sm leading-relaxed">{assessmentResult.primaryChallenge}</p>
+            <div className="mt-4">
+              <p className="text-xs uppercase tracking-wide text-[#f1faee]/50 mb-2">Category Scores</p>
               <div className="space-y-2">
-                {calculatorData.results.map((result, index) => (
-                  <div
-                    key={index}
-                    className={`border rounded-lg p-3 flex items-center justify-between ${
-                      result.quality === 'optimal' ? 'bg-green-500/10 border-green-500/30' :
-                      result.quality === 'good' ? 'bg-blue-500/10 border-blue-500/30' :
-                      'bg-yellow-500/10 border-yellow-500/30'
-                    }`}
-                  >
-                    <div>
-                      <span className="font-bold">{result.time}</span>
-                      <span className="text-sm ml-2 opacity-80">
-                        ({result.hours}h, {result.cycles} cycles)
-                      </span>
+                {Object.entries(assessmentResult.categoryScores).map(([category, score]) => (
+                  <div key={category}>
+                    <div className="flex justify-between text-xs text-[#f1faee]/60">
+                      <span>{category.replace('_', ' ')}</span>
+                      <span>{Math.round(score)}%</span>
                     </div>
-                    <span className={`text-xs font-medium px-2 py-1 rounded ${
-                      result.quality === 'optimal' ? 'bg-green-500/20 text-green-400' :
-                      result.quality === 'good' ? 'bg-blue-500/20 text-blue-400' :
-                      'bg-yellow-500/20 text-yellow-400'
-                    }`}>
-                      {result.quality === 'optimal' ? 'Optimal' : 
-                       result.quality === 'good' ? 'Good' : 'Minimum'}
-                    </span>
+                    <div className="h-2 bg-[#16213e] rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-[#a8dadc]"
+                        style={{ width: `${Math.round(score)}%` }}
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
-          )}
-
-          <div className="flex gap-3">
-            <button
-              onClick={restartAssessment}
-              className="flex-1 bg-[#4a4e69] hover:bg-[#4a4e69]/80 text-[#f1faee] font-medium py-3 rounded-lg transition"
-            >
-              Retake Assessment
-            </button>
           </div>
+        </div>
+
+        {assessmentResult.sleepSchedule && (
+          <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5 mb-6">
+            <h3 className="text-lg font-semibold text-[#f1faee] mb-2">Your Custom Sleep Schedule</h3>
+            <p className="text-[#f1faee]/70 text-sm mb-4">
+              Based on your calculator inputs, these are your highest-impact sleep windows.
+            </p>
+            <div className="space-y-2">
+              {assessmentResult.sleepSchedule.recommendations.map((option) => (
+                <div
+                  key={`${option.time}-${option.quality}`}
+                  className="flex items-center justify-between bg-[#16213e] border border-[#4a4e69]/30 rounded-lg px-4 py-3"
+                >
+                  <div>
+                    <p className="text-[#f1faee] font-semibold">
+                      {option.icon} {option.time}
+                    </p>
+                    <p className="text-xs text-[#f1faee]/60">
+                      {option.hours}h · {option.cycles} cycles · {option.useCase}
+                    </p>
+                  </div>
+                  <span className="text-xs text-[#a8dadc]">Priority {option.priority}</span>
+                </div>
+              ))}
+            </div>
+            {assessmentResult.sleepSchedule.personalizedTips.length > 0 && (
+              <div className="mt-4 space-y-2">
+                {assessmentResult.sleepSchedule.personalizedTips.map((tip) => (
+                  <div
+                    key={tip.tip}
+                    className="text-xs text-[#f1faee]/70 border border-[#4a4e69]/40 rounded-lg px-3 py-2"
+                  >
+                    <span className="text-[#a8dadc] font-semibold">Tip:</span> {tip.tip} <span className="text-[#f1faee]/40">({tip.reason})</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="mb-6">
+          <h3 className="text-lg font-semibold text-[#f1faee] mb-4">Top 3 Personalized Quick Wins</h3>
+          <div className="grid gap-4 md:grid-cols-3">
+            {assessmentResult.quickWins.map((win) => (
+              <div key={win.id} className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-4">
+                <h4 className="text-sm font-semibold text-[#a8dadc] mb-2">{win.title}</h4>
+                <p className="text-xs text-[#f1faee]/70 mb-3">{win.description}</p>
+                <ul className="text-xs text-[#f1faee]/70 space-y-1">
+                  {win.steps.slice(0, 3).map((step) => (
+                    <li key={step}>• {step}</li>
+                  ))}
+                </ul>
+                <p className="text-[11px] text-[#f1faee]/50 mt-3">
+                  Timing: {win.timing} · {win.expectedImpact}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5 mb-6">
+          <h3 className="text-lg font-semibold text-[#f1faee] mb-2">Your 7-Day Protocol (Preview)</h3>
+          <p className="text-[#f1faee]/70 text-sm mb-4">
+            Days 1-2 are unlocked below. Get the full 7-day protocol in your PDF.
+          </p>
+          {protocolPreview && (
+            <div className="bg-[#16213e] border border-[#4a4e69]/40 rounded-lg p-4">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-sm font-semibold text-[#a8dadc]">Days {protocolPreview.days}</p>
+                <span className="text-xs text-[#f1faee]/50">{protocolPreview.theme}</span>
+              </div>
+              <p className="text-xs text-[#f1faee]/70 mb-3">{protocolPreview.focus}</p>
+              <ul className="text-xs text-[#f1faee]/70 space-y-1">
+                {protocolPreview.actions.slice(0, 4).map((action) => (
+                  <li key={action}>• {action}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {remainingProtocol.length > 0 && (
+            <div className="mt-4 bg-[#16213e] border border-[#4a4e69]/30 rounded-lg p-4 opacity-70">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-sm font-semibold text-[#f1faee]/70">Days 3-7 (Locked)</p>
+                <span className="text-xs text-[#f1faee]/40">Unlock the full PDF</span>
+              </div>
+              <div className="text-xs text-[#f1faee]/50">
+                {remainingProtocol.map((phase) => phase.theme).join(' · ')}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-5 mb-6">
+          <h3 className="text-lg font-semibold text-[#f1faee] mb-2">Get your complete personalized Sleep Blueprint PDF</h3>
+          <p className="text-[#f1faee]/70 text-sm">
+            Your full 7-day protocol, tailored to your persona and answers, delivered instantly.
+          </p>
+          <EmailCapture
+            calculatorData={calculatorData}
+            assessmentData={assessmentResult}
+          />
+        </div>
+
+        <div className="text-center">
+          <button
+            onClick={restartAssessment}
+            className="text-sm text-[#f1faee]/60 hover:text-[#f1faee]"
+          >
+            Retake Assessment
+          </button>
+          <p className="text-[11px] text-[#f1faee]/40 mt-3">
+            This assessment is educational and not medical advice.
+          </p>
         </div>
       </div>
     )
@@ -417,61 +379,34 @@ export default function SleepAssessment({ onComplete, calculatorData }: SleepAss
     <div className="bg-[#16213e] rounded-2xl p-6 md:p-8 shadow-xl">
       <div className="text-center mb-6">
         <div className="text-3xl mb-4">🔍</div>
-        <h2 className="text-xl font-bold text-[#a8dadc] mb-2">
-          Personalized Sleep Assessment
-        </h2>
+        <h2 className="text-xl font-bold text-[#a8dadc] mb-2">Personalized Sleep Assessment</h2>
         <p className="text-[#f1faee]/70">
-          Answer {currentQuestion + 1} of {ASSESSMENT_QUESTIONS.length} questions
+          Question {currentQuestion + 1} of {sleepAssessmentQuestions.length}
         </p>
         <div className="w-full bg-[#1a1a2e] h-2 rounded-full mt-4 overflow-hidden">
-          <div 
+          <div
             className="bg-[#a8dadc] h-full transition-all duration-300"
-            style={{ width: `${((currentQuestion + 1) / ASSESSMENT_QUESTIONS.length) * 100}%` }}
+            style={{ width: `${((currentQuestion + 1) / sleepAssessmentQuestions.length) * 100}%` }}
           />
         </div>
       </div>
 
       <div className="mb-8">
-        <h3 className="text-lg font-semibold text-[#f1faee] mb-4">
-          {currentQ.text}
-        </h3>
+        <h3 className="text-lg font-semibold text-[#f1faee] mb-2">{currentQuestionData.question}</h3>
+        <p className="text-sm text-[#f1faee]/60 mb-4">{currentQuestionData.description}</p>
 
-        {currentQ.type === 'multiple_choice' && currentQ.options && (
-          <div className="space-y-3">
-            {currentQ.options.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswer(currentQ.id, option)}
-                className="w-full text-left bg-[#1a1a2e] hover:bg-[#4a4e69] border border-[#4a4e69] rounded-lg px-4 py-3 text-[#f1faee] transition"
-              >
-                {option}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {currentQ.type === 'scale' && currentQ.scaleRange && (
-          <div className="space-y-4">
-            <div className="flex justify-between mb-2">
-              <span className="text-sm text-[#f1faee]/70">{currentQ.scaleRange!.labels[0]}</span>
-              <span className="text-sm text-[#f1faee]/70">{currentQ.scaleRange!.labels[1]}</span>
-            </div>
-            <div className="flex gap-2">
-              {Array.from({ length: currentQ.scaleRange!.max - currentQ.scaleRange!.min + 1 }, (_, i) => {
-                const value = i + currentQ.scaleRange!.min
-                return (
-                  <button
-                    key={value}
-                    onClick={() => handleAnswer(currentQ.id, value)}
-                    className="flex-1 bg-[#1a1a2e] hover:bg-[#4a4e69] border border-[#4a4e69] rounded-lg py-3 text-[#f1faee] transition"
-                  >
-                    {value}
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-        )}
+        <div className="space-y-3">
+          {currentQuestionData.options.map((option) => (
+            <button
+              key={option.value}
+              onClick={() => handleAnswer(currentQuestionData.id, option.value)}
+              className="w-full text-left bg-[#1a1a2e] hover:bg-[#4a4e69] border border-[#4a4e69] rounded-lg px-4 py-3 text-[#f1faee] transition"
+            >
+              <div className="font-medium">{option.label}</div>
+              <div className="text-xs text-[#f1faee]/60 mt-1">{option.description}</div>
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="text-center">
