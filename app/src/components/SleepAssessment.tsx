@@ -37,6 +37,12 @@ interface AssessmentResult {
   sleepSchedule: SleepSchedulePlan | null
 }
 
+interface ProcessingStep {
+  id: string
+  label: string
+  durationMs: number
+}
+
 const personaThemes: Record<PersonaId, { icon: string; accent: string; gradientFrom: string; gradientTo: string }> = {
   digital_addict: {
     icon: '📵',
@@ -94,12 +100,32 @@ const personaThemes: Record<PersonaId, { icon: string; accent: string; gradientF
   }
 }
 
+const baseProcessingSteps: ProcessingStep[] = [
+  { id: 'sleep_patterns', label: 'Analyzing your sleep patterns...', durationMs: 2000 },
+  { id: 'circadian_alignment', label: 'Evaluating circadian rhythm alignment...', durationMs: 2000 },
+  { id: 'science_database', label: 'Cross-referencing sleep science database...', durationMs: 2000 },
+  { id: 'persona_detection', label: 'Detecting your sleep persona...', durationMs: 1500 },
+  { id: 'protocol_generation', label: 'Generating personalized protocol...', durationMs: 1500 },
+  { id: 'blueprint_build', label: 'Building your Sleep Blueprint...', durationMs: 2000 }
+]
+
 export default function SleepAssessment({ onComplete, calculatorData }: SleepAssessmentProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [responses, setResponses] = useState<AssessmentResponse[]>([])
-  const [isComplete, setIsComplete] = useState(false)
+  const [phase, setPhase] = useState<'questions' | 'processing' | 'results'>('questions')
   const [assessmentResult, setAssessmentResult] = useState<AssessmentResult | null>(null)
+  const [processingSteps, setProcessingSteps] = useState<ProcessingStep[]>(baseProcessingSteps)
+  const [processingStepIndex, setProcessingStepIndex] = useState(0)
+  const [processingStepProgress, setProcessingStepProgress] = useState(0)
+  const [processingOverallProgress, setProcessingOverallProgress] = useState(0)
+  const [showReadyMessage, setShowReadyMessage] = useState(false)
   const startedRef = useRef(false)
+  const processingResponsesRef = useRef<AssessmentResponse[] | null>(null)
+  const processingResultRef = useRef<AssessmentResult | null>(null)
+  const processingAnalyticsRef = useRef<{ sleepScore: number; personaId: PersonaId; confidence: number } | null>(null)
+  const processingStartedRef = useRef(false)
+  const processingTimerRef = useRef<number | null>(null)
+  const processingReadyTimeoutRef = useRef<number | null>(null)
 
   useEffect(() => {
     if (startedRef.current) return
@@ -109,22 +135,18 @@ export default function SleepAssessment({ onComplete, calculatorData }: SleepAss
     })
   }, [calculatorData])
 
-  const handleAnswer = (questionId: string, value: string) => {
-    const nextResponses = [
-      ...responses.filter((response) => response.questionId !== questionId),
-      { questionId, answer: value }
-    ]
+  useEffect(() => {
+    if (phase !== 'processing') return
+    if (processingStartedRef.current) return
 
-    setResponses(nextResponses)
+    const responsesToScore = processingResponsesRef.current ?? responses
+    if (responsesToScore.length === 0) return
 
-    if (currentQuestion < sleepAssessmentQuestions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1)
-      return
-    }
+    processingStartedRef.current = true
 
-    const scoreResult = calculateAssessmentScore(nextResponses)
-    const persona = detectSleepPersona(nextResponses, scoreResult)
-    const primaryChallenge = identifyPrimaryChallenge(nextResponses, scoreResult)
+    const scoreResult = calculateAssessmentScore(responsesToScore)
+    const persona = detectSleepPersona(responsesToScore, scoreResult)
+    const primaryChallenge = identifyPrimaryChallenge(responsesToScore, scoreResult)
 
     const engine = new SleepBlueprintRecommendationEngine(
       {
@@ -132,7 +154,7 @@ export default function SleepAssessment({ onComplete, calculatorData }: SleepAss
         categoryScores: scoreResult.categoryScores,
         primaryChallenge,
         persona,
-        responses: nextResponses
+        responses: responsesToScore
       },
       calculatorData
     )
@@ -154,34 +176,159 @@ export default function SleepAssessment({ onComplete, calculatorData }: SleepAss
       sleepSchedule: recommendations.sleepSchedule
     }
 
-    setAssessmentResult(result)
-    setIsComplete(true)
+    const responseMap = responsesToScore.reduce<Record<string, string>>((acc, response) => {
+      acc[response.questionId] = response.answer
+      return acc
+    }, {})
 
-    trackEvent('assessment_completed', {
-      sleep_score: scoreResult.overallSleepScore,
-      persona: persona.primaryPersona,
+    const adjustedSteps = baseProcessingSteps.map((step) => ({ ...step }))
+    const shouldHighlightScreenTime = responseMap.screen_time === 'frequently' || responseMap.screen_time === 'every_night'
+    const shouldHighlightSleepQuality = scoreResult.categoryScores.sleep_quality < 50
+
+    if (shouldHighlightScreenTime) {
+      adjustedSteps[1] = {
+        ...adjustedSteps[1],
+        label: 'Factoring in your screen habits...'
+      }
+    }
+
+    if (shouldHighlightSleepQuality) {
+      adjustedSteps[2] = {
+        ...adjustedSteps[2],
+        label: 'Analyzing your sleep quality indicators...'
+      }
+    }
+
+    setProcessingSteps(adjustedSteps)
+    processingResultRef.current = result
+    processingAnalyticsRef.current = {
+      sleepScore: scoreResult.overallSleepScore,
+      personaId: persona.primaryPersona,
       confidence: Math.round(persona.confidence * 100)
+    }
+
+    trackEvent('assessment_processing_started', {
+      sleep_score: scoreResult.overallSleepScore
     })
 
-    trackEvent('persona_detected', {
-      persona: persona.primaryPersona,
-      confidence: Math.round(persona.confidence * 100)
-    })
+    const stepDurations = adjustedSteps.map((step) => step.durationMs)
+    const totalDuration = stepDurations.reduce((sum, duration) => sum + duration, 0)
+    const startTime = performance.now()
+    let currentStep = 0
+    let currentStepStart = startTime
 
-    onComplete?.(result)
+    const tick = () => {
+      const now = performance.now()
+      const totalElapsed = now - startTime
+      const stepElapsed = now - currentStepStart
+      const stepDuration = stepDurations[currentStep] ?? 1
+
+      const stepProgress = Math.min(stepElapsed / stepDuration, 1) * 100
+      const totalProgress = Math.min(totalElapsed / totalDuration, 1) * 100
+
+      setProcessingStepIndex(currentStep)
+      setProcessingStepProgress(stepProgress)
+      setProcessingOverallProgress(totalProgress)
+
+      if (stepElapsed >= stepDuration) {
+        currentStep += 1
+        if (currentStep < stepDurations.length) {
+          currentStepStart = now
+        } else {
+          if (processingTimerRef.current) {
+            window.clearInterval(processingTimerRef.current)
+          }
+          setProcessingStepIndex(stepDurations.length - 1)
+          setProcessingStepProgress(100)
+          setProcessingOverallProgress(100)
+          setShowReadyMessage(true)
+
+          trackEvent('assessment_processing_complete', {
+            sleep_score: scoreResult.overallSleepScore
+          })
+
+          processingReadyTimeoutRef.current = window.setTimeout(() => {
+            const analytics = processingAnalyticsRef.current
+            const finalResult = processingResultRef.current
+
+            setShowReadyMessage(false)
+            if (finalResult && analytics) {
+              setAssessmentResult(finalResult)
+              setPhase('results')
+
+              trackEvent('assessment_completed', {
+                sleep_score: analytics.sleepScore,
+                persona: analytics.personaId,
+                confidence: analytics.confidence
+              })
+
+              trackEvent('persona_detected', {
+                persona: analytics.personaId,
+                confidence: analytics.confidence
+              })
+
+              onComplete?.(finalResult)
+            }
+          }, 900)
+        }
+      }
+    }
+
+    processingTimerRef.current = window.setInterval(tick, 120)
+    tick()
+
+    return () => {
+      if (processingTimerRef.current) {
+        window.clearInterval(processingTimerRef.current)
+      }
+      if (processingReadyTimeoutRef.current) {
+        window.clearTimeout(processingReadyTimeoutRef.current)
+      }
+    }
+  }, [calculatorData, onComplete, phase, responses])
+
+  const handleAnswer = (questionId: string, value: string) => {
+    const nextResponses = [
+      ...responses.filter((response) => response.questionId !== questionId),
+      { questionId, answer: value }
+    ]
+
+    setResponses(nextResponses)
+
+    if (currentQuestion < sleepAssessmentQuestions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1)
+      return
+    }
+    processingResponsesRef.current = nextResponses
+    processingResultRef.current = null
+    processingAnalyticsRef.current = null
+    processingStartedRef.current = false
+    setProcessingStepIndex(0)
+    setProcessingStepProgress(0)
+    setProcessingOverallProgress(0)
+    setShowReadyMessage(false)
+    setPhase('processing')
   }
 
   const restartAssessment = () => {
     setCurrentQuestion(0)
     setResponses([])
-    setIsComplete(false)
+    setPhase('questions')
     setAssessmentResult(null)
     startedRef.current = false
+    processingResponsesRef.current = null
+    processingResultRef.current = null
+    processingAnalyticsRef.current = null
+    processingStartedRef.current = false
+    setProcessingStepIndex(0)
+    setProcessingStepProgress(0)
+    setProcessingOverallProgress(0)
+    setShowReadyMessage(false)
   }
 
   const currentQuestionData = sleepAssessmentQuestions[currentQuestion]
 
-  if (isComplete && assessmentResult) {
+  if (phase === 'results' && assessmentResult) {
     const personaTheme = personaThemes[assessmentResult.personaId]
     const personaProfile = personaProfiles[assessmentResult.personaId]
     const protocolPreview = assessmentResult.sevenDayProtocol[0]
@@ -370,6 +517,87 @@ export default function SleepAssessment({ onComplete, calculatorData }: SleepAss
           <p className="text-[11px] text-[#f1faee]/40 mt-3">
             This assessment is educational and not medical advice.
           </p>
+        </div>
+      </div>
+    )
+  }
+
+  if (phase === 'processing') {
+    const completedSteps = processingSteps.slice(0, processingStepIndex)
+    const currentStep = processingSteps[processingStepIndex]
+    const overallProgress = Math.round(processingOverallProgress)
+
+    return (
+      <div className="bg-[#1a1a2e] rounded-2xl p-6 md:p-10 shadow-xl min-h-[70vh] flex flex-col items-center justify-center text-center">
+        <style>{`
+          @keyframes processingStepReveal {
+            0% { opacity: 0; transform: translateY(6px); }
+            100% { opacity: 1; transform: translateY(0); }
+          }
+          .processing-step {
+            animation: processingStepReveal 450ms ease-out;
+          }
+          @keyframes processingReadyPulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+          }
+          .processing-ready {
+            animation: processingReadyPulse 900ms ease-in-out;
+          }
+        `}</style>
+
+        <div className="w-full max-w-xl mb-6 md:mb-8 space-y-2">
+          {completedSteps.map((step) => (
+            <div
+              key={step.id}
+              className="flex items-center justify-between text-xs md:text-sm text-[#f1faee]/60"
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-[#52b788]">✓</span>
+                <span>{step.label}</span>
+              </div>
+              <div className="w-20 md:w-24 h-1 bg-[#2a2f4f] rounded-full overflow-hidden">
+                <div className="h-full bg-[#52b788]" style={{ width: '100%' }} />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="relative h-44 w-44 md:h-52 md:w-52 mb-6">
+          <div
+            className="absolute inset-0 rounded-full"
+            style={{
+              background: `conic-gradient(#a8dadc ${overallProgress}%, rgba(241, 250, 238, 0.12) 0)`
+            }}
+          />
+          <div className="absolute inset-3 rounded-full bg-[#1a1a2e] border border-[#4a4e69]/50 flex items-center justify-center">
+            <span className="text-3xl md:text-4xl font-semibold text-[#f1faee]">{overallProgress}%</span>
+          </div>
+        </div>
+
+        <div className="w-full max-w-md">
+          {showReadyMessage ? (
+            <div className="processing-ready text-lg md:text-xl font-semibold text-[#a8dadc]">
+              Your results are ready!
+            </div>
+          ) : (
+            <div key={currentStep?.id} className="processing-step text-base md:text-lg text-[#f1faee]">
+              {currentStep?.label}
+            </div>
+          )}
+          {!showReadyMessage && (
+            <div className="mt-4 h-2 w-full bg-[#2a2f4f] rounded-full overflow-hidden">
+              <div
+                className="h-full bg-[#a8dadc] transition-all duration-150"
+                style={{ width: `${processingStepProgress}%` }}
+              />
+            </div>
+          )}
+          {!showReadyMessage && (
+            <p className="mt-3 text-xs md:text-sm text-[#f1faee]/60">
+              Processing step {processingStepIndex + 1} of {processingSteps.length}
+            </p>
+          )}
         </div>
       </div>
     )
