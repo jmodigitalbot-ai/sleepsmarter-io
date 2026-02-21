@@ -25,10 +25,12 @@ export default function ThankYou() {
           // Fall back to static PDF
         }
       }
-      // Try immediately, then retry after 3s if not ready
+      // Try immediately, then retry at 2s, 5s, and 10s if not ready yet
       checkPdf()
-      const retry = setTimeout(checkPdf, 3000)
-      return () => clearTimeout(retry)
+      const r1 = setTimeout(checkPdf, 2000)
+      const r2 = setTimeout(checkPdf, 5000)
+      const r3 = setTimeout(checkPdf, 10000)
+      return () => { clearTimeout(r1); clearTimeout(r2); clearTimeout(r3) }
     }
   }, [userEmail])
 

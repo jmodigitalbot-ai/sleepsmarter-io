@@ -73,21 +73,23 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
       })
 
       if (response.ok) {
-        // Trigger PDF generation in background (don't block the user)
+        // Generate personalized PDF BEFORE redirecting (must complete or navigation kills the request)
         if (assessmentData || calculatorData) {
-          fetch(`${PDF_SERVICE_URL}/generate-blueprint`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              firstName: firstName || 'Sleep Smarter User',
-              email,
-              calculatorData: calculatorData || null,
-              assessmentData: assessmentData || null
+          try {
+            await fetch(`${PDF_SERVICE_URL}/generate-blueprint`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                firstName: firstName || 'Sleep Smarter User',
+                email,
+                calculatorData: calculatorData || null,
+                assessmentData: assessmentData || null
+              })
             })
-          }).catch(() => {
+          } catch {
             // PDF generation failure shouldn't block the user flow
             console.warn('PDF generation request failed — will retry via webhook')
-          })
+          }
         }
 
         // Track email signup event (before clearing state)
@@ -103,7 +105,7 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
           }
         )
 
-        // Redirect immediately (don't clear state first)
+        // Redirect after PDF is generated
         window.location.href = `/thank-you?email=${encodeURIComponent(email)}`
         return
       } else {
