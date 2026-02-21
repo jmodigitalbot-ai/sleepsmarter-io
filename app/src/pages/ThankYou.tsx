@@ -1,7 +1,36 @@
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
+
+const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
 
 export default function ThankYou() {
   const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
+  const [searchParams] = useSearchParams()
+  const userEmail = searchParams.get('email')
+  const [pdfUrl, setPdfUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (userEmail) {
+      // Check for personalized PDF (poll for up to 10 seconds in case generation is still running)
+      const checkPdf = async () => {
+        try {
+          const res = await fetch(`${PDF_SERVICE_URL}/lookup?email=${encodeURIComponent(userEmail)}`)
+          if (res.ok) {
+            const data = await res.json()
+            if (data.downloadUrl) {
+              setPdfUrl(`${PDF_SERVICE_URL}${data.downloadUrl}`)
+            }
+          }
+        } catch {
+          // Fall back to static PDF
+        }
+      }
+      // Try immediately, then retry after 3s if not ready
+      checkPdf()
+      const retry = setTimeout(checkPdf, 3000)
+      return () => clearTimeout(retry)
+    }
+  }, [userEmail])
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -29,12 +58,12 @@ export default function ThankYou() {
             Download it now. We've also sent a copy to your inbox.
           </p>
           <a
-            href="/sleep-blueprint.pdf"
+            href={pdfUrl || "/sleep-blueprint.pdf"}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-3 rounded-xl transition text-lg shadow-lg hover:shadow-xl"
           >
-            Download Your Sleep Blueprint →
+            {pdfUrl ? 'Download Your Personalized Sleep Blueprint →' : 'Download Your Sleep Blueprint →'}
           </a>
         </div>
 

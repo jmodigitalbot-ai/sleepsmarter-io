@@ -3,6 +3,7 @@ import { trackEmailSignup } from '../lib/analytics'
 
 const KIT_FORM_ID = '9066532'
 const KIT_FORM_URL = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`
+const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
 
 interface CalculatorData {
   mode: 'wakeup' | 'bedtime'
@@ -72,11 +73,24 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
       })
 
       if (response.ok) {
-        setStatus('success')
-        setFirstName('')
-        setEmail('')
-        
-        // Track email signup event
+        // Trigger PDF generation in background (don't block the user)
+        if (assessmentData || calculatorData) {
+          fetch(`${PDF_SERVICE_URL}/generate-blueprint`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              firstName: firstName || 'Sleep Smarter User',
+              email,
+              calculatorData: calculatorData || null,
+              assessmentData: assessmentData || null
+            })
+          }).catch(() => {
+            // PDF generation failure shouldn't block the user flow
+            console.warn('PDF generation request failed — will retry via webhook')
+          })
+        }
+
+        // Track email signup event (before clearing state)
         trackEmailSignup(
           email,
           calculatorData ? 'calculator' : 'general',
@@ -88,6 +102,10 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
             persona_confidence: assessmentData?.confidence
           }
         )
+
+        // Redirect immediately (don't clear state first)
+        window.location.href = `/thank-you?email=${encodeURIComponent(email)}`
+        return
       } else {
         throw new Error('Subscription failed')
       }
@@ -97,11 +115,7 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
     }
   }
 
-  if (status === 'success') {
-    // Redirect to thank you page
-    window.location.href = '/thank-you'
-    return null
-  }
+  // Success redirect now happens immediately in handleSubmit
 
   return (
     <div className="mt-6 bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-6">

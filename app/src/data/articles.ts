@@ -12,6 +12,7 @@ import sleepTipsNewParents from '../content/10-sleep-tips-for-new-parents.md?raw
 import bestWhiteNoiseMachines from '../content/11-best-white-noise-machines-for-sleep.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
+import whatIsSleepDebt from '../content/17-what-is-sleep-debt.md?raw'
 
 export interface Article {
   slug: string
@@ -164,5 +165,15 @@ export const articles: Article[] = [
     content: daylightSavingTimeSleepTips,
     featuredImage: '/images/featured-daylight-saving-time.png',
     featuredImageAlt: 'Illustration showing a clock transitioning between day and night with minimal disruption'
+  },
+  {
+    slug: 'what-is-sleep-debt',
+    title: 'What Is Sleep Debt? Can You Really Catch Up on Sleep?',
+    description: 'Discover the science behind sleep debt, its long-term impacts, and proven strategies to recover and maintain optimal sleep health. Learn if you can truly "catch up" on lost sleep.',
+    readTime: '12 min read',
+    date: 'February 2026',
+    content: whatIsSleepDebt,
+    featuredImage: '/images/featured-sleep-debt.png',
+    featuredImageAlt: 'Abstract illustration representing sleep debt with scales balancing sleep hours'
   }
 ]

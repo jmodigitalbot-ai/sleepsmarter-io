@@ -41,6 +41,16 @@ app.post('/webhook/kit', async (req, res) => {
       return res.status(400).json({ error: 'No email address provided' });
     }
 
+    const parseJSONField = (fieldValue, fallback) => {
+      if (!fieldValue) return fallback;
+      try {
+        return typeof fieldValue === 'string' ? JSON.parse(fieldValue) : fieldValue;
+      } catch (err) {
+        console.warn('Failed to parse JSON field:', err.message);
+        return fallback;
+      }
+    };
+
     // Parse calculator data if available
     let calculatorData = null;
     let assessmentData = null;
@@ -49,16 +59,30 @@ app.post('/webhook/kit', async (req, res) => {
       calculatorData = {
         mode: fields.calculator_mode,
         targetTime: fields.target_time,
-        results: fields.results_json ? JSON.parse(fields.results_json) : []
+        results: parseJSONField(fields.results_json, [])
       };
     }
 
-    if (fields.sleep_persona) {
+    const assessmentPayload =
+      parseJSONField(fields.assessment_data_json, null) ||
+      parseJSONField(fields.assessment_data, null) ||
+      parseJSONField(fields.full_assessment_data, null);
+
+    if (assessmentPayload) {
+      assessmentData = assessmentPayload;
+    } else if (fields.sleep_persona) {
       assessmentData = {
         personaId: fields.sleep_persona,
         personaName: fields.persona_name,
-        confidence: parseInt(fields.persona_confidence) || 0,
-        recommendations: fields.persona_recommendations ? JSON.parse(fields.persona_recommendations) : []
+        confidence: parseInt(fields.persona_confidence, 10) || 0,
+        recommendations: parseJSONField(fields.persona_recommendations, []),
+        overallSleepScore: parseInt(fields.overall_sleep_score, 10) || undefined,
+        categoryScores: parseJSONField(fields.category_scores, undefined),
+        executiveSummary: fields.executive_summary,
+        primaryChallenge: fields.primary_challenge,
+        quickWins: parseJSONField(fields.quick_wins, undefined),
+        sevenDayProtocol: parseJSONField(fields.seven_day_protocol, undefined),
+        sleepSchedule: parseJSONField(fields.sleep_schedule, undefined)
       };
     }
 
