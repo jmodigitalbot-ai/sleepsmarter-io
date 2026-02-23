@@ -6,11 +6,49 @@ export default function PurchaseThankYou() {
   const insiderCheckoutUrl = "https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right"
 
   useEffect(() => {
-    // Fire GA4 purchase confirmation event
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'purchase_complete', {
+    if (typeof window === 'undefined') return
+
+    // Push to dataLayer first (works even before GTM loads)
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+      event: 'purchase_complete',
+      event_category: 'funnel',
+      event_label: 'post_purchase_thank_you',
+    })
+
+    // Also fire directly via gtag if available now
+    if ((window as any).gtag) {
+      ;(window as any).gtag('event', 'purchase_complete', {
         event_category: 'funnel',
         event_label: 'post_purchase_thank_you',
+      })
+    } else {
+      // GTM not loaded yet — retry after it initializes
+      const retry = setInterval(() => {
+        if ((window as any).gtag) {
+          ;(window as any).gtag('event', 'purchase_complete', {
+            event_category: 'funnel',
+            event_label: 'post_purchase_thank_you',
+          })
+          // Also fire Google Ads conversion
+          ;(window as any).gtag('event', 'conversion', {
+            send_to: 'AW-17966119562/JrHwCOntkvwbEIr19PZC',
+            value: 17.00,
+            currency: 'USD',
+          })
+          clearInterval(retry)
+        }
+      }, 300)
+      // Stop retrying after 10 seconds
+      setTimeout(() => clearInterval(retry), 10000)
+    }
+
+    // Fire Google Ads conversion immediately if gtag ready
+    if ((window as any).gtag) {
+      ;(window as any).gtag('event', 'conversion', {
+        send_to: 'AW-17966119562/JrHwCOntkvwbEIr19PZC',
+        value: 17.00,
+        currency: 'USD',
       })
     }
   }, [])
