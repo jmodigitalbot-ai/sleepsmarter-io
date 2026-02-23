@@ -3,11 +3,23 @@ import { Link, useSearchParams } from 'react-router-dom'
 
 const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const check = () => setIsMobile(window.matchMedia('(max-width: 768px)').matches || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
+  return isMobile
+}
+
 export default function ThankYou() {
   const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
   const [searchParams] = useSearchParams()
   const userEmail = searchParams.get('email')
   const [pdfUrl, setPdfUrl] = useState<string | null>(null)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     if (userEmail) {
@@ -56,17 +68,40 @@ export default function ThankYou() {
           <h1 className="text-2xl md:text-3xl font-bold text-green-400 mb-3">
             Your Sleep Blueprint is Ready!
           </h1>
-          <p className="text-[#f1faee]/70 mb-6">
-            Download it now. We've also sent a copy to your inbox.
-          </p>
-          <a
-            href={pdfUrl || "/sleep-blueprint.pdf"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-3 rounded-xl transition text-lg shadow-lg hover:shadow-xl"
-          >
-            {pdfUrl ? 'Download Your Personalized Sleep Blueprint →' : 'Download Your Sleep Blueprint →'}
-          </a>
+
+          {isMobile ? (
+            /* Mobile: don't trigger a file download that navigates away from this page */
+            <>
+              <p className="text-[#f1faee]/70 mb-4">
+                📬 We've sent your personalized blueprint to your inbox — check your email to view it!
+              </p>
+              <p className="text-[#f1faee]/50 text-sm mb-4">
+                (Check your spam folder if you don't see it within a few minutes.)
+              </p>
+              <a
+                href={pdfUrl || "/sleep-blueprint.pdf"}
+                download
+                className="inline-block text-[#a8dadc] underline text-sm"
+              >
+                Or tap here to download directly
+              </a>
+            </>
+          ) : (
+            /* Desktop: open PDF in a new tab, user stays on this page */
+            <>
+              <p className="text-[#f1faee]/70 mb-6">
+                Click below to view it now. We've also sent a copy to your inbox.
+              </p>
+              <a
+                href={pdfUrl || "/sleep-blueprint.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-3 rounded-xl transition text-lg shadow-lg hover:shadow-xl"
+              >
+                {pdfUrl ? 'View Your Personalized Sleep Blueprint →' : 'View Your Sleep Blueprint →'}
+              </a>
+            </>
+          )}
         </div>
 
         {/* ============================================ */}
