@@ -10,6 +10,12 @@ function App() {
         description="Calculate your ideal bedtime or wake-up time based on natural 90-minute sleep cycles. Free sleep calculator, personalized sleep assessment, and science-backed tips."
         canonical="/"
         type="website"
+        includeOrganization
+        softwareApp={{
+          name: 'Sleep Calculator by Sleep Smarter',
+          description: 'Free sleep cycle calculator that finds your ideal bedtime or wake-up time based on 90-minute natural sleep cycles. Includes a personalized sleep assessment, sleep score, and custom 7-day sleep protocol.',
+          url: 'https://sleepsmarter.io',
+        }}
       />
       {/* Header */}
       <header className="border-b border-[#4a4e69]/30">

@@ -26,6 +26,8 @@ interface SEOProps {
   author?: string
   faqs?: FAQ[]
   breadcrumbs?: BreadcrumbItem[]
+  includeOrganization?: boolean
+  softwareApp?: { name: string; description: string; url: string }
   schema?: object
 }
 
@@ -45,6 +47,8 @@ export default function SEO({
   author = 'Sleep Smarter Editorial Team',
   faqs,
   breadcrumbs,
+  includeOrganization = false,
+  softwareApp,
   schema,
 }: SEOProps) {
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`
@@ -85,6 +89,42 @@ export default function SEO({
     description,
   } : null
 
+  const organizationSchema = includeOrganization ? {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/favicon.ico`,
+    },
+    sameAs: [
+      'https://twitter.com/sleepsmarter',
+    ],
+  } : null
+
+  const softwareAppSchema = softwareApp ? {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: softwareApp.name,
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Web',
+    url: softwareApp.url,
+    description: softwareApp.description,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    featureList: [
+      'Bedtime calculator based on 90-minute sleep cycles',
+      'Wake-up time calculator',
+      'Personalized sleep assessment',
+      'Sleep score and persona analysis',
+      'Custom 7-day sleep protocol',
+    ],
+  } : null
+
   const faqSchema = faqs && faqs.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -112,6 +152,8 @@ export default function SEO({
   // Combine multiple schemas using @graph when needed
   const schemas = [
     schema || articleSchema || websiteSchema,
+    organizationSchema,
+    softwareAppSchema,
     faqSchema,
     breadcrumbSchema,
   ].filter(Boolean)
