@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async'
 import './index.css'
 import App from './App.tsx'
 import About from './pages/About.tsx'
@@ -33,7 +32,6 @@ initGA4()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HelmetProvider>
     <BrowserRouter>
       <ScrollToTop />
       <CookieBanner />
@@ -63,6 +61,5 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/lp/sleep-products" element={<SleepProductsLanding />} />
       </Routes>
     </BrowserRouter>
-    </HelmetProvider>
   </StrictMode>,
 )

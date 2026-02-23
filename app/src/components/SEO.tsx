@@ -1,4 +1,8 @@
-import { Helmet } from 'react-helmet-async'
+/**
+ * SEO Component — uses React 19's native <head> tag hoisting
+ * React 19 automatically moves <title>, <meta>, <link> to <head>
+ * No external library needed.
+ */
 
 interface SEOProps {
   title: string
@@ -35,7 +39,6 @@ export default function SEO({
     ? image.startsWith('http') ? image : `${SITE_URL}${image}`
     : DEFAULT_IMAGE
 
-  // Build Article schema for blog posts
   const articleSchema = type === 'article' && datePublished ? {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -53,10 +56,6 @@ export default function SEO({
       '@type': 'Organization',
       name: SITE_NAME,
       url: SITE_URL,
-      logo: {
-        '@type': 'ImageObject',
-        url: `${SITE_URL}/favicon.ico`,
-      },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -64,25 +63,19 @@ export default function SEO({
     },
   } : null
 
-  // Website schema for homepage
   const websiteSchema = type === 'website' ? {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: SITE_NAME,
     url: SITE_URL,
     description,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${SITE_URL}/blog?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
   } : null
 
   const activeSchema = schema || articleSchema || websiteSchema
 
+  // React 19 natively hoists these tags to <head>
   return (
-    <Helmet>
-      {/* Core */}
+    <>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
@@ -96,7 +89,6 @@ export default function SEO({
       {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
       <meta property="og:site_name" content={SITE_NAME} />
 
-      {/* Article-specific OG */}
       {type === 'article' && datePublished && (
         <meta property="article:published_time" content={datePublished} />
       )}
@@ -116,6 +108,6 @@ export default function SEO({
           {JSON.stringify(activeSchema)}
         </script>
       )}
-    </Helmet>
+    </>
   )
 }
