@@ -4,6 +4,16 @@
  * No external library needed.
  */
 
+interface FAQ {
+  question: string
+  answer: string
+}
+
+interface BreadcrumbItem {
+  name: string
+  url: string
+}
+
 interface SEOProps {
   title: string
   description: string
@@ -14,6 +24,8 @@ interface SEOProps {
   datePublished?: string
   dateModified?: string
   author?: string
+  faqs?: FAQ[]
+  breadcrumbs?: BreadcrumbItem[]
   schema?: object
 }
 
@@ -31,6 +43,8 @@ export default function SEO({
   datePublished,
   dateModified,
   author = 'Sleep Smarter Editorial Team',
+  faqs,
+  breadcrumbs,
   schema,
 }: SEOProps) {
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`
@@ -71,7 +85,40 @@ export default function SEO({
     description,
   } : null
 
-  const activeSchema = schema || articleSchema || websiteSchema
+  const faqSchema = faqs && faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null
+
+  const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  } : null
+
+  // Combine multiple schemas using @graph when needed
+  const schemas = [
+    schema || articleSchema || websiteSchema,
+    faqSchema,
+    breadcrumbSchema,
+  ].filter(Boolean)
+
+  const activeSchema = schemas.length > 1
+    ? { '@context': 'https://schema.org', '@graph': schemas.map(s => { const { '@context': _, ...rest } = s as any; return rest }) }
+    : schemas[0] || null
 
   // React 19 natively hoists these tags to <head>
   return (

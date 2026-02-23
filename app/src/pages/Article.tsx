@@ -82,6 +82,12 @@ export default function Article() {
         imageAlt={article.featuredImageAlt}
         datePublished={isoDate}
         dateModified={isoDate}
+        faqs={article.faqs}
+        breadcrumbs={[
+          { name: 'Home', url: 'https://sleepsmarter.io/' },
+          { name: 'Blog', url: 'https://sleepsmarter.io/blog' },
+          { name: article.title, url: `https://sleepsmarter.io/blog/${article.slug}` },
+        ]}
       />
       {/* Header */}
       <header className="border-b border-[#4a4e69]/30">
@@ -268,6 +274,24 @@ export default function Article() {
             Use Sleep Calculator
           </Link>
         </div>
+
+        {/* FAQ Section */}
+        {article.faqs && article.faqs.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-xl font-semibold text-[#a8dadc] mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-4">
+              {article.faqs.map((faq, index) => (
+                <details key={index} className="group bg-[#16213e] rounded-xl border border-[#4a4e69]/30 p-5 cursor-pointer">
+                  <summary className="font-medium text-[#f1faee] list-none flex items-center justify-between gap-4">
+                    <span>{faq.question}</span>
+                    <span className="text-[#a8dadc] text-lg flex-shrink-0 group-open:rotate-45 transition-transform">+</span>
+                  </summary>
+                  <p className="mt-3 text-[#f1faee]/70 leading-relaxed text-sm">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Author Bio */}
         <div className="mt-12 p-6 bg-[#16213e] rounded-xl border border-[#4a4e69]/30">
