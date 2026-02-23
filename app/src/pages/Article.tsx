@@ -3,6 +3,21 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { articles } from '../data/articles'
 import ProductCard from '../components/ProductCard'
+import SEO from '../components/SEO'
+
+// Convert human-readable date to ISO format for schema
+function toISODate(date: string): string {
+  const months: Record<string, string> = {
+    'January': '01', 'February': '02', 'March': '03', 'April': '04',
+    'May': '05', 'June': '06', 'July': '07', 'August': '08',
+    'September': '09', 'October': '10', 'November': '11', 'December': '12',
+  }
+  const parts = date.split(' ')
+  if (parts.length === 2 && months[parts[0]]) {
+    return `${parts[1]}-${months[parts[0]]}-01`
+  }
+  return '2026-02-04'
+}
 
 interface ProductCardData {
   badge?: string
@@ -54,8 +69,20 @@ export default function Article() {
   // Split content by product card markers
   const contentSegments = cleanContent.split(/<!--\s*PRODUCT_CARD\s*[\s\S]*?-->/)
 
+  const isoDate = toISODate(article.date)
+
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title={article.title}
+        description={article.description}
+        canonical={`/blog/${article.slug}`}
+        type="article"
+        image={article.featuredImage}
+        imageAlt={article.featuredImageAlt}
+        datePublished={isoDate}
+        dateModified={isoDate}
+      />
       {/* Header */}
       <header className="border-b border-[#4a4e69]/30">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -85,10 +112,17 @@ export default function Article() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-4">
           {article.title}
         </h1>
-        <div className="flex items-center gap-4 text-sm text-[#f1faee]/50 mb-8">
-          <span>{article.date}</span>
+        <div className="flex flex-wrap items-center gap-3 text-sm text-[#f1faee]/50 mb-8">
+          <div className="flex items-center gap-2">
+            <span className="text-[#a8dadc]">✍️</span>
+            <span>Sleep Smarter Editorial Team</span>
+          </div>
+          <span>•</span>
+          <time dateTime={isoDate}>{article.date}</time>
           <span>•</span>
           <span>{article.readTime}</span>
+          <span>•</span>
+          <span className="text-[#a8dadc]/70">Last reviewed: {article.date}</span>
         </div>
 
         {/* Featured Image */}
@@ -235,7 +269,23 @@ export default function Article() {
           </Link>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-[#4a4e69]/30">
+        {/* Author Bio */}
+        <div className="mt-12 p-6 bg-[#16213e] rounded-xl border border-[#4a4e69]/30">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-[#4a4e69] rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-xl">😴</span>
+            </div>
+            <div>
+              <p className="font-semibold text-[#f1faee] mb-1">Sleep Smarter Editorial Team</p>
+              <p className="text-sm text-[#f1faee]/60 leading-relaxed">
+                Our editorial team researches and writes evidence-based sleep content grounded in peer-reviewed science. 
+                All articles reference established sleep research from sources including the NIH, AASM, and Sleep Foundation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-[#4a4e69]/30">
           <Link to="/blog" className="text-[#a8dadc] hover:underline">← Back to Blog</Link>
         </div>
       </div>

@@ -1,6 +1,7 @@
 # Google Ads Campaign Draft v1 — LAUNCH READY
 **Date:** February 21, 2026  
-**Budget:** $25-50/day ($750-1,500/month)  
+**Budget:** $20/day per campaign — confirmed by Jason Feb 22  
+**Total at Full Scale:** $40/day ($1,200/month) once both campaigns live  
 **Account:** 736-981-9054  
 **Conversion ID:** AW-17966119562  
 
@@ -10,7 +11,7 @@
 
 Per Manus compliance research: **new accounts need a warming period.** Start with ONE campaign, ONE landing page, $25-50/day for the first 2 weeks. Don't launch all pages at once — build account trust first.
 
-**Phase A (Weeks 1-2):** Single campaign → `/lp/sleep-calculator` only, $25-50/day  
+**Phase A (Weeks 1-2):** Single campaign → `/lp/sleep-calculator` only, $20/day  
 **Phase B (Weeks 3-4):** Add Sleep Problems campaign → `/lp/sleep-tips`, scale budget  
 **Phase C (Month 2+):** Add product/comparison campaigns → `/lp/sleep-products`
 
@@ -18,7 +19,7 @@ Starting with calculator keywords because they have the lowest CPCs ($1.40-$3.20
 
 ---
 
-## Campaign 1: Sleep Calculator (LAUNCH FIRST — $25-50/day, Weeks 1-2)
+## Campaign 1: Sleep Calculator (LAUNCH FIRST — $20/day, Weeks 1-2)
 
 **Objective:** Leads (email signups via calculator)  
 **Bidding:** Manual CPC for first 2 weeks → Maximize Conversions after 15 conversions  

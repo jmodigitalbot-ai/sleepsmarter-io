@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom'
 import SleepCalculator from './components/SleepCalculator'
+import SEO from './components/SEO'
 
 function App() {
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="Sleep Smarter — Free Sleep Calculator & Bedtime Optimizer"
+        description="Calculate your ideal bedtime or wake-up time based on natural 90-minute sleep cycles. Free sleep calculator, personalized sleep assessment, and science-backed tips."
+        canonical="/"
+        type="website"
+      />
       {/* Header */}
       <header className="border-b border-[#4a4e69]/30">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
