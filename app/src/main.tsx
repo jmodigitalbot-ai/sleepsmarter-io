@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import About from './pages/About.tsx'
@@ -20,6 +20,7 @@ import OTOMasterclass from './pages/OTOMasterclass.tsx'
 import OTOPremium from './pages/OTOPremium.tsx'
 import OTOInsider from './pages/OTOInsider.tsx'
 import PurchaseThankYou from './pages/PurchaseThankYou.tsx'
+import Blueprint from './pages/Blueprint.tsx'
 import SleepCalculatorLanding from './pages/landing/SleepCalculatorLanding.tsx'
 import SleepTipsLanding from './pages/landing/SleepTipsLanding.tsx'
 import SleepProductsLanding from './pages/landing/SleepProductsLanding.tsx'
@@ -57,7 +58,7 @@ const ui = (
         <Route path="/oto/premium" element={<OTOPremium />} />
         <Route path="/oto/insider" element={<OTOInsider />} />
         <Route path="/purchase-complete" element={<PurchaseThankYou />} />
-        <Route path="/blueprint" element={<Navigate to="/thank-you" replace />} />
+        <Route path="/blueprint" element={<Blueprint />} />
         {/* Landing Pages */}
         <Route path="/lp/sleep-calculator" element={<SleepCalculatorLanding />} />
         <Route path="/lp/sleep-tips" element={<SleepTipsLanding />} />
