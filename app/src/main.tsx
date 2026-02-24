@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
@@ -30,7 +30,10 @@ import { initGA4 } from './lib/analytics'
 // Initialize analytics
 initGA4()
 
-createRoot(document.getElementById('root')!).render(
+const rootEl = document.getElementById('root')!
+const isPrerendered = rootEl.hasAttribute('data-prerendered')
+
+const ui = (
   <StrictMode>
     <BrowserRouter>
       <ScrollToTop />
@@ -61,5 +64,11 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/lp/sleep-products" element={<SleepProductsLanding />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
+
+if (isPrerendered) {
+  hydrateRoot(rootEl, ui)
+} else {
+  createRoot(rootEl).render(ui)
+}
