@@ -16,6 +16,7 @@ export default function SleepCalculator() {
   const [mode, setMode] = useState<Mode>('wakeup')
   const [time, setTime] = useState('07:00')
   const [results, setResults] = useState<SleepTime[]>([])
+  const [copied, setCopied] = useState(false)
 
   const CYCLE_MINUTES = 90
   const FALL_ASLEEP_MINUTES = 14
@@ -86,6 +87,40 @@ export default function SleepCalculator() {
       case 'good': return 'Good'
       case 'minimum': return 'Minimum'
       default: return ''
+    }
+  }
+
+  const formatTimeDisplay = (timeStr: string): string => {
+    const [hours, minutes] = timeStr.split(':').map(Number)
+    const date = new Date()
+    date.setHours(hours, minutes)
+    return date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })
+  }
+
+  const handleShare = () => {
+    const optimalResult = results.find(r => r.quality === 'optimal') || results[0]
+    const shareText = mode === 'wakeup'
+      ? `I need to wake up at ${formatTimeDisplay(time)}, so my optimal bedtime is ${optimalResult.time} (based on sleep cycles). Calculate yours free 😴`
+      : `Going to bed at ${formatTimeDisplay(time)}? Your optimal wake time is ${optimalResult.time} to feel actually rested. Try the calculator 😴`
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText + '\n\n→ https://www.sleepsmarter.io')}`
+    window.open(twitterUrl, '_blank')
+  }
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText('https://www.sleepsmarter.io')
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // Fallback for browsers that don't support clipboard API
+      const el = document.createElement('textarea')
+      el.value = 'https://www.sleepsmarter.io'
+      document.body.appendChild(el)
+      el.select()
+      document.execCommand('copy')
+      document.body.removeChild(el)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
     }
   }
 
@@ -166,6 +201,27 @@ export default function SleepCalculator() {
             💡 Tip: Choose green (optimal) or blue (good) for the best results. 
             Yellow (minimum) should only be used occasionally.
           </p>
+
+          {/* Share Results */}
+          <div className="mt-4 pt-4 border-t border-[#4a4e69]/30">
+            <p className="text-xs text-[#f1faee]/50 mb-3 text-center">
+              Know someone who wakes up exhausted every morning?
+            </p>
+            <div className="flex gap-2">
+              <button
+                onClick={handleShare}
+                className="flex-1 flex items-center justify-center gap-2 bg-[#1a1a2e] hover:bg-[#4a4e69]/30 border border-[#4a4e69]/50 text-[#f1faee]/70 hover:text-[#f1faee] text-sm py-2.5 rounded-lg transition"
+              >
+                <span className="font-bold">𝕏</span> Share Results
+              </button>
+              <button
+                onClick={handleCopyLink}
+                className="flex-1 flex items-center justify-center gap-2 bg-[#1a1a2e] hover:bg-[#4a4e69]/30 border border-[#4a4e69]/50 text-[#f1faee]/70 hover:text-[#f1faee] text-sm py-2.5 rounded-lg transition"
+              >
+                {copied ? '✓ Copied!' : '🔗 Copy Link'}
+              </button>
+            </div>
+          </div>
 
           {/* Assessment Prompt */}
           <div className="mt-6 bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-6">
