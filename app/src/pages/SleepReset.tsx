@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
 
 export default function SleepReset() {
@@ -14,6 +14,8 @@ export default function SleepReset() {
   const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
     trackCheckoutClick(buttonText, buttonLocation, 'tripwire')
   }
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -506,12 +508,11 @@ export default function SleepReset() {
         </div>
 
         {/* ============================================ */}
-        {/* SECTION 13: FAQ                              */}
-        {/* v5: Added medications + access FAQs          */}
+        {/* SECTION 13: FAQ — Accordion                  */}
         {/* ============================================ */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-[#f1faee] mb-10 text-center">Common Questions</h3>
-          <div className="space-y-5 max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto divide-y divide-[#4a4e69]/30 border border-[#4a4e69]/30 rounded-xl overflow-hidden">
             {[
               {
                 q: "I've tried everything. Why would this be different?",
@@ -541,10 +542,20 @@ export default function SleepReset() {
                 q: "How long do I have access?",
                 a: "Forever. It's a download — no expiration, no subscription, no renewal required."
               },
-            ].map(({ q, a }) => (
-              <div key={q} className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
-                <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">{q}</h4>
-                <p className="text-[#f1faee]/80 text-lg">{a}</p>
+            ].map(({ q, a }, i) => (
+              <div key={q} className="bg-[#16213e]">
+                <button
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[#1e2a40] transition-colors"
+                >
+                  <span className="text-[#f1faee] font-semibold text-lg">{q}</span>
+                  <span className={`text-[#a8dadc] text-2xl flex-shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
+                </button>
+                {openFaq === i && (
+                  <div className="px-6 pb-5">
+                    <p className="text-[#f1faee]/80 text-lg leading-relaxed">{a}</p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
