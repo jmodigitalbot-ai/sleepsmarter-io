@@ -510,7 +510,7 @@ export default function SleepReset() {
         {/* ============================================ */}
         {/* SECTION 13: FAQ — Accordion                  */}
         {/* ============================================ */}
-        <div className="mb-16">
+        <div id="faq" className="mb-16">
           <h3 className="text-3xl font-bold text-[#f1faee] mb-10 text-center">Common Questions</h3>
           <div className="max-w-4xl mx-auto divide-y divide-[#4a4e69]/30 border border-[#4a4e69]/30 rounded-xl overflow-hidden">
             {[
