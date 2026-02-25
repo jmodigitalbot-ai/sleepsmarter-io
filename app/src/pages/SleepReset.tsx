@@ -148,7 +148,7 @@ export default function SleepReset() {
         {/* v5: Simplified science (was 5 points → 3)    */}
         {/* Compliance: "astronaut circadian research"    */}
         {/* ============================================ */}
-        <div className="mb-12 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border border-[#4a4e69]/50 rounded-2xl p-8 md:p-10">
+        <div id="how-it-works" className="mb-12 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border border-[#4a4e69]/50 rounded-2xl p-8 md:p-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-6">
             How It Works — <span className="text-[#a8dadc]">Three Things, In Order</span>
           </h2>
@@ -435,7 +435,7 @@ export default function SleepReset() {
         {/* ============================================ */}
         {/* SECTION 11: VALUE STACK                      */}
         {/* ============================================ */}
-        <div className="mb-16 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
+        <div id="whats-included" className="mb-16 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
           <h3 className="text-3xl font-bold text-[#f1faee] mb-4 text-center">Everything You Get</h3>
           <p className="text-lg text-[#f1faee]/70 mb-8 text-center">
             Instant digital download. No app, no account, no subscription.
@@ -494,7 +494,7 @@ export default function SleepReset() {
         {/* ============================================ */}
         {/* SECTION 12: GUARANTEE                        */}
         {/* ============================================ */}
-        <div className="mb-16 bg-green-500/5 border-2 border-green-500/30 rounded-2xl p-8 text-center">
+        <div id="guarantee" className="mb-16 bg-green-500/5 border-2 border-green-500/30 rounded-2xl p-8 text-center">
           <div className="text-5xl mb-6">🛡️</div>
           <h3 className="text-3xl font-bold text-green-400 mb-6">
             60-Day "Reliable Sleep or Full Refund" Guarantee
