@@ -153,6 +153,18 @@ curl -s -H "X-Kit-Api-Key: kit_c220d830a832b75e0987a95c31e2c6b5" "https://api.ki
 - Personalization tags are preserved for dynamic content
 - The API successfully handled all 31 emails without rate limiting issues
 
+## Updates
+
+### 2026-02-24
+- **Email 31 (Day 31) added manually in Kit UI by Jason** — 3-question feedback survey (hit-reply format)
+  - Subject: TBD (Jason added directly)
+  - Purpose: Post-sequence feedback + referral signal
+  - Questions: (1) biggest sleep win, (2) remaining challenges, (3) did you share the calculator?
+- **Email 7 (Day 7) updated** — P.S. share prompt added with UTM link
+  - Subject confirmed: `The protocol that changed everything for me`
+  - UTM: `https://sleepsmarter.io/calculator?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day07-share-prompt`
+- **⚠️ NOTE:** Local file numbering in KIT-COPY-PASTE-GUIDE.md is off by one vs actual Kit sequence. Always verify by subject line, not position number.
+
 ---
-**Last Updated:** 2026-02-10 20:50 EST  
-**Status:** ✅ Emails loaded, awaiting delay configuration in UI
+**Last Updated:** 2026-02-24 09:30 EST  
+**Status:** ✅ 32 emails in sequence (Days 0-31). Flywheel Phase 1 complete.

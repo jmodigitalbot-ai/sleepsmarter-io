@@ -22,75 +22,49 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'sleep-blueprint-pdf-generator' });
 });
 
+// Shared PDF generation helper
+async function generatePdf({ firstName, email, calculatorData, assessmentData }) {
+  const timestamp = Date.now();
+  const filename = `sleep-blueprint-${timestamp}-${email.replace(/[^a-zA-Z0-9]/g, '-')}.pdf`;
+  const filepath = path.join(pdfDir, filename);
+  const generationDate = new Date().toLocaleDateString('en-US', {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+  });
+
+  const html = buildHtml({ firstName, email, calculatorData, assessmentData, generationDate });
+
+  let browser;
+  try {
+    browser = await puppeteer.launch({
+      headless: true,
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+    });
+    const page = await browser.newPage();
+    await page.setContent(html, { waitUntil: 'networkidle0' });
+    await page.emulateMediaType('screen');
+    await page.pdf({
+      path: filepath,
+      format: 'A4',
+      printBackground: true,
+      margin: { top: '40px', right: '40px', bottom: '40px', left: '40px' }
+    });
+  } finally {
+    if (browser) await browser.close();
+  }
+
+  const serviceUrl = process.env.SERVICE_URL || '';
+  return { filename, downloadUrl: `${serviceUrl}/download/${filename}` };
+}
+
 // Generate PDF endpoint
 app.post('/generate-blueprint', async (req, res) => {
   try {
-    const {
-      firstName = 'Sleep Smarter User',
-      email,
-      calculatorData,
-      assessmentData
-    } = req.body;
+    const { firstName = 'Sleep Smarter User', email, calculatorData, assessmentData } = req.body;
+    if (!email) return res.status(400).json({ error: 'Email is required' });
 
-    if (!email) {
-      return res.status(400).json({ error: 'Email is required' });
-    }
-
-    // Generate unique filename
-    const timestamp = Date.now();
-    const filename = `sleep-blueprint-${timestamp}-${email.replace(/[^a-zA-Z0-9]/g, '-')}.pdf`;
-    const filepath = path.join(pdfDir, filename);
-
-    const generationDate = new Date().toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-
-    const html = buildHtml({
-      firstName,
-      email,
-      calculatorData,
-      assessmentData,
-      generationDate
-    });
-
-    let browser;
-    try {
-      browser = await puppeteer.launch({
-        headless: true,
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
-      });
-
-      const page = await browser.newPage();
-      await page.setContent(html, { waitUntil: 'networkidle0' });
-      await page.emulateMediaType('screen');
-
-      await page.pdf({
-        path: filepath,
-        format: 'A4',
-        printBackground: true,
-        margin: {
-          top: '40px',
-          right: '40px',
-          bottom: '40px',
-          left: '40px'
-        }
-      });
-
-      res.json({
-        success: true,
-        filename,
-        downloadUrl: `/download/${filename}`,
-        message: 'PDF generated successfully'
-      });
-    } finally {
-      if (browser) {
-        await browser.close();
-      }
-    }
+    const result = await generatePdf({ firstName, email, calculatorData, assessmentData });
+    res.json({ success: true, ...result, message: 'PDF generated successfully' });
   } catch (error) {
     console.error('PDF generation error:', error);
     res.status(500).json({ error: 'Internal server error' });
@@ -922,8 +896,119 @@ function buildHtml(data) {
   `;
 }
 
-// Start server
+// ─── Kit Webhook Handler ────────────────────────────────────────────────────
+
+const parseJSONField = (fieldValue, fallback) => {
+  if (!fieldValue) return fallback;
+  try {
+    return typeof fieldValue === 'string' ? JSON.parse(fieldValue) : fieldValue;
+  } catch (err) {
+    console.warn('Failed to parse JSON field:', err.message);
+    return fallback;
+  }
+};
+
+// Kit webhook endpoint — fires on new subscriber activation
+app.post('/webhook/kit', async (req, res) => {
+  try {
+    const { body } = req;
+    console.log('Received Kit webhook:', JSON.stringify(body, null, 2));
+
+    const {
+      subscriber: {
+        email_address,
+        first_name,
+        fields = {}
+      }
+    } = body;
+
+    if (!email_address) {
+      return res.status(400).json({ error: 'No email address provided' });
+    }
+
+    // Parse calculator data
+    let calculatorData = null;
+    if (fields.calculator_mode) {
+      calculatorData = {
+        mode: fields.calculator_mode,
+        targetTime: fields.target_time,
+        results: parseJSONField(fields.results_json, [])
+      };
+    }
+
+    // Parse assessment data
+    let assessmentData = null;
+    const assessmentPayload =
+      parseJSONField(fields.assessment_data_json, null) ||
+      parseJSONField(fields.assessment_data, null) ||
+      parseJSONField(fields.full_assessment_data, null);
+
+    if (assessmentPayload) {
+      assessmentData = assessmentPayload;
+    } else if (fields.sleep_persona) {
+      assessmentData = {
+        personaId: fields.sleep_persona,
+        personaName: fields.persona_name,
+        confidence: parseInt(fields.persona_confidence, 10) || 0,
+        recommendations: parseJSONField(fields.persona_recommendations, []),
+        overallSleepScore: parseInt(fields.overall_sleep_score, 10) || undefined,
+        categoryScores: parseJSONField(fields.category_scores, undefined),
+        executiveSummary: fields.executive_summary,
+        primaryChallenge: fields.primary_challenge,
+        quickWins: parseJSONField(fields.quick_wins, undefined),
+        sevenDayProtocol: parseJSONField(fields.seven_day_protocol, undefined),
+        sleepSchedule: parseJSONField(fields.sleep_schedule, undefined)
+      };
+    }
+
+    // Generate PDF using shared helper
+    const result = await generatePdf({
+      firstName: first_name || 'Sleep Smarter User',
+      email: email_address,
+      calculatorData,
+      assessmentData
+    });
+    console.log(`PDF generated for ${email_address}: ${result.downloadUrl}`);
+
+    // Return 200 always — Kit retries on non-2xx
+    res.json({ success: true, message: 'PDF generated', ...result });
+
+  } catch (error) {
+    console.error('Webhook error:', error.message);
+    res.status(200).json({
+      success: false,
+      error: error.message,
+      note: 'Error logged, webhook acknowledged to prevent retries'
+    });
+  }
+});
+
+// Test endpoint — manual trigger for QA
+app.post('/test/generate', async (req, res) => {
+  try {
+    const { firstName, email, calculatorData, assessmentData } = req.body;
+    if (!email) return res.status(400).json({ error: 'Email is required' });
+
+    const result = await generatePdf({
+      firstName: firstName || 'Test User',
+      email,
+      calculatorData,
+      assessmentData
+    });
+    res.json({ success: true, ...result });
+  } catch (error) {
+    console.error('Test generation error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// ─── Start Server ────────────────────────────────────────────────────────────
+
 app.listen(PORT, () => {
-  console.log(`PDF Generator running on port ${PORT}`);
-  console.log(`Health check: http://localhost:${PORT}/health`);
+  console.log(`Sleep Blueprint PDF Service running on port ${PORT}`);
+  console.log(`Health:    GET  /health`);
+  console.log(`Generate:  POST /generate-blueprint`);
+  console.log(`Webhook:   POST /webhook/kit`);
+  console.log(`Lookup:    GET  /lookup?email=...`);
+  console.log(`Download:  GET  /download/:filename`);
 });

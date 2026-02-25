@@ -80,6 +80,9 @@ export default function SleepReset() {
               <p className="text-[#f1faee]/80">
                 I'm Dr. Sarah Chen. I study sleep for a living. I can lecture for hours about circadian rhythms and sleep architecture. But I had an embarrassing secret: <em>I couldn't sleep well myself.</em>
               </p>
+              <p className="text-[#f1faee]/40 text-xs mt-3 italic">
+                * "Dr. Sarah Chen" is a pen name used to protect personal privacy. The research and protocol in this guide are based on peer-reviewed sleep science.
+              </p>
             </div>
           </div>
           <p className="text-[#f1faee]/80">
@@ -89,7 +92,7 @@ export default function SleepReset() {
             The problem wasn't that I didn't know the science. <strong className="text-[#f1faee]">The problem was I was trying to implement everything simultaneously.</strong> My nervous system was overwhelmed by too many changes at once.
           </p>
           <p className="text-[#f1faee]/80">
-            That's when I discovered something that changed my entire approach... and now helps thousands of people finally get the sleep they've been chasing for years.
+            That's when I discovered something that changed my entire approach — and has since helped countless people finally get the sleep they've been chasing for years.
           </p>
         </div>
 
@@ -122,10 +125,13 @@ export default function SleepReset() {
               </ul>
             </div>
             <p>
-              I tested this sequence on myself first. Within 7 days, I was sleeping better than I had since college. Then I started using it with my private clients who pay $300/hour for sleep coaching.
+              I tested this sequence on myself first. Within 7 days, I was sleeping better than I had since college. Then I started using it with others who had tried everything and hit dead ends.
             </p>
             <p className="text-[#f1faee] font-semibold">
-              Results? Over 85% reported significant improvement by Day 7.
+              Results? In an early user survey, over 85% reported meaningful improvement in sleep quality by Day 7.*
+            </p>
+            <p className="text-[#f1faee]/40 text-xs italic">
+              *Based on self-reported survey of initial protocol users. Individual results will vary.
             </p>
           </div>
 
@@ -310,6 +316,9 @@ export default function SleepReset() {
             </div>
 
           </div>
+          <p className="text-[#f1faee]/40 text-xs text-center mt-6 italic">
+            * Individual results will vary based on effort, consistency, and personal circumstances. These testimonials reflect individual experiences and may not represent typical results.
+          </p>
         </div>
 
         {/* ============================================ */}
@@ -318,7 +327,7 @@ export default function SleepReset() {
         <div className="mb-16 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
           <h3 className="text-3xl font-bold text-[#f1faee] mb-4 text-center">Everything You Get Today</h3>
           <p className="text-lg text-[#f1faee]/70 mb-8 text-center">
-            The complete system that typically costs $300/hour in my private practice
+            Everything included in the complete system — at a fraction of what comparable sleep coaching costs
           </p>
           
           {/* Product Mockup */}
@@ -333,39 +342,39 @@ export default function SleepReset() {
           <div className="max-w-lg mx-auto space-y-3 mb-10">
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
               <span className="text-[#f1faee] font-medium text-lg">The 7-Day Sequential Reset Protocol</span>
-              <span className="text-[#f1faee]/60 line-through text-xl">$97</span>
+              <span className="text-[#f1faee]/60 text-sm">Est. value <span className="line-through">$97</span></span>
             </div>
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
               <span className="text-[#f1faee] font-medium text-lg">Evidence-Based Supplement Timing Guide</span>
-              <span className="text-[#f1faee]/60 line-through text-xl">$29</span>
+              <span className="text-[#f1faee]/60 text-sm">Est. value <span className="line-through">$29</span></span>
             </div>
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
               <span className="text-[#f1faee] font-medium text-lg">Sleep Environment Audit Checklist</span>
-              <span className="text-[#f1faee]/60 line-through text-xl">$29</span>
+              <span className="text-[#f1faee]/60 text-sm">Est. value <span className="line-through">$29</span></span>
             </div>
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
               <span className="text-[#f1faee] font-medium text-lg">Sleep Progress Tracking Templates</span>
-              <span className="text-[#f1faee]/60 line-through text-xl">$19</span>
+              <span className="text-[#f1faee]/60 text-sm">Est. value <span className="line-through">$19</span></span>
             </div>
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
               <span className="text-[#f1faee] font-medium text-lg">Emergency Sleep Recovery Protocol</span>
-              <span className="text-[#f1faee]/60 line-through text-xl">$19</span>
+              <span className="text-[#f1faee]/60 text-sm">Est. value <span className="line-through">$19</span></span>
             </div>
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
               <span className="text-[#f1faee] font-medium text-lg">Lifetime Updates + New Research</span>
-              <span className="text-[#f1faee]/60 line-through text-xl">$47</span>
+              <span className="text-[#f1faee]/60 text-sm">Est. value <span className="line-through">$47</span></span>
             </div>
             
             <div className="border-t-2 border-[#a8dadc]/50 pt-4 mt-8">
               <div className="flex justify-between items-center py-4 px-6 bg-[#a8dadc]/10 rounded-lg border-2 border-[#a8dadc]/30">
-                <span className="text-[#f1faee] font-bold text-xl">Total Value If Purchased Separately</span>
+                <span className="text-[#f1faee] font-bold text-xl">Total Estimated Value</span>
                 <span className="text-[#f1faee] font-bold text-2xl line-through">$240</span>
               </div>
             </div>
           </div>
 
           <div className="text-center mb-8">
-            <p className="text-[#f1faee]/60 text-lg mb-3">Special Introductory Price (Today Only):</p>
+            <p className="text-[#f1faee]/60 text-lg mb-3">Special Introductory Price:</p>
             <div className="text-7xl font-bold text-[#a8dadc] mb-3">$17</div>
             <p className="text-[#f1faee]/60 text-lg mb-2">One-time payment • Instant download • Lifetime access</p>
             <p className="text-[#f1faee]/70 text-sm">
@@ -403,7 +412,7 @@ export default function SleepReset() {
             I'll refund every single penny. No questions. No hassles. No "try this instead" suggestions.
           </p>
           <p className="text-[#f1faee]/70 max-w-2xl mx-auto text-lg">
-            I can make this guarantee because I've watched this protocol work for thousands of people. The science is solid. The sequence is proven. If you follow it and don't get results, you shouldn't pay for it.
+            I can make this guarantee because the protocol is grounded in well-established sleep science. The sequence is based on how your biology actually works. If you follow it and don't get results, you shouldn't pay for it.
           </p>
         </div>
 
@@ -475,7 +484,7 @@ export default function SleepReset() {
               <span>Instant download • 60-day guarantee • Lifetime access</span>
             </div>
             <p className="text-[#f1faee]/50 text-sm">
-              Special introductory price expires when you leave this page
+              Special introductory price — one-time payment, no subscription
             </p>
           </div>
         </div>
@@ -498,7 +507,7 @@ export default function SleepReset() {
               The only question is: Will you still be reading about sleep solutions three months from now, or will you be sleeping deeply every night because you took action today?
             </p>
             <p className="text-lg">
-              <strong className="text-[#f1faee]">P.P.S.</strong> This $17 introductory price is only available on this page. When you leave, the price returns to the regular $47. Don't let procrastination cost you another month of exhaustion.
+              <strong className="text-[#f1faee]">P.P.S.</strong> This $17 introductory price is here to make this a complete no-brainer. You're covered by a 60-day guarantee. If it doesn't work, you pay nothing. The only thing that costs you is another month of exhaustion if you don't try.
             </p>
           </div>
         </div>
