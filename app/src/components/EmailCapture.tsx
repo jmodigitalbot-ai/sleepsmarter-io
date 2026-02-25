@@ -119,30 +119,45 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
 
   // Success redirect now happens immediately in handleSubmit
 
+  // Dynamic hook copy based on available data
+  const hookTitle = assessmentData
+    ? 'Your Sleep Score Reveals the Problem'
+    : calculatorData
+    ? 'Step 2: Your Personalized Fix Plan'
+    : 'Get Your Personalized Sleep Plan'
+
+  const hookDescription = assessmentData ? (
+    <>
+      Your <strong className="text-[#a8dadc]">{assessmentData.personaName}</strong> profile reveals
+      why you're not sleeping well. Your free blueprint is the step-by-step fix — personalized to
+      your assessment results and delivered instantly to your inbox.
+    </>
+  ) : calculatorData ? (
+    <>
+      You've got your sleep times. Now get the <strong className="text-[#a8dadc]">7-day protocol</strong> to
+      actually make them stick — personalized to your schedule and sent free to your inbox.
+    </>
+  ) : (
+    <>
+      Get a personalized 7-day sleep protocol based on your results — delivered free to your inbox.
+    </>
+  )
+
+  const buttonLabel = status === 'loading'
+    ? 'Sending...'
+    : assessmentData
+    ? 'Get My Blueprint →'
+    : 'Get My Fix Plan →'
+
   return (
-    <div className="mt-6 bg-[#1a1a2e] border border-[#4a4e69]/30 rounded-xl p-6">
+    <div className="mt-6 bg-[#1a1a2e] border border-[#a8dadc]/20 rounded-xl p-6">
       <div className="text-center mb-4">
-        <span className="text-2xl mb-2 block">📋</span>
+        <span className="text-2xl mb-2 block">📊</span>
         <h3 className="text-lg font-semibold text-[#a8dadc] mb-1">
-          Get Your Personalized Sleep Blueprint
+          {hookTitle}
         </h3>
-        <p className="text-[#f1faee]/60 text-sm">
-          {assessmentData ? (
-            <>
-              Get your personalized blueprint with custom schedule and {assessmentData.personaName}-specific 
-              recommendations — free.
-            </>
-          ) : calculatorData ? (
-            <>
-              Your custom schedule based on these results, plus a 7-day protocol 
-              to improve your sleep quality — free.
-            </>
-          ) : (
-            <>
-              Get a custom sleep schedule and 7-day protocol to improve your 
-              sleep quality — free.
-            </>
-          )}
+        <p className="text-[#f1faee]/70 text-sm">
+          {hookDescription}
         </p>
       </div>
 
@@ -170,7 +185,7 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
           disabled={status === 'loading'}
           className="bg-[#a8dadc] hover:bg-[#8bc9cc] text-[#1a1a2e] font-semibold px-6 py-3 rounded-lg transition text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {status === 'loading' ? 'Sending...' : 'Get My Blueprint →'}
+          {buttonLabel}
         </button>
       </form>
 

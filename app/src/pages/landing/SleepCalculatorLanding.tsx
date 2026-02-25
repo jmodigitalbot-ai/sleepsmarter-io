@@ -47,6 +47,48 @@ export default function SleepCalculatorLanding() {
         <SleepCalculator />
       </section>
 
+      {/* Tripwire Offer — 7-Day Sleep Reset Protocol */}
+      <section className="max-w-2xl mx-auto px-4 pb-16">
+        <div className="bg-[#16213e] border border-[#a8dadc]/20 rounded-2xl p-6 md:p-8 shadow-xl">
+          <div className="text-center mb-6">
+            <span className="text-3xl mb-3 block">🚀</span>
+            <h2 className="text-2xl font-bold text-[#f1faee] mb-2">
+              Want the Complete 7-Day System?
+            </h2>
+            <p className="text-[#f1faee]/60 text-sm">
+              The calculator shows you <em>when</em> to sleep. The protocol shows you <em>how</em> to actually do it.
+            </p>
+          </div>
+          <ul className="space-y-3 mb-6">
+            {[
+              '7-day step-by-step plan to reset your sleep in one week',
+              'Evening wind-down routine proven to cut sleep onset time in half',
+              'Morning protocol to eliminate grogginess — even after short nights',
+              'Habit tracker + troubleshooting guide for common sleep blockers',
+            ].map((benefit, i) => (
+              <li key={i} className="flex items-start gap-3 text-sm text-[#f1faee]/80">
+                <span className="text-[#a8dadc] mt-0.5 font-bold">✓</span>
+                {benefit}
+              </li>
+            ))}
+          </ul>
+          <div className="text-center">
+            <div className="mb-4">
+              <span className="text-[#f1faee]/40 text-sm line-through mr-2">$47</span>
+              <span className="text-4xl font-bold text-[#a8dadc]">$17</span>
+              <span className="text-[#f1faee]/50 text-sm ml-2">one-time</span>
+            </div>
+            <a
+              href="https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
+              className="inline-block bg-[#a8dadc] hover:bg-[#8bc9cc] text-[#1a1a2e] font-semibold px-8 py-4 rounded-lg transition text-base"
+            >
+              Get the 7-Day Reset Protocol →
+            </a>
+            <p className="text-[#f1faee]/30 text-xs mt-3">Instant access · One-time payment · No subscription</p>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
       <section className="bg-[#16213e] py-12">
         <div className="max-w-4xl mx-auto px-4">
