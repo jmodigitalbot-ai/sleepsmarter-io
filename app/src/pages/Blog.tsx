@@ -1,7 +1,21 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { articles } from '../data/articles'
 
+const POSTS_PER_PAGE = 6
+
 export default function Blog() {
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const totalPages = Math.ceil(articles.length / POSTS_PER_PAGE)
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE
+  const pageArticles = articles.slice(startIndex, startIndex + POSTS_PER_PAGE)
+
+  const goToPage = (page: number) => {
+    setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
       {/* Header */}
@@ -28,7 +42,7 @@ export default function Blog() {
         </p>
 
         <div className="space-y-6">
-          {articles.map((article) => (
+          {pageArticles.map((article) => (
             <Link
               key={article.slug}
               to={`/blog/${article.slug}`}
@@ -71,6 +85,45 @@ export default function Blog() {
             </Link>
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-2 mt-10">
+            <button
+              onClick={() => goToPage(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-[#16213e] text-[#f1faee]/60 hover:text-[#a8dadc] hover:bg-[#1f2b47] disabled:opacity-30 disabled:cursor-not-allowed transition"
+            >
+              ← Prev
+            </button>
+
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => goToPage(page)}
+                className={`w-9 h-9 rounded-lg text-sm font-medium transition ${
+                  page === currentPage
+                    ? 'bg-[#a8dadc] text-[#1a1a2e]'
+                    : 'bg-[#16213e] text-[#f1faee]/60 hover:text-[#a8dadc] hover:bg-[#1f2b47]'
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+
+            <button
+              onClick={() => goToPage(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-[#16213e] text-[#f1faee]/60 hover:text-[#a8dadc] hover:bg-[#1f2b47] disabled:opacity-30 disabled:cursor-not-allowed transition"
+            >
+              Next →
+            </button>
+          </div>
+        )}
+
+        <p className="text-center text-sm text-[#f1faee]/40 mt-3">
+          Page {currentPage} of {totalPages} · {articles.length} articles
+        </p>
 
         <div className="mt-12 p-6 bg-[#16213e] rounded-xl text-center">
           <h3 className="text-lg font-semibold text-[#f1faee] mb-2">
