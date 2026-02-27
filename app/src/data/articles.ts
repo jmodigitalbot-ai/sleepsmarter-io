@@ -11,6 +11,7 @@ import howToFixSleepSchedule from '../content/how-to-fix-your-sleep-schedule-in-
 import sleepTipsNewParents from '../content/10-sleep-tips-for-new-parents.md?raw'
 import bestWhiteNoiseMachines from '../content/11-best-white-noise-machines-for-sleep.md?raw'
 import sleepTemperatureOptimization from '../content/12-sleep-temperature-optimization.md?raw'
+import bestPillowsForSleep from '../content/15-best-pillows-for-sleep-by-position.md?raw'
 import bestMattressesBackSleepers from '../content/13-best-mattresses-for-back-sleepers.md?raw'
 import memoryFoamVsLatex from '../content/14-memory-foam-vs-latex-mattress.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
@@ -217,6 +218,22 @@ export const articles: Article[] = [
       { question: 'Do white noise machines actually improve sleep?', answer: 'Yes — white noise masks disruptive environmental sounds by creating a consistent audio backdrop, reducing the contrast between silence and sudden noises that cause arousals during sleep.' },
       { question: 'How loud should a white noise machine be for sleeping?', answer: 'White noise machines should be set to around 50–65 decibels — roughly the volume of a quiet conversation. Louder than 70 dB can damage hearing over time and is not recommended.' },
       { question: 'Is white noise or pink noise better for sleep?', answer: 'Both are effective. Pink noise (weighted toward lower frequencies) is associated with deeper sleep in some studies, while white noise is more effective at masking external sound. Personal preference is the best guide.' },
+    ]
+  },
+  {
+    slug: 'best-pillows-for-sleep-by-position',
+    title: 'Best Pillows for Sleep by Sleep Position: A Science-Backed Guide',
+    description: 'The wrong pillow puts your cervical spine in a slow 8-hour stretch. Here\'s exactly which pillow to choose based on how you sleep — back, side, stomach, or combo.',
+    readTime: '13 min read',
+    date: 'February 2026',
+    content: bestPillowsForSleep,
+    featuredImage: '/images/featured-best-pillows-for-sleep.png',
+    featuredImageAlt: 'Three pillows at different heights for back, side, and stomach sleepers showing proper cervical alignment',
+    faqs: [
+      { question: 'What pillow height is best for back sleepers?', answer: 'Back sleepers need a pillow with 3-5 inches of loft (compressed) to maintain the natural cervical curve. Too high pushes the head forward; too flat lets it fall back. Medium-loft memory foam or latex works well.' },
+      { question: 'Do side sleepers need a firmer pillow?', answer: 'Yes — side sleepers need a firmer, higher-loft pillow (4-6 inches) to bridge the gap between shoulder and head. Without adequate loft and firmness, the head drops and the neck bends laterally for hours.' },
+      { question: 'What pillow is best for stomach sleepers?', answer: 'Stomach sleepers need the thinnest, softest pillow available — or no pillow at all. Thick pillows force the neck into extreme extension overnight, causing stiffness and pain. A pillow under the pelvis can also help alignment.' },
+      { question: 'How often should you replace your pillow?', answer: 'Most pillows should be replaced every 1-2 years. Memory foam and latex last longer (2-3 years). A simple test: fold your pillow in half — if it stays folded instead of springing back, it\'s lost its support and needs replacing.' },
     ]
   },
   {
