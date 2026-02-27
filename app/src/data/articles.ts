@@ -10,6 +10,9 @@ import bestSleepScheduleNightShiftWorkers from '../content/09-best-sleep-schedul
 import howToFixSleepSchedule from '../content/how-to-fix-your-sleep-schedule-in-3-days.md?raw'
 import sleepTipsNewParents from '../content/10-sleep-tips-for-new-parents.md?raw'
 import bestWhiteNoiseMachines from '../content/11-best-white-noise-machines-for-sleep.md?raw'
+import sleepTemperatureOptimization from '../content/12-sleep-temperature-optimization.md?raw'
+import bestMattressesBackSleepers from '../content/13-best-mattresses-for-back-sleepers.md?raw'
+import memoryFoamVsLatex from '../content/14-memory-foam-vs-latex-mattress.md?raw'
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 import whatIsSleepDebt from '../content/17-what-is-sleep-debt.md?raw'
@@ -214,6 +217,51 @@ export const articles: Article[] = [
       { question: 'Do white noise machines actually improve sleep?', answer: 'Yes — white noise masks disruptive environmental sounds by creating a consistent audio backdrop, reducing the contrast between silence and sudden noises that cause arousals during sleep.' },
       { question: 'How loud should a white noise machine be for sleeping?', answer: 'White noise machines should be set to around 50–65 decibels — roughly the volume of a quiet conversation. Louder than 70 dB can damage hearing over time and is not recommended.' },
       { question: 'Is white noise or pink noise better for sleep?', answer: 'Both are effective. Pink noise (weighted toward lower frequencies) is associated with deeper sleep in some studies, while white noise is more effective at masking external sound. Personal preference is the best guide.' },
+    ]
+  },
+  {
+    slug: 'sleep-temperature-optimization',
+    title: 'Sleep Temperature Optimization: Why Your Bedroom Temperature Is Sabotaging Your Sleep',
+    description: 'Your body needs to drop 2-3°F to fall asleep. If your bedroom is too warm, you\'re fighting biology. Here\'s the science and the fix — plus the ideal temperature range for better sleep.',
+    readTime: '14 min read',
+    date: 'February 2026',
+    content: sleepTemperatureOptimization,
+    featuredImage: '/images/featured-sleep-temperature.png',
+    featuredImageAlt: 'Digital thermometer showing ideal sleep temperature of 67 degrees Fahrenheit in a dark, cool bedroom',
+    faqs: [
+      { question: 'What is the best bedroom temperature for sleep?', answer: 'The ideal sleep temperature for most adults is 65-68°F (18-20°C). Individual preferences vary slightly based on metabolism, body fat, and age, but this range is optimal for deep, consolidated sleep.' },
+      { question: 'How does room temperature affect sleep quality?', answer: 'Cool temperatures trigger the natural cooling process your body needs to initiate and maintain sleep. Too-warm bedrooms increase sleep latency by 15-25 minutes and reduce deep sleep by 10-15%.' },
+      { question: 'Can you sleep better in a cool room?', answer: 'Yes — sleeping in a cool room (65-68°F) increases deep sleep time by 10-15%, reduces night wakings by 5-8 per night, and improves overall sleep consolidation compared to warmer temperatures.' },
+    ]
+  },
+  {
+    slug: 'best-mattresses-for-back-sleepers',
+    title: 'Best Mattresses for Back Sleepers: Sleep Better Without Back Pain',
+    description: 'Back sleeping is biomechanically ideal—if your mattress supports your spine properly. Here\'s how to pick a mattress that prevents lower back pain and eliminates middle-of-the-night twisting.',
+    readTime: '16 min read',
+    date: 'February 2026',
+    content: bestMattressesBackSleepers,
+    featuredImage: '/images/featured-back-sleepers-mattress.png',
+    featuredImageAlt: 'Back sleeper on a supportive mattress showing proper spinal alignment from neck to lower back',
+    faqs: [
+      { question: 'What mattress firmness is best for back sleepers?', answer: 'Medium-firm (6-7 on a 1-10 scale) is optimal for back sleepers. Too soft causes lumbar sinking; too firm creates pressure points. Medium-firm provides lumbar support without the "hugging" feeling of memory foam.' },
+      { question: 'How does the right mattress reduce back pain?', answer: 'A properly supportive mattress maintains neutral spine alignment, relieves pressure on hips and shoulders, and provides targeted lumbar support. Studies show 30-50% improvement in back pain within 8 weeks on the right mattress.' },
+      { question: 'Are adjustable mattresses good for back sleepers?', answer: 'Yes — adjustable firmness (like the Airpedic 1100) lets back sleepers dial in their exact lumbar support level, which can improve back comfort by 50%+ compared to fixed-firmness mattresses.' },
+    ]
+  },
+  {
+    slug: 'memory-foam-vs-latex-mattress',
+    title: 'Memory Foam vs Latex Mattress: Which Is Actually Better for Sleep?',
+    description: 'Memory foam and latex are the two most popular premium mattress materials — but they feel completely different and suit different sleepers. Here\'s how to know which one is right for you.',
+    readTime: '14 min read',
+    date: 'February 2026',
+    content: memoryFoamVsLatex,
+    featuredImage: '/images/featured-foam-vs-latex.png',
+    featuredImageAlt: 'Split comparison showing memory foam and latex mattress cross-sections side by side with sleeping comfort indicators',
+    faqs: [
+      { question: 'Is memory foam or latex better for hot sleepers?', answer: 'Latex is significantly better for hot sleepers. It\'s naturally breathable and sleeps 1.8°F cooler than memory foam. If you sleep hot, latex is the clear choice.' },
+      { question: 'Which lasts longer — memory foam or latex?', answer: 'Natural latex lasts 12-15 years on average, while high-quality memory foam lasts 8-10 years. Cheap memory foam degrades in 4-6 years. Latex wins clearly on lifespan and durability.' },
+      { question: 'Should back sleepers use memory foam or latex?', answer: 'Back sleepers often prefer latex or medium-firm memory foam hybrids. Latex\'s firmness and responsiveness provide better spinal support than deep-contouring memory foam that can cause lumbar sinking.' },
     ]
   },
   {
