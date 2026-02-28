@@ -205,14 +205,9 @@ export const trackCheckoutClick = (
     outbound_link: 'https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week'
   }
   
-  // Track GA4 event
+  // Track GA4 event only — Google Ads conversion intentionally NOT fired here.
+  // Checkout click ≠ purchase. Conversion fires in trackPurchaseComplete only.
   trackEvent(TRACKING_EVENTS.CHECKOUT_CLICK, params)
-  
-  // Track Google Ads conversion if product type is provided
-  if (productType && PRODUCT_CONVERSION_MAP[productType]) {
-    const { label, value } = PRODUCT_CONVERSION_MAP[productType]
-    trackGoogleAdsConversion(label, value)
-  }
 }
 
 /**
