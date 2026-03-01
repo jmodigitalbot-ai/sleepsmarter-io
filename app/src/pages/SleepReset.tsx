@@ -37,11 +37,11 @@ export default function SleepReset() {
         {/* ============================================ */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#f1faee] mb-6 leading-tight">
-            You're Not Broken. You're Just{' '}
-            <span className="text-[#a8dadc]">Doing It In The Wrong Order.</span>
+            You're Exhausted.{' '}
+            <span className="text-[#a8dadc]">Why Can't You Sleep?</span>
           </h1>
           <p className="text-xl md:text-2xl text-[#f1faee]/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            The 7-Day Sequential Reset — for people who've tried everything and are exhausted from trying.
+            Most people who can't sleep aren't bad sleepers. They're doing the right things in the wrong order. The 7-Day Sequential Reset fixes that — starting tonight.
           </p>
           <a
             href={checkoutUrl}
@@ -62,19 +62,22 @@ export default function SleepReset() {
         {/* ============================================ */}
         <div className="mb-10 space-y-5 text-lg leading-relaxed">
           <p className="text-[#f1faee]/80">
-            You're not here because you haven't tried.
+            You know what's frustrating isn't the tiredness during the day.
           </p>
           <p className="text-[#f1faee]/80">
-            You've tried melatonin. Some nights it helped, some nights it didn't — you could never figure out why. You've tried the apps, the white noise, the weighted blanket, the no-screens rule. You've read the articles. You know what sleep hygiene is. You've done the magnesium.
+            It's lying in bed at 10, 11, midnight — utterly exhausted — and your brain just won't stop. You're not wired. You're not anxious. You're just... awake. When every signal in your body says you should be asleep.
           </p>
           <p className="text-[#f1faee]/80">
-            And you're still waking up at 3am. Still dragging through the afternoon. Still starting the day already behind.
+            And then the alarm goes off and you do it all again.
+          </p>
+          <p className="text-[#f1faee]/80">
+            You've probably tried things. Melatonin some nights — helped, then didn't. White noise. The no-screens rule. Magnesium. You've read the articles. None of it fixed the exhausted-but-awake problem.
           </p>
           <p className="text-[#f1faee] font-semibold text-xl bg-[#16213e] p-6 rounded-lg border border-[#4a4e69]/30">
-            You're not looking for the perfect night's sleep anymore. You gave up on perfect. What you want is <em>reliable</em> sleep — the kind you can count on. The kind that makes the next day feel possible instead of something to endure.
+            The worst part isn't the bad nights. It's waking up after what should have been enough sleep and feeling like you didn't sleep at all. That's a sequencing problem. And it's fixable in 7 days.
           </p>
           <p className="text-[#f1faee]/80">
-            That's what this does.
+            Because the problem isn't what you're trying. It's the order.
           </p>
         </div>
 
@@ -293,10 +296,11 @@ export default function SleepReset() {
           <h2 className="text-2xl font-bold text-[#f1faee] mb-6">Is This For You?</h2>
           <div className="space-y-3 mb-6">
             {[
-              "You've tried the standard fixes and they haven't held long-term",
-              "You wake up at 2, 3, or 4am and struggle to get back to sleep",
-              "You feel exhausted even after a full night",
-              "Your energy crashes mid-afternoon without fail",
+              "You're exhausted during the day but can't fall asleep at night",
+              "You lie in bed tired and your brain just won't shut off",
+              "You wake up after 7–8 hours and still feel wrecked",
+              "You've tried the standard fixes — they help some nights, not others",
+              "You wake at 2, 3, or 4am and can't get back down",
               "You're skeptical — because you've been burned before",
               "You want reliable sleep, not magic",
             ].map(item => (
@@ -567,10 +571,10 @@ export default function SleepReset() {
         <div className="mb-16 text-center">
           <div className="bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-6">
-              You're not looking for a miracle.
+              You know what you want.
             </h3>
             <p className="text-lg text-[#f1faee]/80 mb-8 max-w-2xl mx-auto">
-              You're looking for a Tuesday where you wake up before your alarm and feel like a person. That's not too much to ask. And it's not as far away as it feels right now.
+              You want to be tired at night and actually fall asleep. You want to wake up and feel like you slept. You want to stop thinking about your sleep. The Sequential Reset is 7 days. One change per day. It doesn't require willpower or a perfect schedule. Just the same things you've already tried — in the right order.
             </p>
             <a
               href={checkoutUrl}
@@ -592,13 +596,10 @@ export default function SleepReset() {
         <div className="mb-16">
           <div className="max-w-3xl mx-auto text-left space-y-5 text-[#f1faee]/70 border-t border-[#4a4e69]/30 pt-10">
             <p className="text-lg">
-              <strong className="text-[#f1faee]">P.S.</strong> The goal isn't perfect sleep. The goal is sleep you can count on — that makes the next day, and the day after that, feel manageable. Seven days to build a system that runs without you managing it anymore.
+              <strong className="text-[#f1faee]">P.S.</strong> If you've ever Googled "so tired but can't sleep" at 1am, you already know something isn't working. The goal of this protocol isn't perfect sleep. It's closing the gap between how tired you feel and how fast you go under. Seven days. $17. 60-day guarantee if it doesn't work.
             </p>
             <p className="text-lg">
-              For $17, with a 60-day guarantee if it doesn't work.
-            </p>
-            <p className="text-lg">
-              <strong className="text-[#f1faee]">P.P.S.</strong> Most people who got results were skeptical first. The guarantee exists so skepticism doesn't cost you the chance to find out.
+              <strong className="text-[#f1faee]">P.P.S.</strong> The people who got the most out of this weren't convinced it would work. They just decided $17 and 60 days was worth finding out. The guarantee makes it a zero-risk bet on yourself.
             </p>
           </div>
         </div>
@@ -609,7 +610,7 @@ export default function SleepReset() {
             to="/blog"
             className="text-[#f1faee]/30 hover:text-[#f1faee]/50 transition text-sm"
           >
-            No thanks, I'll keep trying random sleep tips that don't work
+            No thanks, I'll keep being exhausted and not sleeping
           </Link>
         </div>
 
