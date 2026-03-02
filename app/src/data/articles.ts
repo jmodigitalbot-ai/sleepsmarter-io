@@ -17,6 +17,7 @@ import memoryFoamVsLatex from '../content/14-memory-foam-vs-latex-mattress.md?ra
 import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 import whatIsSleepDebt from '../content/17-what-is-sleep-debt.md?raw'
+import sleepAnxiety from '../content/18-sleep-anxiety.md?raw'
 
 export interface FAQ {
   question: string
@@ -309,6 +310,22 @@ export const articles: Article[] = [
       { question: 'How does daylight saving time affect sleep?', answer: 'Daylight saving time shifts the clock by one hour, disrupting your circadian rhythm. The spring forward (losing an hour) is harder on most people, temporarily reducing sleep duration and increasing morning fatigue.' },
       { question: 'How long does it take to adjust to daylight saving time?', answer: 'Most people adjust to daylight saving time within 3–7 days. The adjustment is easier in fall (gaining an hour) and harder in spring (losing an hour), similar to mild jet lag.' },
       { question: 'What are tips for adjusting to daylight saving time?', answer: 'Start shifting your bedtime 15 minutes earlier for 3–4 nights before the clock change, get morning sunlight to reset your circadian rhythm, and avoid caffeine and alcohol in the days surrounding the transition.' },
+    ]
+  },
+  {
+    slug: 'sleep-anxiety-racing-mind',
+    title: 'Sleep Anxiety: Why Your Mind Won\'t Shut Off (And How to Fix It)',
+    description: 'Sleep anxiety keeps you awake even when you\'re exhausted. Learn why your racing mind won\'t shut off and 7 proven tactics — from the permission paradox to weighted blankets — to finally rest tonight.',
+    readTime: '10 min read',
+    date: 'March 2026',
+    content: sleepAnxiety,
+    featuredImage: '/images/featured-sleep-anxiety.png',
+    featuredImageAlt: 'Person lying in bed with swirling thought lines above their head representing racing thoughts and sleep anxiety',
+    faqs: [
+      { question: 'What is sleep anxiety?', answer: 'Sleep anxiety is when your nervous system activates at the moment you try to sleep — creating a cycle of pressure, cortisol spikes, and wakefulness. It\'s performance anxiety applied to sleep, not a clinical anxiety disorder.' },
+      { question: 'Why can\'t I sleep even when I\'m exhausted?', answer: 'When you\'re exhausted and desperate to sleep, the pressure to fall asleep triggers a stress response that keeps you awake. The harder you try, the more your sympathetic nervous system fires up — making sleep harder.' },
+      { question: 'What is the best technique for sleep anxiety?', answer: 'The most effective first step is the "permission paradox" — deliberately removing the pressure to sleep by telling yourself rest is the goal, not sleep. This drops arousal levels and most people fall asleep within 30 minutes.' },
+      { question: 'Does a weighted blanket help with sleep anxiety?', answer: 'Yes, for many people. Weighted blankets apply deep pressure stimulation (DPS) that activates the parasympathetic nervous system, signaling safety and calm. Use one that\'s approximately 10% of your body weight.' },
     ]
   },
   {
