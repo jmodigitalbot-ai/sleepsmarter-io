@@ -7,9 +7,12 @@ const POSTS_PER_PAGE = 6
 export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1)
 
-  const totalPages = Math.ceil(articles.length / POSTS_PER_PAGE)
+  const sortedArticles = [...articles].sort((a, b) =>
+    new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+  )
+  const totalPages = Math.ceil(sortedArticles.length / POSTS_PER_PAGE)
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE
-  const pageArticles = articles.slice(startIndex, startIndex + POSTS_PER_PAGE)
+  const pageArticles = sortedArticles.slice(startIndex, startIndex + POSTS_PER_PAGE)
 
   const goToPage = (page: number) => {
     setCurrentPage(page)
