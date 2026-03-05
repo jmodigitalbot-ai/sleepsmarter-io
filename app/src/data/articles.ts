@@ -18,6 +18,7 @@ import sleepAndProductivity from '../content/15-sleep-and-productivity.md?raw'
 import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-sleep-tips.md?raw'
 import whatIsSleepDebt from '../content/17-what-is-sleep-debt.md?raw'
 import sleepAnxiety from '../content/18-sleep-anxiety.md?raw'
+import blueLightSleep from '../content/22-blue-light-sleep.md?raw'
 
 export interface FAQ {
   question: string
@@ -363,6 +364,24 @@ export const articles: Article[] = [
       { question: 'Can you catch up on sleep debt?', answer: 'You can partially recover from short-term sleep debt with extra sleep over several days, but chronic sleep debt causes lasting impairments. Research suggests full recovery from extended sleep loss may take weeks.' },
       { question: 'How much sleep debt is dangerous?', answer: 'Losing just 1–2 hours per night for a week creates the cognitive equivalent of pulling an all-nighter. Chronic sleep debt of more than 10 hours is associated with significantly elevated health risks.' },
       { question: 'How do I calculate my sleep debt?', answer: 'Calculate your sleep debt by subtracting your average nightly sleep from your target (typically 8 hours) and multiplying by the number of days. For example, 6 hours/night for 7 days = 14 hours of sleep debt.' },
+    ]
+  },
+  {
+    slug: 'blue-light-sleep',
+    title: 'Blue Light and Sleep: Why Screens Keep You Awake (And How to Fix It)',
+    description: 'Blue light from phones and screens disrupts sleep by suppressing melatonin. Learn why it happens, how much screen time is safe, and 6 proven tactics to reduce blue light exposure — from blue light glasses to screen timing shifts.',
+    readTime: '12 min read',
+    date: 'March 2026',
+    publishDate: '2026-03-05',
+    content: blueLightSleep,
+    featuredImage: '/images/featured-blue-light.png',
+    featuredImageAlt: 'Person looking at a bright phone screen at night, with blue light rays contrasting against a calm dark bedroom',
+    faqs: [
+      { question: 'Are blue light glasses worth it?', answer: 'If you\'re using screens before bed, yes — they reduce impact by ~70%. They\'re not a substitute for stopping screen use, but they help. Look for amber-tinted lenses, not just coated clear lenses.' },
+      { question: 'Does blue light cause eye damage?', answer: 'No. Blue light exposure doesn\'t damage your eyes or increase disease risk. The sleep disruption is the only real concern. (The "eye strain" you feel is usually from screen time and dry eyes, not blue light.)' },
+      { question: 'What about blue light in the daytime?', answer: 'Essential. Blue light during the day is healthy — it keeps your circadian rhythm on track and promotes wakefulness. The problem is evening blue light.' },
+      { question: 'Should I wear blue light glasses all day?', answer: 'No. You want blue light exposure during the day. Only use them in the evening (or get glasses that let you swap lenses).' },
+      { question: 'Do screen filters on monitors work?', answer: 'Yes, but they\'re less effective than glasses or software. Most hardware filters block 30-50% of blue light. Software (Night Shift) + glasses is a better combo.' },
     ]
   }
 ]
