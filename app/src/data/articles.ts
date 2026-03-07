@@ -19,6 +19,7 @@ import daylightSavingTimeSleepTips from '../content/16-daylight-saving-time-slee
 import whatIsSleepDebt from '../content/17-what-is-sleep-debt.md?raw'
 import sleepAnxiety from '../content/18-sleep-anxiety.md?raw'
 import blueLightSleep from '../content/22-blue-light-sleep.md?raw'
+import magnesiumForSleep from '../content/23-magnesium-for-sleep.md?raw'
 
 export interface FAQ {
   question: string
@@ -382,6 +383,24 @@ export const articles: Article[] = [
       { question: 'What about blue light in the daytime?', answer: 'Essential. Blue light during the day is healthy — it keeps your circadian rhythm on track and promotes wakefulness. The problem is evening blue light.' },
       { question: 'Should I wear blue light glasses all day?', answer: 'No. You want blue light exposure during the day. Only use them in the evening (or get glasses that let you swap lenses).' },
       { question: 'Do screen filters on monitors work?', answer: 'Yes, but they\'re less effective than glasses or software. Most hardware filters block 30-50% of blue light. Software (Night Shift) + glasses is a better combo.' },
+    ]
+  },
+  {
+    slug: 'magnesium-for-sleep',
+    title: 'Magnesium for Sleep: Does It Actually Work? (What the Science Says)',
+    description: 'Magnesium deficiency affects 65% of Americans — and it may be why you can\'t fall asleep or stay asleep. Learn which form works best, the right dose, and what to expect.',
+    readTime: '11 min read',
+    date: 'March 2026',
+    publishDate: '2026-03-06',
+    content: magnesiumForSleep,
+    featuredImage: '/images/featured-magnesium-for-sleep.png',
+    featuredImageAlt: 'Abstract illustration of a glowing mineral crystal dissolving into calm sleep waves on a dark indigo background',
+    faqs: [
+      { question: 'Does magnesium really help with sleep?', answer: 'Yes — clinical research shows magnesium supplementation improves sleep onset, sleep duration, and reduces nighttime awakenings. It works by activating GABA receptors (your brain\'s calming system), lowering cortisol, and supporting melatonin production.' },
+      { question: 'What is the best type of magnesium for sleep?', answer: 'Magnesium glycinate is the best form for sleep. It has high bioavailability, crosses the blood-brain barrier to activate GABA receptors, and the glycine component has additional calming properties. Avoid magnesium oxide — it has only 4% bioavailability.' },
+      { question: 'How much magnesium should I take for sleep?', answer: 'Start with 200mg of magnesium glycinate taken 30–60 minutes before bed. You can increase to 400mg if needed. The RDA is 400–420mg for men and 310–320mg for women from all sources combined.' },
+      { question: 'How long does magnesium take to work for sleep?', answer: 'Some people notice improved relaxation on the first night. Most experience meaningful sleep improvements within 1–2 weeks of consistent daily supplementation. Full effects from correcting a significant deficiency may take 3–4 weeks.' },
+      { question: 'Can I take magnesium and melatonin together?', answer: 'Yes — they work differently and can be safely combined. Melatonin affects sleep timing (when you sleep), while magnesium affects sleep quality and ease of falling asleep. There are no known interactions between them.' },
     ]
   }
 ]
