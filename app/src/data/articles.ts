@@ -20,6 +20,7 @@ import whatIsSleepDebt from '../content/17-what-is-sleep-debt.md?raw'
 import sleepAnxiety from '../content/18-sleep-anxiety.md?raw'
 import blueLightSleep from '../content/22-blue-light-sleep.md?raw'
 import magnesiumForSleep from '../content/23-magnesium-for-sleep.md?raw'
+import bestMattressesForBackPain from '../content/24-best-mattresses-for-back-pain.md?raw'
 
 export interface FAQ {
   question: string
@@ -401,6 +402,23 @@ export const articles: Article[] = [
       { question: 'How much magnesium should I take for sleep?', answer: 'Start with 200mg of magnesium glycinate taken 30–60 minutes before bed. You can increase to 400mg if needed. The RDA is 400–420mg for men and 310–320mg for women from all sources combined.' },
       { question: 'How long does magnesium take to work for sleep?', answer: 'Some people notice improved relaxation on the first night. Most experience meaningful sleep improvements within 1–2 weeks of consistent daily supplementation. Full effects from correcting a significant deficiency may take 3–4 weeks.' },
       { question: 'Can I take magnesium and melatonin together?', answer: 'Yes — they work differently and can be safely combined. Melatonin affects sleep timing (when you sleep), while magnesium affects sleep quality and ease of falling asleep. There are no known interactions between them.' },
+    ]
+  },
+  {
+    slug: 'best-mattresses-for-back-pain',
+    title: 'Best Mattresses for Back Pain (2026 Reviews): What Sleep Experts Recommend',
+    description: 'Struggling with back pain? Find the best mattress for back pain relief in 2026 — with picks for every sleep position, budget, and pain type. Includes Airpedic and latex options.',
+    readTime: '12 min read',
+    date: 'March 2026',
+    publishDate: '2026-03-09',
+    content: bestMattressesForBackPain,
+    featuredImage: '/images/featured-best-mattresses-for-back-pain.png',
+    featuredImageAlt: 'Person waking up pain-free on a supportive mattress with proper spinal alignment shown',
+    faqs: [
+      { question: 'What type of mattress is best for back pain?', answer: 'Medium-firm mattresses consistently show the best results for back pain sufferers. They provide enough support to maintain spinal alignment while offering cushioning for pressure points. Both latex and memory foam can work well — latex offers more responsiveness and airflow.' },
+      { question: 'Is a firm or soft mattress better for back pain?', answer: 'Medium-firm is the sweet spot for most back pain sufferers. Too firm creates pressure points; too soft lets your spine sag out of alignment. If you sleep on your side, lean slightly softer; stomach sleepers need firmer support.' },
+      { question: 'How long does a mattress last before it contributes to back pain?', answer: 'Most mattresses last 7–10 years before losing adequate support. If your mattress is over 8 years old and you have new or worsening back pain, replacement is worth considering.' },
+      { question: 'Can a mattress actually fix back pain?', answer: 'A mattress cannot fix structural back problems, but the right mattress can significantly reduce pain by supporting proper spinal alignment during sleep. Many people report 50–80% reduction in morning back pain after switching to a supportive mattress.' }
     ]
   }
 ]
