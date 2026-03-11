@@ -21,6 +21,7 @@ import sleepAnxiety from '../content/18-sleep-anxiety.md?raw'
 import blueLightSleep from '../content/22-blue-light-sleep.md?raw'
 import magnesiumForSleep from '../content/23-magnesium-for-sleep.md?raw'
 import bestMattressesForBackPain from '../content/24-best-mattresses-for-back-pain.md?raw'
+import howToFallAsleepFast from '../content/25-how-to-fall-asleep-fast.md?raw'
 
 export interface FAQ {
   question: string
@@ -419,6 +420,24 @@ export const articles: Article[] = [
       { question: 'Is a firm or soft mattress better for back pain?', answer: 'Medium-firm is the sweet spot for most back pain sufferers. Too firm creates pressure points; too soft lets your spine sag out of alignment. If you sleep on your side, lean slightly softer; stomach sleepers need firmer support.' },
       { question: 'How long does a mattress last before it contributes to back pain?', answer: 'Most mattresses last 7–10 years before losing adequate support. If your mattress is over 8 years old and you have new or worsening back pain, replacement is worth considering.' },
       { question: 'Can a mattress actually fix back pain?', answer: 'A mattress cannot fix structural back problems, but the right mattress can significantly reduce pain by supporting proper spinal alignment during sleep. Many people report 50–80% reduction in morning back pain after switching to a supportive mattress.' }
+    ]
+  },
+  {
+    slug: 'how-to-fall-asleep-fast',
+    title: 'How to Fall Asleep Fast: 10 Science-Backed Methods That Actually Work',
+    description: 'Lying awake for 45 minutes every night adds up to 270+ lost hours per year. Learn 10 proven techniques to fall asleep faster — from the 4-7-8 breathing method to the military sleep trick.',
+    readTime: '11 min read',
+    date: 'March 2026',
+    publishDate: '2026-03-11',
+    content: howToFallAsleepFast,
+    featuredImage: '/images/featured-how-to-fall-asleep-fast.png',
+    featuredImageAlt: 'Minimalist illustration of a person peacefully drifting to sleep in a calm dark bedroom with soft breathing waves',
+    faqs: [
+      { question: 'How can I fall asleep in 5 minutes?', answer: 'The fastest techniques are the 4-7-8 breathing method and the military sleep method. Both take practice — most people need 1–2 weeks of nightly training before hitting the 5-minute mark. The military method was reportedly designed to achieve sleep within 2 minutes after 6 weeks of consistent practice.' },
+      { question: 'What helps you fall asleep immediately?', answer: 'No method works instantly for most people, but the fastest-acting techniques include paradoxical intention (deliberately trying to stay awake), progressive muscle relaxation, and the cognitive shuffle (serial diverse imaging). All three work within 15–25 minutes for most users.' },
+      { question: 'Why can\'t I fall asleep even when I\'m tired?', answer: 'The most common cause is nervous system arousal that doesn\'t match your physical fatigue — stress hormones, caffeine, blue light exposure, or sleep performance anxiety can keep your brain active even when your body is exhausted. Techniques like 4-7-8 breathing or paradoxical intention specifically address nervous system activation.' },
+      { question: 'Is it bad to fall asleep with the TV on?', answer: 'Yes. TV keeps your brain processing audio and visual information, delays sleep onset, and — if it stays on — disrupts sleep throughout the night. Even background noise your brain "ignores" still fragments sleep architecture. A quiet, dark room is significantly better for both falling and staying asleep.' },
+      { question: 'How long should it take to fall asleep?', answer: 'A healthy sleep onset time is 10–20 minutes. Regularly taking more than 30 minutes suggests something is interfering — circadian misalignment, insufficient sleep pressure, anxiety, or environmental factors. Falling asleep in under 5 minutes is actually a sign of significant sleep deprivation, not great sleep fitness.' }
     ]
   }
 ]
