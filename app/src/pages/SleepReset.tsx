@@ -2,24 +2,77 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
 
-export default function SleepReset() {
-  const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
+// SamCart sc-checkout web component
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'sc-checkout': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & {
+        product?: string
+        subdomain?: string
+        coupon?: string
+      }, HTMLElement>
+    }
+  }
+}
 
+export default function SleepReset() {
   useEffect(() => {
     trackSalesPageView('/sleep-reset', {
-      page_title: 'Sleep Reset - 7-Day Protocol'
+      page_title: 'The Forgotten Sleep Ritual'
     })
+    // Load SamCart checkout script
+    const script = document.createElement('script')
+    script.src = 'https://static.samcart.com/checkouts/sc-checkout.js'
+    script.defer = true
+    document.body.appendChild(script)
+    return () => {
+      document.body.removeChild(script)
+    }
   }, [])
 
   const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
     trackCheckoutClick(buttonText, buttonLocation, 'tripwire')
+    document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
+  const faqs = [
+    {
+      q: "How is this different from a sleep tracking app?",
+      a: "Sleep trackers measure your cycles — they don't align them with when your alarm fires. The Forgotten Sleep Ritual gives you the formula to calculate your personal sleep windows so your alarm fires at the natural end of a cycle, not the middle of one. No app subscription required."
+    },
+    {
+      q: "Will this work if I have to wake up at the same time every day?",
+      a: "Yes — that's actually the ideal scenario. The Ritual Calculator works backwards from your required wake time to find the exact bedtime that puts you at the end of a 90-minute cycle. You control the bedtime; the wake time stays fixed."
+    },
+    {
+      q: "What if I have kids, travel, or a wildly inconsistent schedule?",
+      a: "Part 5 (The Reset Method) covers exactly this — the one-night recovery protocol so a single disruption doesn't spiral into a week of exhaustion. Real life breaks schedules; this is built for that."
+    },
+    {
+      q: "Is this a subscription?",
+      a: "No. One payment of $17, immediate digital access, yours to keep forever."
+    },
+    {
+      q: "What's the refund policy?",
+      a: "60 full days. Try it across your real schedule — workdays, weekends, chaotic weeks. If you don't wake up measurably more refreshed within the first week, email us for a full refund. No forms, no questions."
+    }
+  ]
+
+  const CTA = ({ location }: { location: string }) => (
+    <button
+      onClick={() => handleCheckoutClick('YES — GIVE ME INSTANT ACCESS → $17', location)}
+      className="block w-full text-center bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-5 px-8 rounded-xl transition-all text-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+    >
+      YES — GIVE ME INSTANT ACCESS → $17
+    </button>
+  )
+
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
-      {/* Minimal Header */}
+
+      {/* ── HEADER ─────────────────────────────── */}
       <header className="border-b border-[#4a4e69]/30">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-center">
           <Link to="/" className="flex items-center gap-2">
@@ -29,607 +82,374 @@ export default function SleepReset() {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-12">
+      <main className="max-w-3xl mx-auto px-4 py-12 space-y-14">
 
-        {/* ============================================ */}
-        {/* SECTION 1: HEADLINE                          */}
-        {/* v5: Pain-first, validating, mechanism-hinting */}
-        {/* ============================================ */}
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#f1faee] mb-6 leading-tight">
-            You're Exhausted.{' '}
-            <span className="text-[#a8dadc]">Why Can't You Sleep?</span>
+        {/* ── HEADLINE ────────────────────────────── */}
+        <div className="text-center space-y-5">
+          <p className="text-[#a8dadc] text-sm font-semibold uppercase tracking-widest">
+            THE FORGOTTEN SLEEP RITUAL
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f1faee] leading-tight">
+            You're Not Sleeping Wrong.<br />
+            <span className="text-[#a8dadc]">You're Waking Wrong.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-[#f1faee]/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Most people who can't sleep aren't bad sleepers. They're doing the right things in the wrong order. The 7-Day Sequential Reset fixes that — starting tonight.
+          <p className="text-xl md:text-2xl text-[#f1faee]/75 max-w-2xl mx-auto leading-relaxed">
+            The science-backed ritual that lets you wake up refreshed every morning — without changing how long you sleep, taking another supplement, or overhauling your life.
           </p>
-          <a
-            href={checkoutUrl}
-            onClick={() => handleCheckoutClick('Join the Reset — $17', 'hero')}
-            className="inline-block bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-4 px-8 rounded-xl transition text-xl shadow-lg hover:shadow-xl mb-4"
-          >
-            Join the Reset — $17
-          </a>
-          <p className="text-[#f1faee]/50 text-sm flex items-center justify-center gap-2">
-            <span className="text-green-400">🛡️</span>
-            60-day guarantee — if it doesn't work, full refund, no questions
+          <div className="pt-4">
+            <CTA location="hero" />
+            <p className="mt-3 text-sm text-[#f1faee]/40">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
+          </div>
+        </div>
+
+        {/* ── OPENING HOOK ────────────────────────── */}
+        <div className="space-y-5 text-lg leading-relaxed">
+          <p className="text-[#f1faee] font-semibold text-xl">You already know what it feels like.</p>
+          <p className="text-[#f1faee]/75">
+            The alarm goes off. You've slept 7, maybe 8 hours. And you feel absolutely terrible.
+          </p>
+          <p className="text-[#f1faee]/75">
+            You lie there for a minute hoping it gets better. It doesn't. You drag yourself to the coffee maker. You sit through the first hour of your day in a fog, answering emails you'll barely remember sending, nodding through conversations you're not fully present for.
+          </p>
+          <p className="text-[#f1faee]/75">By mid-morning, you're already tired again.</p>
+          <p className="text-[#f1faee]/75">
+            And the worst part isn't the exhaustion itself. It's what the exhaustion does to everything else.
+          </p>
+          <p className="text-[#f1faee]/75">
+            You snap at your kids over something small. You zone out in the meeting that mattered. You come home depleted, and the version of yourself your family gets is the leftover version — not the real one.
+          </p>
+          <p className="text-[#f1faee]/75">
+            You've tried to fix it. Earlier bedtimes. Melatonin. Blue light glasses. A sleep tracker that tells you exactly how terrible your sleep is without doing anything about it. You've read the articles. You've made the adjustments.
+          </p>
+          <p className="text-[#f1faee] font-semibold">And you're still exhausted.</p>
+          <p className="text-[#f1faee]/75">Here's what none of those articles told you.</p>
+        </div>
+
+        {/* ── MECHANISM ───────────────────────────── */}
+        <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-2xl p-8 space-y-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] leading-tight">
+            The Real Reason You Wake Up Wrecked Has Nothing To Do With How Long You Sleep
+          </h2>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            Every night, your brain cycles through stages of sleep in 90-minute blocks.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            Light sleep. Deep sleep. REM. Back to light sleep. Over and over, all night long.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            At the end of each 90-minute cycle, your brain comes up to a near-waking state — a natural window where waking feels easy, alert, and clear. Scientists call it "sleep stage transition." Your grandmother called it "waking up on the right side of the bed."
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            When your alarm fires during this window, you feel refreshed. Even on fewer hours.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            When your alarm fires in the middle of a deep sleep phase — even 10 minutes before that window — you get what sleep researchers call <strong className="text-[#f1faee]">sleep inertia</strong>. Your brain gets ripped out of its deepest, most restorative state. Disoriented. Groggy. Dragging.
+          </p>
+          <div className="border-l-4 border-[#a8dadc] pl-6 space-y-2">
+            <p className="text-[#f1faee]/75">This is why 6 hours sometimes feels better than 8. You accidentally woke at the end of a cycle.</p>
+            <p className="text-[#f1faee]/75">This is why you can sleep 9 hours and still feel destroyed. Your alarm fired at the wrong moment.</p>
+          </div>
+          <p className="text-[#f1faee] font-semibold">
+            The sleep industry has spent decades telling you to sleep more hours. Nobody told you the hours are almost irrelevant if you're waking at the wrong time.
           </p>
         </div>
 
-        {/* ============================================ */}
-        {/* SECTION 2: IF THIS IS YOU                    */}
-        {/* v5: Emotional opening, validation-first       */}
-        {/* ============================================ */}
-        <div className="mb-10 space-y-5 text-lg leading-relaxed">
-          <p className="text-[#f1faee]/80">
-            You know what's frustrating isn't the tiredness during the day.
-          </p>
-          <p className="text-[#f1faee]/80">
-            It's lying in bed at 10, 11, midnight — utterly exhausted — and your brain just won't stop. You're not wired. You're not anxious. You're just... awake. When every signal in your body says you should be asleep.
-          </p>
-          <p className="text-[#f1faee]/80">
-            And then the alarm goes off and you do it all again.
-          </p>
-          <p className="text-[#f1faee]/80">
-            You've probably tried things. Melatonin some nights — helped, then didn't. White noise. The no-screens rule. Magnesium. You've read the articles. None of it fixed the exhausted-but-awake problem.
-          </p>
-          <p className="text-[#f1faee] font-semibold text-xl bg-[#16213e] p-6 rounded-lg border border-[#4a4e69]/30">
-            The worst part isn't the bad nights. It's waking up after what should have been enough sleep and feeling like you didn't sleep at all. That's a sequencing problem. And it's fixable in 7 days.
-          </p>
-          <p className="text-[#f1faee]/80">
-            Because the problem isn't what you're trying. It's the order.
-          </p>
-        </div>
-
-        {/* ============================================ */}
-        {/* FIRST TESTIMONIAL — woven in early            */}
-        {/* v5: Skeptic voice first, emotional anchor     */}
-        {/* ============================================ */}
-        <div className="mb-14 bg-[#16213e] border-l-4 border-[#a8dadc] rounded-r-xl p-6">
-          <p className="text-[#f1faee]/70 italic text-lg mb-3">
-            "I'm skeptical of anything that promises to fix sleep in 7 days. Sleep is complicated. Seven days seems optimistic."
-          </p>
-          <p className="text-[#f1faee]/80 mb-3">
-            That's what Ben said before he tried it. He'd been lying awake 45+ minutes every night for two years. By Night 3, he was falling asleep in under 10 minutes.
-          </p>
-          <p className="text-[#f1faee]/70 italic text-lg mb-3">
-            "I'm not going to say it's magic. I'll say it did what it said."
-          </p>
-          <p className="text-[#f1faee]/80">
-            He didn't change what he was doing. He changed the order.
-          </p>
-          <p className="text-[#f1faee]/40 text-xs mt-4 italic">
-            *Name changed for privacy. Based on real feedback from an early protocol user. Individual results will vary.
-          </p>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECTION 3: WHY NOTHING HAS STUCK             */}
-        {/* v5: Tightened ~40%, core message preserved   */}
-        {/* ============================================ */}
-        <div className="mb-12 space-y-5 text-lg leading-relaxed">
+        {/* ── WHY OTHER SOLUTIONS FAIL ────────────── */}
+        <div className="space-y-5">
           <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee]">
-            Why Nothing Has Stuck
-          </h2>
-          <p className="text-[#f1faee]/80">
-            Every sleep fix you've tried probably works. Melatonin works. Cold rooms work. Wind-down routines work. The problem isn't the interventions — it's that each one requires a foundation the previous tip was supposed to build first.
-          </p>
-          <p className="text-[#f1faee]/80">
-            When you apply them out of order, or all at once, none of them hold. Your nervous system treats mass change as a threat and fights it. Two days of progress, then collapse back to baseline.
-          </p>
-          <div className="bg-[#16213e] p-6 rounded-xl border border-[#4a4e69]/30">
-            <p className="text-[#a8dadc] font-semibold text-xl">
-              Think of it like a combination lock. The right numbers in the wrong order don't open anything.
-            </p>
-          </div>
-          <p className="text-[#f1faee]/80">
-            <strong className="text-[#f1faee]">The Sequential Reset takes what you already know and applies it in the order your biology actually requires.</strong> Not new things to try. The same things — done in sequence.
-          </p>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECTION 4: WHAT YOU WAKE UP TO               */}
-        {/* v5: Morning-after leads (what agent flagged)  */}
-        {/* ============================================ */}
-        <div className="mb-12 space-y-5 text-lg leading-relaxed">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee]">
-            What You Wake Up To
-          </h2>
-          <p className="text-[#f1faee]/80">
-            What people notice first isn't that they fall asleep faster. It's that they wake up differently.
-          </p>
-          <p className="text-[#f1faee]/80">
-            Clearer. Earlier. Without the alarm feeling like an assault. The morning fog that usually lasts until 10am — gone or dramatically reduced by Day 5.
-          </p>
-          <p className="text-[#f1faee]/80">
-            Most sleep solutions optimize for falling asleep. The Sequential Reset optimizes for what the morning looks like. That's the outcome worth fixing — and the one most solutions miss entirely.
-          </p>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECTION 5: HOW IT WORKS — THREE THINGS        */}
-        {/* v5: Simplified science (was 5 points → 3)    */}
-        {/* Compliance: "astronaut circadian research"    */}
-        {/* ============================================ */}
-        <div id="how-it-works" className="mb-12 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border border-[#4a4e69]/50 rounded-2xl p-8 md:p-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-6">
-            How It Works — <span className="text-[#a8dadc]">Three Things, In Order</span>
-          </h2>
-          <p className="text-[#f1faee]/80 text-lg mb-8">
-            Your sleep system has a hierarchy. Most programs ignore it.
-          </p>
-
-          <div className="space-y-6">
-            <div className="bg-[#0f0e17]/60 p-6 rounded-xl border-l-4 border-[#a8dadc]">
-              <p className="text-[#a8dadc] font-bold text-lg mb-2">1. Your wake time controls everything.</p>
-              <p className="text-[#f1faee]/70">It sets your cortisol curve, your melatonin window, your body temperature cycle. Every other intervention is downstream of this one variable. Almost nobody starts here — which is why almost nothing sticks.</p>
-            </div>
-
-            <div className="bg-[#0f0e17]/60 p-6 rounded-xl border-l-4 border-[#a8dadc]">
-              <p className="text-[#a8dadc] font-bold text-lg mb-2">2. Light and metabolic timing amplify or destroy the signal.</p>
-              <p className="text-[#f1faee]/70">Light exposure at the wrong time of day actively works against you. Caffeine cleared at the wrong time keeps cortisol elevated at 3am. These aren't minor tweaks — they're the difference between a system that holds and one that collapses. The timing protocols here draw on the same principles used in astronaut circadian reset research.</p>
-            </div>
-
-            <div className="bg-[#0f0e17]/60 p-6 rounded-xl border-l-4 border-[#a8dadc]">
-              <p className="text-[#a8dadc] font-bold text-lg mb-2">3. Environment and behavior can only compound a stable rhythm — they can't create one.</p>
-              <p className="text-[#f1faee]/70">This is why your wind-down routine doesn't work consistently. It's not the routine. It's that the biological rhythm it's supposed to anchor to isn't stable yet. Once the rhythm exists, everything in Days 3–7 locks in fast.</p>
-            </div>
-          </div>
-
-          <p className="text-[#f1faee] font-semibold text-lg mt-8">
-            The Sequential Reset builds these in the right order. By Day 7, the system runs on its own.
-          </p>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECOND TESTIMONIAL — woven mid-page          */}
-        {/* v5: Different problem (4am wake-ups), Day 4   */}
-        {/* ============================================ */}
-        <div className="mb-14 bg-[#16213e] border-l-4 border-[#e63946] rounded-r-xl p-6">
-          <p className="text-[#f1faee]/70 italic text-lg mb-3">
-            "4am anxiety wake-ups every single morning for two years. Melatonin helped me fall asleep but didn't stop the waking. I started to think this was just my life now."
-          </p>
-          <p className="text-[#f1faee]/80 mb-3">
-            Lisa moved her last coffee two hours earlier on Day 4. That's it. One adjustment, in the right place in the sequence. The 4am wake-ups that had been there for two years stopped within four days.
-          </p>
-          <p className="text-[#f1faee]/70 italic text-lg">
-            "I don't fully understand why but I'm not questioning it."
-          </p>
-          <p className="text-[#a8dadc] font-semibold mt-3">— Marketing Director, 38</p>
-          <p className="text-[#f1faee]/50 text-sm mt-1">2-year 4am wake-up pattern resolved by a single Day 4 caffeine timing adjustment.</p>
-          <p className="text-[#f1faee]/40 text-xs mt-3 italic">
-            *Name changed for privacy. Based on real feedback from an early protocol user. Individual results will vary.
-          </p>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECTION 6: NIGHT BY NIGHT                    */}
-        {/* v5: Honest expectations (no overpromising)   */}
-        {/* Compliance: softened "85%" → "most users"    */}
-        {/* ============================================ */}
-        <div className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-6">
-            What to Expect — Night by Night
-          </h2>
-          <p className="text-[#f1faee]/70 italic mb-6">Honest expectations. No overpromising.</p>
-          <div className="space-y-4">
-            {[
-              { night: 'Night 1', desc: 'Foundation work. Probably not dramatically different. Sleep may feel slightly off as your system starts calibrating — that\'s normal and temporary.' },
-              { night: 'Night 2–3', desc: 'Something shifts. Not perfect — but noticeable. Most early users reported a meaningful change by Night 3. Falling asleep faster, waking less.*' },
-              { night: 'Night 4–5', desc: 'The 3am wake-ups, if that\'s your pattern, typically reduce or disappear here. Day 4\'s caffeine and meal timing adjustments start paying off.' },
-              { night: 'Night 6–7', desc: 'The system is compounding. People report waking before the alarm. Mornings feel qualitatively different.' },
-              { night: 'After Day 7', desc: 'You stop managing sleep. It runs itself.' },
-            ].map(({ night, desc }) => (
-              <div key={night} className="flex gap-4 bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-5">
-                <div className="bg-[#a8dadc] text-[#1a1a2e] rounded-lg px-3 py-1 font-bold text-sm flex-shrink-0 h-fit mt-1">{night}</div>
-                <p className="text-[#f1faee]/80">{desc}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-[#f1faee]/40 text-xs mt-4 italic">
-            *Based on self-reported feedback from early protocol users. Some people see faster results, some slower. Night 1 disruption is normal and temporary. Individual results will vary.
-          </p>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECTION 7: FOUNDER'S STORY                   */}
-        {/* v5: NEW — raw, no fake credentials, honest   */}
-        {/* ============================================ */}
-        <div className="mb-12 bg-[#0f0e17]/60 border border-[#4a4e69]/30 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-[#f1faee] mb-6">
-            Why This Was Built
-          </h2>
-          <div className="space-y-4 text-[#f1faee]/80 text-lg leading-relaxed">
-            <p>
-              This protocol exists because the person who built it spent three years being a walking contradiction.
-            </p>
-            <p>
-              Deep in sleep research. Couldn't sleep.
-            </p>
-            <p>
-              Every intervention in the literature was on the shelf — melatonin at the right dose, blackout curtains, temperature dialed to 67°F, magnesium glycinate, no caffeine after noon. None of it held consistently. Some nights worked. Most didn't.
-            </p>
-            <p>
-              The turning point wasn't a new discovery. It was a sequencing question: <em className="text-[#a8dadc]">what if the order matters more than the interventions?</em>
-            </p>
-            <p>
-              Obvious in retrospect. The circadian anchor has to come first. Light exposure only works once the anchor is stable. Environment only compounds a rhythm that already exists. Behavioral tools only stick when the biological foundation supports them.
-            </p>
-            <p>
-              Applied in the right sequence, it worked — consistently — for the first time. Then tested on others who'd tried everything. Same result.
-            </p>
-            <p className="text-[#f1faee]/60 italic">
-              No celebrity endorsement. No viral backstory. Just someone who was exhausted, figured out the order, and wrote it down.
-            </p>
-          </div>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECTION 8: HOW IS THIS DIFFERENT             */}
-        {/* ============================================ */}
-        <div className="mb-12 space-y-5 text-lg leading-relaxed">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee]">
-            How Is This Different From What I've Already Tried?
+            The Solutions You've Already Tried Aren't Solving The Right Problem
           </h2>
           <div className="space-y-4">
             {[
-              { label: 'vs. Melatonin', desc: 'Useful in the right sequence. Insufficient without a stable wake anchor established first. Most people take it as step one when it\'s actually step four.' },
-              { label: 'vs. Sleep hygiene checklists', desc: 'Ten simultaneous changes = nervous system resistance. A checklist is the wrong format for a sequential biological problem.' },
-              { label: 'vs. Magnesium & supplements', desc: 'Day 4+ work. Taken before Days 1–3 are stable, they add variables instead of clarity.' },
-              { label: 'vs. Meditation & breathing apps', desc: 'Wind-down tools are Day 5 work. Without the circadian foundation, results are inconsistent — exactly what most people experience.' },
-            ].map(({ label, desc }) => (
-              <div key={label} className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-5">
-                <p className="text-[#a8dadc] font-semibold mb-2">{label}</p>
-                <p className="text-[#f1faee]/70">{desc}</p>
+              { name: "Melatonin", why: "is a timing hormone, not a sedative. It tells your body when to sleep — not how to complete your cycles. Taking 10mg at 10pm doesn't fix your 6:47am alarm problem." },
+              { name: "Sleep trackers", why: "measure your cycles. They don't align them with when your alarm fires." },
+              { name: "Weighted blankets, magnesium, chamomile tea", why: "— all fine. None of them address why you wake up groggy." },
+              { name: "Prescription sleep aids", why: "knock you out. They can actually suppress the deep sleep stages you need and leave you in a drugged haze at the wrong point in your cycle." },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 items-start bg-[#16213e] rounded-xl p-5 border border-[#4a4e69]/20">
+                <span className="text-[#e63946] font-bold text-xl mt-0.5 flex-shrink-0">✕</span>
+                <p className="text-[#f1faee]/75 leading-relaxed">
+                  <strong className="text-[#f1faee]">{item.name}</strong> {item.why}
+                </p>
               </div>
             ))}
           </div>
-          <p className="text-[#f1faee] font-semibold text-xl bg-[#16213e] p-6 rounded-xl border border-[#4a4e69]/30">
-            The difference isn't the components. It's the sequence.
+          <p className="text-[#f1faee]/75 text-lg">
+            The problem isn't falling asleep. The problem is <strong className="text-[#f1faee]">when you're being forced to wake up.</strong>
           </p>
         </div>
 
-        {/* ============================================ */}
-        {/* SECTION 9: IS THIS FOR YOU?                  */}
-        {/* ============================================ */}
-        <div className="mb-12 bg-[#16213e] border border-[#4a4e69]/30 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-[#f1faee] mb-6">Is This For You?</h2>
-          <div className="space-y-3 mb-6">
-            {[
-              "You're exhausted during the day but can't fall asleep at night",
-              "You lie in bed tired and your brain just won't shut off",
-              "You wake up after 7–8 hours and still feel wrecked",
-              "You've tried the standard fixes — they help some nights, not others",
-              "You wake at 2, 3, or 4am and can't get back down",
-              "You're skeptical — because you've been burned before",
-              "You want reliable sleep, not magic",
-            ].map(item => (
-              <div key={item} className="flex items-start gap-3">
-                <span className="text-green-400 mt-1 flex-shrink-0">✓</span>
-                <p className="text-[#f1faee]/80">{item}</p>
-              </div>
-            ))}
-          </div>
-          <div className="border-t border-[#4a4e69]/30 pt-6">
-            <p className="text-[#f1faee]/60 font-semibold mb-3">This probably isn't for you if:</p>
-            <ul className="space-y-2 text-[#f1faee]/50 text-sm">
-              <li>• You have a diagnosed sleep disorder — consult your doctor first. This is a lifestyle protocol, not medical treatment.</li>
-              <li>• You're not willing to follow the 7-day sequence — results depend on doing the days in order.</li>
-              <li>• You're looking for a supplement or medication.</li>
-            </ul>
-            <p className="text-[#f1faee]/50 text-sm mt-4 italic">
-              <strong className="text-[#f1faee]/60">On medications:</strong> This is a behavioral and environmental protocol — no substances. It doesn't interact with sleep medications and can be followed alongside any medical care you're receiving.
-            </p>
-          </div>
-        </div>
-
-        {/* ============================================ */}
-        {/* SECTION 10: DAY BY DAY                       */}
-        {/* Compliance: "astronaut circadian research"   */}
-        {/* ============================================ */}
-        <div className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-8 text-center">
-            Exactly What You'll Do Each Day
+        {/* ── ORIGIN / FORGOTTEN RITUAL ───────────── */}
+        <div className="space-y-5">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee]">
+            The Ritual That Modern Life Made Us Forget
           </h2>
-          <div className="space-y-5 mb-10">
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            Before alarm clocks, humans woke naturally. They'd complete a 90-minute sleep cycle, surface to a light near-waking state, sense the morning light — and open their eyes. Alert. Rested. Ready.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            No grogginess. No fog. No crawling to the coffee maker.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            Then artificial light happened. Then the industrial alarm clock. Then a century of being ripped out of deep sleep at arbitrary times because the radio goes off at 6:47am and that's just how it works now.
+          </p>
+          <p className="text-[#f1faee] font-semibold text-lg">Your body still knows how to do this right.</p>
+          <p className="text-[#f1faee]/75 leading-relaxed">It just needs a 4-minute window and a specific cue.</p>
+
+          <div className="bg-[#16213e] border border-[#a8dadc]/20 rounded-2xl p-8 space-y-3">
+            <p className="text-[#a8dadc] font-semibold text-sm uppercase tracking-widest">The Forgotten Sleep Ritual is:</p>
+            <p className="text-[#f1faee] text-lg leading-relaxed">
+              The practice of working with your sleep cycles instead of against them — timing your sleep so your alarm always fires at the natural end of a cycle, in that light near-waking window your body is designed to use.
+            </p>
+            <p className="text-[#f1faee]/75 leading-relaxed">
+              It takes about 5 minutes to set up. You do it once. And then every morning, instead of being jolted awake mid-cycle, you open your eyes at the moment your brain was already surfacing on its own.
+            </p>
+          </div>
+        </div>
+
+        {/* ── PRODUCT INTRO ───────────────────────── */}
+        <div className="text-center space-y-3">
+          <p className="text-[#a8dadc] text-sm font-semibold uppercase tracking-widest">Introducing</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#f1faee]">The Forgotten Sleep Ritual</h2>
+          <p className="text-[#f1faee]/75 text-lg">A short, science-backed guide to waking up refreshed — starting tomorrow morning.</p>
+        </div>
+
+        {/* ── WHAT YOU'LL LEARN ───────────────────── */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-[#f1faee]">What You'll Learn (In the First 30 Minutes of Reading)</h3>
+          <div className="space-y-3">
             {[
-              {
-                day: '1',
-                title: 'Anchor Your Circadian Master Clock',
-                time: '15 min',
-                desc: 'Set your precise wake time using the Sleep Pressure Formula. Your wake time is the master variable — it controls cortisol, melatonin, body temperature, and everything downstream. One calculation. Everything in Days 2–7 depends on this being in place first.',
-                why: 'Why first: Without a stable wake anchor, every subsequent intervention is building on shifting sand.'
-              },
-              {
-                day: '2',
-                title: 'Strategic Light Exposure Protocol',
-                time: '20 min across the day',
-                desc: 'A 3-part light protocol — specific timing and duration for morning, midday, and evening. Drawing on the same principles used in astronaut circadian reset research. No special equipment required. Amplifies the signal from Day 1.',
-                why: 'Why Day 2: Light amplification only works after the anchor is stable — used before, it introduces noise instead of signal.'
-              },
-              {
-                day: '3',
-                title: 'The Sleep Cave Reset',
-                time: '30 min, one-time',
-                desc: 'Three specific environmental changes — temperature, light, and sound — using the included Sleep Environment Audit Checklist. Under $30 total. Works now because your rhythm has a foundation to build on.',
-                why: 'Why Day 3: Environmental cues only shift behavior after the internal biological rhythm exists.'
-              },
-              {
-                day: '4',
-                title: 'Caffeine & Food Timing Reset',
-                time: '10 min to adjust your routine',
-                desc: 'Apply the Caffeine Cutoff Formula to find your personal last-coffee window (it\'s probably later than you think). One meal timing adjustment eliminates the cortisol spike behind most 3am wake-ups. Keep your coffee — just move it.',
-                why: 'Why Day 4: Metabolic adjustments integrate cleanly once the circadian system is stable. Introduced earlier, they add confusion.'
-              },
-              {
-                day: '5',
-                title: '"Realistic" Wind-Down Sequence',
-                time: '20–30 min before bed',
-                desc: 'Build a personalized 3-step wind-down using the Wind-Down Builder in the protocol. Works even if you\'re on your phone right up until bed. The key is sequencing the transition from activation to rest — not restriction.',
-                why: 'Why Day 5: Wind-down routines need a biological substrate to anchor to. Days 1–4 built that substrate.'
-              },
-              {
-                day: '6',
-                title: 'Sleep Cycle Alignment',
-                time: '5 min, one calculation',
-                desc: 'Use the Cycle Calculator to find your optimal wake window based on your natural 90-minute sleep architecture. Adjust your alarm by 15–30 minutes. The grogginess that hits even after 8 hours — eliminated.',
-                why: 'Why Day 6: Cycle optimization only produces consistent results after sleep quality and timing are stable.'
-              },
-              {
-                day: '7',
-                title: 'Integration & Chaos-Proofing',
-                time: '20 min',
-                desc: 'Build your personal Maintenance Protocol — a decision tree for protecting your sleep when travel, stress, sick kids, late nights, or anything else disrupts the routine. Then stop actively managing and let the system run.',
-                why: 'Why Day 7: Integration only holds after each element has been practiced individually.'
-              },
-            ].map(({ day, title, time, desc, why }) => (
-              <div key={day} className="bg-[#0f0e17]/60 rounded-xl p-6 border-l-4 border-[#a8dadc]">
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#a8dadc] text-[#1a1a2e] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg flex-shrink-0">{day}</div>
-                  <div>
-                    <div className="flex flex-wrap items-center gap-3 mb-2">
-                      <p className="text-[#a8dadc] font-bold text-lg">{title}</p>
-                      <span className="text-[#f1faee]/40 text-sm bg-[#16213e] px-2 py-0.5 rounded">{time}</span>
-                    </div>
-                    <p className="text-[#f1faee]/70 mb-3">{desc}</p>
-                    <p className="text-[#f1faee]/40 italic text-sm">{why}</p>
-                  </div>
+              "The exact math to calculate your personal sleep windows — so you wake at the end of a cycle, not the middle of one",
+              "The 4-minute morning cue that triggers your cortisol awakening response and wires your brain to feel alert within 60 seconds of waking",
+              "The nighttime anchor that stabilizes your sleep architecture across your full sleep period",
+              "Why your first cup of coffee is making your afternoon crash worse — and the 90-minute delay that eliminates afternoon energy crashes entirely",
+              "The three \"sleep saboteurs\" hiding in your current routine that are compressing your deep sleep, and the simple swaps to eliminate them",
+              "The one-sentence instruction that tells your brain whether tonight will be a good sleep night or a bad one — before you even get in bed",
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 items-start">
+                <span className="text-[#a8dadc] font-bold text-lg mt-0.5 flex-shrink-0">✓</span>
+                <p className="text-[#f1faee]/80 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ── TIMELINE PROMISE ────────────────────── */}
+        <div className="bg-gradient-to-br from-[#16213e] to-[#0f3460] border border-[#a8dadc]/20 rounded-2xl p-8 text-center space-y-3">
+          <p className="text-[#a8dadc] font-bold text-xl">You'll Know It's Working By Morning 3.</p>
+          <p className="text-[#f1faee]/75 leading-relaxed max-w-xl mx-auto">
+            Most people notice a real shift by the third morning. Not a perfect shift. Not an overnight miracle. But the difference between slamming the snooze button and opening your eyes at the end of a cycle — and realizing the alarm is optional.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed max-w-xl mx-auto">
+            By Day 7, most people aren't white-knuckling their mornings anymore. They're waking up on time, feeling like they actually slept. Showing up for the first hour of their day as themselves.
+          </p>
+          <p className="text-[#f1faee] font-semibold">Not a groggy, coffee-dependent version. Themselves.</p>
+        </div>
+
+        {/* ── 5 PARTS ─────────────────────────────── */}
+        <div className="space-y-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee]">What's Inside</h2>
+          <p className="text-[#f1faee]/60 text-sm">A 40-page PDF. One time. Immediate access.</p>
+          {[
+            {
+              part: "Part 1",
+              title: "The Cycle Truth",
+              desc: "Why everything the sleep industry tells you is focused on the wrong metric — and the simple shift in thinking that changes everything. After this section, you'll immediately understand why some mornings feel great and others destroy you, even when the hours are identical.",
+              pages: "Pages 1–8"
+            },
+            {
+              part: "Part 2",
+              title: "Your Personal Ritual Calculator",
+              desc: "The exact formula for finding your personal cycle-aligned bedtimes and wake windows. You do this once. Takes about 3 minutes. From that point on, you'll always know the right time to go to sleep and the right time to wake up — for your schedule, your life, your body. No app required.",
+              pages: "Pages 9–12"
+            },
+            {
+              part: "Part 3",
+              title: "The Forgotten Ritual",
+              desc: "The 10-minute pre-sleep sequence that primes your nervous system to complete full cycles and reach that natural wake window at the right time. This is the ritual itself — specific, repeatable, and simple enough to do tonight.",
+              pages: "Pages 13–20"
+            },
+            {
+              part: "Part 4",
+              title: "The Morning Protocol",
+              desc: "What to do in the first 90 seconds after you wake up. This one step eliminates residual grogginess and locks in the refreshed feeling — most people skip it entirely, and that's why the groggy feeling lingers even when the timing is right.",
+              pages: "Pages 21–24"
+            },
+            {
+              part: "Part 5",
+              title: "The Reset Method",
+              desc: "Your kids woke you up at 3am. You were out late. You're traveling across time zones. Life breaks the schedule. The Reset Method is your one-night recovery protocol so a single disruption doesn't spiral into a week of exhaustion.",
+              pages: "Pages 25–28"
+            },
+          ].map((item, i) => (
+            <div key={i} className="flex gap-5 bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/20">
+              <div className="flex-shrink-0 text-center">
+                <div className="w-12 h-12 rounded-full bg-[#a8dadc]/10 border border-[#a8dadc]/30 flex items-center justify-center">
+                  <span className="text-[#a8dadc] font-bold text-lg">{i + 1}</span>
                 </div>
               </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <a
-              href={checkoutUrl}
-              onClick={() => handleCheckoutClick('Start Tonight — Get The Complete Protocol', 'method_section')}
-              className="inline-block bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-4 px-8 rounded-xl transition text-xl shadow-lg hover:shadow-xl"
-            >
-              Start Tonight — Get The Complete Protocol
-            </a>
-          </div>
+              <div className="space-y-1">
+                <p className="text-[#a8dadc] text-xs font-semibold uppercase tracking-wider">{item.part}</p>
+                <h3 className="text-[#f1faee] font-bold text-lg">{item.title}</h3>
+                <p className="text-[#f1faee]/65 leading-relaxed text-sm">{item.desc}</p>
+                <p className="text-[#f1faee]/35 text-xs pt-1">{item.pages}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* ============================================ */}
-        {/* THIRD TESTIMONIAL — woven near bottom        */}
-        {/* v5: Shift worker / skeptic angle             */}
-        {/* ============================================ */}
-        <div className="mb-14 bg-[#16213e] border-l-4 border-[#a8dadc] rounded-r-xl p-6">
-          <p className="text-[#f1faee]/70 italic text-lg mb-3">
-            "I don't see how a 7-day protocol helps shift workers. My schedule doesn't stay the same for 7 days."
-          </p>
-          <p className="text-[#f1faee]/80 mb-3">
-            Marcus is an ER nurse on rotating shifts. He'd accepted that real sleep wasn't possible for someone like him.
-          </p>
-          <p className="text-[#f1faee]/70 italic text-lg mb-3">
-            "The light exposure piece on Day 2 was the thing I'd never encountered anywhere — not in nursing school, not from my own doctor. It's specific enough to actually use."
-          </p>
-          <p className="text-[#f1faee]/80 mb-3">
-            He sleeps better on night shifts now than most of his day-shift colleagues.
-          </p>
-          <p className="text-[#f1faee]/70 italic text-lg">
-            "My wife says it's like having the person she married back. I don't say that lightly."
-          </p>
-          <p className="text-[#a8dadc] font-semibold mt-3">— ER Nurse, rotating shifts</p>
-          <p className="text-[#f1faee]/40 text-xs mt-3 italic">
-            *Name changed for privacy. Based on real feedback from an early protocol user. Individual results will vary.
-          </p>
+        {/* ── CTA MID ─────────────────────────────── */}
+        <div className="space-y-3">
+          <CTA location="mid" />
+          <p className="text-center text-sm text-[#f1faee]/40">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
         </div>
 
-        {/* ============================================ */}
-        {/* SECTION 11: VALUE STACK                      */}
-        {/* ============================================ */}
-        <div id="whats-included" className="mb-16 bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
-          <h3 className="text-3xl font-bold text-[#f1faee] mb-4 text-center">Everything You Get</h3>
-          <p className="text-lg text-[#f1faee]/70 mb-8 text-center">
-            Instant digital download. No app, no account, no subscription.
-          </p>
-
-          <div className="max-w-lg mx-auto space-y-3 mb-10">
+        {/* ── VALUE COMPARISON ────────────────────── */}
+        <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-2xl p-8 space-y-4">
+          <h3 className="text-xl font-bold text-[#f1faee]">What This Is Worth vs. What You're Paying</h3>
+          <div className="space-y-3">
             {[
-              { item: '7-Day Sequential Reset Protocol', detail: 'PDF, 47 pages — full day-by-day system with all formulas, calculators, and decision trees', value: '$97' },
-              { item: 'Sleep Environment Audit Checklist', detail: 'PDF, 8 pages — room-by-room, under $30 total', value: '$29' },
-              { item: 'Evidence-Based Supplement Timing Guide', detail: 'PDF, 12 pages — what helps, what doesn\'t, exactly when', value: '$29' },
-              { item: 'Sleep Progress Tracking Templates', detail: 'Fillable PDF — daily + weekly tracking', value: '$19' },
-              { item: 'Emergency Sleep Recovery Protocol', detail: 'PDF, 6 pages — travel, illness, jet lag, broken nights', value: '$19' },
-              { item: 'Lifetime Updates', detail: 'Every protocol update delivered free', value: '$47' },
-            ].map(({ item, detail, value }) => (
-              <div key={item} className="py-4 px-5 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
-                <div className="flex justify-between items-start gap-3">
-                  <div>
-                    <p className="text-[#f1faee] font-medium">{item}</p>
-                    <p className="text-[#f1faee]/50 text-sm mt-0.5">{detail}</p>
-                  </div>
-                  <span className="text-[#f1faee]/50 text-sm flex-shrink-0">Est. <span className="line-through">{value}</span></span>
+              { label: "A single session with a sleep specialist", value: "$150–$400" },
+              { label: "A sleep tracking device that measures but doesn't fix", value: "$299" },
+              { label: "Another month of melatonin gummies", value: "$35/mo — on repeat, forever" },
+            ].map((item, i) => (
+              <div key={i} className="flex justify-between items-center border-b border-[#4a4e69]/20 pb-3">
+                <span className="text-[#f1faee]/65 text-sm">{item.label}</span>
+                <span className="text-[#f1faee]/65 text-sm font-semibold flex-shrink-0 ml-4">{item.value}</span>
+              </div>
+            ))}
+            <div className="flex justify-between items-center pt-2">
+              <span className="text-[#f1faee] font-bold text-lg">The Forgotten Sleep Ritual</span>
+              <span className="text-[#a8dadc] font-bold text-xl">$17</span>
+            </div>
+            <p className="text-[#f1faee]/50 text-sm">One time. Immediate digital access. Start the ritual tonight.</p>
+          </div>
+        </div>
+
+        {/* ── TESTIMONIALS ────────────────────────── */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-[#f1faee]">Real Results From Real People</h3>
+          <p className="text-[#f1faee]/40 text-xs italic">Individual results vary. These reflect real customer experiences.</p>
+          {[
+            {
+              quote: "I've tried everything. This was the first thing that actually worked. I woke up without an alarm on Day 4 and just lay there kind of stunned.",
+              name: "Amanda R.",
+              role: "Teacher"
+            },
+            {
+              quote: "The coffee timing thing alone was worth $17. The sleep cycles thing changed my life.",
+              name: "Marcus T.",
+              role: "Software engineer"
+            },
+            {
+              quote: "I work nights and my sleep has always been wrecked. This helped me understand what my body was doing and actually feel in control again.",
+              name: "Keisha M.",
+              role: "Night shift nurse"
+            },
+          ].map((t, i) => (
+            <div key={i} className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/20 space-y-3">
+              <div className="text-[#e9c46a] text-sm tracking-widest">★★★★★</div>
+              <p className="text-[#f1faee]/80 italic leading-relaxed">"{t.quote}"</p>
+              <div>
+                <p className="text-[#f1faee] font-semibold text-sm">{t.name}</p>
+                <p className="text-[#f1faee]/45 text-xs">{t.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ── GUARANTEE ───────────────────────────── */}
+        <div className="border-2 border-[#a8dadc]/30 rounded-2xl p-8 space-y-4">
+          <div className="flex items-center gap-4">
+            <div className="w-16 h-16 rounded-full bg-[#a8dadc]/10 border-2 border-[#a8dadc]/40 flex items-center justify-center flex-shrink-0">
+              <span className="text-2xl">🛡️</span>
+            </div>
+            <h3 className="text-xl font-bold text-[#f1faee]">The Only Guarantee That Matters</h3>
+          </div>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            Try it for 60 full days. Wake up with it. Test it across your real schedule — workdays, weekends, the chaotic weeks when everything goes sideways.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            If you don't wake up feeling measurably more refreshed within the first week, email us. We'll refund every cent. No forms. No questions. No runaround.
+          </p>
+          <p className="text-[#f1faee] font-semibold">You either wake up better, or you pay nothing.</p>
+          <p className="text-[#f1faee]/50 text-sm italic">— Sarah</p>
+        </div>
+
+        {/* ── FAQ ─────────────────────────────────── */}
+        <div className="space-y-3">
+          <h3 className="text-xl font-bold text-[#f1faee]">Questions</h3>
+          {faqs.map((faq, i) => (
+            <div key={i} className="bg-[#16213e] rounded-xl border border-[#4a4e69]/20 overflow-hidden">
+              <button
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="w-full text-left px-6 py-4 flex justify-between items-center gap-4 hover:bg-[#1a2744] transition-colors"
+              >
+                <span className="text-[#f1faee] font-semibold text-sm leading-snug">{faq.q}</span>
+                <span className="text-[#a8dadc] text-xl flex-shrink-0 font-light">
+                  {openFaq === i ? '−' : '+'}
+                </span>
+              </button>
+              {openFaq === i && (
+                <div className="px-6 pb-5 text-[#f1faee]/70 text-sm leading-relaxed border-t border-[#4a4e69]/20 pt-4">
+                  {faq.a}
                 </div>
-              </div>
-            ))}
-
-            <div className="border-t-2 border-[#a8dadc]/50 pt-4 mt-4">
-              <div className="flex justify-between items-center py-4 px-5 bg-[#a8dadc]/10 rounded-lg border-2 border-[#a8dadc]/30">
-                <span className="text-[#f1faee] font-bold text-xl">Total Estimated Value</span>
-                <span className="text-[#f1faee] font-bold text-2xl line-through opacity-60">$240</span>
-              </div>
+              )}
             </div>
-          </div>
-
-          <div className="text-center mb-8">
-            <p className="text-[#f1faee]/60 text-lg mb-3">Your price today:</p>
-            <div className="text-7xl font-bold text-[#a8dadc] mb-3">$17</div>
-            <p className="text-[#f1faee]/60 mb-1">One-time payment • Instant download • Lifetime access</p>
-            <p className="text-[#f1faee]/50 text-sm">Less than $2.50/day. Download link in your inbox within 2 minutes of purchase.</p>
-          </div>
-
-          <div className="text-center">
-            <a
-              href={checkoutUrl}
-              onClick={() => handleCheckoutClick('Join the Reset For Just $17', 'value_stack')}
-              className="inline-block w-full sm:w-auto bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-5 px-12 rounded-xl transition text-2xl shadow-lg hover:shadow-xl mb-4"
-            >
-              Join the Reset For Just $17
-            </a>
-            <div className="flex items-center justify-center gap-2 text-sm text-[#f1faee]/60">
-              <span className="text-green-400 text-lg">🔒</span>
-              <span>Secure checkout • 60-day guarantee • Instant download</span>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* ============================================ */}
-        {/* SECTION 12: GUARANTEE                        */}
-        {/* ============================================ */}
-        <div id="guarantee" className="mb-16 bg-green-500/5 border-2 border-green-500/30 rounded-2xl p-8 text-center">
-          <div className="text-5xl mb-6">🛡️</div>
-          <h3 className="text-3xl font-bold text-green-400 mb-6">
-            60-Day "Reliable Sleep or Full Refund" Guarantee
-          </h3>
-          <p className="text-[#f1faee]/80 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
-            Follow the 7-day sequence. If you don't notice a real difference in how you sleep, how you wake up, or how you feel — email within 60 days for a complete refund. No forms. No hoops. No questions asked.
-          </p>
-          <p className="text-[#f1faee]/70 max-w-2xl mx-auto text-lg">
-            This isn't here to pressure you into buying. It's here so that <em>price</em> isn't the reason you don't try something that might actually work.
+        {/* ── P.S. ────────────────────────────────── */}
+        <div className="text-center">
+          <p className="text-[#f1faee]/50 text-sm leading-relaxed max-w-xl mx-auto">
+            <strong className="text-[#f1faee]/70">P.S.</strong> — The average person tries 4–6 sleep "solutions" before they find one that actually works. Supplements, gadgets, routines — none of them target the actual problem. For $17, the Forgotten Sleep Ritual goes straight at the cause: your alarm is firing at the wrong point in your cycle. Fix that, and everything else gets easier. You've already tried the other things. Try the one that addresses the real problem.
           </p>
         </div>
 
-        {/* ============================================ */}
-        {/* SECTION 13: FAQ — Accordion                  */}
-        {/* ============================================ */}
-        <div id="faq" className="mb-16">
-          <h3 className="text-3xl font-bold text-[#f1faee] mb-10 text-center">Common Questions</h3>
-          <div className="max-w-4xl mx-auto divide-y divide-[#4a4e69]/30 border border-[#4a4e69]/30 rounded-xl overflow-hidden">
-            {[
-              {
-                q: "I've tried everything. Why would this be different?",
-                a: "Because the issue isn't what you've tried — it's the order. The Sequential Reset doesn't introduce new interventions. It applies what already works in the sequence your biology requires. Different mechanism, not different ingredients."
-              },
-              {
-                q: "What exactly is this? A course? A supplement?",
-                a: "Neither. It's a PDF protocol — 47 pages of day-by-day instructions with all worksheets and calculators built in. Instant download, no account required, no recurring charges. Read it once, follow the days, keep it forever."
-              },
-              {
-                q: "How long until I notice something?",
-                a: "Most people notice a shift by Night 3. The 3am wake-up pattern — if that's your issue — typically responds by Day 4. Night 1 may feel slightly different as the system calibrates — that's normal and temporary."
-              },
-              {
-                q: "What if my schedule is unpredictable — shifts, travel, kids?",
-                a: "Day 7 is built specifically for chaos. Dedicated sections for shift workers, frequent travelers, and new parents. Some of the strongest results came from people who thought their situation was unsolvable."
-              },
-              {
-                q: "Can I do this if I'm on sleep medication?",
-                a: "Yes. This is a behavioral protocol — no substances or supplements, no interactions. It can run alongside any medical care you're receiving. If you're hoping to reduce medication dependence over time, that's a separate conversation with your doctor."
-              },
-              {
-                q: "What if I miss a day?",
-                a: "Each day includes a minimum-viable version for difficult days. Missing one day doesn't reset the protocol. Pick up where you left off."
-              },
-              {
-                q: "How long do I have access?",
-                a: "Forever. It's a download — no expiration, no subscription, no renewal required."
-              },
-            ].map(({ q, a }, i) => (
-              <div key={q} className="bg-[#16213e]">
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[#1e2a40] transition-colors"
-                >
-                  <span className="text-[#f1faee] font-semibold text-lg">{q}</span>
-                  <span className={`text-[#a8dadc] text-2xl flex-shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
-                </button>
-                {openFaq === i && (
-                  <div className="px-6 pb-5">
-                    <p className="text-[#f1faee]/80 text-lg leading-relaxed">{a}</p>
-                  </div>
-                )}
-              </div>
-            ))}
+        {/* ── EMBEDDED CHECKOUT ───────────────────── */}
+        <div id="checkout" className="scroll-mt-8 space-y-6">
+          <div className="text-center space-y-2">
+            <h3 className="text-2xl font-bold text-[#f1faee]">Get Instant Access — $17</h3>
+            <p className="text-[#f1faee]/50 text-sm">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
           </div>
-        </div>
 
-        {/* ============================================ */}
-        {/* SECTION 14: FINAL CTA                        */}
-        {/* ============================================ */}
-        <div className="mb-16 text-center">
-          <div className="bg-gradient-to-br from-[#16213e] to-[#0f0e17] border-2 border-[#a8dadc]/30 rounded-2xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#f1faee] mb-6">
-              You know what you want.
-            </h3>
-            <p className="text-lg text-[#f1faee]/80 mb-8 max-w-2xl mx-auto">
-              You want to be tired at night and actually fall asleep. You want to wake up and feel like you slept. You want to stop thinking about your sleep. The Sequential Reset is 7 days. One change per day. It doesn't require willpower or a perfect schedule. Just the same things you've already tried — in the right order.
-            </p>
-            <a
-              href={checkoutUrl}
-              onClick={() => handleCheckoutClick('Join the Reset — $17', 'final_cta')}
-              className="inline-block w-full sm:w-auto bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-5 px-12 rounded-xl transition text-2xl shadow-lg hover:shadow-xl mb-4"
-            >
-              Join the Reset — $17
-            </a>
-            <div className="flex items-center justify-center gap-2 text-sm text-[#f1faee]/60">
-              <span className="text-green-400 text-lg">🔒</span>
-              <span>Instant download • 60-day guarantee • Lifetime access</span>
+          {/* Product image + checkout side by side on desktop */}
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="md:w-1/3 flex-shrink-0">
+              <img
+                src="/images/products/forgotten-sleep-ritual-cover.png"
+                alt="The Forgotten Sleep Ritual — digital guide"
+                className="w-full rounded-2xl shadow-2xl"
+              />
+              <div className="mt-3 space-y-1 text-center">
+                <p className="text-[#f1faee] font-semibold text-sm">The Forgotten Sleep Ritual</p>
+                <p className="text-[#f1faee]/50 text-xs">40-page digital guide · Instant access</p>
+              </div>
+            </div>
+            <div className="md:w-2/3 w-full">
+              <sc-checkout
+                product="the-forgotten-sleep-ritual"
+                subdomain="originalitymarketing"
+                coupon=""
+              />
             </div>
           </div>
-        </div>
-
-        {/* ============================================ */}
-        {/* P.S.                                         */}
-        {/* ============================================ */}
-        <div className="mb-16">
-          <div className="max-w-3xl mx-auto text-left space-y-5 text-[#f1faee]/70 border-t border-[#4a4e69]/30 pt-10">
-            <p className="text-lg">
-              <strong className="text-[#f1faee]">P.S.</strong> If you've ever Googled "so tired but can't sleep" at 1am, you already know something isn't working. The goal of this protocol isn't perfect sleep. It's closing the gap between how tired you feel and how fast you go under. Seven days. $17. 60-day guarantee if it doesn't work.
-            </p>
-            <p className="text-lg">
-              <strong className="text-[#f1faee]">P.P.S.</strong> The people who got the most out of this weren't convinced it would work. They just decided $17 and 60 days was worth finding out. The guarantee makes it a zero-risk bet on yourself.
-            </p>
-          </div>
-        </div>
-
-        {/* No Thanks */}
-        <div className="text-center mb-12">
-          <Link
-            to="/blog"
-            className="text-[#f1faee]/30 hover:text-[#f1faee]/50 transition text-sm"
-          >
-            No thanks, I'll keep being exhausted and not sleeping
-          </Link>
         </div>
 
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-[#4a4e69]/30 py-8">
-        <div className="max-w-4xl mx-auto px-4 text-center text-sm text-[#f1faee]/40">
-          <p className="mb-2">© 2026 Sleep Smarter. Not medical advice.</p>
-          <div className="flex justify-center gap-4 mb-3">
-            <Link to="/privacy" className="hover:text-[#a8dadc] transition">Privacy</Link>
-            <Link to="/terms" className="hover:text-[#a8dadc] transition">Terms</Link>
-            <Link to="/disclosure" className="hover:text-[#a8dadc] transition">Disclosure</Link>
-          </div>
-          <p className="text-xs text-[#f1faee]/30 max-w-2xl mx-auto">
-            Results mentioned on this page are based on self-reported feedback from early users of the protocol. Individual results will vary based on effort, consistency, health status, and personal circumstances. This protocol is not a substitute for professional medical advice. If you have a sleep disorder, please consult a healthcare provider.
-          </p>
+      {/* ── FOOTER ──────────────────────────────── */}
+      <footer className="border-t border-[#4a4e69]/30 mt-16 py-8 text-center">
+        <p className="text-[#f1faee]/30 text-xs max-w-2xl mx-auto leading-relaxed px-4">
+          Results vary. Individual experiences depend on consistent implementation, health status, and lifestyle factors. The testimonials above reflect real customer experiences; results are not guaranteed or typical. This product is not intended to diagnose, treat, cure, or prevent any medical condition. If you have a sleep disorder, please consult a healthcare professional.
+        </p>
+        <div className="mt-4 flex justify-center gap-6">
+          <Link to="/privacy" className="text-[#f1faee]/25 text-xs hover:text-[#f1faee]/50 transition-colors">Privacy Policy</Link>
+          <Link to="/terms" className="text-[#f1faee]/25 text-xs hover:text-[#f1faee]/50 transition-colors">Terms</Link>
+          <Link to="/contact" className="text-[#f1faee]/25 text-xs hover:text-[#f1faee]/50 transition-colors">Contact</Link>
         </div>
       </footer>
+
     </div>
   )
 }
