@@ -2,18 +2,6 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
 
-// SamCart sc-checkout web component
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'sc-checkout': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & {
-        product?: string
-        subdomain?: string
-        coupon?: string
-      }, HTMLElement>
-    }
-  }
-}
 
 export default function SleepReset() {
   useEffect(() => {
