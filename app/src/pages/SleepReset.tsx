@@ -405,7 +405,7 @@ export default function SleepReset() {
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/3 flex-shrink-0">
               <img
-                src="/images/products/forgotten-sleep-ritual-cover.png"
+                src="/images/products/forgotten-sleep-ritual-mockup.png"
                 alt="The Forgotten Sleep Ritual — digital guide"
                 className="w-full rounded-2xl shadow-2xl"
               />
