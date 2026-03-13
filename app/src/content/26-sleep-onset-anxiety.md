@@ -105,26 +105,6 @@ If you've been dealing with sleep-onset anxiety for more than a few weeks, the m
 
 ---
 
-## FAQ: Sleep-Onset Anxiety
-
-**Does sleep-onset anxiety mean I have an anxiety disorder?**
-
-Not necessarily. Sleep-onset anxiety is extremely common and often exists independently of generalized anxiety disorder. It's frequently a *learned* response — the brain has associated bedtime with wakefulness — rather than a clinical anxiety condition. However, if daytime anxiety is also persistent, speaking with a mental health professional is worthwhile.
-
-**Why does my brain suddenly think of everything the moment I lie down?**
-
-This is the default mode network activating as external task demands drop. It's neurologically normal — and it becomes problematic specifically when the brain has learned to associate that quiet state with unresolved threats. The techniques above work by either giving that DMN activity a scheduled outlet (worry journaling) or interrupting the arousal cycle before it builds.
-
-**Are sleep medications a solution?**
-
-For acute short-term use (a few nights during a life disruption), they can help prevent the conditioned arousal loop from forming. Long-term, the evidence strongly favors CBT-I over medication for sleep-onset anxiety — it addresses the mechanism rather than managing the symptom. Most sleep specialists consider CBT-I the first-line treatment.
-
-**Can anxiety cause permanent sleep damage?**
-
-No. Sleep architecture is remarkably resilient. Even years of disrupted sleep can normalize relatively quickly once the underlying drivers are addressed. The brain is constantly relearning — which is why conditioned arousal formed, and why it can be unconditioned.
-
----
-
 **Ready to reset your sleep system from the ground up?** The [7-Day Sleep Reset Protocol](/sleep-reset) walks you through exactly this — a day-by-day plan built on the same CBT-I research framework used by clinical sleep psychologists, adapted for people who don't have time for a 12-week therapy program. $17. 60-day guarantee. Starts the night you get it.
 
 ---
