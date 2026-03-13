@@ -41,6 +41,14 @@ export default function Article() {
   // Remove the first H1 title (we render it separately above)
   cleanContent = cleanContent.replace(/^#\s+.+\n+/, '')
 
+  // Extract "Keep Reading" section so we can render it after FAQ + CTA
+  let keepReadingContent = ''
+  const keepReadingMatch = cleanContent.match(/\n*## Keep Reading\n([\s\S]*)$/)
+  if (keepReadingMatch) {
+    keepReadingContent = keepReadingMatch[1].trim()
+    cleanContent = cleanContent.replace(/\n*## Keep Reading\n[\s\S]*$/, '')
+  }
+
   // Extract product cards and split content into segments
   const productCardRegex = /<!--\s*PRODUCT_CARD\s*([\s\S]*?)-->/g
   const productCards: ProductCardData[] = []
@@ -292,6 +300,32 @@ export default function Article() {
             Use Sleep Calculator
           </Link>
         </div>
+
+        {/* Keep Reading */}
+        {keepReadingContent && (
+          <div className="mt-12">
+            <h2 className="text-xl font-semibold text-[#a8dadc] mb-6">Keep Reading</h2>
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                ul: ({ children }) => (
+                  <ul className="space-y-3">{children}</ul>
+                ),
+                li: ({ children }) => (
+                  <li className="text-[#f1faee]/70">{children}</li>
+                ),
+                a: ({ href, children }) => (
+                  <a href={href} className="text-[#a8dadc] hover:underline">{children}</a>
+                ),
+                p: ({ children }) => (
+                  <p className="text-[#f1faee]/70">{children}</p>
+                ),
+              }}
+            >
+              {keepReadingContent}
+            </ReactMarkdown>
+          </div>
+        )}
 
         {/* Author Bio */}
         <div className="mt-12 p-6 bg-[#16213e] rounded-xl border border-[#4a4e69]/30">
