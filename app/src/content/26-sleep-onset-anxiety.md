@@ -105,10 +105,6 @@ If you've been dealing with sleep-onset anxiety for more than a few weeks, the m
 
 ---
 
-**Ready to reset your sleep system from the ground up?** The [7-Day Sleep Reset Protocol](/sleep-reset) walks you through exactly this — a day-by-day plan built on the same CBT-I research framework used by clinical sleep psychologists, adapted for people who don't have time for a 12-week therapy program. $17. 60-day guarantee. Starts the night you get it.
-
----
-
 ## FAQ: Sleep-Onset Anxiety
 
 **Does sleep-onset anxiety mean I have an anxiety disorder?**
@@ -126,6 +122,10 @@ For acute short-term use (a few nights during a life disruption), they can help 
 **Can anxiety cause permanent sleep damage?**
 
 No. Sleep architecture is remarkably resilient. Even years of disrupted sleep can normalize relatively quickly once the underlying drivers are addressed. The brain is constantly relearning — which is why conditioned arousal formed, and why it can be unconditioned.
+
+---
+
+**Ready to reset your sleep system from the ground up?** The [7-Day Sleep Reset Protocol](/sleep-reset) walks you through exactly this — a day-by-day plan built on the same CBT-I research framework used by clinical sleep psychologists, adapted for people who don't have time for a 12-week therapy program. $17. 60-day guarantee. Starts the night you get it.
 
 ---
 
