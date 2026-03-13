@@ -22,6 +22,7 @@ import blueLightSleep from '../content/22-blue-light-sleep.md?raw'
 import magnesiumForSleep from '../content/23-magnesium-for-sleep.md?raw'
 import bestMattressesForBackPain from '../content/24-best-mattresses-for-back-pain.md?raw'
 import howToFallAsleepFast from '../content/25-how-to-fall-asleep-fast.md?raw'
+import sleepOnsetAnxiety from '../content/26-sleep-onset-anxiety.md?raw'
 
 export interface FAQ {
   question: string
@@ -438,6 +439,24 @@ export const articles: Article[] = [
       { question: 'Why can\'t I fall asleep even when I\'m tired?', answer: 'The most common cause is nervous system arousal that doesn\'t match your physical fatigue — stress hormones, caffeine, blue light exposure, or sleep performance anxiety can keep your brain active even when your body is exhausted. Techniques like 4-7-8 breathing or paradoxical intention specifically address nervous system activation.' },
       { question: 'Is it bad to fall asleep with the TV on?', answer: 'Yes. TV keeps your brain processing audio and visual information, delays sleep onset, and — if it stays on — disrupts sleep throughout the night. Even background noise your brain "ignores" still fragments sleep architecture. A quiet, dark room is significantly better for both falling and staying asleep.' },
       { question: 'How long should it take to fall asleep?', answer: 'A healthy sleep onset time is 10–20 minutes. Regularly taking more than 30 minutes suggests something is interfering — circadian misalignment, insufficient sleep pressure, anxiety, or environmental factors. Falling asleep in under 5 minutes is actually a sign of significant sleep deprivation, not great sleep fitness.' }
+    ]
+  },
+  {
+    slug: 'sleep-onset-anxiety',
+    title: 'Sleep-Onset Anxiety: Why Your Brain Wakes Up When You Try to Sleep',
+    description: 'Sleep-onset anxiety is why your exhausted brain suddenly springs to life the moment you lie down. Learn the neuroscience behind racing thoughts at bedtime and 6 science-backed strategies to break the cycle.',
+    readTime: '12 min read',
+    date: 'March 2026',
+    publishDate: '2026-03-13',
+    content: sleepOnsetAnxiety,
+    featuredImage: '/images/featured-sleep-onset-anxiety.png',
+    featuredImageAlt: 'Person lying in bed with glowing thought bubbles swirling above their head showing racing thoughts and worry spirals',
+    faqs: [
+      { question: 'Is sleep-onset anxiety the same as insomnia?', answer: 'Not exactly. Insomnia is a broader category (difficulty falling or staying asleep), while sleep-onset anxiety is a specific cause of insomnia. You can have sleep-onset anxiety without clinical insomnia, and vice versa.' },
+      { question: 'Can medication help with sleep-onset anxiety?', answer: 'Short-term, yes — benzodiazepines or sleep aids can suppress anxiety temporarily. However, research shows behavioral interventions are more effective long-term because they address the root cause. Medication is best used alongside behavioral therapy, not as a replacement.' },
+      { question: 'How long does it take for these techniques to work?', answer: 'Most people notice improvement within 3-7 nights of consistent practice. The 4-7-8 breathing and mental dump often work on the first night. Sleep restriction therapy typically takes 2-3 weeks to show full effects.' },
+      { question: 'Why does telling myself "don\'t think about it" make it worse?', answer: 'This is the "ironic rebound effect." When you try to suppress a thought, your brain becomes more attuned to it — like trying not to think about a white elephant. Cognitive defusion (noticing the thought without fighting it) works better.' },
+      { question: 'Can sleep-onset anxiety develop suddenly?', answer: 'Yes. Major life stress, health changes, or even a single bad night of sleep can trigger it. Once it starts, anticipatory anxiety often keeps it going. The good news is that interventions work quickly once you break the cycle.' }
     ]
   }
 ]
