@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.8;
+  color: #1a1a2e;
+  background: #ffffff;
+}
+
+/* ── COVER PAGE ── */
+.cover {
+  page-break-after: always;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #1a1a2e;
+  color: #f1faee;
+  padding: 60px 40px;
+}
+.cover-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a8dadc;
+  margin-bottom: 24px;
+}
+.cover h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 36pt;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f1faee;
+  margin-bottom: 16px;
+  border: none;
+}
+.cover-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 13pt;
+  color: #a8dadc;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+.cover-divider {
+  width: 60px;
+  height: 2px;
+  background: #a8dadc;
+  margin: 32px auto;
+}
+.cover-intro {
+  font-size: 10pt;
+  color: #f1faee;
+  opacity: 0.7;
+  max-width: 480px;
+  line-height: 1.7;
+  font-style: italic;
+}
+.cover-byline {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  color: #a8dadc;
+  margin-top: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── PART DIVIDERS ── */
+.part-divider {
+  page-break-before: always;
+  page-break-after: always;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f0f4f8;
+  padding: 60px 40px;
+}
+.part-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #a8dadc;
+  margin-bottom: 16px;
+}
+.part-divider h2 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 28pt;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  border: none;
+}
+.part-divider p {
+  font-size: 11pt;
+  color: #4a4e69;
+  max-width: 460px;
+  line-height: 1.7;
+}
+
+/* ── MAIN CONTENT ── */
+.content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 40px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lora', Georgia, serif;
+  color: #1a1a2e;
+}
+
+h1 {
+  font-size: 22pt;
+  font-weight: 700;
+  margin: 48px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #1a1a2e;
+}
+h1:first-child { margin-top: 0; }
+
+h2 {
+  font-size: 15pt;
+  font-weight: 600;
+  margin: 36px 0 14px;
+  color: #1a1a2e;
+  border-bottom: 1px solid #e0e4ea;
+  padding-bottom: 6px;
+}
+
+h3 {
+  font-size: 12pt;
+  font-weight: 600;
+  margin: 24px 0 10px;
+  color: #4a4e69;
+}
+
+h4 {
+  font-size: 11pt;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #4a4e69;
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 14px;
+  orphans: 3;
+  widows: 3;
+}
+
+strong { color: #1a1a2e; font-weight: 600; }
+em { font-style: italic; }
+
+/* ── BLOCKQUOTES (callout boxes) ── */
+blockquote {
+  border-left: 4px solid #a8dadc;
+  background: #f0f7ff;
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+}
+blockquote p {
+  margin: 0;
+  font-style: italic;
+  color: #1a1a2e;
+  font-size: 10.5pt;
+}
+
+/* ── LISTS ── */
+ul, ol {
+  margin: 12px 0 16px 24px;
+}
+li {
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+
+/* ── TABLES ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 10pt;
+  font-family: 'Inter', sans-serif;
+}
+th {
+  background: #1a1a2e;
+  color: #f1faee;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 9pt;
+  letter-spacing: 0.05em;
+}
+td {
+  border: 1px solid #e0e4ea;
+  padding: 9px 14px;
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #f8fafb; }
+
+/* ── HORIZONTAL RULE ── */
+hr {
+  border: none;
+  border-top: 1px solid #e0e4ea;
+  margin: 32px 0;
+}
+
+/* ── PAGE BREAKS ── */
+h1 { page-break-before: auto; }
+.chapter-break { page-break-before: always; }
+
+/* ── PRINT ── */
+@media print {
+  body { font-size: 11pt; }
+  .cover, .part-divider { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: inherit; text-decoration: none; }
+}
+
+/* ── FOOTER ── */
+@page {
+  margin: 1in 0.9in 0.8in 0.9in;
+  @bottom-center {
+    content: "The Forgotten Sleep Ritual  •  sleepsmarter.io  •  " counter(page);
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    color: #999;
+  }
+}
+@page:first { @bottom-center { content: ""; } }
+
+/* ── PAGE BREAK RULES ───────────────────────── */
+
+/* Headings never strand at bottom of page */
+h1, h2, h3, h4 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* h1 major sections always start fresh */
+h1 {
+  break-before: page;
+  page-break-before: always;
+}
+h1:first-of-type,
+.cover + .content h1:first-child {
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+/* Appendix sections always start on new page */
+.appendix-start {
+  break-before: page !important;
+  page-break-before: always !important;
+}
+
+/* Chapter sections — avoid breaking inside when possible */
+.chapter-section {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+
+/* Step blocks (h3 + content) — keep together */
+.step-block {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Blockquotes, tables — never split */
+blockquote, table, figure {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* More aggressive orphan/widow control */
+p {
+  orphans: 4;
+  widows: 4;
+}
+
+/* ── WORKSHEET PAGES (Appendix C & D) ──────── */
+.worksheet-page {
+  page-break-before: always;
+  page-break-after: always;
+  break-before: page;
+  break-after: page;
+  break-inside: avoid;
+}
+
+.worksheet-page h1 {
+  break-before: avoid !important;
+  page-break-before: avoid !important;
+  margin-top: 0;
+}
+
+.worksheet-page table {
+  font-size: 10pt;
+  margin: 16px 0;
+}
+
+.worksheet-page td, .worksheet-page th {
+  padding: 10px 12px;
+  line-height: 1.5;
+}
+
+/* Taller rows for fill-in worksheet */
+#appendix-c-cycle-calculator-worksheet ~ table td,
+.worksheet-page td {
+  height: 36px;
+}

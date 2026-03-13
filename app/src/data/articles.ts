@@ -443,9 +443,9 @@ export const articles: Article[] = [
   },
   {
     slug: 'sleep-onset-anxiety',
-    title: 'Sleep-Onset Anxiety: Why Your Brain Wakes Up When You Try to Sleep',
-    description: 'Sleep-onset anxiety is why your exhausted brain suddenly springs to life the moment you lie down. Learn the neuroscience behind racing thoughts at bedtime and 6 science-backed strategies to break the cycle.',
-    readTime: '12 min read',
+    title: 'Sleep-Onset Anxiety: Why Your Brain Activates at Bedtime',
+    description: 'Sleep-onset anxiety is why your exhausted brain suddenly springs to life the moment you lie down. Learn the neuroscience behind racing thoughts at bedtime and 7 science-backed strategies to break the cycle.',
+    readTime: '11 min read',
     date: 'March 2026',
     publishDate: '2026-03-13',
     content: sleepOnsetAnxiety,
