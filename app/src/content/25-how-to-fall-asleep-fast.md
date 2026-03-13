@@ -186,26 +186,6 @@ Start here:
 If you want a clearer picture of what's specifically driving your sleep issues, [take our free Sleep Assessment](/sleep-reset) — it identifies the primary factors keeping you from quality sleep and gives you a personalized starting point.
 
 ---
-
-## Frequently Asked Questions
-
-**How can I fall asleep in 5 minutes?**
-The fastest techniques are the 4-7-8 breathing method and the military sleep method. Both take practice — most people aren't going from awake to asleep in 5 minutes on night one, but with 1–2 weeks of practice, some people get close. The military method was reportedly designed to achieve sleep within 2 minutes after 6 weeks of training.
-
-**What helps you fall asleep immediately?**
-No method works "immediately" for most people — but the fastest-acting techniques include: paradoxical intention (deliberately trying to stay awake), progressive muscle relaxation, and the cognitive shuffle (serial diverse imaging). All three work within 15–25 minutes for most users.
-
-**Why can't I fall asleep even when I'm tired?**
-The most common cause is arousal that doesn't match your fatigue level — your nervous system is still activated by cortisol, anxiety, caffeine, or blue light exposure, even though you feel physically exhausted. A tired body and an alert mind are two different systems. Techniques like 4-7-8 breathing or paradoxical intention specifically address the nervous system activation, not just the fatigue.
-
-**Does drinking warm milk help you sleep?**
-Warm milk contains tryptophan (a precursor to serotonin and melatonin) and calcium, which supports melatonin synthesis. The evidence is more mixed than the folk remedy suggests — but the warm liquid and the bedtime ritual may have a mild positive effect. It won't hurt.
-
-**Is it bad to fall asleep with the TV on?**
-Yes. TV keeps your brain processing audio and visual information, delays sleep onset, and — if it remains on — disrupts sleep throughout the night as light and volume levels change. Even background noise that seems harmless is processed by your sleeping brain and fragments sleep architecture. A quiet, dark room is significantly better for both falling asleep and staying asleep.
-
----
-
 ## Keep Reading
 
 - [Sleep Anxiety: Why Your Mind Won't Shut Off (And How to Fix It)](/blog/sleep-anxiety-racing-mind)

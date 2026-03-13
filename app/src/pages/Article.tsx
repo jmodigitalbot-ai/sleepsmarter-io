@@ -259,22 +259,6 @@ export default function Article() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-12 p-6 bg-[#16213e] rounded-xl text-center">
-          <h3 className="text-lg font-semibold text-[#f1faee] mb-2">
-            Ready to sleep smarter?
-          </h3>
-          <p className="text-[#f1faee]/60 mb-4">
-            Calculate your optimal bedtime in seconds.
-          </p>
-          <Link
-            to="/"
-            className="inline-block bg-[#a8dadc] hover:bg-[#a8dadc]/90 text-[#1a1a2e] font-semibold px-6 py-3 rounded-lg transition"
-          >
-            Use Sleep Calculator
-          </Link>
-        </div>
-
         {/* FAQ Section */}
         {article.faqs && article.faqs.length > 0 && (
           <div className="mt-12">
@@ -292,6 +276,22 @@ export default function Article() {
             </div>
           </div>
         )}
+
+        {/* CTA */}
+        <div className="mt-12 p-6 bg-[#16213e] rounded-xl text-center">
+          <h3 className="text-lg font-semibold text-[#f1faee] mb-2">
+            Ready to sleep smarter?
+          </h3>
+          <p className="text-[#f1faee]/60 mb-4">
+            Calculate your optimal bedtime in seconds.
+          </p>
+          <Link
+            to="/"
+            className="inline-block bg-[#a8dadc] hover:bg-[#a8dadc]/90 text-[#1a1a2e] font-semibold px-6 py-3 rounded-lg transition"
+          >
+            Use Sleep Calculator
+          </Link>
+        </div>
 
         {/* Author Bio */}
         <div className="mt-12 p-6 bg-[#16213e] rounded-xl border border-[#4a4e69]/30">
