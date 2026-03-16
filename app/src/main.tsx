@@ -11,6 +11,7 @@ import Blog from './pages/Blog.tsx'
 import Article from './pages/Article.tsx'
 import Calculator from './pages/Calculator.tsx'
 import Assessment from './pages/Assessment.tsx'
+import Quiz from './pages/Quiz.tsx'
 import ThankYou from './pages/ThankYou.tsx'
 import SleepReset from './pages/SleepReset.tsx'
 import MasterclassSales from './pages/MasterclassSales.tsx'
@@ -47,6 +48,7 @@ const ui = (
         <Route path="/disclosure" element={<Disclosure />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<Article />} />
+        <Route path="/quiz" element={<Quiz />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/assessment" element={<Assessment />} />
         <Route path="/thank-you" element={<ThankYou />} />

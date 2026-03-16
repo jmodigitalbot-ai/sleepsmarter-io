@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import SleepCalculator from './components/SleepCalculator'
 import SEO from './components/SEO'
 
+// Import Link for quiz CTA
+
 function App() {
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
@@ -41,14 +43,38 @@ function App() {
             <span className="text-[#a8dadc]">Every Time.</span>
           </h1>
           <p className="text-lg text-[#f1faee]/70 max-w-2xl mx-auto mb-8">
-            Calculate the perfect bedtime or wake-up time based on natural sleep cycles. 
-            Stop waking up groggy and start feeling energized.
+            Discover your sleep type and get a personalized diagnosis. 
+            Find out exactly what's destroying your sleep — and how to fix it.
           </p>
         </section>
 
-        {/* Calculator */}
-        <section id="calculator" className="max-w-2xl mx-auto px-4 pb-16">
-          <SleepCalculator />
+        {/* Primary CTA: Quiz */}
+        <section className="max-w-2xl mx-auto px-4 pb-8">
+          <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-8 md:p-12 text-center mb-8">
+            <h2 className="text-3xl font-bold text-[#f1faee] mb-4">
+              What's Destroying Your Sleep?
+            </h2>
+            <p className="text-lg text-[#f1faee]/70 mb-8">
+              Take the 60-second Sleep Type Quiz and get your personalized diagnosis.
+            </p>
+            <Link 
+              to="/quiz"
+              className="inline-block bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-4 px-8 rounded-lg transition text-lg mb-4"
+            >
+              Discover My Sleep Type →
+            </Link>
+            <p className="text-sm text-[#f1faee]/70">
+              Takes less than 2 minutes • 100% free • Personalized results
+            </p>
+          </div>
+
+          {/* Secondary: Calculator */}
+          <div className="text-center">
+            <p className="text-[#f1faee]/70 mb-4">Or use the Sleep Calculator</p>
+            <div id="calculator" className="max-w-2xl">
+              <SleepCalculator />
+            </div>
+          </div>
         </section>
 
         {/* How It Works */}
