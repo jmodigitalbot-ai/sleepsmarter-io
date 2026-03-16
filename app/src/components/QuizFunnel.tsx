@@ -366,7 +366,6 @@ export default function QuizFunnel() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [responses, setResponses] = useState<QuizResponse[]>([])
   const [sleepType, setSleepType] = useState<SleepType | null>(null)
-  const [capturedEmail, setCapturedEmail] = useState('')
   const [capturedFirstName, setCapturedFirstName] = useState('')
 
   useEffect(() => {
@@ -418,7 +417,6 @@ export default function QuizFunnel() {
   }
 
   const handleEmailSuccess = (email: string, firstName: string) => {
-    setCapturedEmail(email)
     setCapturedFirstName(firstName)
     trackEvent('quiz_email_captured', { sleep_type: sleepType, email_domain: email.split('@')[1] })
     setPhase('results')
