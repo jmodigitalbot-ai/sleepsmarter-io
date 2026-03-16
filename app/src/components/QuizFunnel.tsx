@@ -402,10 +402,10 @@ export default function QuizFunnel() {
               What's Destroying Your Sleep?
             </h1>
             <p className="text-xl text-[#f1faee]/70 mb-2">
-              Take the 60-second Sleep Type Assessment to find out exactly what's keeping you exhausted — and what to do about it.
+              Find out exactly what's keeping you exhausted — and what to do about it.
             </p>
             <p className="text-sm text-[#a8dadc] mt-4">
-              ⏱️ 12 questions · Takes less than 2 minutes
+              ⏱️ 12 questions · Takes about 2 minutes
             </p>
           </div>
 
