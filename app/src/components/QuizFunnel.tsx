@@ -638,13 +638,10 @@ export default function QuizFunnel() {
             {/* Primary CTA */}
             <button
               onClick={handleOfferCTA}
-              className="w-full bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-5 px-6 rounded-lg transition text-lg mb-3"
+              className="w-full bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-5 px-6 rounded-lg transition text-lg mb-8"
             >
               Show Me How To Fix This →
             </button>
-            <p className="text-center text-sm text-[#f1faee]/40 mb-8">
-              60-day money-back guarantee.
-            </p>
 
 
           </div>
