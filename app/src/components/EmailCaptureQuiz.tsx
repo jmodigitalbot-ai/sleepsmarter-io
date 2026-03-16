@@ -8,7 +8,7 @@ const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.
 interface EmailCaptureQuizProps {
   sleepType: string
   sleepTypeName: string
-  onSuccess: (email: string) => void
+  onSuccess: (email: string, firstName: string) => void
 }
 
 export default function EmailCaptureQuiz({ sleepType, sleepTypeName, onSuccess }: EmailCaptureQuizProps) {
@@ -68,7 +68,7 @@ export default function EmailCaptureQuiz({ sleepType, sleepTypeName, onSuccess }
 
         setStatus('success')
         // Hand off to parent — parent controls redirect/phase change
-        onSuccess(email)
+        onSuccess(email, firstName)
       } else {
         throw new Error('Subscription failed')
       }

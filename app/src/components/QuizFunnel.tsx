@@ -367,6 +367,7 @@ export default function QuizFunnel() {
   const [responses, setResponses] = useState<QuizResponse[]>([])
   const [sleepType, setSleepType] = useState<SleepType | null>(null)
   const [capturedEmail, setCapturedEmail] = useState('')
+  const [capturedFirstName, setCapturedFirstName] = useState('')
 
   useEffect(() => {
     if (phase === 'entry') {
@@ -416,8 +417,9 @@ export default function QuizFunnel() {
     setPhase('questions')
   }
 
-  const handleEmailSuccess = (email: string) => {
+  const handleEmailSuccess = (email: string, firstName: string) => {
     setCapturedEmail(email)
+    setCapturedFirstName(firstName)
     trackEvent('quiz_email_captured', { sleep_type: sleepType, email_domain: email.split('@')[1] })
     setPhase('results')
     window.scrollTo(0, 0)
@@ -537,8 +539,9 @@ export default function QuizFunnel() {
   // ── RESULTS PAGE ──────────────────────────────────────────────────────────
   if (phase === 'results' && sleepType) {
     const typeInfo = SLEEP_TYPES[sleepType]
-    const firstName = capturedEmail.split('@')[0]?.split('.')[0] || ''
-    const greeting = firstName ? `${firstName.charAt(0).toUpperCase() + firstName.slice(1)}, here's` : "Here's"
+    const greeting = capturedFirstName
+      ? `${capturedFirstName.charAt(0).toUpperCase() + capturedFirstName.slice(1)}, here's`
+      : "Here's"
 
     return (
       <div className="min-h-screen bg-[#1a1a2e] px-4 py-12">
@@ -648,13 +651,7 @@ export default function QuizFunnel() {
               60-day money-back guarantee. If it doesn't work for your sleep type, you pay nothing.
             </p>
 
-            {/* Secondary CTA */}
-            <button
-              onClick={() => navigate('/calculator')}
-              className="w-full border border-[#a8dadc]/40 text-[#a8dadc] hover:bg-[#a8dadc]/10 font-medium py-3 px-6 rounded-lg transition text-sm"
-            >
-              Or start with the free Sleep Blueprint →
-            </button>
+
           </div>
 
         </div>
