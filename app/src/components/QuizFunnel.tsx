@@ -383,7 +383,8 @@ export default function QuizFunnel() {
   const handleAnswer = (answer: number) => {
     if (answering) return
     setAnswering(true)
-    setTimeout(() => setAnswering(false), 400)
+    window.scrollTo(0, 0)
+    setTimeout(() => setAnswering(false), 600)
 
     const question = QUIZ_QUESTIONS[currentQuestionIndex]
     const newResponses = [...responses, { questionId: question.id, answer }]
@@ -683,14 +684,15 @@ export default function QuizFunnel() {
             <p className="text-lg text-[#f1faee]/60">{question.description}</p>
           </div>
 
-          {/* Answer Options */}
-          <div className="space-y-3">
+          {/* Answer Options — key on questionId forces full remount between questions */}
+          <div key={question.id} className="space-y-3">
             {question.options.map((option, idx) => (
               <button
                 key={idx}
+                onTouchEnd={(e) => { e.preventDefault(); handleAnswer(option.value) }}
                 onClick={() => handleAnswer(option.value)}
                 disabled={answering}
-                className="w-full text-left p-5 bg-[#16213e] border-2 border-[#4a4e69]/30 hover:border-[#a8dadc] hover:bg-[#1a2344] rounded-xl transition text-[#f1faee] font-medium text-lg active:scale-[0.99] disabled:pointer-events-none"
+                className="w-full text-left p-5 bg-[#16213e] border-2 border-[#4a4e69]/30 hover:border-[#a8dadc] hover:bg-[#1a2344] rounded-xl transition text-[#f1faee] font-medium text-lg active:scale-[0.99] disabled:pointer-events-none disabled:opacity-50"
               >
                 {option.label}
               </button>
