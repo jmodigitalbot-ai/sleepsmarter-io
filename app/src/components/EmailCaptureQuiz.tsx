@@ -86,7 +86,8 @@ export default function EmailCaptureQuiz({ sleepType, sleepTypeName, onSuccess }
             type="text"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
-            placeholder="First name (optional)"
+            placeholder="First name"
+            required
             className="sm:w-2/5 bg-[#1a1a2e] border border-[#4a4e69] rounded-lg px-4 py-4 text-[#f1faee] placeholder-[#f1faee]/30 focus:outline-none focus:border-[#a8dadc] transition text-base"
           />
           <input
