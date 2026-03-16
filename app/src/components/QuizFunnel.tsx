@@ -367,6 +367,7 @@ export default function QuizFunnel() {
   const [responses, setResponses] = useState<QuizResponse[]>([])
   const [sleepType, setSleepType] = useState<SleepType | null>(null)
   const [capturedFirstName, setCapturedFirstName] = useState('')
+  const [answering, setAnswering] = useState(false)
 
   useEffect(() => {
     if (phase === 'entry') {
@@ -380,6 +381,10 @@ export default function QuizFunnel() {
   }
 
   const handleAnswer = (answer: number) => {
+    if (answering) return
+    setAnswering(true)
+    setTimeout(() => setAnswering(false), 400)
+
     const question = QUIZ_QUESTIONS[currentQuestionIndex]
     const newResponses = [...responses, { questionId: question.id, answer }]
     setResponses(newResponses)
@@ -614,17 +619,12 @@ export default function QuizFunnel() {
             </p>
 
             <div className="bg-[#16213e] border border-[#a8dadc]/30 rounded-xl p-8 mb-8">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-3xl">📖</span>
-                <div>
-                  <p className="text-xs text-[#a8dadc] uppercase tracking-wide font-semibold">Recommended for your type</p>
-                  <h3 className="text-xl font-bold text-[#f1faee]">The Forgotten Sleep Ritual</h3>
-                </div>
-              </div>
-              <p className="text-[#f1faee]/70 text-sm mb-5">
-                A 40-page protocol built specifically for the root causes behind your sleep type — not generic sleep hygiene advice.
+              <p className="text-xs text-[#a8dadc] uppercase tracking-wide font-semibold mb-3">Recommended for your type</p>
+              <h3 className="text-2xl font-bold text-[#f1faee] mb-3">The Forgotten Sleep Ritual</h3>
+              <p className="text-[#f1faee]/70 leading-relaxed mb-5">
+                {typeInfo.cta_angle}
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2">
                 {typeInfo.bullets.map((bullet, idx) => (
                   <li key={idx} className="flex gap-3 text-[#f1faee]/85 text-sm">
                     <span className="text-[#a8dadc] font-bold flex-shrink-0">✓</span>
@@ -632,10 +632,6 @@ export default function QuizFunnel() {
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center justify-between text-sm text-[#f1faee]/50 border-t border-[#4a4e69]/30 pt-4">
-                <span>60-day money-back guarantee</span>
-                <span className="text-[#a8dadc] font-semibold">$17</span>
-              </div>
             </div>
 
             {/* Primary CTA */}
@@ -643,10 +639,10 @@ export default function QuizFunnel() {
               onClick={handleOfferCTA}
               className="w-full bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-5 px-6 rounded-lg transition text-lg mb-3"
             >
-              Get The Forgotten Sleep Ritual — $17 →
+              Show Me How To Fix This →
             </button>
             <p className="text-center text-sm text-[#f1faee]/40 mb-8">
-              60-day money-back guarantee. If it doesn't work for your sleep type, you pay nothing.
+              60-day money-back guarantee.
             </p>
 
 
@@ -693,7 +689,8 @@ export default function QuizFunnel() {
               <button
                 key={idx}
                 onClick={() => handleAnswer(option.value)}
-                className="w-full text-left p-5 bg-[#16213e] border-2 border-[#4a4e69]/30 hover:border-[#a8dadc] hover:bg-[#1a2344] rounded-xl transition text-[#f1faee] font-medium text-lg active:scale-[0.99]"
+                disabled={answering}
+                className="w-full text-left p-5 bg-[#16213e] border-2 border-[#4a4e69]/30 hover:border-[#a8dadc] hover:bg-[#1a2344] rounded-xl transition text-[#f1faee] font-medium text-lg active:scale-[0.99] disabled:pointer-events-none"
               >
                 {option.label}
               </button>
