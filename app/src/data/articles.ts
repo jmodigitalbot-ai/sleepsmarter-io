@@ -23,6 +23,7 @@ import magnesiumForSleep from '../content/23-magnesium-for-sleep.md?raw'
 import bestMattressesForBackPain from '../content/24-best-mattresses-for-back-pain.md?raw'
 import howToFallAsleepFast from '../content/25-how-to-fall-asleep-fast.md?raw'
 import sleepOnsetAnxiety from '../content/26-sleep-onset-anxiety.md?raw'
+import cognitiveShuffling from '../content/27-cognitive-shuffling.md?raw'
 
 export interface FAQ {
   question: string
@@ -457,6 +458,24 @@ export const articles: Article[] = [
       { question: 'How long does it take for these techniques to work?', answer: 'Most people notice improvement within 3-7 nights of consistent practice. The 4-7-8 breathing and mental dump often work on the first night. Sleep restriction therapy typically takes 2-3 weeks to show full effects.' },
       { question: 'Why does telling myself "don\'t think about it" make it worse?', answer: 'This is the "ironic rebound effect." When you try to suppress a thought, your brain becomes more attuned to it — like trying not to think about a white elephant. Cognitive defusion (noticing the thought without fighting it) works better.' },
       { question: 'Can sleep-onset anxiety develop suddenly?', answer: 'Yes. Major life stress, health changes, or even a single bad night of sleep can trigger it. Once it starts, anticipatory anxiety often keeps it going. The good news is that interventions work quickly once you break the cycle.' }
+    ]
+  },
+  {
+    slug: 'cognitive-shuffling',
+    title: 'Cognitive Shuffling: The Viral Bedtime Trick That Quiets a Racing Mind',
+    description: 'Cognitive shuffling is a science-backed technique that mimics your brain\'s natural pre-sleep state to help you fall asleep faster — no meds, no apps required.',
+    readTime: '10 min read',
+    date: 'March 2026',
+    publishDate: '2026-03-16',
+    content: cognitiveShuffling,
+    featuredImage: '/images/featured-cognitive-shuffling.png',
+    featuredImageAlt: 'Serene dark bedroom with person sleeping peacefully while whimsical illustrated objects — a lemon, lighthouse, bicycle — float and dissolve above them like dreams',
+    faqs: [
+      { question: 'How long does cognitive shuffling take to work?', answer: 'Most people who respond to the technique fall asleep within 5–15 minutes of starting. Some report results the first night; others need a few nights to get the hang of it. If you\'re still awake after 30 minutes, get up, do something calm in dim light for 10–15 minutes, and try again.' },
+      { question: 'Does cognitive shuffling work for everyone?', answer: 'No sleep technique works for everyone. Cognitive shuffling shows strong results for people with psychophysiological insomnia (the kind driven by mental hyperarousal), but less evidence exists for people with circadian disorders or sleep-disordered breathing.' },
+      { question: 'Is there a cognitive shuffling app?', answer: 'Yes — Dr. Beaudoin\'s MySleepButton app generates random words for you, removing the "what word do I pick?" decision. But any random word works: a dictionary, a grocery receipt, or the label on your water bottle are all fair game.' },
+      { question: 'Can I combine cognitive shuffling with other sleep techniques?', answer: 'Absolutely. It pairs well with progressive muscle relaxation (do a body scan first, then start shuffling), 4-7-8 breathing (calm your nervous system first, then transition to imagery), and sleep restriction therapy if you\'re working through a CBT-I protocol.' },
+      { question: 'What if I keep thinking of emotionally charged images?', answer: 'That\'s common at first. If a word triggers meaningful associations — your boss\'s name, something connected to a stressful memory — just switch to a different word. The goal is emotional neutrality: something you have no feelings about whatsoever.' }
     ]
   }
 ]
