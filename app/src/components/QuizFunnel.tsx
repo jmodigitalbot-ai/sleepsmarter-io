@@ -435,8 +435,9 @@ export default function QuizFunnel() {
 
   // ── ENGAGEMENT SCREEN ─────────────────────────────────────────────────────
   if (phase === 'engagement_screen') {
+    // currentQuestionIndex hasn't been incremented yet — find by completed question number
     const screen = ENGAGEMENT_SCREENS.find(
-      (s) => s.trigger_after_question === currentQuestionIndex
+      (s) => s.trigger_after_question === currentQuestionIndex + 1
     )
     return (
       <div className="min-h-screen bg-[#1a1a2e] flex items-center justify-center px-4 py-12">
@@ -612,6 +613,64 @@ export default function QuizFunnel() {
             >
               Or start with the free Sleep Blueprint →
             </button>
+          </div>
+
+          {/* ── STEP 9: Additional Affiliate Recommendations ── */}
+          <div className="border-t border-[#4a4e69]/30 pt-10 pb-4">
+            <h2 className="text-xl font-bold text-[#f1faee] mb-2">Also worth considering</h2>
+            <p className="text-[#f1faee]/50 text-sm mb-6">
+              These are tools that commonly help people with your sleep profile.
+            </p>
+
+            {/* Recommendation 1: Silk Pillowcase */}
+            <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6 mb-4">
+              <div className="flex items-start gap-4">
+                <span className="text-2xl flex-shrink-0">🛏️</span>
+                <div className="flex-1">
+                  <p className="text-xs text-[#a8dadc] uppercase tracking-wide font-semibold mb-1">Sleep Environment</p>
+                  <h3 className="text-lg font-bold text-[#f1faee] mb-2">Luxgen™ Silk Pillowcase by Promeed</h3>
+                  <p className="text-[#f1faee]/65 text-sm mb-4">
+                    Silk regulates temperature throughout the night and reduces the friction that disrupts light sleep. Particularly effective for people who overheat or experience frequent micro-wakes.
+                  </p>
+                  <a
+                    href="https://tidd.ly/4and0sV"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackEvent('affiliate_click', { product: 'promeed_luxgen', source: 'quiz_results', sleep_type: sleepType })}
+                    className="inline-block bg-transparent border border-[#a8dadc]/50 text-[#a8dadc] hover:bg-[#a8dadc]/10 text-sm font-medium px-4 py-2 rounded-lg transition"
+                  >
+                    View Luxgen Silk Pillowcase →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Recommendation 2: Premium Mattress */}
+            <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6 mb-4">
+              <div className="flex items-start gap-4">
+                <span className="text-2xl flex-shrink-0">🌿</span>
+                <div className="flex-1">
+                  <p className="text-xs text-[#a8dadc] uppercase tracking-wide font-semibold mb-1">Sleep Surface</p>
+                  <h3 className="text-lg font-bold text-[#f1faee] mb-2">Latex Mattress Factory — Natural Latex</h3>
+                  <p className="text-[#f1faee]/65 text-sm mb-4">
+                    Natural latex mattresses provide responsive support with better pressure relief than memory foam — a key factor for people whose sleep quality is affected by physical discomfort or poor sleep architecture.
+                  </p>
+                  <a
+                    href="https://tidd.ly/4bbF0B9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackEvent('affiliate_click', { product: 'latex_factory_organic', source: 'quiz_results', sleep_type: sleepType })}
+                    className="inline-block bg-transparent border border-[#a8dadc]/50 text-[#a8dadc] hover:bg-[#a8dadc]/10 text-sm font-medium px-4 py-2 rounded-lg transition"
+                  >
+                    View Organic Latex Mattresses →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-[#f1faee]/25 text-xs text-center mt-4">
+              Some links above are affiliate links. We may earn a commission at no cost to you.
+            </p>
           </div>
 
         </div>
