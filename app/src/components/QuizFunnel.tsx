@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import EmailCaptureQuiz from './EmailCaptureQuiz'
 import { trackEvent } from '../lib/analytics'
@@ -309,6 +309,57 @@ const ENGAGEMENT_SCREENS = [
   }
 ]
 
+const AUTO_ADVANCE_MS = 2500
+
+function EngagementScreen({
+  screen,
+  onComplete,
+}: {
+  screen: { emoji: string; title: string; message: string } | undefined
+  onComplete: () => void
+}) {
+  const [progress, setProgress] = useState(0)
+  const startRef = useRef<number>(Date.now())
+  const rafRef = useRef<number>(0)
+
+  useEffect(() => {
+    startRef.current = Date.now()
+
+    const tick = () => {
+      const elapsed = Date.now() - startRef.current
+      const pct = Math.min((elapsed / AUTO_ADVANCE_MS) * 100, 100)
+      setProgress(pct)
+      if (pct < 100) {
+        rafRef.current = requestAnimationFrame(tick)
+      } else {
+        onComplete()
+      }
+    }
+
+    rafRef.current = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(rafRef.current)
+  }, [onComplete])
+
+  return (
+    <div className="min-h-screen bg-[#1a1a2e] flex items-center justify-center px-4 py-12">
+      <div className="max-w-2xl w-full text-center">
+        <div className="text-6xl mb-6 animate-pulse">{screen?.emoji}</div>
+        <h2 className="text-3xl font-bold text-[#f1faee] mb-4">{screen?.title}</h2>
+        <p className="text-xl text-[#f1faee]/70 mb-10">{screen?.message}</p>
+
+        {/* Progress bar */}
+        <div className="w-full max-w-sm mx-auto bg-[#16213e] rounded-full h-1.5 overflow-hidden">
+          <div
+            className="bg-[#a8dadc] h-full rounded-full transition-none"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+        <p className="text-xs text-[#f1faee]/30 mt-3">Analyzing your responses...</p>
+      </div>
+    </div>
+  )
+}
+
 export default function QuizFunnel() {
   const navigate = useNavigate()
   const [phase, setPhase] = useState<QuizPhase>('entry')
@@ -440,19 +491,10 @@ export default function QuizFunnel() {
       (s) => s.trigger_after_question === currentQuestionIndex + 1
     )
     return (
-      <div className="min-h-screen bg-[#1a1a2e] flex items-center justify-center px-4 py-12">
-        <div className="max-w-2xl w-full text-center">
-          <div className="text-5xl mb-6 animate-pulse">{screen?.emoji}</div>
-          <h2 className="text-3xl font-bold text-[#f1faee] mb-4">{screen?.title}</h2>
-          <p className="text-xl text-[#f1faee]/70 mb-10">{screen?.message}</p>
-          <button
-            onClick={handleEngagementContinue}
-            className="bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-3 px-10 rounded-lg transition text-lg"
-          >
-            Continue →
-          </button>
-        </div>
-      </div>
+      <EngagementScreen
+        screen={screen}
+        onComplete={handleEngagementContinue}
+      />
     )
   }
 
