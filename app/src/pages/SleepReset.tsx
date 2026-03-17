@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
+import { trackSalesPageView, trackCheckoutClick, trackMetaEvent } from '../lib/analytics'
 
 
 export default function SleepReset() {
@@ -8,6 +8,7 @@ export default function SleepReset() {
     trackSalesPageView('/sleep-reset', {
       page_title: 'The Forgotten Sleep Ritual'
     })
+    trackMetaEvent('ViewContent', { content_name: 'The Forgotten Sleep Ritual', content_category: 'sales_page', value: 17, currency: 'USD' })
     // Load SamCart checkout script
     const script = document.createElement('script')
     script.src = 'https://static.samcart.com/checkouts/sc-checkout.js'

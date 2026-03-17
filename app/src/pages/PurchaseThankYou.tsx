@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
+import { trackMetaEvent } from '../lib/analytics'
 
 export default function PurchaseThankYou() {
   // TODO: Replace with actual SamCart checkout URL for Sleep Smarter Insider
@@ -7,6 +8,9 @@ export default function PurchaseThankYou() {
 
   useEffect(() => {
     if (typeof window === 'undefined') return
+
+    // Meta Pixel Purchase event
+    trackMetaEvent('Purchase', { value: 17.00, currency: 'USD', content_name: 'The Forgotten Sleep Ritual' })
 
     // Push to dataLayer first (works even before GTM loads)
     window.dataLayer = window.dataLayer || []

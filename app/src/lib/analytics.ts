@@ -295,6 +295,24 @@ declare global {
   }
 }
 
+// ─── Meta Pixel Events ────────────────────────────────────────────────────────
+
+/**
+ * Fire a Meta Pixel standard event
+ * @param eventName - Standard Meta event name (e.g. 'ViewContent', 'Purchase')
+ * @param params - Optional event parameters
+ */
+export const trackMetaEvent = (eventName: string, params?: Record<string, any>): void => {
+  if (typeof window === 'undefined') return
+  const fbq = (window as any).fbq
+  if (!fbq) return
+  if (params) {
+    fbq('track', eventName, params)
+  } else {
+    fbq('track', eventName)
+  }
+}
+
 // Initialize dataLayer if it doesn't exist
 if (typeof window !== 'undefined') {
   window.dataLayer = window.dataLayer || []

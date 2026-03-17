@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 import QuizFunnel from '../components/QuizFunnel'
 import SEO from '../components/SEO'
+import { trackMetaEvent } from '../lib/analytics'
 
 export default function Quiz() {
+  useEffect(() => {
+    trackMetaEvent('ViewContent', { content_name: 'Sleep Type Quiz', content_category: 'quiz' })
+  }, [])
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
       <SEO
