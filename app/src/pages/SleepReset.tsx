@@ -202,9 +202,20 @@ export default function SleepReset() {
         {/* ── SARAH ORIGIN STORY ──────────────────── */}
         <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-2xl p-8 space-y-5">
           <p className="text-[#a8dadc] font-semibold text-sm uppercase tracking-widest">Who Discovered This</p>
-          <p className="text-[#f1faee]/75 leading-relaxed">
-            My name is Dr. Sarah Chen. I'm a sleep researcher — but for most of my thirties, I was also a chronic insomniac.
-          </p>
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            <div className="flex-shrink-0 flex flex-col items-center gap-2">
+              <img
+                src="/images/dr-sarah-chen.png"
+                alt="Dr. Sarah Chen, Sleep Researcher"
+                className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top border-2 border-[#a8dadc]/40"
+              />
+              <p className="text-[#f1faee] font-semibold text-sm text-center">Dr. Sarah Chen</p>
+              <p className="text-[#f1faee]/45 text-xs text-center">Sleep Researcher &amp; Founder</p>
+            </div>
+            <p className="text-[#f1faee]/75 leading-relaxed pt-1">
+              My name is Dr. Sarah Chen. I'm a sleep researcher — but for most of my thirties, I was also a chronic insomniac.
+            </p>
+          </div>
           <p className="text-[#f1faee]/75 leading-relaxed">
             I was logging 7, sometimes 8 hours a night. By every metric, I was doing everything right. But I was waking up wrecked. Foggy until noon. Running on caffeine. Snapping at my husband over nothing. Missing the version of myself I knew I was capable of being.
           </p>
@@ -419,7 +430,14 @@ export default function SleepReset() {
             If you don't wake up feeling measurably more refreshed within the first week, email us. We'll refund every cent. No forms. No questions. No runaround.
           </p>
           <p className="text-[#f1faee] font-semibold">You either wake up better, or you pay nothing.</p>
-          <p className="text-[#f1faee]/50 text-sm italic">— Dr. Sarah Chen, Sleep Researcher &amp; Founder, Sleep Smarter</p>
+          <div className="flex items-center gap-4 pt-2">
+            <img
+              src="/images/dr-sarah-chen.png"
+              alt="Dr. Sarah Chen"
+              className="w-12 h-12 rounded-full object-cover object-top border border-[#a8dadc]/30 flex-shrink-0"
+            />
+            <p className="text-[#f1faee]/50 text-sm italic">— Dr. Sarah Chen, Sleep Researcher &amp; Founder, Sleep Smarter</p>
+          </div>
         </div>
 
         {/* ── FAQ ─────────────────────────────────── */}
