@@ -477,6 +477,34 @@ export default function SleepReset() {
             <p className="text-[#f1faee]/50 text-sm">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
           </div>
 
+          {/* ── ORDER BUMP PRE-SELL ── */}
+          <div className="bg-[#16213e] border border-[#a8dadc]/30 rounded-2xl p-6 space-y-4">
+            <div className="flex items-start gap-3">
+              <span className="text-2xl flex-shrink-0">🛏️</span>
+              <div className="space-y-1">
+                <p className="text-[#a8dadc] font-bold text-sm uppercase tracking-widest">Add Before You Checkout — $12</p>
+                <p className="text-[#f1faee] font-semibold text-lg leading-snug">The Sleep Environment Toolkit</p>
+              </div>
+            </div>
+            <p className="text-[#f1faee]/70 leading-relaxed text-sm">
+              The Circadian Exit Protocol gets your timing right. This toolkit makes sure your environment doesn't fight you. In under 15 minutes, you'll have your bedroom optimized for deeper, faster sleep — the exact setup Dr. Chen uses with her own patients.
+            </p>
+            <ul className="space-y-2 text-sm">
+              {[
+                "The 5-point bedroom audit (most people fail #3)",
+                "Light, temperature & sound settings — the exact numbers",
+                "The wind-down sequence that drops cortisol in 12 minutes",
+                "Phone placement rule that cuts middle-of-night wake-ups by half",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-[#f1faee]/75">
+                  <span className="text-[#a8dadc] font-bold flex-shrink-0">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-[#f1faee]/50 text-xs italic">Look for the checkbox inside the checkout below to add it for just $12 — one click, instant download.</p>
+          </div>
+
           {/* Product image + checkout side by side on desktop */}
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/3 flex-shrink-0">
