@@ -487,6 +487,20 @@ export default function SleepReset() {
             <p className="text-[#f1faee]/50 text-sm">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
           </div>
 
+          {/* ── FAST-ACTION BONUS ── */}
+          <div className="bg-gradient-to-r from-[#e63946]/10 to-[#a8dadc]/10 border border-[#a8dadc]/40 rounded-2xl p-6 space-y-3">
+            <p className="text-[#e63946] font-bold text-sm uppercase tracking-widest">⏰ Today Only Bonus</p>
+            <p className="text-[#f1faee] font-semibold text-lg">
+              Buy today and get <strong className="text-[#a8dadc]">Dr. Chen's Travel & Timezone Protocol</strong> — free.
+            </p>
+            <p className="text-[#f1faee]/70 text-sm leading-relaxed">
+              Sleep across time zones doesn't have to wreck your rhythm. This protocol gives you the exact steps Dr. Chen uses when she's traveling — including the 48-hour reset sequence, the "jet lag calculator," and the melatonin timing chart that most sleep doctors get wrong.
+            </p>
+            <p className="text-[#f1faee]/50 text-xs italic">
+              This bonus is only available when you purchase today. You'll receive it instantly with your order, along with the main system.
+            </p>
+          </div>
+
           {/* ── ORDER BUMP PRE-SELL ── */}
           <div className="bg-[#16213e] border border-[#a8dadc]/30 rounded-2xl p-6 space-y-4">
             <div className="flex items-start gap-3">
