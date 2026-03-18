@@ -391,25 +391,35 @@ export default function SleepReset() {
             {
               quote: "I've tried melatonin, magnesium, every sleep app on the App Store. I was still hitting snooze 3 times every morning and dragging until 10am. I ran the Circadian Exit Protocol on a Tuesday night. By Friday I was waking up 4 minutes before my alarm. I actually texted my husband from bed because I couldn't believe it.",
               name: "Amanda R.",
-              role: "2nd grade teacher, mother of two"
+              role: "2nd grade teacher, mother of two",
+              photo: "/images/testimonial-amanda.png"
             },
             {
               quote: "I was skeptical. I'm a software engineer — I like data. So I tracked it. Before: average 6.2 on my sleep score, snooze button at least twice. Week 1 after: 7.8 average, woke before alarm 4 out of 7 days. The coffee delay tip alone eliminated my 2pm crash. $17 for that ROI is absurd.",
               name: "Marcus T.",
-              role: "Software engineer, 34"
+              role: "Software engineer, 34",
+              photo: "/images/testimonial-marcus.png"
             },
             {
               quote: "I do 12-hour night shifts. My sleep has been a disaster for 6 years. What helped wasn't more sleep — it was understanding where in my cycle I was waking up. Dr. Chen's calculator changed how I schedule everything. First time in years I've felt like myself during the day.",
               name: "Keisha M.",
-              role: "Night shift ICU nurse, 11 years"
+              role: "Night shift ICU nurse, 11 years",
+              photo: "/images/testimonial-keisha.png"
             },
           ].map((t, i) => (
             <div key={i} className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/20 space-y-3">
               <div className="text-[#e9c46a] text-sm tracking-widest">★★★★★</div>
               <p className="text-[#f1faee]/80 italic leading-relaxed">"{t.quote}"</p>
-              <div>
-                <p className="text-[#f1faee] font-semibold text-sm">{t.name}</p>
-                <p className="text-[#f1faee]/45 text-xs">{t.role}</p>
+              <div className="flex items-center gap-3">
+                <img
+                  src={t.photo}
+                  alt={t.name}
+                  className="w-10 h-10 rounded-full object-cover flex-shrink-0 border border-[#4a4e69]/40"
+                />
+                <div>
+                  <p className="text-[#f1faee] font-semibold text-sm">{t.name}</p>
+                  <p className="text-[#f1faee]/45 text-xs">{t.role}</p>
+                </div>
               </div>
             </div>
           ))}
