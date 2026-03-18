@@ -349,6 +349,29 @@ export default function SleepReset() {
           </div>
         </div>
 
+        {/* ── SCIENCE PROOF BAR ───────────────────── */}
+        <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-2xl p-6 space-y-4">
+          <p className="text-[#a8dadc] font-semibold text-sm uppercase tracking-widest text-center">The Research Is Clear</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            <div className="space-y-1">
+              <p className="text-3xl font-bold text-[#f1faee]">6 in 10</p>
+              <p className="text-[#f1faee]/60 text-sm">American adults don't get enough sleep — even when they're in bed long enough</p>
+              <p className="text-[#f1faee]/30 text-xs">National Sleep Foundation, 2025</p>
+            </div>
+            <div className="space-y-1">
+              <p className="text-3xl font-bold text-[#f1faee]">15.8 min</p>
+              <p className="text-[#f1faee]/60 text-sm">Average time adults spend in post-wake grogginess — a direct symptom of waking mid-cycle</p>
+              <p className="text-[#f1faee]/30 text-xs">PLOS One, January 2026 (peer-reviewed, n=2,355)</p>
+            </div>
+            <div className="space-y-1">
+              <p className="text-3xl font-bold text-[#f1faee]">70M</p>
+              <p className="text-[#f1faee]/60 text-sm">Americans affected by ongoing sleep problems — most of them sleeping the "right" number of hours</p>
+              <p className="text-[#f1faee]/30 text-xs">CDC / National Center for Health Statistics</p>
+            </div>
+          </div>
+          <p className="text-center text-[#f1faee]/50 text-sm">The problem isn't how long you sleep. The research confirms it never was.</p>
+        </div>
+
         {/* ── TESTIMONIALS ────────────────────────── */}
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-[#f1faee]">Real Results From Real People</h3>
