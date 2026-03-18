@@ -25,6 +25,8 @@ import howToFallAsleepFast from '../content/25-how-to-fall-asleep-fast.md?raw'
 import sleepOnsetAnxiety from '../content/26-sleep-onset-anxiety.md?raw'
 import cognitiveShuffling from '../content/27-cognitive-shuffling.md?raw'
 
+import whyDoIWakeUpAt3am from '../content/28-why-do-i-wake-up-at-3am.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -476,6 +478,24 @@ export const articles: Article[] = [
       { question: 'Is there a cognitive shuffling app?', answer: 'Yes — Dr. Beaudoin\'s MySleepButton app generates random words for you, removing the "what word do I pick?" decision. But any random word works: a dictionary, a grocery receipt, or the label on your water bottle are all fair game.' },
       { question: 'Can I combine cognitive shuffling with other sleep techniques?', answer: 'Absolutely. It pairs well with progressive muscle relaxation (do a body scan first, then start shuffling), 4-7-8 breathing (calm your nervous system first, then transition to imagery), and sleep restriction therapy if you\'re working through a CBT-I protocol.' },
       { question: 'What if I keep thinking of emotionally charged images?', answer: 'That\'s common at first. If a word triggers meaningful associations — your boss\'s name, something connected to a stressful memory — just switch to a different word. The goal is emotional neutrality: something you have no feelings about whatsoever.' }
+    ]
+  },
+  {
+    slug: "why-do-i-wake-up-at-3am",
+    title: "Why Do I Wake Up at 3AM? The Real Reasons (and How to Fix It)",
+    description: "Waking at 3AM every night? Learn the 5 real causes — cortisol, blood sugar, alcohol, temperature, anxiety — and a step-by-step protocol to fix it.",
+    readTime: "9 min read",
+    date: "March 2026",
+    publishDate: "2026-03-18",
+    content: whyDoIWakeUpAt3am,
+    featuredImage: "/images/featured-why-do-i-wake-up-at-3am.png",
+    featuredImageAlt: "Person lying awake in bed at 3AM with alarm clock glowing on nightstand",
+    faqs: [
+      { question: "Why do I wake up at exactly 3AM every night?", answer: "Most 3AM wake-ups happen because you have finished your deep sleep and entered lighter REM sleep phases. At this hour, cortisol begins rising, blood sugar may dip, and alcohol metabolism peaks — all of which can push you over the arousal threshold into full wakefulness. The time feels consistent because sleep architecture is predictable." },
+      { question: "Is waking at 3AM a sign of anxiety?", answer: "It can be, but anxiety is only one of five common causes. Cortisol rhythm, blood sugar drops, alcohol metabolism, and bedroom temperature are often just as responsible. Identifying your specific trigger — by keeping a simple sleep log — leads to much more effective solutions than treating everything as anxiety." },
+      { question: "How do I stop waking up at 3AM?", answer: "Start by testing the most common causes one at a time: cut alcohol for two weeks, lower your bedroom temperature to 65-68F, have a small protein snack before bed, and practice the 3AM wake-up protocol (no clock-checking, 4-7-8 breathing, cognitive shuffling). Most people identify the cause within 2 weeks of systematic testing." },
+      { question: "Should I get out of bed if I wake at 3AM?", answer: "Only if you have been awake for more than 20 minutes and feel fully alert. If so, get up, go to a dim room, read something light, and return when drowsy. This is stimulus control — it prevents your brain from associating bed with wakefulness. If you are drowsy but awake, stay in bed and use a relaxation technique first." },
+      { question: "When should I see a doctor about waking at 3AM?", answer: "If you are waking three or more nights per week and feel significantly unrefreshed despite adequate total sleep hours, it is worth investigating. Priority is to rule out sleep apnea (especially if you snore or gasp), restless legs syndrome, or hormonal changes from perimenopause. CBT-I therapy is the most effective long-term treatment for chronic sleep maintenance insomnia." }
     ]
   }
 ]

@@ -71,6 +71,247 @@ app.post('/generate-blueprint', async (req, res) => {
   }
 });
 
+// ── TRAVEL & TIMEZONE PROTOCOL BONUS PDF ─────────────────────────────────────
+app.get('/bonus/travel-protocol', async (req, res) => {
+  try {
+    const timestamp = Date.now();
+    const filename = `travel-timezone-protocol-${timestamp}.pdf`;
+    const filepath = path.join(pdfDir, filename);
+
+    const html = buildTravelProtocolHtml();
+
+    let browser;
+    try {
+      browser = await puppeteer.launch({
+        headless: true,
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+      });
+      const page = await browser.newPage();
+      await page.setContent(html, { waitUntil: 'networkidle0' });
+      await page.emulateMediaType('screen');
+      await page.pdf({
+        path: filepath,
+        format: 'A4',
+        printBackground: true,
+        margin: { top: '0', right: '0', bottom: '0', left: '0' }
+      });
+    } finally {
+      if (browser) await browser.close();
+    }
+
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename="Dr-Sarah-Chen-Travel-Timezone-Protocol.pdf"');
+    res.sendFile(filepath, (err) => {
+      if (err) console.error('Bonus PDF download error:', err);
+      // Clean up after send
+      setTimeout(() => { try { fs.unlinkSync(filepath); } catch(e) {} }, 60000);
+    });
+  } catch (error) {
+    console.error('Bonus PDF generation error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+function buildTravelProtocolHtml() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dr. Sarah Chen's Travel & Timezone Protocol</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #fff; font-size: 11pt; line-height: 1.65; }
+  .cover { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #f1faee; padding: 64px 56px; }
+  .cover-badge { display: inline-block; background: #a8dadc; color: #1a1a2e; font-size: 9pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 12px; border-radius: 4px; margin-bottom: 20px; }
+  .cover h1 { font-size: 26pt; font-weight: 700; line-height: 1.2; color: #f1faee; margin-bottom: 12px; }
+  .cover h1 span { color: #a8dadc; }
+  .cover .subtitle { font-size: 11pt; color: #f1faee; opacity: 0.75; font-style: italic; margin-bottom: 24px; }
+  .cover .byline { font-size: 9.5pt; color: #a8dadc; font-weight: 600; }
+  .content { padding: 48px 56px; }
+  h2 { font-size: 16pt; font-weight: 700; color: #1a1a2e; margin-top: 40px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #a8dadc; }
+  h3 { font-size: 12pt; font-weight: 700; color: #0f3460; margin-top: 24px; margin-bottom: 8px; }
+  h4 { font-size: 11pt; font-weight: 600; color: #1a1a2e; margin-top: 20px; margin-bottom: 6px; }
+  p { margin-bottom: 12px; color: #2d2d44; }
+  blockquote { background: #f0f8f8; border-left: 4px solid #a8dadc; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #1a1a2e; font-weight: 500; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 10.5pt; }
+  th { background: #1a1a2e; color: #a8dadc; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 9.5pt; }
+  td { padding: 9px 14px; border-bottom: 1px solid #e8eaf0; color: #2d2d44; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f9fc; }
+  ul, ol { padding-left: 20px; margin-bottom: 14px; }
+  li { margin-bottom: 6px; color: #2d2d44; }
+  .callout { background: #e8f7f8; border: 1px solid #a8dadc; border-radius: 10px; padding: 20px 24px; margin: 24px 0; }
+  .callout-title { font-size: 9pt; font-weight: 700; color: #0f3460; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 10px; }
+  .quick-ref { background: #1a1a2e; color: #f1faee; border-radius: 12px; padding: 28px 32px; margin: 36px 0; }
+  .quick-ref h2 { color: #a8dadc; border-color: #a8dadc; margin-top: 0; }
+  .quick-ref h4 { color: #a8dadc; font-size: 10.5pt; margin-top: 18px; }
+  .quick-ref p, .quick-ref li { color: #f1faee; font-size: 10.5pt; }
+  .quick-ref ul { list-style: none; padding-left: 0; }
+  .quick-ref li::before { content: "✓  "; color: #a8dadc; font-weight: 700; }
+  .footer { background: #f7f9fc; border-top: 2px solid #e8eaf0; padding: 24px 56px; font-size: 9pt; color: #888; font-style: italic; line-height: 1.5; }
+  .footer strong { color: #1a1a2e; font-style: normal; }
+  strong { color: #1a1a2e; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="cover-badge">Bonus — Included With Your Order</div>
+  <h1>Dr. Sarah Chen's<br><span>Travel &amp; Timezone Protocol</span></h1>
+  <p class="subtitle">The Circadian Reset System for Travelers Who Can't Afford to Feel Like Garbage</p>
+  <p class="byline">By Dr. Sarah Chen, Sleep Researcher &amp; Founder, Sleep Smarter · sleepsmarter.io</p>
+</div>
+<div class="content">
+<h2>Why Most Travel Sleep Advice Fails You</h2>
+<p>Most advice tells you to "stay hydrated" and "avoid caffeine on the plane." That's fine. It's also useless for the actual problem: your circadian clock is anchored to your home timezone, and it doesn't care that you have a 9am meeting in London.</p>
+<blockquote>Your body doesn't know what time it is. But it does know light, temperature, food, and movement. Those are your levers.</blockquote>
+<p>This protocol gives you the exact sequence to pull those levers — before, during, and after travel — so your clock resets in 48 hours instead of 7 days.</p>
+
+<h2>Part 1: The Jet Lag Calculator</h2>
+<p><strong>Timezone Difference × Direction Multiplier = Reset Score</strong></p>
+<table>
+  <tr><th>Direction</th><th>Multiplier</th><th>Why</th></tr>
+  <tr><td>Eastward (e.g., US → Europe)</td><td>× 1.5</td><td>Shortening your day — harder to advance your clock</td></tr>
+  <tr><td>Westward (e.g., Europe → US)</td><td>× 1.0</td><td>Extending your day — easier to delay your clock</td></tr>
+</table>
+<table>
+  <tr><th>Reset Score</th><th>Recovery Time</th></tr>
+  <tr><td>1–4</td><td>1–2 days</td></tr>
+  <tr><td>5–8</td><td>2–4 days → use the 48-Hour Reset below</td></tr>
+  <tr><td>9+</td><td>4–7 days → use the 48-Hour Reset + Anchor Protocol</td></tr>
+</table>
+<div class="callout">
+  <div class="callout-title">Example</div>
+  <p>New York → London = 5 hours east × 1.5 = <strong>7.5 → 2–4 days without intervention.</strong> With this protocol: <strong>48 hours.</strong></p>
+</div>
+
+<h2>Part 2: The 48-Hour Reset Sequence</h2>
+<h3>Phase 1: Pre-Flight (24–48 Hours Before Departure)</h3>
+<h4>If traveling EAST:</h4>
+<ul>
+  <li>Shift your bedtime 30 minutes earlier each night for 2 nights before you fly</li>
+  <li>Move your morning light exposure 30 minutes earlier each day</li>
+  <li>Eat your last meal 30 minutes earlier than usual</li>
+</ul>
+<h4>If traveling WEST:</h4>
+<ul>
+  <li>Stay up 30 minutes later each of the 2 nights before you fly</li>
+  <li>Delay your morning light exposure by 30 minutes each day</li>
+  <li>Push your last meal 30 minutes later than usual</li>
+</ul>
+<h4>Both directions:</h4>
+<ul>
+  <li>Get bright light exposure for 15–20 minutes within 30 minutes of waking</li>
+  <li>Avoid alcohol for 48 hours before departure</li>
+</ul>
+
+<h3>Phase 2: In-Flight</h3>
+<p><strong>Set your watch to destination time immediately when you board.</strong></p>
+<table>
+  <tr><th>Destination Time</th><th>What to Do on the Plane</th></tr>
+  <tr><td>It's "night" at destination</td><td>Wear eye mask. Earplugs or noise-canceling headphones. Decline meal service if it conflicts with destination night. Sleep.</td></tr>
+  <tr><td>It's "day" at destination</td><td>Stay awake. Keep shades open. Eat normally. Move every 60–90 minutes.</td></tr>
+</table>
+<p><strong>Hydration:</strong> 8oz of water per hour of flight. <strong>Avoid:</strong> Alcohol (delays adaptation 2×), sleeping pills (they sedate, not reset), blue light within 60 min of destination "bedtime."</p>
+
+<h3>Phase 3: First 48 Hours at Destination</h3>
+<h4>Day 1 — Arriving morning/afternoon:</h4>
+<ul>
+  <li>Get outside within 30 minutes of landing — 15–20 min sunlight, 8–10am destination time</li>
+  <li>Stay awake until 9:30–10pm local time</li>
+  <li>Eat at local mealtimes (second strongest clock signal after light)</li>
+  <li>Keep dinner light</li>
+</ul>
+<h4>Day 1 — Arriving at night:</h4>
+<ul>
+  <li>0.5mg melatonin 60 minutes before local bedtime</li>
+  <li>Room at 65–68°F / 18–20°C</li>
+  <li>Total darkness — pack a sleep mask</li>
+</ul>
+<h4>Day 2:</h4>
+<ul>
+  <li>Morning sunlight again, 8–10am local time, 20+ minutes</li>
+  <li>No naps over 20 minutes</li>
+  <li>Light exercise 5–7pm local time</li>
+  <li>Target bedtime: 10pm local</li>
+</ul>
+<p>By end of Day 2, you should feel 80–90% adapted.</p>
+
+<h2>Part 3: The Melatonin Timing Chart</h2>
+<p>Most people take 5–10mg at bedtime. That's sedation, not a clock signal. You want a clock signal.</p>
+<p><strong>Right dose: 0.5mg–1mg &nbsp;|&nbsp; Right timing: depends on direction</strong></p>
+<h3>Eastward Travel</h3>
+<table>
+  <tr><th>Day</th><th>When to Take It</th></tr>
+  <tr><td>Day 1 at destination</td><td>60 minutes before your target local bedtime</td></tr>
+  <tr><td>Day 2</td><td>Same time as Day 1</td></tr>
+  <tr><td>Day 3 (if needed)</td><td>Same time, or skip if fully adapted</td></tr>
+</table>
+<p><em>Example: NYC → London. Target bedtime 10pm London. Take 0.5mg at 9pm.</em></p>
+<h3>Westward Travel</h3>
+<p>Less critical westward — use only for 6+ time zones or if struggling to fall asleep. 0.5mg, 30–60 min before local target bedtime, Day 1 only.</p>
+<h3>Don'ts</h3>
+<ul>
+  <li>❌ Don't take in the morning (can shift clock the wrong way)</li>
+  <li>❌ Don't exceed 1mg (sedation, not reset)</li>
+  <li>❌ Don't combine with alcohol</li>
+  <li>❌ Don't use for trips of 3 days or fewer</li>
+</ul>
+
+<h2>Part 4: The Short-Trip Rule (3 Days or Less)</h2>
+<p>Full reset isn't worth it for short trips — use the <strong>Home Anchor Strategy</strong> instead:</p>
+<ul>
+  <li>Keep sleep/wake times close to home timezone</li>
+  <li>Schedule important meetings during your peak hours in home timezone</li>
+  <li>Use blackout curtains and earplugs to block conflicting cues</li>
+  <li>Take 0.5mg melatonin at your <em>home</em> bedtime (not local)</li>
+</ul>
+
+<h2>Part 5: The Frequent Traveler Maintenance Stack</h2>
+<ul>
+  <li><strong>Magnesium glycinate</strong> — 200–400mg, 60 minutes before bed. Supports GABA receptor function especially when clock is disrupted.</li>
+  <li><strong>Morning light anchor</strong> — Every day, 10–20 min bright light within 30 min of waking. Before you check your phone.</li>
+  <li><strong>Consistent wake time</strong> — Within 30 minutes of your target, every day including weekends and red-eye days.</li>
+  <li><strong>Temperature at night</strong> — 65–68°F / 18–20°C. Book hotels with controllable AC. This is a clock signal, not a comfort preference.</li>
+</ul>
+
+<div class="quick-ref">
+  <h2>Quick Reference Card</h2>
+  <h4>Before you fly</h4>
+  <ul>
+    <li>Eastward: sleep/eat 30 min earlier × 2 nights</li>
+    <li>Westward: sleep/eat 30 min later × 2 nights</li>
+  </ul>
+  <h4>On the plane</h4>
+  <ul>
+    <li>Set watch to destination time now</li>
+    <li>Sleep if destination says night, awake if it says day</li>
+    <li>8oz water/hour — no alcohol</li>
+  </ul>
+  <h4>Day 1 at destination</h4>
+  <ul>
+    <li>Morning sunlight 8–10am, 20 minutes</li>
+    <li>Eat at local mealtimes</li>
+    <li>Stay awake until 10pm local</li>
+    <li>0.5mg melatonin 60 min before bedtime (eastward only)</li>
+  </ul>
+  <h4>Day 2</h4>
+  <ul>
+    <li>Morning sunlight again</li>
+    <li>No naps over 20 min</li>
+    <li>Light exercise 5–7pm local</li>
+    <li>You should feel normal by tonight</li>
+  </ul>
+</div>
+</div>
+<div class="footer">
+  <p>Based on published chronobiology research including studies from Harvard's Division of Sleep Medicine and <em>Sleep Medicine Reviews</em>. Individual adaptation rates vary. Consult your healthcare provider if you have a sleep disorder or take medications before using melatonin.</p>
+  <br>
+  <p><strong>© Sleep Smarter · sleepsmarter.io</strong> &nbsp;|&nbsp; Dr. Sarah Chen's Travel &amp; Timezone Protocol — Companion to The Forgotten Sleep Ritual</p>
+</div>
+</body>
+</html>`;
+}
+
 // Lookup endpoint — find most recent PDF for an email
 app.get('/lookup', (req, res) => {
   const email = req.query.email;

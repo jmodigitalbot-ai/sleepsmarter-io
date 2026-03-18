@@ -50,7 +50,7 @@ function main() {
     }
   }
 
-  const articlesPath = path.join(__dirname, '../src/data/articles.ts')
+  const articlesPath = path.join(__dirname, '../app/src/data/articles.ts')
   let source = fs.readFileSync(articlesPath, 'utf8')
 
   // 1. Add import at top (before the export interface line)
