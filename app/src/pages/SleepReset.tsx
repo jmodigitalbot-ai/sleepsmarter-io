@@ -141,6 +141,9 @@ export default function SleepReset() {
           <p className="text-[#f1faee] font-semibold">
             The sleep industry has spent decades telling you to sleep more hours. Nobody told you the hours are almost irrelevant if you're waking at the wrong time.
           </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            Dr. Sarah Chen spent 15 years studying this pattern in a clinical setting. What she developed — a specific 3-step formula she calls <strong className="text-[#f1faee]">The Circadian Exit Protocol</strong> — is the system at the core of The Forgotten Sleep Ritual. It calculates your personal sleep windows based on your bedtime and cycle rhythm, so your alarm always fires at the natural exit point. Not near it. Not close to it. At it.
+          </p>
         </div>
 
         {/* ── WHY OTHER SOLUTIONS FAIL ────────────── */}
@@ -196,6 +199,37 @@ export default function SleepReset() {
           </div>
         </div>
 
+        {/* ── SARAH ORIGIN STORY ──────────────────── */}
+        <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-2xl p-8 space-y-5">
+          <p className="text-[#a8dadc] font-semibold text-sm uppercase tracking-widest">Who Discovered This</p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            My name is Dr. Sarah Chen. I'm a sleep researcher — but for most of my thirties, I was also a chronic insomniac.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            I was logging 7, sometimes 8 hours a night. By every metric, I was doing everything right. But I was waking up wrecked. Foggy until noon. Running on caffeine. Snapping at my husband over nothing. Missing the version of myself I knew I was capable of being.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            I tried everything I recommended to my own patients. Melatonin. Magnesium. Sleep restriction. CBT-I protocols. Some of it helped. None of it fixed the mornings.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            Then, on a Tuesday at 2 AM — during one of those nights where you're exhausted but completely awake — I pulled up the raw data from one of my own research studies. I was looking at something else entirely. But something caught my eye.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            The patients who reported waking up refreshed weren't always sleeping more. They weren't on better supplements. They had one thing in common: their alarm happened to fire within the final 10 minutes of a 90-minute sleep cycle. Every single time.
+          </p>
+          <p className="text-[#f1faee] font-semibold">It wasn't luck. It was geometry.</p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            I spent the next six months developing a formula — a specific 3-step sequence I now call <strong className="text-[#f1faee]">The Circadian Exit Protocol</strong> — that calculates your personal sleep windows based on your bedtime and natural cycle rhythm. No app. No tracker. No subscription.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            I started using it myself that week. The first morning I woke up before my alarm, I sat in the dark for a full minute just to make sure it was real.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            That was three years ago. The Forgotten Sleep Ritual is the exact system I built from that research — the same one I've since shared with thousands of patients who were doing everything right and still waking up exhausted.
+          </p>
+          <p className="text-[#f1faee]/60 text-sm italic">— Dr. Sarah Chen, Sleep Researcher &amp; Founder, Sleep Smarter</p>
+        </div>
+
         {/* ── PRODUCT INTRO ───────────────────────── */}
         <div className="text-center space-y-3">
           <p className="text-[#a8dadc] text-sm font-semibold uppercase tracking-widest">Introducing</p>
@@ -238,7 +272,7 @@ export default function SleepReset() {
         {/* ── 5 PARTS ─────────────────────────────── */}
         <div className="space-y-4">
           <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee]">What's Inside</h2>
-          <p className="text-[#f1faee]/60 text-sm">A 40-page PDF. One time. Immediate access.</p>
+          <p className="text-[#f1faee]/60 text-sm">An 11-minute system you implement tonight. One time. Immediate access.</p>
           {[
             {
               part: "Part 1",
@@ -362,7 +396,7 @@ export default function SleepReset() {
             If you don't wake up feeling measurably more refreshed within the first week, email us. We'll refund every cent. No forms. No questions. No runaround.
           </p>
           <p className="text-[#f1faee] font-semibold">You either wake up better, or you pay nothing.</p>
-          <p className="text-[#f1faee]/50 text-sm italic">— Sarah</p>
+          <p className="text-[#f1faee]/50 text-sm italic">— Dr. Sarah Chen, Sleep Researcher &amp; Founder, Sleep Smarter</p>
         </div>
 
         {/* ── FAQ ─────────────────────────────────── */}
@@ -412,7 +446,7 @@ export default function SleepReset() {
               />
               <div className="mt-3 space-y-1 text-center">
                 <p className="text-[#f1faee] font-semibold text-sm">The Forgotten Sleep Ritual</p>
-                <p className="text-[#f1faee]/50 text-xs">40-page digital guide · Instant access</p>
+                <p className="text-[#f1faee]/50 text-xs">11-minute system · Instant access</p>
               </div>
             </div>
             <div className="md:w-2/3 w-full">
