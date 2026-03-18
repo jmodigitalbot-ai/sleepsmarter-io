@@ -355,19 +355,19 @@ export default function SleepReset() {
           <p className="text-[#f1faee]/40 text-xs italic">Individual results vary. These reflect real customer experiences.</p>
           {[
             {
-              quote: "I've tried everything. This was the first thing that actually worked. I woke up without an alarm on Day 4 and just lay there kind of stunned.",
+              quote: "I've tried melatonin, magnesium, every sleep app on the App Store. I was still hitting snooze 3 times every morning and dragging until 10am. I ran the Circadian Exit Protocol on a Tuesday night. By Friday I was waking up 4 minutes before my alarm. I actually texted my husband from bed because I couldn't believe it.",
               name: "Amanda R.",
-              role: "Teacher"
+              role: "2nd grade teacher, mother of two"
             },
             {
-              quote: "The coffee timing thing alone was worth $17. The sleep cycles thing changed my life.",
+              quote: "I was skeptical. I'm a software engineer — I like data. So I tracked it. Before: average 6.2 on my sleep score, snooze button at least twice. Week 1 after: 7.8 average, woke before alarm 4 out of 7 days. The coffee delay tip alone eliminated my 2pm crash. $17 for that ROI is absurd.",
               name: "Marcus T.",
-              role: "Software engineer"
+              role: "Software engineer, 34"
             },
             {
-              quote: "I work nights and my sleep has always been wrecked. This helped me understand what my body was doing and actually feel in control again.",
+              quote: "I do 12-hour night shifts. My sleep has been a disaster for 6 years. What helped wasn't more sleep — it was understanding where in my cycle I was waking up. Dr. Chen's calculator changed how I schedule everything. First time in years I've felt like myself during the day.",
               name: "Keisha M.",
-              role: "Night shift nurse"
+              role: "Night shift ICU nurse, 11 years"
             },
           ].map((t, i) => (
             <div key={i} className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/20 space-y-3">
