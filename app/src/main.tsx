@@ -17,10 +17,7 @@ import SleepReset from './pages/SleepReset.tsx'
 import MasterclassSales from './pages/MasterclassSales.tsx'
 import PremiumSales from './pages/PremiumSales.tsx'
 import InsiderSales from './pages/InsiderSales.tsx'
-import OTOMasterclass from './pages/OTOMasterclass.tsx'
-import OTOPremium from './pages/OTOPremium.tsx'
-import OTOInsider from './pages/OTOInsider.tsx'
-import PurchaseThankYou from './pages/PurchaseThankYou.tsx'
+
 import Blueprint from './pages/Blueprint.tsx'
 import SleepCalculatorLanding from './pages/landing/SleepCalculatorLanding.tsx'
 import SleepTipsLanding from './pages/landing/SleepTipsLanding.tsx'
@@ -56,10 +53,7 @@ const ui = (
         <Route path="/masterclass" element={<MasterclassSales />} />
         <Route path="/premium" element={<PremiumSales />} />
         <Route path="/insider" element={<InsiderSales />} />
-        <Route path="/oto/masterclass" element={<OTOMasterclass />} />
-        <Route path="/oto/premium" element={<OTOPremium />} />
-        <Route path="/oto/insider" element={<OTOInsider />} />
-        <Route path="/purchase-complete" element={<PurchaseThankYou />} />
+
         <Route path="/blueprint" element={<Blueprint />} />
         {/* Landing Pages */}
         <Route path="/lp/sleep-calculator" element={<SleepCalculatorLanding />} />
