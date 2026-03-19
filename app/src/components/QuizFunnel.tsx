@@ -520,7 +520,7 @@ export default function QuizFunnel() {
             onClick={handleStartQuiz}
             className="w-full bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-4 px-6 rounded-lg transition text-lg"
           >
-            Start My Sleep Assessment →
+            Find My Sleep Type →
           </button>
 
           <p className="text-center text-sm text-[#f1faee]/40 mt-6">
@@ -672,10 +672,7 @@ export default function QuizFunnel() {
 
             <div className="bg-[#16213e] border border-[#a8dadc]/30 rounded-xl p-8 mb-6">
               <p className="text-xs text-[#a8dadc] uppercase tracking-wide font-semibold mb-3">Recommended for your type</p>
-              <h3 className="text-2xl font-bold text-[#f1faee] mb-3">The Forgotten Sleep Ritual</h3>
-              <p className="text-[#f1faee]/70 leading-relaxed mb-5">
-                {typeInfo.cta_angle}
-              </p>
+              <h3 className="text-2xl font-bold text-[#f1faee] mb-5">The Forgotten Sleep Ritual</h3>
               <ul className="space-y-2">
                 {typeInfo.bullets.map((bullet, idx) => (
                   <li key={idx} className="flex gap-3 text-[#f1faee]/85 text-sm">
@@ -697,10 +694,14 @@ export default function QuizFunnel() {
             {/* Primary CTA — type-specific */}
             <button
               onClick={handleOfferCTA}
-              className="w-full bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-5 px-6 rounded-lg transition text-lg mb-8"
+              className="w-full bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-5 px-6 rounded-lg transition text-lg mb-3"
             >
               {typeInfo.cta_button_text}
             </button>
+
+            <p className="text-center text-sm text-[#f1faee]/40 mb-8">
+              Sleep debt compounds. Every night without a solution is another night of accumulated damage.
+            </p>
 
           </div>
 
