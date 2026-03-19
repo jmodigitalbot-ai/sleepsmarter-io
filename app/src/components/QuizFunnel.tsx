@@ -21,9 +21,11 @@ interface SleepTypeMapping {
   behavior_explanation: string
   common_struggles: string[]
   hidden_strengths: string[]
+  why_solutions_failed: string
   bridge_text: string
   cta_angle: string
   bullets: string[]
+  cta_button_text: string
 }
 
 const SLEEP_TYPES: Record<SleepType, SleepTypeMapping> = {
@@ -47,13 +49,15 @@ const SLEEP_TYPES: Record<SleepType, SleepTypeMapping> = {
       'Strong self-awareness about your mental and emotional state',
       'Once you learn the right wind-down sequence, your sleep latency can drop from 45+ minutes to under 10',
     ],
+    why_solutions_failed: 'Melatonin, sleep hygiene checklists, and wind-down apps share one fatal flaw for your type: they don\'t address elevated cortisol. You can\'t supplement or habit-track your way out of a dysregulated stress response. The anxiety loop that fires at bedtime needs a specific interruption sequence — not another item on your to-do list. That\'s why everything you\'ve tried has produced marginal results at best.',
     bridge_text: 'People with the Racing Mind pattern often struggle with anxiety-loop bedtimes for years — trying everything from melatonin to white noise — because they\'re treating the symptom instead of the cause. The good news is there is a proven sequence designed specifically for overactive nervous systems.',
     cta_angle: 'The Forgotten Sleep Ritual teaches you the exact wind-down sequence that signals your brain to produce melatonin naturally — quieting an overactive mind in under 20 minutes.',
     bullets: [
       'Proven wind-down protocol that interrupts the cortisol-anxiety loop keeping you awake',
       'The specific breathing sequence that activates your parasympathetic nervous system',
       'Timing and sequencing your body needs to actually accept sleep — not fight it',
-    ]
+    ],
+    cta_button_text: 'Give Me The Wind-Down Sequence →',
   },
   cant_stay_asleep: {
     type: 'cant_stay_asleep',
@@ -75,13 +79,15 @@ const SLEEP_TYPES: Record<SleepType, SleepTypeMapping> = {
       'Fragmented sleep often has a specific, fixable root cause — unlike chronic insomnia',
       'Once you address the cortisol spike pattern, your sleep can consolidate quickly',
     ],
+    why_solutions_failed: 'Sleep restriction protocols, sleep hygiene advice, and melatonin don\'t fix middle-of-night waking because they don\'t target the cortisol spike causing it. You\'re not waking up because you\'re a light sleeper or because you\'re stressed — you\'re waking because your stress hormones are spiking 4–5 hours into sleep and pulling you out. Until you address that specific timing, the 3 AM wakeup stays.',
     bridge_text: 'Fragmented sleepers often try sleep restriction, melatonin, and sleep hygiene advice — none of which addresses the actual issue. The good news is the cortisol spike pattern responds directly to specific timing and pre-sleep interventions.',
     cta_angle: 'The Forgotten Sleep Ritual addresses the cortisol spike pattern that causes middle-of-night waking — stabilizing your sleep architecture so you stay in deep sleep longer.',
     bullets: [
       'Proven method to stabilize the cortisol curve that triggers the 2–3 AM wake-up',
       'Sleep architecture optimization that increases deep sleep consistency',
       'Specific pre-sleep protocol that prevents the micro-wake pattern from pulling you out',
-    ]
+    ],
+    cta_button_text: 'Show Me The Cortisol Reset →',
   },
   never_feel_rested: {
     type: 'never_feel_rested',
@@ -103,13 +109,15 @@ const SLEEP_TYPES: Record<SleepType, SleepTypeMapping> = {
       'Sleep architecture problems often produce dramatic improvements quickly — 1–2 weeks is common once the root cause is addressed',
       'You\'ve already proven you can push through — imagine what you\'ll do with actual energy',
     ],
+    why_solutions_failed: 'Adding more hours doesn\'t fix unrefreshing sleep — and that\'s why sleeping longer hasn\'t helped you. The problem isn\'t duration, it\'s sleep architecture. More time in light sleep stages doesn\'t compensate for the deep NREM and REM your body never reaches. Sleep apps, supplements, and earlier bedtimes all operate on the wrong assumption: that you need more sleep. You don\'t. You need better sleep.',
     bridge_text: 'Poor Recoverers often spend years increasing their sleep hours with no result — because the hours aren\'t the problem. The good news is sleep architecture responds directly to specific timing, environment, and pre-sleep conditions.',
     cta_angle: 'The Forgotten Sleep Ritual focuses on sleep architecture — getting dramatically more deep and REM sleep in the same hours you\'re already spending in bed.',
     bullets: [
       'Optimize your sleep cycle timing to maximize deep and REM stage duration',
       'Protocol that increases sleep efficiency without changing hours in bed',
       'The specific environmental and timing adjustments that shift you from light sleep to restorative sleep',
-    ]
+    ],
+    cta_button_text: 'Fix My Sleep Architecture →',
   },
   exhausted_but_wired: {
     type: 'exhausted_but_wired',
@@ -131,14 +139,16 @@ const SLEEP_TYPES: Record<SleepType, SleepTypeMapping> = {
       'Circadian rhythms are among the most responsive systems in the body — targeted interventions often show results within 3–7 days',
       'Once realigned, your daytime energy often transforms faster than any other sleep type',
     ],
+    why_solutions_failed: 'Earlier bedtimes make circadian mismatch worse — not better. When you force yourself to bed before your cortisol has dropped, you\'re fighting your own biology. That\'s why the "just go to bed earlier" advice has never worked for you. Your rhythm isn\'t broken — it\'s running on a different schedule. Until you reset the timing of your cortisol and melatonin production, no amount of discipline at bedtime will change what your nervous system is doing.',
     bridge_text: 'Circadian mismatch sleepers often try earlier bedtimes and sleep hygiene routines — and fail — because those approaches don\'t address the timing of cortisol and melatonin production. The good news is your circadian rhythm can be reset with the right sequence applied at the right time of day.',
     cta_angle: 'The Forgotten Sleep Ritual resets your cortisol-melatonin timing so your body\'s sleep drive fires at the right time — ending the day-exhaustion, night-alertness cycle.',
     bullets: [
       'Circadian reset sequence that shifts your body clock without drugs or supplements',
       'Specific timing for the wind-down ritual that matches your nervous system\'s current state',
       'Proven protocol for cortisol balance that stops the second-wind pattern',
-    ]
-  }
+    ],
+    cta_button_text: 'Reset My Sleep Clock →',
+  },
 }
 
 interface QuizQuestion {
@@ -293,19 +303,19 @@ const ENGAGEMENT_SCREENS = [
     trigger_after_question: 3,
     emoji: '🔍',
     title: 'Analyzing your pattern...',
-    message: 'Most people never identify the real root of their sleep problem. You\'re already ahead.'
+    message: 'Most people with this profile have one overlooked trigger — and it has nothing to do with their phone.'
   },
   {
     trigger_after_question: 7,
     emoji: '💡',
     title: 'Building your profile...',
-    message: 'A clear pattern is emerging. Your diagnosis is getting more specific.'
+    message: 'Most people who\'ve tried what you\'ve tried are missing the same thing. We\'re narrowing it down.'
   },
   {
     trigger_after_question: 11,
     emoji: '✨',
     title: 'Calculating your results...',
-    message: 'One more question. Your personalized sleep diagnosis is almost ready.'
+    message: 'Your diagnosis is ready. One more question to personalize your protocol.'
   }
 ]
 
@@ -429,18 +439,49 @@ export default function QuizFunnel() {
     window.scrollTo(0, 0)
   }
 
+  /**
+   * Weighted scoring across Q1 (primary), Q4 (behavioral signal), Q9 (stress signal).
+   * Q1 dominates at 3 points — ensures primary self-reported struggle stays primary.
+   * Q4 (2pts) and Q9 (1pt) can refine the result when answers are consistent.
+   */
   const calculateSleepType = (finalResponses: QuizResponse[]): SleepType => {
-    const identity = finalResponses.find((r) => r.questionId === 'q1_identity')
-    if (identity) {
-      const types: SleepType[] = [
-        'cant_fall_asleep',
-        'cant_stay_asleep',
-        'never_feel_rested',
-        'exhausted_but_wired'
-      ]
-      return types[identity.answer] || 'cant_fall_asleep'
+    const scores: Record<SleepType, number> = {
+      cant_fall_asleep: 0,
+      cant_stay_asleep: 0,
+      never_feel_rested: 0,
+      exhausted_but_wired: 0,
     }
-    return 'cant_fall_asleep'
+
+    // Q1 — primary identity signal, weight 3
+    const q1 = finalResponses.find(r => r.questionId === 'q1_identity')
+    if (q1 !== undefined) {
+      const q1Map: SleepType[] = ['cant_fall_asleep', 'cant_stay_asleep', 'never_feel_rested', 'exhausted_but_wired']
+      const type = q1Map[q1.answer]
+      if (type) scores[type] += 3
+    }
+
+    // Q4 — behavioral root cause signal, weight 2
+    // 0=racing thoughts→fall asleep | 1=physical→never rested | 2=external→stay asleep | 3=random→wired
+    const q4 = finalResponses.find(r => r.questionId === 'q4_behavior')
+    if (q4 !== undefined) {
+      const q4Map: SleepType[] = ['cant_fall_asleep', 'never_feel_rested', 'cant_stay_asleep', 'exhausted_but_wired']
+      const type = q4Map[q4.answer]
+      if (type) scores[type] += 2
+    }
+
+    // Q9 — stress/anxiety signal, weight 1
+    // 0=low→never rested | 1=moderate→stay asleep | 2=high→wired | 3=very high→fall asleep
+    const q9 = finalResponses.find(r => r.questionId === 'q9_lifestyle')
+    if (q9 !== undefined) {
+      const q9Map: SleepType[] = ['never_feel_rested', 'cant_stay_asleep', 'exhausted_but_wired', 'cant_fall_asleep']
+      const type = q9Map[q9.answer]
+      if (type) scores[type] += 1
+    }
+
+    // Return type with highest weighted score
+    const winner = (Object.entries(scores) as [SleepType, number][])
+      .sort(([, a], [, b]) => b - a)[0][0]
+    return winner
   }
 
   const handleOfferCTA = () => {
@@ -492,7 +533,6 @@ export default function QuizFunnel() {
 
   // ── ENGAGEMENT SCREEN ─────────────────────────────────────────────────────
   if (phase === 'engagement_screen') {
-    // currentQuestionIndex hasn't been incremented yet — find by completed question number
     const screen = ENGAGEMENT_SCREENS.find(
       (s) => s.trigger_after_question === currentQuestionIndex + 1
     )
@@ -516,7 +556,7 @@ export default function QuizFunnel() {
               Your diagnosis is ready.
             </h2>
             <p className="text-lg text-[#f1faee]/70">
-              Enter your email to reveal your personalized sleep type diagnosis and the exact protocol designed for your pattern.
+              We've analyzed thousands of sleep profiles. Enter your name and email to unlock yours — including the exact protocol built for your pattern.
             </p>
           </div>
 
@@ -526,7 +566,8 @@ export default function QuizFunnel() {
               <div>✓ Your exact sleep type and identity profile</div>
               <div>✓ Why this pattern is happening (the real cause)</div>
               <div>✓ Your common struggles and hidden strengths</div>
-              <div>✓ The specific intervention for your type</div>
+              <div>✓ Why past solutions haven't worked for your type</div>
+              <div>✓ The specific intervention designed for your pattern</div>
             </div>
           </div>
 
@@ -551,7 +592,7 @@ export default function QuizFunnel() {
       <div className="min-h-screen bg-[#1a1a2e] px-4 py-12">
         <div className="max-w-3xl mx-auto">
 
-          {/* ── STEP 7: Diagnosis Header ── */}
+          {/* ── Diagnosis Header ── */}
           <div className="text-center mb-10">
             <div className="inline-block bg-[#a8dadc]/10 border border-[#a8dadc]/30 rounded-full px-4 py-1 text-sm text-[#a8dadc] mb-6">
               Your Sleep Diagnosis
@@ -568,7 +609,7 @@ export default function QuizFunnel() {
             </p>
           </div>
 
-          {/* ── STEP 6: Identity Description ── */}
+          {/* ── Identity Description ── */}
           <div className="bg-[#16213e] border border-[#a8dadc]/20 rounded-xl p-8 mb-6">
             <h2 className="text-xl font-bold text-[#a8dadc] mb-4">What this means for you</h2>
             <p className="text-[#f1faee]/90 text-lg leading-relaxed mb-6">
@@ -580,7 +621,7 @@ export default function QuizFunnel() {
             </p>
           </div>
 
-          {/* ── STEP 6: Common Struggles ── */}
+          {/* ── Common Struggles ── */}
           <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-8 mb-6">
             <h2 className="text-xl font-bold text-[#f1faee] mb-4">Your common struggles</h2>
             <p className="text-[#f1faee]/60 text-sm mb-4">If these feel familiar, you're in the right place:</p>
@@ -594,8 +635,8 @@ export default function QuizFunnel() {
             </ul>
           </div>
 
-          {/* ── STEP 6: Hidden Strengths ── */}
-          <div className="bg-[#16213e] border border-[#a8dadc]/10 rounded-xl p-8 mb-10">
+          {/* ── Hidden Strengths ── */}
+          <div className="bg-[#16213e] border border-[#a8dadc]/10 rounded-xl p-8 mb-6">
             <h2 className="text-xl font-bold text-[#a8dadc] mb-4">Your hidden strengths</h2>
             <ul className="space-y-3">
               {typeInfo.hidden_strengths.map((strength, idx) => (
@@ -607,7 +648,17 @@ export default function QuizFunnel() {
             </ul>
           </div>
 
-          {/* ── STEP 8: Affiliate Bridge ── */}
+          {/* ── Why Past Solutions Failed ── */}
+          <div className="bg-[#1a1228] border border-red-900/30 rounded-xl p-8 mb-10">
+            <h2 className="text-xl font-bold text-[#f1faee] mb-4">
+              Why nothing has worked (yet)
+            </h2>
+            <p className="text-[#f1faee]/80 leading-relaxed">
+              {typeInfo.why_solutions_failed}
+            </p>
+          </div>
+
+          {/* ── Offer Bridge ── */}
           <div className="border-t border-[#4a4e69]/30 pt-10 mb-8">
             <h2 className="text-2xl font-bold text-[#f1faee] mb-4">
               The good news
@@ -619,7 +670,7 @@ export default function QuizFunnel() {
               {typeInfo.cta_angle}
             </p>
 
-            <div className="bg-[#16213e] border border-[#a8dadc]/30 rounded-xl p-8 mb-8">
+            <div className="bg-[#16213e] border border-[#a8dadc]/30 rounded-xl p-8 mb-6">
               <p className="text-xs text-[#a8dadc] uppercase tracking-wide font-semibold mb-3">Recommended for your type</p>
               <h3 className="text-2xl font-bold text-[#f1faee] mb-3">The Forgotten Sleep Ritual</h3>
               <p className="text-[#f1faee]/70 leading-relaxed mb-5">
@@ -635,14 +686,21 @@ export default function QuizFunnel() {
               </ul>
             </div>
 
-            {/* Primary CTA */}
+            {/* Price anchor */}
+            <div className="bg-[#1a1a2e] border border-[#4a4e69]/20 rounded-lg px-5 py-3 mb-5 text-center">
+              <p className="text-[#f1faee]/50 text-sm">
+                Most people spend $40+ a month on melatonin and sleep apps that treat the symptom.{' '}
+                <span className="text-[#a8dadc] font-semibold">The Forgotten Sleep Ritual is $17.</span>
+              </p>
+            </div>
+
+            {/* Primary CTA — type-specific */}
             <button
               onClick={handleOfferCTA}
               className="w-full bg-[#a8dadc] hover:bg-[#8ec8d0] text-[#1a1a2e] font-bold py-5 px-6 rounded-lg transition text-lg mb-8"
             >
-              Show Me How To Fix This →
+              {typeInfo.cta_button_text}
             </button>
-
 
           </div>
 
@@ -681,7 +739,7 @@ export default function QuizFunnel() {
             <p className="text-lg text-[#f1faee]/60">{question.description}</p>
           </div>
 
-          {/* Answer Options — key on questionId forces full remount between questions */}
+          {/* Answer Options */}
           <div key={question.id} className="space-y-3">
             {question.options.map((option, idx) => (
               <button

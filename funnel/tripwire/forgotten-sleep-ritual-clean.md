@@ -1,8 +1,97 @@
 
+# The Forgotten Sleep Ritual
 
 ---
 
 *This guide contains a specific, science-backed method for eliminating morning grogginess by timing your sleep to end at the natural boundary of your sleep cycle. No supplements. No expensive gadgets. No radical lifestyle overhaul. Just timing — and a 10-minute ritual that most people abandoned somewhere along the way.*
+
+---
+
+# ⚡ The 11-Minute Quick-Start
+
+## Do This Tonight. Feel the Difference Tomorrow Morning.
+
+*Before you read anything else — run this setup. It takes 11 minutes. You'll understand the "why" in Part 1, but the system works whether you read it first or not.*
+
+---
+
+### STEP 1 — Lock In Your Wake Time *(1 minute)*
+
+Pick the one wake time you'll hold 6 out of 7 days. Not your weekday time. One time, seven days.
+
+**My wake time: ___________**
+
+This is your anchor. Everything else is calculated from here.
+
+---
+
+### STEP 2 — Run the Circadian Exit Protocol *(3 minutes)*
+
+Count backwards from your wake time in 90-minute blocks, subtracting 15 minutes for the time it takes to fall asleep.
+
+**Example — Wake time: 6:30 AM**
+
+| In Bed By | Cycles | Total Sleep |
+|-----------|--------|-------------|
+| 9:00 PM | 6 | 9 hrs |
+| **10:30 PM** | **5** | **7.5 hrs ✓ best** |
+| 12:00 AM | 4 | 6 hrs |
+| 1:30 AM | 3 | 4.5 hrs |
+
+**Your targets (fill in your wake time):**
+
+| In Bed By | Cycles | Total Sleep |
+|-----------|--------|-------------|
+| ___________ | 6 | 9 hrs |
+| **___________** | **5** | **7.5 hrs ✓** |
+| ___________ | 4 | 6 hrs |
+
+**Tonight's target bedtime: ___________**
+
+*Can't make the 5-cycle window? Go for 4 clean cycles. Don't go to bed in the gap between targets — waking mid-cycle is worse than sleeping fewer hours.*
+
+---
+
+### STEP 3 — Set Two Alarms Right Now *(1 minute)*
+
+1. **Wake alarm** — set for your fixed wake time
+2. **Bedtime alarm** — set for 10 minutes before tonight's target bedtime
+
+*Both alarms. Right now. Before you continue reading.*
+
+---
+
+### STEP 4 — The 4-Minute Pre-Sleep Ritual *(do tonight at bedtime)*
+
+When your bedtime alarm fires, do this in order:
+
+**Minute 1 — Dim everything.** Lights off or very low. Phone face-down or in another room. Temperature at 65–68°F if you can control it.
+
+**Minute 2 — Release the day.** Write down (on paper, not your phone) any open loops or tomorrow tasks. One sentence each. Once it's written, your brain can let it go.
+
+**Minute 3 — Slow your breathing.** 4 counts in through the nose, hold 4, out through the mouth 6. Three slow cycles. This triggers your parasympathetic nervous system — the "rest and digest" state that initiates sleep onset.
+
+**Minute 4 — Anchor your bedtime.** Say or think: *"I'm going to sleep at [your bedtime]. I'll wake up at [your wake time] at the end of a full cycle."* Your brain prepares for a specific wake target when given one.
+
+Lights out. Done.
+
+---
+
+### STEP 5 — The 90-Second Morning Protocol *(do tomorrow when you wake)*
+
+When your alarm fires:
+
+**Seconds 1–30:** Don't reach for your phone. Lie still. Take three slow deep breaths. Let your brain surface naturally rather than jolting it into alertness.
+
+**Seconds 31–60:** Sit up and look toward the brightest light source available — a window is ideal. This triggers your cortisol awakening response, the body's natural alertness mechanism.
+
+**Seconds 61–90:** Stand up before you decide whether you "feel like it." The act of standing — not the decision — breaks sleep inertia. Once you're vertical, you're awake.
+
+*Delay your first coffee 90 minutes. The reason is in Part 4. For now, just trust it.*
+
+---
+
+> **That's it. You're set up.** The rest of this guide explains the science, gives you the edge cases, and covers what to do when life disrupts the schedule. The 40 pages ahead aren't homework — they're your backstory. You have everything you need to feel the difference tomorrow morning.
 
 ---
 
