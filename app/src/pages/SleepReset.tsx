@@ -1,9 +1,77 @@
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { useEffect, useState, type ReactElement } from 'react'
 import { trackSalesPageView, trackCheckoutClick, trackMetaEvent } from '../lib/analytics'
+
+type SleepType = 'cant_fall_asleep' | 'cant_stay_asleep' | 'never_feel_rested' | 'exhausted_but_wired'
+
+interface HeroCopy {
+  eyebrow: string
+  headline: ReactElement
+  subheadline: string
+}
+
+const HERO_BY_TYPE: Record<SleepType, HeroCopy> = {
+  cant_fall_asleep: {
+    eyebrow: 'FOR THE RACING MIND SLEEPER',
+    headline: (
+      <>
+        Your Brain Won't Shut Off.<br />
+        <span className="text-[#a8dadc]">Here's The Sequence That Turns It Off.</span>
+      </>
+    ),
+    subheadline: "The Forgotten Sleep Ritual teaches you the exact wind-down sequence that signals your brain to drop cortisol and produce melatonin naturally — quieting a racing mind in under 20 minutes.",
+  },
+  cant_stay_asleep: {
+    eyebrow: 'FOR THE FRAGMENTED SLEEPER',
+    headline: (
+      <>
+        You're Not a Light Sleeper.<br />
+        <span className="text-[#a8dadc]">You Have a Cortisol Spike Problem.</span>
+      </>
+    ),
+    subheadline: "The Forgotten Sleep Ritual addresses the cortisol pattern that pulls you out of deep sleep at 2–3 AM — stabilizing your sleep architecture so you stay down through the night.",
+  },
+  never_feel_rested: {
+    eyebrow: 'FOR THE POOR RECOVERER',
+    headline: (
+      <>
+        You're Sleeping. But You're Not Recovering.<br />
+        <span className="text-[#a8dadc]">The Problem Is Your Sleep Architecture.</span>
+      </>
+    ),
+    subheadline: "The Forgotten Sleep Ritual optimizes your sleep cycle timing to get dramatically more deep and REM sleep — in the exact same hours you're already spending in bed.",
+  },
+  exhausted_but_wired: {
+    eyebrow: 'FOR THE CIRCADIAN MISMATCH SLEEPER',
+    headline: (
+      <>
+        Exhausted All Day. Wired At Night.<br />
+        <span className="text-[#a8dadc]">Your Clock Is Running Backwards. Here's The Reset.</span>
+      </>
+    ),
+    subheadline: "The Forgotten Sleep Ritual resets your cortisol-melatonin timing so your body's sleep drive fires when it should — ending the day-exhaustion, night-alertness cycle for good.",
+  },
+}
+
+const DEFAULT_HERO: HeroCopy = {
+  eyebrow: 'THE FORGOTTEN SLEEP RITUAL',
+  headline: (
+    <>
+      You're Not Sleeping Wrong.<br />
+      <span className="text-[#a8dadc]">You're Waking Wrong.</span>
+    </>
+  ),
+  subheadline: "The science-backed ritual that lets you wake up refreshed every morning — without changing how long you sleep, taking another supplement, or overhauling your life.",
+}
 
 
 export default function SleepReset() {
+  const location = useLocation()
+  const state = location.state as { source?: string; sleep_type?: SleepType } | null
+  const sleepType = state?.sleep_type
+  const hero: HeroCopy = (sleepType && HERO_BY_TYPE[sleepType]) ? HERO_BY_TYPE[sleepType] : DEFAULT_HERO
+  const fromQuiz = state?.source === 'quiz_funnel'
+
   useEffect(() => {
     trackSalesPageView('/sleep-reset', {
       page_title: 'The Forgotten Sleep Ritual'
@@ -73,17 +141,25 @@ export default function SleepReset() {
 
       <main className="max-w-3xl mx-auto px-4 py-12 space-y-14">
 
+        {/* ── QUIZ CONTINUITY BANNER ───────────────── */}
+        {fromQuiz && sleepType && HERO_BY_TYPE[sleepType] && (
+          <div className="bg-[#a8dadc]/10 border border-[#a8dadc]/30 rounded-xl px-5 py-3 text-center">
+            <p className="text-[#a8dadc] text-sm font-semibold">
+              Based on your diagnosis: <em>{sleepType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</em> — this page has been customized for your sleep pattern.
+            </p>
+          </div>
+        )}
+
         {/* ── HEADLINE ────────────────────────────── */}
         <div className="text-center space-y-5">
           <p className="text-[#a8dadc] text-sm font-semibold uppercase tracking-widest">
-            THE FORGOTTEN SLEEP RITUAL
+            {hero.eyebrow}
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f1faee] leading-tight">
-            You're Not Sleeping Wrong.<br />
-            <span className="text-[#a8dadc]">You're Waking Wrong.</span>
+            {hero.headline}
           </h1>
           <p className="text-xl md:text-2xl text-[#f1faee]/75 max-w-2xl mx-auto leading-relaxed">
-            The science-backed ritual that lets you wake up refreshed every morning — without changing how long you sleep, taking another supplement, or overhauling your life.
+            {hero.subheadline}
           </p>
           <div className="pt-4">
             <CTA location="hero" />
