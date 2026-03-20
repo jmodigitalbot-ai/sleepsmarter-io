@@ -496,6 +496,9 @@ export default function QuizFunnel() {
         <div className="max-w-2xl w-full">
           <div className="text-center mb-10">
             <div className="text-6xl mb-6">🌙</div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#a8dadc] mb-3">
+              Free Sleep Type Quiz · 2 Minutes
+            </p>
             <h1 className="text-4xl md:text-5xl font-bold text-[#f1faee] mb-4 leading-tight">
               What's Destroying Your Sleep?
             </h1>
