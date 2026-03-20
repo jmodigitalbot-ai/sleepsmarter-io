@@ -27,6 +27,8 @@ import cognitiveShuffling from '../content/27-cognitive-shuffling.md?raw'
 
 import whyDoIWakeUpAt3am from '../content/28-why-do-i-wake-up-at-3am.md?raw'
 
+import melatoninForSleep from '../content/29-melatonin-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -496,6 +498,24 @@ export const articles: Article[] = [
       { question: "How do I stop waking up at 3AM?", answer: "Start by testing the most common causes one at a time: cut alcohol for two weeks, lower your bedroom temperature to 65-68F, have a small protein snack before bed, and practice the 3AM wake-up protocol (no clock-checking, 4-7-8 breathing, cognitive shuffling). Most people identify the cause within 2 weeks of systematic testing." },
       { question: "Should I get out of bed if I wake at 3AM?", answer: "Only if you have been awake for more than 20 minutes and feel fully alert. If so, get up, go to a dim room, read something light, and return when drowsy. This is stimulus control — it prevents your brain from associating bed with wakefulness. If you are drowsy but awake, stay in bed and use a relaxation technique first." },
       { question: "When should I see a doctor about waking at 3AM?", answer: "If you are waking three or more nights per week and feel significantly unrefreshed despite adequate total sleep hours, it is worth investigating. Priority is to rule out sleep apnea (especially if you snore or gasp), restless legs syndrome, or hormonal changes from perimenopause. CBT-I therapy is the most effective long-term treatment for chronic sleep maintenance insomnia." }
+    ]
+  },
+  {
+    slug: "melatonin-for-sleep",
+    title: "Melatonin for Sleep: The Right Dose (And Why You're Probably Taking Too Much)",
+    description: "Most people take melatonin wrong — too much, too late. Learn the research-backed dose, timing, and who actually benefits from melatonin.",
+    readTime: "9 min read",
+    date: "March 2026",
+    publishDate: "2026-03-20",
+    content: melatoninForSleep,
+    featuredImage: "/images/featured-melatonin-for-sleep.png",
+    featuredImageAlt: "Melatonin bottle with pills on a bedside table next to a clock glowing 10:30 PM",
+    faqs: [
+      { question: "What is the correct dose of melatonin for sleep?", answer: "Research supports 0.3–0.5mg — far lower than the 5–10mg sold in most stores. Your body naturally produces 0.1–0.3mg per night, so pharmacological doses create unnecessary side effects without added benefit." },
+      { question: "When should I take melatonin?", answer: "Take low-dose melatonin 30–60 minutes before your target sleep time. For circadian phase shifting, timing matters more than dose — taking it too early or too late can work against you." },
+      { question: "Does melatonin actually make you sleepy?", answer: "No. Melatonin is a timing signal, not a sedative. It tells your body it's nighttime so biological sleep processes can proceed on schedule. It doesn't directly cause drowsiness." },
+      { question: "Will nightly melatonin suppress my natural production?", answer: "Evidence in healthy adults is reassuring at low doses, but long-term nightly use beyond 6 months lacks robust safety data. Using it situationally rather than nightly is the conservative approach most sleep specialists recommend." },
+      { question: "Who benefits most from melatonin?", answer: "Jet lag sufferers, shift workers, adults over 55 with declining natural melatonin, and people with delayed sleep phase syndrome. It has limited efficacy for anxiety-driven insomnia or improving sleep quality." }
     ]
   }
 ]
