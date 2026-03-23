@@ -29,6 +29,8 @@ import whyDoIWakeUpAt3am from '../content/28-why-do-i-wake-up-at-3am.md?raw'
 
 import melatoninForSleep from '../content/29-melatonin-for-sleep.md?raw'
 
+import whatActuallyIncreasesDeepSleep from '../content/30-what-actually-increases-deep-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -516,6 +518,24 @@ export const articles: Article[] = [
       { question: "Does melatonin actually make you sleepy?", answer: "No. Melatonin is a timing signal, not a sedative. It tells your body it's nighttime so biological sleep processes can proceed on schedule. It doesn't directly cause drowsiness." },
       { question: "Will nightly melatonin suppress my natural production?", answer: "Evidence in healthy adults is reassuring at low doses, but long-term nightly use beyond 6 months lacks robust safety data. Using it situationally rather than nightly is the conservative approach most sleep specialists recommend." },
       { question: "Who benefits most from melatonin?", answer: "Jet lag sufferers, shift workers, adults over 55 with declining natural melatonin, and people with delayed sleep phase syndrome. It has limited efficacy for anxiety-driven insomnia or improving sleep quality." }
+    ]
+  },
+  {
+    slug: "what-actually-increases-deep-sleep",
+    title: "What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks",
+    description: "We analyzed 12 months of Oura ring data and Reddit reports. Here's what actually moves your deep sleep numbers — and what's a waste of money.",
+    readTime: "9 min read",
+    date: "March 2026",
+    publishDate: "2026-03-23",
+    content: whatActuallyIncreasesDeepSleep,
+    featuredImage: "/images/featured-what-actually-increases-deep-sleep.png",
+    featuredImageAlt: "Oura ring deep sleep tracking data next to a natural latex mattress with white bedding",
+    faqs: [
+      { question: "What is the most effective way to increase deep sleep?", answer: "Regular Zone 2 aerobic exercise — like brisk walking 45 minutes daily — is the single most evidence-backed way to increase deep sleep. It boosts adenosine buildup, lowers post-exercise core temperature, and reduces stress hormones that fragment sleep architecture." },
+      { question: "Does magnesium glycinate increase deep sleep?", answer: "Not reliably. Magnesium helps if you are deficient, but most people with adequate dietary magnesium see no deep sleep improvement from supplementing. Some users report higher doses cause 3AM wakeups due to NMDA receptor activation." },
+      { question: "Does melatonin increase deep sleep?", answer: "No. Melatonin is a sleep-timing signal, not a sleep-depth agent. It shifts when you feel sleepy but does not increase the percentage of slow-wave sleep you get once asleep." },
+      { question: "How does a mattress affect deep sleep?", answer: "A mattress that creates pressure points causes micro-arousals throughout the night — brief wakings your tracker detects as fragmented sleep. These directly reduce slow-wave sleep time. Research shows replacing an old mattress can improve sleep quality scores by up to 60%." },
+      { question: "What percentage of sleep should be deep sleep?", answer: "Adults typically need 15–25% of total sleep as deep sleep. For a 7-hour sleeper, that is roughly 60–105 minutes of slow-wave sleep per night." }
     ]
   }
 ]
