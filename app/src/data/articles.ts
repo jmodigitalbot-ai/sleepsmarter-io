@@ -31,6 +31,8 @@ import melatoninForSleep from '../content/29-melatonin-for-sleep.md?raw'
 
 import whatActuallyIncreasesDeepSleep from '../content/30-what-actually-increases-deep-sleep.md?raw'
 
+import threeAmWakeUpCortisol from '../content/31-3am-wake-up-cortisol-supplements.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -536,6 +538,24 @@ export const articles: Article[] = [
       { question: "Does melatonin increase deep sleep?", answer: "No. Melatonin is a sleep-timing signal, not a sleep-depth agent. It shifts when you feel sleepy but does not increase the percentage of slow-wave sleep you get once asleep." },
       { question: "How does a mattress affect deep sleep?", answer: "A mattress that creates pressure points causes micro-arousals throughout the night — brief wakings your tracker detects as fragmented sleep. These directly reduce slow-wave sleep time. Research shows replacing an old mattress can improve sleep quality scores by up to 60%." },
       { question: "What percentage of sleep should be deep sleep?", answer: "Adults typically need 15–25% of total sleep as deep sleep. For a 7-hour sleeper, that is roughly 60–105 minutes of slow-wave sleep per night." }
+    ]
+  },
+  {
+    slug: "3am-wake-up-cortisol-supplements",
+    title: "Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)",
+    description: "If you wake at 3AM with a racing mind, it's not random insomnia. It's a hormonal mechanism — and a common supplement may be making it worse.",
+    readTime: "9 min read",
+    date: "March 2026",
+    publishDate: "2026-03-25",
+    content: threeAmWakeUpCortisol,
+    featuredImage: "/images/featured-3am-wake-up-cortisol-supplements.png",
+    featuredImageAlt: "Person lying awake in bed at 3AM with a glowing red clock on the nightstand",
+    faqs: [
+      { question: "Why do I keep waking up at exactly 3AM?", answer: "Early-morning waking between 2–4 AM is usually driven by a premature cortisol spike. Cortisol naturally rises before dawn to prepare your body for waking — but chronic stress, alcohol, blood sugar drops, or certain supplements can trigger that spike hours too early." },
+      { question: "Can magnesium glycinate cause 3AM wake-ups?", answer: "Yes. Magnesium glycinate helps with sleep onset via the glycine it contains, but glycine has a biphasic effect on cortisol. As it metabolizes 3–4 hours after ingestion, cortisol can rebound sharply — landing in the 1–3AM window for people who take it at bedtime." },
+      { question: "What supplements actually help with 3AM waking (not just falling asleep)?", answer: "For sleep maintenance insomnia, target cortisol regulation rather than sedation: KSM-66 ashwagandha (300–600mg), L-theanine (200–400mg), and tart cherry extract are the best-studied options. Avoid high-dose synthetic melatonin and bedtime magnesium glycinate if you are experiencing this pattern." },
+      { question: "Is waking up at 3AM a sign of anxiety?", answer: "It can be, but anxiety is rarely the root cause — it is usually a symptom of the cortisol spike. Cortisol activates the stress axis, which generates anxious thoughts. Treating the anxiety without addressing the cortisol timing rarely resolves the wake-up pattern." },
+      { question: "How long does it take to fix 3AM waking?", answer: "Most people see improvement within 1–2 weeks of removing the active trigger (alcohol, magnesium glycinate timing, blood sugar issues) and adding appropriate cortisol-modulating supplements. Structural sleep issues like sleep apnea may require longer intervention." }
     ]
   }
 ]
