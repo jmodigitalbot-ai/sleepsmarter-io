@@ -89,7 +89,12 @@ export default function SleepReset() {
 
   const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
     trackCheckoutClick(buttonText, buttonLocation, 'tripwire')
-    document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' })
+    const el = document.getElementById('samcart-embed')
+    if (el) {
+      const offset = 16
+      const top = el.getBoundingClientRect().top + window.scrollY - offset
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
   }
 
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -218,7 +223,7 @@ export default function SleepReset() {
             The sleep industry has spent decades telling you to sleep more hours. Nobody told you the hours are almost irrelevant if you're waking at the wrong time.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            Dr. Sarah Chen spent 15 years studying this pattern in a clinical setting. What she developed — a specific 3-step formula she calls <strong className="text-[#f1faee]">The Circadian Exit Protocol</strong> — is the system at the core of The Forgotten Sleep Ritual. It calculates your personal sleep windows based on your bedtime and cycle rhythm, so your alarm always fires at the natural exit point. Not near it. Not close to it. At it.
+            This pattern is at the core of <strong className="text-[#f1faee]">The Circadian Exit Protocol</strong> — a specific 3-step formula that is the system at the heart of The Forgotten Sleep Ritual. It calculates your personal sleep windows based on your bedtime and cycle rhythm, so your alarm always fires at the natural exit point. Not near it. Not close to it. At it.
           </p>
         </div>
 
@@ -282,39 +287,42 @@ export default function SleepReset() {
             <div className="flex-shrink-0 flex flex-col items-center gap-2">
               <img
                 src="/images/dr-sarah-chen.png"
-                alt="Dr. Sarah Chen, Sleep Researcher"
+                alt="Sarah, Founder of Sleep Smarter"
                 className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top border-2 border-[#a8dadc]/40"
               />
-              <p className="text-[#f1faee] font-semibold text-sm text-center">Dr. Sarah Chen</p>
-              <p className="text-[#f1faee]/45 text-xs text-center">Sleep Researcher &amp; Founder</p>
+              <p className="text-[#f1faee] font-semibold text-sm text-center">Sarah</p>
+              <p className="text-[#f1faee]/45 text-xs text-center">Founder, Sleep Smarter</p>
             </div>
             <p className="text-[#f1faee]/75 leading-relaxed pt-1">
-              My name is Dr. Sarah Chen. I'm a sleep researcher — but for most of my thirties, I was also a chronic insomniac.
+              Sarah had the same problem you do.
             </p>
           </div>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            I was logging 7, sometimes 8 hours a night. By every metric, I was doing everything right. But I was waking up wrecked. Foggy until noon. Running on caffeine. Snapping at my husband over nothing. Missing the version of myself I knew I was capable of being.
+            She was a 38-year-old mom of two, working from home, logging 7 to 8 hours every night. By every measure, she was doing everything right. But she was waking up wrecked. Foggy until noon. Running on coffee. Snapping at her kids over nothing. Watching the best version of herself show up — just never in the morning.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            I tried everything I recommended to my own patients. Melatonin. Magnesium. Sleep restriction. CBT-I protocols. Some of it helped. None of it fixed the mornings.
+            She tried melatonin. Magnesium. A $300 sleep tracker. A weighted blanket her sister swore by. She cut out alcohol, cut out screens, went to bed earlier. Some of it helped a little. None of it fixed the mornings.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            Then, on a Tuesday at 2 AM — during one of those nights where you're exhausted but completely awake — I pulled up the raw data from one of my own research studies. I was looking at something else entirely. But something caught my eye.
+            Then one night — 2 AM, exhausted but completely awake — she fell down a research rabbit hole. She wasn't looking for a solution anymore. She'd mostly stopped believing there was one.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            The patients who reported waking up refreshed weren't always sleeping more. They weren't on better supplements. They had one thing in common: their alarm happened to fire within the final 10 minutes of a 90-minute sleep cycle. Every single time.
+            But she found something in a peer-reviewed sleep study that stopped her cold.
+          </p>
+          <p className="text-[#f1faee]/75 leading-relaxed">
+            The people who consistently woke up refreshed weren't sleeping more. They weren't on better supplements. They had one thing in common: their alarm happened to fire within the final 10 minutes of a 90-minute sleep cycle. Every time.
           </p>
           <p className="text-[#f1faee] font-semibold">It wasn't luck. It was geometry.</p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            I spent the next six months developing a formula — a specific 3-step sequence I now call <strong className="text-[#f1faee]">The Circadian Exit Protocol</strong> — that calculates your personal sleep windows based on your bedtime and natural cycle rhythm. No app. No tracker. No subscription.
+            She spent the next three months obsessively testing a formula — a specific 3-step sequence she started calling <strong className="text-[#f1faee]">The Circadian Exit Protocol</strong> — that calculates your personal sleep windows based on your bedtime and natural cycle rhythm. No app. No tracker. No subscription.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            I started using it myself that week. The first morning I woke up before my alarm, I sat in the dark for a full minute just to make sure it was real.
+            The first morning she woke up before her alarm, she sat in the dark for a full minute just to make sure it was real.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            That was three years ago. The Forgotten Sleep Ritual is the exact system I built from that research — the same one I've since shared with thousands of patients who were doing everything right and still waking up exhausted.
+            That was three years ago. The Forgotten Sleep Ritual is the exact system she built from that research — the same one she's since shared with thousands of people who were doing everything right and still waking up exhausted.
           </p>
-          <p className="text-[#f1faee]/60 text-sm italic">— Dr. Sarah Chen, Sleep Researcher &amp; Founder, Sleep Smarter</p>
+          <p className="text-[#f1faee]/60 text-sm italic">— Sarah, Founder, Sleep Smarter</p>
         </div>
 
         {/* ── PRODUCT INTRO ───────────────────────── */}
@@ -462,40 +470,30 @@ export default function SleepReset() {
         {/* ── TESTIMONIALS ────────────────────────── */}
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-[#f1faee]">Real Results From Real People</h3>
-          <p className="text-[#f1faee]/40 text-xs italic">Individual results vary. These reflect real customer experiences.</p>
+          <p className="text-[#f1faee]/40 text-xs italic">Early customer feedback. Names abbreviated for privacy. Individual results vary.</p>
           {[
             {
               quote: "I've tried melatonin, magnesium, every sleep app on the App Store. I was still hitting snooze 3 times every morning and dragging until 10am. I ran the Circadian Exit Protocol on a Tuesday night. By Friday I was waking up 4 minutes before my alarm. I actually texted my husband from bed because I couldn't believe it.",
               name: "Amanda R.",
               role: "2nd grade teacher, mother of two",
-              photo: "/images/testimonial-amanda.png"
             },
             {
               quote: "I was skeptical. I'm a software engineer — I like data. So I tracked it. Before: average 6.2 on my sleep score, snooze button at least twice. Week 1 after: 7.8 average, woke before alarm 4 out of 7 days. The coffee delay tip alone eliminated my 2pm crash. $17 for that ROI is absurd.",
               name: "Marcus T.",
               role: "Software engineer, 34",
-              photo: "/images/testimonial-marcus.png"
             },
             {
-              quote: "I do 12-hour night shifts. My sleep has been a disaster for 6 years. What helped wasn't more sleep — it was understanding where in my cycle I was waking up. Dr. Chen's calculator changed how I schedule everything. First time in years I've felt like myself during the day.",
+              quote: "I do 12-hour night shifts. My sleep has been a disaster for 6 years. What helped wasn't more sleep — it was understanding where in my cycle I was waking up. The Sleep Smarter calculator changed how I schedule everything. First time in years I've felt like myself during the day.",
               name: "Keisha M.",
               role: "Night shift ICU nurse, 11 years",
-              photo: "/images/testimonial-keisha.png"
             },
           ].map((t, i) => (
             <div key={i} className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/20 space-y-3">
               <div className="text-[#e9c46a] text-sm tracking-widest">★★★★★</div>
               <p className="text-[#f1faee]/80 italic leading-relaxed">"{t.quote}"</p>
-              <div className="flex items-center gap-3">
-                <img
-                  src={t.photo}
-                  alt={t.name}
-                  className="w-10 h-10 rounded-full object-cover flex-shrink-0 border border-[#4a4e69]/40"
-                />
-                <div>
-                  <p className="text-[#f1faee] font-semibold text-sm">{t.name}</p>
-                  <p className="text-[#f1faee]/45 text-xs">{t.role}</p>
-                </div>
+              <div>
+                <p className="text-[#f1faee] font-semibold text-sm">{t.name}</p>
+                <p className="text-[#f1faee]/45 text-xs">{t.role}</p>
               </div>
             </div>
           ))}
@@ -519,10 +517,10 @@ export default function SleepReset() {
           <div className="flex items-center gap-4 pt-2">
             <img
               src="/images/dr-sarah-chen.png"
-              alt="Dr. Sarah Chen"
+              alt="Sarah, Founder of Sleep Smarter"
               className="w-12 h-12 rounded-full object-cover object-top border border-[#a8dadc]/30 flex-shrink-0"
             />
-            <p className="text-[#f1faee]/50 text-sm italic">— Dr. Sarah Chen, Sleep Researcher &amp; Founder, Sleep Smarter</p>
+            <p className="text-[#f1faee]/50 text-sm italic">— Sarah, Founder, Sleep Smarter</p>
           </div>
         </div>
 
@@ -557,7 +555,7 @@ export default function SleepReset() {
         </div>
 
         {/* ── EMBEDDED CHECKOUT ───────────────────── */}
-        <div id="checkout" className="scroll-mt-8 space-y-6">
+        <div id="checkout" className="scroll-mt-4 space-y-6">
           <div className="text-center space-y-2">
             <h3 className="text-2xl font-bold text-[#f1faee]">Get Instant Access — $17</h3>
             <p className="text-[#f1faee]/50 text-sm">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
@@ -567,10 +565,10 @@ export default function SleepReset() {
           <div className="bg-gradient-to-r from-[#e63946]/10 to-[#a8dadc]/10 border border-[#a8dadc]/40 rounded-2xl p-6 space-y-3">
             <p className="text-[#e63946] font-bold text-sm uppercase tracking-widest">⏰ Today Only Bonus</p>
             <p className="text-[#f1faee] font-semibold text-lg">
-              Buy today and get <strong className="text-[#a8dadc]">Dr. Chen's Travel & Timezone Protocol</strong> — free.
+              Buy today and get the <strong className="text-[#a8dadc]">Travel & Timezone Protocol</strong> — free.
             </p>
             <p className="text-[#f1faee]/70 text-sm leading-relaxed">
-              Sleep across time zones doesn't have to wreck your rhythm. This protocol gives you the exact steps Dr. Chen uses when she's traveling — including the 48-hour reset sequence, the "jet lag calculator," and the melatonin timing chart that most sleep doctors get wrong.
+              Sleep across time zones doesn't have to wreck your rhythm. This protocol gives you the exact steps to stay on your cycle while traveling — including the 48-hour reset sequence, the "jet lag calculator," and the melatonin timing chart that most sleep doctors get wrong.
             </p>
             <p className="text-[#f1faee]/50 text-xs italic">
               This bonus is only available when you purchase today. You'll receive it instantly with your order, along with the main system.
@@ -587,7 +585,7 @@ export default function SleepReset() {
               </div>
             </div>
             <p className="text-[#f1faee]/70 leading-relaxed text-sm">
-              The Circadian Exit Protocol gets your timing right. This toolkit makes sure your environment doesn't fight you. In under 15 minutes, you'll have your bedroom optimized for deeper, faster sleep — the exact setup Dr. Chen uses with her own patients.
+              The Circadian Exit Protocol gets your timing right. This toolkit makes sure your environment doesn't fight you. In under 15 minutes, you'll have your bedroom optimized for deeper, faster sleep — the exact setup that completes the system.
             </p>
             <ul className="space-y-2 text-sm">
               {[
@@ -606,7 +604,7 @@ export default function SleepReset() {
           </div>
 
           {/* Product image + checkout side by side on desktop */}
-          <div className="flex flex-col md:flex-row gap-8 items-start">
+          <div id="samcart-embed" className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/3 flex-shrink-0">
               <img
                 src="/images/products/forgotten-sleep-ritual-mockup.png"

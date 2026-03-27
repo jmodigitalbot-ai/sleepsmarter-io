@@ -33,6 +33,8 @@ import whatActuallyIncreasesDeepSleep from '../content/30-what-actually-increase
 
 import threeAmWakeUpCortisol from '../content/31-3am-wake-up-cortisol-supplements.md?raw'
 
+import magnesiumGlycinate3amWakeUp from '../content/32-magnesium-glycinate-3am-wake-up.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -556,6 +558,24 @@ export const articles: Article[] = [
       { question: "What supplements actually help with 3AM waking (not just falling asleep)?", answer: "For sleep maintenance insomnia, target cortisol regulation rather than sedation: KSM-66 ashwagandha (300–600mg), L-theanine (200–400mg), and tart cherry extract are the best-studied options. Avoid high-dose synthetic melatonin and bedtime magnesium glycinate if you are experiencing this pattern." },
       { question: "Is waking up at 3AM a sign of anxiety?", answer: "It can be, but anxiety is rarely the root cause — it is usually a symptom of the cortisol spike. Cortisol activates the stress axis, which generates anxious thoughts. Treating the anxiety without addressing the cortisol timing rarely resolves the wake-up pattern." },
       { question: "How long does it take to fix 3AM waking?", answer: "Most people see improvement within 1–2 weeks of removing the active trigger (alcohol, magnesium glycinate timing, blood sugar issues) and adding appropriate cortisol-modulating supplements. Structural sleep issues like sleep apnea may require longer intervention." }
+    ]
+  },
+  {
+    slug: "magnesium-glycinate-3am-wake-up",
+    title: "Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep",
+    description: "Taking magnesium glycinate for sleep but still waking at 3AM? Your supplement dose and timing may be the cause. Here's the fix.",
+    readTime: "9 min read",
+    date: "March 2026",
+    publishDate: "2026-03-27",
+    content: magnesiumGlycinate3amWakeUp,
+    featuredImage: "/images/featured-magnesium-glycinate-3am-wake-up.png",
+    featuredImageAlt: "Person lying awake at 3AM with magnesium supplements on nightstand",
+    faqs: [
+      { question: "Can magnesium glycinate cause you to wake up at 3AM?", answer: "Yes, in some people. Taking a high dose (400mg+) right before bed means the sedating effect fades after 3-4 hours, which coincides with your lightest sleep stage around 3AM. Reducing the dose to 100-200mg and taking it with dinner (not at bedtime) often resolves the issue." },
+      { question: "Why do I always wake up at exactly 3AM?", answer: "3AM is when most people complete their deepest slow-wave sleep cycles and transition into lighter REM sleep. It also coincides with your cortisol starting to rise. If any factor amplifies that arousal signal — stress, blood sugar drops, heat, or certain supplements — 3AM is when it tips you into full wakefulness." },
+      { question: "What should I do when I wake up at 3AM and cannot fall back asleep?", answer: "Avoid checking the clock or calculating how many hours are left — this creates anxiety that keeps you awake longer. If you cannot fall back asleep within 20 minutes, get out of bed, go to another room, and do something calm until you feel sleepy again. This is the stimulus control technique from CBT-I and is the most evidence-backed approach." },
+      { question: "What is the best magnesium form for staying asleep through the night?", answer: "Magnesium threonate (L-threonate) has better brain-barrier penetration than glycinate and tends to produce more consistent calming effects for sleep maintenance — staying asleep — rather than just sleep onset. Magnesium glycinate works well for many people, but at a lower dose (100-200mg) taken with dinner rather than immediately before bed." },
+      { question: "How do I know if blood sugar is causing my 3AM wake-ups?", answer: "Common signs include waking up feeling slightly shaky, anxious, or hungry, and falling back asleep easily once awake. Try a small protein-and-fat snack before bed (nuts, cheese, nut butter) for one week. If your 3AM wake-ups reduce or stop, blood sugar instability was likely a contributing factor." }
     ]
   }
 ]
