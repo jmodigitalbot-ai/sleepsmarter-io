@@ -35,6 +35,8 @@ import threeAmWakeUpCortisol from '../content/31-3am-wake-up-cortisol-supplement
 
 import magnesiumGlycinate3amWakeUp from '../content/32-magnesium-glycinate-3am-wake-up.md?raw'
 
+import wakingUpAt3amEveryNight from '../content/33-waking-up-at-3am-every-night.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -576,6 +578,24 @@ export const articles: Article[] = [
       { question: "What should I do when I wake up at 3AM and cannot fall back asleep?", answer: "Avoid checking the clock or calculating how many hours are left — this creates anxiety that keeps you awake longer. If you cannot fall back asleep within 20 minutes, get out of bed, go to another room, and do something calm until you feel sleepy again. This is the stimulus control technique from CBT-I and is the most evidence-backed approach." },
       { question: "What is the best magnesium form for staying asleep through the night?", answer: "Magnesium threonate (L-threonate) has better brain-barrier penetration than glycinate and tends to produce more consistent calming effects for sleep maintenance — staying asleep — rather than just sleep onset. Magnesium glycinate works well for many people, but at a lower dose (100-200mg) taken with dinner rather than immediately before bed." },
       { question: "How do I know if blood sugar is causing my 3AM wake-ups?", answer: "Common signs include waking up feeling slightly shaky, anxious, or hungry, and falling back asleep easily once awake. Try a small protein-and-fat snack before bed (nuts, cheese, nut butter) for one week. If your 3AM wake-ups reduce or stop, blood sugar instability was likely a contributing factor." }
+    ]
+  },
+  {
+    slug: "waking-up-at-3am-every-night",
+    title: "Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)",
+    description: "Waking up at 3AM every night isn't random. Discover the 5 biological causes—cortisol, blood sugar, alcohol, temperature, anxiety—and how to fix each one.",
+    readTime: "9 min read",
+    date: "March 2026",
+    publishDate: "2026-03-30",
+    content: wakingUpAt3amEveryNight,
+    featuredImage: "/images/featured-waking-up-at-3am-every-night.png",
+    featuredImageAlt: "Person lying awake in bed at 3AM with glowing red clock on nightstand",
+    faqs: [
+      { question: "Why do I keep waking up at exactly 3AM every night?", answer: "It is rarely a coincidence. Your sleep architecture naturally shifts to lighter REM-dominant cycles in the second half of the night, making you more vulnerable to waking. Combine that with the Cortisol Awakening Response ramping up around 2-3 AM, and you have a biological alarm clock that fires at the same time each night." },
+      { question: "Is waking up at 3AM a sign of anxiety or depression?", answer: "It can be a symptom of both, but it is also commonly caused by non-psychological factors like blood sugar dips, alcohol metabolism, and bedroom temperature. Cortisol dysregulation from chronic stress is a frequent culprit that sits at the intersection of physical and psychological causes." },
+      { question: "What should I do when I wake up at 3AM and cannot fall back asleep?", answer: "Do not lie in bed for more than 20 minutes trying to force sleep. Get up, go to a dim room, do something quiet and boring (reading, light stretching), and return to bed only when you feel genuinely sleepy. This is Stimulus Control Therapy, the evidence-based core of CBT-I for insomnia." },
+      { question: "Can magnesium glycinate stop 3AM wake-ups?", answer: "For people whose wake-ups are linked to cortisol dysregulation or GABA deficiency, magnesium glycinate taken 30-60 minutes before bed has shown consistent results in clinical trials. It is not a sedative — it restores a deficit that was suppressing sleep quality. Give it at least three weeks to judge effectiveness." },
+      { question: "How long does it take to stop waking up at 3AM?", answer: "Once you identify and address your primary cause, most people see improvement within two to four weeks. Anxiety loops (conditioned arousal) can take four to six weeks to fully break with behavioral techniques like Stimulus Control Therapy, even after the original trigger is resolved." }
     ]
   }
 ]
