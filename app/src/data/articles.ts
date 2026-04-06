@@ -37,6 +37,10 @@ import magnesiumGlycinate3amWakeUp from '../content/32-magnesium-glycinate-3am-w
 
 import wakingUpAt3amEveryNight from '../content/33-waking-up-at-3am-every-night.md?raw'
 
+import whyYouWakeUpInTheMiddleOfTheNight from '../content/34-why-you-wake-up-in-the-middle-of-the-night.md?raw'
+
+import sleeping8HoursStillTired from '../content/35-sleeping-8-hours-still-tired.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -596,6 +600,42 @@ export const articles: Article[] = [
       { question: "What should I do when I wake up at 3AM and cannot fall back asleep?", answer: "Do not lie in bed for more than 20 minutes trying to force sleep. Get up, go to a dim room, do something quiet and boring (reading, light stretching), and return to bed only when you feel genuinely sleepy. This is Stimulus Control Therapy, the evidence-based core of CBT-I for insomnia." },
       { question: "Can magnesium glycinate stop 3AM wake-ups?", answer: "For people whose wake-ups are linked to cortisol dysregulation or GABA deficiency, magnesium glycinate taken 30-60 minutes before bed has shown consistent results in clinical trials. It is not a sedative — it restores a deficit that was suppressing sleep quality. Give it at least three weeks to judge effectiveness." },
       { question: "How long does it take to stop waking up at 3AM?", answer: "Once you identify and address your primary cause, most people see improvement within two to four weeks. Anxiety loops (conditioned arousal) can take four to six weeks to fully break with behavioral techniques like Stimulus Control Therapy, even after the original trigger is resolved." }
+    ]
+  },
+  {
+    slug: "why-you-wake-up-in-the-middle-of-the-night",
+    title: "Why You Wake Up in the Middle of the Night (And How to Fix It)",
+    description: "Waking up at 2, 3, or 4am every night? Learn the 5 real causes — cortisol, blood sugar, alcohol, stress, sleep apnea — and proven fixes.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-04",
+    content: whyYouWakeUpInTheMiddleOfTheNight,
+    featuredImage: "/images/featured-why-you-wake-up-in-the-middle-of-the-night.jpg",
+    featuredImageAlt: "Person lying awake in bed at 3am staring at the ceiling with clock showing 3:07",
+    faqs: [
+      { question: "Why do I wake up at 3am every night?", answer: "The most common causes are premature cortisol surges, blood sugar drops, alcohol metabolism rebound, stress-induced hyperarousal, and undiagnosed sleep apnea. The 2-4am window is when your sleep shifts from deep slow-wave sleep to lighter REM cycles, making you more vulnerable to waking." },
+      { question: "Is waking up in the middle of the night normal?", answer: "Occasional middle-of-the-night waking is normal — everyone has brief arousals between sleep cycles. Waking and being unable to return to sleep for 20+ minutes regularly is not normal and points to a correctable cause." },
+      { question: "What helps you fall back asleep after waking at night?", answer: "The most evidence-backed approach is stimulus control: if you have been awake more than 20 minutes, get out of bed and do something calm until you feel sleepy again. Staying in bed while awake trains your brain to associate bed with wakefulness. Also try the paradoxical intention technique — try to stay awake with eyes open — which reduces performance anxiety around sleep." },
+      { question: "Does magnesium help with middle-of-the-night waking?", answer: "Yes, particularly magnesium glycinate. Magnesium activates GABA receptors and regulates cortisol production. Studies show it improves sleep efficiency and reduces early morning awakening. Take 200-400mg 30-60 minutes before bed; effects build over 1-2 weeks." },
+      { question: "When should I see a doctor about waking up at night?", answer: "See a doctor if waking is persistent and accompanied by low mood (possible depression), you snore or your partner notices breathing irregularities (possible sleep apnea), you have cardiovascular risk factors, or you are perimenopausal with night sweats. Basic bloodwork for thyroid and cortisol is also worth considering after ruling out lifestyle causes." }
+    ]
+  },
+  {
+    slug: "sleeping-8-hours-still-tired",
+    title: "Sleeping 8 Hours But Still Tired? Here's the Real Reason",
+    description: "You're getting 8 hours but still exhausted. The problem isn't duration — it's your nervous system. Here's what science says and how to fix it.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-06",
+    content: sleeping8HoursStillTired,
+    featuredImage: "/images/featured-sleeping-8-hours-still-tired.png",
+    featuredImageAlt: "Person sitting on edge of bed exhausted after sleeping 8 hours",
+    faqs: [
+      { question: "Why am I still tired after 8 hours of sleep?", answer: "Eight hours in bed doesn't guarantee eight hours of restorative sleep. If your nervous system is stuck in fight-or-flight mode due to chronic stress, elevated cortisol suppresses deep (slow-wave) sleep even while you're technically asleep — leaving you exhausted despite the hours logged." },
+      { question: "What is non-restorative sleep?", answer: "Non-restorative sleep is when you sleep long enough in terms of hours but wake up feeling unrefreshed. It's strongly associated with HPA axis dysregulation — your stress hormone system staying elevated at night, which suppresses the deep sleep stages responsible for physical repair." },
+      { question: "Can magnesium help you sleep better?", answer: "Yes, particularly magnesium glycinate. Magnesium supports GABA production — your brain's calming neurotransmitter — and studies show it increases slow-wave sleep. An estimated 48% of Americans are deficient. Take 200–400mg of magnesium glycinate 45 minutes before bed for best results." },
+      { question: "How does sleep temperature affect sleep quality?", answer: "Your body needs to drop its core temperature by 1–2°F to enter and maintain deep sleep. Bedding or a room that's too warm creates thermal discomfort that triggers low-level arousal, suppressing slow-wave sleep. Aim for a 65–68°F bedroom and use breathable, heat-dissipating bedding." },
+      { question: "When should I see a doctor about feeling tired after sleeping?", answer: "If lifestyle changes (magnesium, L-theanine, cooling your room, stress reduction) do not help after 4–6 weeks, see a doctor. Unrefreshing sleep can be caused by obstructive sleep apnea, thyroid dysfunction, or ADHD — all of which require diagnosis and targeted treatment." }
     ]
   }
 ]
