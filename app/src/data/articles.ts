@@ -45,6 +45,8 @@ import whyYouWakeUpAt3amCortisolBloodSugar from '../content/36-why-you-wake-up-a
 
 import anxietyWavesWhenFallingAsleep from '../content/37-anxiety-waves-when-falling-asleep.md?raw'
 
+import orthosomniaSleepTrackerAnxiety from '../content/38-orthosomnia-sleep-tracker-anxiety.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -676,6 +678,24 @@ export const articles: Article[] = [
       { question: "How do I stop the wave of anxiety when falling asleep?", answer: "The most effective approaches are: magnesium glycinate (200-400mg before bed) to calm GABA receptors; the physiological sigh breathing technique to quickly downregulate your sympathetic nervous system; reducing cortisol load in the 2 hours before bed; and an acceptance-based response that stops adding secondary anxiety to the primary wave." },
       { question: "Does magnesium glycinate help with sleep onset anxiety?", answer: "Yes. Magnesium glycinate directly modulates GABA receptors and helps regulate cortisol production through the HPA axis. Clinical trials show it reduces nighttime cortisol and improves sleep quality. Effects build over 1-2 weeks of consistent use at 200-400mg before bed." },
       { question: "When should I see a doctor about anxiety waves when falling asleep?", answer: "See a doctor if the waves are accompanied by gasping or choking (possible sleep apnea), involve prolonged racing heart or irregular heartbeat (possible arrhythmia), include full panic attacks during sleep, have been intensifying over several weeks, or are accompanied by daytime panic symptoms." }
+    ]
+  },
+  {
+    slug: "orthosomnia-sleep-tracker-anxiety",
+    title: "Orthosomnia: When Sleep Tracking Starts Hurting Your Sleep",
+    description: "Orthosomnia is when sleep tracking fuels anxiety and makes sleep worse. Here is how to know if your wearable is backfiring and what to do next.",
+    readTime: "11 min read",
+    date: "April 2026",
+    publishDate: "2026-04-08",
+    content: orthosomniaSleepTrackerAnxiety,
+    featuredImage: "/images/featured-orthosomnia-sleep-tracker-anxiety.png",
+    featuredImageAlt: "Person lying awake in bed beside a glowing sleep tracker app and smart ring at night",
+    faqs: [
+      { question: "What is orthosomnia?", answer: "Orthosomnia is an unhealthy fixation on getting perfect sleep tracker data, which can increase sleep anxiety and sometimes make sleep worse." },
+      { question: "Can an Oura Ring or WHOOP make insomnia worse?", answer: "For some people, yes. If the scores create pressure, hypervigilance, or anxiety about bedtime and awakenings, the device can reinforce insomnia patterns instead of helping." },
+      { question: "Should I stop using my sleep tracker if it stresses me out?", answer: "Often a pause helps. Try hiding scores, checking trends weekly instead of daily, or taking a 2 to 4 week break to reset your relationship with sleep." },
+      { question: "Are sleep trackers accurate for deep sleep and REM?", answer: "Consumer sleep trackers can be useful for trend spotting, but sleep stage estimates like deep sleep and REM are less reliable than a clinical sleep study." },
+      { question: "What should I focus on instead of perfect sleep scores?", answer: "Focus on steady wake times, a cool comfortable sleep environment, lower evening arousal, and how you actually feel and function the next day." }
     ]
   }
 ]
