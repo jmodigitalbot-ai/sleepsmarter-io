@@ -219,7 +219,7 @@ Sleep quality refers to how restorative your sleep is. High-quality sleep means:
 Even with 8 hours, you might have poor quality if you:
 
 - Wake frequently throughout the night
-- Take more than 30 minutes to fall asleep
+- Take more than 30 minutes to fall asleep (see [how to fall asleep fast](/blog/how-to-fall-asleep-fast))
 - Spend excessive time in light sleep
 - Wake up and can't fall back asleep
 - Don't feel refreshed despite adequate hours

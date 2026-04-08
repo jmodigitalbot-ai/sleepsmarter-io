@@ -250,3 +250,8 @@ Blue light *does* affect sleep — the science is solid. But it's not a standalo
 The goal isn't perfection — it's progress. Most people would sleep significantly better with just one of these changes.
 
 ---
+## Keep Reading
+
+- [Sleep Anxiety: How to Stop Worrying at Night](/blog/sleep-anxiety)
+- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule)
+- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)

@@ -76,3 +76,8 @@ Resetting your sleep schedule isn't about perfection—it's about creating susta
 - [Blackout curtains](https://www.amazon.com/dp/B01F9G2MC4?tag=19830c0a-20)
 
 *Disclaimer: Always consult with a healthcare professional before making significant changes to your sleep routine.*
+## Keep Reading
+
+- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule)
+- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
+- [What Is Sleep Debt (And How to Pay It Back)](/blog/what-is-sleep-debt)

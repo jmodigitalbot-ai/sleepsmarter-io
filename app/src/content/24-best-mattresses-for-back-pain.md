@@ -291,3 +291,9 @@ Remember, the best mattress is one that keeps your spine aligned while you sleep
 ---
 
 *Looking for more ways to improve your sleep? Try our [sleep calculator](/calculator) to find your optimal bedtime based on your wake-up time and sleep cycles.*
+
+## Keep Reading
+
+- [Memory Foam vs Latex Mattress: Which Sleep Surface Is Right for You?](/blog/memory-foam-vs-latex-mattress)
+- [Best Pillows for Sleep by Position](/blog/best-pillows-for-sleep-by-position)
+- [Sleep Temperature Optimization: The Science of Sleeping Cool](/blog/sleep-temperature-optimization)

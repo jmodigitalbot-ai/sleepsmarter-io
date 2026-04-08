@@ -256,3 +256,5 @@ Use our [sleep calculator](/calculator) to determine optimal sleep and wake time
 - [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work) — Understand the science behind your internal clock
 - [Best Sleep Schedule for Night Shift Workers](/blog/best-sleep-schedule-for-night-shift-workers) — Strategies for managing disrupted schedules
 - [Is Napping Good for You? Science of Power Naps](/blog/is-napping-good-for-you) — When short naps help and when they hurt
+- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast) — Useful when DST disrupts your usual sleep onset
+- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep) — Restore sleep quality after the transition

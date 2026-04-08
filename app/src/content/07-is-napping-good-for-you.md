@@ -166,3 +166,9 @@ Don't fight your biology. If your body wants rest in the afternoon, a quick powe
 - [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work)
 - [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired)
 - [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule)
+
+## Keep Reading
+
+- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
+- [How Much Sleep Do I Need? The Science-Backed Answer](/blog/how-much-sleep-do-i-need)
+- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)

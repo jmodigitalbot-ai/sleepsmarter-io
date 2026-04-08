@@ -234,7 +234,7 @@ Consistency trains your body to expect sleep at specific times, making the calcu
 
 ### Tip 3: Create Optimal Conditions
 
-Calculator timing means nothing if you can't actually fall asleep:
+Calculator timing means nothing if you can't actually fall asleep. If sleep onset is your main hurdle, see our guide on [how to fall asleep fast](/blog/how-to-fall-asleep-fast) for research-backed techniques that work within minutes.
 
 **Pre-sleep routine (60-90 minutes before):**
 - Dim lights throughout your home

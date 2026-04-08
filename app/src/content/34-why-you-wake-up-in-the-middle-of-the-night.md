@@ -117,5 +117,6 @@ The 3am wake-up feels like your body is betraying you. It's not. It's doing exac
 ## Keep Reading
 
 - [Why You Wake Up Tired (Even After 8 Hours of Sleep)](/blog/why-do-i-wake-up-tired)
-- [How Sleep Cycles Actually Work — And Why Timing Your Alarm Matters](/blog/how-sleep-cycles-work)
-- [How to Fix Your Sleep Schedule in 3 Days](/blog/how-to-fix-your-sleep-schedule-in-3-days)
+- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
+- [Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)
+- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)

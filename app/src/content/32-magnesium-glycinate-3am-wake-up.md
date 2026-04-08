@@ -120,5 +120,6 @@ What it almost never requires is simply trying harder to sleep. Sleep is a biolo
 ## Keep Reading
 
 - [How Sleep Anxiety Hijacks Your Night — And What to Do About It](/blog/sleep-anxiety)
-- [Blue Light and Sleep: What the Science Actually Says](/blog/blue-light-and-sleep)
-- [Why Better Sleep Is Your Highest-Leverage Productivity Upgrade](/blog/sleep-and-productivity)
+- [Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)
+- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
+- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)

@@ -194,7 +194,7 @@ Magnesium isn't a miracle supplement. But if you're among the majority of adults
 
 The evidence points clearly to **magnesium glycinate**, 200–400mg, taken 30–60 minutes before bed. It's one of the most evidence-backed, lowest-risk sleep interventions available without a prescription.
 
-That said — even optimal magnesium levels won't fully compensate for a sleep environment that's working against you, a bedtime that's wildly inconsistent, or a stress load that's keeping cortisol elevated all day. Magnesium is a powerful piece of the puzzle, not the whole thing.
+That said — even optimal magnesium levels won't fully compensate for a sleep environment that's working against you, a bedtime that's wildly inconsistent, or a stress load that's keeping cortisol elevated all day. If you're doing everything right but still waking unrefreshed, read [sleeping 8 hours but still tired](/blog/sleeping-8-hours-still-tired) to understand what else might be undermining your sleep quality. Magnesium is a powerful piece of the puzzle, not the whole thing.
 
 If you want to know exactly what's standing between you and consistently good sleep, [take our free Sleep Assessment](/sleep-reset) — it identifies the specific factors most likely driving your sleep problems and gives you a personalized action plan.
 

@@ -116,6 +116,7 @@ The good news: for the vast majority of people reading this, what you're experie
 
 ## Keep Reading
 
-- [Why Magnesium Glycinate Might Be Making You Wake Up at 3AM](/blog/magnesium-glycinate-3am-wake-up)
+- [Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)
+- [Cognitive Shuffling: The Viral Technique for Falling Asleep Faster](/blog/cognitive-shuffling)
+- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
 - [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
-- [The Racing Mind at Bedtime: Why Your Brain Won't Shut Off (And How to Fix It)](/blog/sleep-anxiety-racing-mind)

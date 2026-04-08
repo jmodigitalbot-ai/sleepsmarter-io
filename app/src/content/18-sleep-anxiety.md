@@ -177,3 +177,9 @@ The **[7-Day Sleep Reset Protocol](/sleep-reset)** is a step-by-step system that
 **[Get the 7-Day Sleep Reset Protocol →](/sleep-reset)**
 
 Seven days. Real structure. Better sleep — not just tips you try once and forget.
+
+## Keep Reading
+
+- [Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)
+- [Cognitive Shuffling: The Viral Technique for Falling Asleep Faster](/blog/cognitive-shuffling)
+- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)

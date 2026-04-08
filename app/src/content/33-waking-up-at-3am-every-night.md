@@ -122,6 +122,7 @@ You can sleep through the night again. Most people just haven't figured out *why
 
 ## Keep Reading
 
-- [The Science of Sleep Cycles: Why 8 Hours Isn't Always Enough](/blog/sleep-cycles-explained)
+- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
 - [Magnesium for Sleep: What the Research Actually Says](/blog/magnesium-for-sleep)
-- [How to Build a Sleep Environment That Actually Works](/blog/sleep-environment-optimization)
+- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
+- [Cognitive Shuffling: The Viral Technique for Falling Asleep Faster](/blog/cognitive-shuffling)

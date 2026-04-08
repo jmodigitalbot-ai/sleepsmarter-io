@@ -182,3 +182,5 @@ The question isn't whether you can afford to prioritize sleep. Given what we kno
 - [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work) — Understand the biological foundations of restorative sleep
 - [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule) — A simple framework for better sleep hygiene
 - [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired) — Troubleshoot what's sabotaging your rest
+- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired) — When quantity isn't the problem
+- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep) — Maximize the restorative stages that drive cognitive performance

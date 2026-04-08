@@ -344,7 +344,7 @@ Chronic stress wreaks havoc on sleep:
 
 **How stress affects sleep:**
 - Elevated cortisol keeps you alert
-- Racing thoughts prevent sleep onset
+- Racing thoughts prevent sleep onset (see [sleep-onset anxiety](/blog/sleep-onset-anxiety) and [how to fall asleep fast](/blog/how-to-fall-asleep-fast))
 - Anxiety causes frequent awakenings
 - Stress hormones reduce deep sleep
 - Morning fatigue increases stress (vicious cycle)

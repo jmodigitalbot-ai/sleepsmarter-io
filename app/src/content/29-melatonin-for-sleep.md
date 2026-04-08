@@ -85,7 +85,7 @@ Given everything above, here's a clearer framework for whether melatonin makes s
 
 **Poor candidates for melatonin:**
 
-- Adults under 40 with no circadian rhythm disruption whose main complaint is "my mind races at bedtime"
+- Adults under 40 with no circadian rhythm disruption whose main complaint is "my mind races at bedtime" (for racing thoughts, see [sleep-onset anxiety](/blog/sleep-onset-anxiety) and [cognitive shuffling](/blog/cognitive-shuffling))
 - People looking to improve sleep *quality* (depth, restorativeness, REM)
 - Anyone whose primary problem is waking up in the middle of the night (melatonin won't help with sleep maintenance in most cases)
 - Children and adolescents without specific medical need (consult a pediatric sleep specialist)

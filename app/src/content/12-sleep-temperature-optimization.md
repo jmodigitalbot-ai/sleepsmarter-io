@@ -203,3 +203,9 @@ Start tonight: Lower your thermostat to 67°F, use minimal bedding, and see what
 1. Czeisler, C. A., & Gooley, J. J. (2007). Sleep and circadian rhythms in humans. *Cold Spring Harbor Symposia on Quantitative Biology*, 72, 579–597.
 2. Okamoto-Mizuno, K., & Mizuno, K. (2012). Effects of thermal environment on sleep and circadian rhythm. *Journal of Physiological Anthropology*, 31(1), 14.
 3. Sleep Foundation. (2023). *Bedroom temperature for sleep*. Retrieved from https://www.sleepfoundation.org
+
+## Keep Reading
+
+- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
+- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
+- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule)

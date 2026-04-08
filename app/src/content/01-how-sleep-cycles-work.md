@@ -248,7 +248,7 @@ Early cycles contain the most deep sleep. Protect them by:
 - Avoiding alcohol (it disrupts deep sleep)
 - Not exercising too close to bedtime
 - Managing stress before sleeping
-- Ensuring you fall asleep easily
+- Ensuring you fall asleep easily (see [how to fall asleep fast](/blog/how-to-fall-asleep-fast) for specific techniques)
 
 ### 6. Use a Sleep Calculator
 

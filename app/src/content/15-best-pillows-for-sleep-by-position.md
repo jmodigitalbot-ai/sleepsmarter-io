@@ -225,3 +225,8 @@ Use this before you order:
 - [ ] **Note your current pillow's failings** — is your neck stiff in the morning? Head too high or too low? This diagnostic is your starting point
 
 ---
+## Keep Reading
+
+- [Best Mattresses for Back Pain (2026 Reviews)](/blog/best-mattresses-for-back-pain)
+- [Sleep Temperature Optimization: The Science of Sleeping Cool](/blog/sleep-temperature-optimization)
+- [Memory Foam vs Latex Mattress: Which Sleep Surface Is Right for You?](/blog/memory-foam-vs-latex-mattress)
