@@ -41,6 +41,8 @@ import whyYouWakeUpInTheMiddleOfTheNight from '../content/34-why-you-wake-up-in-
 
 import sleeping8HoursStillTired from '../content/35-sleeping-8-hours-still-tired.md?raw'
 
+import whyYouWakeUpAt3amCortisolBloodSugar from '../content/36-why-you-wake-up-at-3am-cortisol-blood-sugar.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -636,6 +638,24 @@ export const articles: Article[] = [
       { question: "Can magnesium help you sleep better?", answer: "Yes, particularly magnesium glycinate. Magnesium supports GABA production — your brain's calming neurotransmitter — and studies show it increases slow-wave sleep. An estimated 48% of Americans are deficient. Take 200–400mg of magnesium glycinate 45 minutes before bed for best results." },
       { question: "How does sleep temperature affect sleep quality?", answer: "Your body needs to drop its core temperature by 1–2°F to enter and maintain deep sleep. Bedding or a room that's too warm creates thermal discomfort that triggers low-level arousal, suppressing slow-wave sleep. Aim for a 65–68°F bedroom and use breathable, heat-dissipating bedding." },
       { question: "When should I see a doctor about feeling tired after sleeping?", answer: "If lifestyle changes (magnesium, L-theanine, cooling your room, stress reduction) do not help after 4–6 weeks, see a doctor. Unrefreshing sleep can be caused by obstructive sleep apnea, thyroid dysfunction, or ADHD — all of which require diagnosis and targeted treatment." }
+    ]
+  },
+  {
+    slug: "why-you-wake-up-at-3am-cortisol-blood-sugar",
+    title: "Why You Wake Up at 3AM: The Cortisol and Blood Sugar Explanation",
+    description: "Waking up at 3AM every night? Science explains exactly why — cortisol timing, blood sugar crashes, and how to fix both for good.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-07",
+    content: whyYouWakeUpAt3amCortisolBloodSugar,
+    featuredImage: "/images/featured-why-you-wake-up-at-3am-cortisol-blood-sugar.png",
+    featuredImageAlt: "Person awake in dark bedroom at 3AM staring at ceiling with clock glowing 3:00",
+    faqs: [
+      { question: "Why do I wake up at exactly 3AM every night?", answer: "Your body starts its natural cortisol awakening response hours before you need to wake up. For many people — especially those under chronic stress — this cortisol ramp fires too early (around 3AM) instead of at 6-7AM, pulling you out of sleep. Blood sugar drops from dinner can compound the effect by triggering adrenaline release at the same time." },
+      { question: "Can blood sugar cause you to wake up at 3AM?", answer: "Yes. Nocturnal hypoglycemia — when blood glucose drops too low overnight — triggers your body to release cortisol and adrenaline to stabilize it. This hormonal rescue response can wake you from sleep. Eating high-carb dinners, drinking alcohol in the evening, or going to bed long after your last meal all increase this risk." },
+      { question: "Does alcohol cause 3AM wake-ups?", answer: "Reliably. Alcohol initially suppresses your nervous system and helps you fall asleep, but it blocks your liver's normal overnight glucose production. Blood sugar drops harder and faster, triggering an adrenaline and cortisol response around 3-4AM. Alcohol also suppresses REM sleep, leaving you in lighter sleep stages when the hormonal spike hits." },
+      { question: "What is the best supplement for 3AM wake-ups?", answer: "Magnesium glycinate (200-400mg before bed) is the most evidence-backed option. Magnesium helps regulate the HPA axis that controls cortisol, calms overactive NMDA receptors, and the glycine component slightly lowers core body temperature — all three mechanisms reduce the likelihood of an early-morning cortisol spike waking you up." },
+      { question: "How do I stop waking up at 3AM?", answer: "Address the root causes systematically: stabilize blood sugar with a small protein-fat snack before bed and avoid alcohol, take magnesium glycinate 30-60 minutes before sleep, keep your bedroom at 65-68°F with temperature-regulating bedding, and practice NSDR or box breathing to down-regulate your nervous system before bed. Anchor your wake time on a consistent schedule — this is the single most powerful way to normalize your cortisol rhythm over 1-2 weeks." }
     ]
   }
 ]
