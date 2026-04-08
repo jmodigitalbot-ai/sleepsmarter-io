@@ -43,6 +43,8 @@ import sleeping8HoursStillTired from '../content/35-sleeping-8-hours-still-tired
 
 import whyYouWakeUpAt3amCortisolBloodSugar from '../content/36-why-you-wake-up-at-3am-cortisol-blood-sugar.md?raw'
 
+import anxietyWavesWhenFallingAsleep from '../content/37-anxiety-waves-when-falling-asleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -656,6 +658,24 @@ export const articles: Article[] = [
       { question: "Does alcohol cause 3AM wake-ups?", answer: "Reliably. Alcohol initially suppresses your nervous system and helps you fall asleep, but it blocks your liver's normal overnight glucose production. Blood sugar drops harder and faster, triggering an adrenaline and cortisol response around 3-4AM. Alcohol also suppresses REM sleep, leaving you in lighter sleep stages when the hormonal spike hits." },
       { question: "What is the best supplement for 3AM wake-ups?", answer: "Magnesium glycinate (200-400mg before bed) is the most evidence-backed option. Magnesium helps regulate the HPA axis that controls cortisol, calms overactive NMDA receptors, and the glycine component slightly lowers core body temperature — all three mechanisms reduce the likelihood of an early-morning cortisol spike waking you up." },
       { question: "How do I stop waking up at 3AM?", answer: "Address the root causes systematically: stabilize blood sugar with a small protein-fat snack before bed and avoid alcohol, take magnesium glycinate 30-60 minutes before sleep, keep your bedroom at 65-68°F with temperature-regulating bedding, and practice NSDR or box breathing to down-regulate your nervous system before bed. Anchor your wake time on a consistent schedule — this is the single most powerful way to normalize your cortisol rhythm over 1-2 weeks." }
+    ]
+  },
+  {
+    slug: "anxiety-waves-when-falling-asleep",
+    title: "Anxiety Waves When Falling Asleep: Why It Happens and How to Stop It",
+    description: "That wave of dread right as you drift off? It's not panic disorder. Here's the nervous system mechanism behind sleep onset anxiety waves and how to stop them.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-05",
+    content: anxietyWavesWhenFallingAsleep,
+    featuredImage: "/images/featured-anxiety-waves-when-falling-asleep.jpg",
+    featuredImageAlt: "Person lying in bed in dark bedroom with subtle ripple wave effect emanating from chest symbolizing anxiety",
+    faqs: [
+      { question: "What causes anxiety waves when falling asleep?", answer: "Anxiety waves at sleep onset happen when your sympathetic nervous system misfires during the brain-to-sleep transition. As the prefrontal cortex powers down, your nervous system briefly interprets the loss of conscious control as a threat, triggering a cortisol and adrenaline surge that jolts you awake." },
+      { question: "Are anxiety waves when falling asleep the same as hypnic jerks?", answer: "No. Hypnic jerks are involuntary muscle contractions from the brain misinterpreting muscle relaxation as falling. Anxiety waves are primarily emotional and autonomic — the sudden rush of dread and pounding heart. Both can occur together and reinforce each other." },
+      { question: "How do I stop the wave of anxiety when falling asleep?", answer: "The most effective approaches are: magnesium glycinate (200-400mg before bed) to calm GABA receptors; the physiological sigh breathing technique to quickly downregulate your sympathetic nervous system; reducing cortisol load in the 2 hours before bed; and an acceptance-based response that stops adding secondary anxiety to the primary wave." },
+      { question: "Does magnesium glycinate help with sleep onset anxiety?", answer: "Yes. Magnesium glycinate directly modulates GABA receptors and helps regulate cortisol production through the HPA axis. Clinical trials show it reduces nighttime cortisol and improves sleep quality. Effects build over 1-2 weeks of consistent use at 200-400mg before bed." },
+      { question: "When should I see a doctor about anxiety waves when falling asleep?", answer: "See a doctor if the waves are accompanied by gasping or choking (possible sleep apnea), involve prolonged racing heart or irregular heartbeat (possible arrhythmia), include full panic attacks during sleep, have been intensifying over several weeks, or are accompanied by daytime panic symptoms." }
     ]
   }
 ]
