@@ -47,6 +47,8 @@ import anxietyWavesWhenFallingAsleep from '../content/37-anxiety-waves-when-fall
 
 import orthosomniaSleepTrackerAnxiety from '../content/38-orthosomnia-sleep-tracker-anxiety.md?raw'
 
+import sleepTrackerMakingSleepWorse from '../content/39-sleep-tracker-making-sleep-worse.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -696,6 +698,24 @@ export const articles: Article[] = [
       { question: "Should I stop using my sleep tracker if it stresses me out?", answer: "Often a pause helps. Try hiding scores, checking trends weekly instead of daily, or taking a 2 to 4 week break to reset your relationship with sleep." },
       { question: "Are sleep trackers accurate for deep sleep and REM?", answer: "Consumer sleep trackers can be useful for trend spotting, but sleep stage estimates like deep sleep and REM are less reliable than a clinical sleep study." },
       { question: "What should I focus on instead of perfect sleep scores?", answer: "Focus on steady wake times, a cool comfortable sleep environment, lower evening arousal, and how you actually feel and function the next day." }
+    ]
+  },
+  {
+    slug: "sleep-tracker-making-sleep-worse",
+    title: "Is Your Sleep Tracker Making Your Sleep Worse? The Orthosomnia Problem",
+    description: "If your Oura Ring score ruins your morning, you may have orthosomnia. Learn the 5 warning signs your tracker is hurting your sleep—and what to do instead.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-13",
+    content: sleepTrackerMakingSleepWorse,
+    featuredImage: "/images/featured-sleep-tracker-making-sleep-worse.png",
+    featuredImageAlt: "Person lying awake in dark bedroom anxiously checking glowing smart ring sleep score on phone",
+    faqs: [
+      { question: "What is orthosomnia?", answer: "Orthosomnia is a condition where the obsessive pursuit of perfect sleep data causes or worsens insomnia. The term was coined in 2017 by sleep researchers who noticed patients developing anxiety and worse sleep after starting tracker use." },
+      { question: "Can sleep trackers cause anxiety?", answer: "Yes. Studies show approximately 1 in 5 regular sleep tracker users experience significant anxiety tied to their device data. For people already prone to sleep concerns, this number is higher." },
+      { question: "How do I know if my sleep tracker is hurting my sleep?", answer: "Key signs: checking your score before noticing how you feel, experiencing morning anxiety after a low score, lying awake worried about upcoming data, making lifestyle changes based on tracker data without improvement, or feeling anxious about not wearing the device." },
+      { question: "Should I stop using my sleep tracker?", answer: "If your tracker is causing anxiety, take a two-week break. Most people report reduced sleep anxiety within 3-4 nights. If you return, check weekly averages instead of nightly scores and limit your daily data review to 2 minutes." },
+      { question: "What should I focus on instead of sleep tracker data?", answer: "Focus on the fundamentals: consistent bedtimes, room temperature of 65-68 degrees F, limiting screens before bed, regular exercise, and addressing anxiety through magnesium glycinate supplementation if needed. Track inputs (behaviors), not outputs (scores)." }
     ]
   }
 ]
