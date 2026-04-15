@@ -49,6 +49,8 @@ import orthosomniaSleepTrackerAnxiety from '../content/38-orthosomnia-sleep-trac
 
 import sleepTrackerMakingSleepWorse from '../content/39-sleep-tracker-making-sleep-worse.md?raw'
 
+import alcoholAndSleep from '../content/40-alcohol-and-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -716,6 +718,24 @@ export const articles: Article[] = [
       { question: "How do I know if my sleep tracker is hurting my sleep?", answer: "Key signs: checking your score before noticing how you feel, experiencing morning anxiety after a low score, lying awake worried about upcoming data, making lifestyle changes based on tracker data without improvement, or feeling anxious about not wearing the device." },
       { question: "Should I stop using my sleep tracker?", answer: "If your tracker is causing anxiety, take a two-week break. Most people report reduced sleep anxiety within 3-4 nights. If you return, check weekly averages instead of nightly scores and limit your daily data review to 2 minutes." },
       { question: "What should I focus on instead of sleep tracker data?", answer: "Focus on the fundamentals: consistent bedtimes, room temperature of 65-68 degrees F, limiting screens before bed, regular exercise, and addressing anxiety through magnesium glycinate supplementation if needed. Track inputs (behaviors), not outputs (scores)." }
+    ]
+  },
+  {
+    slug: "alcohol-and-sleep",
+    title: "Alcohol and Sleep: Why That Nightcap Is Ruining Your Deep Sleep",
+    description: "Alcohol feels like a sleep aid but destroys REM sleep and causes 3AM wake-ups. Here's the science — and what to do instead.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-15",
+    content: alcoholAndSleep,
+    featuredImage: "/images/featured-alcohol-and-sleep.png",
+    featuredImageAlt: "Wine glass on nightstand beside empty bed in dimly lit bedroom",
+    faqs: [
+      { question: "Does alcohol help you sleep?", answer: "Alcohol can help you fall asleep faster by acting as a sedative, but it severely disrupts sleep quality — suppressing REM sleep, fragmenting the second half of the night, and elevating cortisol. The net effect is less restorative sleep despite adequate hours." },
+      { question: "Why do I wake up at 3AM after drinking?", answer: "Alcohol metabolizes over 4-6 hours, triggering a rebound effect as it clears your system. This causes cortisol spikes, blood sugar fluctuations, and nervous system activation — all peaking around 2-4 AM, which is why waking up in that window after drinking is so common." },
+      { question: "How much alcohol disrupts sleep?", answer: "Even one drink measurably reduces sleep quality. Research shows a linear dose-response: each drink progressively reduces REM sleep and increases nighttime awakenings. Two or more drinks cause significant REM suppression; three or more cause severe architectural disruption." },
+      { question: "What can I drink instead of alcohol to relax before bed?", answer: "Magnesium glycinate (200-400mg) and L-Theanine (100-200mg) are the most evidence-backed alcohol alternatives for evening relaxation. Both promote calm without sedation and without disrupting sleep architecture. Chamomile tea and tart cherry juice also have supporting evidence." },
+      { question: "How long before bed should I stop drinking?", answer: "At minimum, stop drinking 3-4 hours before bed. For best sleep quality, longer is better — alcohol consumed 5+ hours before sleep has significantly less impact on sleep architecture than the same amount consumed 1-2 hours before bedtime." }
     ]
   }
 ]
