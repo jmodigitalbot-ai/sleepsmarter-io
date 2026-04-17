@@ -51,6 +51,8 @@ import sleepTrackerMakingSleepWorse from '../content/39-sleep-tracker-making-sle
 
 import alcoholAndSleep from '../content/40-alcohol-and-sleep.md?raw'
 
+import sleepTrackerHurtingMoreThanHelping from '../content/41-sleep-tracker-hurting-more-than-helping.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -736,6 +738,24 @@ export const articles: Article[] = [
       { question: "How much alcohol disrupts sleep?", answer: "Even one drink measurably reduces sleep quality. Research shows a linear dose-response: each drink progressively reduces REM sleep and increases nighttime awakenings. Two or more drinks cause significant REM suppression; three or more cause severe architectural disruption." },
       { question: "What can I drink instead of alcohol to relax before bed?", answer: "Magnesium glycinate (200-400mg) and L-Theanine (100-200mg) are the most evidence-backed alcohol alternatives for evening relaxation. Both promote calm without sedation and without disrupting sleep architecture. Chamomile tea and tart cherry juice also have supporting evidence." },
       { question: "How long before bed should I stop drinking?", answer: "At minimum, stop drinking 3-4 hours before bed. For best sleep quality, longer is better — alcohol consumed 5+ hours before sleep has significantly less impact on sleep architecture than the same amount consumed 1-2 hours before bedtime." }
+    ]
+  },
+  {
+    slug: "sleep-tracker-hurting-more-than-helping",
+    title: "5 Signs Your Sleep Tracker Is Hurting More Than Helping",
+    description: "Is your Oura Ring or WHOOP making your sleep anxiety worse? Learn the 5 signs of orthosomnia and what to focus on instead for better sleep.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-17",
+    content: sleepTrackerHurtingMoreThanHelping,
+    featuredImage: "/images/featured-sleep-tracker-hurting-more-than-helping.png",
+    featuredImageAlt: "Person in bed anxiously checking sleep tracker data on smartwatch at night",
+    faqs: [
+      { question: "What is orthosomnia?", answer: "Orthosomnia is a clinical term for anxiety caused by obsessing over consumer sleep tracker data. People become so focused on achieving perfect sleep scores that the stress itself worsens their sleep — creating a self-reinforcing cycle." },
+      { question: "How do I know if my sleep tracker is causing anxiety?", answer: "Key signs include feeling anxious before bed about your upcoming score, checking sleep data first thing every morning, noticing your mood changes based on the number you see, and finding that your subjective sleep feels worse even when your data looks good." },
+      { question: "Are consumer sleep trackers actually accurate?", answer: "Not as accurate as most people assume. Independent validation studies have found that top consumer wearables misclassify sleep stages at rates of 30–50% compared to polysomnography (clinical sleep testing). They are better for identifying broad multi-week trends than for judging individual nights." },
+      { question: "Should I stop using my sleep tracker?", answer: "If you have developed anxiety around your sleep scores, a 2-week tracking break is often recommended. Focus instead on environmental factors — room temperature (65–68°F), darkness, and quiet — which have stronger evidence behind them than any nightly score." },
+      { question: "What supplements help with sleep anxiety caused by tracking?", answer: "Magnesium glycinate (200–400mg taken 30–60 minutes before bed) has the strongest evidence for reducing sleep-onset anxiety and nighttime cortisol. It supports GABAergic neurotransmission without the dependency risks associated with prescription sleep aids." }
     ]
   }
 ]
