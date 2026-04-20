@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import About from './pages/About.tsx'
@@ -44,6 +44,9 @@ const ui = (
         <Route path="/terms" element={<Terms />} />
         <Route path="/disclosure" element={<Disclosure />} />
         <Route path="/blog" element={<Blog />} />
+        {/* Redirects for duplicate orthosomnia articles → canonical #38 */}
+        <Route path="/blog/sleep-tracker-making-sleep-worse" element={<Navigate to="/blog/orthosomnia-sleep-tracker-anxiety" replace />} />
+        <Route path="/blog/sleep-tracker-causing-insomnia" element={<Navigate to="/blog/orthosomnia-sleep-tracker-anxiety" replace />} />
         <Route path="/blog/:slug" element={<Article />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/calculator" element={<Calculator />} />

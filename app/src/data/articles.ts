@@ -47,13 +47,11 @@ import anxietyWavesWhenFallingAsleep from '../content/37-anxiety-waves-when-fall
 
 import orthosomniaSleepTrackerAnxiety from '../content/38-orthosomnia-sleep-tracker-anxiety.md?raw'
 
-import sleepTrackerMakingSleepWorse from '../content/39-sleep-tracker-making-sleep-worse.md?raw'
 
 import alcoholAndSleep from '../content/40-alcohol-and-sleep.md?raw'
 
 import sleepTrackerHurtingMoreThanHelping from '../content/41-sleep-tracker-hurting-more-than-helping.md?raw'
 
-import sleepTrackerCausingInsomnia from '../content/42-sleep-tracker-causing-insomnia.md?raw'
 
 export interface FAQ {
   question: string
@@ -707,24 +705,6 @@ export const articles: Article[] = [
     ]
   },
   {
-    slug: "sleep-tracker-making-sleep-worse",
-    title: "Is Your Sleep Tracker Making Your Sleep Worse? The Orthosomnia Problem",
-    description: "If your Oura Ring score ruins your morning, you may have orthosomnia. Learn the 5 warning signs your tracker is hurting your sleep—and what to do instead.",
-    readTime: "9 min read",
-    date: "April 2026",
-    publishDate: "2026-04-13",
-    content: sleepTrackerMakingSleepWorse,
-    featuredImage: "/images/featured-sleep-tracker-making-sleep-worse.png",
-    featuredImageAlt: "Person lying awake in dark bedroom anxiously checking glowing smart ring sleep score on phone",
-    faqs: [
-      { question: "What is orthosomnia?", answer: "Orthosomnia is a condition where the obsessive pursuit of perfect sleep data causes or worsens insomnia. The term was coined in 2017 by sleep researchers who noticed patients developing anxiety and worse sleep after starting tracker use." },
-      { question: "Can sleep trackers cause anxiety?", answer: "Yes. Studies show approximately 1 in 5 regular sleep tracker users experience significant anxiety tied to their device data. For people already prone to sleep concerns, this number is higher." },
-      { question: "How do I know if my sleep tracker is hurting my sleep?", answer: "Key signs: checking your score before noticing how you feel, experiencing morning anxiety after a low score, lying awake worried about upcoming data, making lifestyle changes based on tracker data without improvement, or feeling anxious about not wearing the device." },
-      { question: "Should I stop using my sleep tracker?", answer: "If your tracker is causing anxiety, take a two-week break. Most people report reduced sleep anxiety within 3-4 nights. If you return, check weekly averages instead of nightly scores and limit your daily data review to 2 minutes." },
-      { question: "What should I focus on instead of sleep tracker data?", answer: "Focus on the fundamentals: consistent bedtimes, room temperature of 65-68 degrees F, limiting screens before bed, regular exercise, and addressing anxiety through magnesium glycinate supplementation if needed. Track inputs (behaviors), not outputs (scores)." }
-    ]
-  },
-  {
     slug: "alcohol-and-sleep",
     title: "Alcohol and Sleep: Why That Nightcap Is Ruining Your Deep Sleep",
     description: "Alcohol feels like a sleep aid but destroys REM sleep and causes 3AM wake-ups. Here's the science — and what to do instead.",
@@ -758,24 +738,6 @@ export const articles: Article[] = [
       { question: "Are consumer sleep trackers actually accurate?", answer: "Not as accurate as most people assume. Independent validation studies have found that top consumer wearables misclassify sleep stages at rates of 30–50% compared to polysomnography (clinical sleep testing). They are better for identifying broad multi-week trends than for judging individual nights." },
       { question: "Should I stop using my sleep tracker?", answer: "If you have developed anxiety around your sleep scores, a 2-week tracking break is often recommended. Focus instead on environmental factors — room temperature (65–68°F), darkness, and quiet — which have stronger evidence behind them than any nightly score." },
       { question: "What supplements help with sleep anxiety caused by tracking?", answer: "Magnesium glycinate (200–400mg taken 30–60 minutes before bed) has the strongest evidence for reducing sleep-onset anxiety and nighttime cortisol. It supports GABAergic neurotransmission without the dependency risks associated with prescription sleep aids." }
-    ]
-  },
-  {
-    slug: "sleep-tracker-causing-insomnia",
-    title: "Is Your Sleep Tracker Causing Insomnia? The Orthosomnia Problem Explained",
-    description: "Checking your sleep score and feeling more anxious? You may have orthosomnia. Learn the 5 warning signs and what to do when your tracker is hurting your sleep.",
-    readTime: "9 min read",
-    date: "April 2026",
-    publishDate: "2026-04-20",
-    content: sleepTrackerCausingInsomnia,
-    featuredImage: "/images/featured-sleep-tracker-causing-insomnia.png",
-    featuredImageAlt: "Person lying awake in bed at night, anxiously checking sleep tracker score on glowing smartwatch",
-    faqs: [
-      { question: "What is orthosomnia?", answer: "Orthosomnia is an unhealthy preoccupation with achieving perfect sleep data. Coined in a 2017 Journal of Clinical Sleep Medicine study, it describes how anxiety over sleep scores creates a feedback loop that actually makes sleep worse." },
-      { question: "Can sleep trackers cause anxiety?", answer: "Yes. Research published in Frontiers in Neuroscience found that wearable sleep trackers are significantly linked to elevated sleep-related anxiety, even when controlling for baseline anxiety levels." },
-      { question: "Should I stop using my sleep tracker?", answer: "If you check two or more of the five warning signs in this article, consider a two-week tracker holiday to break the feedback loop. You can return to tracking with healthier habits afterward." },
-      { question: "How accurate are consumer sleep trackers?", answer: "Consumer devices misclassify sleep stages roughly 30-40% of the time compared to clinical polysomnography (PSG), according to a 2023 Journal of Sleep Research analysis. They are useful as directional tools, not precise diagnostics." },
-      { question: "What actually predicts good sleep quality?", answer: "The strongest predictors are a nervous system that feels safe, a cool and dark sleep environment (65-67F), reduced evening cortisol, and consistent sleep timing -- none of which appear directly on a wearable dashboard." }
     ]
   }
 ]
