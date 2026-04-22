@@ -53,6 +53,8 @@ import alcoholAndSleep from '../content/40-alcohol-and-sleep.md?raw'
 import sleepTrackerHurtingMoreThanHelping from '../content/41-sleep-tracker-hurting-more-than-helping.md?raw'
 
 
+import caffeineAndSleep from '../content/43-caffeine-and-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -738,6 +740,24 @@ export const articles: Article[] = [
       { question: "Are consumer sleep trackers actually accurate?", answer: "Not as accurate as most people assume. Independent validation studies have found that top consumer wearables misclassify sleep stages at rates of 30–50% compared to polysomnography (clinical sleep testing). They are better for identifying broad multi-week trends than for judging individual nights." },
       { question: "Should I stop using my sleep tracker?", answer: "If you have developed anxiety around your sleep scores, a 2-week tracking break is often recommended. Focus instead on environmental factors — room temperature (65–68°F), darkness, and quiet — which have stronger evidence behind them than any nightly score." },
       { question: "What supplements help with sleep anxiety caused by tracking?", answer: "Magnesium glycinate (200–400mg taken 30–60 minutes before bed) has the strongest evidence for reducing sleep-onset anxiety and nighttime cortisol. It supports GABAergic neurotransmission without the dependency risks associated with prescription sleep aids." }
+    ]
+  },
+  {
+    slug: "caffeine-and-sleep",
+    title: "Caffeine and Sleep: Why Your Afternoon Coffee Is Ruining Your Deep Sleep",
+    description: "Learn how caffeine's 5–7 hour half-life disrupts deep sleep architecture, why you can fall asleep fine but still sleep poorly, and your personal caffeine cutoff formula.",
+    readTime: "9 min read",
+    date: "April 2026",
+    publishDate: "2026-04-22",
+    content: caffeineAndSleep,
+    featuredImage: "/images/featured-caffeine-and-sleep.png",
+    featuredImageAlt: "Steaming coffee mug beside alarm clock on nightstand with sleeping person in background",
+    faqs: [
+      { question: "How long before bed should I stop drinking caffeine?", answer: "For most people, cutting caffeine 8–10 hours before bedtime is the conservative target. With caffeine's average 5–7 hour half-life, a 2 PM cup still has significant caffeine active at midnight. If you target 10 PM bedtime, your last caffeine should ideally be by noon or 1 PM." },
+      { question: "Can caffeine affect sleep even if I fall asleep fine?", answer: "Yes — this is the most commonly missed effect. Caffeine can reduce slow-wave (deep) sleep by 20% or more even when it does not prevent sleep onset. You may log 7–8 hours but wake up feeling flat because your sleep architecture was compromised, not your total sleep time." },
+      { question: "What is caffeine's half-life and why does it matter?", answer: "Caffeine's half-life is roughly 5 to 7 hours in the average adult — meaning half of a 200mg dose is still in your system 5–7 hours later. Genetics, age, medications like oral contraceptives, and liver function all influence how fast you clear it. Slow metabolizers can have a half-life of 9–12 hours." },
+      { question: "Why do I wake up at 2–4 AM even though caffeine isn't keeping me awake?", answer: "Caffeine can fragment sleep in the middle of the night by suppressing adenosine during the first part of sleep, then allowing an adenosine rebound in the early morning hours. This rebound, combined with lighter sleep stages caused by caffeine, makes middle-of-night waking more likely." },
+      { question: "What supplements help support sleep quality when reducing caffeine?", answer: "Magnesium glycinate (300–400mg before bed) is well-researched for supporting slow-wave sleep and GABA function. L-theanine supports relaxation without drowsiness and pairs well with green tea as a lower-caffeine alternative to coffee. Neither replaces proper caffeine timing but both support the transition period." }
     ]
   }
 ]
