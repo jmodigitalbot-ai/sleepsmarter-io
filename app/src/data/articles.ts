@@ -55,6 +55,8 @@ import sleepTrackerHurtingMoreThanHelping from '../content/41-sleep-tracker-hurt
 
 import caffeineAndSleep from '../content/43-caffeine-and-sleep.md?raw'
 
+import eatingBeforeBedSleep from '../content/44-eating-before-bed-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -758,6 +760,24 @@ export const articles: Article[] = [
       { question: "What is caffeine's half-life and why does it matter?", answer: "Caffeine's half-life is roughly 5 to 7 hours in the average adult — meaning half of a 200mg dose is still in your system 5–7 hours later. Genetics, age, medications like oral contraceptives, and liver function all influence how fast you clear it. Slow metabolizers can have a half-life of 9–12 hours." },
       { question: "Why do I wake up at 2–4 AM even though caffeine isn't keeping me awake?", answer: "Caffeine can fragment sleep in the middle of the night by suppressing adenosine during the first part of sleep, then allowing an adenosine rebound in the early morning hours. This rebound, combined with lighter sleep stages caused by caffeine, makes middle-of-night waking more likely." },
       { question: "What supplements help support sleep quality when reducing caffeine?", answer: "Magnesium glycinate (300–400mg before bed) is well-researched for supporting slow-wave sleep and GABA function. L-theanine supports relaxation without drowsiness and pairs well with green tea as a lower-caffeine alternative to coffee. Neither replaces proper caffeine timing but both support the transition period." }
+    ]
+  },
+  {
+    slug: "eating-before-bed-sleep",
+    title: "Late Night Snacking: Does Eating Before Bed Ruin Your Sleep?",
+    description: "Find out if eating before bed ruins your sleep, which late-night snacks to avoid, and what foods actually help you stay asleep.",
+    readTime: "8 min read",
+    date: "April 2026",
+    publishDate: "2026-04-24",
+    content: eatingBeforeBedSleep,
+    featuredImage: "/images/featured-eating-before-bed-sleep.jpg",
+    featuredImageAlt: "A person looking into a refrigerator at night representing late-night snacking",
+    faqs: [
+      { question: "Is it bad to go to bed hungry?", answer: "Yes, going to bed hungry can elevate cortisol levels and keep you awake. A small snack combining complex carbs and protein is better than a growling stomach." },
+      { question: "How long before bed should I stop eating?", answer: "Ideally, finish your last large meal about three hours before bed to allow your body time to properly digest before lying down." },
+      { question: "What is the best late-night snack for sleep?", answer: "A small portion of complex carbohydrates and protein, such as a slice of whole-grain toast with almond butter, or a handful of tart cherries." },
+      { question: "Does drinking water before bed ruin sleep?", answer: "Drinking too much water before bed can lead to nocturia, or waking up to use the bathroom. Stop heavy fluid intake 1-2 hours before bed." },
+      { question: "Does magnesium help with sleep?", answer: "Yes, magnesium glycinate is known to help regulate the nervous system and is often recommended as a supplement to support deep sleep." }
     ]
   }
 ]
