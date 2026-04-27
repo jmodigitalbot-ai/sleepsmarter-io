@@ -57,6 +57,8 @@ import caffeineAndSleep from '../content/43-caffeine-and-sleep.md?raw'
 
 import eatingBeforeBedSleep from '../content/44-eating-before-bed-sleep.md?raw'
 
+import weightedBlankets from '../content/45-weighted-blankets-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -778,6 +780,24 @@ export const articles: Article[] = [
       { question: "What is the best late-night snack for sleep?", answer: "A small portion of complex carbohydrates and protein, such as a slice of whole-grain toast with almond butter, or a handful of tart cherries." },
       { question: "Does drinking water before bed ruin sleep?", answer: "Drinking too much water before bed can lead to nocturia, or waking up to use the bathroom. Stop heavy fluid intake 1-2 hours before bed." },
       { question: "Does magnesium help with sleep?", answer: "Yes, magnesium glycinate is known to help regulate the nervous system and is often recommended as a supplement to support deep sleep." }
+    ]
+  },
+  {
+    slug: "weighted-blankets-for-sleep",
+    title: "Weighted Blankets for Sleep: Do They Actually Work?",
+    description: "Discover how weighted blankets use deep pressure stimulation to lower cortisol, reduce nighttime anxiety, and help you fall asleep faster.",
+    readTime: "10 min read",
+    date: "April 2026",
+    publishDate: "2026-04-27",
+    content: weightedBlankets,
+    featuredImage: "/images/featured-weighted-blankets-for-sleep.jpg",
+    featuredImageAlt: "Folded weighted blanket on a bed",
+    faqs: [
+      { question: "How heavy should my weighted blanket be?", answer: "The general recommendation is to choose a blanket that is roughly 10% of your body weight. For example, a 150-pound adult should use a 15-pound blanket." },
+      { question: "Are weighted blankets hot?", answer: "They can be, but many modern designs use cooling materials like bamboo or eucalyptus, and glass bead fillers, which retain far less heat than traditional plastic pellets." },
+      { question: "Can a weighted blanket help with restless leg syndrome?", answer: "Yes, the deep pressure stimulation from a weighted blanket provides a counter-stimulus that can help quiet the nerve signals causing uncomfortable sensations in the legs." },
+      { question: "Can anyone use a weighted blanket?", answer: "Most adults can, but they are not recommended for infants, toddlers, or individuals with severe respiratory issues or mobility constraints. Always consult a doctor if unsure." },
+      { question: "How do you wash a weighted blanket?", answer: "It depends on the blanket. Look for options with a removable, machine-washable outer cover to avoid damaging your home washing machine with the heavy inner insert." }
     ]
   }
 ]
