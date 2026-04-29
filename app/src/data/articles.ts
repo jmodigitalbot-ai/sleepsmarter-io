@@ -59,6 +59,8 @@ import eatingBeforeBedSleep from '../content/44-eating-before-bed-sleep.md?raw'
 
 import weightedBlankets from '../content/45-weighted-blankets-for-sleep.md?raw'
 
+import mouthTapingForSleep from '../content/46-mouth-taping-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -798,6 +800,24 @@ export const articles: Article[] = [
       { question: "Can a weighted blanket help with restless leg syndrome?", answer: "Yes, the deep pressure stimulation from a weighted blanket provides a counter-stimulus that can help quiet the nerve signals causing uncomfortable sensations in the legs." },
       { question: "Can anyone use a weighted blanket?", answer: "Most adults can, but they are not recommended for infants, toddlers, or individuals with severe respiratory issues or mobility constraints. Always consult a doctor if unsure." },
       { question: "How do you wash a weighted blanket?", answer: "It depends on the blanket. Look for options with a removable, machine-washable outer cover to avoid damaging your home washing machine with the heavy inner insert." }
+    ]
+  },
+  {
+    slug: "mouth-taping-for-sleep",
+    title: "Mouth Taping for Sleep: The Science, Benefits, and How to Do It Safely",
+    description: "Does mouth taping actually improve deep sleep? Discover the science of nasal breathing, the hidden dangers of mouth breathing, and how to tape your mouth safely.",
+    readTime: "10 min read",
+    date: "April 2026",
+    publishDate: "2026-04-29",
+    content: mouthTapingForSleep,
+    featuredImage: "/images/featured-mouth-taping-for-sleep.png",
+    featuredImageAlt: "A person peacefully sleeping with specialized mouth tape to promote nasal breathing",
+    faqs: [
+      { question: "Is mouth taping dangerous?", answer: "When done correctly using porous, medical-grade tape, mouth taping is generally safe for healthy adults. It should be avoided by those with severe sleep apnea, nasal obstructions, or while sick with congestion." },
+      { question: "What kind of tape should I use for mouth taping?", answer: "You should use a porous, hypoallergenic medical tape designed for human skin, such as 3M Micropore Tape, or specially designed sleep tapes like SomniFix. Never use household or duct tape." },
+      { question: "Does mouth taping stop snoring?", answer: "Yes, for many people. By keeping the mouth closed and the jaw stable, mouth taping prevents the tongue from falling back into the throat, which is a primary cause of airway constriction and snoring." },
+      { question: "Can I tape my mouth if I have a blocked nose?", answer: "No. You must be able to breathe freely through your nose. If you have temporary congestion from a cold or allergies, do not tape your mouth until your nasal passages are clear." },
+      { question: "How long does it take to get used to mouth taping?", answer: "It varies, but many people adjust within a few nights to a week. Practicing wearing the tape for 20-30 minutes during the day while awake can help train your brain to feel comfortable with it." }
     ]
   }
 ]
