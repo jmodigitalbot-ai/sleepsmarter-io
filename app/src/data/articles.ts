@@ -61,6 +61,8 @@ import weightedBlankets from '../content/45-weighted-blankets-for-sleep.md?raw'
 
 import mouthTapingForSleep from '../content/46-mouth-taping-for-sleep.md?raw'
 
+import howToResetCircadianRhythm from '../content/47-how-to-reset-circadian-rhythm.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -818,6 +820,22 @@ export const articles: Article[] = [
       { question: "Does mouth taping stop snoring?", answer: "Yes, for many people. By keeping the mouth closed and the jaw stable, mouth taping prevents the tongue from falling back into the throat, which is a primary cause of airway constriction and snoring." },
       { question: "Can I tape my mouth if I have a blocked nose?", answer: "No. You must be able to breathe freely through your nose. If you have temporary congestion from a cold or allergies, do not tape your mouth until your nasal passages are clear." },
       { question: "How long does it take to get used to mouth taping?", answer: "It varies, but many people adjust within a few nights to a week. Practicing wearing the tape for 20-30 minutes during the day while awake can help train your brain to feel comfortable with it." }
+    ]
+  },
+  {
+    slug: "how-to-reset-circadian-rhythm",
+    title: "How to Fix Your Sleep Schedule and Reset Your Circadian Rhythm",
+    description: "A complete science-backed guide to fixing your sleep schedule, resetting your circadian rhythm, and getting your internal clock back on track.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-01",
+    content: howToResetCircadianRhythm,
+    featuredImage: "/images/featured-how-to-reset-circadian-rhythm.png",
+    featuredImageAlt: "A serene modern bedroom bathed in morning sunlight with a subtle circadian rhythm sine wave graphic",
+    faqs: [
+      { question: "How long does it take to reset your circadian rhythm?", answer: "It typically takes about one day for every hour of time zone change or schedule shift, but aggressive morning sunlight exposure and strict evening light deprivation can accelerate the process to 3-4 days." },
+      { question: "Can you reset your sleep schedule by staying up all night?", answer: "No. Pulling an all-nighter often backfires, causing severe sleep deprivation and leading to an uncontrolled crash the next day that further deregulates your internal clock." },
+      { question: "Is it better to change bedtime or wake time?", answer: "Always focus on changing your wake time. You cannot control when you fall asleep, but you can control when you wake up. Forcing a consistent wake time will naturally build sleep pressure and shift your bedtime." }
     ]
   }
 ]
