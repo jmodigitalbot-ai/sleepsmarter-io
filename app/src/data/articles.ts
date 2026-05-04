@@ -63,6 +63,8 @@ import mouthTapingForSleep from '../content/46-mouth-taping-for-sleep.md?raw'
 
 import howToResetCircadianRhythm from '../content/47-how-to-reset-circadian-rhythm.md?raw'
 
+import howToGetMoreRemSleep from '../content/48-how-to-get-more-rem-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -836,6 +838,24 @@ export const articles: Article[] = [
       { question: "How long does it take to reset your circadian rhythm?", answer: "It typically takes about one day for every hour of time zone change or schedule shift, but aggressive morning sunlight exposure and strict evening light deprivation can accelerate the process to 3-4 days." },
       { question: "Can you reset your sleep schedule by staying up all night?", answer: "No. Pulling an all-nighter often backfires, causing severe sleep deprivation and leading to an uncontrolled crash the next day that further deregulates your internal clock." },
       { question: "Is it better to change bedtime or wake time?", answer: "Always focus on changing your wake time. You cannot control when you fall asleep, but you can control when you wake up. Forcing a consistent wake time will naturally build sleep pressure and shift your bedtime." }
+    ]
+  },
+  {
+    slug: "how-to-get-more-rem-sleep",
+    title: "How to Get More REM Sleep: Why Your Brain Needs It and How to Fix the Deficit",
+    description: "REM sleep drives memory, mood, and mental performance. Learn what suppresses it and how to get more of it every night.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-04",
+    content: howToGetMoreRemSleep,
+    featuredImage: "/images/featured-how-to-get-more-rem-sleep.png",
+    featuredImageAlt: "Person sleeping surrounded by glowing neural network patterns representing REM sleep and dreaming",
+    faqs: [
+      { question: "How much REM sleep do I need per night?", answer: "Adults typically need 20-25% of their total sleep time in REM - roughly 84-105 minutes for a seven-hour night. If you consistently wake up exhausted despite adequate total sleep, REM deprivation is a likely culprit." },
+      { question: "Does alcohol affect REM sleep?", answer: "Yes, significantly. Alcohol suppresses REM sleep during the first half of the night. Even if you sleep a full eight hours after drinking, your REM sleep will be fragmented and reduced. Finish drinking at least 3-4 hours before bedtime to minimize the impact." },
+      { question: "Can you make up lost REM sleep?", answer: "The brain does engage in REM rebound - increased REM when you get more sleep after deprivation. However, you cannot fully repay weeks of REM debt in a single night. Consistently extending your sleep opportunity by 20-30 minutes over two or more weeks is the most effective approach." },
+      { question: "What supplements help increase REM sleep?", answer: "Magnesium Glycinate (200-400mg before bed) supports overall sleep architecture including REM. L-Theanine (200mg) promotes relaxed sleep transitions. Neither is a guaranteed fix, but both are low-risk and commonly reported to improve sleep quality." },
+      { question: "Why do I remember vivid dreams on weekends?", answer: "Vivid weekend dreams are often a sign of REM rebound - your brain is making up for REM sleep lost during the week. It feels good, but its actually evidence of a weekday REM deficit worth addressing rather than compensating for." }
     ]
   }
 ]
