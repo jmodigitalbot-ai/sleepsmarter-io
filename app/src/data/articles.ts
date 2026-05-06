@@ -65,6 +65,8 @@ import howToResetCircadianRhythm from '../content/47-how-to-reset-circadian-rhyt
 
 import howToGetMoreRemSleep from '../content/48-how-to-get-more-rem-sleep.md?raw'
 
+import naturalSleepAids from '../content/49-natural-sleep-aids.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -856,6 +858,24 @@ export const articles: Article[] = [
       { question: "Can you make up lost REM sleep?", answer: "The brain does engage in REM rebound - increased REM when you get more sleep after deprivation. However, you cannot fully repay weeks of REM debt in a single night. Consistently extending your sleep opportunity by 20-30 minutes over two or more weeks is the most effective approach." },
       { question: "What supplements help increase REM sleep?", answer: "Magnesium Glycinate (200-400mg before bed) supports overall sleep architecture including REM. L-Theanine (200mg) promotes relaxed sleep transitions. Neither is a guaranteed fix, but both are low-risk and commonly reported to improve sleep quality." },
       { question: "Why do I remember vivid dreams on weekends?", answer: "Vivid weekend dreams are often a sign of REM rebound - your brain is making up for REM sleep lost during the week. It feels good, but its actually evidence of a weekday REM deficit worth addressing rather than compensating for." }
+    ]
+  },
+  {
+    slug: "natural-sleep-aids",
+    title: "Natural Sleep Aids That Actually Work (Ranked by Evidence)",
+    description: "The 7 natural sleep aids with the strongest research behind them — plus 3 popular ones to skip. Magnesium, L-theanine, melatonin, and more.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-06",
+    content: naturalSleepAids,
+    featuredImage: "/images/featured-natural-sleep-aids.png",
+    featuredImageAlt: "Natural sleep supplements including magnesium and L-theanine arranged on a dark surface",
+    faqs: [
+      { question: "What is the most effective natural sleep aid?", answer: "Magnesium glycinate has the strongest overall evidence base for most people. It supports GABA activity, reduces cortisol, and is deficient in a significant portion of the population. For anxiety-driven sleep problems, combining it with L-theanine is even more effective." },
+      { question: "Is melatonin a natural sleep aid?", answer: "Yes, melatonin is naturally produced by your pineal gland. Supplemental melatonin works best for circadian rhythm issues like jet lag or delayed sleep phase — not general insomnia. Most people take far too high a dose. Start with 0.5–1mg, not the 5–10mg found in most retail products." },
+      { question: "Can you take magnesium and L-theanine together?", answer: "Yes — this combination is one of the most commonly recommended natural sleep stacks. Magnesium supports GABA and nervous system regulation, while L-theanine promotes alpha brain wave activity and reduces mental arousal. They work through different but complementary pathways." },
+      { question: "How long does it take for natural sleep aids to work?", answer: "It depends on the supplement. L-theanine and magnesium often show effects within the first few nights. Valerian root and ashwagandha typically take 2–4 weeks of consistent use to show their full benefit. Melatonin works the same night when timed correctly." },
+      { question: "Are natural sleep aids safe to take every night?", answer: "Most are well-tolerated for long-term use at appropriate doses. Magnesium glycinate, L-theanine, and glycine have strong safety profiles. Low-dose melatonin is fine for ongoing use in specific situations. If you find you cannot sleep without supplements at all, that suggests an underlying issue worth addressing — a structured sleep reset approach often works better than indefinite supplementation." }
     ]
   }
 ]
