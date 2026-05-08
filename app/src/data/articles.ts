@@ -67,6 +67,8 @@ import howToGetMoreRemSleep from '../content/48-how-to-get-more-rem-sleep.md?raw
 
 import naturalSleepAids from '../content/49-natural-sleep-aids.md?raw'
 
+import sleepApneaSymptoms from '../content/50-sleep-apnea-symptoms.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -876,6 +878,24 @@ export const articles: Article[] = [
       { question: "Can you take magnesium and L-theanine together?", answer: "Yes — this combination is one of the most commonly recommended natural sleep stacks. Magnesium supports GABA and nervous system regulation, while L-theanine promotes alpha brain wave activity and reduces mental arousal. They work through different but complementary pathways." },
       { question: "How long does it take for natural sleep aids to work?", answer: "It depends on the supplement. L-theanine and magnesium often show effects within the first few nights. Valerian root and ashwagandha typically take 2–4 weeks of consistent use to show their full benefit. Melatonin works the same night when timed correctly." },
       { question: "Are natural sleep aids safe to take every night?", answer: "Most are well-tolerated for long-term use at appropriate doses. Magnesium glycinate, L-theanine, and glycine have strong safety profiles. Low-dose melatonin is fine for ongoing use in specific situations. If you find you cannot sleep without supplements at all, that suggests an underlying issue worth addressing — a structured sleep reset approach often works better than indefinite supplementation." }
+    ]
+  },
+  {
+    slug: "sleep-apnea-symptoms",
+    title: "Sleep Apnea Symptoms: How to Tell If You Have It (Before a Doctor Does)",
+    description: "Tired despite 8 hours of sleep? Snoring, gasping, or waking foggy? Learn the 8 key signs of sleep apnea and what to do next.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-08",
+    content: sleepApneaSymptoms,
+    featuredImage: "/images/featured-sleep-apnea-symptoms.png",
+    featuredImageAlt: "Person sleeping in dark bedroom with oxygen waveform overlay indicating sleep apnea",
+    faqs: [
+      { question: "What are the most common symptoms of sleep apnea?", answer: "The most common symptoms include loud snoring, waking up gasping or choking, excessive daytime sleepiness despite adequate sleep time, morning headaches, dry mouth or sore throat upon waking, and difficulty concentrating or brain fog throughout the day." },
+      { question: "Can you have sleep apnea without snoring?", answer: "Yes, though it is less common. Central sleep apnea (where the brain fails to send proper breathing signals) often occurs without snoring. Some people with obstructive sleep apnea also have minimal snoring, especially if they are lighter-weight or primarily side sleepers." },
+      { question: "How is sleep apnea diagnosed?", answer: "Sleep apnea is diagnosed through a sleep study (polysomnography) either in a sleep lab or at home using a home sleep apnea test (HSAT). These tests measure your Apnea-Hypopnea Index (AHI) — the number of breathing disruptions per hour. A result of 5 or more events per hour with symptoms confirms a diagnosis." },
+      { question: "Can sleep apnea go away on its own?", answer: "Mild positional sleep apnea can improve significantly with lifestyle changes like weight loss, side sleeping, and avoiding alcohol before bed. However, moderate to severe sleep apnea typically requires treatment (CPAP, oral appliance, or surgery) and does not resolve on its own." },
+      { question: "What happens if sleep apnea goes untreated?", answer: "Untreated sleep apnea significantly increases the risk of cardiovascular disease, stroke, type 2 diabetes, depression, and cognitive decline. It also causes dangerous daytime drowsiness that raises accident risk. Sleep apnea is a medical condition that requires proper diagnosis and treatment." }
     ]
   }
 ]
