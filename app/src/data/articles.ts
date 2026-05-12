@@ -69,6 +69,8 @@ import naturalSleepAids from '../content/49-natural-sleep-aids.md?raw'
 
 import sleepApneaSymptoms from '../content/50-sleep-apnea-symptoms.md?raw'
 
+import yogaNidraNsdrSleep from '../content/51-yoga-nidra-nsdr-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -896,6 +898,24 @@ export const articles: Article[] = [
       { question: "How is sleep apnea diagnosed?", answer: "Sleep apnea is diagnosed through a sleep study (polysomnography) either in a sleep lab or at home using a home sleep apnea test (HSAT). These tests measure your Apnea-Hypopnea Index (AHI) — the number of breathing disruptions per hour. A result of 5 or more events per hour with symptoms confirms a diagnosis." },
       { question: "Can sleep apnea go away on its own?", answer: "Mild positional sleep apnea can improve significantly with lifestyle changes like weight loss, side sleeping, and avoiding alcohol before bed. However, moderate to severe sleep apnea typically requires treatment (CPAP, oral appliance, or surgery) and does not resolve on its own." },
       { question: "What happens if sleep apnea goes untreated?", answer: "Untreated sleep apnea significantly increases the risk of cardiovascular disease, stroke, type 2 diabetes, depression, and cognitive decline. It also causes dangerous daytime drowsiness that raises accident risk. Sleep apnea is a medical condition that requires proper diagnosis and treatment." }
+    ]
+  },
+  {
+    slug: "yoga-nidra-nsdr-sleep",
+    title: "Yoga Nidra and NSDR: The Science Behind the Sleep Trick That Actually Works",
+    description: "Discover how Yoga Nidra and NSDR can reset your nervous system, replenish dopamine, and fix sleep onset anxiety in just 20 minutes.",
+    readTime: "8 min read",
+    date: "May 2026",
+    publishDate: "2026-05-12",
+    content: yogaNidraNsdrSleep,
+    featuredImage: "/images/featured-yoga-nidra-nsdr-sleep.png",
+    featuredImageAlt: "Person lying in savasana pose practicing Yoga Nidra NSDR with soft blue glowing neural pathways",
+    faqs: [
+      { question: "What is NSDR (Non-Sleep Deep Rest)?", answer: "NSDR is a guided audio practice — popularized by Stanford neuroscientist Dr. Andrew Huberman — where you lie flat and follow a body scan that systematically shifts your brain from alert Beta waves into restorative Alpha and Theta states. It is the secular rebranding of the ancient practice of Yoga Nidra." },
+      { question: "How long should an NSDR session be?", answer: "Most people see significant benefits from a 10 to 20 minute session. A 20-minute NSDR practice has been shown to produce a 65% increase in dopamine in the ventral striatum — comparable to the restorative effect of a much longer nap. Even 10 minutes is enough to reset the nervous system during an afternoon slump." },
+      { question: "Can I do NSDR if I struggle to meditate?", answer: "Yes — NSDR is specifically designed for people who cannot meditate. Unlike traditional meditation, NSDR requires zero effort or concentration. You simply lie down and follow the audio. There is nothing to focus on, nothing to control, and nothing to get right. This makes it far more accessible for anxious or exhausted people." },
+      { question: "Does NSDR actually replace sleep?", answer: "No. NSDR is a powerful recovery and relaxation tool, but it does not replace the biological necessity of sleep. What it does do is significantly accelerate nervous system recovery, replenish dopamine, and reduce sleep debt — making it an excellent complement to a solid sleep routine rather than a substitute for it." },
+      { question: "When is the best time to do NSDR?", answer: "NSDR is most effective in three scenarios: (1) At 3 AM when you cannot fall back asleep — it interrupts the cortisol-anxiety loop; (2) In the early afternoon (1-3 PM) as a caffeine-free energy reset that won't disturb nighttime sleep; and (3) As a 20-30 minute pre-sleep wind-down ritual that bridges your nervous system from the stress of the day into genuine sleep readiness." }
     ]
   }
 ]
