@@ -71,6 +71,8 @@ import sleepApneaSymptoms from '../content/50-sleep-apnea-symptoms.md?raw'
 
 import yogaNidraNsdrSleep from '../content/51-yoga-nidra-nsdr-sleep.md?raw'
 
+import exerciseAndSleep from '../content/52-exercise-and-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -916,6 +918,24 @@ export const articles: Article[] = [
       { question: "Can I do NSDR if I struggle to meditate?", answer: "Yes — NSDR is specifically designed for people who cannot meditate. Unlike traditional meditation, NSDR requires zero effort or concentration. You simply lie down and follow the audio. There is nothing to focus on, nothing to control, and nothing to get right. This makes it far more accessible for anxious or exhausted people." },
       { question: "Does NSDR actually replace sleep?", answer: "No. NSDR is a powerful recovery and relaxation tool, but it does not replace the biological necessity of sleep. What it does do is significantly accelerate nervous system recovery, replenish dopamine, and reduce sleep debt — making it an excellent complement to a solid sleep routine rather than a substitute for it." },
       { question: "When is the best time to do NSDR?", answer: "NSDR is most effective in three scenarios: (1) At 3 AM when you cannot fall back asleep — it interrupts the cortisol-anxiety loop; (2) In the early afternoon (1-3 PM) as a caffeine-free energy reset that won't disturb nighttime sleep; and (3) As a 20-30 minute pre-sleep wind-down ritual that bridges your nervous system from the stress of the day into genuine sleep readiness." }
+    ]
+  },
+  {
+    slug: "exercise-and-sleep",
+    title: "Exercise and Sleep: The Best Time to Work Out for Better Sleep",
+    description: "Learn how exercise improves sleep quality, when to work out for the best results, and why evening workouts might be ruining your rest.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-13",
+    content: exerciseAndSleep,
+    featuredImage: "/images/featured-exercise-and-sleep.png",
+    featuredImageAlt: "Person running outdoors in morning light for better sleep",
+    faqs: [
+      { question: "Does exercise before bed ruin your sleep?", answer: "High-intensity exercise within 90 minutes of bed can delay sleep onset and reduce deep sleep. Moderate exercise like walking or yoga is generally fine and may even help. The key is intensity — not just timing." },
+      { question: "What is the best time of day to exercise for sleep?", answer: "Most research points to mid-to-late afternoon (2–6 PM) as the optimal window. Your core body temperature and performance peak around this time, and the post-workout temperature drop aligns with your natural bedtime cooling." },
+      { question: "How much exercise do you need to improve sleep quality?", answer: "Studies consistently show 150 minutes of moderate aerobic activity per week is the threshold where sleep benefits become significant — roughly 30 minutes five days a week. Even 10-minute walks add up." },
+      { question: "Can exercise replace sleep medication for insomnia?", answer: "A 2010 Northwestern University study found that a 16-week aerobic exercise program improved sleep quality comparably to low-dose medication in older adults with insomnia. It is not a replacement for severe cases but is a powerful first-line intervention." },
+      { question: "Why does exercise help you sleep deeper?", answer: "Aerobic exercise increases adenosine (sleep pressure), promotes post-workout core temperature drops that signal sleep, and has been shown in multiple studies to increase time spent in Stage 3 slow-wave (deep) sleep — the most physically restorative sleep stage." }
     ]
   }
 ]
