@@ -73,6 +73,8 @@ import yogaNidraNsdrSleep from '../content/51-yoga-nidra-nsdr-sleep.md?raw'
 
 import exerciseAndSleep from '../content/52-exercise-and-sleep.md?raw'
 
+import ashwagandhaForSleep from '../content/53-ashwagandha-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -936,6 +938,24 @@ export const articles: Article[] = [
       { question: "How much exercise do you need to improve sleep quality?", answer: "Studies consistently show 150 minutes of moderate aerobic activity per week is the threshold where sleep benefits become significant — roughly 30 minutes five days a week. Even 10-minute walks add up." },
       { question: "Can exercise replace sleep medication for insomnia?", answer: "A 2010 Northwestern University study found that a 16-week aerobic exercise program improved sleep quality comparably to low-dose medication in older adults with insomnia. It is not a replacement for severe cases but is a powerful first-line intervention." },
       { question: "Why does exercise help you sleep deeper?", answer: "Aerobic exercise increases adenosine (sleep pressure), promotes post-workout core temperature drops that signal sleep, and has been shown in multiple studies to increase time spent in Stage 3 slow-wave (deep) sleep — the most physically restorative sleep stage." }
+    ]
+  },
+  {
+    slug: "ashwagandha-for-sleep",
+    title: "Ashwagandha for Sleep: Does It Actually Work?",
+    description: "What the research actually shows about ashwagandha and sleep — cortisol, dosage, timing, and how to stack it with magnesium for better results.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-15",
+    content: ashwagandhaForSleep,
+    featuredImage: "/images/featured-ashwagandha-for-sleep.png",
+    featuredImageAlt: "Ashwagandha root powder in a wooden bowl beside sleep supplements",
+    faqs: [
+      { question: "Does ashwagandha actually help you sleep?", answer: "Yes — multiple randomized controlled trials show ashwagandha (especially KSM-66 extract) significantly improves sleep quality, reduces time to fall asleep, and increases total sleep time. It works primarily by reducing cortisol and modulating GABA receptors, not by sedating you directly." },
+      { question: "When should you take ashwagandha for sleep?", answer: "Take 300–600mg of a standardized root extract 30–60 minutes before bed. Some people prefer a split dose (morning and evening) for overall stress management, but a single evening dose is most practical for sleep-specific use." },
+      { question: "How long does ashwagandha take to work for sleep?", answer: "Most people notice meaningful improvements in sleep quality after 2–4 weeks of consistent daily use. The adaptogenic effects on cortisol and stress response build gradually — do not judge effectiveness after only a few days." },
+      { question: "What is the right dose of ashwagandha for sleep?", answer: "The research supports 300–600mg per day of a standardized extract (KSM-66 or Sensoril). Higher doses have not been shown to produce better sleep outcomes and increase the risk of side effects. Look for supplements standardized to 5–10% withanolides." },
+      { question: "Can you take ashwagandha with magnesium for sleep?", answer: "Yes — this is one of the most well-supported supplement stacks for sleep. Magnesium works on GABA signaling and muscle relaxation while ashwagandha reduces cortisol and stress reactivity. They address different mechanisms and complement each other well. Take both 30–60 minutes before bed." }
     ]
   }
 ]
