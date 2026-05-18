@@ -75,6 +75,8 @@ import exerciseAndSleep from '../content/52-exercise-and-sleep.md?raw'
 
 import ashwagandhaForSleep from '../content/53-ashwagandha-for-sleep.md?raw'
 
+import lTheanineForSleep from '../content/54-l-theanine-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -956,6 +958,24 @@ export const articles: Article[] = [
       { question: "How long does ashwagandha take to work for sleep?", answer: "Most people notice meaningful improvements in sleep quality after 2–4 weeks of consistent daily use. The adaptogenic effects on cortisol and stress response build gradually — do not judge effectiveness after only a few days." },
       { question: "What is the right dose of ashwagandha for sleep?", answer: "The research supports 300–600mg per day of a standardized extract (KSM-66 or Sensoril). Higher doses have not been shown to produce better sleep outcomes and increase the risk of side effects. Look for supplements standardized to 5–10% withanolides." },
       { question: "Can you take ashwagandha with magnesium for sleep?", answer: "Yes — this is one of the most well-supported supplement stacks for sleep. Magnesium works on GABA signaling and muscle relaxation while ashwagandha reduces cortisol and stress reactivity. They address different mechanisms and complement each other well. Take both 30–60 minutes before bed." }
+    ]
+  },
+  {
+    slug: "l-theanine-for-sleep",
+    title: "L-Theanine for Sleep: Does It Actually Work?",
+    description: "L-theanine promotes alpha brain waves and reduces anxiety. Here's what the research actually shows about using it for better sleep.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-18",
+    content: lTheanineForSleep,
+    featuredImage: "/images/featured-l-theanine-for-sleep.png",
+    featuredImageAlt: "Cup of green tea with L-theanine supplements and peaceful sleep environment",
+    faqs: [
+      { question: "How long does L-theanine take to work for sleep?", answer: "L-theanine typically takes 30–60 minutes to increase alpha brain wave activity. For best results, take it 30–60 minutes before bed. The subjective effect is subtle — reduced mental chatter rather than sedation — and some people notice it more clearly after consistent use over 1–2 weeks." },
+      { question: "What is the best dose of L-theanine for sleep?", answer: "The most-studied dose for sleep is 200–400mg taken before bed. Start with 200mg and adjust based on response. Below 100mg is likely subclinical for sleep purposes; above 400mg shows diminishing returns in most research." },
+      { question: "Can I take L-theanine every night?", answer: "Yes. L-theanine has no known dependency risk and no evidence of tolerance buildup. It can be taken nightly without concerns about needing escalating doses. Unlike melatonin, there is no evidence that regular use disrupts your natural sleep architecture." },
+      { question: "Does L-theanine work better with magnesium?", answer: "For most people, yes. L-theanine reduces neurological excitation and anxiety through GABA modulation and glutamate antagonism. Magnesium glycinate works through NMDA receptors and also supports GABA activity. The combination addresses sleep-onset anxiety from two distinct angles and is the most commonly recommended basic sleep supplement stack." },
+      { question: "Is L-theanine safe to combine with melatonin?", answer: "Yes, the combination is generally considered safe. L-theanine handles anxiety and mental quiet; low-dose melatonin (0.5–1mg) handles the circadian timing signal. This pairing is particularly useful for travel or shift work where sleep timing is disrupted. Use the lowest effective melatonin dose to avoid next-day grogginess." }
     ]
   }
 ]
