@@ -77,6 +77,8 @@ import ashwagandhaForSleep from '../content/53-ashwagandha-for-sleep.md?raw'
 
 import lTheanineForSleep from '../content/54-l-theanine-for-sleep.md?raw'
 
+import valerianRootForSleep from '../content/55-valerian-root-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -976,6 +978,24 @@ export const articles: Article[] = [
       { question: "Can I take L-theanine every night?", answer: "Yes. L-theanine has no known dependency risk and no evidence of tolerance buildup. It can be taken nightly without concerns about needing escalating doses. Unlike melatonin, there is no evidence that regular use disrupts your natural sleep architecture." },
       { question: "Does L-theanine work better with magnesium?", answer: "For most people, yes. L-theanine reduces neurological excitation and anxiety through GABA modulation and glutamate antagonism. Magnesium glycinate works through NMDA receptors and also supports GABA activity. The combination addresses sleep-onset anxiety from two distinct angles and is the most commonly recommended basic sleep supplement stack." },
       { question: "Is L-theanine safe to combine with melatonin?", answer: "Yes, the combination is generally considered safe. L-theanine handles anxiety and mental quiet; low-dose melatonin (0.5–1mg) handles the circadian timing signal. This pairing is particularly useful for travel or shift work where sleep timing is disrupted. Use the lowest effective melatonin dose to avoid next-day grogginess." }
+    ]
+  },
+  {
+    slug: "valerian-root-for-sleep",
+    title: "Valerian Root for Sleep: Does It Actually Work?",
+    description: "Valerian root is one of the oldest sleep remedies around. Here's what the research actually shows, who benefits, the right dose, and how to stack it.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-20",
+    content: valerianRootForSleep,
+    featuredImage: "/images/featured-valerian-root-for-sleep.png",
+    featuredImageAlt: "Dried valerian root, flowers, and supplement capsules on a dark slate surface",
+    faqs: [
+      { question: "Does valerian root actually help you sleep?", answer: "For some people, yes particularly those with anxiety-driven insomnia or physical tension at bedtime. Research is mixed, but the strongest trials show modest improvements in sleep latency and quality after 2-4 weeks of consistent use." },
+      { question: "How long does valerian root take to work?", answer: "Many people notice a subtle effect on night one, but the full benefit typically emerges after 2-4 weeks of nightly use. It works best as a consistent supplement rather than an as-needed sleep aid." },
+      { question: "What is the best dose of valerian root for sleep?", answer: "Most clinical trials use 300-600mg of standardized extract (0.8% valerenic acid), taken 30-60 minutes before bed. Start at 300mg and increase to 600mg if needed." },
+      { question: "Can you take valerian root every night?", answer: "Yes, valerian is generally considered safe for nightly use in the short-to-medium term. Some practitioners recommend cycling 4-6 weeks on then a break as a precaution." },
+      { question: "Does valerian root cause morning grogginess?", answer: "At standard doses (300-600mg), next-day grogginess is uncommon. It is more likely at higher doses. A minority experience paradoxical stimulation meaning valerian simply is not the right tool for them." }
     ]
   }
 ]
