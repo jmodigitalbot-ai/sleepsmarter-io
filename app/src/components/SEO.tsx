@@ -32,7 +32,7 @@ interface SEOProps {
 }
 
 const SITE_NAME = 'Sleep Smarter'
-const SITE_URL = 'https://sleepsmarter.io'
+const SITE_URL = 'https://www.sleepsmarter.io'
 const DEFAULT_IMAGE = `${SITE_URL}/og-default.png`
 
 export default function SEO({

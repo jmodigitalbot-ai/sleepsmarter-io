@@ -92,9 +92,9 @@ export default function Article() {
         dateModified={isoDate}
         faqs={article.faqs}
         breadcrumbs={[
-          { name: 'Home', url: 'https://sleepsmarter.io/' },
-          { name: 'Blog', url: 'https://sleepsmarter.io/blog' },
-          { name: article.title, url: `https://sleepsmarter.io/blog/${article.slug}` },
+          { name: 'Home', url: 'https://www.sleepsmarter.io/' },
+          { name: 'Blog', url: 'https://www.sleepsmarter.io/blog' },
+          { name: article.title, url: `https://www.sleepsmarter.io/blog/${article.slug}` },
         ]}
       />
       {/* Header */}

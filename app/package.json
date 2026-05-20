@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node check-featured-images.mjs && npm run build:client && npm run build:ssr && npm run prerender",
+    "build": "node check-featured-images.mjs && npm run build:client && npm run build:ssr && npm run prerender && npm run generate-sitemap",
+    "generate-sitemap": "node generate-sitemap.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "build:client": "tsc -b && vite build",

@@ -27,4 +27,4 @@ Allow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://sleepsmarter.io/sitemap.xml
+Sitemap: https://www.sleepsmarter.io/sitemap.xml
