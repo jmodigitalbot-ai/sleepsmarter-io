@@ -29,10 +29,31 @@ async function prerender() {
   for (const url of prerenderRoutes) {
     try {
       // Render the route to HTML
-      const appHtml = render(url)
+      let appHtml = render(url)
+
+      // React 19 emits document metadata during SSR, but renderToString returns
+      // those tags with the app markup instead of placing them in <head> for us.
+      // Move SEO/resource tags into the document head so crawlers see one valid
+      // title/meta/canonical/OG/Twitter stack per prerendered page.
+      const headTags = []
+      appHtml = appHtml.replace(
+        /<title(\s[^>]*)?>[\s\S]*?<\/title>|<meta(\s[^>]*)?\/>|<link(\s[^>]*)?\/>/gi,
+        (tag) => {
+          headTags.push(tag)
+          return ''
+        },
+      )
+      appHtml = appHtml.replace(
+        /<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/gi,
+        (tag) => {
+          headTags.push(tag)
+          return ''
+        },
+      )
 
       // Inject into template
       const html = template
+        .replace('</head>', `    ${headTags.join('\n    ')}\n  </head>`)
         .replace('<!--app-html-->', appHtml)
         // Mark root as prerendered so client uses hydrateRoot
         .replace('<div id="root">', '<div id="root" data-prerendered="true">')

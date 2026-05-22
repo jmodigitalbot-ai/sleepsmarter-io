@@ -1,6 +1,14 @@
+import SEO from '../components/SEO'
+
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="Privacy Policy — Sleep Smarter"
+        description="Read the Sleep Smarter privacy policy, including how we handle email addresses, calculator data, analytics, cookies, advertising, and data protection."
+        canonical="/privacy"
+        type="website"
+      />
       <div className="max-w-3xl mx-auto px-4 py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-8">
           Privacy Policy

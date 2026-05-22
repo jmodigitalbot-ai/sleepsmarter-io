@@ -553,3 +553,5 @@ Ready to stop waking up exhausted? **[Try our free sleep calculator](/calculator
 - [Best Time to Wake Up](/blog/best-time-to-wake-up) - Find your optimal wake time
 - [How Much Sleep Do I Need](/blog/how-much-sleep-do-i-need) - Determine your personal sleep requirement
 - [Sleep Calculator Guide](/blog/sleep-calculator-guide) - Learn to use the calculator effectively
+
+**Check your week:** If morning fatigue is building, the [Sleep Debt Calculator](/sleep-debt-calculator) can show whether you are carrying a hidden weekly deficit.

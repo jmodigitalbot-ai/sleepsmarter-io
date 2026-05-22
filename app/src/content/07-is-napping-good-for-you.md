@@ -160,6 +160,8 @@ Don't fight your biology. If your body wants rest in the afternoon, a quick powe
 
 **Want to optimize both your naps and nighttime sleep?** Use our [sleep calculator](/) to find the perfect bedtime and wake time for your schedule.
 
+Not sure whether a nap is helping or hiding a bigger deficit? Check your last seven nights with the [Sleep Debt Calculator](/sleep-debt-calculator).
+
 ---
 
 *Related Articles:*

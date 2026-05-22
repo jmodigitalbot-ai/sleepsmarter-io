@@ -11,6 +11,8 @@ But here's the thing: the answer isn't the same for everyone. Your ideal sleep d
 - [How to Find Your Personal Sweet Spot](#how-to-find-your-personal-sweet-spot)
 - [Using a Sleep Calculator to Optimize Duration](#using-a-sleep-calculator-to-optimize-duration)
 
+Once you know your target range, plug your last seven nights into the [Sleep Debt Calculator](/sleep-debt-calculator) to see whether you are running a weekly deficit.
+
 ---
 
 ## Sleep Needs by Age Group

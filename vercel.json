@@ -3,6 +3,9 @@
   "outputDirectory": "app/dist",
   "installCommand": "cd app && npm install",
   "rewrites": [
+    { "source": "/calculator", "destination": "/calculator/index.html" },
+    { "source": "/sleep-debt-calculator", "destination": "/sleep-debt-calculator/index.html" },
+    { "source": "/lp/sleep-calculator", "destination": "/lp/sleep-calculator/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

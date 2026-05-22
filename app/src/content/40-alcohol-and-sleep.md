@@ -123,6 +123,8 @@ The pattern is consistent whether you feel it or not. The disruption to deep and
 
 If you regularly use alcohol to wind down and regularly wake up between 2 and 5 AM feeling unrested despite adequate hours, you now know why. The fix isn't complicated — but it does require replacing a habit, not just removing one.
 
+If alcohol-shortened sleep is stacking up across the week, use the [Sleep Debt Calculator](/sleep-debt-calculator) to estimate the deficit and recover gradually.
+
 ---
 
 ## Keep Reading

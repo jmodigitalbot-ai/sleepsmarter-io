@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState, type ReactElement } from 'react'
 import { trackSalesPageView, trackCheckoutClick, trackMetaEvent } from '../lib/analytics'
+import { loadSamCartCheckoutScript } from '../lib/thirdPartyScripts'
+import SEO from '../components/SEO'
 
 type SleepType = 'cant_fall_asleep' | 'cant_stay_asleep' | 'never_feel_rested' | 'exhausted_but_wired'
 
@@ -77,14 +79,8 @@ export default function SleepReset() {
       page_title: 'The Forgotten Sleep Ritual'
     })
     trackMetaEvent('ViewContent', { content_name: 'The Forgotten Sleep Ritual', content_category: 'sales_page', value: 17, currency: 'USD' })
-    // Load SamCart checkout script
-    const script = document.createElement('script')
-    script.src = 'https://static.samcart.com/checkouts/sc-checkout.js'
-    script.defer = true
-    document.body.appendChild(script)
-    return () => {
-      document.body.removeChild(script)
-    }
+    // Load SamCart only on the sales page instead of every route.
+    loadSamCartCheckoutScript()
   }, [])
 
   const handleCheckoutClick = (buttonText: string, buttonLocation: string) => {
@@ -122,7 +118,7 @@ export default function SleepReset() {
     }
   ]
 
-  const CTA = ({ location }: { location: string }) => (
+  const renderCta = (location: string) => (
     <button
       onClick={() => handleCheckoutClick('YES — GIVE ME INSTANT ACCESS → $17', location)}
       className="block w-full text-center bg-gradient-to-r from-[#e63946] to-[#d62839] hover:from-[#f94144] hover:to-[#e63946] text-white font-bold py-5 px-8 rounded-xl transition-all text-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
@@ -133,6 +129,12 @@ export default function SleepReset() {
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="The Forgotten Sleep Ritual — 7-Day Sleep Reset Protocol"
+        description="Get the science-backed wind-down sequence and 7-day sleep reset protocol designed to help you fall asleep faster and wake up refreshed."
+        canonical="/sleep-reset"
+        type="website"
+      />
 
       {/* ── HEADER ─────────────────────────────── */}
       <header className="border-b border-[#4a4e69]/30">
@@ -150,7 +152,7 @@ export default function SleepReset() {
         {fromQuiz && sleepType && HERO_BY_TYPE[sleepType] && (
           <div className="bg-[#a8dadc]/10 border border-[#a8dadc]/30 rounded-xl px-5 py-3 text-center">
             <p className="text-[#a8dadc] text-sm font-semibold">
-              Based on your diagnosis: <em>{sleepType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</em> — this page has been customized for your sleep pattern.
+              Based on your diagnosis: <em>{sleepType.replace(/_/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase())}</em> — this page has been customized for your sleep pattern.
             </p>
           </div>
         )}
@@ -167,7 +169,7 @@ export default function SleepReset() {
             {hero.subheadline}
           </p>
           <div className="pt-4">
-            <CTA location="hero" />
+            {renderCta('hero')}
             <p className="mt-3 text-sm text-[#f1faee]/40">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
           </div>
         </div>
@@ -418,7 +420,7 @@ export default function SleepReset() {
 
         {/* ── CTA MID ─────────────────────────────── */}
         <div className="space-y-3">
-          <CTA location="mid" />
+          {renderCta('mid')}
           <p className="text-center text-sm text-[#f1faee]/40">Immediate digital download · 60-day money-back guarantee · No subscriptions</p>
         </div>
 

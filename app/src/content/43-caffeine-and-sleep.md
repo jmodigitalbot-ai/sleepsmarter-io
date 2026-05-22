@@ -65,6 +65,8 @@ Sleep researcher Andrew Huberman and others who study chronobiology suggest dela
 
 If your first coffee at 7 AM becomes your first coffee at 8:30 AM, that's not a small adjustment. It pulls your entire consumption window 90 minutes earlier — and at the other end of the day, 90 minutes matters.
 
+If caffeine is covering up chronic fatigue, calculate the underlying deficit with the [Sleep Debt Calculator](/sleep-debt-calculator) before adding another afternoon cup.
+
 ---
 
 **The 7-Day Sleep Reset Protocol walks through a full caffeine timing framework alongside the other five levers that most directly impact sleep quality. If you've been treating sleep as a willpower problem, this reframes it as a systems problem — with specific daily adjustments.**

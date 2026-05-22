@@ -136,3 +136,5 @@ Your brain has learned to associate your bed with wakefulness and anxiety rather
 - [How to Fall Asleep Fast: 10 Science-Backed Methods](/blog/how-to-fall-asleep-fast)
 - [Cognitive Shuffling: The Bedtime Trick That Quiets a Racing Mind](/blog/cognitive-shuffling)
 - [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
+
+**Before you reset:** Calculate your weekly deficit with the [Sleep Debt Calculator](/sleep-debt-calculator) so your circadian reset does not turn into unsafe catch-up sleep.

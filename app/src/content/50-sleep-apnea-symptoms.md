@@ -167,6 +167,8 @@ Sleep apnea is one of the most underdiagnosed conditions in the country. If you'
 
 Get tested. Treatment works. And in the meantime, [reset your sleep routine](/sleep-reset) to maximize whatever quality sleep you can get while you pursue a diagnosis.
 
+If your sleep log shows enough time in bed but you still feel exhausted, compare it with the [Sleep Debt Calculator](/sleep-debt-calculator) and treat snoring or gasping as a medical red flag.
+
 ---
 
 ## Keep Reading

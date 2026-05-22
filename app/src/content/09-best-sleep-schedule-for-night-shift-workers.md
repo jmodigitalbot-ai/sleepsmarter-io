@@ -19,6 +19,8 @@ For permanent night shift workers, maintain a consistent sleep schedule even on 
 - [When to Seek Professional Help](#when-to-seek-professional-help)
 - [Tools and Technology for Night Shift Success](#tools-and-technology-for-night-shift-success)
 
+Shift schedules can create hidden weekly deficits. The [Sleep Debt Calculator](/sleep-debt-calculator) can help you estimate the gap and plan recovery without swinging your clock too far.
+
 ---
 
 ## The Biological Battle: Why Night Shifts Disrupt Sleep

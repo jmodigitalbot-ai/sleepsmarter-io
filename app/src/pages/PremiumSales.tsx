@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
+import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
 export default function PremiumSales() {
   const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation-program#samcart-slide-open-right"
@@ -10,6 +11,7 @@ export default function PremiumSales() {
     trackSalesPageView('/premium', {
       page_title: 'Sleep Smarter Premium - 90-Day Implementation System'
     })
+    loadSamCartSlideScript()
   }, [])
 
   // Handler for checkout button clicks

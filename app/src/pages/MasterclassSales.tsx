@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
+import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
 export default function MasterclassSales() {
   const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right"
@@ -10,6 +11,7 @@ export default function MasterclassSales() {
     trackSalesPageView('/masterclass', {
       page_title: 'Sleep Smarter Masterclass - Transform Your Sleep'
     })
+    loadSamCartSlideScript()
   }, [])
 
   // Handler for checkout button clicks

@@ -31,6 +31,8 @@ interface SEOProps {
   schema?: object
 }
 
+type JsonLdSchema = Record<string, unknown>
+
 const SITE_NAME = 'Sleep Smarter'
 const SITE_URL = 'https://www.sleepsmarter.io'
 const DEFAULT_IMAGE = `${SITE_URL}/og-default.png`
@@ -159,7 +161,12 @@ export default function SEO({
   ].filter(Boolean)
 
   const activeSchema = schemas.length > 1
-    ? { '@context': 'https://schema.org', '@graph': schemas.map(s => { const { '@context': _, ...rest } = s as any; return rest }) }
+    ? { '@context': 'https://schema.org', '@graph': schemas.map(s => {
+        const schemaObject = s as JsonLdSchema
+        const rest = { ...schemaObject }
+        delete rest['@context']
+        return rest
+      }) }
     : schemas[0] || null
 
   // React 19 natively hoists these tags to <head>

@@ -4,6 +4,8 @@
 
 Sleep debt is the cumulative effect of insufficient sleep over time. While you can partially recover lost sleep, you can't fully "make up" for chronic sleep deprivation. The best strategy is consistent, quality sleep and strategic recovery techniques.
 
+Want your exact number? Use the free [Sleep Debt Calculator + 7-Day Recovery Planner](/sleep-debt-calculator) to total your last seven nights and build a safer recovery plan.
+
 ---
 
 ## Understanding Sleep Debt

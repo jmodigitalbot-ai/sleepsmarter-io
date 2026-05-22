@@ -22,6 +22,7 @@ const CORE_PAGES = [
   ['/', '2026-05-20', 'weekly', '1.0'],
   ['/blog', '2026-05-20', 'weekly', '0.9'],
   ['/calculator', '2026-02-23', 'monthly', '0.9'],
+  ['/sleep-debt-calculator', '2026-05-21', 'monthly', '0.9'],
   ['/sleep-reset', '2026-02-12', 'monthly', '0.8'],
   ['/about', '2026-02-04', 'monthly', '0.5'],
   ['/lp/sleep-calculator', '2026-02-23', 'monthly', '0.8'],

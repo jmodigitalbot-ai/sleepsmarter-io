@@ -13,6 +13,8 @@ This complete guide will explain exactly what a sleep calculator is, the science
 - [Common Mistakes People Make](#common-mistakes-people-make)
 - [Beyond the Calculator: Complete Sleep Optimization](#beyond-the-calculator-complete-sleep-optimization)
 
+If you are not just choosing tonight's bedtime but trying to recover from a rough week, use the [Sleep Debt Calculator](/sleep-debt-calculator) alongside this sleep cycle calculator.
+
 ---
 
 ## What Is a Sleep Calculator?

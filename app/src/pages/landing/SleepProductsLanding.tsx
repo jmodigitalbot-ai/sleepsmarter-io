@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { trackPageView } from '../../lib/analytics'
+import SEO from '../../components/SEO'
 
 export default function SleepProductsLanding() {
   useEffect(() => {
@@ -10,6 +11,12 @@ export default function SleepProductsLanding() {
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="Best Sleep Products 2026 — Expert Reviews & Recommendations"
+        description="Compare the best sleep products for better rest, including mattresses, pillows, and sleep accessories selected through independent sleep-focused research."
+        canonical="/lp/sleep-products"
+        type="website"
+      />
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-4 py-12 md:py-16 text-center">
         <div className="mb-4">

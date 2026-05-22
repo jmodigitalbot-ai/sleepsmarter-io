@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     
-    <!-- Google Tag Manager -->
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager (single Google loader; GA4/Google Ads events use dataLayer) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-HMNWV4K76J');
+      window.gtag('config', 'AW-17966119562');
+    </script>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -12,74 +18,8 @@
     })(window,document,'script','dataLayer','GTM-5VH27DL3');</script>
     <!-- End Google Tag Manager -->
     
-    <!-- Google Analytics (GA4) -->
-    <!-- Property ID: 523117386 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMNWV4K76J"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HMNWV4K76J');
-    </script>
-    
-    <!-- Google Ads Conversion Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17966119562"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17966119562');
-    </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8526903064118225" crossorigin="anonymous"></script>
-    
-    <!-- Meta Pixel -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1450933076812632');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1450933076812632&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel -->
-
-    <!-- Microsoft Clarity -->
-    <!-- Microsoft Clarity -->
-    <!-- Get tracking code from: Settings -> Setup -> Install manually -> Get tracking code -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "vgv1dsqzub");
-    </script>
-    
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😴</text></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sleep Smarter - Calculate Your Ideal Bedtime & Wake Time</title>
-    <meta name="description" content="Wake up refreshed every time. Calculate your ideal bedtime or wake-up time based on natural 90-minute sleep cycles. Free sleep calculator tool." />
-    <meta name="keywords" content="sleep calculator, bedtime calculator, wake up time, sleep cycles, 90 minute sleep" />
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Sleep Smarter - Wake Up Refreshed" />
-    <meta property="og:description" content="Calculate your ideal bedtime or wake-up time based on natural sleep cycles." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sleepsmarter.io" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Sleep Smarter - Wake Up Refreshed" />
-    <meta name="twitter:description" content="Calculate your ideal bedtime or wake-up time based on natural sleep cycles." />
-    
     <!-- Fonts - optimized loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -89,8 +29,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     </noscript>
     
-    <!-- SamCart Slide Checkout -->
-    <script defer="defer" src="https://static.samcart.com/checkouts/sc-slide-script.js"></script>
+    <!-- Revenue checkout is loaded on demand by sales-page components. -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->

@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 export default function Disclosure() {
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="Affiliate Disclosure — Sleep Smarter"
+        description="Learn how Sleep Smarter uses affiliate links and product recommendations while keeping our sleep calculator and educational content free."
+        canonical="/disclosure"
+        type="website"
+      />
       <div className="max-w-3xl mx-auto px-4 py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-8">
           Affiliate Disclosure

@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import About from './pages/About.tsx'
@@ -14,6 +14,7 @@ import Assessment from './pages/Assessment.tsx'
 import Quiz from './pages/Quiz.tsx'
 import ThankYou from './pages/ThankYou.tsx'
 import SleepReset from './pages/SleepReset.tsx'
+import SleepDebtCalculator from './pages/SleepDebtCalculator.tsx'
 import MasterclassSales from './pages/MasterclassSales.tsx'
 import PremiumSales from './pages/PremiumSales.tsx'
 import InsiderSales from './pages/InsiderSales.tsx'
@@ -24,10 +25,35 @@ import SleepTipsLanding from './pages/landing/SleepTipsLanding.tsx'
 import SleepProductsLanding from './pages/landing/SleepProductsLanding.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
 import CookieBanner from './components/CookieBanner.tsx'
-import { initGA4 } from './lib/analytics'
+import { initGA4, initMetaPixelWhenIdle } from './lib/analytics'
+import { initDelayedThirdPartyScripts, loadSamCartSlideScript, runWhenIdle } from './lib/thirdPartyScripts'
 
-// Initialize analytics
+// Initialize lightweight analytics/dataLayer immediately; delay nonessential pixels.
 initGA4()
+initMetaPixelWhenIdle()
+initDelayedThirdPartyScripts()
+
+const SAMCART_SLIDE_ROUTES = [
+  '/masterclass',
+  '/premium',
+  '/insider',
+  '/thank-you',
+  '/blueprint',
+  '/lp/sleep-calculator',
+]
+
+export function RouteThirdPartyScripts() {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (!SAMCART_SLIDE_ROUTES.includes(location.pathname)) return
+    return runWhenIdle(() => {
+      loadSamCartSlideScript()
+    }, 1500)
+  }, [location.pathname])
+
+  return null
+}
 
 const rootEl = document.getElementById('root')!
 const isPrerendered = rootEl.hasAttribute('data-prerendered')
@@ -36,6 +62,7 @@ const ui = (
   <StrictMode>
     <BrowserRouter>
       <ScrollToTop />
+      <RouteThirdPartyScripts />
       <CookieBanner />
       <Routes>
         <Route path="/" element={<App />} />
@@ -53,6 +80,7 @@ const ui = (
         <Route path="/assessment" element={<Assessment />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/sleep-reset" element={<SleepReset />} />
+        <Route path="/sleep-debt-calculator" element={<SleepDebtCalculator />} />
         <Route path="/masterclass" element={<MasterclassSales />} />
         <Route path="/premium" element={<PremiumSales />} />
         <Route path="/insider" element={<InsiderSales />} />

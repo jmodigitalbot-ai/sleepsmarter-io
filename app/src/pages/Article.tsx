@@ -38,8 +38,10 @@ export default function Article() {
   // Remove the frontmatter from markdown if present (only at very start of file)
   let cleanContent = article.content.replace(/^---[\s\S]*?---\n*/, '')
   
-  // Remove the first H1 title (we render it separately above)
-  cleanContent = cleanContent.replace(/^#\s+.+\n+/, '')
+  // Remove the first Markdown H1 title (we render article.title separately above).
+  // Some imported articles start directly with body copy, so do this defensively and
+  // tolerate leading whitespace without introducing empty H1s in rendered markdown.
+  cleanContent = cleanContent.replace(/^\s*#\s+.+\n+/, '')
 
   // Extract "Keep Reading" section so we can render it after FAQ + CTA
   let keepReadingContent = ''
@@ -147,6 +149,8 @@ export default function Article() {
               alt={article.featuredImageAlt || article.title}
               className="w-full h-auto"
               loading="eager"
+              fetchPriority="high"
+              decoding="async"
             />
           </div>
         )}
@@ -158,9 +162,11 @@ export default function Article() {
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
-              h1: ({ children }) => (
-                <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-8">{children}</h1>
-              ),
+              h1: ({ children }) => {
+                const text = Array.isArray(children) ? children.join('') : String(children ?? '')
+                if (!text.trim()) return null
+                return <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-8">{children}</h1>
+              },
               h2: ({ children }) => (
                 <h2 className="text-xl font-semibold text-[#a8dadc] mt-10 mb-4">{children}</h2>
               ),

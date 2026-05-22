@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import EmailCapture from '../../components/EmailCapture'
+import SEO from '../../components/SEO'
 import { trackPageView } from '../../lib/analytics'
 
 export default function SleepTipsLanding() {
@@ -11,6 +12,12 @@ export default function SleepTipsLanding() {
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="Sleep Tips — Can't Sleep? Quick Science-Backed Solutions"
+        description="Learn practical, science-backed sleep tips to quiet racing thoughts, fall asleep faster, and sleep more deeply starting tonight."
+        canonical="/lp/sleep-tips"
+        type="website"
+      />
       {/* Hero Section - Problem Agitation Solution */}
       <section className="max-w-4xl mx-auto px-4 py-12 md:py-16 text-center">
         <div className="mb-4">

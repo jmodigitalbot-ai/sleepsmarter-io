@@ -1,16 +1,25 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import SleepCalculator from '../../components/SleepCalculator'
+import SEO from '../../components/SEO'
 import { trackPageView } from '../../lib/analytics'
+import { loadSamCartSlideScript } from '../../lib/thirdPartyScripts'
 
 export default function SleepCalculatorLanding() {
   useEffect(() => {
     // Track landing page view
     trackPageView('/lp/sleep-calculator', 'Sleep Calculator - Free Sleep Cycle Calculator')
+    loadSamCartSlideScript()
   }, [])
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="Free Sleep Calculator — Find Your Ideal Bedtime"
+        description="Use the free Sleep Smarter calculator to find your ideal bedtime or wake-up time based on 90-minute sleep cycles and wake up refreshed."
+        canonical="/lp/sleep-calculator"
+        type="website"
+      />
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-4 py-12 md:py-16 text-center">
         <div className="mb-4">

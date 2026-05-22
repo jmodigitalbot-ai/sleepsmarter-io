@@ -5,6 +5,8 @@
  * and Google Tag Manager (GTM).
  */
 
+import { loadExternalScript, runAfterInteractionOrDelay } from './thirdPartyScripts'
+
 // GA4 Measurement ID from index.html
 // const GA4_MEASUREMENT_ID = 'G-HMNWV4K76J' // Unused but kept for reference
 
@@ -100,7 +102,7 @@ export const trackGoogleAdsConversion = (
 ): void => {
   if (typeof window === 'undefined') return
   
-  const conversionParams: any = {
+  const conversionParams: EventParams = {
     send_to: `${GOOGLE_ADS_CONVERSION_ID}/${conversionLabel}`,
     currency: currency
   }
@@ -288,23 +290,78 @@ export const trackPageView = (
 }
 
 // Type declarations for window object
+type MetaPixelFn = {
+  (...args: unknown[]): void
+  callMethod?: (...args: unknown[]) => void
+  queue: unknown[][]
+  loaded: boolean
+  version: string
+  push: MetaPixelFn
+}
+
 declare global {
   interface Window {
-    dataLayer: any[]
-    gtag: (...args: any[]) => void
+    dataLayer: EventParams[]
+    gtag: (...args: unknown[]) => void
+    fbq?: MetaPixelFn
+    _fbq?: MetaPixelFn
   }
 }
 
 // ─── Meta Pixel Events ────────────────────────────────────────────────────────
+
+const META_PIXEL_ID = '1450933076812632'
+let metaPixelInitialized = false
+
+const ensureMetaPixel = (): void => {
+  if (typeof window === 'undefined') return
+
+  if (!window.fbq) {
+    const fbq = function (...args: unknown[]) {
+      if (fbq.callMethod) {
+        fbq.callMethod(...args)
+      } else {
+        fbq.queue.push(args)
+      }
+    } as MetaPixelFn
+
+    fbq.push = fbq
+    fbq.loaded = true
+    fbq.version = '2.0'
+    fbq.queue = []
+    window.fbq = fbq
+    window._fbq = fbq
+  }
+
+  if (!metaPixelInitialized) {
+    window.fbq('init', META_PIXEL_ID)
+    window.fbq('track', 'PageView')
+    metaPixelInitialized = true
+  }
+
+  loadExternalScript('https://connect.facebook.net/en_US/fbevents.js', {
+    id: 'meta-pixel-script',
+    async: true,
+  })
+}
+
+/**
+ * Install the Meta Pixel queue after the critical render path. This preserves
+ * PageView measurement while keeping fbevents.js out of the initial document.
+ */
+export const initMetaPixelWhenIdle = (): (() => void) => {
+  return runAfterInteractionOrDelay(ensureMetaPixel, 30000)
+}
 
 /**
  * Fire a Meta Pixel standard event
  * @param eventName - Standard Meta event name (e.g. 'ViewContent', 'Purchase')
  * @param params - Optional event parameters
  */
-export const trackMetaEvent = (eventName: string, params?: Record<string, any>): void => {
+export const trackMetaEvent = (eventName: string, params?: EventParams): void => {
   if (typeof window === 'undefined') return
-  const fbq = (window as any).fbq
+  ensureMetaPixel()
+  const fbq = window.fbq
   if (!fbq) return
   if (params) {
     fbq('track', eventName, params)

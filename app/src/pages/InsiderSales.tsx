@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
+import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
 export default function InsiderSales() {
   const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right"
@@ -10,6 +11,7 @@ export default function InsiderSales() {
     trackSalesPageView('/insider', {
       page_title: 'Sleep Smarter Insider Membership'
     })
+    loadSamCartSlideScript()
   }, [])
 
   // Handler for checkout button clicks

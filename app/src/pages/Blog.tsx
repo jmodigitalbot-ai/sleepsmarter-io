@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { articles } from '../data/articles'
+import SEO from '../components/SEO'
 
 const POSTS_PER_PAGE = 6
 
@@ -21,6 +22,12 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="Sleep Science Blog — Better Sleep Guides & Product Reviews"
+        description="Evidence-based sleep guides, sleep product reviews, and practical tips to fall asleep faster, improve sleep quality, and wake up refreshed."
+        canonical="/blog"
+        type="website"
+      />
       {/* Header */}
       <header className="border-b border-[#4a4e69]/30">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">

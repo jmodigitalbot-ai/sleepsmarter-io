@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
 const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
 
@@ -10,6 +11,10 @@ export default function Blueprint() {
   const email = searchParams.get('email') || ''
   const [status, setStatus] = useState<Status>('loading')
   const [pdfUrl, setPdfUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    loadSamCartSlideScript()
+  }, [])
 
   useEffect(() => {
     if (!email) {

@@ -1,6 +1,14 @@
+import SEO from '../components/SEO'
+
 export default function About() {
   return (
     <div className="min-h-screen bg-[#1a1a2e]">
+      <SEO
+        title="About Sleep Smarter — Free Sleep Calculator & Sleep Education"
+        description="Learn about Sleep Smarter's mission to make sleep optimization simple with free sleep cycle tools, evidence-based sleep education, and practical guidance."
+        canonical="/about"
+        type="website"
+      />
       <div className="max-w-3xl mx-auto px-4 py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-[#f1faee] mb-8">
           About <span className="text-[#a8dadc]">Sleep Smarter</span>
