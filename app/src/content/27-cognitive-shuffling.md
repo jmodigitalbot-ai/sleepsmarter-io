@@ -125,8 +125,10 @@ Try it tonight. Pick a word. Picture a lemon.
 
 ---
 
+
 ## Keep Reading
 
-- [Sleep Anxiety: Why Your Mind Won't Shut Off (And How to Fix It)](/blog/sleep-anxiety-racing-mind)
-- [How Sleep Cycles Work: The Complete Guide to REM, Deep Sleep, and More](/blog/how-sleep-cycles-work)
-- [The 10-3-2-1-0 Sleep Rule: A Simple Formula for Better Sleep](/blog/10-3-2-1-0-sleep-rule)
+- [Anxiety Waves When Falling Asleep: Why It Happens and How to Stop It](/blog/anxiety-waves-when-falling-asleep)
+- [Yoga Nidra and NSDR: The Science Behind the Sleep Trick That Actually Works](/blog/yoga-nidra-nsdr-sleep)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)

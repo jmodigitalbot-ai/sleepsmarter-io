@@ -88,8 +88,10 @@ Start with elimination, not addition. Figure out what's triggering the cortisol 
 
 ---
 
+
 ## Keep Reading
 
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
-- [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
-- [Cognitive Shuffling: The Viral Bedtime Trick That Quiets a Racing Mind](/blog/cognitive-shuffling)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Late Night Snacking: Does Eating Before Bed Ruin Your Sleep?](/blog/eating-before-bed-sleep)
+- [Alcohol and Sleep: Why That Nightcap Is Ruining Your Deep Sleep](/blog/alcohol-and-sleep)
+- [Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)](/blog/waking-up-at-3am-every-night)

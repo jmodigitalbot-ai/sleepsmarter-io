@@ -107,8 +107,10 @@ The brain also develops conditioned anxiety around 3 AM: you've woken there ofte
 
 The good news is that sleep maintenance problems are among the most treatable forms of insomnia when the causes are addressed systematically. Most people see meaningful improvement in 2–4 weeks of consistent application.
 
+
 ## Keep Reading
 
-- [Cognitive Shuffling: The Viral Bedtime Trick That Quiets a Racing Mind](/blog/cognitive-shuffling)
-- [Sleep-Onset Anxiety: Why Your Brain Activates at Bedtime](/blog/sleep-onset-anxiety)
-- [How Sleep Cycles Work: The Complete Guide to REM, Deep Sleep, and More](/blog/how-sleep-cycles-work)
+- [Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)](/blog/waking-up-at-3am-every-night)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Why You Wake Up in the Middle of the Night (And How to Fix It)](/blog/why-you-wake-up-in-the-middle-of-the-night)

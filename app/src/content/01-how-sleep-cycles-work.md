@@ -298,8 +298,10 @@ Ready to put this knowledge into action? **[Try our free sleep calculator](/calc
 
 ---
 
+
 ## Keep Reading
-- [Best Time to Wake Up](/blog/best-time-to-wake-up) - Learn more about morning optimization
-- [How Much Sleep Do I Need](/blog/how-much-sleep-do-i-need) - Find your personal sleep requirements
-- [Why Do I Wake Up Tired](/blog/why-do-i-wake-up-tired) - Troubleshoot morning fatigue
-- [Sleep Calculator Guide](/blog/sleep-calculator-guide) - Master the sleep calculator tool
+
+- [How Much Sleep Do I Need? Sleep Needs by Age](/blog/how-much-sleep-do-i-need)
+- [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired)
+- [How to Get More REM Sleep: Why Your Brain Needs It and How to Fix the Deficit](/blog/how-to-get-more-rem-sleep)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)

@@ -548,10 +548,10 @@ Ready to stop waking up exhausted? **[Try our free sleep calculator](/calculator
 
 ---
 
-## Keep Reading
-- [How Sleep Cycles Work](/blog/how-sleep-cycles-work) - Understand why timing affects tiredness
-- [Best Time to Wake Up](/blog/best-time-to-wake-up) - Find your optimal wake time
-- [How Much Sleep Do I Need](/blog/how-much-sleep-do-i-need) - Determine your personal sleep requirement
-- [Sleep Calculator Guide](/blog/sleep-calculator-guide) - Learn to use the calculator effectively
 
-**Check your week:** If morning fatigue is building, the [Sleep Debt Calculator](/sleep-debt-calculator) can show whether you are carrying a hidden weekly deficit.
+## Keep Reading
+
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work)
+- [How Much Sleep Do I Need? Sleep Needs by Age](/blog/how-much-sleep-do-i-need)
+- [Sleep Apnea Symptoms: How to Tell If You Have It (Before a Doctor Does)](/blog/sleep-apnea-symptoms)
+- [Sleep Calculator: How to Use It for Better Rest](/blog/sleep-calculator-guide)

@@ -120,9 +120,10 @@ You can sleep through the night again. Most people just haven't figured out *why
 
 ---
 
+
 ## Keep Reading
 
-- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
-- [Magnesium for Sleep: What the Research Actually Says](/blog/magnesium-for-sleep)
-- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
-- [Cognitive Shuffling: The Viral Technique for Falling Asleep Faster](/blog/cognitive-shuffling)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Why You Wake Up in the Middle of the Night (And How to Fix It)](/blog/why-you-wake-up-in-the-middle-of-the-night)
+- [Late Night Snacking: Does Eating Before Bed Ruin Your Sleep?](/blog/eating-before-bed-sleep)

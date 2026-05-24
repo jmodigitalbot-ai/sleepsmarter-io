@@ -488,8 +488,10 @@ Stop gambling with your mornings. **[Use our free sleep calculator](/calculator)
 
 ---
 
+
 ## Keep Reading
-- [How Sleep Cycles Work](/blog/how-sleep-cycles-work) - Deep dive into the science behind calculations
-- [Best Time to Wake Up](/blog/best-time-to-wake-up) - Optimize your morning start time
-- [How Much Sleep Do I Need](/blog/how-much-sleep-do-i-need) - Determine your ideal cycle count
-- [Why Do I Wake Up Tired](/blog/why-do-i-wake-up-tired) - Troubleshoot if the calculator isn't enough
+
+- [Best Time to Wake Up: Science-Backed Guide](/blog/best-time-to-wake-up)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work)

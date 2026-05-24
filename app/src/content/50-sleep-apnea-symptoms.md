@@ -171,8 +171,10 @@ If your sleep log shows enough time in bed but you still feel exhausted, compare
 
 ---
 
+
 ## Keep Reading
 
-- [Why You Wake Up at 3AM: The Real Reasons](/blog/why-do-i-wake-up-at-3am)
-- [Sleeping 8 Hours But Still Tired? Here's the Real Reason](/blog/sleeping-8-hours-still-tired)
-- [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
+- [Mouth Taping for Sleep: The Science, Benefits, and How to Do It Safely](/blog/mouth-taping-for-sleep)
+- [Exercise and Sleep: The Best Time to Work Out for Better Sleep](/blog/exercise-and-sleep)
+- [How to Get More REM Sleep: Why Your Brain Needs It and How to Fix the Deficit](/blog/how-to-get-more-rem-sleep)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)

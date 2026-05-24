@@ -112,8 +112,10 @@ For a full, structured approach to rebuilding your sleep from the ground up, the
 
 ---
 
+
 ## Keep Reading
 
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)
 - [Natural Sleep Aids That Actually Work (Ranked by Evidence)](/blog/natural-sleep-aids)
 - [Melatonin for Sleep: The Right Dose (And Why You're Probably Taking Too Much)](/blog/melatonin-for-sleep)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)

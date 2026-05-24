@@ -205,8 +205,10 @@ Your skin touches your pillowcase for 2,500+ hours per year. That's worth invest
 - [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work)
 - [Best Mattresses for Back Pain (2026 Reviews)](/blog/best-mattresses-for-back-pain)
 
+
 ## Keep Reading
 
-- [Sleep Temperature Optimization: The Science of Sleeping Cool](/blog/sleep-temperature-optimization)
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
-- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
+- [Best White Noise Machines for Sleep (2026 Guide)](/blog/best-white-noise-machines-for-sleep)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [Best Mattresses for Back Sleepers: Sleep Better Without Back Pain](/blog/best-mattresses-for-back-sleepers)
+- [Mouth Taping for Sleep: The Science, Benefits, and How to Do It Safely](/blog/mouth-taping-for-sleep)

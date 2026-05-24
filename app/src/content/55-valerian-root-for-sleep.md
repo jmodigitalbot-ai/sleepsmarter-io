@@ -150,8 +150,10 @@ The thing valerian has going for it above almost any alternative: no meaningful 
 
 What it won't do is fix the structural causes of poor sleep — an unsupportive mattress disrupting your position all night, inconsistent wake times, or unaddressed sleep apnea. Supplements address biochemistry. The physical environment and behavioral patterns are separate levers. The most effective approach treats both.
 
+
 ## Keep Reading
 
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
-- [Ashwagandha for Sleep: Does It Actually Work?](/blog/ashwagandha-for-sleep)
 - [L-Theanine for Sleep: Does It Actually Work?](/blog/l-theanine-for-sleep)
+- [Ashwagandha for Sleep: Does It Actually Work?](/blog/ashwagandha-for-sleep)
+- [Natural Sleep Aids That Actually Work (Ranked by Evidence)](/blog/natural-sleep-aids)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)

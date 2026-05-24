@@ -118,8 +118,10 @@ It's also cheap enough that the trial cost is low. A three-month supply of a qua
 
 The people who benefit most are usually surprised it works. The people who don't benefit usually have a different underlying cause for their poor sleep — one that L-theanine's mechanism doesn't address.
 
+
 ## Keep Reading
 
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)
 - [Ashwagandha for Sleep: Does It Actually Work?](/blog/ashwagandha-for-sleep)
-- [Natural Sleep Aids That Actually Work (Ranked by Evidence)](/blog/natural-sleep-aids-that-actually-work)
+- [Anxiety Waves When Falling Asleep: Why It Happens and How to Stop It](/blog/anxiety-waves-when-falling-asleep)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)

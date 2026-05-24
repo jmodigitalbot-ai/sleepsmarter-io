@@ -84,16 +84,10 @@ If you're waking at 3AM and lying there calculating how many hours you have left
 
 ---
 
+
 ## Keep Reading
 
-**[Magnesium for Sleep: Does It Actually Work? (What the Science Says)](/blog/magnesium-for-sleep)**
-The research on magnesium is more nuanced than most supplement sites admit. Here's what actually works, what doesn't, and which form to take.
-
-**[Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)**
-The cortisol-anxiety feedback loop runs in both directions. If racing thoughts are part of your 3AM pattern, this is the companion read.
-
-**[Cognitive Shuffling: The Viral Technique for Falling Asleep Faster](/blog/cognitive-shuffling)**
-When you're wide awake at 3AM with a looping mental narrative, cognitive shuffling is the fastest way to interrupt it.
-
-**[What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)**
-More deep sleep in the first half of the night means a more stable second half. Here's what the data says actually moves the needle.
+- [Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)](/blog/waking-up-at-3am-every-night)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Why You Wake Up in the Middle of the Night (And How to Fix It)](/blog/why-you-wake-up-in-the-middle-of-the-night)

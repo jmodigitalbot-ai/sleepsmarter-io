@@ -96,7 +96,10 @@ Mouth breathing is an evolutionary backup plan that has somehow become the moder
 
 It may feel a bit unnatural for the first few nights, and you might wake up to find you have instinctively pulled the tape off in your sleep. That is completely normal. Keep practicing. Within a week or two, the tape will stay on until morning, and you will likely experience a profound difference in your energy levels, mental clarity, and the deep, unbroken quality of your sleep.
 
+
 ## Keep Reading
-- [Why You Wake Up in the Middle of the Night (And How to Fix It)](/blog/why-you-wake-up-in-the-middle-of-the-night)
-- [What Actually Increases Deep Sleep?](/blog/what-actually-increases-deep-sleep)
-- [How Sleep Cycles Work: The Ultimate Guide](/blog/how-sleep-cycles-work)
+
+- [Sleep Apnea Symptoms: How to Tell If You Have It (Before a Doctor Does)](/blog/sleep-apnea-symptoms)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [Best Mattresses for Back Sleepers: Sleep Better Without Back Pain](/blog/best-mattresses-for-back-sleepers)
+- [Best Silk Pillowcases for Sleep: Smoother Skin, Better Hair, Deeper Rest](/blog/best-silk-pillowcases-for-sleep)

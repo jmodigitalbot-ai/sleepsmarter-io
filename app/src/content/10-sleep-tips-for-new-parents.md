@@ -244,9 +244,10 @@ Surviving the first year isn't about achieving perfect sleep — it's about find
 
 ---
 
+
 ## Keep Reading
-- [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired) - Understanding morning fatigue and how to overcome it
-- [How Much Sleep Do I Need? Sleep Needs by Age](/blog/how-much-sleep-do-i-need) - Find the right amount of sleep for every family member
-- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule) - A simple framework to improve your sleep routine
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast) - Essential when you only have a short window to sleep
-- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired) - Why your sleep quality may be the real issue
+
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Best Mattresses for Back Sleepers: Sleep Better Without Back Pain](/blog/best-mattresses-for-back-sleepers)

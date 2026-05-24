@@ -134,8 +134,10 @@ The most effective use of natural sleep aids is as support on top of a reasonabl
 
 If you've been relying on poor sleep patterns and a supplement stack to get by, a structured reset will do more than any bottle of capsules. The [Sleep Reset Protocol](/sleep-reset) walks you through a systematic approach to fixing the underlying issues, not just papering over them.
 
+
 ## Keep Reading
 
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)
 - [Melatonin for Sleep: The Right Dose (And Why You're Probably Taking Too Much)](/blog/melatonin-for-sleep)
-- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-ups)
-- [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
+- [L-Theanine for Sleep: Does It Actually Work?](/blog/l-theanine-for-sleep)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)

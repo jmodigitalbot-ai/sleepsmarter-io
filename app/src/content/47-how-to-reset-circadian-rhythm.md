@@ -132,9 +132,10 @@ Your brain has learned to associate your bed with wakefulness and anxiety rather
   </a>
 </div>
 
-## Keep Reading
-- [How to Fall Asleep Fast: 10 Science-Backed Methods](/blog/how-to-fall-asleep-fast)
-- [Cognitive Shuffling: The Bedtime Trick That Quiets a Racing Mind](/blog/cognitive-shuffling)
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
 
-**Before you reset:** Calculate your weekly deficit with the [Sleep Debt Calculator](/sleep-debt-calculator) so your circadian reset does not turn into unsafe catch-up sleep.
+## Keep Reading
+
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)
+- [Blue Light and Sleep: Why Screens Keep You Awake (And How to Fix It)](/blog/blue-light-sleep)
+- [What Is Sleep Debt? Can You Really Catch Up on Sleep?](/blog/what-is-sleep-debt)

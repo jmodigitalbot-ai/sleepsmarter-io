@@ -109,8 +109,10 @@ If you've been dealing with sleep-onset anxiety for more than a few weeks, the m
 
 ---
 
+
 ## Keep Reading
 
-- [Why You Wake Up Tired After 8 Hours of Sleep (The Sleep Cycle Problem)](/blog/why-do-i-wake-up-tired)
-- [The 10-3-2-1-0 Sleep Rule: Does It Actually Work?](/blog/10-3-2-1-0-sleep-rule)
-- [Blue Light and Sleep: Why Screens Keep You Awake (And How to Fix It)](/blog/blue-light-sleep)
+- [Anxiety Waves When Falling Asleep: Why It Happens and How to Stop It](/blog/anxiety-waves-when-falling-asleep)
+- [Yoga Nidra and NSDR: The Science Behind the Sleep Trick That Actually Works](/blog/yoga-nidra-nsdr-sleep)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)

@@ -334,10 +334,10 @@ Your health and well-being are worth the effort. With each small improvement to 
 
 ---
 
+
 ## Keep Reading
 
-- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work) — Understand the science behind your sleep
-- [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired) — Troubleshoot what's dragging you down
-- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule) — A simple framework for better sleep hygiene
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast) — Especially useful when trying to sleep at unusual hours
-- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired) — Shift workers often face this paradox
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [How to Fix Your Sleep Schedule and Reset Your Circadian Rhythm](/blog/how-to-reset-circadian-rhythm)
+- [How to Fix Your Sleep Schedule in 3 Days: A Step-by-Step Guide](/blog/fix-sleep-schedule)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)

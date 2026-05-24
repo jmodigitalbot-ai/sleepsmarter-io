@@ -76,8 +76,10 @@ Resetting your sleep schedule isn't about perfection—it's about creating susta
 - [Blackout curtains](https://www.amazon.com/dp/B01F9G2MC4?tag=19830c0a-20)
 
 *Disclaimer: Always consult with a healthcare professional before making significant changes to your sleep routine.*
+
 ## Keep Reading
 
-- [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule)
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
-- [What Is Sleep Debt (And How to Pay It Back)](/blog/what-is-sleep-debt)
+- [How to Fix Your Sleep Schedule and Reset Your Circadian Rhythm](/blog/how-to-reset-circadian-rhythm)
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Exercise and Sleep: The Best Time to Work Out for Better Sleep](/blog/exercise-and-sleep)

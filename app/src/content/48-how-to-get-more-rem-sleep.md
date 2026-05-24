@@ -120,8 +120,10 @@ If you want a structured system for fixing your sleep at every level — not jus
 
 ---
 
+
 ## Keep Reading
 
+- [Sleep Apnea Symptoms: How to Tell If You Have It (Before a Doctor Does)](/blog/sleep-apnea-symptoms)
+- [Exercise and Sleep: The Best Time to Work Out for Better Sleep](/blog/exercise-and-sleep)
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work)
 - [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
-- [Melatonin for Sleep: The Right Dose (And Why You're Probably Taking Too Much)](/blog/melatonin-for-sleep-the-right-dose)
-- [Caffeine and Sleep: Why Your Afternoon Coffee Is Ruining Your Deep Sleep](/blog/caffeine-and-sleep-afternoon-coffee-deep-sleep)

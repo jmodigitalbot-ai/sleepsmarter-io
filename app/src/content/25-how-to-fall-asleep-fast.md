@@ -186,8 +186,10 @@ Start here:
 If you want a clearer picture of what's specifically driving your sleep issues, [take our free Sleep Assessment](/sleep-reset) — it identifies the primary factors keeping you from quality sleep and gives you a personalized starting point.
 
 ---
+
 ## Keep Reading
 
-- [Sleep Anxiety: Why Your Mind Won't Shut Off (And How to Fix It)](/blog/sleep-anxiety-racing-mind)
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
-- [The 10-3-2-1-0 Sleep Rule: A Simple Formula for Better Sleep](/blog/10-3-2-1-0-sleep-rule)
+- [Yoga Nidra and NSDR: The Science Behind the Sleep Trick That Actually Works](/blog/yoga-nidra-nsdr-sleep)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [5 Signs Your Sleep Tracker Is Hurting More Than Helping](/blog/sleep-tracker-hurting-more-than-helping)
+- [Orthosomnia: When Sleep Tracking Starts Hurting Your Sleep](/blog/orthosomnia-sleep-tracker-anxiety)

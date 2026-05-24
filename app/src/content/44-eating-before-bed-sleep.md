@@ -109,23 +109,10 @@ We created the **7-Day Sleep Reset Protocol** specifically for people who feel l
   </a>
 </div>
 
+
 ## Keep Reading
 
-*   [Why You Wake Up at 3AM: The Cortisol and Blood Sugar Explanation](/blog/why-you-wake-up-at-3am-cortisol-blood-sugar)
-*   [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
-*   [Caffeine and Sleep: Why Your Afternoon Coffee Is Ruining Your Deep Sleep](/blog/caffeine-and-sleep)
-
-
-### Intermittent Fasting and Sleep
-With the rise of intermittent fasting, many people intentionally push their eating windows later into the evening, or alternatively, stop eating very early in the day. Both extremes can have profound impacts on your sleep quality.
-
-If your feeding window ends very early (for instance, 2 PM), your body may enter a deeply fasted state by the time you try to sleep at 10 PM. For some, this triggers an increase in orexin, a neuropeptide that promotes wakefulness and arousal. Your body essentially signals that it is time to hunt for food rather than rest.
-
-On the flip side, if your fasting window pushes all your caloric intake into a massive meal right before bed, your digestive system is burdened with processing thousands of calories while you lie horizontally. This not only spikes insulin but dramatically increases your core temperature during the exact hours it should be dropping. The ideal approach for sleep is a balanced eating window that concludes 3-4 hours before your target bedtime, allowing insulin to stabilize and digestion to complete its most intensive phases.
-
-### The Gut-Brain Connection and Sleep
-Emerging research highlights the incredible communication between your gut microbiome and your brain, often referred to as the gut-brain axis. A massive portion of your body's serotonin—a precursor to melatonin—is produced in the gut.
-
-When you consume a diet high in ultra-processed foods, artificial sweeteners, and refined sugars, especially late at night, you can disrupt the balance of healthy bacteria in your microbiome. This dysbiosis can lead to systemic inflammation and a reduction in the natural production of sleep-promoting neurotransmitters. 
-
-Supporting your gut health by avoiding late-night junk food and incorporating fiber-rich, whole foods earlier in the day is not just good for digestion; it is a foundational strategy for long-term sleep optimization. Your gut bacteria operate on their own circadian rhythms, and feeding them at the wrong times of night confuses their internal clocks, which in turn confuses yours.
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Alcohol and Sleep: Why That Nightcap Is Ruining Your Deep Sleep](/blog/alcohol-and-sleep)
+- [Why You Wake Up at 3AM: The Cortisol and Blood Sugar Explanation](/blog/why-you-wake-up-at-3am-cortisol-blood-sugar)

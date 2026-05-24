@@ -69,7 +69,10 @@ Sleep is a highly complex, multi-layered biological puzzle, and there is rarely 
 
 By mimicking the calming, grounding embrace of a firm hug, a weighted blanket might just be the missing physical piece in your ongoing quest for a truly restorative night's sleep.
 
-### Keep Reading
-- [How to Fix Your Sleep Schedule in 3 Days](/blog/how-to-fix-your-sleep-schedule-in-3-days)
-- [Why Do I Wake Up Tired?](/blog/why-do-i-wake-up-tired)
-- [The Best White Noise Machines for Deep Sleep](/blog/best-white-noise-machines-for-sleep)
+
+## Keep Reading
+
+- [Best White Noise Machines for Sleep (2026 Guide)](/blog/best-white-noise-machines-for-sleep)
+- [Yoga Nidra and NSDR: The Science Behind the Sleep Trick That Actually Works](/blog/yoga-nidra-nsdr-sleep)
+- [Anxiety Waves When Falling Asleep: Why It Happens and How to Stop It](/blog/anxiety-waves-when-falling-asleep)
+- [Mouth Taping for Sleep: The Science, Benefits, and How to Do It Safely](/blog/mouth-taping-for-sleep)

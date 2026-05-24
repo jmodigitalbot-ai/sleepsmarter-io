@@ -117,9 +117,10 @@ If you've been waking up at the same time for more than four weeks, none of the 
 
 What it almost never requires is simply trying harder to sleep. Sleep is a biological process you can support — not one you can force.
 
+
 ## Keep Reading
 
-- [How Sleep Anxiety Hijacks Your Night — And What to Do About It](/blog/sleep-anxiety)
-- [Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)
-- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
-- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Late Night Snacking: Does Eating Before Bed Ruin Your Sleep?](/blog/eating-before-bed-sleep)
+- [Alcohol and Sleep: Why That Nightcap Is Ruining Your Deep Sleep](/blog/alcohol-and-sleep)
+- [Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)](/blog/waking-up-at-3am-every-night)

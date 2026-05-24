@@ -44,7 +44,7 @@ This is a conditioned response — the same mechanism behind any learned fear. Y
 
 The classic spiral looks like this: "I need to sleep" → "Why can't I sleep?" → "I'll be useless tomorrow" → "I'm going to ruin everything" → cortisol spike → you're now more awake than you were an hour ago.
 
-This is compounded when you're already sleep-deprived. [Sleep debt makes you more emotionally reactive](/blog/sleep-debt), which means your thoughts hit harder and your nervous system escalates faster. The nights you most need sleep are often the nights this cycle is worst.
+This is compounded when you're already sleep-deprived. [Sleep debt makes you more emotionally reactive](/blog/what-is-sleep-debt), which means your thoughts hit harder and your nervous system escalates faster. The nights you most need sleep are often the nights this cycle is worst.
 
 ---
 
@@ -132,11 +132,11 @@ These are the common mistakes that make sleep anxiety worse. If you're doing any
 
 **Don't force it harder.** If you've been lying awake for more than 20 minutes, get up. Do something calm and low-light (reading, gentle stretching) until you feel sleepy again. Staying in bed awake trains your brain that bed = restlessness.
 
-**Don't catastrophize the bad night.** [One night of poor sleep won't wreck your health or your performance](/blog/sleep-debt) — but believing it will creates a stress response that compounds the problem. You've survived bad nights before. You'll survive this one.
+**Don't catastrophize the bad night.** [One night of poor sleep won't wreck your health or your performance](/blog/what-is-sleep-debt) — but believing it will creates a stress response that compounds the problem. You've survived bad nights before. You'll survive this one.
 
 **Don't rely on sleep aids as a primary strategy.** Sleep aids can break an acute cycle in the short term, but they don't resolve the conditioned anxiety pattern. You can end up dependent on them and still anxious.
 
-**Don't scroll your phone in bed.** Not just because of blue light — though [bedroom temperature and light do matter](/blog/sleep-temperature) — but because it reinforces the association between your bed and mental stimulation. Keep the bed for sleep and intimacy only.
+**Don't scroll your phone in bed.** Not just because of blue light — though [bedroom temperature and light do matter](/blog/sleep-temperature-optimization) — but because it reinforces the association between your bed and mental stimulation. Keep the bed for sleep and intimacy only.
 
 ---
 
@@ -178,8 +178,10 @@ The **[7-Day Sleep Reset Protocol](/sleep-reset)** is a step-by-step system that
 
 Seven days. Real structure. Better sleep — not just tips you try once and forget.
 
+
 ## Keep Reading
 
-- [Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)
-- [Cognitive Shuffling: The Viral Technique for Falling Asleep Faster](/blog/cognitive-shuffling)
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
+- [Yoga Nidra and NSDR: The Science Behind the Sleep Trick That Actually Works](/blog/yoga-nidra-nsdr-sleep)
+- [Sleep-Onset Anxiety: Why Your Brain Activates at Bedtime](/blog/sleep-onset-anxiety)
+- [Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)](/blog/waking-up-at-3am-every-night)
+- [Anxiety Waves When Falling Asleep: Why It Happens and How to Stop It](/blog/anxiety-waves-when-falling-asleep)

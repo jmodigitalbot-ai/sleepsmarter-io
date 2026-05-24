@@ -114,9 +114,10 @@ The good news: for the vast majority of people reading this, what you're experie
 
 ---
 
+
 ## Keep Reading
 
-- [Sleep-Onset Anxiety: Why Your Brain Turns On When You Lie Down](/blog/sleep-onset-anxiety)
-- [Cognitive Shuffling: The Viral Technique for Falling Asleep Faster](/blog/cognitive-shuffling)
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
-- [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
+- [Yoga Nidra and NSDR: The Science Behind the Sleep Trick That Actually Works](/blog/yoga-nidra-nsdr-sleep)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)
+- [L-Theanine for Sleep: Does It Actually Work?](/blog/l-theanine-for-sleep)

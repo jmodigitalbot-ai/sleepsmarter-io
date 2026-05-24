@@ -169,8 +169,10 @@ Not sure whether a nap is helping or hiding a bigger deficit? Check your last se
 - [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired)
 - [The 10-3-2-1-0 Sleep Rule Explained](/blog/10-3-2-1-0-sleep-rule)
 
+
 ## Keep Reading
 
-- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
-- [How Much Sleep Do I Need? The Science-Backed Answer](/blog/how-much-sleep-do-i-need)
-- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work)
+- [How to Fix Your Sleep Schedule and Reset Your Circadian Rhythm](/blog/how-to-reset-circadian-rhythm)

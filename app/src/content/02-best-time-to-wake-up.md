@@ -378,8 +378,10 @@ Ready to find your perfect wake time? **[Use our free sleep calculator](/calcula
 
 ---
 
+
 ## Keep Reading
-- [How Sleep Cycles Work](/blog/how-sleep-cycles-work) - Understand the science behind the calculations
-- [Why Do I Wake Up Tired](/blog/why-do-i-wake-up-tired) - Troubleshoot persistent morning fatigue
-- [How Much Sleep Do I Need](/blog/how-much-sleep-do-i-need) - Find your optimal sleep duration
-- [Sleep Calculator Guide](/blog/sleep-calculator-guide) - Master the tool for perfect mornings
+
+- [Sleep Calculator: How to Use It for Better Rest](/blog/sleep-calculator-guide)
+- [How Sleep Cycles Work: The Complete Guide](/blog/how-sleep-cycles-work)
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)

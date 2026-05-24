@@ -94,8 +94,10 @@ None of this is fast. A dysregulated HPA axis took time to get there, and it tak
 
 ---
 
+
 ## Keep Reading
 
-- [Why You Keep Waking Up at 3AM — The Cortisol Explanation](/blog/waking-up-at-3am)
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
-- [Cognitive Shuffling: The Viral Bedtime Trick That Quiets a Racing Mind](/blog/cognitive-shuffling-for-sleep)
+- [Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)](/blog/waking-up-at-3am-every-night)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Why You Wake Up at 3AM: The Cortisol and Blood Sugar Explanation](/blog/why-you-wake-up-at-3am-cortisol-blood-sugar)
+- [Exercise and Sleep: The Best Time to Work Out for Better Sleep](/blog/exercise-and-sleep)

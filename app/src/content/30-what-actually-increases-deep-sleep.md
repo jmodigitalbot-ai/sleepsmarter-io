@@ -96,13 +96,10 @@ None of this is glamorous. It won't sell bottles at $60/month. But if you've bee
 
 ---
 
+
 ## Keep Reading
 
-**[Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired)**  
-If you're getting enough hours but still waking up exhausted, the problem may not be quantity — it's quality. We break down the most common culprits.
-
-**[How Much Sleep Do I Need? Sleep Needs by Age](/blog/how-much-sleep-do-i-need)**  
-The 8-hour rule isn't universal. Here's what the research actually says about optimal sleep duration across different life stages.
-
-**[The 10-3-2-1-0 Sleep Rule: A Simple Formula for Better Sleep](/blog/10-3-2-1-0-sleep-rule)**  
-One of the most effective behavioral frameworks for sleep improvement — and it costs nothing to try tonight.
+- [Exercise and Sleep: The Best Time to Work Out for Better Sleep](/blog/exercise-and-sleep)
+- [5 Signs Your Sleep Tracker Is Hurting More Than Helping](/blog/sleep-tracker-hurting-more-than-helping)
+- [Orthosomnia: When Sleep Tracking Starts Hurting Your Sleep](/blog/orthosomnia-sleep-tracker-anxiety)
+- [Sleep Apnea Symptoms: How to Tell If You Have It (Before a Doctor Does)](/blog/sleep-apnea-symptoms)

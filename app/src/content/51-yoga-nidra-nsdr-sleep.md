@@ -138,8 +138,10 @@ The next time you find yourself staring at the ceiling, fighting a losing battle
 
 ---
 
-### Keep Reading
 
-- [Cognitive Shuffling: The Science-Backed Sleep Trick for Overthinkers](/blog/27-cognitive-shuffling)
-- [What Actually Increases Deep Sleep (Beyond the Basics)](/blog/30-what-actually-increases-deep-sleep)
-- [How to Fix Your Sleep Schedule and Reset Your Circadian Rhythm](/blog/47-how-to-reset-circadian-rhythm)
+## Keep Reading
+
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [Anxiety Waves When Falling Asleep: Why It Happens and How to Stop It](/blog/anxiety-waves-when-falling-asleep)
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)
+- [L-Theanine for Sleep: Does It Actually Work?](/blog/l-theanine-for-sleep)

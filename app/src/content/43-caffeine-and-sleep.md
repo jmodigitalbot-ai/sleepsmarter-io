@@ -135,8 +135,10 @@ The goal isn't to quit caffeine. It's to stop letting a 2 PM latte undo what an 
 
 ---
 
+
 ## Keep Reading
 
-- [Alcohol and Sleep: Why Drinking Ruins Your Sleep Quality (Even If It Knocks You Out)](/blog/alcohol-and-sleep)
-- [Magnesium for Sleep: Which Form Actually Works and How to Take It](/blog/magnesium-for-sleep)
-- [The 10-3-2-1-0 Sleep Rule: A Simple Framework for Better Nights](/blog/10-3-2-1-0-sleep-rule)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Alcohol and Sleep: Why That Nightcap Is Ruining Your Deep Sleep](/blog/alcohol-and-sleep)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Late Night Snacking: Does Eating Before Bed Ruin Your Sleep?](/blog/eating-before-bed-sleep)

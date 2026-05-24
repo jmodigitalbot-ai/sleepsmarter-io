@@ -124,7 +124,7 @@ For a simpler approach, calculate sleep debt manually by determining your indivi
 
 Modern technology offers both challenges and solutions for managing sleep debt. Meditation apps like Headspace, Calm, and Insight Timer provide guided relaxation that can improve sleep quality. Blue light blocking technology, including [specialized glasses](https://www.amazon.com/dp/B01GSFTX08?tag=19830c0a-20), can help minimize the sleep-disrupting effects of evening screen time.
 
-Environmental control tools like [white noise machines](/blog/best-white-noise-machines) such as the [LectroFan EVO](https://www.amazon.com/dp/B074FL2HL2?tag=19830c0a-20) can improve sleep quality by masking disruptive noises and creating consistent acoustic environments that promote faster sleep onset and deeper rest.
+Environmental control tools like [white noise machines](/blog/best-white-noise-machines-for-sleep) such as the [LectroFan EVO](https://www.amazon.com/dp/B074FL2HL2?tag=19830c0a-20) can improve sleep quality by masking disruptive noises and creating consistent acoustic environments that promote faster sleep onset and deeper rest.
 
 ---
 
@@ -154,8 +154,10 @@ The key lies in understanding that consistency trumps perfection. Rather than tr
 **Affiliate Disclosure:** Sleep Smarter participates in the Amazon Associates program. When you purchase products through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe will help you sleep better.
 
 *Disclaimer: This article is for informational purposes. Individual sleep needs vary, and persistent sleep issues should be discussed with healthcare professionals.*
+
 ## Keep Reading
 
-- [Sleeping 8 Hours But Still Tired? Here's Why](/blog/sleeping-8-hours-still-tired)
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
-- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
+- [Sleep and Productivity: Why Rest Makes You More Effective](/blog/sleep-and-productivity)
+- [Daylight Saving Time: How to Adjust Your Sleep Without Losing Productivity](/blog/daylight-saving-time-sleep-tips)
+- [How to Fix Your Sleep Schedule and Reset Your Circadian Rhythm](/blog/how-to-reset-circadian-rhythm)
+- [Best Time to Wake Up: Science-Backed Guide](/blog/best-time-to-wake-up)

@@ -210,8 +210,10 @@ If you want the body-contouring benefits of foam but with more control than stan
 - You prefer sleeping "on" vs. "in" your mattress
 
 ---
+
 ## Keep Reading
 
-- [Best Mattresses for Back Pain (2026 Reviews)](/blog/best-mattresses-for-back-pain)
-- [Sleep Temperature Optimization: The Science of Sleeping Cool](/blog/sleep-temperature-optimization)
-- [What Actually Increases Deep Sleep (And What Doesn't)](/blog/what-actually-increases-deep-sleep)
+- [Best Mattresses for Back Sleepers: Sleep Better Without Back Pain](/blog/best-mattresses-for-back-sleepers)
+- [Best Pillows for Sleep by Sleep Position: A Science-Backed Guide](/blog/best-pillows-for-sleep-by-position)
+- [Best Silk Pillowcases for Sleep: Smoother Skin, Better Hair, Deeper Rest](/blog/best-silk-pillowcases-for-sleep)
+- [Best Mattresses for Back Pain (2026 Reviews): What Sleep Experts Recommend](/blog/best-mattresses-for-back-pain)

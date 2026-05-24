@@ -323,8 +323,10 @@ Whatever you choose, pair it with good sleep fundamentals: a consistent schedule
 - [Why Do I Wake Up Tired? Common Causes & Fixes](/blog/why-do-i-wake-up-tired)
 - [Best Silk Pillowcases for Sleep: Smoother Skin, Better Hair, Deeper Rest](/blog/best-silk-pillowcases-for-sleep)
 
+
 ## Keep Reading
 
-- [Sleep Anxiety: How to Stop Worrying at Night](/blog/sleep-anxiety)
-- [How to Fall Asleep Fast: 9 Techniques That Actually Work](/blog/how-to-fall-asleep-fast)
-- [Sleep Temperature Optimization: The Science of Sleeping Cool](/blog/sleep-temperature-optimization)
+- [Best Silk Pillowcases for Sleep: Smoother Skin, Better Hair, Deeper Rest](/blog/best-silk-pillowcases-for-sleep)
+- [Best Mattresses for Back Sleepers: Sleep Better Without Back Pain](/blog/best-mattresses-for-back-sleepers)
+- [Weighted Blankets for Sleep: Do They Actually Work?](/blog/weighted-blankets-for-sleep)
+- [Sleep Apnea Symptoms: How to Tell If You Have It (Before a Doctor Does)](/blog/sleep-apnea-symptoms)

@@ -127,8 +127,10 @@ If you want a structured 7-day system that addresses circadian rhythm, cortisol,
 
 ---
 
+
 ## Keep Reading
 
-- [Magnesium for Sleep: Does It Actually Work? (What the Science Says)](/blog/magnesium-for-sleep)
-- [How to Fall Asleep Fast: 10 Science-Backed Methods That Actually Work](/blog/how-to-fall-asleep-fast)
-- [Why Do I Wake Up at 3AM? The Real Reasons (and How to Fix It)](/blog/why-do-i-wake-up-at-3am)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Valerian Root for Sleep: Does It Actually Work?](/blog/valerian-root-for-sleep)
+- [Late Night Snacking: Does Eating Before Bed Ruin Your Sleep?](/blog/eating-before-bed-sleep)

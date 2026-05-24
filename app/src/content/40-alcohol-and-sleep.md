@@ -127,8 +127,10 @@ If alcohol-shortened sleep is stacking up across the week, use the [Sleep Debt C
 
 ---
 
+
 ## Keep Reading
 
-- [Why Do I Wake Up at 3AM? The Real Reasons (and How to Fix It)](/blog/why-do-i-wake-up-at-3am)
-- [What Actually Increases Deep Sleep: Tracked Data vs. What Reddit Thinks](/blog/what-actually-increases-deep-sleep)
-- [Magnesium for Sleep: Does It Actually Work?](/blog/magnesium-for-sleep)
+- [Why You Keep Waking Up at 3AM (The Cortisol and Supplement Answer)](/blog/3am-wake-up-cortisol-supplements)
+- [Magnesium Glycinate and 3AM Wake-Ups: The Supplement That Might Be Disrupting Your Sleep](/blog/magnesium-glycinate-3am-wake-up)
+- [Late Night Snacking: Does Eating Before Bed Ruin Your Sleep?](/blog/eating-before-bed-sleep)
+- [Waking Up at 3AM Every Night? Here's the Real Reason (And How to Fix It)](/blog/waking-up-at-3am-every-night)
