@@ -79,6 +79,8 @@ import lTheanineForSleep from '../content/54-l-theanine-for-sleep.md?raw'
 
 import valerianRootForSleep from '../content/55-valerian-root-for-sleep.md?raw'
 
+import glycineForSleep from '../content/56-glycine-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -996,6 +998,24 @@ export const articles: Article[] = [
       { question: "What is the best dose of valerian root for sleep?", answer: "Most clinical trials use 300-600mg of standardized extract (0.8% valerenic acid), taken 30-60 minutes before bed. Start at 300mg and increase to 600mg if needed." },
       { question: "Can you take valerian root every night?", answer: "Yes, valerian is generally considered safe for nightly use in the short-to-medium term. Some practitioners recommend cycling 4-6 weeks on then a break as a precaution." },
       { question: "Does valerian root cause morning grogginess?", answer: "At standard doses (300-600mg), next-day grogginess is uncommon. It is more likely at higher doses. A minority experience paradoxical stimulation meaning valerian simply is not the right tool for them." }
+    ]
+  },
+  {
+    slug: "glycine-for-sleep",
+    title: "Glycine for Sleep: Does It Actually Work?",
+    description: "Glycine may improve sleep quality, core temperature regulation, and morning alertness. Here is what the research says and how to use it.",
+    readTime: "10 min read",
+    date: "May 2026",
+    publishDate: "2026-05-25",
+    content: glycineForSleep,
+    featuredImage: "/images/featured-glycine-for-sleep.png",
+    featuredImageAlt: "Dark blue featured image with Glycine for Sleep title and Sleep Smarter branding",
+    faqs: [
+      { question: "How much glycine should I take for sleep?", answer: "The most common research-backed dose is 3 grams taken 30 to 60 minutes before bed. Sensitive sleepers can start with 1 gram for a night or two, then increase to 3 grams if tolerated." },
+      { question: "Is glycine better than melatonin?", answer: "Glycine and melatonin solve different problems. Melatonin is best for circadian timing issues like jet lag or delayed sleep phase. Glycine is better suited for sleep quality, core temperature regulation, and waking up feeling more restored." },
+      { question: "Can glycine make you wake up at 3AM?", answer: "Most people tolerate glycine well, but a minority report middle-of-the-night alertness. If that happens, try taking it earlier in the evening or stop using it. Sleep supplements should improve sleep continuity, not disrupt it." },
+      { question: "Can I take glycine with magnesium glycinate?", answer: "Yes, many people combine them. Magnesium glycinate provides magnesium plus a smaller amount of glycine, while standalone glycine provides the full 3 gram dose used in studies. Start low if you are sensitive to supplements." },
+      { question: "Is glycine safe to take every night?", answer: "Glycine is generally well tolerated at 3 grams nightly for healthy adults. If you have kidney disease, liver disease, complex metabolic issues, are pregnant, or take prescription medications, check with a clinician first." }
     ]
   }
 ]
