@@ -81,6 +81,8 @@ import valerianRootForSleep from '../content/55-valerian-root-for-sleep.md?raw'
 
 import glycineForSleep from '../content/56-glycine-for-sleep.md?raw'
 
+import is6HoursOfSleepEnough from '../content/57-is-6-hours-of-sleep-enough.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1016,6 +1018,24 @@ export const articles: Article[] = [
       { question: "Can glycine make you wake up at 3AM?", answer: "Most people tolerate glycine well, but a minority report middle-of-the-night alertness. If that happens, try taking it earlier in the evening or stop using it. Sleep supplements should improve sleep continuity, not disrupt it." },
       { question: "Can I take glycine with magnesium glycinate?", answer: "Yes, many people combine them. Magnesium glycinate provides magnesium plus a smaller amount of glycine, while standalone glycine provides the full 3 gram dose used in studies. Start low if you are sensitive to supplements." },
       { question: "Is glycine safe to take every night?", answer: "Glycine is generally well tolerated at 3 grams nightly for healthy adults. If you have kidney disease, liver disease, complex metabolic issues, are pregnant, or take prescription medications, check with a clinician first." }
+    ]
+  },
+  {
+    slug: "is-6-hours-of-sleep-enough",
+    title: "Is 6 Hours of Sleep Enough? The Truth About Short Sleep",
+    description: "Is 6 hours of sleep enough? Learn why most adults need more, how chronic short sleep affects you, and what to do if your schedule is tight.",
+    readTime: "9 min read",
+    date: "May 2026",
+    publishDate: "2026-05-27",
+    content: is6HoursOfSleepEnough,
+    featuredImage: "/images/featured-is-6-hours-of-sleep-enough.png",
+    featuredImageAlt: "Dark sleep-themed graphic asking whether 6 hours of sleep is enough",
+    faqs: [
+      { question: "Is 6 hours of sleep enough for adults?", answer: "For most adults, no. Six hours may be survivable for short periods, but most adults need 7 to 9 hours for healthy mood, focus, recovery, immune function, and metabolic regulation." },
+      { question: "Can your body adapt to 6 hours of sleep?", answer: "You can get used to feeling tired, but that is not the same as adapting. Research on chronic sleep restriction shows people often underestimate their impairment after repeated short nights." },
+      { question: "Why do I feel fine on 6 hours of sleep?", answer: "Six hours can feel fine because sleep deprivation becomes familiar, caffeine masks fatigue, and your self-assessment gets less reliable when you are chronically short on sleep." },
+      { question: "Are some people healthy on only 6 hours of sleep?", answer: "A small number of people may be natural short sleepers due to rare genetics, but they are uncommon. Most people who claim they only need six hours are actually sleep restricted." },
+      { question: "What should I do if I can only sleep 6 hours?", answer: "Protect sleep quality first: keep a steady wake time, get morning light, cut caffeine 8 to 10 hours before bed, keep the room cool and dark, avoid alcohol, and add sleep time gradually when possible." }
     ]
   }
 ]
