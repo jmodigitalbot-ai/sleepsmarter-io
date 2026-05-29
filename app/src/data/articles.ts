@@ -83,6 +83,8 @@ import glycineForSleep from '../content/56-glycine-for-sleep.md?raw'
 
 import is6HoursOfSleepEnough from '../content/57-is-6-hours-of-sleep-enough.md?raw'
 
+import passionflowerForSleep from '../content/58-passionflower-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1036,6 +1038,24 @@ export const articles: Article[] = [
       { question: "Why do I feel fine on 6 hours of sleep?", answer: "Six hours can feel fine because sleep deprivation becomes familiar, caffeine masks fatigue, and your self-assessment gets less reliable when you are chronically short on sleep." },
       { question: "Are some people healthy on only 6 hours of sleep?", answer: "A small number of people may be natural short sleepers due to rare genetics, but they are uncommon. Most people who claim they only need six hours are actually sleep restricted." },
       { question: "What should I do if I can only sleep 6 hours?", answer: "Protect sleep quality first: keep a steady wake time, get morning light, cut caffeine 8 to 10 hours before bed, keep the room cool and dark, avoid alcohol, and add sleep time gradually when possible." }
+    ]
+  },
+  {
+    slug: "passionflower-for-sleep",
+    title: "Passionflower for Sleep: Does It Actually Work?",
+    description: "Passionflower may help sleep when anxiety or bedtime tension is the real problem. Here's what the evidence says and how to use it.",
+    readTime: "10 min read",
+    date: "May 2026",
+    publishDate: "2026-05-29",
+    content: passionflowerForSleep,
+    featuredImage: "/images/featured-passionflower-for-sleep.png",
+    featuredImageAlt: "Dark sleep-themed illustration for an article about passionflower supplements and sleep",
+    faqs: [
+      { question: "Does passionflower actually help you sleep?", answer: "Passionflower may help some people sleep better, especially when mild anxiety, nervous system tension, or racing thoughts are part of the problem. The evidence supports a modest calming effect, not a guaranteed insomnia cure." },
+      { question: "How much passionflower should I take for sleep?", answer: "Common supplement doses are roughly 250-500mg of passionflower extract taken 30-60 minutes before bed, but products vary. Start with the lowest label dose and avoid combining it with alcohol, sedatives, or multiple sleep aids." },
+      { question: "Is passionflower better than melatonin?", answer: "They solve different problems. Melatonin is a circadian timing signal, so it fits jet lag or delayed sleep phase better. Passionflower is more of a calming herb, so it fits bedtime tension or mental chatter better." },
+      { question: "Can passionflower make you groggy the next day?", answer: "Yes. Passionflower is usually gentle, but higher doses or combinations with other calming substances can cause drowsiness, dizziness, confusion, nausea, or next-day grogginess." },
+      { question: "Who should avoid passionflower?", answer: "Avoid passionflower or talk to a clinician first if you are pregnant, nursing, taking sedatives or anxiety medication, using alcohol at night, or dealing with symptoms that suggest sleep apnea." }
     ]
   }
 ]

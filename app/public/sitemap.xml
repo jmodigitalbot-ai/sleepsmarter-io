@@ -75,7 +75,7 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Blog Articles (54 total) -->
+  <!-- Blog Articles (55 total) -->
   <url>
     <loc>https://www.sleepsmarter.io/blog/how-sleep-cycles-work</loc>
     <lastmod>2026-02-04</lastmod>
@@ -397,6 +397,12 @@
   <url>
     <loc>https://www.sleepsmarter.io/blog/is-6-hours-of-sleep-enough</loc>
     <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepsmarter.io/blog/passionflower-for-sleep</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
