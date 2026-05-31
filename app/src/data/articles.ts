@@ -85,6 +85,8 @@ import is6HoursOfSleepEnough from '../content/57-is-6-hours-of-sleep-enough.md?r
 
 import passionflowerForSleep from '../content/58-passionflower-for-sleep.md?raw'
 
+import wakingUpHotAt3am from '../content/59-waking-up-hot-at-3am.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1056,6 +1058,23 @@ export const articles: Article[] = [
       { question: "Is passionflower better than melatonin?", answer: "They solve different problems. Melatonin is a circadian timing signal, so it fits jet lag or delayed sleep phase better. Passionflower is more of a calming herb, so it fits bedtime tension or mental chatter better." },
       { question: "Can passionflower make you groggy the next day?", answer: "Yes. Passionflower is usually gentle, but higher doses or combinations with other calming substances can cause drowsiness, dizziness, confusion, nausea, or next-day grogginess." },
       { question: "Who should avoid passionflower?", answer: "Avoid passionflower or talk to a clinician first if you are pregnant, nursing, taking sedatives or anxiety medication, using alcohol at night, or dealing with symptoms that suggest sleep apnea." }
+    ]
+  },
+  {
+    slug: "waking-up-hot-at-3am",
+    title: "Why Do I Wake Up Hot at 3AM?",
+    description: "Waking up hot at 3AM is usually a mix of room temperature, bedding, alcohol, stress, hormones, or medical factors. Here's what to try tonight.",
+    readTime: "8 min read",
+    date: "May 2026",
+    publishDate: "2026-05-31",
+    content: wakingUpHotAt3am,
+    featuredImage: "/images/featured-waking-up-hot-at-3am.png",
+    featuredImageAlt: "Dark blue Sleep Smarter featured image with a warm thermometer icon for waking up hot at 3AM",
+    faqs: [
+      { question: "Why do I wake up hot at 3AM?", answer: "You usually wake up hot at 3AM because heat has built up in your bedding or mattress while sleep is getting lighter. Alcohol, late meals, stress, hormones, medications, or illness can make the wake-up more intense." },
+      { question: "Is waking up hot at night normal?", answer: "Occasional warm wake-ups are common, especially in a warm room or under heat-trapping bedding. Persistent drenching night sweats, fever, unexplained weight loss, chest pain, shortness of breath, or a sudden symptom change should be discussed with a clinician." },
+      { question: "What should I do tonight if I keep waking up hot?", answer: "Lower the room temperature, switch to lighter breathable bedding, avoid alcohol close to bed, stop heavy meals late, keep water nearby, and track the pattern for a week. If symptoms are severe or medical red flags appear, get medical advice." },
+      { question: "Can stress or cortisol make me wake up hot at 3AM?", answer: "Yes. Cortisol naturally rises toward morning, and stress can make that normal rise feel like a hot, alert wake-up. It is not always a cortisol problem, but stress can lower the threshold for waking." }
     ]
   }
 ]
