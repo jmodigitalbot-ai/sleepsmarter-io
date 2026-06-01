@@ -41,8 +41,23 @@ export default function Calculator() {
           </p>
         </section>
 
-        <section className="max-w-2xl mx-auto px-4 pb-16">
+        <section className="max-w-2xl mx-auto px-4 pb-8">
           <SleepCalculator />
+        </section>
+
+        <section className="max-w-4xl mx-auto px-4 pb-16">
+          <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6 text-center">
+            <h2 className="text-xl font-bold text-[#f1faee] mb-2">Popular wake-up times</h2>
+            <p className="text-[#f1faee]/70 mb-4">
+              Need a quick answer? See exact bedtime recommendations for common alarm times.
+            </p>
+            <Link
+              to="/bedtime-calculator"
+              className="inline-block bg-[#1a1a2e] hover:bg-[#4a4e69]/30 border border-[#4a4e69]/50 text-[#f1faee] font-semibold px-6 py-3 rounded-lg transition"
+            >
+              Browse Bedtime Calculator Pages →
+            </Link>
+          </div>
         </section>
       </main>
 

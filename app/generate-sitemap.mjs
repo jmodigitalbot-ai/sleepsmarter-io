@@ -23,6 +23,7 @@ const CORE_PAGES = [
   ['/blog', '2026-05-20', 'weekly', '0.9'],
   ['/calculator', '2026-02-23', 'monthly', '0.9'],
   ['/sleep-debt-calculator', '2026-05-21', 'monthly', '0.9'],
+  ['/bedtime-calculator', '2026-06-01', 'weekly', '0.8'],
   ['/sleep-reset', '2026-02-12', 'monthly', '0.8'],
   ['/about', '2026-02-04', 'monthly', '0.5'],
   ['/lp/sleep-calculator', '2026-02-23', 'monthly', '0.8'],
@@ -50,6 +51,7 @@ async function generateSitemap() {
   // Always parse articles.ts directly — it's the canonical source of truth
   // and is always current regardless of whether dist-ssr is fresh.
   let articles = []
+  let bedtimePages = []
   {
     const { readFileSync } = await import('fs')
     const src = readFileSync(resolve(__dirname, 'src/data/articles.ts'), 'utf-8')
@@ -66,6 +68,13 @@ async function generateSitemap() {
     while ((dateMatch = dateRe.exec(src)) !== null) dates.push(dateMatch[1])
 
     articles = slugs.map((slug, i) => ({ slug, publishDate: dates[i] || '2026-01-01' }))
+
+    const bedtimeSrc = readFileSync(resolve(__dirname, 'src/data/bedtimePages.ts'), 'utf-8')
+    const bedtimeSlugRe = /slug:\s*['"]([^'"]+)['"]/g
+    let bedtimeSlugMatch
+    while ((bedtimeSlugMatch = bedtimeSlugRe.exec(bedtimeSrc)) !== null) {
+      bedtimePages.push({ slug: bedtimeSlugMatch[1], publishDate: '2026-06-01' })
+    }
   }
 
   const coreEntries = CORE_PAGES.map(([path, lastmod, changefreq, priority]) =>
@@ -76,11 +85,18 @@ async function generateSitemap() {
     urlEntry(`${SITE_URL}/blog/${slug}`, publishDate, 'monthly', '0.7')
   ).join('\n')
 
+  const bedtimeEntries = bedtimePages.map(({ slug, publishDate }) =>
+    urlEntry(`${SITE_URL}/bedtime-calculator/${slug}`, publishDate, 'monthly', '0.7')
+  ).join('\n')
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core Pages -->
 ${coreEntries}
+
+  <!-- Bedtime Calculator Pages (${bedtimePages.length} total) -->
+${bedtimeEntries}
 
   <!-- Blog Articles (${articles.length} total) -->
 ${articleEntries}
@@ -90,7 +106,7 @@ ${articleEntries}
 
   const outPath = resolve(__dirname, 'public/sitemap.xml')
   writeFileSync(outPath, sitemap)
-  console.log(`✅ Sitemap generated: ${articles.length} articles + ${CORE_PAGES.length} core pages → ${outPath}`)
+  console.log(`✅ Sitemap generated: ${articles.length} articles + ${bedtimePages.length} bedtime pages + ${CORE_PAGES.length} core pages → ${outPath}`)
 }
 
 generateSitemap().catch(err => {

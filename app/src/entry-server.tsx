@@ -8,6 +8,8 @@ import Article from './pages/Article.tsx'
 import Calculator from './pages/Calculator.tsx'
 import SleepReset from './pages/SleepReset.tsx'
 import SleepDebtCalculator from './pages/SleepDebtCalculator.tsx'
+import BedtimeCalculatorHub from './pages/BedtimeCalculatorHub.tsx'
+import BedtimeCalculatorPage from './pages/BedtimeCalculatorPage.tsx'
 import Privacy from './pages/Privacy.tsx'
 import Terms from './pages/Terms.tsx'
 import Disclosure from './pages/Disclosure.tsx'
@@ -15,6 +17,7 @@ import SleepCalculatorLanding from './pages/landing/SleepCalculatorLanding.tsx'
 import SleepTipsLanding from './pages/landing/SleepTipsLanding.tsx'
 import SleepProductsLanding from './pages/landing/SleepProductsLanding.tsx'
 import { articles } from './data/articles.ts'
+import { bedtimePages } from './data/bedtimePages.ts'
 
 // All routes to prerender at build time
 export const prerenderRoutes: string[] = [
@@ -24,6 +27,8 @@ export const prerenderRoutes: string[] = [
   '/about',
   '/sleep-reset',
   '/sleep-debt-calculator',
+  '/bedtime-calculator',
+  ...bedtimePages.map(p => `/bedtime-calculator/${p.slug}`),
   '/lp/sleep-calculator',
   '/lp/sleep-tips',
   '/lp/sleep-products',
@@ -45,6 +50,8 @@ export function render(url: string): string {
           <Route path="/about" element={<About />} />
           <Route path="/sleep-reset" element={<SleepReset />} />
           <Route path="/sleep-debt-calculator" element={<SleepDebtCalculator />} />
+          <Route path="/bedtime-calculator" element={<BedtimeCalculatorHub />} />
+          <Route path="/bedtime-calculator/:wakeTime" element={<BedtimeCalculatorPage />} />
           <Route path="/lp/sleep-calculator" element={<SleepCalculatorLanding />} />
           <Route path="/lp/sleep-tips" element={<SleepTipsLanding />} />
           <Route path="/lp/sleep-products" element={<SleepProductsLanding />} />

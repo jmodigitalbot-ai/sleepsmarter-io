@@ -15,6 +15,8 @@ import Quiz from './pages/Quiz.tsx'
 import ThankYou from './pages/ThankYou.tsx'
 import SleepReset from './pages/SleepReset.tsx'
 import SleepDebtCalculator from './pages/SleepDebtCalculator.tsx'
+import BedtimeCalculatorHub from './pages/BedtimeCalculatorHub.tsx'
+import BedtimeCalculatorPage from './pages/BedtimeCalculatorPage.tsx'
 import MasterclassSales from './pages/MasterclassSales.tsx'
 import PremiumSales from './pages/PremiumSales.tsx'
 import InsiderSales from './pages/InsiderSales.tsx'
@@ -81,6 +83,8 @@ const ui = (
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/sleep-reset" element={<SleepReset />} />
         <Route path="/sleep-debt-calculator" element={<SleepDebtCalculator />} />
+        <Route path="/bedtime-calculator" element={<BedtimeCalculatorHub />} />
+        <Route path="/bedtime-calculator/:wakeTime" element={<BedtimeCalculatorPage />} />
         <Route path="/masterclass" element={<MasterclassSales />} />
         <Route path="/premium" element={<PremiumSales />} />
         <Route path="/insider" element={<InsiderSales />} />
