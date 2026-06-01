@@ -87,6 +87,8 @@ import passionflowerForSleep from '../content/58-passionflower-for-sleep.md?raw'
 
 import wakingUpHotAt3am from '../content/59-waking-up-hot-at-3am.md?raw'
 
+import sleepAndWeightLoss from '../content/60-sleep-and-weight-loss.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1075,6 +1077,24 @@ export const articles: Article[] = [
       { question: "Is waking up hot at night normal?", answer: "Occasional warm wake-ups are common, especially in a warm room or under heat-trapping bedding. Persistent drenching night sweats, fever, unexplained weight loss, chest pain, shortness of breath, or a sudden symptom change should be discussed with a clinician." },
       { question: "What should I do tonight if I keep waking up hot?", answer: "Lower the room temperature, switch to lighter breathable bedding, avoid alcohol close to bed, stop heavy meals late, keep water nearby, and track the pattern for a week. If symptoms are severe or medical red flags appear, get medical advice." },
       { question: "Can stress or cortisol make me wake up hot at 3AM?", answer: "Yes. Cortisol naturally rises toward morning, and stress can make that normal rise feel like a hot, alert wake-up. It is not always a cortisol problem, but stress can lower the threshold for waking." }
+    ]
+  },
+  {
+    slug: "sleep-and-weight-loss",
+    title: "Sleep and Weight Loss: Why You Can't Out-Diet Bad Sleep",
+    description: "Sleep and weight loss are connected through cravings, hunger hormones, insulin, cortisol, and recovery. Here is how to fix the sleep side.",
+    readTime: "9 min read",
+    date: "June 2026",
+    publishDate: "2026-06-01",
+    content: sleepAndWeightLoss,
+    featuredImage: "/images/featured-sleep-and-weight-loss.png",
+    featuredImageAlt: "Dark themed Sleep Smarter featured image for sleep and weight loss article",
+    faqs: [
+      { question: "Can poor sleep stop weight loss?", answer: "Poor sleep does not override calories, but it can make weight loss much harder by increasing hunger, cravings, stress, water retention, and training fatigue." },
+      { question: "How many hours of sleep do I need to lose weight?", answer: "Most adults do best with 7 to 9 hours. The exact number varies, but consistently getting under 6 hours often makes appetite control and recovery harder." },
+      { question: "Why do I crave junk food when I am tired?", answer: "Sleep loss increases hunger signals and makes high-calorie foods feel more rewarding. It also reduces impulse control, so easy snack foods become harder to ignore." },
+      { question: "Can better sleep reduce belly fat?", answer: "Better sleep can support fat loss by improving consistency, appetite control, insulin sensitivity, and workout recovery. It will not target belly fat directly, but it helps the overall process work better." },
+      { question: "What should I fix first: diet or sleep?", answer: "Fix both, but start with the sleep habits that make diet adherence easier: consistent wake time, morning light, earlier caffeine cutoff, planned dinners, and a clear kitchen shutdown." }
     ]
   }
 ]
