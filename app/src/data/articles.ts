@@ -89,6 +89,8 @@ import wakingUpHotAt3am from '../content/59-waking-up-hot-at-3am.md?raw'
 
 import sleepAndWeightLoss from '../content/60-sleep-and-weight-loss.md?raw'
 
+import wakeUpAfter4HoursOfSleep from '../content/61-wake-up-after-4-hours-of-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1095,6 +1097,24 @@ export const articles: Article[] = [
       { question: "Why do I crave junk food when I am tired?", answer: "Sleep loss increases hunger signals and makes high-calorie foods feel more rewarding. It also reduces impulse control, so easy snack foods become harder to ignore." },
       { question: "Can better sleep reduce belly fat?", answer: "Better sleep can support fat loss by improving consistency, appetite control, insulin sensitivity, and workout recovery. It will not target belly fat directly, but it helps the overall process work better." },
       { question: "What should I fix first: diet or sleep?", answer: "Fix both, but start with the sleep habits that make diet adherence easier: consistent wake time, morning light, earlier caffeine cutoff, planned dinners, and a clear kitchen shutdown." }
+    ]
+  },
+  {
+    slug: "wake-up-after-4-hours-of-sleep",
+    title: "Why You Wake Up After 4 Hours of Sleep: Cortisol, Stress, and What Actually Helps",
+    description: "Waking up after 4 hours of sleep is usually stress, caffeine, alcohol, temperature, light, sleep timing, or sleep apnea risk. Here is what to try.",
+    readTime: "10 min read",
+    date: "June 2026",
+    publishDate: "2026-06-02",
+    content: wakeUpAfter4HoursOfSleep,
+    featuredImage: "/images/featured-wake-up-after-4-hours-of-sleep.png",
+    featuredImageAlt: "Dark blue Sleep Smarter featured image for waking up after four hours of sleep",
+    faqs: [
+      { question: "Why do I wake up after 4 hours of sleep?", answer: "You usually wake up after 4 hours because sleep gets lighter in the second half of the night and stress, caffeine, alcohol, heat, light, or medical factors become easier to notice." },
+      { question: "Is waking up after 4 hours a cortisol problem?", answer: "It can involve cortisol, but cortisol is not the only cause. Cortisol naturally rises toward morning. Stress can amplify that rise, but caffeine, alcohol, temperature, sleep timing, sleep apnea, reflux, or nocturia can create the same pattern." },
+      { question: "What should I do when I wake up after 4 hours?", answer: "Do not check the clock. Keep lights low, avoid phone use, and give sleep a calm chance. If you are alert or frustrated, get out of bed for a quiet low-light reset and return when sleepy." },
+      { question: "Can magnesium or ashwagandha help with 3AM waking?", answer: "They may help some stress-driven sleep problems, but they should not be the first fix. Clean up caffeine timing, alcohol, bedroom temperature, wake time, and clock-watching first so you can tell whether a supplement actually helps." },
+      { question: "When should I talk to a doctor about waking up after 4 hours?", answer: "Get medical advice if the wakeups include loud snoring, gasping, chest pain, shortness of breath, persistent night sweats, fever, unexplained weight loss, severe daytime sleepiness, or frequent urination." }
     ]
   }
 ]
