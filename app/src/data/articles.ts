@@ -93,6 +93,8 @@ import wakeUpAfter4HoursOfSleep from '../content/61-wake-up-after-4-hours-of-sle
 
 import sleepEnvironmentOptimization from '../content/62-sleep-environment-optimization.md?raw'
 
+import howToStopWakingUpToPeeAtNight from '../content/63-how-to-stop-waking-up-to-pee-at-night.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1135,6 +1137,24 @@ export const articles: Article[] = [
       { question: "Do blackout curtains really help sleep?", answer: "Yes, blackout curtains can help when streetlights, electronics, hallway light, or early sunrise make your sleep more fragile. Darkness supports circadian timing and makes it easier for your brain to treat the bedroom as a sleep space." },
       { question: "Is white noise good for sleep?", answer: "White noise can help if unpredictable sounds wake you or keep your brain on alert. Keep it steady, boring, and low volume. If the noise problem is loud snoring with gasping or pauses, do not just mask it because that can be a sleep apnea warning sign." },
       { question: "Should I buy a new mattress to improve sleep?", answer: "Only if your mattress is old, sagging, painful, too hot, or clearly mismatched to your sleep position. Many people should fix their pillow, room temperature, light leaks, and bedding first before spending money on a new mattress." }
+    ]
+  },
+  {
+    slug: "how-to-stop-waking-up-to-pee-at-night",
+    title: "How to Stop Waking Up to Pee at Night: Nocturia, Sleep Apnea, and What Actually Helps",
+    description: "Learn why you wake up to pee at night, when nocturia points to sleep apnea, and the simple timing fixes that actually help.",
+    readTime: "11 min read",
+    date: "June 2026",
+    publishDate: "2026-06-05",
+    content: howToStopWakingUpToPeeAtNight,
+    featuredImage: "/images/featured-how-to-stop-waking-up-to-pee-at-night.png",
+    featuredImageAlt: "Dark Sleep Smarter featured image for waking up to pee at night and nocturia",
+    faqs: [
+      { question: "Why do I keep waking up to pee at night?", answer: "You may be waking up to pee because of late fluids, caffeine, alcohol, salty dinners, fluid pooling in your legs, medications, bladder issues, or sleep apnea. The right fix depends on whether your bladder is waking you or you are waking for another reason and noticing your bladder." },
+      { question: "How many times is normal to pee at night?", answer: "Waking once occasionally can be normal, especially after late fluids or alcohol. Waking two or more times most nights, struggling to fall back asleep, or feeling exhausted the next day is worth addressing." },
+      { question: "Can sleep apnea cause nighttime urination?", answer: "Yes. Obstructive sleep apnea can trigger hormonal changes that make your kidneys produce more urine at night. If nocturia comes with loud snoring, gasping, dry mouth, morning headaches, or daytime sleepiness, get screened." },
+      { question: "Should I stop drinking water before bed?", answer: "Do not dehydrate yourself. Front-load fluids earlier in the day, drink normally with dinner, then taper heavy fluids during the final 60 to 90 minutes before bed." },
+      { question: "What is the fastest way to reduce nighttime bathroom trips?", answer: "For 10 nights, cut caffeine after noon, avoid alcohol near bed, reduce salty late snacks, move fluids earlier, keep bathroom lighting dim, and track whether trips improve. If they do not, check for medical causes." }
     ]
   }
 ]
