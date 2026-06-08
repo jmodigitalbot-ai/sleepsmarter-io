@@ -95,6 +95,8 @@ import sleepEnvironmentOptimization from '../content/62-sleep-environment-optimi
 
 import howToStopWakingUpToPeeAtNight from '../content/63-how-to-stop-waking-up-to-pee-at-night.md?raw'
 
+import bestMattressForSideSleepers from '../content/63-best-mattress-for-side-sleepers.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1155,6 +1157,24 @@ export const articles: Article[] = [
       { question: "Can sleep apnea cause nighttime urination?", answer: "Yes. Obstructive sleep apnea can trigger hormonal changes that make your kidneys produce more urine at night. If nocturia comes with loud snoring, gasping, dry mouth, morning headaches, or daytime sleepiness, get screened." },
       { question: "Should I stop drinking water before bed?", answer: "Do not dehydrate yourself. Front-load fluids earlier in the day, drink normally with dinner, then taper heavy fluids during the final 60 to 90 minutes before bed." },
       { question: "What is the fastest way to reduce nighttime bathroom trips?", answer: "For 10 nights, cut caffeine after noon, avoid alcohol near bed, reduce salty late snacks, move fluids earlier, keep bathroom lighting dim, and track whether trips improve. If they do not, check for medical causes." }
+    ]
+  },
+  {
+    slug: "best-mattress-for-side-sleepers",
+    title: "Best Mattress for Side Sleepers: How to Stop Shoulder and Hip Pain",
+    description: "Find the best mattress for side sleepers with shoulder or hip pain. Learn firmness, materials, toppers, and support rules that matter.",
+    readTime: "10 min read",
+    date: "June 2026",
+    publishDate: "2026-06-08",
+    content: bestMattressForSideSleepers,
+    featuredImage: "/images/featured-best-mattress-for-side-sleepers.png",
+    featuredImageAlt: "Dark sleep-themed graphic for a guide to the best mattress for side sleepers",
+    faqs: [
+      { question: "What firmness is best for side sleepers?", answer: "Most side sleepers do best on a medium-soft to medium mattress, roughly 4.5 to 6.5 out of 10. Lighter sleepers often need softer comfort layers, while heavier sleepers usually need stronger support with pressure relief on top." },
+      { question: "Why do my shoulders hurt when I sleep on my side?", answer: "Shoulder pain usually means the mattress surface is too firm, the comfort layer is too thin, or your pillow is forcing the shoulder forward. Side sleepers need enough surface give for the shoulder to sink without twisting the spine." },
+      { question: "Is memory foam or latex better for side sleepers?", answer: "Memory foam gives deeper contouring and can help sharp pressure points, but it may sleep hot and feel harder to move on. Latex is cooler and more responsive, but some lightweight side sleepers may prefer the deeper hug of foam." },
+      { question: "Can a mattress topper help side sleeper hip pain?", answer: "A topper can help if the mattress is still supportive but too firm at the surface. It will not fix a sagging mattress or weak support core. If the hip sinks too far, replacing the mattress is usually better than adding more softness." },
+      { question: "Do side sleepers need a special pillow too?", answer: "Yes. Side sleepers usually need enough pillow loft to fill the shoulder-to-head gap. If the pillow is too low or too high, the neck bends for hours and can make shoulder or upper back pain worse." }
     ]
   }
 ]
