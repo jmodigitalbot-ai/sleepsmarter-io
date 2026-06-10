@@ -97,6 +97,8 @@ import howToStopWakingUpToPeeAtNight from '../content/63-how-to-stop-waking-up-t
 
 import bestMattressForSideSleepers from '../content/63-best-mattress-for-side-sleepers.md?raw'
 
+import cbtIForInsomnia from '../content/64-cbt-i-for-insomnia.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1175,6 +1177,24 @@ export const articles: Article[] = [
       { question: "Is memory foam or latex better for side sleepers?", answer: "Memory foam gives deeper contouring and can help sharp pressure points, but it may sleep hot and feel harder to move on. Latex is cooler and more responsive, but some lightweight side sleepers may prefer the deeper hug of foam." },
       { question: "Can a mattress topper help side sleeper hip pain?", answer: "A topper can help if the mattress is still supportive but too firm at the surface. It will not fix a sagging mattress or weak support core. If the hip sinks too far, replacing the mattress is usually better than adding more softness." },
       { question: "Do side sleepers need a special pillow too?", answer: "Yes. Side sleepers usually need enough pillow loft to fill the shoulder-to-head gap. If the pillow is too low or too high, the neck bends for hours and can make shoulder or upper back pain worse." }
+    ]
+  },
+  {
+    slug: "cbt-i-for-insomnia",
+    title: "CBT-I for Insomnia: Why It Works Better Than Sleep Pills",
+    description: "Learn how CBT-I retrains chronic insomnia, why it can work better than sleep pills, and how to start safely.",
+    readTime: "10 min read",
+    date: "June 2026",
+    publishDate: "2026-06-10",
+    content: cbtIForInsomnia,
+    featuredImage: "/images/featured-cbt-i-for-insomnia.png",
+    featuredImageAlt: "Dark-themed illustration for CBT-I insomnia article with calm bedroom and teal sleep accents",
+    faqs: [
+      { question: "What is CBT-I for insomnia?", answer: "CBT-I, or cognitive behavioral therapy for insomnia, is a structured treatment that retrains the habits, thoughts, and bed associations that keep chronic insomnia going." },
+      { question: "Does CBT-I work better than sleep medication?", answer: "For many people with chronic insomnia, CBT-I has stronger long-term value because it addresses the insomnia loop instead of only sedating the body for one night." },
+      { question: "How long does CBT-I take to work?", answer: "Most CBT-I programs run about 4 to 8 weeks. Some people improve sooner, but the first week can feel harder if sleep restriction or sleep compression is involved." },
+      { question: "Can I do CBT-I on my own?", answer: "Some CBT-I principles can be used safely at home, especially fixed wake time, stimulus control, and sleep diaries. More aggressive sleep restriction should be done with professional guidance if you have medical or safety risks." },
+      { question: "Who should avoid DIY sleep restriction?", answer: "Avoid aggressive DIY sleep restriction if you have untreated sleep apnea, bipolar disorder, seizure risk, severe daytime sleepiness, pregnancy, suicidal thoughts, or a safety-sensitive job." }
     ]
   }
 ]
