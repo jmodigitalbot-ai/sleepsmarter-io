@@ -99,6 +99,8 @@ import bestMattressForSideSleepers from '../content/63-best-mattress-for-side-sl
 
 import cbtIForInsomnia from '../content/64-cbt-i-for-insomnia.md?raw'
 
+import bestMattressForStomachSleepers from '../content/65-best-mattress-for-stomach-sleepers.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1195,6 +1197,24 @@ export const articles: Article[] = [
       { question: "How long does CBT-I take to work?", answer: "Most CBT-I programs run about 4 to 8 weeks. Some people improve sooner, but the first week can feel harder if sleep restriction or sleep compression is involved." },
       { question: "Can I do CBT-I on my own?", answer: "Some CBT-I principles can be used safely at home, especially fixed wake time, stimulus control, and sleep diaries. More aggressive sleep restriction should be done with professional guidance if you have medical or safety risks." },
       { question: "Who should avoid DIY sleep restriction?", answer: "Avoid aggressive DIY sleep restriction if you have untreated sleep apnea, bipolar disorder, seizure risk, severe daytime sleepiness, pregnancy, suicidal thoughts, or a safety-sensitive job." }
+    ]
+  },
+  {
+    slug: "best-mattress-for-stomach-sleepers",
+    title: "Best Mattress for Stomach Sleepers: How to Stop Lower Back Pain",
+    description: "Find the best mattress for stomach sleepers, including ideal firmness, latex vs memory foam, and how to prevent lower back pain.",
+    readTime: "12 min read",
+    date: "June 2026",
+    publishDate: "2026-06-12",
+    content: bestMattressForStomachSleepers,
+    featuredImage: "/images/featured-best-mattress-for-stomach-sleepers.png",
+    featuredImageAlt: "Dark themed illustration title card for best mattress for stomach sleepers",
+    faqs: [
+      { question: "What firmness is best for stomach sleepers?", answer: "Most stomach sleepers do best on a medium-firm to firm mattress, usually around 6.5 to 8 out of 10. The goal is to keep the hips level with the chest so the lower back does not arch all night." },
+      { question: "Is memory foam good for stomach sleepers?", answer: "Memory foam can work only if it is firm and does not allow deep sink. Soft, slow-response memory foam is risky for stomach sleepers because the hips can settle too low and strain the lower back." },
+      { question: "Are latex mattresses good for stomach sleepers?", answer: "Yes. Latex is often a strong choice because it is buoyant, responsive, and supportive. It helps stomach sleepers stay on top of the mattress instead of sinking into it." },
+      { question: "Why does my back hurt when I sleep on my stomach?", answer: "Back pain from stomach sleeping usually happens when the hips sink too far into the mattress, forcing the lower back into extension for hours. A thick pillow can also worsen neck and spinal strain." },
+      { question: "Should stomach sleepers use a pillow?", answer: "Stomach sleepers usually need a very thin pillow or no pillow under the head. A thick pillow pushes the neck upward while it is rotated, which can cause stiffness and pain." }
     ]
   }
 ]
