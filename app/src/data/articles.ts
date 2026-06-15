@@ -101,6 +101,8 @@ import cbtIForInsomnia from '../content/64-cbt-i-for-insomnia.md?raw'
 
 import bestMattressForStomachSleepers from '../content/65-best-mattress-for-stomach-sleepers.md?raw'
 
+import bestMattressForCombinationSleepers from '../content/66-best-mattress-for-combination-sleepers.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1215,6 +1217,24 @@ export const articles: Article[] = [
       { question: "Are latex mattresses good for stomach sleepers?", answer: "Yes. Latex is often a strong choice because it is buoyant, responsive, and supportive. It helps stomach sleepers stay on top of the mattress instead of sinking into it." },
       { question: "Why does my back hurt when I sleep on my stomach?", answer: "Back pain from stomach sleeping usually happens when the hips sink too far into the mattress, forcing the lower back into extension for hours. A thick pillow can also worsen neck and spinal strain." },
       { question: "Should stomach sleepers use a pillow?", answer: "Stomach sleepers usually need a very thin pillow or no pillow under the head. A thick pillow pushes the neck upward while it is rotated, which can cause stiffness and pain." }
+    ]
+  },
+  {
+    slug: "best-mattress-for-combination-sleepers",
+    title: "Best Mattress for Combination Sleepers: How to Choose the Right Feel",
+    description: "Find the best mattress for combination sleepers with medium-firm support, pressure relief, cooling, and easy movement for every sleep position.",
+    readTime: "12 min read",
+    date: "June 2026",
+    publishDate: "2026-06-15",
+    content: bestMattressForCombinationSleepers,
+    featuredImage: "/images/featured-best-mattress-for-combination-sleepers.png",
+    featuredImageAlt: "Dark themed illustration for best mattress for combination sleepers",
+    faqs: [
+      { question: "What firmness is best for combination sleepers?", answer: "Most combination sleepers do best on a medium-firm mattress, usually around 6 to 7 out of 10. That gives enough pressure relief for side sleeping while still supporting the hips during back and stomach sleeping." },
+      { question: "Is memory foam good for combination sleepers?", answer: "Memory foam can work for side-dominant combination sleepers, but slow, deep-contouring foam may make it harder to change positions. A memory foam hybrid is usually a better fit than an all-foam mattress." },
+      { question: "Are hybrid mattresses good for combination sleepers?", answer: "Yes. Hybrid mattresses are often the safest choice because they combine pressure-relieving comfort layers with responsive coil support, making movement easier while keeping the spine aligned." },
+      { question: "Is latex better than memory foam for combination sleepers?", answer: "Latex is often better for combination sleepers who move a lot because it responds faster and feels more buoyant. Memory foam offers stronger contouring, but it can also create a stuck feeling." },
+      { question: "Should combination sleepers choose a soft or firm mattress?", answer: "Most combination sleepers should avoid extremes. Too soft can let the hips sink, especially on the stomach. Too firm can create shoulder and hip pressure on the side. Medium-firm is the practical default." }
     ]
   }
 ]
