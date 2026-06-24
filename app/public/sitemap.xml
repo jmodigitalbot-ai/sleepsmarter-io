@@ -113,7 +113,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog Articles (64 total) -->
+  <!-- Blog Articles (65 total) -->
   <url>
     <loc>https://www.sleepsmarter.io/blog/how-sleep-cycles-work</loc>
     <lastmod>2026-02-04</lastmod>
@@ -495,6 +495,12 @@
   <url>
     <loc>https://www.sleepsmarter.io/blog/best-mattress-for-combination-sleepers</loc>
     <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepsmarter.io/blog/adhd-and-sleep</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

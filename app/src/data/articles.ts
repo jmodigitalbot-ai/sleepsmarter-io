@@ -103,6 +103,8 @@ import bestMattressForStomachSleepers from '../content/65-best-mattress-for-stom
 
 import bestMattressForCombinationSleepers from '../content/66-best-mattress-for-combination-sleepers.md?raw'
 
+import adhdAndSleep from '../content/67-adhd-and-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1235,6 +1237,24 @@ export const articles: Article[] = [
       { question: "Are hybrid mattresses good for combination sleepers?", answer: "Yes. Hybrid mattresses are often the safest choice because they combine pressure-relieving comfort layers with responsive coil support, making movement easier while keeping the spine aligned." },
       { question: "Is latex better than memory foam for combination sleepers?", answer: "Latex is often better for combination sleepers who move a lot because it responds faster and feels more buoyant. Memory foam offers stronger contouring, but it can also create a stuck feeling." },
       { question: "Should combination sleepers choose a soft or firm mattress?", answer: "Most combination sleepers should avoid extremes. Too soft can let the hips sink, especially on the stomach. Too firm can create shoulder and hip pressure on the side. Medium-firm is the practical default." }
+    ]
+  },
+  {
+    slug: "adhd-and-sleep",
+    title: "ADHD and Sleep: Why Your Brain Won't Shut Off at Night",
+    description: "Learn why ADHD makes sleep harder, from racing thoughts and delayed rhythms to bedtime procrastination, plus practical fixes.",
+    readTime: "12 min read",
+    date: "June 2026",
+    publishDate: "2026-06-23",
+    content: adhdAndSleep,
+    featuredImage: "/images/featured-adhd-and-sleep.png",
+    featuredImageAlt: "Dark themed sleep illustration for ADHD and sleep problems",
+    faqs: [
+      { question: "Why does ADHD make it hard to sleep?", answer: "ADHD can affect arousal, time perception, impulse control, emotional regulation, dopamine-seeking, and circadian timing. Those systems can make bedtime feel like the moment your brain gets louder instead of quieter." },
+      { question: "Why do ADHD brains get a second wind at night?", answer: "Many people with ADHD feel more alert at night because stimulation drops, responsibilities pause, and the brain starts chasing novelty or unfinished thoughts. A delayed circadian rhythm can also push natural sleepiness later." },
+      { question: "What helps racing thoughts with ADHD at bedtime?", answer: "Controlled cognitive load works better than trying to clear your mind. Cognitive shuffling, familiar audio, yoga nidra, NSDR, a body scan, or a boring book can give the brain something low-stakes to hold onto." },
+      { question: "Should people with ADHD take melatonin for sleep?", answer: "Melatonin is mainly a circadian timing signal, not a knockout sleep pill. It may help delayed sleep phase when timed correctly, but people on medication or managing health conditions should ask a clinician first." },
+      { question: "What is the best bedtime routine for ADHD?", answer: "The best ADHD bedtime routine is simple and repeatable: reduce inputs 90 minutes before bed, write a quick shutdown list, move the phone away from bed, use dim light, and start one calming cue like audio or reading." }
     ]
   }
 ]
