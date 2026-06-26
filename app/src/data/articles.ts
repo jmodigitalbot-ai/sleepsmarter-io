@@ -105,6 +105,8 @@ import bestMattressForCombinationSleepers from '../content/66-best-mattress-for-
 
 import adhdAndSleep from '../content/67-adhd-and-sleep.md?raw'
 
+import soTiredButCantSleep from '../content/68-so-tired-but-cant-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1255,6 +1257,24 @@ export const articles: Article[] = [
       { question: "What helps racing thoughts with ADHD at bedtime?", answer: "Controlled cognitive load works better than trying to clear your mind. Cognitive shuffling, familiar audio, yoga nidra, NSDR, a body scan, or a boring book can give the brain something low-stakes to hold onto." },
       { question: "Should people with ADHD take melatonin for sleep?", answer: "Melatonin is mainly a circadian timing signal, not a knockout sleep pill. It may help delayed sleep phase when timed correctly, but people on medication or managing health conditions should ask a clinician first." },
       { question: "What is the best bedtime routine for ADHD?", answer: "The best ADHD bedtime routine is simple and repeatable: reduce inputs 90 minutes before bed, write a quick shutdown list, move the phone away from bed, use dim light, and start one calming cue like audio or reading." }
+    ]
+  },
+  {
+    slug: "so-tired-but-cant-sleep",
+    title: "So Tired But Can't Sleep? Why You're Exhausted and Wired at Night",
+    description: "Exhausted but wide awake at bedtime? Learn why wired-tired sleep happens and how to lower arousal so sleep can finally kick in.",
+    readTime: "10 min read",
+    date: "June 2026",
+    publishDate: "2026-06-26",
+    content: soTiredButCantSleep,
+    featuredImage: "/images/featured-so-tired-but-cant-sleep.png",
+    featuredImageAlt: "Exhausted person sitting awake on the edge of a bed at night",
+    faqs: [
+      { question: "Why am I so tired but can’t sleep?", answer: "The usual reason is a mismatch between sleep pressure and arousal. Your body is tired, but stress, caffeine, light, anxiety, alcohol, discomfort, or conditioned bedtime frustration can keep your nervous system too activated for sleep." },
+      { question: "What should I do if I am exhausted but wide awake in bed?", answer: "Stop trying to force sleep. Turn the clock away, lower light, write down open loops, use slow breathing, and get out of bed if you feel stuck awake. Return only when sleepiness shows up again." },
+      { question: "Can going to bed earlier make insomnia worse?", answer: "Yes. If your circadian rhythm is not ready or your arousal system is high, going to bed earlier can create more awake time in bed. That can train your brain to associate bed with frustration instead of sleep." },
+      { question: "Does magnesium help when you are tired but can’t sleep?", answer: "Magnesium may help if your problem includes muscle tension, stress load, or physical restlessness, but it is not a knockout pill. Test one supplement at a time and focus first on wake time, light, caffeine cutoff, and stimulus control." },
+      { question: "When should I get medical help for being tired but unable to sleep?", answer: "Talk to a doctor or sleep specialist if insomnia lasts more than three months, you have loud snoring or breathing pauses, you rely on alcohol or medication to sleep, or you feel severely sleepy despite enough time in bed." }
     ]
   }
 ]
