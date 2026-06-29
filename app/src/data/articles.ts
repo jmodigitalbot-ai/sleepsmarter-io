@@ -107,6 +107,8 @@ import adhdAndSleep from '../content/67-adhd-and-sleep.md?raw'
 
 import soTiredButCantSleep from '../content/68-so-tired-but-cant-sleep.md?raw'
 
+import chronotypeAndSleep from '../content/69-chronotype-and-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1275,6 +1277,24 @@ export const articles: Article[] = [
       { question: "Can going to bed earlier make insomnia worse?", answer: "Yes. If your circadian rhythm is not ready or your arousal system is high, going to bed earlier can create more awake time in bed. That can train your brain to associate bed with frustration instead of sleep." },
       { question: "Does magnesium help when you are tired but can’t sleep?", answer: "Magnesium may help if your problem includes muscle tension, stress load, or physical restlessness, but it is not a knockout pill. Test one supplement at a time and focus first on wake time, light, caffeine cutoff, and stimulus control." },
       { question: "When should I get medical help for being tired but unable to sleep?", answer: "Talk to a doctor or sleep specialist if insomnia lasts more than three months, you have loud snoring or breathing pauses, you rely on alcohol or medication to sleep, or you feel severely sleepy despite enough time in bed." }
+    ]
+  },
+  {
+    slug: "chronotype-and-sleep",
+    title: "Chronotype and Sleep: How to Build a Schedule That Fits Your Body Clock",
+    description: "Learn what your chronotype means, how to find your natural sleep schedule, and how to shift your body clock without wrecking your sleep.",
+    readTime: "12 min read",
+    date: "June 2026",
+    publishDate: "2026-06-29",
+    content: chronotypeAndSleep,
+    featuredImage: "/images/featured-chronotype-and-sleep.png",
+    featuredImageAlt: "Dark themed illustration for chronotype and sleep schedule timing",
+    faqs: [
+      { question: "What is a chronotype?", answer: "A chronotype is your natural tendency toward earlier or later sleep and wake timing. It is influenced by genetics, age, light exposure, routine, and lifestyle." },
+      { question: "How do I know if I am a night owl?", answer: "You may be a night owl if you naturally feel more alert later in the day, get sleepy later, and wake later when you do not use an alarm. Make sure you separate true chronotype from sleep debt or insomnia." },
+      { question: "Can I change my chronotype?", answer: "You can usually shift your sleep timing earlier or later, but you may not completely change your natural tendency. Morning light, consistent wake time, evening darkness, caffeine timing, and meal timing are the main levers." },
+      { question: "Is being a night owl unhealthy?", answer: "Being a night owl is not automatically unhealthy. The problem is misalignment: when your life forces early wake times but your body clock runs late, sleep debt and social jet lag build up." },
+      { question: "What is the best sleep schedule for my chronotype?", answer: "The best schedule is one that gives you enough sleep consistently while fitting your biology and real-life obligations. Start with a realistic wake time, then build light exposure, caffeine, meals, and bedtime around it." }
     ]
   }
 ]
