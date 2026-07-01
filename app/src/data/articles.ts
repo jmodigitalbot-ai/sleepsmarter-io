@@ -109,6 +109,8 @@ import soTiredButCantSleep from '../content/68-so-tired-but-cant-sleep.md?raw'
 
 import chronotypeAndSleep from '../content/69-chronotype-and-sleep.md?raw'
 
+import sleepJournaling from '../content/70-sleep-journaling.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1295,6 +1297,24 @@ export const articles: Article[] = [
       { question: "Can I change my chronotype?", answer: "You can usually shift your sleep timing earlier or later, but you may not completely change your natural tendency. Morning light, consistent wake time, evening darkness, caffeine timing, and meal timing are the main levers." },
       { question: "Is being a night owl unhealthy?", answer: "Being a night owl is not automatically unhealthy. The problem is misalignment: when your life forces early wake times but your body clock runs late, sleep debt and social jet lag build up." },
       { question: "What is the best sleep schedule for my chronotype?", answer: "The best schedule is one that gives you enough sleep consistently while fitting your biology and real-life obligations. Start with a realistic wake time, then build light exposure, caffeine, meals, and bedtime around it." }
+    ]
+  },
+  {
+    slug: "sleep-journaling",
+    title: "Sleep Journaling: The 10-Minute Brain Dump That Helps You Fall Asleep",
+    description: "Learn how sleep journaling calms racing thoughts, reduces bedtime anxiety, and helps you fall asleep faster with a 10-minute routine.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-01",
+    content: sleepJournaling,
+    featuredImage: "/images/featured-sleep-journaling.png",
+    featuredImageAlt: "Dark minimalist Sleep Journaling graphic with teal text and Sleep Smarter branding",
+    faqs: [
+      { question: "Does journaling before bed actually help you sleep?", answer: "It can help, especially if racing thoughts or unfinished tasks keep you awake. A short, specific to-do list or brain dump gives your mind a place to store open loops before bed." },
+      { question: "How long should I journal before bed?", answer: "Five to ten minutes is enough. Longer sessions can turn into rumination, so keep the format short, concrete, and focused on closure rather than deep emotional analysis." },
+      { question: "Should I journal in bed?", answer: "Usually no. Do your main sleep journal 60 to 90 minutes before bed so your brain has time to downshift. Keep only a small notepad near the bed for quick emergency capture if a thought pops up." },
+      { question: "What should I write in a sleep journal?", answer: "Write what is still open, tomorrow’s first one to three actions, what you are not solving tonight, and one physical downshift cue such as dim lights, a shower, stretching, or reading." },
+      { question: "Can sleep journaling make anxiety worse?", answer: "Yes, if you use it to analyze every fear at bedtime. If journaling makes you more activated, move it earlier, use bullet points only, and focus on next actions and boundaries instead of emotional excavation." }
     ]
   }
 ]
