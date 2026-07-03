@@ -111,6 +111,8 @@ import chronotypeAndSleep from '../content/69-chronotype-and-sleep.md?raw'
 
 import sleepJournaling from '../content/70-sleep-journaling.md?raw'
 
+import revengeBedtimeProcrastination from '../content/71-revenge-bedtime-procrastination.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1315,6 +1317,24 @@ export const articles: Article[] = [
       { question: "Should I journal in bed?", answer: "Usually no. Do your main sleep journal 60 to 90 minutes before bed so your brain has time to downshift. Keep only a small notepad near the bed for quick emergency capture if a thought pops up." },
       { question: "What should I write in a sleep journal?", answer: "Write what is still open, tomorrow’s first one to three actions, what you are not solving tonight, and one physical downshift cue such as dim lights, a shower, stretching, or reading." },
       { question: "Can sleep journaling make anxiety worse?", answer: "Yes, if you use it to analyze every fear at bedtime. If journaling makes you more activated, move it earlier, use bullet points only, and focus on next actions and boundaries instead of emotional excavation." }
+    ]
+  },
+  {
+    slug: "revenge-bedtime-procrastination",
+    title: "Revenge Bedtime Procrastination: Why You Stay Up Too Late",
+    description: "Revenge bedtime procrastination explained: why you stay up too late even when tired, and how to fix the loop without relying on willpower.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-03",
+    content: revengeBedtimeProcrastination,
+    featuredImage: "/images/featured-revenge-bedtime-procrastination.png",
+    featuredImageAlt: "Dark bedroom illustration for revenge bedtime procrastination article",
+    faqs: [
+      { question: "What is revenge bedtime procrastination?", answer: "Revenge bedtime procrastination is delaying sleep to reclaim personal time, even when you are tired and know staying up will make tomorrow worse." },
+      { question: "Why do I stay up late when I am already tired?", answer: "You may be chasing control, reward, quiet, or decompression after a day that felt packed with obligations. At night, your tired brain chooses immediate relief over tomorrow morning." },
+      { question: "Is revenge bedtime procrastination the same as insomnia?", answer: "No. With insomnia, you usually try to sleep and cannot. With revenge bedtime procrastination, you delay getting into bed or starting the sleep routine. They can overlap, but the first move is different." },
+      { question: "How do you stop revenge bedtime procrastination?", answer: "Move personal reward earlier in the evening, create a hard stop that does not depend on willpower, prep the first sleep step before you are exhausted, and make tomorrow morning less punishing." },
+      { question: "Can ADHD make bedtime procrastination worse?", answer: "Yes. ADHD can add time blindness, stimulation seeking, task-switching friction, and delayed sleep timing, all of which can make bedtime harder to initiate." }
     ]
   }
 ]
