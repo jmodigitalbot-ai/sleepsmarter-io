@@ -113,6 +113,8 @@ import sleepJournaling from '../content/70-sleep-journaling.md?raw'
 
 import revengeBedtimeProcrastination from '../content/71-revenge-bedtime-procrastination.md?raw'
 
+import sleepRestrictionTherapy from '../content/72-sleep-restriction-therapy.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1335,6 +1337,24 @@ export const articles: Article[] = [
       { question: "Is revenge bedtime procrastination the same as insomnia?", answer: "No. With insomnia, you usually try to sleep and cannot. With revenge bedtime procrastination, you delay getting into bed or starting the sleep routine. They can overlap, but the first move is different." },
       { question: "How do you stop revenge bedtime procrastination?", answer: "Move personal reward earlier in the evening, create a hard stop that does not depend on willpower, prep the first sleep step before you are exhausted, and make tomorrow morning less punishing." },
       { question: "Can ADHD make bedtime procrastination worse?", answer: "Yes. ADHD can add time blindness, stimulation seeking, task-switching friction, and delayed sleep timing, all of which can make bedtime harder to initiate." }
+    ]
+  },
+  {
+    slug: "sleep-restriction-therapy",
+    title: "Sleep Restriction Therapy: Why Less Time in Bed Can Beat Insomnia",
+    description: "Sleep restriction therapy can rebuild sleep pressure and reduce insomnia. Here's how it works, who should avoid it, and what to do.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-06",
+    content: sleepRestrictionTherapy,
+    featuredImage: "/images/featured-sleep-restriction-therapy.png",
+    featuredImageAlt: "Dark bedroom with a sleep diary and compressed sleep window timeline for sleep restriction therapy",
+    faqs: [
+      { question: "What is sleep restriction therapy?", answer: "Sleep restriction therapy is a CBT-I technique that temporarily limits time in bed to match the sleep you are actually getting. The goal is to improve sleep efficiency, rebuild sleep pressure, and reduce the amount of time your brain spends awake in bed." },
+      { question: "Is sleep restriction therapy the same as sleep deprivation?", answer: "No. Sleep deprivation is uncontrolled sleep loss. Sleep restriction therapy is a structured, temporary compression of your sleep window with a fixed wake time and gradual expansion as sleep becomes more consolidated." },
+      { question: "How do I calculate my sleep restriction window?", answer: "Track your approximate sleep for seven nights, calculate your average actual sleep time, then set a consistent wake time and build the sleep window backward from there. Many protocols avoid going below about five to five and a half hours without clinical supervision." },
+      { question: "Who should avoid DIY sleep restriction?", answer: "Do not do aggressive sleep restriction without professional guidance if you have untreated sleep apnea, bipolar disorder, seizure risk, severe depression, severe daytime sleepiness, pregnancy, complex medical issues, drowsy-driving risk, or a safety-sensitive job." },
+      { question: "How long does sleep restriction therapy take to work?", answer: "Some people notice less wake time in bed within one to two weeks, while others need several weeks. The usual goal is not instant eight-hour sleep. It is better sleep efficiency first, then gradual expansion of the sleep window." }
     ]
   }
 ]
