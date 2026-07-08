@@ -115,6 +115,8 @@ import revengeBedtimeProcrastination from '../content/71-revenge-bedtime-procras
 
 import sleepRestrictionTherapy from '../content/72-sleep-restriction-therapy.md?raw'
 
+import reboundInsomnia from '../content/73-rebound-insomnia.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1355,6 +1357,24 @@ export const articles: Article[] = [
       { question: "How do I calculate my sleep restriction window?", answer: "Track your approximate sleep for seven nights, calculate your average actual sleep time, then set a consistent wake time and build the sleep window backward from there. Many protocols avoid going below about five to five and a half hours without clinical supervision." },
       { question: "Who should avoid DIY sleep restriction?", answer: "Do not do aggressive sleep restriction without professional guidance if you have untreated sleep apnea, bipolar disorder, seizure risk, severe depression, severe daytime sleepiness, pregnancy, complex medical issues, drowsy-driving risk, or a safety-sensitive job." },
       { question: "How long does sleep restriction therapy take to work?", answer: "Some people notice less wake time in bed within one to two weeks, while others need several weeks. The usual goal is not instant eight-hour sleep. It is better sleep efficiency first, then gradual expansion of the sleep window." }
+    ]
+  },
+  {
+    slug: "rebound-insomnia",
+    title: "Rebound Insomnia: Why Sleep Gets Worse After Stopping Sleeping Pills",
+    description: "Rebound insomnia after sleeping pills is real. Learn why it happens, how long it lasts, and how to rebuild sleep without panic.",
+    readTime: "12 min read",
+    date: "July 2026",
+    publishDate: "2026-07-08",
+    content: reboundInsomnia,
+    featuredImage: "/images/featured-rebound-insomnia.png",
+    featuredImageAlt: "Dark bedroom scene with a bedside table, sleep medication bottle, and dim alarm clock",
+    faqs: [
+      { question: "What is rebound insomnia?", answer: "Rebound insomnia is a temporary worsening of sleep after reducing or stopping a sleep medication or sedating substance. It can cause longer sleep latency, more wake-ups, early waking, and stronger anxiety around bedtime." },
+      { question: "How long does rebound insomnia last?", answer: "For some people, rebound insomnia is strongest for a few nights and starts easing within a week. For others, especially after long-term use or abrupt discontinuation, sleep can stay unstable longer. Medication type, dose, duration, taper speed, and baseline insomnia all matter." },
+      { question: "Should I stop sleeping pills cold turkey?", answer: "No. Do not abruptly stop prescription sleep medication without your prescriber. Some medications require a gradual taper and some withdrawal patterns can be dangerous, especially with benzodiazepines, Z-drugs, alcohol use, other sedatives, or certain medical histories." },
+      { question: "What helps rebound insomnia?", answer: "The best non-medication supports are a stable wake time, not expanding time in bed, getting out of bed when you are awake and frustrated, morning light, early caffeine cutoff, and CBT-I principles like stimulus control and sleep restriction." },
+      { question: "Can CBT-I help when stopping sleep medication?", answer: "Yes. CBT-I can help rebuild the behavioral side of sleep while medication is tapered under medical guidance. It targets the learned fear, excessive time in bed, irregular timing, and sleep effort that can keep rebound insomnia going." }
     ]
   }
 ]
