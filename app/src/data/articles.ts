@@ -117,6 +117,8 @@ import sleepRestrictionTherapy from '../content/72-sleep-restriction-therapy.md?
 
 import reboundInsomnia from '../content/73-rebound-insomnia.md?raw'
 
+import restlessLegsSyndromeSleep from '../content/74-restless-legs-syndrome-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1375,6 +1377,24 @@ export const articles: Article[] = [
       { question: "Should I stop sleeping pills cold turkey?", answer: "No. Do not abruptly stop prescription sleep medication without your prescriber. Some medications require a gradual taper and some withdrawal patterns can be dangerous, especially with benzodiazepines, Z-drugs, alcohol use, other sedatives, or certain medical histories." },
       { question: "What helps rebound insomnia?", answer: "The best non-medication supports are a stable wake time, not expanding time in bed, getting out of bed when you are awake and frustrated, morning light, early caffeine cutoff, and CBT-I principles like stimulus control and sleep restriction." },
       { question: "Can CBT-I help when stopping sleep medication?", answer: "Yes. CBT-I can help rebuild the behavioral side of sleep while medication is tapered under medical guidance. It targets the learned fear, excessive time in bed, irregular timing, and sleep effort that can keep rebound insomnia going." }
+    ]
+  },
+  {
+    slug: "restless-legs-syndrome-sleep",
+    title: "Restless Legs Syndrome and Sleep: Why Your Legs Won’t Let You Rest",
+    description: "Restless legs syndrome can wreck sleep. Learn what causes RLS at night, what helps tonight, and when to check iron, meds, or sleep apnea.",
+    readTime: "12 min read",
+    date: "July 2026",
+    publishDate: "2026-07-10",
+    content: restlessLegsSyndromeSleep,
+    featuredImage: "/images/featured-restless-legs-syndrome-sleep.png",
+    featuredImageAlt: "Dark themed sleep illustration for restless legs syndrome at night",
+    faqs: [
+      { question: "What does restless legs syndrome feel like at night?", answer: "Restless legs syndrome often feels like crawling, buzzing, pulling, aching, tingling, or an uncontrollable urge to move the legs. It usually gets worse when resting, peaks in the evening or at night, and improves temporarily with movement." },
+      { question: "Can low iron cause restless legs syndrome?", answer: "Low iron stores can worsen RLS even when a basic blood count looks normal. If symptoms are frequent, ask a clinician about iron studies such as ferritin and transferrin saturation instead of taking high-dose iron blindly." },
+      { question: "Does magnesium help restless legs syndrome?", answer: "Magnesium may help some people, especially if muscle tension, cramps, or general restlessness are involved. It is not a guaranteed RLS cure and should not replace iron testing, medication review, or medical care for frequent symptoms." },
+      { question: "What can I do tonight if restless legs keep me awake?", answer: "Get out of bed before frustration spikes, walk calmly for a few minutes, stretch the calves and hamstrings, try heat or cold, use light compression or massage, then return to bed when the urge to move drops." },
+      { question: "When should I see a doctor for restless legs syndrome?", answer: "See a clinician if symptoms happen three or more nights per week, cause real sleep loss, started after a medication change, occur during pregnancy, or come with signs of sleep apnea such as loud snoring, gasping, morning headaches, or severe daytime sleepiness." }
     ]
   }
 ]
