@@ -119,6 +119,8 @@ import reboundInsomnia from '../content/73-rebound-insomnia.md?raw'
 
 import restlessLegsSyndromeSleep from '../content/74-restless-legs-syndrome-sleep.md?raw'
 
+import hypnicJerksArticle from '../content/75-hypnic-jerks.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1395,6 +1397,24 @@ export const articles: Article[] = [
       { question: "Does magnesium help restless legs syndrome?", answer: "Magnesium may help some people, especially if muscle tension, cramps, or general restlessness are involved. It is not a guaranteed RLS cure and should not replace iron testing, medication review, or medical care for frequent symptoms." },
       { question: "What can I do tonight if restless legs keep me awake?", answer: "Get out of bed before frustration spikes, walk calmly for a few minutes, stretch the calves and hamstrings, try heat or cold, use light compression or massage, then return to bed when the urge to move drops." },
       { question: "When should I see a doctor for restless legs syndrome?", answer: "See a clinician if symptoms happen three or more nights per week, cause real sleep loss, started after a medication change, occur during pregnancy, or come with signs of sleep apnea such as loud snoring, gasping, morning headaches, or severe daytime sleepiness." }
+    ]
+  },
+  {
+    slug: "hypnic-jerks",
+    title: "Hypnic Jerks: Why You Twitch Awake When Falling Asleep",
+    description: "Learn why hypnic jerks happen, what triggers sleep-start twitches, and how to calm your nervous system before bed.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-13",
+    content: hypnicJerksArticle,
+    featuredImage: "/images/featured-hypnic-jerks.png",
+    featuredImageAlt: "Dark themed sleep graphic for an article about hypnic jerks and twitching awake while falling asleep",
+    faqs: [
+      { question: "Are hypnic jerks dangerous?", answer: "Most hypnic jerks are harmless sleep-start twitches that happen as you transition into sleep. Get medical help if movements are violent, repetitive through the night, cause injury, happen during the day, or come with neurological symptoms." },
+      { question: "Why do I twitch awake right as I fall asleep?", answer: "Hypnic jerks often happen when the nervous system is still activated during the sleep transition. Stress, sleep deprivation, late caffeine, alcohol, and anxiety about sleep can all make the handoff into sleep bumpier." },
+      { question: "Can anxiety cause hypnic jerks?", answer: "Anxiety can make hypnic jerks more likely by raising physiological arousal. It can also make them feel scarier, which creates a loop where fear of the next twitch keeps the nervous system on alert." },
+      { question: "How do I stop hypnic jerks at night?", answer: "Start with the basics: keep a consistent wake time, cut caffeine earlier, reduce evening stimulation, avoid alcohol close to bed, cool the bedroom, and use a calm response if a sleep start wakes you up." },
+      { question: "Are hypnic jerks the same as restless legs syndrome?", answer: "No. Hypnic jerks are sudden brief twitches around sleep onset. Restless legs syndrome usually creates an uncomfortable urge to move the legs that gets worse during rest and improves with movement." }
     ]
   }
 ]

@@ -113,7 +113,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog Articles (72 total) -->
+  <!-- Blog Articles (73 total) -->
   <url>
     <loc>https://www.sleepsmarter.io/blog/how-sleep-cycles-work</loc>
     <lastmod>2026-02-04</lastmod>
@@ -543,6 +543,12 @@
   <url>
     <loc>https://www.sleepsmarter.io/blog/restless-legs-syndrome-sleep</loc>
     <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepsmarter.io/blog/hypnic-jerks</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
