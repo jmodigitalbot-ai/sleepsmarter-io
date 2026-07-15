@@ -121,6 +121,8 @@ import restlessLegsSyndromeSleep from '../content/74-restless-legs-syndrome-slee
 
 import hypnicJerksArticle from '../content/75-hypnic-jerks.md?raw'
 
+import sleepParalysis from '../content/76-sleep-paralysis.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1415,6 +1417,24 @@ export const articles: Article[] = [
       { question: "Can anxiety cause hypnic jerks?", answer: "Anxiety can make hypnic jerks more likely by raising physiological arousal. It can also make them feel scarier, which creates a loop where fear of the next twitch keeps the nervous system on alert." },
       { question: "How do I stop hypnic jerks at night?", answer: "Start with the basics: keep a consistent wake time, cut caffeine earlier, reduce evening stimulation, avoid alcohol close to bed, cool the bedroom, and use a calm response if a sleep start wakes you up." },
       { question: "Are hypnic jerks the same as restless legs syndrome?", answer: "No. Hypnic jerks are sudden brief twitches around sleep onset. Restless legs syndrome usually creates an uncomfortable urge to move the legs that gets worse during rest and improves with movement." }
+    ]
+  },
+  {
+    slug: "sleep-paralysis",
+    title: "Sleep Paralysis: Why You Wake Up Unable to Move",
+    description: "Sleep paralysis explained: why it happens, what to do during an episode, and how to reduce triggers like stress and poor sleep.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-15",
+    content: sleepParalysis,
+    featuredImage: "/images/featured-sleep-paralysis.png",
+    featuredImageAlt: "Dark bedroom illustration for an article about sleep paralysis",
+    faqs: [
+      { question: "What is sleep paralysis?", answer: "Sleep paralysis is a temporary inability to move or speak while falling asleep or waking up. It happens when your mind becomes aware while your body is still under REM atonia, the normal muscle inhibition that keeps you from acting out dreams." },
+      { question: "Is sleep paralysis dangerous?", answer: "Occasional sleep paralysis is usually not dangerous, even though it can feel terrifying. Frequent episodes, severe daytime sleepiness, loud snoring, gasping, or sudden muscle weakness should be discussed with a clinician." },
+      { question: "Why do I see things during sleep paralysis?", answer: "Visual or auditory hallucinations can happen because REM dream imagery overlaps with waking awareness. Your brain is partly awake, but dream content and threat detection can still be active." },
+      { question: "How do you stop sleep paralysis while it is happening?", answer: "Label it as sleep paralysis, focus on a slow exhale, avoid fighting your whole body, and try one small movement like wiggling a toe, blinking, or moving your tongue until the episode breaks." },
+      { question: "How can I reduce sleep paralysis episodes?", answer: "Stabilize your wake time, get enough sleep, reduce caffeine and alcohol, manage nighttime stress, avoid back sleeping if that is your trigger, and address possible sleep apnea or narcolepsy signs if episodes are frequent." }
     ]
   }
 ]
