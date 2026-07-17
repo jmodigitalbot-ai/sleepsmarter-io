@@ -123,6 +123,8 @@ import hypnicJerksArticle from '../content/75-hypnic-jerks.md?raw'
 
 import sleepParalysis from '../content/76-sleep-paralysis.md?raw'
 
+import sleepBruxism from '../content/77-sleep-bruxism.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1435,6 +1437,24 @@ export const articles: Article[] = [
       { question: "Why do I see things during sleep paralysis?", answer: "Visual or auditory hallucinations can happen because REM dream imagery overlaps with waking awareness. Your brain is partly awake, but dream content and threat detection can still be active." },
       { question: "How do you stop sleep paralysis while it is happening?", answer: "Label it as sleep paralysis, focus on a slow exhale, avoid fighting your whole body, and try one small movement like wiggling a toe, blinking, or moving your tongue until the episode breaks." },
       { question: "How can I reduce sleep paralysis episodes?", answer: "Stabilize your wake time, get enough sleep, reduce caffeine and alcohol, manage nighttime stress, avoid back sleeping if that is your trigger, and address possible sleep apnea or narcolepsy signs if episodes are frequent." }
+    ]
+  },
+  {
+    slug: "sleep-bruxism",
+    title: "Sleep Bruxism: Why You Grind Your Teeth at Night",
+    description: "Sleep bruxism causes jaw pain, tooth damage, and morning headaches. Learn the real triggers and how to protect your teeth.",
+    readTime: "12 min read",
+    date: "July 2026",
+    publishDate: "2026-07-17",
+    content: sleepBruxism,
+    featuredImage: "/images/featured-sleep-bruxism.png",
+    featuredImageAlt: "Dark bedroom scene representing sleep bruxism and nighttime teeth grinding",
+    faqs: [
+      { question: "What is sleep bruxism?", answer: "Sleep bruxism is repetitive jaw muscle activity during sleep. It can involve grinding, clenching, tapping, or bracing the jaw, often without the person realizing it happened." },
+      { question: "What causes teeth grinding at night?", answer: "Common triggers include stress, sleep fragmentation, alcohol, caffeine, nicotine, certain medications, jaw tension, and sometimes sleep apnea or airway resistance." },
+      { question: "Can a night guard stop teeth grinding?", answer: "A night guard protects your teeth from damage, but it does not always stop the grinding mechanism. It is best used while you also address triggers like stress, sleep apnea signs, caffeine, alcohol, or poor sleep timing." },
+      { question: "When should I see a dentist for sleep bruxism?", answer: "See a dentist if you have morning jaw pain, tooth sensitivity, visible wear, cracked teeth, headaches near the temples, or a partner reports regular grinding sounds." },
+      { question: "Is teeth grinding related to sleep apnea?", answer: "It can be. Bruxism may appear around airway-related arousals in some people. If you also snore, gasp, wake with dry mouth, have morning headaches, or feel exhausted after enough sleep, ask about a sleep apnea evaluation." }
     ]
   }
 ]
