@@ -125,6 +125,8 @@ import sleepParalysis from '../content/76-sleep-paralysis.md?raw'
 
 import sleepBruxism from '../content/77-sleep-bruxism.md?raw'
 
+import whatIsInsomnia from '../content/78-what-is-insomnia.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1455,6 +1457,24 @@ export const articles: Article[] = [
       { question: "Can a night guard stop teeth grinding?", answer: "A night guard protects your teeth from damage, but it does not always stop the grinding mechanism. It is best used while you also address triggers like stress, sleep apnea signs, caffeine, alcohol, or poor sleep timing." },
       { question: "When should I see a dentist for sleep bruxism?", answer: "See a dentist if you have morning jaw pain, tooth sensitivity, visible wear, cracked teeth, headaches near the temples, or a partner reports regular grinding sounds." },
       { question: "Is teeth grinding related to sleep apnea?", answer: "It can be. Bruxism may appear around airway-related arousals in some people. If you also snore, gasp, wake with dry mouth, have morning headaches, or feel exhausted after enough sleep, ask about a sleep apnea evaluation." }
+    ]
+  },
+  {
+    slug: "what-is-insomnia",
+    title: "What Is Insomnia? Causes, Types, and How to Beat It for Good",
+    description: "Learn what insomnia is, the main causes and types, and the practical steps that help retrain your sleep system without chasing random hacks.",
+    readTime: "12 min read",
+    date: "July 2026",
+    publishDate: "2026-07-20",
+    content: whatIsInsomnia,
+    featuredImage: "/images/featured-what-is-insomnia.png",
+    featuredImageAlt: "Dark bedroom scene with a tired person awake at night and an alarm clock glowing",
+    faqs: [
+      { question: "What is insomnia?", answer: "Insomnia is a sleep disorder where you have trouble falling asleep, staying asleep, waking too early, or getting restorative sleep despite having a reasonable opportunity to sleep." },
+      { question: "What are the main types of insomnia?", answer: "The main patterns are sleep-onset insomnia, sleep-maintenance insomnia, and early-morning awakening. Insomnia can also be acute or chronic depending on duration and frequency." },
+      { question: "What causes insomnia?", answer: "Common causes include stress and hyperarousal, circadian rhythm disruption, caffeine, alcohol, medical conditions, mental health issues, medication effects, pain, sleep apnea, and conditioned wakefulness in bed." },
+      { question: "How do you fix insomnia naturally?", answer: "Start with a consistent wake time, morning light, earlier caffeine cutoff, a real wind-down routine, stimulus control, and fewer hours spent awake in bed. Chronic insomnia often responds best to CBT-I." },
+      { question: "When should I see a doctor for insomnia?", answer: "Talk to a doctor if insomnia lasts longer than three months, causes serious daytime impairment, or comes with loud snoring, gasping, restless legs, morning headaches, drowsy driving, or major mood changes." }
     ]
   }
 ]
