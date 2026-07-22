@@ -127,6 +127,8 @@ import sleepBruxism from '../content/77-sleep-bruxism.md?raw'
 
 import whatIsInsomnia from '../content/78-what-is-insomnia.md?raw'
 
+import sleepDisorders from '../content/79-sleep-disorders.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1475,6 +1477,24 @@ export const articles: Article[] = [
       { question: "What causes insomnia?", answer: "Common causes include stress and hyperarousal, circadian rhythm disruption, caffeine, alcohol, medical conditions, mental health issues, medication effects, pain, sleep apnea, and conditioned wakefulness in bed." },
       { question: "How do you fix insomnia naturally?", answer: "Start with a consistent wake time, morning light, earlier caffeine cutoff, a real wind-down routine, stimulus control, and fewer hours spent awake in bed. Chronic insomnia often responds best to CBT-I." },
       { question: "When should I see a doctor for insomnia?", answer: "Talk to a doctor if insomnia lasts longer than three months, causes serious daytime impairment, or comes with loud snoring, gasping, restless legs, morning headaches, drowsy driving, or major mood changes." }
+    ]
+  },
+  {
+    slug: "sleep-disorders",
+    title: "Sleep Disorders: Types, Symptoms, and When to Get Help",
+    description: "Learn the main types of sleep disorders, warning signs, and when to stop guessing and get medical help for bad sleep.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-22",
+    content: sleepDisorders,
+    featuredImage: "/images/featured-sleep-disorders.png",
+    featuredImageAlt: "Dark bedroom diagnostic map showing common sleep disorder patterns",
+    faqs: [
+      { question: "What are the most common sleep disorders?", answer: "The most common categories include insomnia, sleep apnea and other breathing disorders, restless legs syndrome and other movement disorders, circadian rhythm disorders, hypersomnia conditions, and parasomnias like sleep paralysis or sleepwalking." },
+      { question: "How do I know if my bad sleep is a disorder?", answer: "A rough night is not automatically a disorder. It becomes more concerning when the pattern keeps happening, you have enough opportunity to sleep, and it affects daytime energy, mood, focus, safety, or health." },
+      { question: "When should I get checked for sleep apnea?", answer: "Get evaluated if you snore loudly, gasp or choke awake, have witnessed breathing pauses, wake with morning headaches, have high blood pressure, or feel exhausted despite spending enough time in bed." },
+      { question: "Can sleep disorders be fixed with better sleep hygiene?", answer: "Sometimes basic habits help, especially for schedule issues and mild insomnia patterns. But sleep hygiene will not fix a collapsing airway, untreated restless legs syndrome, narcolepsy, or severe chronic insomnia by itself." },
+      { question: "What should I track before seeing a sleep doctor?", answer: "Track bedtime, wake time, wake-ups, naps, caffeine, alcohol, medications, snoring, gasping, leg sensations, morning headaches, daytime sleepiness, and unusual sleep behaviors for one to two weeks." }
     ]
   }
 ]
