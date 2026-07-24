@@ -129,6 +129,8 @@ import whatIsInsomnia from '../content/78-what-is-insomnia.md?raw'
 
 import sleepDisorders from '../content/79-sleep-disorders.md?raw'
 
+import sleepHygieneChecklist from '../content/80-sleep-hygiene-checklist.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1495,6 +1497,24 @@ export const articles: Article[] = [
       { question: "When should I get checked for sleep apnea?", answer: "Get evaluated if you snore loudly, gasp or choke awake, have witnessed breathing pauses, wake with morning headaches, have high blood pressure, or feel exhausted despite spending enough time in bed." },
       { question: "Can sleep disorders be fixed with better sleep hygiene?", answer: "Sometimes basic habits help, especially for schedule issues and mild insomnia patterns. But sleep hygiene will not fix a collapsing airway, untreated restless legs syndrome, narcolepsy, or severe chronic insomnia by itself." },
       { question: "What should I track before seeing a sleep doctor?", answer: "Track bedtime, wake time, wake-ups, naps, caffeine, alcohol, medications, snoring, gasping, leg sensations, morning headaches, daytime sleepiness, and unusual sleep behaviors for one to two weeks." }
+    ]
+  },
+  {
+    slug: "sleep-hygiene-checklist",
+    title: "Sleep Hygiene Checklist: 20 Habits That Actually Improve Sleep",
+    description: "A practical sleep hygiene checklist with 20 habits that improve sleep quality, reduce wake-ups, and build a better bedtime routine.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-24",
+    content: sleepHygieneChecklist,
+    featuredImage: "/images/featured-sleep-hygiene-checklist.png",
+    featuredImageAlt: "Dark themed sleep hygiene checklist illustration for Sleep Smarter",
+    faqs: [
+      { question: "What is sleep hygiene?", answer: "Sleep hygiene is the set of habits, timing cues, and bedroom conditions that make sleep more likely. It includes consistent wake times, light exposure, caffeine timing, wind-down routines, room temperature, darkness, and how you use your bed." },
+      { question: "Does sleep hygiene really work?", answer: "Sleep hygiene helps most when poor habits or inconsistent cues are contributing to the problem. It is not a cure for sleep apnea, restless legs, chronic pain, medication issues, or long-term insomnia by itself, but it is the foundation that makes other sleep strategies work better." },
+      { question: "What is the most important sleep hygiene habit?", answer: "A consistent wake time is usually the most important starting point because it anchors your circadian rhythm. Morning outdoor light and an early caffeine cutoff are close behind." },
+      { question: "How long does it take sleep hygiene to improve sleep?", answer: "Some changes can help within a few nights, especially caffeine cutoff, cooling the room, and reducing alcohol. Circadian changes like fixed wake time and morning light often need one to two weeks of consistency." },
+      { question: "Can bad sleep hygiene cause insomnia?", answer: "Bad sleep hygiene can trigger or maintain insomnia by teaching your brain that bed is a place for stress, scrolling, work, and wakefulness. Chronic insomnia often needs CBT-I strategies too, especially stimulus control and sleep restriction." }
     ]
   }
 ]
