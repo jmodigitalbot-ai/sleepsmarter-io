@@ -131,6 +131,8 @@ import sleepDisorders from '../content/79-sleep-disorders.md?raw'
 
 import sleepHygieneChecklist from '../content/80-sleep-hygiene-checklist.md?raw'
 
+import bestMattressForHotSleepers from '../content/81-best-mattress-for-hot-sleepers.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1515,6 +1517,24 @@ export const articles: Article[] = [
       { question: "What is the most important sleep hygiene habit?", answer: "A consistent wake time is usually the most important starting point because it anchors your circadian rhythm. Morning outdoor light and an early caffeine cutoff are close behind." },
       { question: "How long does it take sleep hygiene to improve sleep?", answer: "Some changes can help within a few nights, especially caffeine cutoff, cooling the room, and reducing alcohol. Circadian changes like fixed wake time and morning light often need one to two weeks of consistency." },
       { question: "Can bad sleep hygiene cause insomnia?", answer: "Bad sleep hygiene can trigger or maintain insomnia by teaching your brain that bed is a place for stress, scrolling, work, and wakefulness. Chronic insomnia often needs CBT-I strategies too, especially stimulus control and sleep restriction." }
+    ]
+  },
+  {
+    slug: "best-mattress-for-hot-sleepers",
+    title: "Best Mattress for Hot Sleepers: What Actually Keeps You Cool",
+    description: "Find the best mattress for hot sleepers by material, airflow, firmness, and bedding setup. Skip cooling gimmicks and shop smarter.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-27",
+    content: bestMattressForHotSleepers,
+    featuredImage: "/images/featured-best-mattress-for-hot-sleepers.png",
+    featuredImageAlt: "Dark themed illustration for best mattress for hot sleepers guide",
+    faqs: [
+      { question: "What type of mattress is best for hot sleepers?", answer: "Most hot sleepers do best with a latex hybrid mattress because latex is breathable and responsive while coils allow air to move through the support core." },
+      { question: "Are cooling memory foam mattresses worth it?", answer: "Some can help at first touch, but gel, copper, or cool-to-touch covers do not solve heat buildup if the mattress uses dense foam with poor airflow." },
+      { question: "Is latex cooler than memory foam?", answer: "Yes, latex usually sleeps cooler than traditional memory foam because it is more breathable, more responsive, and does not wrap around the body as deeply." },
+      { question: "Can bedding make a mattress sleep hotter?", answer: "Absolutely. Heavy comforters, synthetic sheets, waterproof protectors, and foam toppers can trap heat even if the mattress underneath is breathable." },
+      { question: "Should hot sleepers choose a firm or soft mattress?", answer: "Hot sleepers usually need enough firmness to avoid deep sink, but the right firmness still depends on sleep position. Side sleepers need pressure relief, while stomach sleepers need firmer hip support." }
     ]
   }
 ]
