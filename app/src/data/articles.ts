@@ -133,6 +133,8 @@ import sleepHygieneChecklist from '../content/80-sleep-hygiene-checklist.md?raw'
 
 import bestMattressForHotSleepers from '../content/81-best-mattress-for-hot-sleepers.md?raw'
 
+import bestMattressForCouples from '../content/82-best-mattress-for-couples.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1535,6 +1537,24 @@ export const articles: Article[] = [
       { question: "Is latex cooler than memory foam?", answer: "Yes, latex usually sleeps cooler than traditional memory foam because it is more breathable, more responsive, and does not wrap around the body as deeply." },
       { question: "Can bedding make a mattress sleep hotter?", answer: "Absolutely. Heavy comforters, synthetic sheets, waterproof protectors, and foam toppers can trap heat even if the mattress underneath is breathable." },
       { question: "Should hot sleepers choose a firm or soft mattress?", answer: "Hot sleepers usually need enough firmness to avoid deep sink, but the right firmness still depends on sleep position. Side sleepers need pressure relief, while stomach sleepers need firmer hip support." }
+    ]
+  },
+  {
+    slug: "best-mattress-for-couples",
+    title: "Best Mattress for Couples: How to Choose the Right Bed",
+    description: "Learn how couples should choose a mattress for motion isolation, firmness mismatch, cooling, edge support, and long-term comfort.",
+    readTime: "10 min read",
+    date: "July 2026",
+    publishDate: "2026-07-29",
+    content: bestMattressForCouples,
+    featuredImage: "/images/featured-best-mattress-for-couples.png",
+    featuredImageAlt: "Dark themed graphic for a couples mattress guide on Sleep Smarter",
+    faqs: [
+      { question: "What type of mattress is best for couples?", answer: "Most couples do best with a high-quality hybrid mattress because it balances motion isolation, airflow, edge support, and responsiveness. If partners need very different firmness levels, adjustable firmness or a split king setup is usually better." },
+      { question: "Is memory foam good for couples?", answer: "Memory foam can be good for couples when motion isolation is the top priority. The tradeoff is heat retention and slower movement, so hot sleepers and combination sleepers should be careful with dense all-foam designs." },
+      { question: "Should couples get a king or queen mattress?", answer: "A queen can work for smaller rooms or sleepers who barely move, but a king is usually better for couples who sleep hot, change positions, or wake each other up. More usable space reduces accidental contact and partner disturbance." },
+      { question: "Is a split king worth it for couples?", answer: "A split king is worth it when partners need different firmness levels or want different adjustable base settings. The downside is the center seam, but it can beat forcing both sleepers onto one compromise mattress." },
+      { question: "What mattress feature matters most for couples?", answer: "Motion isolation matters first if one partner wakes from movement. After that, focus on firmness compatibility, temperature control, edge support, and durability because two sleepers put more stress on a mattress than one." }
     ]
   }
 ]
