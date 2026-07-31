@@ -135,6 +135,8 @@ import bestMattressForHotSleepers from '../content/81-best-mattress-for-hot-slee
 
 import bestMattressForCouples from '../content/82-best-mattress-for-couples.md?raw'
 
+import bestLatexMattress from '../content/83-best-latex-mattress.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1555,6 +1557,24 @@ export const articles: Article[] = [
       { question: "Should couples get a king or queen mattress?", answer: "A queen can work for smaller rooms or sleepers who barely move, but a king is usually better for couples who sleep hot, change positions, or wake each other up. More usable space reduces accidental contact and partner disturbance." },
       { question: "Is a split king worth it for couples?", answer: "A split king is worth it when partners need different firmness levels or want different adjustable base settings. The downside is the center seam, but it can beat forcing both sleepers onto one compromise mattress." },
       { question: "What mattress feature matters most for couples?", answer: "Motion isolation matters first if one partner wakes from movement. After that, focus on firmness compatibility, temperature control, edge support, and durability because two sleepers put more stress on a mattress than one." }
+    ]
+  },
+  {
+    slug: "best-latex-mattress",
+    title: "Best Latex Mattress: How to Choose the Right Bed",
+    description: "Learn how to choose the best latex mattress by sleep position, firmness, materials, cooling, and budget.",
+    readTime: "12 min read",
+    date: "July 2026",
+    publishDate: "2026-07-31",
+    content: bestLatexMattress,
+    featuredImage: "/images/featured-best-latex-mattress.png",
+    featuredImageAlt: "Dark themed Sleep Smarter featured image for a latex mattress buying guide",
+    faqs: [
+      { question: "Is a latex mattress good for sleep?", answer: "A latex mattress can be excellent for sleep if you like a responsive, cooler, more supportive surface. It works especially well for people who dislike the slow sink of memory foam." },
+      { question: "Is Dunlop or Talalay latex better?", answer: "Dunlop latex usually feels denser and more supportive, which helps back, stomach, and heavier sleepers. Talalay latex usually feels softer and airier, which can help side sleepers who need pressure relief." },
+      { question: "Is a latex hybrid better than an all-latex mattress?", answer: "A latex hybrid is better for many people because pocketed coils add airflow, edge support, and a more familiar feel. An all-latex mattress is better if you want maximum natural-material construction and long-term durability." },
+      { question: "Do latex mattresses sleep hot?", answer: "Latex mattresses usually sleep cooler than memory foam because they do not trap the body as deeply and often include pin-core airflow channels. Latex hybrids tend to sleep coolest because air can also move through the coil layer." },
+      { question: "Who should not buy a latex mattress?", answer: "You may not like latex if you want a deep memory foam hug, hate bounce, need the cheapest possible mattress, are extremely motion-sensitive, or have a confirmed latex allergy." }
     ]
   }
 ]
