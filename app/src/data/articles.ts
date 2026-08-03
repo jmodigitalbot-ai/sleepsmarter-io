@@ -137,6 +137,8 @@ import bestMattressForCouples from '../content/82-best-mattress-for-couples.md?r
 
 import bestLatexMattress from '../content/83-best-latex-mattress.md?raw'
 
+import bestMattressTopper from '../content/84-best-mattress-topper.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1575,6 +1577,24 @@ export const articles: Article[] = [
       { question: "Is a latex hybrid better than an all-latex mattress?", answer: "A latex hybrid is better for many people because pocketed coils add airflow, edge support, and a more familiar feel. An all-latex mattress is better if you want maximum natural-material construction and long-term durability." },
       { question: "Do latex mattresses sleep hot?", answer: "Latex mattresses usually sleep cooler than memory foam because they do not trap the body as deeply and often include pin-core airflow channels. Latex hybrids tend to sleep coolest because air can also move through the coil layer." },
       { question: "Who should not buy a latex mattress?", answer: "You may not like latex if you want a deep memory foam hug, hate bounce, need the cheapest possible mattress, are extremely motion-sensitive, or have a confirmed latex allergy." }
+    ]
+  },
+  {
+    slug: "best-mattress-topper",
+    title: "Best Mattress Topper: How to Fix a Too-Firm Bed",
+    description: "Find the best mattress topper for side, back, stomach, and hot sleepers, plus when to replace the mattress instead.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-03",
+    content: bestMattressTopper,
+    featuredImage: "/images/featured-best-mattress-topper.png",
+    featuredImageAlt: "Dark themed sleep graphic for a best mattress topper guide",
+    faqs: [
+      { question: "Is a mattress topper worth it?", answer: "A mattress topper is worth it when your mattress is still supportive but feels too firm or uncomfortable on the surface. It is not worth it if the mattress is sagging, dipping, or too soft overall." },
+      { question: "What thickness mattress topper is best?", answer: "A 2-inch mattress topper is the safest starting point for most people. Side sleepers may need 2 to 3 inches, while stomach sleepers should usually stay closer to 1 inch to avoid hip sink." },
+      { question: "Is latex or memory foam better for a mattress topper?", answer: "Latex is usually better for airflow, responsiveness, and easier movement. Memory foam is better if you want deeper contouring and pressure relief, but it can trap more heat and create more sink." },
+      { question: "Can a mattress topper fix back pain?", answer: "A topper can help back pain caused by a mattress that is too firm on top, but it cannot fix poor support. If your hips sag or the mattress has a visible dip, replacing the mattress is usually the better move." },
+      { question: "What is the best mattress topper for hot sleepers?", answer: "Hot sleepers should be careful with thick memory foam. Breathable latex, wool, and cooling bedding layers are usually better choices because they reduce heat buildup around the body." }
     ]
   }
 ]
