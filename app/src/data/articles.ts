@@ -139,6 +139,8 @@ import bestLatexMattress from '../content/83-best-latex-mattress.md?raw'
 
 import bestMattressTopper from '../content/84-best-mattress-topper.md?raw'
 
+import bestSleepMask from '../content/85-best-sleep-mask.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1595,6 +1597,24 @@ export const articles: Article[] = [
       { question: "Is latex or memory foam better for a mattress topper?", answer: "Latex is usually better for airflow, responsiveness, and easier movement. Memory foam is better if you want deeper contouring and pressure relief, but it can trap more heat and create more sink." },
       { question: "Can a mattress topper fix back pain?", answer: "A topper can help back pain caused by a mattress that is too firm on top, but it cannot fix poor support. If your hips sag or the mattress has a visible dip, replacing the mattress is usually the better move." },
       { question: "What is the best mattress topper for hot sleepers?", answer: "Hot sleepers should be careful with thick memory foam. Breathable latex, wool, and cooling bedding layers are usually better choices because they reduce heat buildup around the body." }
+    ]
+  },
+  {
+    slug: "best-sleep-mask",
+    title: "Best Sleep Mask: How to Choose One That Actually Blocks Light",
+    description: "Learn how to choose the best sleep mask for blackout, side sleeping, travel, hot sleepers, and shift work.",
+    readTime: "12 min read",
+    date: "August 2026",
+    publishDate: "2026-08-05",
+    content: bestSleepMask,
+    featuredImage: "/images/featured-best-sleep-mask.png",
+    featuredImageAlt: "Dark themed featured image for best sleep mask guide",
+    faqs: [
+      { question: "Do sleep masks actually improve sleep?", answer: "Sleep masks can improve sleep when ambient light is part of the problem. They block light that can disrupt melatonin timing, fragment sleep, or wake you too early, especially in bright rooms, hotels, and daytime sleep situations." },
+      { question: "What type of sleep mask blocks the most light?", answer: "A contoured blackout sleep mask with deep eye cups and a molded nose bridge usually blocks the most light. Flat silk masks can feel nice, but they often leak light around the nose." },
+      { question: "Are sleep masks good for side sleepers?", answer: "Sleep masks can work for side sleepers if the mask is low profile, flexible at the edges, and does not use hard side buckles. Bulky masks may shift or press into the face when you roll onto your side." },
+      { question: "Is a sleep mask better than blackout curtains?", answer: "Blackout curtains are better as a permanent bedroom fix, but a sleep mask is cheaper, portable, and better for travel, naps, partner light, and shift work. Many people get the best results by using both." },
+      { question: "Can sleeping with a mask hurt your eyes?", answer: "A properly fitted sleep mask should not hurt your eyes. Avoid masks that press on your eyelids or eyelashes. Choose a contoured design with eye cups if you feel pressure, have long lashes, or have sensitive eyes." }
     ]
   }
 ]
