@@ -141,6 +141,8 @@ import bestMattressTopper from '../content/84-best-mattress-topper.md?raw'
 
 import bestSleepMask from '../content/85-best-sleep-mask.md?raw'
 
+import sleepDeprivationEffects from '../content/86-sleep-deprivation-effects.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1615,6 +1617,24 @@ export const articles: Article[] = [
       { question: "Are sleep masks good for side sleepers?", answer: "Sleep masks can work for side sleepers if the mask is low profile, flexible at the edges, and does not use hard side buckles. Bulky masks may shift or press into the face when you roll onto your side." },
       { question: "Is a sleep mask better than blackout curtains?", answer: "Blackout curtains are better as a permanent bedroom fix, but a sleep mask is cheaper, portable, and better for travel, naps, partner light, and shift work. Many people get the best results by using both." },
       { question: "Can sleeping with a mask hurt your eyes?", answer: "A properly fitted sleep mask should not hurt your eyes. Avoid masks that press on your eyelids or eyelashes. Choose a contoured design with eye cups if you feel pressure, have long lashes, or have sensitive eyes." }
+    ]
+  },
+  {
+    slug: "sleep-deprivation-effects",
+    title: "Sleep Deprivation Effects: What Happens After 1 Night, 3 Nights, and a Week",
+    description: "What sleep deprivation does after one night, three nights, and a week, plus a practical recovery plan to rebuild your energy and focus.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-07",
+    content: sleepDeprivationEffects,
+    featuredImage: "/images/featured-sleep-deprivation-effects.png",
+    featuredImageAlt: "Dark sleep-themed graphic for an article about sleep deprivation effects",
+    faqs: [
+      { question: "What are the first signs of sleep deprivation?", answer: "The first signs are usually trouble focusing, slower reaction time, irritability, stronger cravings, afternoon crashes, and needing more caffeine to feel normal." },
+      { question: "Can one night of bad sleep affect you?", answer: "Yes. One short night can reduce attention, worsen mood regulation, increase hunger, and slow reaction time the next day, even if you can still function." },
+      { question: "How long does it take to recover from sleep deprivation?", answer: "Recent sleep debt can improve after a few nights of longer, consistent sleep. Chronic sleep restriction may take one to two weeks of stable wake times, enough time in bed, and better sleep hygiene." },
+      { question: "Is sleeping in on weekends enough to catch up?", answer: "Weekend catch-up can help a little, but it does not fully erase chronic weekday sleep loss. A consistent wake time and earlier bedtime across the week work better." },
+      { question: "When should sleep deprivation be checked by a doctor?", answer: "Get medical help if you have drowsy driving, loud snoring with gasping, severe daytime sleepiness, sudden sleep attacks, chronic insomnia, or major mood changes." }
     ]
   }
 ]
