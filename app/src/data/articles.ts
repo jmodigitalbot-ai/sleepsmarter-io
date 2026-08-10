@@ -143,6 +143,8 @@ import bestSleepMask from '../content/85-best-sleep-mask.md?raw'
 
 import sleepDeprivationEffects from '../content/86-sleep-deprivation-effects.md?raw'
 
+import blueLightGlassesForSleep from '../content/87-blue-light-glasses-for-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1635,6 +1637,24 @@ export const articles: Article[] = [
       { question: "How long does it take to recover from sleep deprivation?", answer: "Recent sleep debt can improve after a few nights of longer, consistent sleep. Chronic sleep restriction may take one to two weeks of stable wake times, enough time in bed, and better sleep hygiene." },
       { question: "Is sleeping in on weekends enough to catch up?", answer: "Weekend catch-up can help a little, but it does not fully erase chronic weekday sleep loss. A consistent wake time and earlier bedtime across the week work better." },
       { question: "When should sleep deprivation be checked by a doctor?", answer: "Get medical help if you have drowsy driving, loud snoring with gasping, severe daytime sleepiness, sudden sleep attacks, chronic insomnia, or major mood changes." }
+    ]
+  },
+  {
+    slug: "blue-light-glasses-for-sleep",
+    title: "Blue Light Glasses for Sleep: Do They Actually Work?",
+    description: "Blue light glasses can help sleep, but only if you choose the right lenses and use them before bed. Here is what actually works.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-10",
+    content: blueLightGlassesForSleep,
+    featuredImage: "/images/featured-blue-light-glasses-for-sleep.png",
+    featuredImageAlt: "Dark themed sleep article graphic with the title Blue Light Glasses for Sleep",
+    faqs: [
+      { question: "Do blue light glasses help you sleep?", answer: "Blue light glasses can help if evening light exposure is delaying your sleep. They work best when worn 60–120 minutes before bed, paired with dim lighting and reduced screen brightness." },
+      { question: "What color blue light glasses are best for sleep?", answer: "Amber, orange, or red lenses are best for sleep because they block more circadian-relevant blue and blue-green light than clear lenses. Clear lenses are usually better for daytime computer comfort than bedtime use." },
+      { question: "When should you wear blue light glasses before bed?", answer: "Wear them during the final 60–120 minutes before bed, especially if you use screens or sit under bright LED lighting at night. Putting them on five minutes before bed is usually too late to matter much." },
+      { question: "Are clear blue light glasses enough for sleep?", answer: "Usually no. Clear lenses may reduce glare or eye discomfort, but they often block too little short-wavelength light to meaningfully protect melatonin timing in the evening." },
+      { question: "Can blue light glasses fix insomnia?", answer: "Not by themselves. They can reduce evening light disruption, but insomnia may also involve stress, caffeine, alcohol, sleep anxiety, inconsistent wake times, or sleep disorders like sleep apnea." }
     ]
   }
 ]
