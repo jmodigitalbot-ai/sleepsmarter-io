@@ -145,6 +145,8 @@ import sleepDeprivationEffects from '../content/86-sleep-deprivation-effects.md?
 
 import blueLightGlassesForSleep from '../content/87-blue-light-glasses-for-sleep.md?raw'
 
+import menopauseSleepProblems from '../content/88-menopause-sleep-problems.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1655,6 +1657,24 @@ export const articles: Article[] = [
       { question: "When should you wear blue light glasses before bed?", answer: "Wear them during the final 60–120 minutes before bed, especially if you use screens or sit under bright LED lighting at night. Putting them on five minutes before bed is usually too late to matter much." },
       { question: "Are clear blue light glasses enough for sleep?", answer: "Usually no. Clear lenses may reduce glare or eye discomfort, but they often block too little short-wavelength light to meaningfully protect melatonin timing in the evening." },
       { question: "Can blue light glasses fix insomnia?", answer: "Not by themselves. They can reduce evening light disruption, but insomnia may also involve stress, caffeine, alcohol, sleep anxiety, inconsistent wake times, or sleep disorders like sleep apnea." }
+    ]
+  },
+  {
+    slug: "menopause-sleep-problems",
+    title: "Menopause Sleep Problems: How to Handle Hot Flashes and Insomnia",
+    description: "Menopause sleep problems can mean hot flashes, night sweats, and insomnia. Learn what helps and when to get medical support.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-12",
+    content: menopauseSleepProblems,
+    featuredImage: "/images/featured-menopause-sleep-problems.png",
+    featuredImageAlt: "Dark Sleep Smarter featured image for menopause sleep problems and hot flashes at night",
+    faqs: [
+      { question: "Why does menopause cause sleep problems?", answer: "Menopause can disrupt sleep because hormone changes affect temperature regulation, mood, breathing stability, and sleep continuity. Hot flashes and night sweats are common, but anxiety, lighter sleep, alcohol sensitivity, and sleep apnea risk can also play a role." },
+      { question: "What helps hot flashes at night?", answer: "Start with a cooler room, lighter removable bedding layers, breathable sleepwear, reduced alcohol near bedtime, earlier caffeine cutoff, and a seven-night trigger audit. If hot flashes are frequent or severe, talk to a clinician about medical options." },
+      { question: "Can menopause cause insomnia even without hot flashes?", answer: "Yes. Some people develop insomnia during perimenopause or menopause even when hot flashes are not the main issue. Hormonal shifts, stress, mood changes, sleep apnea risk, and conditioned anxiety around sleep can all contribute." },
+      { question: "Should I take melatonin for menopause sleep problems?", answer: "Melatonin may help if your sleep timing is off, but it does not directly treat hot flashes or night sweats. It is better to fix heat traps, alcohol timing, caffeine, wake time, and medical symptoms first before relying on supplements." },
+      { question: "When should I see a doctor for menopause night sweats?", answer: "Get medical advice if night sweats are drenching, new, worsening, or come with fever, unexplained weight loss, chest pain, shortness of breath, persistent cough, severe fatigue, snoring, gasping, or symptoms after a medication change." }
     ]
   }
 ]
