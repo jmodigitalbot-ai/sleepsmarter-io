@@ -147,6 +147,8 @@ import blueLightGlassesForSleep from '../content/87-blue-light-glasses-for-sleep
 
 import menopauseSleepProblems from '../content/88-menopause-sleep-problems.md?raw'
 
+import pregnancySleep from '../content/89-pregnancy-sleep.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1675,6 +1677,24 @@ export const articles: Article[] = [
       { question: "Can menopause cause insomnia even without hot flashes?", answer: "Yes. Some people develop insomnia during perimenopause or menopause even when hot flashes are not the main issue. Hormonal shifts, stress, mood changes, sleep apnea risk, and conditioned anxiety around sleep can all contribute." },
       { question: "Should I take melatonin for menopause sleep problems?", answer: "Melatonin may help if your sleep timing is off, but it does not directly treat hot flashes or night sweats. It is better to fix heat traps, alcohol timing, caffeine, wake time, and medical symptoms first before relying on supplements." },
       { question: "When should I see a doctor for menopause night sweats?", answer: "Get medical advice if night sweats are drenching, new, worsening, or come with fever, unexplained weight loss, chest pain, shortness of breath, persistent cough, severe fatigue, snoring, gasping, or symptoms after a medication change." }
+    ]
+  },
+  {
+    slug: "pregnancy-sleep",
+    title: "Pregnancy Sleep: Safe Positions, Trimester Tips, and What Actually Helps",
+    description: "Pregnancy sleep tips by trimester, including safe positions, reflux fixes, hip pain relief, and when to call your clinician.",
+    readTime: "12 min read",
+    date: "August 2026",
+    publishDate: "2026-08-14",
+    content: pregnancySleep,
+    featuredImage: "/images/featured-pregnancy-sleep.png",
+    featuredImageAlt: "Dark themed illustration card for pregnancy sleep tips",
+    faqs: [
+      { question: "What is the best sleeping position during pregnancy?", answer: "Side sleeping is the safest default later in pregnancy, especially in the third trimester. If you wake up on your back, do not panic. Roll back to your side and keep sleeping." },
+      { question: "Is left side sleeping required during pregnancy?", answer: "Left side sleeping is often recommended because it may support blood flow well, but right side sleeping is usually better than forcing one painful position all night. Ask your clinician if you have a specific medical concern." },
+      { question: "Why is pregnancy sleep worse in the third trimester?", answer: "Third trimester sleep is often disrupted by hip pain, reflux, bathroom trips, baby movement, breathing changes, and anxiety about labor. The goal is not perfect sleep. It is making the safest and most comfortable setup the easiest default." },
+      { question: "Can I take melatonin while pregnant?", answer: "Do not take melatonin or any sleep supplement during pregnancy without clearing it with your OB, midwife, or clinician. Pregnancy is not the time to freestyle with sleep gummies, herbs, or supplement stacks." },
+      { question: "When should I call a doctor about pregnancy sleep problems?", answer: "Call your clinician if you have loud snoring with gasping, severe daytime sleepiness, high blood pressure concerns, severe insomnia, restless legs that repeatedly prevent sleep, painful urination, severe reflux, or symptoms that feel wrong to you." }
     ]
   }
 ]
