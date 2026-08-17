@@ -149,6 +149,8 @@ import menopauseSleepProblems from '../content/88-menopause-sleep-problems.md?ra
 
 import pregnancySleep from '../content/89-pregnancy-sleep.md?raw'
 
+import sleepForAthletes from '../content/90-sleep-for-athletes.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1695,6 +1697,24 @@ export const articles: Article[] = [
       { question: "Why is pregnancy sleep worse in the third trimester?", answer: "Third trimester sleep is often disrupted by hip pain, reflux, bathroom trips, baby movement, breathing changes, and anxiety about labor. The goal is not perfect sleep. It is making the safest and most comfortable setup the easiest default." },
       { question: "Can I take melatonin while pregnant?", answer: "Do not take melatonin or any sleep supplement during pregnancy without clearing it with your OB, midwife, or clinician. Pregnancy is not the time to freestyle with sleep gummies, herbs, or supplement stacks." },
       { question: "When should I call a doctor about pregnancy sleep problems?", answer: "Call your clinician if you have loud snoring with gasping, severe daytime sleepiness, high blood pressure concerns, severe insomnia, restless legs that repeatedly prevent sleep, painful urination, severe reflux, or symptoms that feel wrong to you." }
+    ]
+  },
+  {
+    slug: "sleep-for-athletes",
+    title: "Sleep for Athletes: How to Recover Faster and Perform Better",
+    description: "Sleep for athletes, explained: recovery, deep sleep, REM, naps, late training, travel, and simple fixes for better performance.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-17",
+    content: sleepForAthletes,
+    featuredImage: "/images/featured-sleep-for-athletes.png",
+    featuredImageAlt: "Dark themed sleep performance image for athletes with teal accents",
+    faqs: [
+      { question: "How much sleep do athletes need?", answer: "Most adult athletes should aim for 8 to 9 hours of sleep, with 9 to 10 hours during heavy training, competition weeks, injury recovery, or major sleep debt." },
+      { question: "Is deep sleep or REM more important for athletic performance?", answer: "Both matter. Deep sleep supports physical restoration and tissue repair, while REM supports skill learning, reaction, decision-making, and emotional control." },
+      { question: "Are naps good for athletes?", answer: "Yes, when used correctly. A 20-minute nap can improve alertness without much grogginess, while a 90-minute nap can help after serious sleep loss. Avoid late-day naps if they hurt bedtime." },
+      { question: "Does late training ruin sleep?", answer: "Late training does not automatically ruin sleep, but it can keep heart rate, body temperature, and nervous system activation elevated. A cool-down, meal timing, dim lights, and a cool bedroom help." },
+      { question: "What is the fastest way for athletes to improve sleep?", answer: "Start with a consistent wake time, enough sleep opportunity, morning light, an earlier caffeine cutoff, a cooler bedroom, and a short wind-down routine after late workouts." }
     ]
   }
 ]
