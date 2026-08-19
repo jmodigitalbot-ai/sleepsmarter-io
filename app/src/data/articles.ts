@@ -151,6 +151,8 @@ import pregnancySleep from '../content/89-pregnancy-sleep.md?raw'
 
 import sleepForAthletes from '../content/90-sleep-for-athletes.md?raw'
 
+import sleepAndHormones from '../content/91-sleep-and-hormones.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1715,6 +1717,24 @@ export const articles: Article[] = [
       { question: "Are naps good for athletes?", answer: "Yes, when used correctly. A 20-minute nap can improve alertness without much grogginess, while a 90-minute nap can help after serious sleep loss. Avoid late-day naps if they hurt bedtime." },
       { question: "Does late training ruin sleep?", answer: "Late training does not automatically ruin sleep, but it can keep heart rate, body temperature, and nervous system activation elevated. A cool-down, meal timing, dim lights, and a cool bedroom help." },
       { question: "What is the fastest way for athletes to improve sleep?", answer: "Start with a consistent wake time, enough sleep opportunity, morning light, an earlier caffeine cutoff, a cooler bedroom, and a short wind-down routine after late workouts." }
+    ]
+  },
+  {
+    slug: "sleep-and-hormones",
+    title: "Sleep and Hormones: How Bad Sleep Wrecks Cortisol, Hunger, and Recovery",
+    description: "How sleep affects cortisol, hunger hormones, testosterone, growth hormone, insulin, and recovery, plus a 7-day reset to clean up the signal.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-19",
+    content: sleepAndHormones,
+    featuredImage: "/images/featured-sleep-and-hormones.png",
+    featuredImageAlt: "Dark bedroom illustration showing sleep and hormone rhythm signals",
+    faqs: [
+      { question: "Can lack of sleep affect hormones?", answer: "Yes. Short or fragmented sleep can disrupt cortisol rhythm, appetite hormones, insulin sensitivity, growth hormone release, and reproductive hormone function. The biggest issue is usually timing: your body gets the wrong signal at the wrong time." },
+      { question: "Does bad sleep increase cortisol?", answer: "Bad sleep can make the stress system more reactive and keep cortisol elevated later than it should be. That can make sleep lighter, increase 3 AM wakeups, and leave you feeling wired at night but flat in the morning." },
+      { question: "Can sleep affect hunger and cravings?", answer: "Yes. Sleep debt can shift leptin and ghrelin in a direction that makes hunger louder and cravings harder to ignore. It also reduces impulse control, which is why dieting feels much harder after a short night." },
+      { question: "Does sleep affect testosterone and recovery?", answer: "Sleep quality and duration both matter for testosterone production, growth hormone pulses, training recovery, and tissue repair. If you are sleeping six hours, waking often, drinking near bedtime, or ignoring possible sleep apnea, supplements are not the first fix." },
+      { question: "What is the best way to reset sleep hormones?", answer: "Start with consistent wake time, outdoor morning light, an earlier caffeine cutoff, a real evening shutdown, a cool dark bedroom, and enough time in bed. Those basics give your cortisol, melatonin, appetite, and recovery signals a clearer daily rhythm." }
     ]
   }
 ]
