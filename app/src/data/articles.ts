@@ -153,6 +153,8 @@ import sleepForAthletes from '../content/90-sleep-for-athletes.md?raw'
 
 import sleepAndHormones from '../content/91-sleep-and-hormones.md?raw'
 
+import sleepAndSkin from '../content/92-sleep-and-skin.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1735,6 +1737,24 @@ export const articles: Article[] = [
       { question: "Can sleep affect hunger and cravings?", answer: "Yes. Sleep debt can shift leptin and ghrelin in a direction that makes hunger louder and cravings harder to ignore. It also reduces impulse control, which is why dieting feels much harder after a short night." },
       { question: "Does sleep affect testosterone and recovery?", answer: "Sleep quality and duration both matter for testosterone production, growth hormone pulses, training recovery, and tissue repair. If you are sleeping six hours, waking often, drinking near bedtime, or ignoring possible sleep apnea, supplements are not the first fix." },
       { question: "What is the best way to reset sleep hormones?", answer: "Start with consistent wake time, outdoor morning light, an earlier caffeine cutoff, a real evening shutdown, a cool dark bedroom, and enough time in bed. Those basics give your cortisol, melatonin, appetite, and recovery signals a clearer daily rhythm." }
+    ]
+  },
+  {
+    slug: "sleep-and-skin",
+    title: "Sleep and Skin: Why Bad Sleep Shows Up on Your Face",
+    description: "Learn how sleep affects skin, collagen, puffiness, breakouts, and barrier repair, plus a 7-night reset for better recovery.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-21",
+    content: sleepAndSkin,
+    featuredImage: "/images/featured-sleep-and-skin.png",
+    featuredImageAlt: "Dark themed illustration representing sleep and skin recovery with calm nighttime colors",
+    faqs: [
+      { question: "Does sleep really affect your skin?", answer: "Yes. Sleep affects inflammation, cortisol timing, immune repair, blood flow, hydration, and skin barrier recovery. Poor sleep will not cause every skin problem, but it can make puffiness, dullness, redness, breakouts, and irritation worse." },
+      { question: "Can lack of sleep cause acne or breakouts?", answer: "Lack of sleep can contribute to breakouts by increasing stress reactivity, inflammation, oil-related triggers, and next-day behaviors like more caffeine, sugar cravings, face touching, and inconsistent skincare. Persistent, painful, or cystic acne still deserves dermatologist care." },
+      { question: "Does deep sleep help collagen?", answer: "Deep sleep supports tissue repair partly through growth hormone pulses. That does not mean sleep alone rebuilds collagen overnight, but fragmented early-night sleep makes repair harder and can leave skin looking less resilient over time." },
+      { question: "Why do my under-eyes look worse after bad sleep?", answer: "Bad sleep can worsen under-eye puffiness and darkness through fluid retention, dull skin tone, dehydration behaviors, inflammation, and tired facial expression. Genetics, allergies, facial structure, and pigmentation also matter." },
+      { question: "What is the fastest sleep change for better-looking skin?", answer: "For seven nights, keep a consistent wake time, get morning light, cut caffeine earlier, keep the bedroom cool, simplify skincare, use a clean pillowcase, and avoid alcohol close to bed. The goal is a better recovery window, not a more complicated routine." }
     ]
   }
 ]
