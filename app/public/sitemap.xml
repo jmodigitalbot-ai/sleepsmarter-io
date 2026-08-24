@@ -113,7 +113,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog Articles (90 total) -->
+  <!-- Blog Articles (91 total) -->
   <url>
     <loc>https://www.sleepsmarter.io/blog/how-sleep-cycles-work</loc>
     <lastmod>2026-02-04</lastmod>
@@ -651,6 +651,12 @@
   <url>
     <loc>https://www.sleepsmarter.io/blog/sleep-and-skin</loc>
     <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepsmarter.io/blog/sleep-and-immune-system</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

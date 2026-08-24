@@ -155,6 +155,8 @@ import sleepAndHormones from '../content/91-sleep-and-hormones.md?raw'
 
 import sleepAndSkin from '../content/92-sleep-and-skin.md?raw'
 
+import sleepAndImmuneSystem from '../content/93-sleep-and-immune-system.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1755,6 +1757,24 @@ export const articles: Article[] = [
       { question: "Does deep sleep help collagen?", answer: "Deep sleep supports tissue repair partly through growth hormone pulses. That does not mean sleep alone rebuilds collagen overnight, but fragmented early-night sleep makes repair harder and can leave skin looking less resilient over time." },
       { question: "Why do my under-eyes look worse after bad sleep?", answer: "Bad sleep can worsen under-eye puffiness and darkness through fluid retention, dull skin tone, dehydration behaviors, inflammation, and tired facial expression. Genetics, allergies, facial structure, and pigmentation also matter." },
       { question: "What is the fastest sleep change for better-looking skin?", answer: "For seven nights, keep a consistent wake time, get morning light, cut caffeine earlier, keep the bedroom cool, simplify skincare, use a clean pillowcase, and avoid alcohol close to bed. The goal is a better recovery window, not a more complicated routine." }
+    ]
+  },
+  {
+    slug: "sleep-and-immune-system",
+    title: "Sleep and Immune System: How Better Rest Builds Stronger Defenses",
+    description: "Learn how sleep affects your immune system, inflammation, infection risk, vaccine response, and recovery when you get sick.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-24",
+    content: sleepAndImmuneSystem,
+    featuredImage: "/images/featured-sleep-and-immune-system.png",
+    featuredImageAlt: "Dark themed illustration representing sleep and immune system recovery",
+    faqs: [
+      { question: "How does sleep affect the immune system?", answer: "Sleep helps regulate immune signaling, inflammatory control, stress hormones, tissue repair, and immune memory. Poor sleep does not shut immunity off, but it can make defense and recovery less efficient." },
+      { question: "Can lack of sleep make you sick?", answer: "Lack of sleep does not guarantee illness, but consistent short or fragmented sleep is linked with higher susceptibility to common infections and worse recovery bandwidth when your body is under stress." },
+      { question: "How much sleep do you need for immune health?", answer: "Most adults should target 7 to 9 hours of sleep with consistent timing. Sleep continuity matters too, so repeated awakenings from heat, alcohol, pain, snoring, or stress can still weaken recovery even if time in bed looks adequate." },
+      { question: "Should you sleep more when you are sick?", answer: "Yes. Fatigue during illness is part of the body allocating energy toward immune defense and repair. Move bedtime earlier, cut alcohol, keep workouts easy, hydrate earlier, and protect sleep continuity while recovering." },
+      { question: "Does sleep improve vaccine response?", answer: "Sleep may support immune memory around vaccination because your body is learning from the vaccine. Prioritize sleep the night before and the next couple of nights, avoid alcohol, and keep training moderate if you feel run down." }
     ]
   }
 ]
