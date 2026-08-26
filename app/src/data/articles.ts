@@ -157,6 +157,8 @@ import sleepAndSkin from '../content/92-sleep-and-skin.md?raw'
 
 import sleepAndImmuneSystem from '../content/93-sleep-and-immune-system.md?raw'
 
+import sleepAndMentalHealth from '../content/94-sleep-and-mental-health.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1775,6 +1777,24 @@ export const articles: Article[] = [
       { question: "How much sleep do you need for immune health?", answer: "Most adults should target 7 to 9 hours of sleep with consistent timing. Sleep continuity matters too, so repeated awakenings from heat, alcohol, pain, snoring, or stress can still weaken recovery even if time in bed looks adequate." },
       { question: "Should you sleep more when you are sick?", answer: "Yes. Fatigue during illness is part of the body allocating energy toward immune defense and repair. Move bedtime earlier, cut alcohol, keep workouts easy, hydrate earlier, and protect sleep continuity while recovering." },
       { question: "Does sleep improve vaccine response?", answer: "Sleep may support immune memory around vaccination because your body is learning from the vaccine. Prioritize sleep the night before and the next couple of nights, avoid alcohol, and keep training moderate if you feel run down." }
+    ]
+  },
+  {
+    slug: "sleep-and-mental-health",
+    title: "Sleep and Mental Health: How Anxiety, Depression, and Stress Wreck Rest",
+    description: "How sleep affects anxiety, depression, stress, and emotional regulation, plus practical steps to break the bad-sleep loop.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-26",
+    content: sleepAndMentalHealth,
+    featuredImage: "/images/featured-sleep-and-mental-health.png",
+    featuredImageAlt: "Dark bedroom scene representing sleep and mental health",
+    faqs: [
+      { question: "Can lack of sleep make anxiety worse?", answer: "Yes. Poor sleep makes the brain more reactive to threat and weakens emotional regulation, which can make anxious thoughts feel louder and harder to dismiss." },
+      { question: "Does depression cause insomnia or the other way around?", answer: "Both can happen. Depression can disrupt sleep timing, energy, and motivation, while chronic poor sleep can worsen mood, stress tolerance, and emotional resilience." },
+      { question: "Why do I feel tired but wired at night?", answer: "That usually means sleep pressure is high but physiological arousal is still elevated. Stress, caffeine, light exposure, rumination, alcohol, or inconsistent timing can keep the body alert even when you feel exhausted." },
+      { question: "What is the best first step if stress is ruining my sleep?", answer: "Start with a consistent wake time, morning light, an earlier caffeine cutoff, and a short evening brain dump. Those levers lower arousal without turning bedtime into another performance test." },
+      { question: "When should sleep and mental health problems get professional help?", answer: "Get help if insomnia lasts more than a few weeks, depression or anxiety is worsening, panic attacks disrupt daily life, you have self-harm thoughts, or symptoms suggest sleep apnea, restless legs, trauma nightmares, mania, or medication side effects." }
     ]
   }
 ]
