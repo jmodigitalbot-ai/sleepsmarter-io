@@ -16,6 +16,9 @@ import Disclosure from './pages/Disclosure.tsx'
 import SleepCalculatorLanding from './pages/landing/SleepCalculatorLanding.tsx'
 import SleepTipsLanding from './pages/landing/SleepTipsLanding.tsx'
 import SleepProductsLanding from './pages/landing/SleepProductsLanding.tsx'
+import MasterclassSales from './pages/MasterclassSales.tsx'
+import PremiumSales from './pages/PremiumSales.tsx'
+import InsiderSales from './pages/InsiderSales.tsx'
 import { articles } from './data/articles.ts'
 import { bedtimePages } from './data/bedtimePages.ts'
 
@@ -26,6 +29,9 @@ export const prerenderRoutes: string[] = [
   '/calculator',
   '/about',
   '/sleep-reset',
+  '/masterclass',
+  '/premium',
+  '/insider',
   '/sleep-debt-calculator',
   '/bedtime-calculator',
   ...bedtimePages.map(p => `/bedtime-calculator/${p.slug}`),
@@ -49,6 +55,9 @@ export function render(url: string): string {
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/about" element={<About />} />
           <Route path="/sleep-reset" element={<SleepReset />} />
+          <Route path="/masterclass" element={<MasterclassSales />} />
+          <Route path="/premium" element={<PremiumSales />} />
+          <Route path="/insider" element={<InsiderSales />} />
           <Route path="/sleep-debt-calculator" element={<SleepDebtCalculator />} />
           <Route path="/bedtime-calculator" element={<BedtimeCalculatorHub />} />
           <Route path="/bedtime-calculator/:wakeTime" element={<BedtimeCalculatorPage />} />
