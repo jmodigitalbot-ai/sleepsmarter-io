@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
-const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
+const PDF_SERVICE_URL = import.meta.env.VITE_PDF_SERVICE_URL || ''
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false)
@@ -27,7 +27,7 @@ export default function ThankYou() {
   }, [])
 
   useEffect(() => {
-    if (userEmail) {
+    if (PDF_SERVICE_URL && userEmail) {
       // Check for personalized PDF (poll for up to 10 seconds in case generation is still running)
       const checkPdf = async () => {
         try {
@@ -124,7 +124,7 @@ export default function ThankYou() {
           </p>
           <p className="text-[#f1faee]/80">
             I know that's not what you want to hear. But here's what I've learned 
-            from working with over 2,000 people who struggle with sleep:
+            from studying what makes sleep advice succeed or fail:
           </p>
           <p className="text-[#f1faee]/80">
             Most of them already <em>knew</em> what time they should go to bed. They 
@@ -151,45 +151,20 @@ export default function ThankYou() {
         </div>
 
         {/* ============================================ */}
-        {/* SECTION 3: Dr. Sarah's Story — Credibility   */}
+        {/* SECTION 3: Why the Paid Protocol Exists */}
         {/* ============================================ */}
         <div className="mb-16 space-y-6 text-lg leading-relaxed">
           <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee]">
-            The Sleep Specialist Who Couldn't Sleep
+            Why the Free Blueprint Is Only Step One
           </h2>
           <p className="text-[#f1faee]/80">
-            I'm Dr. Sarah Chen, and five years ago I had an embarrassing secret:
-          </p>
-          <p className="text-[#f1faee] font-semibold italic text-xl">
-            I was a sleep researcher who couldn't sleep well herself.
+            The blueprint gives you your starting point. It shows the timing, the likely pattern, and the first changes worth testing.
           </p>
           <p className="text-[#f1faee]/80">
-            I knew more about sleep science than almost anyone. I could lecture 
-            for hours about circadian rhythms, sleep architecture, and melatonin 
-            pathways. But every night, I'd lie in bed with a racing mind, cycling 
-            through the same frustrating pattern.
+            But most people do not fail because they need one more sleep tip. They fail because they try five changes at once, drop the whole thing when life gets messy, then start over from scratch a month later.
           </p>
           <p className="text-[#f1faee]/80">
-            The problem wasn't that I didn't know the science. <strong className="text-[#f1faee]">The problem 
-            was that I was trying to implement everything at once, in the wrong 
-            order.</strong>
-          </p>
-          <p className="text-[#f1faee]/80">
-            That realization changed everything.
-          </p>
-          <p className="text-[#f1faee]/80">
-            I started experimenting with <em>sequencing</em> — implementing one specific 
-            change each day, in a precise order where each day's change amplified 
-            the previous one. Within a week, I was sleeping better than I had in years.
-          </p>
-          <p className="text-[#f1faee]/80">
-            I started using this same sequence with my private clients — people who 
-            pay $300/hour for sleep coaching. The results were remarkable. Over 85% 
-            reported significant improvement by Day 7.
-          </p>
-          <p className="text-[#f1faee]/80">
-            That's when I decided to put the entire protocol into a guide that 
-            anyone could follow — not just the people who could afford private coaching.
+            The paid protocol exists for that gap. It gives you a seven-day sequence, simple tracking, and fallback instructions for the nights that do not go perfectly.
           </p>
         </div>
 
@@ -202,7 +177,7 @@ export default function ThankYou() {
               The 7-Day Sleep Reset Protocol
             </h2>
             <p className="text-xl text-[#a8dadc]">
-              The exact system I use with my $300/hour private clients — now available for everyone.
+              A practical seven-day sequence that turns your blueprint into a real bedtime and wake-up routine.
             </p>
           </div>
 
@@ -347,14 +322,14 @@ export default function ThankYou() {
           </div>
 
           <div className="mb-6">
-            <p className="text-[#f1faee]/60 text-sm mb-2">Today only:</p>
+            <p className="text-[#f1faee]/60 text-sm mb-2">Intro price:</p>
             <div className="text-5xl font-bold text-[#a8dadc] mb-1">$17</div>
             <p className="text-[#f1faee]/50 text-sm">One-time payment · Instant download · Lifetime access</p>
           </div>
 
           <p className="text-[#f1faee]/60 text-sm mb-6">
             That's less than the cost of one week of coffee — for a system that can 
-            transform every night of sleep for the rest of your life.
+            give you a clear system to test, adjust, and reuse.
           </p>
 
           <a
@@ -379,14 +354,10 @@ export default function ThankYou() {
             60-Day "Sleep Better or It's Free" Guarantee
           </h3>
           <p className="text-[#f1faee]/80 max-w-2xl mx-auto mb-4 text-lg">
-            Follow the protocol for 7 days. If you don't notice a real, 
-            meaningful improvement in your sleep quality, just email us and 
-            I'll refund every penny. No hoops, no hassle.
+            Follow the protocol for 7 days. If the protocol is not useful after you try it, email us within 60 days and we'll refund every penny. No hoops, no hassle.
           </p>
           <p className="text-[#f1faee]/60 max-w-2xl mx-auto">
-            I can make this guarantee because I've seen it work for over 2,000 
-            people. Over 85% report significant improvement by Day 7. The 
-            protocol works — if you do the work.
+            Try the protocol against your real schedule. If it does not help, ask for a refund within 60 days. Simple.
           </p>
         </div>
 

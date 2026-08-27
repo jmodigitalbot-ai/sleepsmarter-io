@@ -34,7 +34,7 @@ Over the next few days, I'm going to explain exactly why this happens and what a
 
 Welcome. I'm glad you found us.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -59,7 +59,7 @@ The key isn't *what* you do before bed. It's the *sequence* — the specific ord
 
 Tomorrow I'll explain exactly what that looks like.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -84,7 +84,7 @@ This is the core of the Forgotten Sleep Ritual. It's not a collection of tips. I
 
 I'll tell you about someone who went from 90 minutes of lying awake to falling asleep in under 12 minutes using this approach. Tomorrow.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -115,7 +115,7 @@ If Marcus's story sounds familiar, the same protocol is waiting for you.
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-racing-mind&utm_content=day3-story)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -147,7 +147,7 @@ I'm not asking you to believe me. I'm asking you to try the $17 protocol before 
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-racing-mind&utm_content=day4-objection)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -184,7 +184,7 @@ The one thing I ask: use it for 7 nights before you decide. Give your nervous sy
 
 You've spent years wired at bedtime. Seven nights is a fair trade.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -208,5 +208,5 @@ I hope you've already tried it and you're sleeping better. But if you haven't �
 
 Sleep well, {{ subscriber.first_name }}.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 

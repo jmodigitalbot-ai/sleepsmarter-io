@@ -1,6 +1,6 @@
 # Phase 5: Premium Offer & Membership (Days 23-30)
 
-**From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
+**From:** Sleep Smarter <hello@sleepsmarter.io>
 **Goal:** Sell 90-Day Transformation ($197) + Insider membership ($19/mo)
 
 ---
@@ -39,7 +39,7 @@ What would that be worth to you?
 
 Hold that number in your mind. I think you'll find tomorrow's email interesting.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -65,20 +65,20 @@ Every week for 90 days, you get a targeted email with your focus for that week. 
 📊 **Monthly Progress Reviews**
 At day 30, 60, and 90, we review your sleep data and adjust the plan. What's working stays. What isn't gets modified. This iterative approach is why the results compound.
 
-👥 **Private Community Access**
-Connect with other people going through the program. Share wins, ask questions, get support. Having a community of people on the same journey makes a measurable difference in follow-through.
+📋 **Guided Implementation Path**
+Work through the program with weekly prompts, progress checkpoints, and practical next steps so you are not guessing what to do next.
 
 📚 **Advanced Content Library**
 Topics beyond the Masterclass: sleep and hormones, sleep and athletic performance, sleep and aging, sleep and creativity, advanced supplement protocols, biohacking techniques.
 
-**Price: $197** (one-time, 90-day program + lifetime community access)
+**Price: $197** (one-time, 90-day implementation program)
 **Guarantee: 60 days.** Full refund if you don't see measurable improvement.
 
 **[Start Your 90-Day Transformation → $197](https://sleepsmarter.io/premium?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day24-90day-transformation)**
 
-This program has a cap. I limit enrollment because the personalized plans require my attention. When spots fill, I close registration until the next cohort.
+This is the deeper implementation path for people who want more structure than a one-time guide.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -103,13 +103,13 @@ It's a monthly membership ($19/month) that keeps you optimized long-term:
 
 🔬 **Research Roundup** — I read the sleep journals so you don't have to. I'll distill the latest findings into actionable takeaways.
 
-🛒 **Product Review** — One honest, in-depth review of a sleep product. No sponsorships. Just my genuine opinion after testing.
+🛒 **Product Research** — One practical sleep-product breakdown with clear tradeoffs and affiliate disclosure where links are used.
 
 📅 **Seasonal Sleep Guide** — Your sleep needs change with the seasons. Daylight saving time, summer heat, holiday stress, winter darkness — I'll send a guide for each transition.
 
 💡 **Monthly Optimization Challenge** — One specific thing to try or change each month. Small, focused improvements that compound over time.
 
-👥 **Community Access** — Same community as the Transformation program. Ongoing support and connection.
+📋 **Monthly Action Plan** — One focused sleep improvement challenge with simple implementation steps.
 
 **Price: $19/month** (cancel anytime, no commitment)
 
@@ -119,7 +119,7 @@ I'm launching this quietly to my email list first. If it resonates, I'll open it
 
 No pressure on this one. It's for people who've already improved their sleep and want to maintain and optimize it over time. If that's not where you are yet, focus on the fundamentals first.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -153,20 +153,20 @@ Insider members get the full guide with product recommendations, timing protocol
 
 **[Get the full guide + monthly optimizations → $19/mo](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day26-insider)**
 
-Sarah
+Sleep Smarter Team
 
 ---
 
 ## EMAIL 27 (Day 27)
 
-**Subject:** What I've learned from 10,000 sleepers
+**Subject:** What most sleep advice misses
 **Preview:** 5 things that surprised me
 
 ---
 
 {{first_name}},
 
-After working with thousands of people on their sleep, here are 5 things that still surprise me:
+After digging through sleep research and common reader patterns, here are 5 things most sleep advice still gets wrong:
 
 **1. The people who sleep "fine" often benefit the most.**
 They don't think they have a problem. They sleep 7 hours, function okay, and assume that's their ceiling. Then they optimize their timing and environment and realize they were operating at 60% when they could be at 90%.
@@ -187,14 +187,14 @@ That last point is why I built the 90-Day Transformation Program. Quick fixes ar
 
 Whatever path you're on — free tips, the Protocol, the Masterclass, or the full program — keep going. It compounds.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
 ## EMAIL 28 (Day 28)
 
 **Subject:** The products that actually work (my honest list)
-**Preview:** No sponsorships. Just what I'd buy with my own money.
+**Preview:** Practical picks, clear tradeoffs, and affiliate disclosure.
 
 ---
 
@@ -222,7 +222,7 @@ Works for some people, especially those with anxiety. Try before you commit — 
 
 I keep an updated product guide with specific brand recommendations and links in the Masterclass and Insider membership. But these categories are the essentials.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -253,7 +253,7 @@ Either way, this is the second-to-last email in this sequence. Tomorrow I'll wra
 
 Thanks for sticking with me this month, {{first_name}}. It means a lot.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -300,7 +300,7 @@ Here's your roadmap going forward — pick the path that fits where you are:
 ---
 
 **🔄 Stay optimized ($19/mo)**
-→ [Sleep Smarter Insider](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-insider) — monthly optimization + community
+→ [Sleep Smarter Insider](https://sleepsmarter.io/insider?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-insider) — monthly optimization and product research
 → Best for: "My sleep is good and I want to keep it that way"
 
 ---
@@ -318,6 +318,6 @@ If you ever need anything, just reply to any email. I'm here.
 
 Sleep well, {{first_name}}.
 
-Sarah
+Sleep Smarter Team
 
 *P.S. Know someone who struggles with sleep? Forward them any of these emails or send them to [SleepSmarter.io](https://sleepsmarter.io?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-ps-referral). Better sleep is one of the highest-leverage improvements anyone can make. Help me spread the word. 💙*

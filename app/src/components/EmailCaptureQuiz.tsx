@@ -3,7 +3,7 @@ import { trackEvent } from '../lib/analytics'
 
 const KIT_FORM_ID = '9066532'
 const KIT_FORM_URL = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`
-const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
+const PDF_SERVICE_URL = import.meta.env.VITE_PDF_SERVICE_URL || ''
 
 interface EmailCaptureQuizProps {
   sleepType: string
@@ -46,20 +46,22 @@ export default function EmailCaptureQuiz({ sleepType, sleepTypeName, onSuccess }
 
       if (response.ok) {
         // Fire PDF generation in background — don't block on it
-        fetch(`${PDF_SERVICE_URL}/generate-blueprint`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            firstName: firstName || 'Sleep Smarter User',
-            email,
-            assessmentData: {
-              personaId: sleepType,
-              personaName: sleepTypeName,
-            }
+        if (PDF_SERVICE_URL) {
+          fetch(`${PDF_SERVICE_URL}/generate-blueprint`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              firstName: firstName || 'Sleep Smarter User',
+              email,
+              assessmentData: {
+                personaId: sleepType,
+                personaName: sleepTypeName,
+              }
+            })
+          }).catch(() => {
+            // Personalized PDF generation is best-effort; user still gets results.
           })
-        }).catch(() => {
-          // Webhook will retry — don't block user flow
-        })
+        }
 
         trackEvent('email_signup', {
           source: 'quiz_funnel',

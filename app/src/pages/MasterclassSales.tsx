@@ -95,10 +95,10 @@ export default function MasterclassSales() {
           </h2>
           <div className="space-y-6 text-[#f1faee]/80 text-lg">
             <p>
-              My name is Dr. Sarah Chen. I'm a sleep researcher with 15 years of clinical experience, and I've helped thousands of patients overcome chronic sleep issues without medication.
+              Sleep Smarter exists for people who are tired of scattered sleep tips and want a complete, organized system they can work through at their own pace.
             </p>
             <p>
-              After seeing the same patterns repeat in my practice—intelligent, motivated people failing with generic sleep advice—I created something different.
+              The same patterns show up again and again: motivated people try random tactics, get partial results, then lose momentum because nothing is connected.
             </p>
             <div className="bg-[#0f0e17]/60 p-6 rounded-lg border border-[#4a4e69]/30">
               <p className="text-[#a8dadc] font-semibold text-xl mb-3">
@@ -211,7 +211,7 @@ export default function MasterclassSales() {
               <span className="text-[#f1faee]/60 line-through text-xl">$37</span>
             </div>
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
-              <span className="text-[#f1faee] font-medium text-lg">Private Community Access</span>
+              <span className="text-[#f1faee] font-medium text-lg">Sleep Resource Library</span>
               <span className="text-[#f1faee]/60 text-xl">Priceless</span>
             </div>
             <div className="flex justify-between items-center py-4 px-6 bg-[#0f0e17]/60 rounded-lg border border-[#4a4e69]/30">
@@ -300,7 +300,7 @@ export default function MasterclassSales() {
             60-Day "Sleep Transformation" Guarantee
           </h3>
           <p className="text-[#f1faee]/80 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
-            Complete all 6 modules, implement the system for 60 days, and if you don't experience measurable improvement in your sleep quality, energy levels, and daytime functioning, I'll refund every penny.
+            Complete the modules, try the system against your real schedule, and if it is not useful within 60 days, we'll refund every penny.
           </p>
           <p className="text-[#f1faee] font-semibold text-xl mb-4">
             No questions. No hoops. No "prove you did the work."
@@ -357,7 +357,7 @@ export default function MasterclassSales() {
               Your Sleep Transformation Starts Tonight
             </h3>
             <p className="text-lg text-[#f1faee]/80 mb-8 max-w-2xl mx-auto">
-              Join 2,347 students who have transformed their sleep with this proven system. For $67 with a 60-day money-back guarantee, you risk nothing but gain everything.
+              Get the complete Sleep Smarter curriculum for $67 with a 60-day money-back guarantee. Work through it, test it against your own sleep, and keep what helps.
             </p>
             <a
               href={checkoutUrl}

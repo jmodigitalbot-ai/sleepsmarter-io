@@ -3,7 +3,7 @@ import { trackEmailSignup } from '../lib/analytics'
 
 const KIT_FORM_ID = '9066532'
 const KIT_FORM_URL = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`
-const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
+const PDF_SERVICE_URL = import.meta.env.VITE_PDF_SERVICE_URL || ''
 
 interface CalculatorData {
   mode: 'wakeup' | 'bedtime'
@@ -74,7 +74,7 @@ export default function EmailCapture({ calculatorData, assessmentData }: EmailCa
 
       if (response.ok) {
         // Generate personalized PDF BEFORE redirecting (must complete or navigation kills the request)
-        if (assessmentData || calculatorData) {
+        if (PDF_SERVICE_URL && (assessmentData || calculatorData)) {
           try {
             await fetch(`${PDF_SERVICE_URL}/generate-blueprint`, {
               method: 'POST',

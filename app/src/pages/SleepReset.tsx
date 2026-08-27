@@ -282,49 +282,22 @@ export default function SleepReset() {
           </div>
         </div>
 
-        {/* ── SARAH ORIGIN STORY ──────────────────── */}
+        {/* ── RESEARCH-BASED ORIGIN ──────────────────── */}
         <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-2xl p-8 space-y-5">
-          <p className="text-[#a8dadc] font-semibold text-sm uppercase tracking-widest">Who Discovered This</p>
-          <div className="flex flex-col md:flex-row gap-6 items-start">
-            <div className="flex-shrink-0 flex flex-col items-center gap-2">
-              <img
-                src="/images/dr-sarah-chen.png"
-                alt="Sarah, Founder of Sleep Smarter"
-                className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top border-2 border-[#a8dadc]/40"
-              />
-              <p className="text-[#f1faee] font-semibold text-sm text-center">Sarah</p>
-              <p className="text-[#f1faee]/45 text-xs text-center">Founder, Sleep Smarter</p>
-            </div>
-            <p className="text-[#f1faee]/75 leading-relaxed pt-1">
-              Sarah had the same problem you do.
-            </p>
-          </div>
+          <p className="text-[#a8dadc] font-semibold text-sm uppercase tracking-widest">Why this exists</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#f1faee] leading-tight">
+            Most sleep advice tells you what to try. This gives you the order to try it in.
+          </h2>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            She was a 38-year-old mom of two, working from home, logging 7 to 8 hours every night. By every measure, she was doing everything right. But she was waking up wrecked. Foggy until noon. Running on coffee. Snapping at her kids over nothing. Watching the best version of herself show up — just never in the morning.
+            Sleep Smarter was built around a simple observation: people usually know the obvious advice already. Keep the room cool. Limit caffeine. Get morning light. Stop doom-scrolling in bed.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            She tried melatonin. Magnesium. A $300 sleep tracker. A weighted blanket her sister swore by. She cut out alcohol, cut out screens, went to bed earlier. Some of it helped a little. None of it fixed the mornings.
+            The problem is that scattered tips do not create a system. When your bedtime, wake time, light exposure, caffeine timing, and wind-down routine all pull in different directions, one good habit gets drowned out by five bad timing signals.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            Then one night — 2 AM, exhausted but completely awake — she fell down a research rabbit hole. She wasn't looking for a solution anymore. She'd mostly stopped believing there was one.
+            The Forgotten Sleep Ritual turns the research into a simple sequence: find your cycle-aligned sleep windows, anchor your morning, reduce the signals that fragment sleep, and use a short wind-down routine your body can repeat.
           </p>
-          <p className="text-[#f1faee]/75 leading-relaxed">
-            But she found something in a peer-reviewed sleep study that stopped her cold.
-          </p>
-          <p className="text-[#f1faee]/75 leading-relaxed">
-            The people who consistently woke up refreshed weren't sleeping more. They weren't on better supplements. They had one thing in common: their alarm happened to fire within the final 10 minutes of a 90-minute sleep cycle. Every time.
-          </p>
-          <p className="text-[#f1faee] font-semibold">It wasn't luck. It was geometry.</p>
-          <p className="text-[#f1faee]/75 leading-relaxed">
-            She spent the next three months obsessively testing a formula — a specific 3-step sequence she started calling <strong className="text-[#f1faee]">The Circadian Exit Protocol</strong> — that calculates your personal sleep windows based on your bedtime and natural cycle rhythm. No app. No tracker. No subscription.
-          </p>
-          <p className="text-[#f1faee]/75 leading-relaxed">
-            The first morning she woke up before her alarm, she sat in the dark for a full minute just to make sure it was real.
-          </p>
-          <p className="text-[#f1faee]/75 leading-relaxed">
-            That was three years ago. The Forgotten Sleep Ritual is the exact system she built from that research — the same one she's since shared with thousands of people who were doing everything right and still waking up exhausted.
-          </p>
-          <p className="text-[#f1faee]/60 text-sm italic">— Sarah, Founder, Sleep Smarter</p>
+          <p className="text-[#f1faee] font-semibold">No fake guru story. No magic cure. Just a practical ritual you can test against your own mornings.</p>
         </div>
 
         {/* ── PRODUCT INTRO ───────────────────────── */}
@@ -469,34 +442,27 @@ export default function SleepReset() {
           <p className="text-center text-[#f1faee]/50 text-sm">The problem isn't how long you sleep. The research confirms it never was.</p>
         </div>
 
-        {/* ── TESTIMONIALS ────────────────────────── */}
+        {/* ── WHO THIS HELPS ────────────────────────── */}
         <div className="space-y-4">
-          <h3 className="text-xl font-bold text-[#f1faee]">Real Results From Real People</h3>
-          <p className="text-[#f1faee]/40 text-xs italic">Early customer feedback. Names abbreviated for privacy. Individual results vary.</p>
+          <h3 className="text-xl font-bold text-[#f1faee]">Who This Is Built For</h3>
+          <p className="text-[#f1faee]/50 text-sm">No borrowed testimonials. No made-up student counts. Use this if one of these patterns fits your real mornings:</p>
           {[
             {
-              quote: "I've tried melatonin, magnesium, every sleep app on the App Store. I was still hitting snooze 3 times every morning and dragging until 10am. I ran the Circadian Exit Protocol on a Tuesday night. By Friday I was waking up 4 minutes before my alarm. I actually texted my husband from bed because I couldn't believe it.",
-              name: "Amanda R.",
-              role: "2nd grade teacher, mother of two",
+              title: "You wake up groggy even after enough hours",
+              desc: "The guide helps you test cycle-aligned wake windows instead of only adding more time in bed.",
             },
             {
-              quote: "I was skeptical. I'm a software engineer — I like data. So I tracked it. Before: average 6.2 on my sleep score, snooze button at least twice. Week 1 after: 7.8 average, woke before alarm 4 out of 7 days. The coffee delay tip alone eliminated my 2pm crash. $17 for that ROI is absurd.",
-              name: "Marcus T.",
-              role: "Software engineer, 34",
+              title: "Your habits are scattered",
+              desc: "You get a simple order of operations for timing, light, caffeine, bedroom setup, and wind-down cues.",
             },
             {
-              quote: "I do 12-hour night shifts. My sleep has been a disaster for 6 years. What helped wasn't more sleep — it was understanding where in my cycle I was waking up. The Sleep Smarter calculator changed how I schedule everything. First time in years I've felt like myself during the day.",
-              name: "Keisha M.",
-              role: "Night shift ICU nurse, 11 years",
+              title: "You need something realistic",
+              desc: "Each step is designed for normal workdays, messy schedules, travel, and the nights that do not go perfectly.",
             },
-          ].map((t, i) => (
-            <div key={i} className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/20 space-y-3">
-              <div className="text-[#e9c46a] text-sm tracking-widest">★★★★★</div>
-              <p className="text-[#f1faee]/80 italic leading-relaxed">"{t.quote}"</p>
-              <div>
-                <p className="text-[#f1faee] font-semibold text-sm">{t.name}</p>
-                <p className="text-[#f1faee]/45 text-xs">{t.role}</p>
-              </div>
+          ].map((item, i) => (
+            <div key={i} className="bg-[#16213e] rounded-xl p-6 border border-[#4a4e69]/20 space-y-2">
+              <p className="text-[#a8dadc] font-semibold text-sm">{item.title}</p>
+              <p className="text-[#f1faee]/75 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -513,17 +479,10 @@ export default function SleepReset() {
             Try it for 60 full days. Wake up with it. Test it across your real schedule — workdays, weekends, the chaotic weeks when everything goes sideways.
           </p>
           <p className="text-[#f1faee]/75 leading-relaxed">
-            If you don't wake up feeling measurably more refreshed within the first week, email us. We'll refund every cent. No forms. No questions. No runaround.
+            If the guide is not useful after you try it, email us within 60 days. We'll refund every cent. No forms. No runaround.
           </p>
-          <p className="text-[#f1faee] font-semibold">You either wake up better, or you pay nothing.</p>
-          <div className="flex items-center gap-4 pt-2">
-            <img
-              src="/images/dr-sarah-chen.png"
-              alt="Sarah, Founder of Sleep Smarter"
-              className="w-12 h-12 rounded-full object-cover object-top border border-[#a8dadc]/30 flex-shrink-0"
-            />
-            <p className="text-[#f1faee]/50 text-sm italic">— Sarah, Founder, Sleep Smarter</p>
-          </div>
+          <p className="text-[#f1faee] font-semibold">You either get a useful sleep system, or you pay nothing.</p>
+          <p className="text-[#f1faee]/50 text-sm italic">If the guide is not useful, email us within 60 days. Simple.</p>
         </div>
 
         {/* ── FAQ ─────────────────────────────────── */}
@@ -565,15 +524,15 @@ export default function SleepReset() {
 
           {/* ── FAST-ACTION BONUS ── */}
           <div className="bg-gradient-to-r from-[#e63946]/10 to-[#a8dadc]/10 border border-[#a8dadc]/40 rounded-2xl p-6 space-y-3">
-            <p className="text-[#e63946] font-bold text-sm uppercase tracking-widest">⏰ Today Only Bonus</p>
+            <p className="text-[#e63946] font-bold text-sm uppercase tracking-widest">⏰ Launch Bonus</p>
             <p className="text-[#f1faee] font-semibold text-lg">
-              Buy today and get the <strong className="text-[#a8dadc]">Travel & Timezone Protocol</strong> — free.
+              Get the <strong className="text-[#a8dadc]">Travel & Timezone Protocol</strong> included free.
             </p>
             <p className="text-[#f1faee]/70 text-sm leading-relaxed">
               Sleep across time zones doesn't have to wreck your rhythm. This protocol gives you the exact steps to stay on your cycle while traveling — including the 48-hour reset sequence, the "jet lag calculator," and the melatonin timing chart that most sleep doctors get wrong.
             </p>
             <p className="text-[#f1faee]/50 text-xs italic">
-              This bonus is only available when you purchase today. You'll receive it instantly with your order, along with the main system.
+              You'll receive this bonus instantly with your order, along with the main system.
             </p>
           </div>
 
@@ -633,12 +592,12 @@ export default function SleepReset() {
       {/* ── FOOTER ──────────────────────────────── */}
       <footer className="border-t border-[#4a4e69]/30 mt-16 py-8 text-center">
         <p className="text-[#f1faee]/30 text-xs max-w-2xl mx-auto leading-relaxed px-4">
-          Results vary. Individual experiences depend on consistent implementation, health status, and lifestyle factors. The testimonials above reflect real customer experiences; results are not guaranteed or typical. This product is not intended to diagnose, treat, cure, or prevent any medical condition. If you have a sleep disorder, please consult a healthcare professional.
+          Results vary. Individual experiences depend on consistent implementation, health status, and lifestyle factors. This product is educational and is not intended to diagnose, treat, cure, or prevent any medical condition. If you have a sleep disorder, please consult a healthcare professional.
         </p>
         <div className="mt-4 flex justify-center gap-6">
           <Link to="/privacy" className="text-[#f1faee]/25 text-xs hover:text-[#f1faee]/50 transition-colors">Privacy Policy</Link>
           <Link to="/terms" className="text-[#f1faee]/25 text-xs hover:text-[#f1faee]/50 transition-colors">Terms</Link>
-          <Link to="/contact" className="text-[#f1faee]/25 text-xs hover:text-[#f1faee]/50 transition-colors">Contact</Link>
+          <a href="mailto:hello@sleepsmarter.io" className="text-[#f1faee]/25 text-xs hover:text-[#f1faee]/50 transition-colors">Contact</a>
         </div>
       </footer>
 

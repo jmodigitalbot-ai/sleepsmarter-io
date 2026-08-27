@@ -36,7 +36,7 @@ Over the next few days I'm going to walk you through exactly what's happening an
 
 Welcome. You're in the right place.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -63,7 +63,7 @@ And it has nothing to do with age. I can't tell you how many people have said "I
 
 Tomorrow I'll tell you about the protocol that stabilizes this cycle.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -90,7 +90,7 @@ This is the foundation of the Forgotten Sleep Ritual for your sleep type. It doe
 
 Tomorrow: a real person who went from four middle-of-night wakings a week to sleeping through.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -123,7 +123,7 @@ If Diane's story resonates, the same protocol is ready for you.
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-fragmented&utm_content=day3-story)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -153,7 +153,7 @@ If you've accepted fragmented sleep as your new normal, I'm asking you to questi
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-fragmented&utm_content=day4-objection)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -190,7 +190,7 @@ You've been waking at 3am for long enough. Seven nights of implementation is a f
 
 → [Get the Forgotten Sleep Ritual — $17](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-fragmented&utm_content=day5-pitch)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -214,5 +214,5 @@ You don't have to accept this as your new normal.
 
 Sleep well, {{ subscriber.first_name }}.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 

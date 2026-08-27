@@ -34,7 +34,7 @@ If this is your pattern, you probably recognize some of these:
 
 More soon. I'm glad you're here.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -57,7 +57,7 @@ The critical insight: circadian rhythms are highly responsive to cues. The drift
 
 Tomorrow: the protocol that does it.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -86,7 +86,7 @@ This isn't about suffering through early mornings. It's about giving your clock 
 
 Tomorrow: someone who shifted their rhythm and changed their entire experience of the day.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -119,7 +119,7 @@ The same reset is available to you.
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-circadian&utm_content=day3-story)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -149,7 +149,7 @@ You may be slightly more of an evening person than average — and that's fine. 
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-circadian&utm_content=day4-objection)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -185,7 +185,7 @@ You've spent years being a night owl by default. You deserve to find out if that
 
 → [Get the Forgotten Sleep Ritual — $17](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-circadian&utm_content=day5-pitch)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -207,5 +207,5 @@ Your clock drifted. It can shift back. It takes less than a week.
 
 Sleep well, {{ subscriber.first_name }}.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 

@@ -1,6 +1,6 @@
 # Phase 3: Content & Authority Building (Days 11-17)
 
-**From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
+**From:** Sleep Smarter <hello@sleepsmarter.io>
 **Goal:** Deepen relationship, establish expertise, tease core offer
 
 ---
@@ -44,7 +44,7 @@ If your sleep latency is consistently over 30 minutes, the issue is almost alway
 I cover all three in depth here: [Why Do I Wake Up Tired? →](https://sleepsmarter.io/blog/why-do-i-wake-up-tired?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day11-why-wake-up-tired)
 
 Talk tomorrow,
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -88,7 +88,7 @@ I wrote a complete guide to the timing rules that protect your sleep: [The 10-3-
 
 Worth bookmarking.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -129,7 +129,7 @@ I go deeper on this in our guide: [How Much Sleep Do I Need? →](https://sleeps
 
 Tomorrow: a number that will make you rethink how you value sleep.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -159,7 +159,7 @@ These three principles are the backbone of everything I teach. They're baked int
 
 More on that next week. For now — are you tracking your sleep? Even a simple note on your phone each morning makes a difference.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -172,7 +172,7 @@ Sarah
 
 {{first_name}},
 
-After analyzing patterns from thousands of sleepers, I've identified 3 distinct "sleep problem types." Most people fall clearly into one category:
+After reviewing the most common sleep-problem patterns, we use 3 practical categories to make the advice easier to apply:
 
 **Type 1: The Wired Mind 🧠**
 - Takes 30+ minutes to fall asleep
@@ -199,7 +199,7 @@ After analyzing patterns from thousands of sleepers, I've identified 3 distinct 
 
 (Seriously — the fix for Type 1 is completely different from Type 3. Generic advice wastes your time.)
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -238,7 +238,7 @@ Whatever approach you take — free tips, the protocol, a course, or just readin
 
 Tomorrow: a myth about melatonin that your doctor probably believes.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -286,4 +286,4 @@ For most people, fixing their light exposure, caffeine timing, and bedroom tempe
 
 I'll be back in a couple days with something I've been working on. It's for people who want to go deeper than tips and articles — a complete system for transforming your sleep. More soon.
 
-Sarah
+Sleep Smarter Team

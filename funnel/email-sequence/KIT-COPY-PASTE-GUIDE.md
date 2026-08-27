@@ -8,9 +8,9 @@
 4. For each email: copy the Subject Line, Preview Text, and Body below
 5. **Personalization:** Replace {{first_name}} with Kit's tag: {{ subscriber.first_name }}
 6. **Links:** Article and blog links are already filled in. Product links need to be updated with actual checkout URLs:
-   - `https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right` → 7-Day Sleep Reset Protocol ($17) checkout page ✓
-   - `https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right` → Sleep Smarter Masterclass ($67) checkout page
-   - `https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right` → 90-Day Transformation ($197) checkout page
+   - `https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right` → 7-Day Sleep Reset Protocol ($17) checkout page ✓
+   - `https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right` → Sleep Smarter Masterclass ($67) checkout page
+   - `https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation-program#samcart-slide-open-right` → 90-Day Transformation ($197) checkout page
    - `https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right` → Sleep Smarter Insider ($19/mo) checkout page
    - Blueprint download link in Email 0 → `https://www.sleepsmarter.io/blueprint/download` (PDF delivery page)
 7. **Delays:** Set the delay between each email as noted (mostly 1 day)
@@ -318,7 +318,7 @@ Now, Days 2-7 build on this foundation with specific protocols for light exposur
 
 The complete protocol is $17 and it's changed the sleep of thousands of people.
 
-**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right)**
+**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right)**
 
 Or don't. Day 1 alone will help. But if you want the full system — the one that compounds day over day — it's there when you're ready.
 
@@ -361,7 +361,7 @@ It's NOT a substitute for medical treatment if you have:
 
 For the vast majority of people who "just don't sleep well," it works. And it works fast.
 
-**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right)**
+**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right)**
 
 60-day money-back guarantee. If it doesn't help, email me and I'll refund you immediately. No questions.
 
@@ -411,7 +411,7 @@ For nights when nothing seems to work — a step-by-step process to fall asleep 
 **Price: $17** (less than one bottle of melatonin)
 **Guarantee: 60 days.** Full refund if it doesn't help.
 
-**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right)**
+**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right)**
 
 This isn't a 200-page ebook you'll never read. It's a focused, actionable protocol designed to be completed in one week. Most people spend more time scrolling Reddit for sleep tips than it takes to go through this entire system.
 
@@ -439,7 +439,7 @@ I've had people tell me this single audio is worth more than the rest of the pro
 
 It's included free with the 7-Day Sleep Reset Protocol.
 
-**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right)**
+**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right)**
 
 Here's what you're getting for $17:
 - ✅ Complete 7-day protocol with daily instructions
@@ -452,7 +452,7 @@ Here's what you're getting for $17:
 
 After today, I'll go back to sending you free sleep tips and articles. No more pitches for a while. But if you've been on the fence, this is the moment.
 
-**[Yes, I want better sleep → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right)**
+**[Yes, I want better sleep → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right)**
 
 Either way, I'll talk to you tomorrow with something completely different — a myth about caffeine that will probably surprise you.
 
@@ -1173,13 +1173,13 @@ Here's your roadmap going forward — pick the path that fits where you are:
 ---
 
 **📘 Get the system ($17)**
-→ [7-Day Sleep Reset Protocol](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right) — structured, step-by-step, proven
+→ [7-Day Sleep Reset Protocol](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right) — structured, step-by-step, proven
 → Best for: "I know what to do but need a clear plan"
 
 ---
 
 **🎓 Go deep ($67)**
-→ [Sleep Smarter Masterclass](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right) — 6 modules, complete curriculum
+→ [Sleep Smarter Masterclass](https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right) — 6 modules, complete curriculum
 → Best for: "I want to understand everything and optimize long-term"
 
 ---

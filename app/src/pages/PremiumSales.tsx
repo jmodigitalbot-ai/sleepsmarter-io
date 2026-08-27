@@ -259,7 +259,7 @@ export default function PremiumSales() {
                 <ul className="space-y-1 text-[#f1faee]/60 text-sm">
                   <li>• Advanced sleep optimization implemented</li>
                   <li>• Lifestyle integration mastered</li>
-                  <li>• Sleep architecture significantly improved</li>
+                  <li>• Clearer view of which sleep changes are helping</li>
                   <li>• Energy levels transformed</li>
                 </ul>
               </div>
@@ -284,7 +284,7 @@ export default function PremiumSales() {
                   <li>• Sleep habits fully automated</li>
                   <li>• Long-term maintenance system established</li>
                   <li>• Troubleshooting skills mastered</li>
-                  <li>• Sleep mastery achieved</li>
+                  <li>• Maintenance plan built for your normal routine</li>
                 </ul>
               </div>
             </div>
@@ -443,13 +443,13 @@ export default function PremiumSales() {
             60-Day "Implementation or Refund" Guarantee
           </h3>
           <p className="text-[#f1faee]/80 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
-            If you don't experience measurable improvement in sleep quality, energy levels, and daytime performance within 60 days, we'll refund every penny.
+            If the roadmap and tools are not useful for your sleep routine within 60 days, we'll refund every penny.
           </p>
           <p className="text-[#f1faee] font-semibold text-xl mb-4">
             No questions asked. No hoops to jump through.
           </p>
           <p className="text-[#f1faee]/70 max-w-2xl mx-auto text-lg">
-            We can make this guarantee because we've seen this system work. Follow the roadmap, use the tools, and the results will come.
+            Use the roadmap and tools against your real schedule. If the program is not useful for you, ask for a refund within 60 days.
           </p>
         </div>
 

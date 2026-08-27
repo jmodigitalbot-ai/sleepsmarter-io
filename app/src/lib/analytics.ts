@@ -28,6 +28,13 @@ export const PRODUCT_CONVERSION_MAP = {
   insider: { label: CONVERSION_LABELS.INSIDER_SIGNUP, value: 19 }
 } as const
 
+const PRODUCT_CHECKOUT_URLS = {
+  tripwire: 'https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual',
+  masterclass: 'https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass',
+  premium: 'https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation-program',
+  insider: 'https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider'
+} as const
+
 export type ProductType = keyof typeof PRODUCT_CONVERSION_MAP
 
 // Event names for consistent tracking
@@ -204,7 +211,7 @@ export const trackCheckoutClick = (
     button_text: buttonText || 'unknown',
     button_location: buttonLocation || 'unknown',
     product_type: productType,
-    outbound_link: 'https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week'
+    outbound_link: productType ? PRODUCT_CHECKOUT_URLS[productType] : undefined
   }
   
   // Track GA4 event only — Google Ads conversion intentionally NOT fired here.

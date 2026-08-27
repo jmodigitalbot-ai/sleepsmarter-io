@@ -34,7 +34,7 @@ I'll walk you through exactly how over the next few days.
 
 Welcome.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -59,7 +59,7 @@ The fix requires shifting the distribution — specifically, creating conditions
 
 That's what the protocol I'll describe tomorrow is designed to do.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -86,7 +86,7 @@ This is the core of the Forgotten Sleep Ritual for Poor Recoverers. It doesn't a
 
 Tomorrow: someone who went from 8 hours of "fake sleep" to genuinely waking up rested.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 ---
 
@@ -117,7 +117,7 @@ The same protocol is available to you.
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-poor-recoverer&utm_content=day3-story)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -149,7 +149,7 @@ The Forgotten Sleep Ritual is the protocol for exactly this.
 
 → [Get the Forgotten Sleep Ritual](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-poor-recoverer&utm_content=day4-objection)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -185,7 +185,7 @@ You don't have to keep waking up exhausted after 8 hours. That's a problem with 
 
 → [Get the Forgotten Sleep Ritual — $17](https://sleepsmarter.io/sleep-reset?utm_campaign=quiz-poor-recoverer&utm_content=day5-pitch)
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 
 
 ---
@@ -209,5 +209,5 @@ It's $17. Seven days to implement.
 
 Sleep well, {{ subscriber.first_name }}.
 
-— Dr. Sarah Chen, Sleep Smarter
+— Sleep Smarter
 

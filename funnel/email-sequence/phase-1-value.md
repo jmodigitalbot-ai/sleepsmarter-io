@@ -1,6 +1,6 @@
 # Phase 1: Deliver Value & Build Trust (Days 0-5)
 
-**From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
+**From:** Sleep Smarter <hello@sleepsmarter.io>
 
 ---
 
@@ -31,7 +31,7 @@ Quick tip: Start with the "5 Quick Wins" on page 5 tonight. Especially #3 — th
 Tomorrow, I'm going to share something about sleep that most doctors never mention. It completely changed how I think about rest — and it'll probably change how you think about your alarm clock.
 
 Sleep well,
-Dr. Sarah Chen
+Sleep Smarter
 
 P.S. If you have a specific sleep question, just hit reply. I read every email.
 
@@ -74,7 +74,7 @@ If you haven't tried it yet: [Use the Sleep Calculator →](https://sleepsmarter
 
 Tomorrow, I want to tell you about the night I accidentally discovered this myself. I'd been sleeping "8 hours" for years and wondering why I was always exhausted...
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -116,7 +116,7 @@ Let me know how it goes — seriously, hit reply and tell me. I love hearing the
 
 Tomorrow: the single most impactful thing in your bedroom that's probably ruining your sleep. (It's not your mattress.)
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -156,7 +156,7 @@ I actually wrote a detailed guide on optimizing your sleep environment. If you w
 
 Tomorrow, we're going to talk about why "trying harder" to sleep is the worst thing you can do — and what to do instead.
 
-Sarah
+Sleep Smarter Team
 
 P.S. If the temperature tip alone improves your sleep tonight, reply and let me know. These quick wins add up fast.
 
@@ -204,7 +204,7 @@ It takes about a week to make it automatic. After that, you don't need willpower
 
 Tomorrow, I have a quick question for you. It'll take 10 seconds to answer and it'll help me send you the most relevant tips going forward.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -236,6 +236,6 @@ I ask because I'm working on something specifically designed to help with the mo
 (And yes, I really do read every reply. You'd be surprised how many people write back with detailed stories about their sleep. I love it.)
 
 Talk soon,
-Sarah
+Sleep Smarter Team
 
 P.S. Speaking of what I'm working on — I'll share more about it in a couple days. It's a complete protocol I've been developing, and the results from beta testers have been... well, I'll let them tell you themselves.

@@ -7,8 +7,8 @@ import re
 
 # Define the replacements
 replacements = {
-    'MASTERCLASS_LINK_TBD': 'https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right',
-    'PREMIUM_LINK_TBD': 'https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right',
+    'MASTERCLASS_LINK_TBD': 'https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right',
+    'PREMIUM_LINK_TBD': 'https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation-program#samcart-slide-open-right',
     'MEMBERSHIP_LINK_TBD': 'https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right'
 }
 

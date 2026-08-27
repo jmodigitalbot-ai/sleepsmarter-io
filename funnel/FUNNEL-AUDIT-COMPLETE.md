@@ -18,7 +18,7 @@ The email sequence has been loaded into Kit (Sequence ID: 2647986) with 31 email
 #### **Phase 2: Tripwire (Days 6-10)**
 - **Email 9 (Day 9)**: Tripwire purchase link `(link)` - 7-Day Sleep Reset Protocol
   - Current: `[Get the 7-Day Sleep Reset Protocol → $17](link)` (Line 94)
-  - Should be: `[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right)`
+  - Should be: `[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right)`
 
 - **Email 10 (Day 10)**: Tripwire purchase link `(link)` - Same as above
   - Current: `[Get the 7-Day Sleep Reset Protocol → $17](link)` (Line 140)
@@ -39,7 +39,7 @@ The email sequence has been loaded into Kit (Sequence ID: 2647986) with 31 email
 #### **Phase 4: Core Offer (Days 18-22)**
 - **Email 19 (Day 19)**: Masterclass purchase link `(link)`
   - Current: `[Enroll in the Sleep Smarter Masterclass → $67](link)` (Line 96)
-  - Should be: `[Enroll in the Sleep Smarter Masterclass → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)`
+  - Should be: `[Enroll in the Sleep Smarter Masterclass → $67](https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right)`
 
 - **Email 20 (Day 20)**: Masterclass purchase link `(link)`
   - Current: `[Find your specific change → $67](link)` (Line 129)
@@ -56,7 +56,7 @@ The email sequence has been loaded into Kit (Sequence ID: 2647986) with 31 email
 #### **Phase 5: Premium Offer (Days 23-30)**
 - **Email 24 (Day 24)**: Premium offer link `(link)`
   - Current: `[Start Your 90-Day Transformation → $197](link)` (Line 77)
-  - Should be: `[Start Your 90-Day Transformation → $197](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right)`
+  - Should be: `[Start Your 90-Day Transformation → $197](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation-program#samcart-slide-open-right)`
 
 - **Email 26 (Day 26)**: Membership offer link `(link)`
   - Current: `[Join the Sleep Smarter Insider → $19/mo](link)` (Line 118)

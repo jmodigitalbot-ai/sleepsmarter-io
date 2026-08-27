@@ -1,6 +1,6 @@
 # Phase 2: Introduce Tripwire (Days 6-10)
 
-**From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
+**From:** Sleep Smarter <hello@sleepsmarter.io>
 **Goal:** Sell the 7-Day Sleep Reset Protocol ($17)
 
 ---
@@ -40,7 +40,7 @@ I'll tell you more about it tomorrow. But first — did you try any of the tips 
 
 Hit reply and let me know.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -89,13 +89,13 @@ Now, Days 2-7 build on this foundation with specific protocols for light exposur
 - Troubleshooting tips (for when it doesn't go perfectly)
 - A tracking checklist (so you can measure progress)
 
-The complete protocol is $17 and it's changed the sleep of thousands of people.
+The complete protocol is $17 and gives you a structured seven-day plan instead of another pile of disconnected tips.
 
-**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day7-7day-protocol)**
+**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day7-7day-protocol)**
 
 Or don't. Day 1 alone will help. But if you want the full system — the one that compounds day over day — it's there when you're ready.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -137,11 +137,11 @@ It's NOT a substitute for medical treatment if you have:
 
 For the vast majority of people who "just don't sleep well," it works. And it works fast.
 
-**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day8-7day-protocol)**
+**[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day8-7day-protocol)**
 
 60-day money-back guarantee. If it doesn't help, email me and I'll refund you immediately. No questions.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -193,11 +193,11 @@ A comprehensive 35-minute guided audio program with progressive muscle relaxatio
 **Price: $17** (less than one bottle of melatonin)
 **Guarantee: 60 days.** Full refund if it doesn't help.
 
-**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day9-7day-protocol)**
+**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day9-7day-protocol)**
 
 This isn't a 200-page ebook you'll never read. It's a focused, actionable protocol designed to be completed in one week. Most people spend more time scrolling Reddit for sleep tips than it takes to go through this entire system.
 
-Sarah
+Sleep Smarter Team
 
 P.S. Tomorrow is the last time I'll mention this. If it's not for you, no worries — I'll keep sending free tips either way.
 
@@ -232,7 +232,7 @@ I've had people tell me this audio guide alone is worth more than the rest of th
 
 It's included free with the 7-Day Sleep Reset Protocol.
 
-**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day10-7day-protocol)**
+**[Get Instant Access → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day10-7day-protocol)**
 
 Here's what you're getting for $17:
 - ✅ Complete 7-day protocol with daily instructions
@@ -245,8 +245,8 @@ Here's what you're getting for $17:
 
 After today, I'll go back to sending you free sleep tips and articles. No more pitches for a while. But if you've been on the fence, this is the moment.
 
-**[Yes, I want better sleep → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day10-7day-protocol-cta)**
+**[Yes, I want better sleep → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day10-7day-protocol-cta)**
 
 Either way, I'll talk to you tomorrow with something completely different — a myth about caffeine that will probably surprise you.
 
-Sarah
+Sleep Smarter Team

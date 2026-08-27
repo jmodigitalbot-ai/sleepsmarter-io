@@ -83,7 +83,7 @@ export default function InsiderSales() {
               <div className="text-3xl mb-4">🏷️</div>
               <h3 className="text-xl font-bold text-[#a8dadc] mb-3">Curated Product Recommendations</h3>
               <p className="text-[#f1faee]/70 mb-3">
-                Monthly email with tested/reviewed sleep products with exclusive member discounts.
+                Monthly email with researched sleep-product recommendations, clear tradeoffs, and affiliate disclosure where links are used.
               </p>
               <p className="text-[#f1faee]/40 text-sm">Value: $10/month</p>
             </div>
@@ -119,7 +119,7 @@ export default function InsiderSales() {
               <div className="text-3xl mb-4">🔒</div>
               <h3 className="text-xl font-bold text-[#a8dadc] mb-3">60-Day Money-Back Guarantee</h3>
               <p className="text-[#f1faee]/70 mb-3">
-                Try it risk-free for 60 days. If you're not satisfied, get a full refund.
+                Try it for 60 days. If it is not useful for you, ask for a refund.
               </p>
               <p className="text-[#f1faee]/40 text-sm">Value: Priceless</p>
             </div>
@@ -360,7 +360,7 @@ export default function InsiderSales() {
             60-Day Money-Back Guarantee
           </h3>
           <p className="text-[#f1faee]/80 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
-            We're so confident you'll find value in the Insider Membership that we offer a full 60-day money-back guarantee.
+            Try the Insider Membership for 60 days. If it is not useful for you, ask for a refund.
           </p>
           <div className="max-w-2xl mx-auto space-y-4">
             <div className="flex items-center justify-center gap-3">
@@ -406,7 +406,7 @@ export default function InsiderSales() {
             <div className="bg-[#16213e] border border-[#4a4e69]/30 rounded-xl p-6">
               <h4 className="text-xl font-semibold text-[#a8dadc] mb-3">Can I access previous months' content?</h4>
               <p className="text-[#f1faee]/80 text-lg">
-                Yes! Once you're a member, you have access to the entire content library via email archives, including all past Deep-Dive Guides and articles for as long as you remain a member.
+                Members receive the current library and future monthly updates by email. Archived content access depends on the delivery setup available at launch.
               </p>
             </div>
 

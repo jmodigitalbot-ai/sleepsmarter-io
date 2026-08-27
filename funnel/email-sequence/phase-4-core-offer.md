@@ -1,6 +1,6 @@
 # Phase 4: Core Offer Launch (Days 18-22)
 
-**From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
+**From:** Sleep Smarter <hello@sleepsmarter.io>
 **Goal:** Sell the Sleep Smarter Masterclass ($67)
 
 ---
@@ -33,7 +33,7 @@ The emails and articles I send are helpful, but they're scattered. A tip here, a
 I'll share the full details tomorrow. But I wanted you to hear about it first, before anyone else. You've been reading my emails and engaging with this content. This was built for people exactly like you.
 
 Talk soon,
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -97,7 +97,7 @@ My curated list of the best sleep products — pillows, mattresses, sound machin
 
 This isn't information you can't find online. It's information organized, prioritized, and structured so you don't have to spend months piecing it together yourself. I've done the work. You just follow the path.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -128,9 +128,9 @@ The Masterclass helps you find YOUR specific change. Not generic advice. Not wha
 
 **[Find your specific change → $67](https://sleepsmarter.io/masterclass?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day20-masterclass)**
 
-60-day guarantee. If David's story doesn't become your story, you get your money back.
+60-day guarantee. If the system is not useful after you try it, ask for a refund within 60 days.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -159,7 +159,7 @@ I realize I've talked a lot about what the Masterclass teaches, but I haven't be
 
 🔄 **Lifetime Updates** — When I add new content or update recommendations, you get it automatically. No additional charge.
 
-💬 **Email Access to Me** — Have a question? Reply to any email. I personally respond within 48 hours.
+💬 **Email Support** — Have a question? Reply to any email and we will route it for support.
 
 **All of this for $67.** Less than one therapy session. Less than a month of sleep supplements. Less than that weighted blanket collecting dust in your closet.
 
@@ -167,7 +167,7 @@ I realize I've talked a lot about what the Masterclass teaches, but I haven't be
 
 60-day money-back guarantee. Zero risk.
 
-Sarah
+Sleep Smarter Team
 
 ---
 
@@ -212,4 +212,4 @@ After this, I'll shift to talking about something for people who want even more 
 
 Your call, {{first_name}}. Either way, I'll keep showing up in your inbox with value.
 
-Sarah
+Sleep Smarter Team
