@@ -282,7 +282,7 @@ Here's your roadmap going forward — pick the path that fits where you are:
 ---
 
 **📘 Get the system ($17)**
-→ [7-Day Sleep Reset Protocol](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-7day-protocol) — structured, step-by-step, proven
+→ [7-Day Sleep Reset Protocol](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right?utm_source=convertkit&utm_medium=email&utm_campaign=sleep-blueprint-30day&utm_content=day30-7day-protocol) — structured, step-by-step, proven
 → Best for: "I know what to do but need a clear plan"
 
 ---

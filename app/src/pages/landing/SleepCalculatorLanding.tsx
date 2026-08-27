@@ -88,7 +88,7 @@ export default function SleepCalculatorLanding() {
               <span className="text-[#f1faee]/50 text-sm ml-2">one-time</span>
             </div>
             <a
-              href="https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
+              href="https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right"
               className="inline-block bg-[#a8dadc] hover:bg-[#8bc9cc] text-[#1a1a2e] font-semibold px-8 py-4 rounded-lg transition text-base"
             >
               Get the 7-Day Reset Protocol →

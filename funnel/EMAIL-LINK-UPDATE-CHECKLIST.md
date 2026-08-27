@@ -13,7 +13,7 @@
 ### **Phase 2: Tripwire (Days 9-10)**
 - [ ] **Email 9 (Day 9)**: Tripwire purchase link
   - **Current:** `[Get the 7-Day Sleep Reset Protocol → $17](link)`
-  - **Update to:** `[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right)`
+  - **Update to:** `[Get the 7-Day Sleep Reset Protocol → $17](https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right)`
   - **File:** `phase-2-tripwire.md` line 94
 
 - [ ] **Email 10 (Day 10)**: Tripwire purchase link #1
@@ -39,7 +39,7 @@
 ### **Phase 4: Core Offer (Days 19-22)**
 - [ ] **Email 19 (Day 19)**: Masterclass purchase link
   - **Current:** `[Enroll in the Sleep Smarter Masterclass → $67](link)`
-  - **Update to:** `[Enroll in the Sleep Smarter Masterclass → $67](https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-masterclass#samcart-slide-open-right)`
+  - **Update to:** `[Enroll in the Sleep Smarter Masterclass → $67](https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right)`
   - **File:** `phase-4-core-offer.md` line 96
 
 - [ ] **Email 20 (Day 20)**: Masterclass purchase link
@@ -60,7 +60,7 @@
 ### **Phase 5: Premium Offer (Days 24, 26, 30)**
 - [ ] **Email 24 (Day 24)**: Premium offer link
   - **Current:** `[Start Your 90-Day Transformation → $197](link)`
-  - **Update to:** `[Start Your 90-Day Transformation → $197](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation#samcart-slide-open-right)`
+  - **Update to:** `[Start Your 90-Day Transformation → $197](https://originalitymarketing.mysamcart.com/checkout/90-day-sleep-transformation-program#samcart-slide-open-right)`
   - **File:** `phase-5-premium.md` line 77
 
 - [ ] **Email 26 (Day 26)**: Membership offer link #1

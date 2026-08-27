@@ -16,7 +16,7 @@ function useIsMobile() {
 }
 
 export default function ThankYou() {
-  const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
+  const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right"
   const [searchParams] = useSearchParams()
   const userEmail = searchParams.get('email')
   const [pdfUrl, setPdfUrl] = useState<string | null>(null)

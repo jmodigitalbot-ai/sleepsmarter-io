@@ -127,7 +127,7 @@ export default function Blueprint() {
                 Ready to go deeper? The 7-Day Sleep Reset Protocol walks you through the full system, step by step.
               </p>
               <a
-                href="https://originalitymarketing.mysamcart.com/checkout/the-7-day-sleep-reset-protocol-transform-your-sleep-in-one-week#samcart-slide-open-right"
+                href="https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right"
                 className="text-[#a8dadc] text-sm font-semibold hover:underline"
               >
                 Get the 7-Day Protocol for $17 →
