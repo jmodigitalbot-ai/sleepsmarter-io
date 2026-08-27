@@ -14,7 +14,7 @@
    - `https://originalitymarketing.mysamcart.com/checkout/sleep-smarter-insider#samcart-slide-open-right` → Sleep Smarter Insider ($19/mo) checkout page
    - Blueprint download link in Email 0 → `https://www.sleepsmarter.io/blueprint/download` (PDF delivery page)
 7. **Delays:** Set the delay between each email as noted (mostly 1 day)
-8. **From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
+8. **From:** Sleep Smarter <hello@sleepsmarter.io>
 
 ---
 ### Email 0 — Day 0
@@ -42,7 +42,7 @@ Quick tip: Start with the "5 Quick Wins" on page 5 tonight. Especially #3 — th
 Tomorrow, I'm going to share something about sleep that most doctors never mention. It completely changed how I think about rest — and it'll probably change how you think about your alarm clock.
 
 Sleep well,
-Dr. Sarah Chen
+Sleep Smarter Team
 
 P.S. If you have a specific sleep question, just hit reply. I read every email.
 

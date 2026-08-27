@@ -1,6 +1,6 @@
 # 30-Day Email Autoresponder — Sequence Map
 
-**From:** Dr. Sarah Chen <sarah@sleepsmarter.io>
+**From:** Sleep Smarter <hello@sleepsmarter.io>
 **Trigger:** Sleep Blueprint lead magnet opt-in
 **Goal:** Nurture → Tripwire ($17) → Core ($67) → Premium ($197)
 **Style:** Andre Chaperon Soap Opera Sequence + Frank Kern Behavioral Response

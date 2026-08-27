@@ -6,6 +6,8 @@ import About from './pages/About.tsx'
 import Blog from './pages/Blog.tsx'
 import Article from './pages/Article.tsx'
 import Calculator from './pages/Calculator.tsx'
+import Assessment from './pages/Assessment.tsx'
+import ThankYou from './pages/ThankYou.tsx'
 import SleepReset from './pages/SleepReset.tsx'
 import SleepDebtCalculator from './pages/SleepDebtCalculator.tsx'
 import BedtimeCalculatorHub from './pages/BedtimeCalculatorHub.tsx'
@@ -19,6 +21,7 @@ import SleepProductsLanding from './pages/landing/SleepProductsLanding.tsx'
 import MasterclassSales from './pages/MasterclassSales.tsx'
 import PremiumSales from './pages/PremiumSales.tsx'
 import InsiderSales from './pages/InsiderSales.tsx'
+import Blueprint from './pages/Blueprint.tsx'
 import { articles } from './data/articles.ts'
 import { bedtimePages } from './data/bedtimePages.ts'
 
@@ -27,11 +30,14 @@ export const prerenderRoutes: string[] = [
   '/',
   '/blog',
   '/calculator',
+  '/assessment',
+  '/thank-you',
   '/about',
   '/sleep-reset',
   '/masterclass',
   '/premium',
   '/insider',
+  '/blueprint',
   '/sleep-debt-calculator',
   '/bedtime-calculator',
   ...bedtimePages.map(p => `/bedtime-calculator/${p.slug}`),
@@ -53,11 +59,14 @@ export function render(url: string): string {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<Article />} />
           <Route path="/calculator" element={<Calculator />} />
+          <Route path="/assessment" element={<Assessment />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/about" element={<About />} />
           <Route path="/sleep-reset" element={<SleepReset />} />
           <Route path="/masterclass" element={<MasterclassSales />} />
           <Route path="/premium" element={<PremiumSales />} />
           <Route path="/insider" element={<InsiderSales />} />
+          <Route path="/blueprint" element={<Blueprint />} />
           <Route path="/sleep-debt-calculator" element={<SleepDebtCalculator />} />
           <Route path="/bedtime-calculator" element={<BedtimeCalculatorHub />} />
           <Route path="/bedtime-calculator/:wakeTime" element={<BedtimeCalculatorPage />} />

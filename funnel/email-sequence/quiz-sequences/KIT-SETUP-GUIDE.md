@@ -45,7 +45,7 @@ This guide explains how to configure the 4 segmented 7-email sequences in Kit (C
    - **Subject line** from the sequence file
    - **Preview text** from the sequence file (Kit calls this "Email preview text")
    - **From name:** Sleep Smarter
-   - **From email:** sarah@sleepsmarter.io
+   - **From email:** hello@sleepsmarter.io
    - **Body copy** from the sequence file
 
 ### Formatting Notes
@@ -162,7 +162,7 @@ To track link clicks in Kit: in each CTA email, use a **Link Trigger** on the `/
 
 - [ ] Create 4 sequences with correct names
 - [ ] Import all 28 emails with correct subjects, preview text, and timing
-- [ ] Set From: Sleep Smarter / sarah@sleepsmarter.io on all emails
+- [ ] Set From: Sleep Smarter / hello@sleepsmarter.io on all emails
 - [ ] Build routing automation on form 9066532
 - [ ] Test with a real email address for each sleep_persona value
 - [ ] Set up quiz-sequence-complete tag + nurture handoff
