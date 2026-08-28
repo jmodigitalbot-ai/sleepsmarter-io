@@ -159,6 +159,8 @@ import sleepAndImmuneSystem from '../content/93-sleep-and-immune-system.md?raw'
 
 import sleepAndMentalHealth from '../content/94-sleep-and-mental-health.md?raw'
 
+import sleepAndMemory from '../content/95-sleep-and-memory.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1795,6 +1797,24 @@ export const articles: Article[] = [
       { question: "Why do I feel tired but wired at night?", answer: "That usually means sleep pressure is high but physiological arousal is still elevated. Stress, caffeine, light exposure, rumination, alcohol, or inconsistent timing can keep the body alert even when you feel exhausted." },
       { question: "What is the best first step if stress is ruining my sleep?", answer: "Start with a consistent wake time, morning light, an earlier caffeine cutoff, and a short evening brain dump. Those levers lower arousal without turning bedtime into another performance test." },
       { question: "When should sleep and mental health problems get professional help?", answer: "Get help if insomnia lasts more than a few weeks, depression or anxiety is worsening, panic attacks disrupt daily life, you have self-harm thoughts, or symptoms suggest sleep apnea, restless legs, trauma nightmares, mania, or medication side effects." }
+    ]
+  },
+  {
+    slug: "sleep-and-memory",
+    title: "Sleep and Memory: How Better Rest Helps Your Brain Learn",
+    description: "How sleep affects memory, deep sleep, REM, learning, brain fog, and what to fix first when your recall feels worse.",
+    readTime: "12 min read",
+    date: "August 2026",
+    publishDate: "2026-08-28",
+    content: sleepAndMemory,
+    featuredImage: "/images/featured-sleep-and-memory.png",
+    featuredImageAlt: "Sleeping person below a glowing brain illustration representing sleep and memory consolidation",
+    faqs: [
+      { question: "Does sleep really improve memory?", answer: "Yes. Sleep helps the brain consolidate new information, stabilize memory traces, and improve recall. Deep sleep is especially important for factual learning, while REM sleep helps with emotional memory, pattern recognition, and integration." },
+      { question: "Which sleep stage is best for memory?", answer: "There is no single memory stage. Deep sleep supports stabilization of facts and concepts, REM supports emotional processing and pattern recognition, and light sleep includes sleep spindles linked with learning. Healthy memory depends on the whole night of sleep architecture." },
+      { question: "Is it better to study late or sleep?", answer: "If the choice is between another exhausted study hour and a full night of sleep, sleep usually wins. Late cramming can add input, but cutting sleep damages encoding, consolidation, and next-day recall." },
+      { question: "Why does one bad night make my memory worse?", answer: "One bad night lowers attention, weakens working memory, raises stress reactivity, and makes recall less reliable. Attention is the front door of memory, so when focus breaks down, new information does not get encoded cleanly." },
+      { question: "What should I fix first if my memory feels worse?", answer: "Start with the basics: a consistent sleep window, morning light, earlier caffeine cutoff, less alcohol near bedtime, a cooler darker room, and evaluation for snoring or sleep apnea symptoms. Supplements should support those foundations, not replace them." }
     ]
   }
 ]
