@@ -161,6 +161,8 @@ import sleepAndMentalHealth from '../content/94-sleep-and-mental-health.md?raw'
 
 import sleepAndMemory from '../content/95-sleep-and-memory.md?raw'
 
+import howMuchSleepDoYouNeedByAge from '../content/96-how-much-sleep-do-you-need-by-age.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1815,6 +1817,24 @@ export const articles: Article[] = [
       { question: "Is it better to study late or sleep?", answer: "If the choice is between another exhausted study hour and a full night of sleep, sleep usually wins. Late cramming can add input, but cutting sleep damages encoding, consolidation, and next-day recall." },
       { question: "Why does one bad night make my memory worse?", answer: "One bad night lowers attention, weakens working memory, raises stress reactivity, and makes recall less reliable. Attention is the front door of memory, so when focus breaks down, new information does not get encoded cleanly." },
       { question: "What should I fix first if my memory feels worse?", answer: "Start with the basics: a consistent sleep window, morning light, earlier caffeine cutoff, less alcohol near bedtime, a cooler darker room, and evaluation for snoring or sleep apnea symptoms. Supplements should support those foundations, not replace them." }
+    ]
+  },
+  {
+    slug: "how-much-sleep-do-you-need-by-age",
+    title: "How Much Sleep Do You Need by Age?",
+    description: "Age-by-age sleep needs for kids, teens, adults, and older adults, plus signs your personal sleep number is too low.",
+    readTime: "10 min read",
+    date: "August 2026",
+    publishDate: "2026-08-31",
+    content: howMuchSleepDoYouNeedByAge,
+    featuredImage: "/images/featured-how-much-sleep-do-you-need-by-age.png",
+    featuredImageAlt: "Dark sleep-themed graphic for an article about how much sleep people need by age",
+    faqs: [
+      { question: "How much sleep do adults need?", answer: "Most adults need 7 to 9 hours of sleep per night. Some feel good near 7, while others need closer to 9, especially during stress, illness, heavy training, or accumulated sleep debt." },
+      { question: "How much sleep do teenagers need?", answer: "Most teenagers need 8 to 10 hours of sleep per night. Teen circadian rhythms often run later, which makes early school start times especially rough." },
+      { question: "Do older adults need less sleep?", answer: "Older adults usually still need about 7 to 8 hours. They may get lighter or more fragmented sleep, but that is not the same as needing only 5 or 6 hours." },
+      { question: "Is 6 hours of sleep enough?", answer: "For most people, 6 hours is not enough long term. A few true short sleepers exist, but if you need caffeine, alarms, naps, or weekend catch-up sleep to function, 6 hours is probably too little." },
+      { question: "How can I find my personal sleep need?", answer: "Run a two-week test with a consistent wake time, an earlier bedtime, and simple notes on energy, mood, focus, caffeine, and night wakeups. Your best sleep number is the range where you wake easier and function steadily without constant catch-up." }
     ]
   }
 ]
