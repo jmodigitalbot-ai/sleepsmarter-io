@@ -163,6 +163,8 @@ import sleepAndMemory from '../content/95-sleep-and-memory.md?raw'
 
 import howMuchSleepDoYouNeedByAge from '../content/96-how-much-sleep-do-you-need-by-age.md?raw'
 
+import sleepAndHeartHealth from '../content/97-sleep-and-heart-health.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1835,6 +1837,24 @@ export const articles: Article[] = [
       { question: "Do older adults need less sleep?", answer: "Older adults usually still need about 7 to 8 hours. They may get lighter or more fragmented sleep, but that is not the same as needing only 5 or 6 hours." },
       { question: "Is 6 hours of sleep enough?", answer: "For most people, 6 hours is not enough long term. A few true short sleepers exist, but if you need caffeine, alarms, naps, or weekend catch-up sleep to function, 6 hours is probably too little." },
       { question: "How can I find my personal sleep need?", answer: "Run a two-week test with a consistent wake time, an earlier bedtime, and simple notes on energy, mood, focus, caffeine, and night wakeups. Your best sleep number is the range where you wake easier and function steadily without constant catch-up." }
+    ]
+  },
+  {
+    slug: "sleep-and-heart-health",
+    title: "Sleep and Heart Health: How Better Rest Protects Your Cardiovascular System",
+    description: "Learn how sleep affects heart health, blood pressure, stress hormones, sleep apnea risk, and cardiovascular recovery.",
+    readTime: "12 min read",
+    date: "September 2026",
+    publishDate: "2026-09-02",
+    content: sleepAndHeartHealth,
+    featuredImage: "/images/featured-sleep-and-heart-health.png",
+    featuredImageAlt: "Dark sleep-themed graphic with the title Sleep and Heart Health",
+    faqs: [
+      { question: "How does sleep affect heart health?", answer: "Sleep gives your cardiovascular system a nightly recovery window. Heart rate and blood pressure usually drop during healthy sleep, while poor or fragmented sleep can keep stress signals higher and reduce recovery." },
+      { question: "Can lack of sleep raise blood pressure?", answer: "Yes. Chronic short sleep is linked with higher blood pressure risk because the body gets less time in the lower-demand nighttime state where blood pressure normally dips." },
+      { question: "Is sleep apnea bad for your heart?", answer: "Untreated sleep apnea can strain the cardiovascular system by repeatedly interrupting breathing, lowering oxygen, and triggering stress responses throughout the night. Loud snoring, gasping, and morning headaches are worth discussing with a clinician." },
+      { question: "How many hours of sleep are best for heart health?", answer: "Most adults should aim for 7 to 9 hours of sleep per night. The exact number varies, but chronic sleep under 7 hours is not a good long-term plan for cardiovascular recovery." },
+      { question: "What is the best sleep habit for heart health?", answer: "The best starting habit is a consistent sleep window that gives you enough time to sleep. Add morning light, earlier caffeine cutoff, less alcohol near bed, a cool room, and medical follow-up for snoring or apnea symptoms." }
     ]
   }
 ]
