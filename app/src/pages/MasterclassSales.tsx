@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { trackSalesPageView, trackCheckoutClick } from '../lib/analytics'
+import { buildAttributedCheckoutUrl } from '../lib/attribution'
 import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
 export default function MasterclassSales() {
-  const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right"
+  const checkoutUrl = buildAttributedCheckoutUrl("https://originalitymarketing.mysamcart.com/checkout/the-sleep-smarter-masterclass#samcart-slide-open-right")
 
   // Track sales page view when component mounts
   useEffect(() => {

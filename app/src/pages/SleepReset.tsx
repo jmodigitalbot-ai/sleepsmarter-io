@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState, type ReactElement } from 'react'
 import { trackSalesPageView, trackCheckoutClick, trackMetaEvent } from '../lib/analytics'
+import { ensurePageUrlHasAttribution } from '../lib/attribution'
 import { loadSamCartCheckoutScript } from '../lib/thirdPartyScripts'
 import SEO from '../components/SEO'
 
@@ -75,6 +76,7 @@ export default function SleepReset() {
   const fromQuiz = state?.source === 'quiz_funnel'
 
   useEffect(() => {
+    ensurePageUrlHasAttribution()
     trackSalesPageView('/sleep-reset', {
       page_title: 'The Forgotten Sleep Ritual'
     })

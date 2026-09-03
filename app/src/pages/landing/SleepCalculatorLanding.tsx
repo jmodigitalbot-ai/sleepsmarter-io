@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom'
 import SleepCalculator from '../../components/SleepCalculator'
 import SEO from '../../components/SEO'
 import { trackPageView } from '../../lib/analytics'
+import { buildAttributedCheckoutUrl } from '../../lib/attribution'
 import { loadSamCartSlideScript } from '../../lib/thirdPartyScripts'
 
 export default function SleepCalculatorLanding() {
+  const checkoutUrl = buildAttributedCheckoutUrl('https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right')
+
   useEffect(() => {
     // Track landing page view
     trackPageView('/lp/sleep-calculator', 'Sleep Calculator - Free Sleep Cycle Calculator')
@@ -88,7 +91,7 @@ export default function SleepCalculatorLanding() {
               <span className="text-[#f1faee]/50 text-sm ml-2">one-time</span>
             </div>
             <a
-              href="https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right"
+              href={checkoutUrl}
               className="inline-block bg-[#a8dadc] hover:bg-[#8bc9cc] text-[#1a1a2e] font-semibold px-8 py-4 rounded-lg transition text-base"
             >
               Get the 7-Day Reset Protocol →

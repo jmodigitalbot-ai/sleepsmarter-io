@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { buildAttributedCheckoutUrl } from '../lib/attribution'
 import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
 const PDF_SERVICE_URL = import.meta.env.VITE_PDF_SERVICE_URL || ''
@@ -16,7 +17,7 @@ function useIsMobile() {
 }
 
 export default function ThankYou() {
-  const checkoutUrl = "https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right"
+  const checkoutUrl = buildAttributedCheckoutUrl("https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right")
   const [searchParams] = useSearchParams()
   const userEmail = searchParams.get('email')
   const [pdfUrl, setPdfUrl] = useState<string | null>(null)

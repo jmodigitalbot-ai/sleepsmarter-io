@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { buildAttributedCheckoutUrl } from '../lib/attribution'
 import { loadSamCartSlideScript } from '../lib/thirdPartyScripts'
 
 const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.app'
@@ -7,6 +8,7 @@ const PDF_SERVICE_URL = 'https://sleepsmarter-pdf-service-production.up.railway.
 type Status = 'loading' | 'ready' | 'not_found' | 'error'
 
 export default function Blueprint() {
+  const checkoutUrl = buildAttributedCheckoutUrl('https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right')
   const [searchParams] = useSearchParams()
   const email = searchParams.get('email') || ''
   const [status, setStatus] = useState<Status>('loading')
@@ -127,7 +129,7 @@ export default function Blueprint() {
                 Ready to go deeper? The 7-Day Sleep Reset Protocol walks you through the full system, step by step.
               </p>
               <a
-                href="https://originalitymarketing.mysamcart.com/checkout/the-forgotten-sleep-ritual#samcart-slide-open-right"
+                href={checkoutUrl}
                 className="text-[#a8dadc] text-sm font-semibold hover:underline"
               >
                 Get the 7-Day Protocol for $17 →

@@ -6,6 +6,7 @@
  */
 
 import { loadExternalScript, runAfterInteractionOrDelay } from './thirdPartyScripts'
+import { attributionEventParams, captureAttribution } from './attribution'
 
 // GA4 Measurement ID from index.html
 // const GA4_MEASUREMENT_ID = 'G-HMNWV4K76J' // Unused but kept for reference
@@ -57,6 +58,8 @@ export interface EventParams {
  */
 export const initGA4 = (): void => {
   if (typeof window === 'undefined') return
+
+  captureAttribution()
   
   // Check if gtag is already loaded
   if (!window.gtag) {
@@ -181,6 +184,7 @@ export const trackSalesPageView = (
   additionalParams?: EventParams
 ): void => {
   const params: EventParams = {
+    ...attributionEventParams(),
     ...additionalParams,
     event_category: 'engagement',
     event_label: 'sales_page_view',
@@ -205,6 +209,7 @@ export const trackCheckoutClick = (
   additionalParams?: EventParams
 ): void => {
   const params: EventParams = {
+    ...attributionEventParams(),
     ...additionalParams,
     event_category: 'conversion',
     event_label: 'checkout_click',
@@ -236,6 +241,7 @@ export const trackPurchaseComplete = (
   const finalValue = value || conversionData.value
   
   const params: EventParams = {
+    ...attributionEventParams(),
     ...additionalParams,
     event_category: 'conversion',
     event_label: 'purchase_complete',
@@ -287,6 +293,7 @@ export const trackPageView = (
   pageTitle: string
 ): void => {
   const params: EventParams = {
+    ...attributionEventParams(),
     event_category: 'engagement',
     event_label: 'page_view',
     page_path: pagePath,
