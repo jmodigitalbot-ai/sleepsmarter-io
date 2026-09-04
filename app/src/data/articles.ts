@@ -165,6 +165,8 @@ import howMuchSleepDoYouNeedByAge from '../content/96-how-much-sleep-do-you-need
 
 import sleepAndHeartHealth from '../content/97-sleep-and-heart-health.md?raw'
 
+import sleepAndDigestion from '../content/98-sleep-and-digestion.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1855,6 +1857,24 @@ export const articles: Article[] = [
       { question: "Is sleep apnea bad for your heart?", answer: "Untreated sleep apnea can strain the cardiovascular system by repeatedly interrupting breathing, lowering oxygen, and triggering stress responses throughout the night. Loud snoring, gasping, and morning headaches are worth discussing with a clinician." },
       { question: "How many hours of sleep are best for heart health?", answer: "Most adults should aim for 7 to 9 hours of sleep per night. The exact number varies, but chronic sleep under 7 hours is not a good long-term plan for cardiovascular recovery." },
       { question: "What is the best sleep habit for heart health?", answer: "The best starting habit is a consistent sleep window that gives you enough time to sleep. Add morning light, earlier caffeine cutoff, less alcohol near bed, a cool room, and medical follow-up for snoring or apnea symptoms." }
+    ]
+  },
+  {
+    slug: "sleep-and-digestion",
+    title: "Sleep and Digestion: Why Bad Sleep Wrecks Your Gut",
+    description: "How sleep affects digestion, reflux, cravings, late meals, and gut health, plus practical fixes for better nights.",
+    readTime: "9 min read",
+    date: "September 2026",
+    publishDate: "2026-09-04",
+    content: sleepAndDigestion,
+    featuredImage: "/images/featured-sleep-and-digestion.png",
+    featuredImageAlt: "Dark themed Sleep and Digestion featured image for sleepsmarter.io",
+    faqs: [
+      { question: "Can bad sleep cause digestive problems?", answer: "Bad sleep can contribute to digestive problems by disrupting circadian rhythm, stress hormones, appetite regulation, and food choices. It may worsen reflux, bloating, cravings, and irregular bathroom timing, though persistent or severe symptoms should be checked by a clinician." },
+      { question: "How long before bed should I stop eating?", answer: "A good default is to finish large meals two to three hours before bed. If reflux is an issue, a longer gap may help. A small, boring snack can still make sense if hunger wakes you up." },
+      { question: "Why does reflux get worse at night?", answer: "Reflux often gets worse at night because lying flat makes it easier for stomach contents to move upward. Large late meals, alcohol, spicy foods, high-fat meals, caffeine, and going to bed too soon after eating can all increase the risk." },
+      { question: "What should I eat before bed if I wake up hungry?", answer: "Choose a small, simple snack with protein and a little carbohydrate, such as Greek yogurt, cottage cheese, oatmeal, a banana with nut butter, or toast with eggs or turkey. Avoid huge portions, spicy foods, alcohol, and personal reflux triggers." },
+      { question: "Can improving sleep help with cravings?", answer: "Yes. Better sleep can make appetite control easier by reducing fatigue-driven cravings and supporting healthier hunger and fullness signals. It is not magic, but it removes one of the biggest reasons people reach for quick energy the next day." }
     ]
   }
 ]
