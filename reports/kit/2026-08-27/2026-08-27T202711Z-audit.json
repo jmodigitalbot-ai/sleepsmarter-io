@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-08-27T20:27:11.359526+00:00",
+  "mode": "audit",
+  "result": {
+    "account_name": "JMO Digital Assets, LLC",
+    "errors": [],
+    "forms_count": 4,
+    "kit_products_count": 0,
+    "kit_purchases_count": 3,
+    "mode": "audit",
+    "ok": true,
+    "plan_type": "creator",
+    "sending_addresses_total": 2,
+    "sending_addresses_verified_count": 2,
+    "sequences_count": 5,
+    "sleep_relevant_objects": {
+      "forms": [
+        {
+          "id": 9066532,
+          "name": "Sleep Blueprint Signup",
+          "status": "active"
+        }
+      ],
+      "products": [],
+      "sequences": [
+        {
+          "id": 2686903,
+          "name": "Quiz \u2014 Circadian Mismatch (exhausted_but_wired)",
+          "status": "active"
+        },
+        {
+          "id": 2686902,
+          "name": "Quiz \u2014 Poor Recoverer (never_feel_rested)",
+          "status": "active"
+        },
+        {
+          "id": 2686900,
+          "name": "Quiz \u2014 Fragmented Sleeper (cant_stay_asleep)",
+          "status": "active"
+        },
+        {
+          "id": 2686898,
+          "name": "Quiz \u2014 Racing Mind Sleeper (cant_fall_asleep)",
+          "status": "active"
+        },
+        {
+          "id": 2647986,
+          "name": "Sleep Blueprint 30-Day Sequence",
+          "status": "active"
+        }
+      ],
+      "tags": [
+        {
+          "id": 17571969,
+          "name": "quiz-sequence-complete",
+          "status": null
+        },
+        {
+          "id": 17571846,
+          "name": "sleep-type:unclassified",
+          "status": null
+        },
+        {
+          "id": 17571838,
+          "name": "sleep-type:circadian-mismatch",
+          "status": null
+        },
+        {
+          "id": 17571826,
+          "name": "sleep-type:poor-recoverer",
+          "status": null
+        },
+        {
+          "id": 17571823,
+          "name": "sleep-type:fragmented",
+          "status": null
+        },
+        {
+          "id": 17571786,
+          "name": "sleep-type:racing-mind",
+          "status": null
+        },
+        {
+          "id": 15725529,
+          "name": "sleep-blueprint-downloaded",
+          "status": null
+        },
+        {
+          "id": 15725528,
+          "name": "sleep-smarter-lead",
+          "status": null
+        }
+      ]
+    },
+    "tags_count": 27,
+    "warnings": [],
+    "webhooks_count": 0
+  }
+}

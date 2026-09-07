@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-27T20:27:57.817369+00:00",
+  "mode": "draft-broadcast",
+  "result": {
+    "body_chars": 98,
+    "body_file": "/Users/jmodigital/clawd/projects/utility-website-portfolio/sleepsmarter.io/reports/kit/draft-broadcast-dryrun-body.html",
+    "dry_run": true,
+    "message": "No Kit MCP write was run because --apply was not passed.",
+    "mode": "draft-broadcast",
+    "ok": true,
+    "subject": "DRY RUN - Sleep Smarter Kit Wrapper Test"
+  }
+}

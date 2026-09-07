@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-27T20:26:22.416457+00:00",
+  "mode": "ensure-tags",
+  "result": {
+    "dry_run": true,
+    "message": "No Kit MCP write was run because --apply was not passed.",
+    "mode": "ensure-tags",
+    "ok": true,
+    "would_ensure_tags": [
+      "Sleep Smarter: Lead",
+      "Sleep Smarter: Customer"
+    ]
+  }
+}

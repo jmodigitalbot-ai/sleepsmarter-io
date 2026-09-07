@@ -167,6 +167,8 @@ import sleepAndHeartHealth from '../content/97-sleep-and-heart-health.md?raw'
 
 import sleepAndDigestion from '../content/98-sleep-and-digestion.md?raw'
 
+import sleepAndBloodSugar from '../content/99-sleep-and-blood-sugar.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1875,6 +1877,24 @@ export const articles: Article[] = [
       { question: "Why does reflux get worse at night?", answer: "Reflux often gets worse at night because lying flat makes it easier for stomach contents to move upward. Large late meals, alcohol, spicy foods, high-fat meals, caffeine, and going to bed too soon after eating can all increase the risk." },
       { question: "What should I eat before bed if I wake up hungry?", answer: "Choose a small, simple snack with protein and a little carbohydrate, such as Greek yogurt, cottage cheese, oatmeal, a banana with nut butter, or toast with eggs or turkey. Avoid huge portions, spicy foods, alcohol, and personal reflux triggers." },
       { question: "Can improving sleep help with cravings?", answer: "Yes. Better sleep can make appetite control easier by reducing fatigue-driven cravings and supporting healthier hunger and fullness signals. It is not magic, but it removes one of the biggest reasons people reach for quick energy the next day." }
+    ]
+  },
+  {
+    slug: "sleep-and-blood-sugar",
+    title: "Sleep and Blood Sugar: How Bad Sleep Wrecks Glucose Control",
+    description: "Learn how sleep affects blood sugar, cravings, 3 AM wakeups, and glucose control, plus practical fixes for better nights.",
+    readTime: "10 min read",
+    date: "September 2026",
+    publishDate: "2026-09-07",
+    content: sleepAndBloodSugar,
+    featuredImage: "/images/featured-sleep-and-blood-sugar.png",
+    featuredImageAlt: "Dark themed illustration for an article about sleep and blood sugar",
+    faqs: [
+      { question: "Can bad sleep raise blood sugar?", answer: "Yes. Short or fragmented sleep can temporarily reduce insulin sensitivity, increase stress hormones, raise cravings, and make glucose control harder the next day." },
+      { question: "Can low blood sugar wake you up at night?", answer: "It can for some people. A blood sugar drop may trigger cortisol and adrenaline, which can feel like waking up hungry, shaky, sweaty, hot, or suddenly alert." },
+      { question: "What should I eat before bed if hunger wakes me up?", answer: "Try a small balanced snack such as Greek yogurt with berries, cottage cheese and fruit, oatmeal with nut butter, or a banana with peanut butter. Keep it modest so digestion does not disrupt sleep." },
+      { question: "Is sugar before bed bad for sleep?", answer: "A large sugary snack close to bed can cause a glucose spike, thirst, restlessness, reflux, bathroom wakeups, or a later drop that fragments sleep. Dessert is not banned, but it is not a sleep strategy." },
+      { question: "When should I talk to a doctor about nighttime blood sugar symptoms?", answer: "Talk to a clinician if you have diabetes, suspected blood sugar problems, frequent nighttime shaking or sweating, extreme thirst, unexplained weight loss, frequent urination, or symptoms of sleep apnea." }
     ]
   }
 ]

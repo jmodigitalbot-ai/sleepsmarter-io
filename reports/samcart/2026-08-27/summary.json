@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-27T20:18:46.168505+00:00",
+  "window_days": 30,
+  "all_products_seen": 21,
+  "sleep_products_seen": 9,
+  "sleep_orders_seen": 0,
+  "sleep_charges_seen": 0,
+  "sleep_subscriptions_seen": 0,
+  "sleep_order_gross_total": 0,
+  "config_path": "/Users/jmodigital/.config/karr/samcart.json"
+}
