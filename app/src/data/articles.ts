@@ -169,6 +169,8 @@ import sleepAndDigestion from '../content/98-sleep-and-digestion.md?raw'
 
 import sleepAndBloodSugar from '../content/99-sleep-and-blood-sugar.md?raw'
 
+import sleepAndHealth from '../content/100-sleep-and-health.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1895,6 +1897,24 @@ export const articles: Article[] = [
       { question: "What should I eat before bed if hunger wakes me up?", answer: "Try a small balanced snack such as Greek yogurt with berries, cottage cheese and fruit, oatmeal with nut butter, or a banana with peanut butter. Keep it modest so digestion does not disrupt sleep." },
       { question: "Is sugar before bed bad for sleep?", answer: "A large sugary snack close to bed can cause a glucose spike, thirst, restlessness, reflux, bathroom wakeups, or a later drop that fragments sleep. Dessert is not banned, but it is not a sleep strategy." },
       { question: "When should I talk to a doctor about nighttime blood sugar symptoms?", answer: "Talk to a clinician if you have diabetes, suspected blood sugar problems, frequent nighttime shaking or sweating, extreme thirst, unexplained weight loss, frequent urination, or symptoms of sleep apnea." }
+    ]
+  },
+  {
+    slug: "sleep-and-health",
+    title: "Sleep and Health: How Better Rest Protects Your Whole Body",
+    description: "Learn how sleep affects your brain, heart, metabolism, hormones, immune system, digestion, skin, and long-term health.",
+    readTime: "12 min read",
+    date: "September 2026",
+    publishDate: "2026-09-09",
+    content: sleepAndHealth,
+    featuredImage: "/images/featured-sleep-and-health.png",
+    featuredImageAlt: "Dark themed Sleep and Health featured image with teal accent text",
+    faqs: [
+      { question: "How does sleep affect overall health?", answer: "Sleep supports brain function, mood, heart health, metabolism, immune defense, hormones, digestion, skin repair, and physical recovery. Poor sleep makes nearly every health goal harder because the body loses part of its nightly maintenance window." },
+      { question: "Can better sleep improve energy and cravings?", answer: "Yes. Better sleep can improve daytime energy, reduce reliance on caffeine, support appetite regulation, and make cravings easier to manage. It is not a diet by itself, but it makes nutrition and exercise much easier to execute." },
+      { question: "How many hours of sleep do adults need for health?", answer: "Most adults do best with 7 to 9 hours per night. Some need slightly more or less, but regularly sleeping under 6 hours is associated with worse energy, mood, focus, metabolic health, and recovery for many people." },
+      { question: "What health problems can bad sleep make worse?", answer: "Poor sleep can worsen fatigue, brain fog, stress reactivity, cravings, blood sugar control, blood pressure, immune resilience, reflux, pain sensitivity, and workout recovery. It can also overlap with medical issues like sleep apnea, anxiety, depression, and hormonal changes." },
+      { question: "What is the first thing to fix if sleep is hurting my health?", answer: "Start with a consistent wake time, morning light, an earlier caffeine cutoff, less alcohol near bed, and a cool, dark bedroom. These fix the most common sleep leaks before you spend money on supplements or gadgets." }
     ]
   }
 ]
