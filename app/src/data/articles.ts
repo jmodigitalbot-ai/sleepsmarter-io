@@ -171,6 +171,8 @@ import sleepAndBloodSugar from '../content/99-sleep-and-blood-sugar.md?raw'
 
 import sleepAndHealth from '../content/100-sleep-and-health.md?raw'
 
+import sleepAndInflammation from '../content/101-sleep-and-inflammation.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1915,6 +1917,24 @@ export const articles: Article[] = [
       { question: "How many hours of sleep do adults need for health?", answer: "Most adults do best with 7 to 9 hours per night. Some need slightly more or less, but regularly sleeping under 6 hours is associated with worse energy, mood, focus, metabolic health, and recovery for many people." },
       { question: "What health problems can bad sleep make worse?", answer: "Poor sleep can worsen fatigue, brain fog, stress reactivity, cravings, blood sugar control, blood pressure, immune resilience, reflux, pain sensitivity, and workout recovery. It can also overlap with medical issues like sleep apnea, anxiety, depression, and hormonal changes." },
       { question: "What is the first thing to fix if sleep is hurting my health?", answer: "Start with a consistent wake time, morning light, an earlier caffeine cutoff, less alcohol near bed, and a cool, dark bedroom. These fix the most common sleep leaks before you spend money on supplements or gadgets." }
+    ]
+  },
+  {
+    slug: "sleep-and-inflammation",
+    title: "Sleep and Inflammation: How Better Rest Lowers Your Body's Stress Load",
+    description: "Learn how poor sleep raises inflammation, slows recovery, worsens stress, and what to fix first for better rest and lower inflammatory load.",
+    readTime: "10 min read",
+    date: "September 2026",
+    publishDate: "2026-09-11",
+    content: sleepAndInflammation,
+    featuredImage: "/images/featured-sleep-and-inflammation.png",
+    featuredImageAlt: "Dark sleep-themed illustration card for sleep and inflammation with teal accent text",
+    faqs: [
+      { question: "Can lack of sleep cause inflammation?", answer: "Yes. Short or fragmented sleep is linked with higher inflammatory signaling, including markers such as C-reactive protein and interleukin-6. One bad night is not the issue; repeated poor sleep keeps the body in a more stressed state." },
+      { question: "How does sleep reduce inflammation?", answer: "Sleep helps regulate immune signaling, cortisol rhythm, blood pressure, glucose control, nervous system activity, and tissue repair. Consistent sleep gives the body a predictable recovery window instead of keeping stress systems activated." },
+      { question: "Why do I feel sore and puffy after bad sleep?", answer: "Poor sleep can increase stress hormones, fluid retention, pain sensitivity, cravings, and inflammatory load. That combination can make you feel stiff, puffy, foggy, and under-recovered the next morning." },
+      { question: "What is the best sleep habit for lowering inflammation?", answer: "The highest-leverage habit is a consistent wake time paired with enough sleep opportunity. After that, move caffeine earlier, avoid alcohol near bed, keep the bedroom cool, and investigate snoring or sleep apnea symptoms." },
+      { question: "Can supplements lower sleep-related inflammation?", answer: "Supplements may help support sleep quality, but they should not replace the foundation. Magnesium glycinate, L-theanine, and tart cherry can be useful for some people, but caffeine timing, alcohol, room temperature, wake time, and breathing issues usually matter more." }
     ]
   }
 ]
