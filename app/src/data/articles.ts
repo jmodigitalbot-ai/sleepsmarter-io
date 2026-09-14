@@ -173,6 +173,8 @@ import sleepAndHealth from '../content/100-sleep-and-health.md?raw'
 
 import sleepAndInflammation from '../content/101-sleep-and-inflammation.md?raw'
 
+import sleepAndLiverHealth from '../content/102-sleep-and-liver-health.md?raw'
+
 export interface FAQ {
   question: string
   answer: string
@@ -1935,6 +1937,24 @@ export const articles: Article[] = [
       { question: "Why do I feel sore and puffy after bad sleep?", answer: "Poor sleep can increase stress hormones, fluid retention, pain sensitivity, cravings, and inflammatory load. That combination can make you feel stiff, puffy, foggy, and under-recovered the next morning." },
       { question: "What is the best sleep habit for lowering inflammation?", answer: "The highest-leverage habit is a consistent wake time paired with enough sleep opportunity. After that, move caffeine earlier, avoid alcohol near bed, keep the bedroom cool, and investigate snoring or sleep apnea symptoms." },
       { question: "Can supplements lower sleep-related inflammation?", answer: "Supplements may help support sleep quality, but they should not replace the foundation. Magnesium glycinate, L-theanine, and tart cherry can be useful for some people, but caffeine timing, alcohol, room temperature, wake time, and breathing issues usually matter more." }
+    ]
+  },
+  {
+    slug: "sleep-and-liver-health",
+    title: "Sleep and Liver Health: How Better Rest Supports Metabolism and Recovery",
+    description: "Poor sleep can strain liver rhythm, blood sugar, alcohol processing, and metabolism. Here's what to fix first.",
+    readTime: "10 min read",
+    date: "September 2026",
+    publishDate: "2026-09-14",
+    content: sleepAndLiverHealth,
+    featuredImage: "/images/featured-sleep-and-liver-health.png",
+    featuredImageAlt: "Dark Sleep Smarter featured image for an article about sleep and liver health",
+    faqs: [
+      { question: "Can poor sleep affect your liver?", answer: "Yes. Chronic poor sleep can disrupt circadian rhythm, insulin sensitivity, inflammation, appetite regulation, and alcohol recovery, all of which affect the liver's metabolic workload." },
+      { question: "Does your liver detox while you sleep?", answer: "The liver works around the clock, not only while you sleep. Healthy sleep supports the rhythms that help the liver manage glucose, fats, hormones, alcohol, medications, and inflammatory signals." },
+      { question: "Can lack of sleep raise liver enzymes?", answer: "Poor sleep is associated with worse metabolic health and inflammation, which can overlap with liver stress. Elevated liver enzymes need medical evaluation because alcohol, medications, fatty liver disease, infections, and other issues can contribute." },
+      { question: "Is late-night eating bad for liver health?", answer: "Large late meals can keep digestion and glucose regulation active close to bedtime. That may worsen reflux, overnight heart rate, blood sugar swings, and sleep quality, especially when paired with alcohol or short sleep." },
+      { question: "What is the best sleep habit for liver health?", answer: "Start with a consistent wake time, morning light, an earlier caffeine cutoff, a 2 to 3 hour dinner buffer, less alcohol near bed, and enough sleep opportunity for recovery." }
     ]
   }
 ]
